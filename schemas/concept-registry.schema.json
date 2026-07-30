@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/concept-registry.schema.json",
+  "title": "Bilingual semantic normalizer concept registry",
+  "type": "object",
+  "required": [
+    "scheme_id",
+    "version",
+    "default_language",
+    "supported_languages",
+    "concepts"
+  ],
+  "properties": {
+    "scheme_id": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "default_language": {"type": "string", "enum": ["en", "pt"]},
+    "supported_languages": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "enum": ["en", "pt"]}
+    },
+    "concepts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/concept"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "languageStringMap": {
+      "type": "object",
+      "required": ["en", "pt"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "pt": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": {"type": "string"}
+    },
+    "languageArrayMap": {
+      "type": "object",
+      "properties": {
+        "en": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "pt": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {"type": "string", "minLength": 1}
+      }
+    },
+    "contextTerms": {
+      "type": "object",
+      "properties": {
+        "positive": {"$ref": "#/$defs/languageArrayMap"},
+        "negative": {"$ref": "#/$defs/languageArrayMap"}
+      },
+      "additionalProperties": false
+    },
+    "concept": {
+      "type": "object",
+      "required": [
+        "concept_id",
+        "preferred_labels",
+        "alternative_labels",
+        "hidden_labels",
+        "surface_forms",
+        "definitions",
+        "part_of_speech",
+        "domains",
+        "context_terms",
+        "source_authority"
+      ],
+      "properties": {
+        "concept_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*(?:\\.[a-z][a-z0-9_]*)+$"
+        },
+        "preferred_labels": {"$ref": "#/$defs/languageStringMap"},
+        "alternative_labels": {"$ref": "#/$defs/languageArrayMap"},
+        "hidden_labels": {"$ref": "#/$defs/languageArrayMap"},
+        "surface_forms": {"$ref": "#/$defs/languageArrayMap"},
+        "definitions": {"$ref": "#/$defs/languageStringMap"},
+        "part_of_speech": {
+          "type": "string",
+          "enum": ["noun", "verb", "adjective", "adverb", "phrase", "unknown"]
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "context_terms": {"$ref": "#/$defs/contextTerms"},
+        "source_authority": {"type": "string", "minLength": 1},
+        "status": {"type": "string", "enum": ["approved", "deprecated", "draft"]},
+        "broader": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string"}
+        },
+        "related": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string"}
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

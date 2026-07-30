@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/normalization-result.schema.json",
+  "title": "Semantic normalization result",
+  "type": "object",
+  "required": [
+    "original_text",
+    "source_language",
+    "target_language",
+    "canonical_text",
+    "canonical_search_text",
+    "concept_ids",
+    "concept_tokens",
+    "operator_tokens",
+    "mappings",
+    "unresolved_terms",
+    "validation_issues",
+    "status",
+    "provenance"
+  ],
+  "properties": {
+    "original_text": {"type": "string"},
+    "source_language": {"type": "string", "enum": ["en", "pt", "und"]},
+    "target_language": {"type": "string", "enum": ["en", "pt"]},
+    "canonical_text": {"type": "string"},
+    "canonical_search_text": {"type": "string"},
+    "concept_ids": {"type": "array", "items": {"type": "string"}},
+    "concept_tokens": {"type": "array", "items": {"type": "string"}},
+    "operator_tokens": {"type": "array", "items": {"type": "string"}},
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "start",
+          "end",
+          "source_surface",
+          "concept_id",
+          "preferred_label",
+          "canonical_label",
+          "confidence",
+          "method"
+        ],
+        "properties": {
+          "start": {"type": "integer", "minimum": 0},
+          "end": {"type": "integer", "minimum": 0},
+          "source_surface": {"type": "string"},
+          "concept_id": {"type": "string"},
+          "preferred_label": {"type": "string"},
+          "canonical_label": {"type": "string"},
+          "source_language": {"type": "string"},
+          "target_language": {"type": "string"},
+          "label_type": {"type": "string"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "method": {"type": "string"},
+          "rationale": {"type": "string"},
+          "candidate_concept_ids": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "unresolved_terms": {"type": "array", "items": {"type": "object"}},
+    "protected_values": {"type": "array", "items": {"type": "string"}},
+    "quantities": {"type": "array", "items": {"type": "string"}},
+    "segments": {"type": "array", "items": {"type": "object"}},
+    "validation_issues": {"type": "array", "items": {"type": "object"}},
+    "status": {"type": "string", "enum": ["accepted", "review", "rejected"]},
+    "attempts": {"type": "integer", "minimum": 1},
+    "provenance": {
+      "type": "object",
+      "required": [
+        "original_sha256",
+        "registry_sha256",
+        "registry_scheme_id",
+        "registry_version",
+        "normalizer_version"
+      ],
+      "properties": {
+        "original_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "registry_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "registry_scheme_id": {"type": "string"},
+        "registry_version": {"type": "string"},
+        "normalizer_version": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

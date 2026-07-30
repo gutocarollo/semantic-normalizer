@@ -1,0 +1,247 @@
+{
+  "name": "semantic-normalizer-skill",
+  "version": "0.1.0",
+  "created_at": "2026-07-30",
+  "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
+  "validation": {
+    "unit_tests_passed": 19,
+    "registry_concepts": 21,
+    "registry_errors": 0,
+    "registry_warnings": 4,
+    "schema_validation": "passed",
+    "smoke_test": "passed",
+    "wheel_install_test": "passed"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 105,
+      "sha256": "705b21d3317e1cb3ddfbc32b7ea12cabfaaf888e88b7808ef8f65a4c547a6326"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1089,
+      "sha256": "097abb76a6d00a6310e949c6a4a2cfb9bc07003afdd83375264c4f8d48d0bcbe"
+    },
+    {
+      "path": "Makefile",
+      "size_bytes": 785,
+      "sha256": "9737ccc32140faf387ff025ae4fd1ea50c7a341e07d8686ee84d5f5ac39cb86b"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8308,
+      "sha256": "d1c1b0306afeaec78b8b65a61f887159144f920bfa9addc3164166e75c7c2b70"
+    },
+    {
+      "path": "SKILL.md",
+      "size_bytes": 9207,
+      "sha256": "d9505c2ca15daa598c53a4585c8270e3a457b3c4ba394b380fb2b49ee3df5dd0"
+    },
+    {
+      "path": "config/concepts.json",
+      "size_bytes": 28876,
+      "sha256": "e7b0373168740ee1caf6f71540ae81505fb77b4d8a64c6f88458745b8cf516e1"
+    },
+    {
+      "path": "docs/architecture.md",
+      "size_bytes": 4991,
+      "sha256": "3c068229200f642d72c02d5d941be588e94687c6bcb84103392094c7e4771056"
+    },
+    {
+      "path": "docs/evaluation-plan.md",
+      "size_bytes": 3748,
+      "sha256": "b7dbbc2f256378e43b8589ad2e7ad2986fcea83dd493f0f53b625da96918d9cf"
+    },
+    {
+      "path": "docs/governance.md",
+      "size_bytes": 2569,
+      "sha256": "4bb79af64d997fc175285d7bfedbd7d66f9d49760b1caddc24d3ceeb4f0abb74"
+    },
+    {
+      "path": "docs/integration.md",
+      "size_bytes": 2782,
+      "sha256": "2ce7040243eec77b7be183f831fee98c2cb0e11957ab524c04310106a02ee6bf"
+    },
+    {
+      "path": "docs/references.md",
+      "size_bytes": 16485,
+      "sha256": "e5fe842d20421e760324fa3632d06b1612fe11647d80b093e650fa977285f2da"
+    },
+    {
+      "path": "docs/rollout-plan.md",
+      "size_bytes": 2109,
+      "sha256": "b0a02fd15a13c0e652e237bb02bdb66ce13a71c63e9f432c4568611ea580c1b7"
+    },
+    {
+      "path": "examples/documents.jsonl",
+      "size_bytes": 858,
+      "sha256": "2bb8d9375b3552a0307a7fbaa2c0aa742e67330509ce9971e07d0514c665972a"
+    },
+    {
+      "path": "examples/queries.jsonl",
+      "size_bytes": 911,
+      "sha256": "7d98f4feafd83637dc8b048babe1402ddf834e0c1a03ccc64019923e1216fac4"
+    },
+    {
+      "path": "examples/sample-input.txt",
+      "size_bytes": 175,
+      "sha256": "98cb0a3c44ea83eb916d7c1bfa7d447e5a3cedb08af09e9925fd76cbc77efe08"
+    },
+    {
+      "path": "exports/concepts.ttl",
+      "size_bytes": 16869,
+      "sha256": "28fb54e114984e82e60e43c4ff1deddc02f9b79f8da9127202de6c5b52d86f84"
+    },
+    {
+      "path": "exports/elasticsearch-synonyms.txt",
+      "size_bytes": 6372,
+      "sha256": "23dcd63f02240d45fd08d2fd7082f3a45648e9549ec9d4a5fc8cf8b8018f7d87"
+    },
+    {
+      "path": "prompts/disambiguate.md",
+      "size_bytes": 1285,
+      "sha256": "f157cdb5e2e094c2c5f45683e420c079a92235eda4c5ff9e442caea810a3ee1a"
+    },
+    {
+      "path": "prompts/propose-concept.md",
+      "size_bytes": 1285,
+      "sha256": "4a03525d17e2edcc2a107123dc558e0ec890d02d619879e3730b6283d03927b7"
+    },
+    {
+      "path": "prompts/semantic-validation.md",
+      "size_bytes": 819,
+      "sha256": "b7fdba2357764e8697b3895d32f62997dc938a3521894a454ca1950024f2bc97"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 863,
+      "sha256": "58eb7d70d6f003b79d7c168683fdf5a84286468a851e9015a18df467999fda3a"
+    },
+    {
+      "path": "reports/bm25-smoke-test.json",
+      "size_bytes": 17934,
+      "sha256": "501ff37b7986b2681909cd22ed9219ae3ea93627d15c6a22ed0ddcbf81bf763c"
+    },
+    {
+      "path": "reports/registry-validation.json",
+      "size_bytes": 1498,
+      "sha256": "6e15469cd2b86483570e392f730107f17042821373e60ae43f459cb3ee1a06b6"
+    },
+    {
+      "path": "reports/sample-output.json",
+      "size_bytes": 8354,
+      "sha256": "1f07d656cbaf167ff04a00f05de6339bd1cdbd2f2a1d013afebed68918e89d66"
+    },
+    {
+      "path": "reports/validation-summary.md",
+      "size_bytes": 2521,
+      "sha256": "9b7f240e583c8e7877214025751d917bb2794a3ed787d4a8caf3d3737d703a20"
+    },
+    {
+      "path": "schemas/concept-registry.schema.json",
+      "size_bytes": 3334,
+      "sha256": "bc1f310d971c99bf7d75d2effef72357876aebce64f8df4b9789b50deb23bbca"
+    },
+    {
+      "path": "schemas/normalization-result.schema.json",
+      "size_bytes": 3164,
+      "sha256": "0846ff6afb7f8314c5886128067c8e9bc8819f70df311421296740a9933f67ff"
+    },
+    {
+      "path": "scripts/run_smoke_test.sh",
+      "size_bytes": 810,
+      "sha256": "ad1798beaf5f0f7088bfd2dd8bc425123bd557721afeb4dd9ddad898fa5fdf91"
+    },
+    {
+      "path": "src/semantic_normalizer/__init__.py",
+      "size_bytes": 280,
+      "sha256": "1e8f69f9b7c1a6335f6c23bbb06f8ebb00011ac4b460201ce0420dccd80f2c16"
+    },
+    {
+      "path": "src/semantic_normalizer/__main__.py",
+      "size_bytes": 79,
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    {
+      "path": "src/semantic_normalizer/adapters/__init__.py",
+      "size_bytes": 34,
+      "sha256": "dd639bd91f8a652495a4bb87405cefb5fc7b3a54c1bb2a58e76b8683870c7ea9"
+    },
+    {
+      "path": "src/semantic_normalizer/adapters/instructor_resolver.py",
+      "size_bytes": 3210,
+      "sha256": "73db27e0d4e70e23ddab1a1709320566727986bca3f09fe8e5cc16a8cdaf4cf3"
+    },
+    {
+      "path": "src/semantic_normalizer/bm25.py",
+      "size_bytes": 2430,
+      "sha256": "a40139a07275be6c93fe422dd953775353e2f09e1a9d5c402e6b33be925e17d8"
+    },
+    {
+      "path": "src/semantic_normalizer/cli.py",
+      "size_bytes": 9089,
+      "sha256": "96cfcd661f7742516b5bfddd05ef6989ca9b9b29b78d7b977dde06c700aec9c1"
+    },
+    {
+      "path": "src/semantic_normalizer/data/concepts.json",
+      "size_bytes": 28876,
+      "sha256": "e7b0373168740ee1caf6f71540ae81505fb77b4d8a64c6f88458745b8cf516e1"
+    },
+    {
+      "path": "src/semantic_normalizer/evaluation.py",
+      "size_bytes": 4911,
+      "sha256": "6221cea333b8b32eaf6f0191905280e599048b7c9dd49106ba771b689e3e9c7d"
+    },
+    {
+      "path": "src/semantic_normalizer/loop.py",
+      "size_bytes": 5625,
+      "sha256": "a5581f0aae9ecedec7e7c379e053c25e513d16ad2bfaaffa57b0ac220f0bed69"
+    },
+    {
+      "path": "src/semantic_normalizer/models.py",
+      "size_bytes": 7839,
+      "sha256": "6b6bf6cc2f0df54639c02e36b88f2922d6a5108f2d06c06106f6993b9bc41352"
+    },
+    {
+      "path": "src/semantic_normalizer/normalizer.py",
+      "size_bytes": 14156,
+      "sha256": "00d89da941f36e2952a88e34338f19977e43185646a2738792032740ad537eaa"
+    },
+    {
+      "path": "src/semantic_normalizer/operators.py",
+      "size_bytes": 3421,
+      "sha256": "91c6885e61695e802d7db944216f397a230f452383aeac16002a0739d5c7dc14"
+    },
+    {
+      "path": "src/semantic_normalizer/protect.py",
+      "size_bytes": 1768,
+      "sha256": "f9d51d87ff5f962d26a0cfe22963a737e6c4473210aa0186bc5b99f6f4413280"
+    },
+    {
+      "path": "src/semantic_normalizer/registry.py",
+      "size_bytes": 15927,
+      "sha256": "9cbc8ed038fdb9e5e1a0af91a1fadc7a11e0c6894b1db6e03ad7cd66e1cd6ab4"
+    },
+    {
+      "path": "src/semantic_normalizer/text_utils.py",
+      "size_bytes": 2567,
+      "sha256": "cc7d6140c7c7c32eb7db8745bb2eaf80b5b13c771e19fb497252722a0cf6553e"
+    },
+    {
+      "path": "src/semantic_normalizer/validators.py",
+      "size_bytes": 5239,
+      "sha256": "1c311308fa7b48d7ec1d7110d36d6ac39f342a724299e0f572321b1470aa2030"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "size_bytes": 2110,
+      "sha256": "2b351c016afaf01d823145f5b974821446b716385fb0df1c94800caf777f12e9"
+    },
+    {
+      "path": "tests/test_normalizer.py",
+      "size_bytes": 9716,
+      "sha256": "29475663a51ac0f1ab508200674ba3a3cb5c6c715461fb50d8e06f92daa88e69"
+    }
+  ]
+}

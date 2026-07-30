@@ -1,0 +1,252 @@
+{
+  "original_text": "O operador deve começar o servidor APP-01.\nSe o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.\nNão remova o painel antes de desligar o equipamento.\n",
+  "source_language": "pt",
+  "target_language": "pt",
+  "canonical_text": "O operador deve iniciar o servidor APP-01.\nSe o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.\nNão remova o painel antes de desligar o equipamento.\n",
+  "canonical_search_text": "O operador deve começar o servidor APP-01.\nSe o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.\nNão remova o painel antes de desligar o equipamento.\n\nO operador deve iniciar o servidor APP-01.\nSe o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.\nNão remova o painel antes de desligar o equipamento.\n\nc__role__operator c__action__start c__system__server c__artifact__error__code c__action__verify c__action__restart c__system__service c__action__remove__physical c__component__panel\noperator operador start iniciar server servidor error code código de erro verify verificar restart reiniciar service serviço remove remover panel painel\nmodality__obligation condition__if polarity__negative condition__before",
+  "concept_ids": [
+    "role.operator",
+    "action.start",
+    "system.server",
+    "artifact.error_code",
+    "action.verify",
+    "action.restart",
+    "system.service",
+    "action.remove_physical",
+    "component.panel"
+  ],
+  "concept_tokens": [
+    "c__role__operator",
+    "c__action__start",
+    "c__system__server",
+    "c__artifact__error__code",
+    "c__action__verify",
+    "c__action__restart",
+    "c__system__service",
+    "c__action__remove__physical",
+    "c__component__panel"
+  ],
+  "operator_tokens": [
+    "modality__obligation",
+    "condition__if",
+    "polarity__negative",
+    "condition__before"
+  ],
+  "mappings": [
+    {
+      "start": 2,
+      "end": 10,
+      "source_surface": "operador",
+      "concept_id": "role.operator",
+      "preferred_label": "operador",
+      "canonical_label": "operador",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "preferred",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "rationale": "preferred label match",
+      "candidate_concept_ids": [
+        "role.operator"
+      ]
+    },
+    {
+      "start": 16,
+      "end": 23,
+      "source_surface": "começar",
+      "concept_id": "action.start",
+      "preferred_label": "iniciar",
+      "canonical_label": "iniciar",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "alternative",
+      "confidence": 0.99,
+      "method": "deterministic",
+      "rationale": "alternative label match; nearest positive context='servidor':0.87",
+      "candidate_concept_ids": [
+        "action.start"
+      ]
+    },
+    {
+      "start": 26,
+      "end": 34,
+      "source_surface": "servidor",
+      "concept_id": "system.server",
+      "preferred_label": "servidor",
+      "canonical_label": "servidor",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "preferred",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "rationale": "preferred label match",
+      "candidate_concept_ids": [
+        "system.server"
+      ]
+    },
+    {
+      "start": 48,
+      "end": 62,
+      "source_surface": "código de erro",
+      "concept_id": "artifact.error_code",
+      "preferred_label": "código de erro",
+      "canonical_label": "código de erro",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "preferred",
+      "confidence": 0.99,
+      "method": "deterministic",
+      "rationale": "preferred label match; nearest positive context='log':0.40",
+      "candidate_concept_ids": [
+        "artifact.error_code"
+      ]
+    },
+    {
+      "start": 80,
+      "end": 89,
+      "source_surface": "verifique",
+      "concept_id": "action.verify",
+      "preferred_label": "verificar",
+      "canonical_label": "verifique",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "surface",
+      "confidence": 0.8643,
+      "method": "deterministic",
+      "rationale": "surface label match; nearest positive context='código':0.15; preserved source inflection in canonical_text; concept token carries canonical identity",
+      "candidate_concept_ids": [
+        "action.verify"
+      ]
+    },
+    {
+      "start": 98,
+      "end": 106,
+      "source_surface": "reinicie",
+      "concept_id": "action.restart",
+      "preferred_label": "reiniciar",
+      "canonical_label": "reinicie",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "surface",
+      "confidence": 0.9791,
+      "method": "deterministic",
+      "rationale": "surface label match; nearest positive context='serviço':0.87; preserved source inflection in canonical_text; concept token carries canonical identity",
+      "candidate_concept_ids": [
+        "action.restart"
+      ]
+    },
+    {
+      "start": 109,
+      "end": 116,
+      "source_surface": "serviço",
+      "concept_id": "system.service",
+      "preferred_label": "serviço",
+      "canonical_label": "serviço",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "preferred",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "rationale": "preferred label match",
+      "candidate_concept_ids": [
+        "system.service"
+      ]
+    },
+    {
+      "start": 122,
+      "end": 128,
+      "source_surface": "remova",
+      "concept_id": "action.remove_physical",
+      "preferred_label": "remover",
+      "canonical_label": "remova",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "surface",
+      "confidence": 0.9791,
+      "method": "deterministic",
+      "rationale": "context-separated candidate by 0.296; surface label match; nearest positive context='painel':0.87; preserved source inflection in canonical_text; concept token carries canonical identity",
+      "candidate_concept_ids": [
+        "action.delete_data",
+        "action.remove_physical"
+      ]
+    },
+    {
+      "start": 131,
+      "end": 137,
+      "source_surface": "painel",
+      "concept_id": "component.panel",
+      "preferred_label": "painel",
+      "canonical_label": "painel",
+      "source_language": "pt",
+      "target_language": "pt",
+      "label_type": "preferred",
+      "confidence": 0.94,
+      "method": "deterministic",
+      "rationale": "preferred label match",
+      "candidate_concept_ids": [
+        "component.panel"
+      ]
+    }
+  ],
+  "unresolved_terms": [],
+  "protected_values": [
+    "APP-01",
+    "ERR-42"
+  ],
+  "quantities": [],
+  "segments": [
+    {
+      "start": 0,
+      "end": 42,
+      "original_text": "O operador deve começar o servidor APP-01.",
+      "canonical_text": "O operador deve iniciar o servidor APP-01.",
+      "concept_ids": [
+        "role.operator",
+        "action.start",
+        "system.server"
+      ],
+      "operator_tokens": [
+        "modality__obligation"
+      ]
+    },
+    {
+      "start": 43,
+      "end": 117,
+      "original_text": "Se o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.",
+      "canonical_text": "Se o código de erro ERR-42 aparecer, verifique o log e reinicie o serviço.",
+      "concept_ids": [
+        "artifact.error_code",
+        "action.verify",
+        "action.restart",
+        "system.service"
+      ],
+      "operator_tokens": [
+        "condition__if"
+      ]
+    },
+    {
+      "start": 118,
+      "end": 170,
+      "original_text": "Não remova o painel antes de desligar o equipamento.",
+      "canonical_text": "Não remova o painel antes de desligar o equipamento.",
+      "concept_ids": [
+        "action.remove_physical",
+        "component.panel"
+      ],
+      "operator_tokens": [
+        "polarity__negative",
+        "condition__before"
+      ]
+    }
+  ],
+  "validation_issues": [],
+  "status": "accepted",
+  "attempts": 1,
+  "provenance": {
+    "original_sha256": "98cb0a3c44ea83eb916d7c1bfa7d447e5a3cedb08af09e9925fd76cbc77efe08",
+    "registry_sha256": "e7b0373168740ee1caf6f71540ae81505fb77b4d8a64c6f88458745b8cf516e1",
+    "registry_scheme_id": "semantic-normalizer-core",
+    "registry_version": "0.1.0",
+    "normalizer_version": "0.1.0"
+  }
+}

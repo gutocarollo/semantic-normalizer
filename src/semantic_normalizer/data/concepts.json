@@ -1,0 +1,1373 @@
+{
+  "scheme_id": "semantic-normalizer-core",
+  "version": "0.1.0",
+  "default_language": "en",
+  "supported_languages": [
+    "en",
+    "pt"
+  ],
+  "concepts": [
+    {
+      "concept_id": "role.operator",
+      "preferred_labels": {
+        "en": "operator",
+        "pt": "operador"
+      },
+      "alternative_labels": {
+        "en": [
+          "machine operator"
+        ],
+        "pt": [
+          "operador da máquina"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "operators"
+        ],
+        "pt": [
+          "operadora",
+          "operadores",
+          "operadoras"
+        ]
+      },
+      "definitions": {
+        "en": "A person who operates or controls a machine, system, or process.",
+        "pt": "Pessoa que opera ou controla uma máquina, um sistema ou um processo."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "general",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "machine",
+            "system",
+            "control"
+          ],
+          "pt": [
+            "máquina",
+            "sistema",
+            "controle"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "action.start",
+      "preferred_labels": {
+        "en": "start",
+        "pt": "iniciar"
+      },
+      "alternative_labels": {
+        "en": [
+          "begin",
+          "commence"
+        ],
+        "pt": [
+          "começar",
+          "dar início"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "starts",
+          "started",
+          "starting"
+        ],
+        "pt": [
+          "inicie",
+          "inicia",
+          "iniciou",
+          "iniciando",
+          "comece",
+          "começa",
+          "começou",
+          "começando"
+        ]
+      },
+      "definitions": {
+        "en": "Cause an operation, process, or system to begin.",
+        "pt": "Fazer uma operação, processo ou sistema começar."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "general",
+        "software",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "server",
+            "service",
+            "process",
+            "system"
+          ],
+          "pt": [
+            "servidor",
+            "serviço",
+            "processo",
+            "sistema"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "action.stop",
+        "action.restart"
+      ]
+    },
+    {
+      "concept_id": "action.stop",
+      "preferred_labels": {
+        "en": "stop",
+        "pt": "parar"
+      },
+      "alternative_labels": {
+        "en": [
+          "halt",
+          "cease"
+        ],
+        "pt": [
+          "cessar"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "stops",
+          "stopped",
+          "stopping"
+        ],
+        "pt": [
+          "pare",
+          "para",
+          "parou",
+          "parando"
+        ]
+      },
+      "definitions": {
+        "en": "Cause an operation, process, or system to cease running.",
+        "pt": "Fazer uma operação, processo ou sistema deixar de funcionar."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "general",
+        "software",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "server",
+            "service",
+            "process",
+            "system"
+          ],
+          "pt": [
+            "servidor",
+            "serviço",
+            "processo",
+            "sistema"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "action.start",
+        "action.restart"
+      ]
+    },
+    {
+      "concept_id": "action.restart",
+      "preferred_labels": {
+        "en": "restart",
+        "pt": "reiniciar"
+      },
+      "alternative_labels": {
+        "en": [
+          "reboot"
+        ],
+        "pt": [
+          "reinicializar"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "restarts",
+          "restarted",
+          "restarting"
+        ],
+        "pt": [
+          "reinicie",
+          "reinicia",
+          "reiniciou",
+          "reiniciando"
+        ]
+      },
+      "definitions": {
+        "en": "Stop and then start a system, service, or device.",
+        "pt": "Parar e depois iniciar um sistema, serviço ou dispositivo."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "software",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "server",
+            "service",
+            "device",
+            "system"
+          ],
+          "pt": [
+            "servidor",
+            "serviço",
+            "dispositivo",
+            "sistema"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "action.start",
+        "action.stop"
+      ]
+    },
+    {
+      "concept_id": "action.verify",
+      "preferred_labels": {
+        "en": "verify",
+        "pt": "verificar"
+      },
+      "alternative_labels": {
+        "en": [
+          "check"
+        ],
+        "pt": [
+          "checar",
+          "conferir"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "verifies",
+          "verified",
+          "verifying",
+          "checks",
+          "checked",
+          "checking"
+        ],
+        "pt": [
+          "verifique",
+          "verifica",
+          "verificou",
+          "verificando",
+          "cheque",
+          "confira"
+        ]
+      },
+      "definitions": {
+        "en": "Examine evidence to determine whether a condition or value is correct.",
+        "pt": "Examinar evidências para determinar se uma condição ou valor está correto."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "general",
+        "quality",
+        "software"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "code",
+            "status",
+            "value",
+            "result"
+          ],
+          "pt": [
+            "código",
+            "status",
+            "valor",
+            "resultado"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "action.install",
+      "preferred_labels": {
+        "en": "install",
+        "pt": "instalar"
+      },
+      "alternative_labels": {
+        "en": [],
+        "pt": []
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "installs",
+          "installed",
+          "installing"
+        ],
+        "pt": [
+          "instale",
+          "instala",
+          "instalou",
+          "instalando"
+        ]
+      },
+      "definitions": {
+        "en": "Put software, equipment, or a component in its required operating position or environment.",
+        "pt": "Colocar software, equipamento ou componente na posição ou ambiente necessário para operação."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "software",
+        "hardware",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "package",
+            "software",
+            "component",
+            "panel"
+          ],
+          "pt": [
+            "pacote",
+            "software",
+            "componente",
+            "painel"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "action.configure",
+      "preferred_labels": {
+        "en": "configure",
+        "pt": "configurar"
+      },
+      "alternative_labels": {
+        "en": [
+          "set up"
+        ],
+        "pt": [
+          "ajustar a configuração"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "configures",
+          "configured",
+          "configuring"
+        ],
+        "pt": [
+          "configure",
+          "configura",
+          "configurou",
+          "configurando"
+        ]
+      },
+      "definitions": {
+        "en": "Set parameters or connections so a system operates as required.",
+        "pt": "Definir parâmetros ou conexões para que um sistema opere como necessário."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "software",
+        "hardware",
+        "operations"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "parameter",
+            "setting",
+            "server",
+            "service"
+          ],
+          "pt": [
+            "parâmetro",
+            "configuração",
+            "servidor",
+            "serviço"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "action.remove_physical",
+      "preferred_labels": {
+        "en": "remove",
+        "pt": "remover"
+      },
+      "alternative_labels": {
+        "en": [
+          "detach"
+        ],
+        "pt": [
+          "retirar",
+          "desconectar"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "removes",
+          "removed",
+          "removing"
+        ],
+        "pt": [
+          "remova",
+          "remove",
+          "removeu",
+          "removendo",
+          "retire",
+          "retira",
+          "retirou"
+        ]
+      },
+      "definitions": {
+        "en": "Move a physical item away from its installed or attached position.",
+        "pt": "Mover um item físico para fora da posição instalada ou conectada."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "hardware",
+        "maintenance"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "panel",
+            "screw",
+            "bolt",
+            "seal",
+            "component",
+            "cable"
+          ],
+          "pt": [
+            "painel",
+            "parafuso",
+            "porca",
+            "vedação",
+            "componente",
+            "cabo"
+          ]
+        },
+        "negative": {
+          "en": [
+            "file",
+            "record",
+            "database",
+            "row",
+            "data"
+          ],
+          "pt": [
+            "arquivo",
+            "registro",
+            "banco de dados",
+            "linha",
+            "dados"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "action.delete_data",
+      "preferred_labels": {
+        "en": "delete",
+        "pt": "excluir"
+      },
+      "alternative_labels": {
+        "en": [
+          "erase",
+          "remove"
+        ],
+        "pt": [
+          "apagar",
+          "deletar",
+          "remover"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": [
+          "delatar"
+        ]
+      },
+      "surface_forms": {
+        "en": [
+          "deletes",
+          "deleted",
+          "deleting",
+          "erases",
+          "erased"
+        ],
+        "pt": [
+          "exclua",
+          "exclui",
+          "excluiu",
+          "excluindo",
+          "apague",
+          "apaga",
+          "apagou",
+          "remova",
+          "removeu"
+        ]
+      },
+      "definitions": {
+        "en": "Remove stored digital data so the system no longer retains it as an active item.",
+        "pt": "Remover dados digitais armazenados para que o sistema deixe de mantê-los como item ativo."
+      },
+      "part_of_speech": "verb",
+      "domains": [
+        "software",
+        "data"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "file",
+            "record",
+            "database",
+            "row",
+            "data",
+            "cache"
+          ],
+          "pt": [
+            "arquivo",
+            "registro",
+            "banco de dados",
+            "linha",
+            "dados",
+            "cache"
+          ]
+        },
+        "negative": {
+          "en": [
+            "panel",
+            "screw",
+            "bolt",
+            "seal",
+            "component",
+            "cable"
+          ],
+          "pt": [
+            "painel",
+            "parafuso",
+            "porca",
+            "vedação",
+            "componente",
+            "cabo"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "system.server",
+      "preferred_labels": {
+        "en": "server",
+        "pt": "servidor"
+      },
+      "alternative_labels": {
+        "en": [
+          "application server"
+        ],
+        "pt": [
+          "servidor de aplicação"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "servers"
+        ],
+        "pt": [
+          "servidores"
+        ]
+      },
+      "definitions": {
+        "en": "A computer or software process that provides services to other processes or devices.",
+        "pt": "Computador ou processo de software que fornece serviços a outros processos ou dispositivos."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "infrastructure"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "service",
+            "application",
+            "network"
+          ],
+          "pt": [
+            "serviço",
+            "aplicação",
+            "rede"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "system.service"
+      ]
+    },
+    {
+      "concept_id": "system.service",
+      "preferred_labels": {
+        "en": "service",
+        "pt": "serviço"
+      },
+      "alternative_labels": {
+        "en": [
+          "software service"
+        ],
+        "pt": [
+          "serviço de software"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "services"
+        ],
+        "pt": [
+          "serviços"
+        ]
+      },
+      "definitions": {
+        "en": "A software process that performs a defined function for other components.",
+        "pt": "Processo de software que executa uma função definida para outros componentes."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "infrastructure"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "server",
+            "process",
+            "daemon"
+          ],
+          "pt": [
+            "servidor",
+            "processo",
+            "daemon"
+          ]
+        },
+        "negative": {
+          "en": [
+            "customer"
+          ],
+          "pt": [
+            "cliente"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "system.server"
+      ]
+    },
+    {
+      "concept_id": "system.database",
+      "preferred_labels": {
+        "en": "database",
+        "pt": "banco de dados"
+      },
+      "alternative_labels": {
+        "en": [
+          "DB"
+        ],
+        "pt": [
+          "BD"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "databases"
+        ],
+        "pt": [
+          "bancos de dados"
+        ]
+      },
+      "definitions": {
+        "en": "An organized collection of data managed for storage and retrieval.",
+        "pt": "Coleção organizada de dados gerenciada para armazenamento e consulta."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "data"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "record",
+            "row",
+            "table",
+            "query"
+          ],
+          "pt": [
+            "registro",
+            "linha",
+            "tabela",
+            "consulta"
+          ]
+        },
+        "negative": {
+          "en": [
+            "river",
+            "money"
+          ],
+          "pt": [
+            "rio",
+            "dinheiro"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "artifact.record"
+      ]
+    },
+    {
+      "concept_id": "artifact.file",
+      "preferred_labels": {
+        "en": "file",
+        "pt": "arquivo"
+      },
+      "alternative_labels": {
+        "en": [
+          "data file"
+        ],
+        "pt": [
+          "arquivo de dados"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "files"
+        ],
+        "pt": [
+          "arquivos"
+        ]
+      },
+      "definitions": {
+        "en": "A named unit of digital information stored by a computer system.",
+        "pt": "Unidade nomeada de informação digital armazenada por um sistema computacional."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "data"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "directory",
+            "path",
+            "delete",
+            "save"
+          ],
+          "pt": [
+            "diretório",
+            "caminho",
+            "excluir",
+            "salvar"
+          ]
+        },
+        "negative": {
+          "en": [
+            "tool"
+          ],
+          "pt": [
+            "ferramenta"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1"
+    },
+    {
+      "concept_id": "artifact.record",
+      "preferred_labels": {
+        "en": "record",
+        "pt": "registro"
+      },
+      "alternative_labels": {
+        "en": [
+          "database record"
+        ],
+        "pt": [
+          "registro de banco de dados"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "records"
+        ],
+        "pt": [
+          "registros"
+        ]
+      },
+      "definitions": {
+        "en": "A stored set of related data fields treated as one item.",
+        "pt": "Conjunto armazenado de campos de dados relacionados tratado como um item."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "data"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "database",
+            "row",
+            "table",
+            "field"
+          ],
+          "pt": [
+            "banco de dados",
+            "linha",
+            "tabela",
+            "campo"
+          ]
+        },
+        "negative": {
+          "en": [
+            "audio"
+          ],
+          "pt": [
+            "áudio"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "system.database"
+      ]
+    },
+    {
+      "concept_id": "component.panel",
+      "preferred_labels": {
+        "en": "panel",
+        "pt": "painel"
+      },
+      "alternative_labels": {
+        "en": [
+          "access panel"
+        ],
+        "pt": [
+          "painel de acesso"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "panels"
+        ],
+        "pt": [
+          "painéis"
+        ]
+      },
+      "definitions": {
+        "en": "A flat physical component that covers, supports, or provides access to equipment.",
+        "pt": "Componente físico plano que cobre, sustenta ou permite acesso ao equipamento."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "hardware",
+        "maintenance"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "screw",
+            "bolt",
+            "remove",
+            "install"
+          ],
+          "pt": [
+            "parafuso",
+            "porca",
+            "remover",
+            "instalar"
+          ]
+        },
+        "negative": {
+          "en": [
+            "dashboard"
+          ],
+          "pt": [
+            "indicador"
+          ]
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "fastener.screw"
+      ]
+    },
+    {
+      "concept_id": "fastener.screw",
+      "preferred_labels": {
+        "en": "screw",
+        "pt": "parafuso"
+      },
+      "alternative_labels": {
+        "en": [
+          "fastening screw"
+        ],
+        "pt": [
+          "parafuso de fixação"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "screws"
+        ],
+        "pt": [
+          "parafusos"
+        ]
+      },
+      "definitions": {
+        "en": "A threaded fastener turned to join or secure physical parts.",
+        "pt": "Fixador roscado girado para unir ou prender peças físicas."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "hardware",
+        "maintenance"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "panel",
+            "tighten",
+            "loosen"
+          ],
+          "pt": [
+            "painel",
+            "apertar",
+            "soltar"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "component.panel"
+      ]
+    },
+    {
+      "concept_id": "artifact.error_code",
+      "preferred_labels": {
+        "en": "error code",
+        "pt": "código de erro"
+      },
+      "alternative_labels": {
+        "en": [
+          "fault code"
+        ],
+        "pt": [
+          "código de falha"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "error codes",
+          "fault codes"
+        ],
+        "pt": [
+          "códigos de erro",
+          "códigos de falha"
+        ]
+      },
+      "definitions": {
+        "en": "An identifier that represents a detected error condition.",
+        "pt": "Identificador que representa uma condição de erro detectada."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "maintenance"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "verify",
+            "check",
+            "log",
+            "display"
+          ],
+          "pt": [
+            "verificar",
+            "checar",
+            "log",
+            "tela"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "state.failure"
+      ]
+    },
+    {
+      "concept_id": "state.failure",
+      "preferred_labels": {
+        "en": "failure",
+        "pt": "falha"
+      },
+      "alternative_labels": {
+        "en": [
+          "malfunction"
+        ],
+        "pt": [
+          "mau funcionamento"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "failures",
+          "malfunctions"
+        ],
+        "pt": [
+          "falhas"
+        ]
+      },
+      "definitions": {
+        "en": "A state in which an item cannot perform its required function.",
+        "pt": "Estado no qual um item não consegue executar sua função necessária."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "general",
+        "software",
+        "hardware"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "error",
+            "fault",
+            "system",
+            "component"
+          ],
+          "pt": [
+            "erro",
+            "defeito",
+            "sistema",
+            "componente"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "artifact.error_code"
+      ]
+    },
+    {
+      "concept_id": "state.enabled",
+      "preferred_labels": {
+        "en": "enabled",
+        "pt": "ativado"
+      },
+      "alternative_labels": {
+        "en": [
+          "active"
+        ],
+        "pt": [
+          "ativo",
+          "habilitado"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [],
+        "pt": [
+          "ativada",
+          "ativos",
+          "ativas",
+          "habilitada"
+        ]
+      },
+      "definitions": {
+        "en": "A state in which a function is available for operation.",
+        "pt": "Estado no qual uma função está disponível para operação."
+      },
+      "part_of_speech": "adjective",
+      "domains": [
+        "software",
+        "hardware"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "feature",
+            "setting",
+            "option"
+          ],
+          "pt": [
+            "recurso",
+            "configuração",
+            "opção"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "state.disabled"
+      ]
+    },
+    {
+      "concept_id": "state.disabled",
+      "preferred_labels": {
+        "en": "disabled",
+        "pt": "desativado"
+      },
+      "alternative_labels": {
+        "en": [
+          "inactive"
+        ],
+        "pt": [
+          "inativo",
+          "desabilitado"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [],
+        "pt": [
+          "desativada",
+          "inativa",
+          "desabilitada"
+        ]
+      },
+      "definitions": {
+        "en": "A state in which a function is not available for operation.",
+        "pt": "Estado no qual uma função não está disponível para operação."
+      },
+      "part_of_speech": "adjective",
+      "domains": [
+        "software",
+        "hardware"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "feature",
+            "setting",
+            "option"
+          ],
+          "pt": [
+            "recurso",
+            "configuração",
+            "opção"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1",
+      "related": [
+        "state.enabled"
+      ]
+    },
+    {
+      "concept_id": "artifact.configuration",
+      "preferred_labels": {
+        "en": "configuration",
+        "pt": "configuração"
+      },
+      "alternative_labels": {
+        "en": [
+          "settings"
+        ],
+        "pt": [
+          "ajustes"
+        ]
+      },
+      "hidden_labels": {
+        "en": [],
+        "pt": []
+      },
+      "surface_forms": {
+        "en": [
+          "configurations",
+          "setting"
+        ],
+        "pt": [
+          "configurações",
+          "ajuste"
+        ]
+      },
+      "definitions": {
+        "en": "A set of parameters that determines how a system or component operates.",
+        "pt": "Conjunto de parâmetros que determina como um sistema ou componente opera."
+      },
+      "part_of_speech": "noun",
+      "domains": [
+        "software",
+        "hardware"
+      ],
+      "context_terms": {
+        "positive": {
+          "en": [
+            "parameter",
+            "configure",
+            "option"
+          ],
+          "pt": [
+            "parâmetro",
+            "configurar",
+            "opção"
+          ]
+        },
+        "negative": {
+          "en": [],
+          "pt": []
+        }
+      },
+      "source_authority": "project-core-0.1"
+    }
+  ]
+}

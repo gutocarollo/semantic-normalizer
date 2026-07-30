@@ -1,0 +1,677 @@
+{
+  "dataset": {
+    "documents": 9,
+    "queries": 9,
+    "target_language": "en",
+    "k_values": [
+      1,
+      3
+    ]
+  },
+  "modes": {
+    "raw": {
+      "mrr": 0.0,
+      "hit_rate_at_k": {
+        "1": 0.0,
+        "3": 0.0
+      },
+      "mean_recall_at_k": {
+        "1": 0.0,
+        "3": 0.0
+      },
+      "per_query": [
+        {
+          "query_id": "q01",
+          "query": "Como começar o servidor?",
+          "query_view": "Como começar o servidor?",
+          "relevant_doc_ids": [
+            "d01"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 2.661188
+            },
+            {
+              "doc_id": "d02",
+              "score": 0.743321
+            },
+            {
+              "doc_id": "d09",
+              "score": 0.637738
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q02",
+          "query": "How do I detach the access panel?",
+          "query_view": "How do I detach the access panel?",
+          "relevant_doc_ids": [
+            "d02"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d04",
+              "score": 1.777362
+            },
+            {
+              "doc_id": "d07",
+              "score": 1.147299
+            },
+            {
+              "doc_id": "d03",
+              "score": 1.112675
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q03",
+          "query": "Como apagar o registro de banco de dados obsoleto?",
+          "query_view": "Como apagar o registro de banco de dados obsoleto?",
+          "relevant_doc_ids": [
+            "d03"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 4.558912
+            },
+            {
+              "doc_id": "d04",
+              "score": 3.157663
+            },
+            {
+              "doc_id": "d02",
+              "score": 0.743321
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q04",
+          "query": "Check the fault code in the system log.",
+          "query_view": "Check the fault code in the system log.",
+          "relevant_doc_ids": [
+            "d04"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d07",
+              "score": 4.318337
+            },
+            {
+              "doc_id": "d03",
+              "score": 2.225349
+            },
+            {
+              "doc_id": "d01",
+              "score": 2.160158
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q05",
+          "query": "Como cessar o serviço de pagamento?",
+          "query_view": "Como cessar o serviço de pagamento?",
+          "relevant_doc_ids": [
+            "d05"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 4.53632
+            },
+            {
+              "doc_id": "d04",
+              "score": 1.858881
+            },
+            {
+              "doc_id": "d02",
+              "score": 0.743321
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q06",
+          "query": "Install the panel with the specified screws.",
+          "query_view": "Install the panel with the specified screws.",
+          "relevant_doc_ids": [
+            "d06"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d07",
+              "score": 2.294598
+            },
+            {
+              "doc_id": "d03",
+              "score": 2.225349
+            },
+            {
+              "doc_id": "d01",
+              "score": 2.160158
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q07",
+          "query": "Quando reinicializar o servidor?",
+          "query_view": "Quando reinicializar o servidor?",
+          "relevant_doc_ids": [
+            "d07"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 2.661188
+            },
+            {
+              "doc_id": "d02",
+              "score": 2.387257
+            },
+            {
+              "doc_id": "d09",
+              "score": 0.637738
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q08",
+          "query": "Set up the software service before starting the server.",
+          "query_view": "Set up the software service before starting the server.",
+          "relevant_doc_ids": [
+            "d08"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d05",
+              "score": 5.458375
+            },
+            {
+              "doc_id": "d01",
+              "score": 4.867595
+            },
+            {
+              "doc_id": "d07",
+              "score": 3.773417
+            }
+          ],
+          "first_relevant_rank": null
+        },
+        {
+          "query_id": "q09",
+          "query": "Delete the temporary file after export.",
+          "query_view": "Delete the temporary file after export.",
+          "relevant_doc_ids": [
+            "d09"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d03",
+              "score": 4.981393
+            },
+            {
+              "doc_id": "d07",
+              "score": 1.147299
+            },
+            {
+              "doc_id": "d01",
+              "score": 1.080079
+            }
+          ],
+          "first_relevant_rank": null
+        }
+      ]
+    },
+    "canonical": {
+      "mrr": 0.777778,
+      "hit_rate_at_k": {
+        "1": 0.555556,
+        "3": 1.0
+      },
+      "mean_recall_at_k": {
+        "1": 0.555556,
+        "3": 1.0
+      },
+      "per_query": [
+        {
+          "query_id": "q01",
+          "query": "Como começar o servidor?",
+          "query_view": "Como start o server?",
+          "relevant_doc_ids": [
+            "d01"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 3.400665
+            },
+            {
+              "doc_id": "d01",
+              "score": 2.330198
+            },
+            {
+              "doc_id": "d07",
+              "score": 1.099814
+            }
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query_id": "q02",
+          "query": "How do I detach the access panel?",
+          "query_view": "How do I remove the panel?",
+          "relevant_doc_ids": [
+            "d02"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d02",
+              "score": 2.778274
+            },
+            {
+              "doc_id": "d04",
+              "score": 1.814637
+            },
+            {
+              "doc_id": "d06",
+              "score": 1.386294
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q03",
+          "query": "Como apagar o registro de banco de dados obsoleto?",
+          "query_view": "Como delete o record obsoleto?",
+          "relevant_doc_ids": [
+            "d03"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d03",
+              "score": 3.439767
+            },
+            {
+              "doc_id": "d09",
+              "score": 2.078614
+            },
+            {
+              "doc_id": "d08",
+              "score": 0.848543
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q04",
+          "query": "Check the fault code in the system log.",
+          "query_view": "Verify the error code in the system log.",
+          "relevant_doc_ids": [
+            "d04"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d04",
+              "score": 6.76993
+            },
+            {
+              "doc_id": "d07",
+              "score": 3.71904
+            },
+            {
+              "doc_id": "d03",
+              "score": 2.266732
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q05",
+          "query": "Como cessar o serviço de pagamento?",
+          "query_view": "Como stop o service de pagamento?",
+          "relevant_doc_ids": [
+            "d05"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 4.28831
+            },
+            {
+              "doc_id": "d05",
+              "score": 3.611756
+            },
+            {
+              "doc_id": "d02",
+              "score": 0.73069
+            }
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query_id": "q06",
+          "query": "Install the panel with the specified screws.",
+          "query_view": "Install the panel with the specified screws.",
+          "relevant_doc_ids": [
+            "d06"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d06",
+              "score": 3.283414
+            },
+            {
+              "doc_id": "d03",
+              "score": 2.266732
+            },
+            {
+              "doc_id": "d07",
+              "score": 2.266732
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q07",
+          "query": "Quando reinicializar o servidor?",
+          "query_view": "Quando restart o server?",
+          "relevant_doc_ids": [
+            "d07"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d07",
+              "score": 3.087273
+            },
+            {
+              "doc_id": "d02",
+              "score": 2.335945
+            },
+            {
+              "doc_id": "d08",
+              "score": 1.948356
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q08",
+          "query": "Set up the software service before starting the server.",
+          "query_view": "Configure the service before starting the server.",
+          "relevant_doc_ids": [
+            "d08"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d05",
+              "score": 4.806565
+            },
+            {
+              "doc_id": "d08",
+              "score": 4.539581
+            },
+            {
+              "doc_id": "d01",
+              "score": 4.459552
+            }
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query_id": "q09",
+          "query": "Delete the temporary file after export.",
+          "query_view": "Delete the temporary file after export.",
+          "relevant_doc_ids": [
+            "d09"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d03",
+              "score": 4.573133
+            },
+            {
+              "doc_id": "d09",
+              "score": 3.439767
+            },
+            {
+              "doc_id": "d07",
+              "score": 1.133366
+            }
+          ],
+          "first_relevant_rank": 2
+        }
+      ]
+    },
+    "expanded": {
+      "mrr": 0.944444,
+      "hit_rate_at_k": {
+        "1": 0.888889,
+        "3": 1.0
+      },
+      "mean_recall_at_k": {
+        "1": 0.888889,
+        "3": 1.0
+      },
+      "per_query": [
+        {
+          "query_id": "q01",
+          "query": "Como começar o servidor?",
+          "query_view": "Como começar o servidor?\nComo start o server?\nc__action__start c__system__server\nstart iniciar server servidor",
+          "relevant_doc_ids": [
+            "d01"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 15.532931
+            },
+            {
+              "doc_id": "d01",
+              "score": 13.207498
+            },
+            {
+              "doc_id": "d07",
+              "score": 6.617983
+            }
+          ],
+          "first_relevant_rank": 2
+        },
+        {
+          "query_id": "q02",
+          "query": "How do I detach the access panel?",
+          "query_view": "How do I detach the access panel?\nHow do I remove the panel?\nc__action__remove__physical c__component__panel\nremove remover panel painel",
+          "relevant_doc_ids": [
+            "d02"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d02",
+              "score": 16.59775
+            },
+            {
+              "doc_id": "d06",
+              "score": 9.04293
+            },
+            {
+              "doc_id": "d04",
+              "score": 5.082542
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q03",
+          "query": "Como apagar o registro de banco de dados obsoleto?",
+          "query_view": "Como apagar o registro de banco de dados obsoleto?\nComo delete o record obsoleto?\nc__action__delete__data c__artifact__record\ndelete excluir record registro",
+          "relevant_doc_ids": [
+            "d03"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d03",
+              "score": 19.697813
+            },
+            {
+              "doc_id": "d09",
+              "score": 8.874045
+            },
+            {
+              "doc_id": "d05",
+              "score": 6.099371
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q04",
+          "query": "Check the fault code in the system log.",
+          "query_view": "Check the fault code in the system log.\nVerify the error code in the system log.\nc__action__verify c__artifact__error__code\nverify verificar error code código de erro",
+          "relevant_doc_ids": [
+            "d04"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d04",
+              "score": 32.488296
+            },
+            {
+              "doc_id": "d07",
+              "score": 14.218659
+            },
+            {
+              "doc_id": "d05",
+              "score": 5.582349
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q05",
+          "query": "Como cessar o serviço de pagamento?",
+          "query_view": "Como cessar o serviço de pagamento?\nComo stop o service de pagamento?\nc__action__stop c__system__service\nstop parar service serviço",
+          "relevant_doc_ids": [
+            "d05"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d05",
+              "score": 20.90793
+            },
+            {
+              "doc_id": "d08",
+              "score": 13.988121
+            },
+            {
+              "doc_id": "d04",
+              "score": 4.414216
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q06",
+          "query": "Install the panel with the specified screws.",
+          "query_view": "Install the panel with the specified screws.\nInstall the panel with the specified screws.\nc__action__install c__component__panel c__fastener__screw\ninstall instalar panel painel screw parafuso",
+          "relevant_doc_ids": [
+            "d06"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d06",
+              "score": 25.405599
+            },
+            {
+              "doc_id": "d02",
+              "score": 12.601145
+            },
+            {
+              "doc_id": "d03",
+              "score": 5.552254
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q07",
+          "query": "Quando reinicializar o servidor?",
+          "query_view": "Quando reinicializar o servidor?\nQuando restart o server?\nc__action__restart c__system__server\nrestart reiniciar server servidor\ncondition__when",
+          "relevant_doc_ids": [
+            "d07"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d07",
+              "score": 18.048619
+            },
+            {
+              "doc_id": "d08",
+              "score": 8.627037
+            },
+            {
+              "doc_id": "d02",
+              "score": 8.02918
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q08",
+          "query": "Set up the software service before starting the server.",
+          "query_view": "Set up the software service before starting the server.\nConfigure the service before starting the server.\nc__action__configure c__system__service c__action__start c__system__server\nconfigure configurar service serviço start iniciar server servidor\ncondition__before",
+          "relevant_doc_ids": [
+            "d08"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d08",
+              "score": 32.783565
+            },
+            {
+              "doc_id": "d01",
+              "score": 21.721851
+            },
+            {
+              "doc_id": "d05",
+              "score": 19.007096
+            }
+          ],
+          "first_relevant_rank": 1
+        },
+        {
+          "query_id": "q09",
+          "query": "Delete the temporary file after export.",
+          "query_view": "Delete the temporary file after export.\nDelete the temporary file after export.\nc__action__delete__data c__artifact__file\ndelete excluir file arquivo\ncondition__after",
+          "relevant_doc_ids": [
+            "d09"
+          ],
+          "ranking": [
+            {
+              "doc_id": "d09",
+              "score": 22.375928
+            },
+            {
+              "doc_id": "d03",
+              "score": 19.965913
+            },
+            {
+              "doc_id": "d07",
+              "score": 2.74172
+            }
+          ],
+          "first_relevant_rank": 1
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "expanded_minus_raw_mrr": 0.944444,
+    "canonical_minus_raw_mrr": 0.777778
+  }
+}

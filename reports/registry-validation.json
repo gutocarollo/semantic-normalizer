@@ -1,0 +1,68 @@
+{
+  "scheme_id": "semantic-normalizer-core",
+  "version": "0.1.0",
+  "concept_count": 21,
+  "diagnostics": [
+    {
+      "severity": "warning",
+      "code": "ambiguous_alias",
+      "message": "Alias 'remova' maps to multiple concepts",
+      "details": {
+        "alias": "remova",
+        "concept_ids": [
+          "action.delete_data",
+          "action.remove_physical"
+        ],
+        "languages": [
+          "pt"
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "ambiguous_alias",
+      "message": "Alias 'remove' maps to multiple concepts",
+      "details": {
+        "alias": "remove",
+        "concept_ids": [
+          "action.delete_data",
+          "action.remove_physical"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "ambiguous_alias",
+      "message": "Alias 'remover' maps to multiple concepts",
+      "details": {
+        "alias": "remover",
+        "concept_ids": [
+          "action.delete_data",
+          "action.remove_physical"
+        ],
+        "languages": [
+          "pt"
+        ]
+      }
+    },
+    {
+      "severity": "warning",
+      "code": "ambiguous_alias",
+      "message": "Alias 'removeu' maps to multiple concepts",
+      "details": {
+        "alias": "removeu",
+        "concept_ids": [
+          "action.delete_data",
+          "action.remove_physical"
+        ],
+        "languages": [
+          "pt"
+        ]
+      }
+    }
+  ]
+}
