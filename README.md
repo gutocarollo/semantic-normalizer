@@ -11,7 +11,7 @@ The project does **not** try to reduce English and Portuguese to one universal w
 3. **Observed variants** — synonyms, inflections, abbreviations, and hidden labels.
 4. **Source assertions** — negation, modality, conditions, numbers, identifiers, and original spans.
 
-This prevents a common failure of synonym replacement: two words can be close in one context and materially different in another.
+This prevents a common failure of synonym replacement: two words can be close in one context and materially different in another. Version 0.2.0 also separates the domain concept registry from the human controlled lexicon: concepts are stable identities; lexical forms are governed, sourced, licensed and approved evidence.
 
 Concept IDs and concept tokens are the authoritative canonical layer. `canonical_text` is deliberately conservative: it preserves an inflected source form when replacing it with a lemma would damage grammar.
 

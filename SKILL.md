@@ -1,6 +1,6 @@
 ---
 name: semantic-normalizer
-version: 0.1.0
+version: 0.2.0
 description: "Normalize English and Portuguese technical text into a reversible concept-based representation for BM25, grep, filters, and hybrid retrieval. Use for ingestion, query normalization, terminology governance, ambiguity review, and retrieval evaluation."
 ---
 
@@ -60,6 +60,26 @@ alternative EN: begin, commence
 alternative PT: começar, dar início
 surface forms: starts, started, inicie, iniciou
 ```
+
+## Controlled lexicon and source policy
+
+Keep two governed artifacts separate:
+
+1. **Concept registry**: stable, language-independent identities and their
+   EN/PT labels. Its scope is the supported domain, not every word in either
+   natural language.
+2. **Controlled lexicon**: accepted human forms, rejected variants, part of
+   speech, sense, examples and the concept ID that each approved form can emit.
+
+Every imported or curated lexical record must retain `source`, `version`,
+`license`, `retrieved_at`, and `sha256`. Imported candidates are **staged**,
+never automatically approved. A source's license applies to its data, not to
+this MIT implementation; do not embed or redistribute a protected vocabulary
+only because it was available for local consultation.
+
+Use ASD-STE100 as a local English technical-writing reference, not as a
+redistributable EN/PT lexicon. Use open resources such as CILI/WordNet and
+OpenWN-PT only through a versioned, attributed import review.
 
 Follow these controls:
 
