@@ -38,7 +38,7 @@ class ControlledLanguageTests(unittest.TestCase):
         )
 
     def test_01_registry_is_valid_and_hashed(self):
-        self.assertEqual(486, len(self.lexicon["records"]))
+        self.assertEqual(517, len(self.lexicon["records"]))
         self.assertEqual(64, len(self.lexicon["hash"]))
         self.assertEqual("2.28.0", self.lexicon["version"])
 
@@ -388,7 +388,7 @@ class ControlledLanguageTests(unittest.TestCase):
         explicit = cl.load_registry(REGISTRY, REGISTRY_SCHEMA)
         self.assertEqual(explicit["hash"], packaged["hash"])
         self.assertEqual(explicit["schema_hash"], packaged["schema_hash"])
-        self.assertEqual(486, len(packaged["records"]))
+        self.assertEqual(517, len(packaged["records"]))
 
     def test_29_invalid_schema_override_fails_closed(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -595,7 +595,7 @@ class ControlledLanguageTests(unittest.TestCase):
                 check=False,
             )
         self.assertEqual(0, result.returncode, result.stderr)
-        self.assertEqual("486 2.28.0 64", result.stdout.strip())
+        self.assertEqual("517 2.28.0 64", result.stdout.strip())
 
     def test_42_canonical_mapping_has_local_and_absolute_offsets(self):
         records = self.normalize("First line.\nRetain the file.")

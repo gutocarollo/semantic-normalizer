@@ -1,0 +1,11 @@
+{
+  "batch": 37,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "A residual draw caught `BD` in `planos de previdência BD` resolving to system.database — a seed-vocabulary software concept from the project's original lexicon, colliding with the pension acronym this corpus uses. The material glosses it itself: `Planos de Previdência de Benefício Definido (BD)`. Both occurrences are the pension plan; neither is a database.",
+  "concepts": [
+    {"id":"entity.defined_benefit_plan","en":"defined benefit plan","pt":"Benefício Definido","class":"entity","pos":"noun",
+     "def":"A pension plan whose payout is fixed by formula, making the sponsor's liability the portfolio's target.",
+     "alt_en":[],"alt_pt":["BD"],
+     "authority":"apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2"}
+  ]
+}

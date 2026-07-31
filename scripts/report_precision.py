@@ -70,6 +70,16 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-r3.json", "seed": 30313373,
+        "registry": "2.28.0",
+        "errors": 1,
+        "found": ["`BD` as Benefício Definido resolving to system.database, seed software "
+                  "vocabulary colliding with a pension acronym — repaired by batch 37 and "
+                  "amendments 51-52"],
+        "state": "after the heading-coverage tail was worked rather than declared: 30 concepts "
+                 "across batches 35-36, coverage 60.62 % -> 76.23 %",
+    },
+    {
         "report": "reports/unread-residual-v2280-r2.json", "seed": 14142136,
         "registry": "2.28.0",
         "errors": 0,
@@ -250,7 +260,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r2.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r3.json",
                         help="the draw taken against the current registry")
     parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "

@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-50",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; heading-coverage tail",
+  "method": "each spelling counted in the corpus before being added",
+  "reason": "Spellings the corpus uses for concepts already registered, found by the same heading sweep. `fundos de investimentos` — the double plural — occurs 29 times against the 27 of the singular-headed form that was registered, and heads 13 sections.",
+  "operations": [
+    {"op":"add_form","concept":"entity.fund","language":"pt-BR","form":"fundos de investimentos",
+     "why":"29 occurrences of the double plural; the registry had `fundo de investimento` and `fundos de investimento` but not this."},
+    {"op":"add_form","concept":"entity.bankers_acceptance","language":"en","form":"Banker's Acceptance",
+     "why":"2 occurrences with the apostrophe, which is how the corpus writes it; the registry had only the unpunctuated spelling."},
+    {"op":"add_form","concept":"technical.fixed_income_portfolio_management","language":"pt-BR",
+     "form":"Estratégias de Gestão de Carteiras de RF",
+     "why":"10 occurrences; `RF` is the corpus's own abbreviation for renda fixa in section headings."}
+  ]
+}

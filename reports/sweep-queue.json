@@ -41,16 +41,16 @@
     },
     {
       "concept_id": "entity.market",
-      "distance_max": 0.9546,
-      "distance_mean": 0.8185,
-      "distance_spread": 0.1143,
+      "distance_max": 0.9534,
+      "distance_mean": 0.8149,
+      "distance_spread": 0.1191,
       "form": "mercado",
       "general_senses": 9,
       "glosses": [
         "o universo da atividade comercial onde bens e serviços são comprados e"
       ],
-      "occurrences": 129,
-      "priority": 6.1658,
+      "occurrences": 123,
+      "priority": 6.2158,
       "read_depth": 5
     },
     {
@@ -112,21 +112,6 @@
       "read_depth": 4
     },
     {
-      "concept_id": "entity.security",
-      "distance_max": 0.9672,
-      "distance_mean": 0.7879,
-      "distance_spread": 0.0963,
-      "form": "títulos",
-      "general_senses": 8,
-      "glosses": [
-        "um direito estabelecido ou reconhecido",
-        "direito concedido por lei ou contrato (especialmente o direito às pres"
-      ],
-      "occurrences": 113,
-      "priority": 5.3347,
-      "read_depth": 4
-    },
-    {
       "concept_id": "entity.share",
       "distance_max": 0.9623,
       "distance_mean": 0.7848,
@@ -140,6 +125,21 @@
       ],
       "occurrences": 73,
       "priority": 5.3212,
+      "read_depth": 4
+    },
+    {
+      "concept_id": "entity.security",
+      "distance_max": 0.9668,
+      "distance_mean": 0.7887,
+      "distance_spread": 0.0955,
+      "form": "títulos",
+      "general_senses": 8,
+      "glosses": [
+        "um direito estabelecido ou reconhecido",
+        "direito concedido por lei ou contrato (especialmente o direito às pres"
+      ],
+      "occurrences": 112,
+      "priority": 5.307,
       "read_depth": 4
     },
     {
@@ -215,9 +215,9 @@
     },
     {
       "concept_id": "quantity.return",
-      "distance_max": 0.9747,
-      "distance_mean": 0.7674,
-      "distance_spread": 0.1248,
+      "distance_max": 0.9745,
+      "distance_mean": 0.765,
+      "distance_spread": 0.1256,
       "form": "retorno",
       "general_senses": 6,
       "glosses": [
@@ -225,8 +225,8 @@
         "receber algo de volta de novo; \"depois que o livro foi retornado ao se",
         "o ato de voltar para um lugar anterior"
       ],
-      "occurrences": 106,
-      "priority": 5.2011,
+      "occurrences": 104,
+      "priority": 5.1956,
       "read_depth": 4
     },
     {
@@ -288,20 +288,6 @@
       ],
       "occurrences": 16,
       "priority": 4.8,
-      "read_depth": 4
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance_max": 0.9242,
-      "distance_mean": 0.7776,
-      "distance_spread": 0.0977,
-      "form": "fundos",
-      "general_senses": 10,
-      "glosses": [
-        "o lado inferior de qualquer coisa"
-      ],
-      "occurrences": 47,
-      "priority": 4.7866,
       "read_depth": 4
     },
     {
@@ -373,7 +359,7 @@
       ],
       "occurrences": 15,
       "priority": 4.4076,
-      "read_depth": 3
+      "read_depth": 4
     },
     {
       "concept_id": "action.sell",
@@ -526,6 +512,20 @@
       "glosses": [],
       "occurrences": 21,
       "priority": 3.863,
+      "read_depth": 3
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance_max": 0.8947,
+      "distance_mean": 0.7803,
+      "distance_spread": 0.0656,
+      "form": "fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 35,
+      "priority": 3.8558,
       "read_depth": 3
     },
     {
@@ -792,32 +792,17 @@
       "read_depth": 3
     },
     {
-      "concept_id": "entity.administration",
-      "distance_max": 0.8325,
-      "distance_mean": 0.6767,
-      "distance_spread": 0.1113,
-      "form": "administração",
-      "general_senses": 6,
-      "glosses": [
-        "o ato de administrar alguma coisa; \"foi-lhe dada a gestão global do pr",
-        "um método de cuidar ou administrar os negócios de um grupo de algumas "
-      ],
-      "occurrences": 22,
-      "priority": 3.318,
-      "read_depth": 3
-    },
-    {
       "concept_id": "entity.market",
-      "distance_max": 0.8119,
-      "distance_mean": 0.6756,
-      "distance_spread": 0.1256,
+      "distance_max": 0.8048,
+      "distance_mean": 0.6574,
+      "distance_spread": 0.1352,
       "form": "mercados",
       "general_senses": 9,
       "glosses": [
         "o universo da atividade comercial onde bens e serviços são comprados e"
       ],
-      "occurrences": 11,
-      "priority": 3.2822,
+      "occurrences": 10,
+      "priority": 3.2772,
       "read_depth": 3
     },
     {
@@ -830,6 +815,21 @@
       "glosses": [],
       "occurrences": 26,
       "priority": 3.2588,
+      "read_depth": 3
+    },
+    {
+      "concept_id": "entity.administration",
+      "distance_max": 0.8292,
+      "distance_mean": 0.6664,
+      "distance_spread": 0.1088,
+      "form": "administração",
+      "general_senses": 6,
+      "glosses": [
+        "o ato de administrar alguma coisa; \"foi-lhe dada a gestão global do pr",
+        "um método de cuidar ou administrar os negócios de um grupo de algumas "
+      ],
+      "occurrences": 21,
+      "priority": 3.2402,
       "read_depth": 3
     },
     {
@@ -862,21 +862,6 @@
       "occurrences": 73,
       "priority": 3.1627,
       "read_depth": 3
-    },
-    {
-      "concept_id": "action.invest",
-      "distance_max": 0.9357,
-      "distance_mean": 0.7714,
-      "distance_spread": 0.1187,
-      "form": "investimentos",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 58,
-      "priority": 3.161,
-      "read_depth": 2
     },
     {
       "concept_id": "actor.buyer",
@@ -1116,6 +1101,21 @@
       ],
       "occurrences": 20,
       "priority": 2.7871,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "action.invest",
+      "distance_max": 0.9152,
+      "distance_mean": 0.7707,
+      "distance_spread": 0.1008,
+      "form": "investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 46,
+      "priority": 2.7859,
       "read_depth": 2
     },
     {
@@ -1657,20 +1657,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.fund",
-      "distance_max": 0.5799,
-      "distance_mean": 0.4853,
-      "distance_spread": 0.0851,
-      "form": "Fundos",
-      "general_senses": 10,
-      "glosses": [
-        "o lado inferior de qualquer coisa"
-      ],
-      "occurrences": 4,
-      "priority": 1.8886,
-      "read_depth": 2
-    },
-    {
       "concept_id": "action.buy",
       "distance_max": 0.6703,
       "distance_mean": 0.3631,
@@ -1692,21 +1678,6 @@
       "glosses": [],
       "occurrences": 3,
       "priority": 1.8654,
-      "read_depth": 2
-    },
-    {
-      "concept_id": "action.invest",
-      "distance_max": 0.5755,
-      "distance_mean": 0.415,
-      "distance_spread": 0.1798,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 6,
-      "priority": 1.8518,
       "read_depth": 2
     },
     {
@@ -1796,6 +1767,21 @@
       "glosses": [],
       "occurrences": 8,
       "priority": 1.7712,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "action.invest",
+      "distance_max": 0.5111,
+      "distance_mean": 0.3528,
+      "distance_spread": 0.1908,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 5,
+      "priority": 1.762,
       "read_depth": 2
     },
     {
@@ -1991,6 +1977,20 @@
       "glosses": [],
       "occurrences": 8,
       "priority": 1.4926,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance_max": 0.4612,
+      "distance_mean": 0.4052,
+      "distance_spread": 0.0576,
+      "form": "Fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 3,
+      "priority": 1.4363,
       "read_depth": 2
     },
     {
@@ -3286,21 +3286,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.administration",
-      "distance_max": -0.0,
-      "distance_mean": 0.0,
-      "distance_spread": 0.0,
-      "form": "ADMINISTRAÇÃO",
-      "general_senses": 6,
-      "glosses": [
-        "o ato de administrar alguma coisa; \"foi-lhe dada a gestão global do pr",
-        "um método de cuidar ou administrar os negócios de um grupo de algumas "
-      ],
-      "occurrences": 1,
-      "priority": 0.4211,
-      "read_depth": 2
-    },
-    {
       "concept_id": "action.identify",
       "distance_max": 0.0,
       "distance_mean": 0.0,
@@ -3620,13 +3605,13 @@
       "read_depth": 2
     }
   ],
-  "forms_in_queue": 260,
-  "occurrences_to_read": 611,
+  "forms_in_queue": 259,
+  "occurrences_to_read": 609,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0431,
-    "median": 1.7659,
-    "stdev": 1.5685
+    "mean": 2.0419,
+    "median": 1.7606,
+    "stdev": 1.5627
   },
   "reading_list": [
     {
@@ -3736,35 +3721,35 @@
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.9546,
+      "distance": 0.9534,
       "form": "mercado",
       "general_senses": 9,
       "quote": "s com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.948,
-      "form": "mercado",
-      "general_senses": 9,
-      "quote": " diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado."
-    },
-    {
-      "concept_id": "entity.market",
-      "distance": 0.9466,
-      "form": "mercado",
-      "general_senses": 9,
-      "quote": "onhecimento internacional, lançados em uma moeda diferente daquela do país ou mercado em que são emitidos normalmente."
-    },
-    {
-      "concept_id": "entity.market",
-      "distance": 0.946,
+      "distance": 0.9486,
       "form": "mercado",
       "general_senses": 9,
       "quote": "m majorados para até 40%, preservado o requisito de existência de formador de mercado para as cotas que excederem ao limite ordinário."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.946,
+      "distance": 0.9467,
+      "form": "mercado",
+      "general_senses": 9,
+      "quote": " diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado."
+    },
+    {
+      "concept_id": "entity.market",
+      "distance": 0.9452,
+      "form": "mercado",
+      "general_senses": 9,
+      "quote": "onhecimento internacional, lançados em uma moeda diferente daquela do país ou mercado em que são emitidos normalmente."
+    },
+    {
+      "concept_id": "entity.market",
+      "distance": 0.9446,
       "form": "mercado",
       "general_senses": 9,
       "quote": "- Beta MAIOR que 1: oscilará com mais intensidade que o mercado."
@@ -3889,34 +3874,6 @@
       "quote": "- Oferecem diversificação por investir em várias empresas; e - Geralmente têm taxas de administração baixas"
     },
     {
-      "concept_id": "entity.security",
-      "distance": 0.9672,
-      "form": "títulos",
-      "general_senses": 8,
-      "quote": "Além disso, tais títulos devem ser custodiados em entidades habilitadas a prestar esse"
-    },
-    {
-      "concept_id": "entity.security",
-      "distance": 0.9522,
-      "form": "títulos",
-      "general_senses": 8,
-      "quote": "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos."
-    },
-    {
-      "concept_id": "entity.security",
-      "distance": 0.9509,
-      "form": "títulos",
-      "general_senses": 8,
-      "quote": "SOLUÇÃO: Primeiramente, devemos saber que as debêntures são títulos que são emitidas por R$ 1.000,00."
-    },
-    {
-      "concept_id": "entity.security",
-      "distance": 0.945,
-      "form": "títulos",
-      "general_senses": 8,
-      "quote": ", geralmente são repassados para o vendedor repo, já que o comprador detém os títulos como colateral (garantia)."
-    },
-    {
       "concept_id": "entity.share",
       "distance": 0.9623,
       "form": "ações",
@@ -3943,6 +3900,34 @@
       "form": "ações",
       "general_senses": 9,
       "quote": "Estas ações possuem maior volatilidade e maior potencial de ganho que as "
+    },
+    {
+      "concept_id": "entity.security",
+      "distance": 0.9668,
+      "form": "títulos",
+      "general_senses": 8,
+      "quote": "Além disso, tais títulos devem ser custodiados em entidades habilitadas a prestar esse"
+    },
+    {
+      "concept_id": "entity.security",
+      "distance": 0.9515,
+      "form": "títulos",
+      "general_senses": 8,
+      "quote": "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos."
+    },
+    {
+      "concept_id": "entity.security",
+      "distance": 0.9502,
+      "form": "títulos",
+      "general_senses": 8,
+      "quote": "SOLUÇÃO: Primeiramente, devemos saber que as debêntures são títulos que são emitidas por R$ 1.000,00."
+    },
+    {
+      "concept_id": "entity.security",
+      "distance": 0.9443,
+      "form": "títulos",
+      "general_senses": 8,
+      "quote": ", geralmente são repassados para o vendedor repo, já que o comprador detém os títulos como colateral (garantia)."
     },
     {
       "concept_id": "entity.portfolio",
@@ -4086,28 +4071,28 @@
     },
     {
       "concept_id": "quantity.return",
-      "distance": 0.9747,
+      "distance": 0.9745,
       "form": "retorno",
       "general_senses": 6,
       "quote": "c) pré ou pós fixada pelo retorno de uma ação."
     },
     {
       "concept_id": "quantity.return",
-      "distance": 0.9558,
+      "distance": 0.9554,
       "form": "retorno",
       "general_senses": 6,
       "quote": "Supondo alíquota de imposto de 20%, o retorno equivalente seria de:"
     },
     {
       "concept_id": "quantity.return",
-      "distance": 0.9548,
+      "distance": 0.9544,
       "form": "retorno",
       "general_senses": 6,
       "quote": "Os gestores devem assumir os riscos necessários para gerar retorno."
     },
     {
       "concept_id": "quantity.return",
-      "distance": 0.9543,
+      "distance": 0.9539,
       "form": "retorno",
       "general_senses": 6,
       "quote": "ário, a empresa tenha seu rating melhorado, os investidores novos exigirão um retorno menor para investir nos mesmos tipos de dívidas."
@@ -4223,34 +4208,6 @@
       "form": "posições",
       "general_senses": 25,
       "quote": "- Necessidade de Monitoramento: as posições de hedge precisam ser monitoradas constantemente para avaliar"
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance": 0.9242,
-      "form": "fundos",
-      "general_senses": 10,
-      "quote": "Estes fundos possuem dificuldades de replicação dos seus benchmarks por qu"
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance": 0.9015,
-      "form": "fundos",
-      "general_senses": 10,
-      "quote": "Os fundos funcionam sob a autorização da CVM, órgão responsável por sua"
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance": 0.8892,
-      "form": "fundos",
-      "general_senses": 10,
-      "quote": "É bastante usado por instituições financeiras e por fundos de pensão."
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance": 0.883,
-      "form": "fundos",
-      "general_senses": 10,
-      "quote": "Com isso, esses fundos devem registrar menos volatilidade que as estratégias long on"
     },
     {
       "concept_id": "temporal.term",
@@ -4384,6 +4341,13 @@
       "form": "Risco",
       "general_senses": 7,
       "quote": "O Risco de Volatilidade está associado a uma mudança de preço de uma "
+    },
+    {
+      "concept_id": "risk.financial",
+      "distance": 0.8165,
+      "form": "Risco",
+      "general_senses": 7,
+      "quote": "Risco de Inflação genericamente se refere a situações em que os pre"
     },
     {
       "concept_id": "action.sell",
@@ -4615,6 +4579,27 @@
       "form": "resgate",
       "general_senses": 3,
       "quote": "Todos os pedidos de resgate que estejam pendentes de conversão quando do fechamento para "
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance": 0.8947,
+      "form": "fundos",
+      "general_senses": 10,
+      "quote": "Estes fundos possuem dificuldades de replicação dos seus benchmarks por qu"
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance": 0.8784,
+      "form": "fundos",
+      "general_senses": 10,
+      "quote": "Os fundos funcionam sob a autorização da CVM, órgão responsável por sua"
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance": 0.87,
+      "form": "fundos",
+      "general_senses": 10,
+      "quote": "Com isso, esses fundos devem registrar menos volatilidade que as estratégias long on"
     },
     {
       "concept_id": "entity.currency",
@@ -5016,43 +5001,22 @@
       "quote": "Assim, o Yield Spread é calculado deduzindo o rendimento de um instrumento do outro."
     },
     {
-      "concept_id": "entity.administration",
-      "distance": 0.8325,
-      "form": "administração",
-      "general_senses": 6,
-      "quote": "A administração fiduciária compreende o conjunto de serviços relacionados dir"
-    },
-    {
-      "concept_id": "entity.administration",
-      "distance": 0.8314,
-      "form": "administração",
-      "general_senses": 6,
-      "quote": "A alta administração aprova um risco total de 17% e um VaR de R$ 5.000.000."
-    },
-    {
-      "concept_id": "entity.administration",
-      "distance": 0.8065,
-      "form": "administração",
-      "general_senses": 6,
-      "quote": "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fu"
-    },
-    {
       "concept_id": "entity.market",
-      "distance": 0.8119,
+      "distance": 0.8048,
       "form": "mercados",
       "general_senses": 9,
       "quote": "Ambos os mercados têm vantagens e desvantagens."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.7896,
+      "distance": 0.7818,
       "form": "mercados",
       "general_senses": 9,
       "quote": "parte central garantidora para a maior parte das operações realizadas em seus mercados."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.7696,
+      "distance": 0.761,
       "form": "mercados",
       "general_senses": 9,
       "quote": "idores contrários, por fazerem apostas algumas vezes em sentido oposto ao dos mercados."
@@ -5077,6 +5041,27 @@
       "form": "resultado",
       "general_senses": 8,
       "quote": "Isso porque as taxas nominais são resultado das taxas reais mais a inflação."
+    },
+    {
+      "concept_id": "entity.administration",
+      "distance": 0.8292,
+      "form": "administração",
+      "general_senses": 6,
+      "quote": "A alta administração aprova um risco total de 17% e um VaR de R$ 5.000.000."
+    },
+    {
+      "concept_id": "entity.administration",
+      "distance": 0.8039,
+      "form": "administração",
+      "general_senses": 6,
+      "quote": "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fu"
+    },
+    {
+      "concept_id": "entity.administration",
+      "distance": 0.7899,
+      "form": "administração",
+      "general_senses": 6,
+      "quote": "A alta administração de uma asset management decide que irá alocar sua carteira, a"
     },
     {
       "concept_id": "technical.short_position",
@@ -5119,20 +5104,6 @@
       "form": "investimento",
       "general_senses": 3,
       "quote": "que não necessariamente tais benchmarks refletem a natureza e a finalidade do investimento, o que deve levar a uma conclusão equivocada."
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.9357,
-      "form": "investimentos",
-      "general_senses": 3,
-      "quote": "Tais investimentos não estão sujeitos a limites de concentração por emissor, des"
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.9276,
-      "form": "investimentos",
-      "general_senses": 3,
-      "quote": "ndações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada."
     },
     {
       "concept_id": "actor.buyer",
@@ -5371,6 +5342,20 @@
       "form": "instituições",
       "general_senses": 4,
       "quote": "As instituições participantes responsáveis pelo apreçamento dos ativos dos ve"
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.9152,
+      "form": "investimentos",
+      "general_senses": 3,
+      "quote": "Tais investimentos não estão sujeitos a limites de concentração por emissor, des"
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.9045,
+      "form": "investimentos",
+      "general_senses": 3,
+      "quote": "ndações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada."
     },
     {
       "concept_id": "entity.strategy",
@@ -5933,20 +5918,6 @@
       "quote": "Dentre as principais características, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das empr"
     },
     {
-      "concept_id": "entity.fund",
-      "distance": 0.5799,
-      "form": "Fundos",
-      "general_senses": 10,
-      "quote": "ilizado para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
-    },
-    {
-      "concept_id": "entity.fund",
-      "distance": 0.5544,
-      "form": "Fundos",
-      "general_senses": 10,
-      "quote": "do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF."
-    },
-    {
       "concept_id": "action.buy",
       "distance": 0.6703,
       "form": "COMPRA",
@@ -5973,20 +5944,6 @@
       "form": "identificação",
       "general_senses": 5,
       "quote": "dens de compra e venda de ativos devem sempre ser expedidas pelo gestor com a identificação precisa do fundo e, se for o caso, da classe de cotas em nome"
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.5755,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "quote": "ue seja definido quais serão as classes de ativos aceitas no IPS (Política de Investimentos)."
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.5755,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "quote": "O gestor aloca os ativos da carteira de acordo com a Política de Investimentos (IPS) e depois não altera mais."
     },
     {
       "concept_id": "temporal.term",
@@ -6085,6 +6042,20 @@
       "form": "fator",
       "general_senses": 3,
       "quote": "ue envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico."
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.5111,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "quote": "ue seja definido quais serão as classes de ativos aceitas no IPS (Política de Investimentos)."
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.5111,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "quote": "O gestor aloca os ativos da carteira de acordo com a Política de Investimentos (IPS) e depois não altera mais."
     },
     {
       "concept_id": "actor.institution",
@@ -6281,6 +6252,20 @@
       "form": "impactos",
       "general_senses": 3,
       "quote": "O grande objetivo é neutralizar os impactos opostos dessas duas partes."
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance": 0.4612,
+      "form": "Fundos",
+      "general_senses": 10,
+      "quote": "ilizado para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
+    },
+    {
+      "concept_id": "entity.fund",
+      "distance": 0.4285,
+      "form": "Fundos",
+      "general_senses": 10,
+      "quote": "do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF."
     },
     {
       "concept_id": "action.verify",
@@ -7298,13 +7283,6 @@
       "quote": "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das posi"
     },
     {
-      "concept_id": "entity.administration",
-      "distance": -0.0,
-      "form": "ADMINISTRAÇÃO",
-      "general_senses": 6,
-      "quote": "Neste capítulo, as principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou ind"
-    },
-    {
       "concept_id": "action.identify",
       "distance": 0.0,
       "form": "Identificação",
@@ -7474,10 +7452,10 @@
     }
   ],
   "registry": {
-    "concepts": 486,
+    "concepts": 516,
     "version": "2.28.0"
   },
   "risk_surface_events": 4395,
   "schema_version": "sweep-queue-v1",
-  "share_of_risk_surface_read": 0.139
+  "share_of_risk_surface_read": 0.1386
 }

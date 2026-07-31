@@ -69,6 +69,22 @@
       ]
     },
     {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
+        "`BD` as Benefício Definido resolving to system.database, seed software vocabulary colliding with a pension acronym — repaired by batch 37 and amendments 51-52"
+      ],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-r3.json",
+      "sample_size": 240,
+      "seed": 30313373,
+      "state": "after the heading-coverage tail was worked rather than declared: 30 concepts across batches 35-36, coverage 60.62 % -> 76.23 %",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
       "error_rate": 0.0,
       "errors": 0,
       "found": [],
@@ -357,48 +373,48 @@
       ]
     }
   ],
-  "concepts": 486,
-  "errors_repaired_total": 19,
-  "events_total": 7827,
+  "concepts": 516,
+  "errors_repaired_total": 20,
+  "events_total": 7820,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.987,
-    "point": 1.0,
-    "upper_bound_95": 1.0
+    "lower_bound_95": 0.9808,
+    "point": 0.9965,
+    "upper_bound_95": 0.9994
   },
   "registry_version": "2.28.0",
   "residual": {
-    "error_rate_point": 0.0,
+    "error_rate_point": 0.0042,
     "error_rate_wilson_95": [
-      0.0,
-      0.0158
+      0.0007,
+      0.0232
     ],
-    "errors_adjudicated": 0,
-    "events": 6480,
+    "errors_adjudicated": 1,
+    "events": 6478,
     "sample_size": 240,
-    "share": 0.8279
+    "share": 0.8284
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2280-r2.json"
+    "reports/unread-residual-v2280-r3.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 1347,
+    "events": 1342,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1721
+    "share": 0.1716
   },
   "what_this_sample_cannot_detect": {
     "error_rate_they_imply": 0.000309,
-    "error_rate_this_draw_rules_out": 0.015754,
+    "error_rate_this_draw_rules_out": 0.023221,
     "known_declared_residuals": 2,
     "probability_all_of_them_are_missed": 0.9273,
-    "reading": "0 error(s) found in 240 is consistent with the residuals known to remain: they imply a rate well below what a sample of this size can resolve, so a draw that happens to miss them is expected rather than suspicious. The claim is the Wilson upper bound, not the point estimate — this draw rules out error rates above the figure named here, and says nothing about rates beneath it.",
+    "reading": "1 error(s) found in 240 is consistent with the residuals known to remain: they imply a rate well below what a sample of this size can resolve, so a draw that happens to miss them is expected rather than suspicious. The claim is the Wilson upper bound, not the point estimate — this draw rules out error rates above the figure named here, and says nothing about rates beneath it.",
     "residuals": [
       "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the form's 7 occurrences, the other 6 being plain long positions",
       "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of risk types with the head `risco` elided — 1 of the form's occurrences"
     ],
-    "sample_size_for_even_odds_of_catching_one": 1898
+    "sample_size_for_even_odds_of_catching_one": 1897
   }
 }

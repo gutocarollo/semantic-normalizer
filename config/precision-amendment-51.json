@@ -1,0 +1,11 @@
+{
+  "id": "precision-sweep-amendment-51",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2; residual draw seed 30313373",
+  "method": "both corpus occurrences of the acronym read",
+  "reason": "`system.database` is seed vocabulary from the project's original software lexicon and its Portuguese acronym `BD` means database. In a CGA corpus `BD` is Benefício Definido, and both occurrences are that — one of them glossed by the material in the same sentence. The concept has no business claiming the surface here; batch 37 registers the pension plan and this removes the software concept's claim, then restores the new concept's policy after the collision demoter.",
+  "operations": [
+    {"op":"remove_form","concept":"system.database","language":"pt-BR","form":"BD","wrong":2,"total":2,
+     "why":"Both occurrences are `planos de previdência BD` / `Benefício Definido (BD)`. Neither is a database."}
+  ]
+}

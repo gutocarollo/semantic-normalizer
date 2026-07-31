@@ -1,12 +1,12 @@
 {
   "by_status": {
-    "covered": 152,
-    "partial": 185,
-    "uncovered": 16
+    "covered": 200,
+    "partial": 146,
+    "uncovered": 7
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.4306,
-  "covered_share_of_mass": 0.6062,
+  "covered_share_of_distinct": 0.5666,
+  "covered_share_of_mass": 0.7623,
   "distinct_headings": 353,
   "heading_occurrences": 833,
   "headings": [
@@ -17,28 +17,6 @@
       "occurrences": 22,
       "partial_matches": [
         "Administração de Recursos de Terceiros"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Fundos de Investimentos",
-      "occurrences": 13,
-      "partial_matches": [
-        "Fundos",
-        "Investimentos"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Estratégias de Gestão de Carteiras de RF",
-      "occurrences": 10,
-      "partial_matches": [
-        "Estratégias",
-        "Gestão de Carteiras"
       ],
       "status": "partial"
     },
@@ -55,114 +33,11 @@
     },
     {
       "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Fundamentos da Gestão de Riscos",
-      "occurrences": 8,
-      "partial_matches": [
-        "Gestão de Riscos"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Tipos de Benchmarks",
-      "occurrences": 7,
-      "partial_matches": [
-        "Benchmarks"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "Outras Estratégias Ativas e Agnósticas",
-      "occurrences": 6,
-      "partial_matches": [
-        "Estratégias Ativas"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Documentos & Informações",
-      "occurrences": 6,
-      "partial_matches": [
-        "Informações"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Estratégias de curvas de juros",
-      "occurrences": 5,
-      "partial_matches": [
-        "Estratégias",
-        "juros"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
-      "heading": "Títulos Americanos de Renda Fixa",
-      "occurrences": 4,
-      "partial_matches": [
-        "Títulos Americanos",
-        "Renda Fixa"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Limites de Concentração - Deveres",
-      "occurrences": 4,
-      "partial_matches": [
-        "Limites de Concentração"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
-      "heading": "Bolsa de Valores Internacionais",
-      "occurrences": 3,
-      "partial_matches": [
-        "Bolsa de Valores"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Fechamento do Fundo para Resgates",
-      "occurrences": 3,
-      "partial_matches": [
-        "Fundo"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Disposições Gerais & Fatos Relevantes",
       "occurrences": 3,
       "partial_matches": [
         "Fatos Relevantes"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Gestão de Risco em Instituições",
-      "occurrences": 3,
-      "partial_matches": [
-        "Gestão de Risco",
-        "Instituições"
       ],
       "status": "partial"
     },
@@ -192,117 +67,13 @@
     },
     {
       "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Riscos ASG e Risco de Crédito",
-      "occurrences": 3,
-      "partial_matches": [
-        "Riscos",
-        "ASG",
-        "Risco de Crédito"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "TIR – Taxa Interna de Retorno",
-      "occurrences": 3,
-      "partial_matches": [
-        "TIR",
-        "Taxa Interna de Retorno"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Precificação de títulos de Renda Fixa",
-      "occurrences": 3,
-      "partial_matches": [
-        "Precificação",
-        "títulos",
-        "Renda Fixa"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Comportamento esperado da curva de juros",
-      "occurrences": 3,
-      "partial_matches": [
-        "curva de juros"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "02-gestao-de-carteiras-renda-variavel",
-      "heading": "Gestão de Carteiras Renda Variável",
-      "occurrences": 2,
-      "partial_matches": [
-        "Gestão de Carteiras",
-        "Renda Variável"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "ISE - Metodologia",
-      "occurrences": 2,
-      "partial_matches": [
-        "ISE"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "1) Indicadores de Tendência (continuação)",
-      "occurrences": 2,
-      "partial_matches": [
-        "Indicadores de Tendência"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "2) Indicadores de Reversão",
-      "occurrences": 2,
-      "partial_matches": [
-        "Indicadores de Reversão"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Distribuição – Regime Fechado",
-      "occurrences": 2,
-      "partial_matches": [
-        "Distribuição"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Negociação em Mercados Organizados",
       "occurrences": 2,
       "partial_matches": [
-        "Mercados"
+        "Mercados Organizados"
       ],
       "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Limites e Concentração",
-      "occurrences": 2,
-      "partial_matches": [],
-      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -311,16 +82,6 @@
       "occurrences": 2,
       "partial_matches": [],
       "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Ativos Financeiros no Brasil",
-      "occurrences": 2,
-      "partial_matches": [
-        "Ativos Financeiros"
-      ],
-      "status": "partial"
     },
     {
       "covered_by": null,
@@ -351,37 +112,6 @@
       "partial_matches": [
         "Time-Weighted",
         "Cálculo"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Avaliação de Desempenho ajustada ao risco",
-      "occurrences": 2,
-      "partial_matches": [
-        "Avaliação de Desempenho",
-        "risco"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Alfa de Jensen",
-      "occurrences": 2,
-      "partial_matches": [
-        "Alfa"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Duration de Macaulay - Passo a Passo",
-      "occurrences": 2,
-      "partial_matches": [
-        "Duration de Macaulay"
       ],
       "status": "partial"
     },
@@ -419,50 +149,11 @@
     },
     {
       "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Fontes de Retorno",
-      "occurrences": 2,
-      "partial_matches": [
-        "Retorno"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "10-alocacao-de-ativos-e-rebalanceamento",
-      "heading": "Rebalanceamento de Carteiras",
-      "occurrences": 2,
-      "partial_matches": [
-        "Rebalanceamento",
-        "Carteiras"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "Regular e Percentual",
       "occurrences": 2,
       "partial_matches": [
         "Percentual"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Objetivo e Abrangência (Cap. I)",
-      "occurrences": 2,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Administração Fiduciária (Cap. IV)",
-      "occurrences": 2,
-      "partial_matches": [
-        "Administração"
       ],
       "status": "partial"
     },
@@ -511,14 +202,6 @@
       "covered_by": null,
       "file": "01-investimentos-no-exterior",
       "heading": "CDs – Certificate of Deposits",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
-      "heading": "Banker's Acceptance",
       "occurrences": 1,
       "partial_matches": [],
       "status": "uncovered"
@@ -632,28 +315,6 @@
     {
       "covered_by": null,
       "file": "02-gestao-de-carteiras-renda-variavel",
-      "heading": "Gestão de Carteiras - Renda Variável",
-      "occurrences": 1,
-      "partial_matches": [
-        "Gestão de Carteiras",
-        "Renda Variável"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "02-gestao-de-carteiras-renda-variavel",
-      "heading": "Fundo de Ações - Passivo",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundo de Ações",
-        "Passivo"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "02-gestao-de-carteiras-renda-variavel",
       "heading": "Formação de Preço",
       "occurrences": 1,
       "partial_matches": [
@@ -700,41 +361,6 @@
       "occurrences": 1,
       "partial_matches": [
         "DI Futuro"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "02-gestao-de-carteiras-renda-variavel",
-      "heading": "ETF – Fundos de Índice de Mercado",
-      "occurrences": 1,
-      "partial_matches": [
-        "ETF",
-        "Fundos",
-        "Índice",
-        "Mercado"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "02-gestao-de-carteiras-renda-variavel",
-      "heading": "ETF – ASG",
-      "occurrences": 1,
-      "partial_matches": [
-        "ETF",
-        "ASG"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "Gestão de Carteiras - Renda Variável 2",
-      "occurrences": 1,
-      "partial_matches": [
-        "Gestão de Carteiras",
-        "Renda Variável"
       ],
       "status": "partial"
     },
@@ -793,52 +419,12 @@
     },
     {
       "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "1) Indicadores de Tendência",
-      "occurrences": 1,
-      "partial_matches": [
-        "Indicadores de Tendência"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "3) Indicadores de Volume",
-      "occurrences": 1,
-      "partial_matches": [
-        "Indicadores de Volume"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "Relatório de Terceiros",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Resolução CVM 175 - Fundos de Investimento",
-      "occurrences": 1,
-      "partial_matches": [
-        "Resolução CVM 175",
-        "Fundos de Investimento"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Resolução CVM 175 (parte geral) Fundos de Investimentos",
       "occurrences": 1,
       "partial_matches": [
         "Resolução CVM 175",
-        "Fundos",
-        "Investimentos"
+        "Fundos de Investimentos"
       ],
       "status": "partial"
     },
@@ -888,16 +474,6 @@
       "occurrences": 1,
       "partial_matches": [
         "CVM"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Distribuição – Regime Aberto",
-      "occurrences": 1,
-      "partial_matches": [
-        "Distribuição"
       ],
       "status": "partial"
     },
@@ -984,14 +560,6 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Convocação e Deliberações",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Administrador Fiduciário: Conceito",
       "occurrences": 1,
       "partial_matches": [
@@ -1072,28 +640,12 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Normas de Conduta",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Classes Restritas & Exclusivas",
       "occurrences": 1,
       "partial_matches": [
         "Classes Restritas"
       ],
       "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Classes Previdenciárias",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -1154,8 +706,7 @@
       "heading": "Tributação de Fundos de Investimentos",
       "occurrences": 1,
       "partial_matches": [
-        "Fundos",
-        "Investimentos"
+        "Fundos de Investimentos"
       ],
       "status": "partial"
     },
@@ -1916,26 +1467,6 @@
     },
     {
       "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Butterfly Positiva",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "10-alocacao-de-ativos-e-rebalanceamento",
-      "heading": "Alocação de Ativos e Rebalanceamento de Carteiras",
-      "occurrences": 1,
-      "partial_matches": [
-        "Alocação de Ativos",
-        "Rebalanceamento",
-        "Carteiras"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "Macro e Micro-Alocação",
       "occurrences": 1,
@@ -2013,17 +1544,6 @@
     {
       "covered_by": null,
       "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Código ANBIMA - Administração e Gestão de Recursos de Terceiros",
-      "occurrences": 1,
-      "partial_matches": [
-        "ANBIMA",
-        "Administração e Gestão de Recursos de Terceiros"
-      ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
       "heading": "Código ANBIMA: Administração e Gestão de Recursos de Terceiros",
       "occurrences": 1,
       "partial_matches": [
@@ -2061,14 +1581,6 @@
         "Patrimônio"
       ],
       "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Contratação de Terceiros (Cap. VII)",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -2115,6 +1627,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.fund",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Fundos de Investimentos",
+      "occurrences": 13,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.foreign_financial_asset",
       "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Ativos Financeiros no Exterior",
@@ -2147,6 +1667,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.fixed_income_portfolio_management",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Estratégias de Gestão de Carteiras de RF",
+      "occurrences": 10,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.private_security",
       "file": "01-investimentos-no-exterior",
       "heading": "Títulos Privados",
@@ -2166,6 +1694,14 @@
       "covered_by": "technical.performance_fee",
       "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Taxa de Performance",
+      "occurrences": 8,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.risk_management_fundamentals",
+      "file": "06-gestao-de-riscos",
+      "heading": "Fundamentos da Gestão de Riscos",
       "occurrences": 8,
       "partial_matches": [],
       "status": "covered"
@@ -2211,6 +1747,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.benchmark_type",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Tipos de Benchmarks",
+      "occurrences": 7,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.asset_pricing",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Precificação de Ativos",
@@ -2222,6 +1766,22 @@
       "covered_by": "technical.socially_responsible_investment",
       "file": "03-gestao-de-carteiras-renda-variavel-2",
       "heading": "Investimentos Socialmente Responsáveis",
+      "occurrences": 6,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.agnostic_strategy",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "Outras Estratégias Ativas e Agnósticas",
+      "occurrences": 6,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "artifact.fund_documents+entity.information",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Documentos & Informações",
       "occurrences": 6,
       "partial_matches": [],
       "status": "covered"
@@ -2299,10 +1859,26 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.yield_curve_strategy",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Estratégias de curvas de juros",
+      "occurrences": 5,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.asset_allocation",
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "Métodos de Alocação de Ativos",
       "occurrences": 5,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.us_fixed_income_security",
+      "file": "01-investimentos-no-exterior",
+      "heading": "Títulos Americanos de Renda Fixa",
+      "occurrences": 4,
       "partial_matches": [],
       "status": "covered"
     },
@@ -2366,6 +1942,14 @@
       "covered_by": "entity.fund_charges",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Encargos",
+      "occurrences": 4,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.concentration_limit",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Limites de Concentração - Deveres",
       "occurrences": 4,
       "partial_matches": [],
       "status": "covered"
@@ -2435,6 +2019,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.international_exchange",
+      "file": "01-investimentos-no-exterior",
+      "heading": "Bolsa de Valores Internacionais",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.total_return_equity_swap",
       "file": "02-gestao-de-carteiras-renda-variavel",
       "heading": "Total Return Equity Swap",
@@ -2451,9 +2043,25 @@
       "status": "covered"
     },
     {
+      "covered_by": "action.close_for_redemption",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Fechamento do Fundo para Resgates",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.limited_liability",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Limitação de Responsabilidade",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.institutional_risk_management",
+      "file": "06-gestao-de-riscos",
+      "heading": "Gestão de Risco em Instituições",
       "occurrences": 3,
       "partial_matches": [],
       "status": "covered"
@@ -2483,9 +2091,41 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.esg_risk+risk.credit",
+      "file": "06-gestao-de-riscos",
+      "heading": "Riscos ASG e Risco de Crédito",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.performance_appraisal",
       "file": "07-avaliacao-de-desempenho",
       "heading": "Avaliação de Desempenho",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.irr",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "TIR – Taxa Interna de Retorno",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.fixed_income_pricing",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Precificação de títulos de Renda Fixa",
+      "occurrences": 3,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.expected_curve_behaviour",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Comportamento esperado da curva de juros",
       "occurrences": 3,
       "partial_matches": [],
       "status": "covered"
@@ -2539,6 +2179,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.equity_portfolio_management",
+      "file": "02-gestao-de-carteiras-renda-variavel",
+      "heading": "Gestão de Carteiras Renda Variável",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.passive_strategy",
       "file": "02-gestao-de-carteiras-renda-variavel",
       "heading": "Estratégias Passivas",
@@ -2555,6 +2203,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.corporate_sustainability_index",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "ISE - Metodologia",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.fundamental_law_active_management",
       "file": "03-gestao-de-carteiras-renda-variavel-2",
       "heading": "Fundamental Law of Active Management",
@@ -2563,9 +2219,33 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.trend_indicator",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "1) Indicadores de Tendência (continuação)",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.reversal_indicator",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "2) Indicadores de Reversão",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.top_down+technical.bottom_up",
       "file": "03-gestao-de-carteiras-renda-variavel-2",
       "heading": "Top-Down & Bottom-Up",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.distribution",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Distribuição – Regime Fechado",
       "occurrences": 2,
       "partial_matches": [],
       "status": "covered"
@@ -2611,6 +2291,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.concentration_and_limits",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Limites e Concentração",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.liquidity_management",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Gestão de Liquidez",
@@ -2622,6 +2310,14 @@
       "covered_by": "state.insolvency",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Insolvência",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.domestic_financial_asset",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Ativos Financeiros no Brasil",
       "occurrences": 2,
       "partial_matches": [],
       "status": "covered"
@@ -2707,6 +2403,22 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.risk_adjusted_appraisal",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Avaliação de Desempenho ajustada ao risco",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.jensen_alpha",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Alfa de Jensen",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.sharpe_ratio",
       "file": "07-avaliacao-de-desempenho",
       "heading": "Índice de Sharpe",
@@ -2731,6 +2443,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.macaulay_duration",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Duration de Macaulay - Passo a Passo",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.modified_duration",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Duration Modificada",
@@ -2742,6 +2462,38 @@
       "covered_by": "technical.effective_duration",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Effective Duration",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.return_source",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Fontes de Retorno",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "action.rebalance_portfolio",
+      "file": "10-alocacao-de-ativos-e-rebalanceamento",
+      "heading": "Rebalanceamento de Carteiras",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.scope_and_purpose",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Objetivo e Abrangência (Cap. I)",
+      "occurrences": 2,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.fiduciary_administration",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Administração Fiduciária (Cap. IV)",
       "occurrences": 2,
       "partial_matches": [],
       "status": "covered"
@@ -2774,6 +2526,14 @@
       "covered_by": "entity.municipal_bond",
       "file": "01-investimentos-no-exterior",
       "heading": "Municipal Bonds",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.bankers_acceptance",
+      "file": "01-investimentos-no-exterior",
+      "heading": "Banker's Acceptance",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -2843,6 +2603,22 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.equity_portfolio_management",
+      "file": "02-gestao-de-carteiras-renda-variavel",
+      "heading": "Gestão de Carteiras - Renda Variável",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.equity_fund",
+      "file": "02-gestao-de-carteiras-renda-variavel",
+      "heading": "Fundo de Ações - Passivo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.equity_fund",
       "file": "02-gestao-de-carteiras-renda-variavel",
       "heading": "Fundo de Ações",
@@ -2854,6 +2630,30 @@
       "covered_by": "entity.di_future",
       "file": "02-gestao-de-carteiras-renda-variavel",
       "heading": "DI Futuro",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.etf",
+      "file": "02-gestao-de-carteiras-renda-variavel",
+      "heading": "ETF – Fundos de Índice de Mercado",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.etf",
+      "file": "02-gestao-de-carteiras-renda-variavel",
+      "heading": "ETF – ASG",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "action.manage_portfolio",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "Gestão de Carteiras - Renda Variável 2",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -2875,6 +2675,38 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.trend_indicator",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "1) Indicadores de Tendência",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.volume_indicator",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "3) Indicadores de Volume",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "artifact.third_party_report",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "Relatório de Terceiros",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "artifact.cvm_resolution_175",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Resolução CVM 175 - Fundos de Investimento",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.distribution",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Distribuição",
@@ -2883,9 +2715,25 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.distribution",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Distribuição – Regime Aberto",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.side_pocket",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Side Pocket",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "action.convene_meeting",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Convocação e Deliberações",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -2910,6 +2758,22 @@
       "covered_by": "actor.administrator+actor.portfolio_manager",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Administrador e Gestor",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "artifact.conduct_rules",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Normas de Conduta",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.pension_class",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Classes Previdenciárias",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -3163,6 +3027,14 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.positive_butterfly",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Butterfly Positiva",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.steepening",
       "file": "09-gestao-de-carteiras-de-renda-fixa-2",
       "heading": "Bull Steepening",
@@ -3190,6 +3062,14 @@
       "covered_by": "technical.flattening",
       "file": "09-gestao-de-carteiras-de-renda-fixa-2",
       "heading": "Bear Flattening",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.asset_allocation+action.rebalance_portfolio",
+      "file": "10-alocacao-de-ativos-e-rebalanceamento",
+      "heading": "Alocação de Ativos e Rebalanceamento de Carteiras",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -3246,6 +3126,22 @@
       "covered_by": "technical.cppi",
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "CPPI",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "artifact.anbima_third_party_code",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Código ANBIMA - Administração e Gestão de Recursos de Terceiros",
+      "occurrences": 1,
+      "partial_matches": [],
+      "status": "covered"
+    },
+    {
+      "covered_by": "action.contract_third_parties",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Contratação de Terceiros (Cap. VII)",
       "occurrences": 1,
       "partial_matches": [],
       "status": "covered"
@@ -3308,12 +3204,12 @@
     }
   ],
   "mass_by_status": {
-    "covered": 505,
-    "partial": 309,
-    "uncovered": 19
+    "covered": 635,
+    "partial": 190,
+    "uncovered": 8
   },
   "registry": {
-    "concepts": 486,
+    "concepts": 517,
     "version": "2.28.0"
   },
   "schema_version": "heading-coverage-v1",

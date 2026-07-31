@@ -67,16 +67,35 @@ def is_furniture(title: str) -> bool:
     return title.strip().endswith(":") or title.strip().rstrip(":").strip().casefold() in FURNITURE
 
 
+# A heading that names its subject twice, once per language or once per spelling: `TIR – Taxa
+# Interna de Retorno`, `CDs – Certificate of Deposits`. The dash is a gloss, the same relation the
+# parenthetical form expresses, and scoring such a heading uncovered measures the punctuation
+# rather than the dictionary.
+GLOSS_DASH = re.compile(r"^(.{3,}?)\s+[–—-]\s+(.{3,})$")
+# Enumeration and running-head furniture the material adds around a title: `1) Indicadores de
+# Tendência (continuação)`, `Apreçamento (Cap. XI)`. Neither is vocabulary.
+ENUMERATION = re.compile(r"^\s*\(?\d+[).]\s*")
+TRAILING_FURNITURE = re.compile(
+    r"\s*\((?:cont\.?|continuação|cap\.?\s*[IVXLC\d]+|parte\s*\d+)\)\s*$", re.IGNORECASE)
+
+
 def variants(title: str) -> list[str]:
     """A heading and, when it glosses itself, each side of the gloss.
 
     `Alocação de Ativos (Asset Allocation)` is the corpus naming one subject in two languages, so
     covering either side covers the heading.
     """
-    match = PARENTHETICAL.match(title)
-    if not match:
-        return [title]
-    return [title, match.group(1).strip(), match.group(2).strip()]
+    stripped = TRAILING_FURNITURE.sub("", ENUMERATION.sub("", title)).strip()
+    out = [title] if stripped == title else [title, stripped]
+    for candidate in (stripped,):
+        match = PARENTHETICAL.match(candidate)
+        if match:
+            out += [match.group(1).strip(), match.group(2).strip()]
+            continue
+        dash = GLOSS_DASH.match(candidate)
+        if dash:
+            out += [dash.group(1).strip(), dash.group(2).strip()]
+    return [item for item in dict.fromkeys(out) if item]
 
 
 CONJUNCTION = re.compile(r"\s+(?:&|x|×|e|and|ou|or)\s+", re.IGNORECASE)
