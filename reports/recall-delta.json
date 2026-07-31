@@ -2,7 +2,7 @@
   "baseline_ref": "eb622bf",
   "concepts_that_gained_events": 88,
   "concepts_that_lost_events": 60,
-  "events_after": 6861,
+  "events_after": 6860,
   "events_before": 6522,
   "gained": [
     {
@@ -278,6 +278,16 @@
       ]
     },
     {
+      "after": 22,
+      "before": 44,
+      "concept_id": "technical.principal",
+      "delta": -22,
+      "examples": [
+        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
+        "Treasury Bills As tem como principal característica que o seu ."
+      ]
+    },
+    {
       "after": 13,
       "before": 35,
       "concept_id": "technical.yield",
@@ -295,16 +305,6 @@
       "examples": [
         " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
         "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
-      ]
-    },
-    {
-      "after": 23,
-      "before": 44,
-      "concept_id": "technical.principal",
-      "delta": -21,
-      "examples": [
-        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
-        "Treasury Bills As tem como principal característica que o seu ."
       ]
     },
     {
@@ -847,10 +847,10 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 394,
-  "spans_after": 6861,
+  "spans_absorbed_by_a_longer_match": 393,
+  "spans_after": 6860,
   "spans_before": 6522,
-  "spans_suppressed_with_no_replacement": 97,
+  "spans_suppressed_with_no_replacement": 98,
   "suppressed_spans": [
     {
       "quote": "tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, par",
@@ -906,6 +906,10 @@
     },
     {
       "quote": "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em provas.",
+      "surface": "principal"
+    },
+    {
+      "quote": "a de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
       "surface": "principal"
     },
     {

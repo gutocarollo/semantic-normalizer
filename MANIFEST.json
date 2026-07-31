@@ -45,8 +45,8 @@
     },
     {
       "path": "checksums.sha256",
-      "size_bytes": 5955,
-      "sha256": "d6aad378d4fc09c73daa44493909d2580f6e6b745ca617c927e90636a4e7460b"
+      "size_bytes": 6151,
+      "sha256": "98adb03c214a0b15529f85ba4a9e7802ee5182adc6e88615f1a580c9e7f39da3"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -441,7 +441,7 @@
     {
       "path": "reports/form-polysemy.json",
       "size_bytes": 255036,
-      "sha256": "c3dfe0a3aaa35a4eee201979e1186f1411ff98b0ad88370e076ff9dc78232924"
+      "sha256": "59ef4415e0f51297c6df5fe09aac3af9ecee11b6f79b755d97acb39d7417392f"
     },
     {
       "path": "reports/oov-queue.json",
@@ -456,7 +456,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7401,
-      "sha256": "0103437238de2e86126e529a094199b66f6ed479d1850e969bea9f32036213a4"
+      "sha256": "fc3db08f541467adde900fadb4f5d70fb271a57b4d6be0d50f51e21bf680e0eb"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -470,8 +470,8 @@
     },
     {
       "path": "reports/precision-final.json",
-      "size_bytes": 4761,
-      "sha256": "16f88ea4225ecce26a714f91adb70ecb9a4be9b3dad8fe5e4d213dc67dc737ac"
+      "size_bytes": 5687,
+      "sha256": "8c9a451e138eef83ad5cd6754beb0d2d1134dc88c0623c4fa8b7baa048d01d25"
     },
     {
       "path": "reports/precision-risk.json",
@@ -481,17 +481,17 @@
     {
       "path": "reports/precision-strata-wide.json",
       "size_bytes": 513622,
-      "sha256": "2a8c7fc9dae8156968eb97f6130644ef5ae1b5a8cea449fe88d8d11c1c9724ca"
+      "sha256": "094f2a9838cf62f04877fba82682702ff43e0dd4668e6c5d1a2f9840fb992a1f"
     },
     {
       "path": "reports/precision-strata.json",
-      "size_bytes": 396786,
-      "sha256": "1c85f92e5842791555f844f9e19bd9fb21a3df345362e228898fb375f369ce4b"
+      "size_bytes": 396785,
+      "sha256": "bac9d98d91f7669cf9b2d0f0c2ecfc1f7740dedd9fbf25085805cbcaf6e7a388"
     },
     {
       "path": "reports/recall-delta.json",
-      "size_bytes": 40411,
-      "sha256": "7893b31470e044307a410d089fc8f852420056d77c8dbb4dc71ae8c1f4985452"
+      "size_bytes": 40573,
+      "sha256": "fb9182f8c433144e7327bba0fad90af3d36de542f8c5ccdbfa8dbabc0bc61c03"
     },
     {
       "path": "reports/registry-migration.json",
@@ -505,8 +505,8 @@
     },
     {
       "path": "reports/release-manifest.json",
-      "size_bytes": 25826,
-      "sha256": "cda4873810da90969af68f52c0c29c5cbdcf9d36579006c8a8e84e4627365364"
+      "size_bytes": 26159,
+      "sha256": "0d12795c8d2adfcb0695f9a697334b09421f7132522ab84bc26a6d9971240eb3"
     },
     {
       "path": "reports/sample-output.json",
@@ -532,6 +532,11 @@
       "path": "reports/sweep-queue-r10.json",
       "size_bytes": 329378,
       "sha256": "300da9c7542dc03d2e69fd284120e27716eb81e660655b1d1ffb7b7130c6f372"
+    },
+    {
+      "path": "reports/sweep-queue-r11.json",
+      "size_bytes": 329378,
+      "sha256": "34938fad6b4fa2b79b5fa02e960bfdabac9397160a0a216fae424f845ac87ded"
     },
     {
       "path": "reports/sweep-queue-r2.json",
@@ -617,6 +622,11 @@
       "path": "reports/unread-residual-v2190.json",
       "size_bytes": 70048,
       "sha256": "0705931eeb0eec5c902c3e068e11596c760bc12b722dea7fa49c17aeebe6f1d3"
+    },
+    {
+      "path": "reports/unread-residual-v2191.json",
+      "size_bytes": 51158,
+      "sha256": "eae6235c454ed0dc68f084c9cfecc37fd040484741bd1b172f2f5b4793781bbb"
     },
     {
       "path": "reports/validation-summary.md",
@@ -735,8 +745,8 @@
     },
     {
       "path": "scripts/report_precision.py",
-      "size_bytes": 11592,
-      "sha256": "3401ffc0d91d458dc8af83f0d722d80278c670c640a8def5591209ced577b86a"
+      "size_bytes": 11812,
+      "sha256": "fc5cda6488ed89d559f78e34d33ba259636a05c567ec322ead6fd90a23f854ac"
     },
     {
       "path": "scripts/report_recall.py",

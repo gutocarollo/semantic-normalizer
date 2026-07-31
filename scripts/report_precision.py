@@ -70,6 +70,12 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2191.json", "seed": 31415926, "registry": "2.19.1",
+        "errors": 0,
+        "found": [],
+        "state": "after every repair of adversarial review round 3",
+    },
+    {
         "report": "reports/unread-residual-v2190.json", "seed": 27182818, "registry": "2.19.0",
         "errors": 1,
         "found": ["do principal inside `o principal índice brasileiro` — a collocation added by "
@@ -118,7 +124,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2190.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2191.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 

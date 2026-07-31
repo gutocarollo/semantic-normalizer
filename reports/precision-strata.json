@@ -1,5 +1,5 @@
 {
-  "events_total": 6861,
+  "events_total": 6860,
   "occurrences_per_pair": {
     "max": 197,
     "mean": 10.19,
@@ -8,13 +8,13 @@
   },
   "registry": {
     "concepts": 334,
-    "version": "2.19.0"
+    "version": "2.19.1"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 804,
-      "share": 0.1172
+      "events": 803,
+      "share": 0.1171
     },
     "B_domain_exclusive": {
       "events": 611,
@@ -22,19 +22,19 @@
     },
     "C_narrow": {
       "events": 1406,
-      "share": 0.2049
+      "share": 0.205
     },
     "D_risk_surface": {
       "events": 4040,
-      "share": 0.5888
+      "share": 0.5889
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
     "events": 4040,
-    "floor_if_sweep_all_wrong": 0.4112,
+    "floor_if_sweep_all_wrong": 0.4111,
     "pairs": 229,
-    "share_of_all_events": 0.5888
+    "share_of_all_events": 0.5889
   },
   "sweep_queue": [
     {
