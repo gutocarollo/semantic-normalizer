@@ -586,7 +586,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "Removal of the form amendment 63 ADDED, issued under a new id because re-running an already-applied amendment id is a no-op: 63 printed `forms_removed: 1` and changed nothing on disk, and I only caught it by grepping the registry instead of trusting the counter.\n\nRoot cause of `Resolução CVM 175/22`, found and then NOT worked around. Amendment 58 added this form, amendment 59 removed it saying it never fires, and both were operating on a symptom. The mechanism, traced with the layers instrumented rather than inferred:\n\n1. The four-token form is the only candidate over the span, 0-20. It wins overlap resolution and the three-token `Resolução CVM 175` at 0-17, which is a perfectly good match, is discarded as the loser.\n2. `_replacement_for` returns the concept's preferred label, `Resolução CVM 175` — which does not contain the `22`.\n3. `22` at 18-20 is a protected number, so the protection guard correctly refuses an absorption whose rewrite would delete it.\n4. The refused candidate is dropped, and the span is left with NOTHING, because the shorter candidate that would have covered 0-17 was already thrown away in step 1.\n\nSo the engine defect is general and has nothing to do with this heading: a candidate that wins resolution and is then refused downstream takes the span with it, suppressing the valid shorter match it beat. Any concept whose preferred label is a PREFIX of a registered longer form ending in a protected value reproduces it.\n\nThe form is therefore NOT reinstated — with it the heading matches nothing, without it the heading matches `Resolução CVM 175` and scores partial, which is strictly better. Fixing the fallback is an engine change to overlap resolution that this session cannot validate, so the defect is recorded with its reproduction rather than half-repaired. Amendment 59 reached the right action for the wrong reason; this records the right reason.",
+  "change_reason": "A wrong concept_id that predates every review round in this campaign, found by an adversarial reviewer reading context around unrelated new registrations rather than by any sweep.\n\n`technical.hedge_fund` carried `multimercado` as an automatic pt-BR form, registered in 253af6d with the original v0.4.0 lexicon. In this corpus `Multimercado` is not the US industry sense at all — it is CVM's FORMAL FUND CATEGORY, listed beside `Renda Fixa`, `Ações` and `Cambial` as one of the official classifications. 8 of its 9 occurrences are that; the 9th is the heading `Fundos Multimercado`, which the correct concept `entity.multimarket_fund` was already catching.\n\nThe rewrite is what makes it severe rather than untidy: `exceto no caso de classes tipificadas como Multimercado` came out `…classes tipificadas como hedge fund`, injecting an English industry term into Brazilian regulatory prose and asserting a category the regulation does not use. That is the same defect class as the put rewritten into a call and CVM 175 emerging as `share subclass` — one concept holding two senses, and the matcher being right while the meaning is wrong.\n\nWhy no sweep caught it: the surface is 9 events in 7,804, about 0.1 %, so a 240-event draw is not expected to contain it, and the Wilson bound was always honest about that — 0.9855 means residual rates up to ~1.45 % are consistent with a zero-error draw. Reading a random sample and reading context around a specific registration are different instruments and neither substitutes for the other. This is the second finding this campaign owes to the second instrument.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -602,13 +602,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "ee5531c51d887e9077928ee8a06599ed3da47b1e6e7c53e8de6bf6d1ecaf053e",
-    "registry.provenance.jsonl": "c6d8b323e8168d81d74fc4a9361cd23c9c2d1ee0ccf03271f3eba1bc5a4a6280",
+    "registry.jsonl": "f04cecd04449e48badd4108825b9f94d7fb824fbddcae3baaf49e81ab8c04a7d",
+    "registry.provenance.jsonl": "983f556c11a3b840ae0c288a7e7517b88479bc3f71b902b2d5f164c04e409e9a",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
   "rollback_version": "2.33.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.33.0"
+  "version": "2.34.0"
 }

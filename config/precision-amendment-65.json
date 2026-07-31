@@ -1,0 +1,18 @@
+{
+  "id": "precision-sweep-amendment-65",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "all 9 corpus occurrences of the surface run through the matcher and read; the canonical rewrite inspected, not inferred",
+  "reason": "A wrong concept_id that predates every review round in this campaign, found by an adversarial reviewer reading context around unrelated new registrations rather than by any sweep.\n\n`technical.hedge_fund` carried `multimercado` as an automatic pt-BR form, registered in 253af6d with the original v0.4.0 lexicon. In this corpus `Multimercado` is not the US industry sense at all — it is CVM's FORMAL FUND CATEGORY, listed beside `Renda Fixa`, `Ações` and `Cambial` as one of the official classifications. 8 of its 9 occurrences are that; the 9th is the heading `Fundos Multimercado`, which the correct concept `entity.multimarket_fund` was already catching.\n\nThe rewrite is what makes it severe rather than untidy: `exceto no caso de classes tipificadas como Multimercado` came out `…classes tipificadas como hedge fund`, injecting an English industry term into Brazilian regulatory prose and asserting a category the regulation does not use. That is the same defect class as the put rewritten into a call and CVM 175 emerging as `share subclass` — one concept holding two senses, and the matcher being right while the meaning is wrong.\n\nWhy no sweep caught it: the surface is 9 events in 7,804, about 0.1 %, so a 240-event draw is not expected to contain it, and the Wilson bound was always honest about that — 0.9855 means residual rates up to ~1.45 % are consistent with a zero-error draw. Reading a random sample and reading context around a specific registration are different instruments and neither substitutes for the other. This is the second finding this campaign owes to the second instrument.",
+  "operations": [
+    {"op":"remove_form","concept":"technical.hedge_fund","language":"pt-BR",
+     "form":"multimercado","wrong":8,"total":9,
+     "why":"89 % wrong, far past the 50 % rule. Every wrong case is CVM's formal category; the one right case is already covered by entity.multimarket_fund."},
+    {"op":"add_form","concept":"entity.multimarket_fund","language":"pt-BR",
+     "form":"Multimercado","policy":"auto","right":9,"total":9,
+     "why":"The category label as the regulation writes it, on the concept that actually means it."},
+    {"op":"add_form","concept":"entity.multimarket_fund","language":"pt-BR",
+     "form":"fundo multimercado","policy":"auto","right":1,"total":1,
+     "why":"Singular of the registered plural."}
+  ]
+}

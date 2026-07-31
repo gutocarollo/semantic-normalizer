@@ -449,14 +449,14 @@
   ],
   "concepts": 582,
   "errors_repaired_total": 22,
-  "events_total": 7804,
+  "events_total": 7803,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
     "lower_bound_95": 0.9855,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.33.0",
+  "registry_version": "2.34.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
@@ -466,18 +466,18 @@
     "errors_adjudicated": 0,
     "events": 7170,
     "sample_size": 240,
-    "share": 0.9188
+    "share": 0.9189
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2330-r12.json"
+    "reports/unread-residual-v2340-r13.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 634,
+    "events": 633,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.0812
+    "share": 0.0811
   },
   "what_this_sample_cannot_detect": {
     "error_rate_they_imply": 0.000279,

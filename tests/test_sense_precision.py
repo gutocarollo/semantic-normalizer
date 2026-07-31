@@ -510,5 +510,33 @@ class SensePrecisionTests(unittest.TestCase):
             "form.",
         )
 
+    def test_the_regulator_s_fund_category_is_not_the_us_industry_term(self):
+        """`Multimercado` is CVM's formal category, not `hedge fund`.
+
+        `technical.hedge_fund` carried `multimercado` as an automatic pt-BR form from the original
+        v0.4.0 lexicon, and it survived every sweep of this campaign — 9 events in 7,804 is about
+        0.1 %, so a 240-event draw is not expected to contain it. An adversarial reviewer found it
+        by reading context around unrelated registrations.
+
+        It was not merely a mis-tag. The canonical rewrite turned `classes tipificadas como
+        Multimercado` into `classes tipificadas como hedge fund`, putting an English industry term
+        into Brazilian regulatory prose and asserting a category the regulation does not use —
+        the same shape as the put rewritten into a call.
+
+        Both directions are pinned, because fixing one sense by breaking the other is how the
+        collision demoter once made a guard pass for the wrong reason.
+        """
+        category = normalize_text(
+            "exceto no caso de classes tipificadas como Multimercado, que podem investir",
+            source="t", kind="text", lexicon=self.lexicon)[0]
+        self.assertIn("entity.multimarket_fund", category["concept_ids"])
+        self.assertNotIn("technical.hedge_fund", category["concept_ids"])
+        self.assertNotIn("hedge fund", category["canonical_text"])
+
+        industry = normalize_text(
+            "Hedge Funds normalmente limitam as oportunidades de resgate",
+            source="t", kind="text", lexicon=self.lexicon)[0]
+        self.assertIn("technical.hedge_fund", industry["concept_ids"])
+
 if __name__ == "__main__":
     unittest.main()
