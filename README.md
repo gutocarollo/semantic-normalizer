@@ -97,6 +97,114 @@ downstream consumer can prove which registry produced a given annotation.
 
 ---
 
+## Na prática: onde entra o texto, onde sai o resultado
+
+```mermaid
+flowchart LR
+    subgraph IN["ENTRADA — três formas"]
+        I1["arquivo<br/><code>normalize doc.md</code>"]
+        I2["texto inline<br/><code>--text 'sua frase'</code>"]
+        I3["API Python<br/><code>normalize_text(...)</code>"]
+    end
+
+    IN --> CMD["semantic-normalizer normalize<br/>--contexts core cga"]
+
+    CMD --> OUT{"--output ?"}
+    OUT -->|"omitido"| O1["stdout<br/>(JSONL)"]
+    OUT -->|"--output saida.jsonl"| O2["arquivo<br/>(JSONL)"]
+
+    O1 --> FMT["UM OBJETO JSON POR LINHA<br/>= um registro por SEGMENTO<br/>40 campos cada"]
+    O2 --> FMT
+
+    style IN fill:#e8f0fe
+    style FMT fill:#e6f4ea,stroke:#34a853
+```
+
+### Passo a passo, com um arquivo de verdade
+
+**1. O arquivo de entrada** — qualquer `.md`, `.txt` ou `.py`. Nada precisa ser preparado:
+
+```bash
+cat > regra.md <<'EOF'
+# Obrigações do gestor
+
+O gestor deve aplicar em cotas de FIF, exceto se a classe for restrita.
+É vedada a cobrança de taxa de performance em Fundos de Renda Fixa Simples.
+EOF
+```
+
+**2. Uma passada:**
+
+```bash
+semantic-normalizer normalize regra.md --contexts core cga --output saida.jsonl
+```
+
+**3. O que saiu** — `saida.jsonl`, **um objeto JSON por linha**, um registro por segmento de texto:
+
+```
+linha  1 | needs_review=False | # Obrigações do gestor
+           concepts: ['technical.manager_obligations']
+
+linha  3 | needs_review=True  | O gestor deve aplicar em cotas de FIF, exceto se…
+           concepts: ['actor.portfolio_manager', 'action.subscribe',
+                      'entity.fund_share', 'entity.financial_investment_fund',
+                      'polarity.exception']
+
+linha  4 | needs_review=False | É vedada a cobrança de taxa de performance em…
+           concepts: ['polarity.prohibition', 'technical.performance_fee',
+                      'entity.fixed_income_fund']
+```
+
+Três linhas de entrada → três registros, **40 campos cada**. Essa é a execução real do comando
+acima, não um exemplo montado.
+
+### Respondendo direto
+
+| pergunta | resposta |
+|---|---|
+| **Onde coloco o texto de entrada?** | Passe o **caminho do arquivo** como argumento, ou use `--text "frase"` para uma frase avulsa. Não há leitura de `stdin` — `normalize -` dá erro. |
+| **Onde fica a saída?** | No **stdout** por padrão. Com `--output arquivo.jsonl`, no arquivo. O arquivo de entrada nunca é modificado. |
+| **É JSON ou JSONL?** | **JSONL** — um objeto por linha. `json.load()` falha; use `[json.loads(l) for l in open(f) if l.strip()]`. |
+| **Uma passada já retorna tudo?** | **Sim.** Um passe produz o registro completo — conceitos, offsets, texto canônico, ambiguidades, campos de busca e hashes de proveniência. Não há segunda etapa nem serviço para chamar. |
+| **Preciso de rede, API key, GPU?** | Não. É determinístico e offline. A mesma entrada com o mesmo `registry_sha256` dá sempre a mesma saída. |
+| **Um registro por arquivo ou por linha?** | Por **segmento** — em markdown, tipicamente uma linha ou parágrafo. Linhas em branco não viram registro. |
+
+### Lendo a saída
+
+```python
+import json
+
+recs = [json.loads(line) for line in open("saida.jsonl") if line.strip()]
+
+# tudo que o documento fala sobre, sem duplicar
+conceitos = sorted({c for r in recs for c in r["concept_ids"]})
+
+# o que a ferramenta NÃO teve certeza — sua fila de revisão
+pendentes = [r for r in recs if r["needs_review"]]
+
+for r in pendentes:
+    for amb in r["ambiguous_candidates"]:
+        leituras = [c["concept_id"] for c in amb["candidates"]]
+        print(f'linha {r["line"]}: "{amb["alias"]}" pode ser {leituras}')
+# linha 3: "deve" pode ser ['modality.logical_necessity', 'modality.obligation']
+```
+
+### Corpus inteiro
+
+`normalize` processa um arquivo por vez. Para uma pasta, itere — a saída de todos pode ir para o
+mesmo `.jsonl`, porque cada registro carrega o próprio `source` e `line`:
+
+```bash
+for f in docs/*.md; do
+  semantic-normalizer normalize "$f" --contexts core cga >> corpus.jsonl
+done
+```
+
+Cada registro traz `source`, `line`, `column`, `byte_start`/`byte_end` e `source_sha256` — então um
+único `corpus.jsonl` continua rastreável até o arquivo e o byte de origem.
+
+---
+
 ## Como funciona: o que entra e o que sai
 
 ```mermaid

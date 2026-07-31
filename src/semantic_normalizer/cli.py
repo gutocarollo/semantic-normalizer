@@ -27,7 +27,9 @@ from .registry import ContractError, automatic_surfaces, init_workspace, load_re
 
 
 def _registry(args) -> dict:
-    return load_registry(args.registry, args.registry_schema)
+    return load_registry(
+        args.registry, args.registry_schema, contexts=getattr(args, "contexts", None)
+    )
 
 
 def _input(args) -> tuple[str, str, Path | None]:
@@ -195,6 +197,15 @@ def _registry_options(command: argparse.ArgumentParser) -> None:
     command.add_argument("--registry")
     command.add_argument("--registry-schema")
     command.add_argument("--lexicon", dest="registry", help=argparse.SUPPRESS)
+    # Domain scoping was reachable from `load_lexicon(contexts=...)` and NOT from the CLI, which
+    # made the plug-and-play packaging a Python-only feature — the same shape of gap as a
+    # declarative field no consumer reads. Anyone driving this from a shell could only ever load
+    # every domain at once, which is the merged table the scoping exists to avoid.
+    command.add_argument(
+        "--contexts", nargs="+", metavar="DOMAIN",
+        help="load only these domain packs, e.g. --contexts core cga. "
+             "Omit to load every concept in the registry.",
+    )
 
 
 def parser() -> argparse.ArgumentParser:
