@@ -11,6 +11,19 @@ reproducible from the registry hash.
 The shipped registry covers the **CGA/ANBIMA** Brazilian financial-certification domain — 584
 concepts, measured against a 12-file course corpus.
 
+
+> ### Construir vs. usar
+>
+> Este README ensina a **usar** o dicionário. Para **construir** um — para um domínio novo, ou para
+> estender este — leia **[BUILDING.md](BUILDING.md)**.
+>
+> A distinção importa: `normalize` APLICA um dicionário existente e é instantâneo (3.009 segmentos
+> de um livro em ~2 s). CONSTRUIR o dicionário não é: o pacote CGA custou 47 batches, 68 emendas e
+> 65 mil caracteres de justificativa escrita à mão, tudo versionado em `config/`. A extração de
+> candidatos é automática; **a adjudicação não é**, e três tentativas de automatizá-la estão
+> documentadas como fracassos no cabeçalho de `scripts/score_term_specificity.py`.
+
+
 ---
 
 ## Where the ontology lives
