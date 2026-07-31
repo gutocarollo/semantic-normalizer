@@ -1,8 +1,8 @@
 {
   "baseline_ref": "eb622bf",
-  "concepts_that_gained_events": 70,
-  "concepts_that_lost_events": 48,
-  "events_after": 6859,
+  "concepts_that_gained_events": 87,
+  "concepts_that_lost_events": 56,
+  "events_after": 6873,
   "events_before": 6522,
   "gained": [
     {
@@ -30,6 +30,12 @@
       "delta": 26
     },
     {
+      "after": 16,
+      "before": 0,
+      "concept_id": "technical.otc_market",
+      "delta": 16
+    },
+    {
       "after": 13,
       "before": 0,
       "concept_id": "technical.loss_given_default",
@@ -45,6 +51,12 @@
       "after": 10,
       "before": 0,
       "concept_id": "condition.provided_that",
+      "delta": 10
+    },
+    {
+      "after": 10,
+      "before": 0,
+      "concept_id": "entity.fund_of_funds",
       "delta": 10
     },
     {
@@ -164,8 +176,20 @@
     {
       "after": 6,
       "before": 0,
+      "concept_id": "technical.twrr",
+      "delta": 6
+    },
+    {
+      "after": 6,
+      "before": 0,
       "concept_id": "temporal.until",
       "delta": 6
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "entity.medium_term_note",
+      "delta": 5
     },
     {
       "after": 5,
@@ -210,78 +234,74 @@
       "delta": 5
     },
     {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.yield_spread",
+      "delta": 5
+    },
+    {
       "after": 4,
       "before": 0,
       "concept_id": "entity.high_grade_bond",
       "delta": 4
-    },
-    {
-      "after": 4,
-      "before": 0,
-      "concept_id": "entity.high_yield_bond",
-      "delta": 4
-    },
-    {
-      "after": 4,
-      "before": 0,
-      "concept_id": "technical.benchmark_var",
-      "delta": 4
-    },
-    {
-      "after": 4,
-      "before": 0,
-      "concept_id": "technical.performance_appraisal",
-      "delta": 4
-    },
-    {
-      "after": 4,
-      "before": 0,
-      "concept_id": "technical.sonia",
-      "delta": 4
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "polarity.affirmation",
-      "delta": 3
     }
   ],
   "lost": [
     {
-      "after": 201,
+      "after": 200,
       "before": 230,
       "concept_id": "quantity.return",
-      "delta": -29,
+      "delta": -30,
       "examples": [
         "es (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ",
         "➢ A taxa de desconto não é a mesma coisa que a taxa de retorno (yield)."
       ]
     },
     {
-      "after": 7,
-      "before": 35,
-      "concept_id": "technical.yield",
-      "delta": -28,
-      "examples": [
-        "de desconto não é a mesma coisa que a taxa de retorno (yield).",
-        "High Yield Bonds: Poderíamos traduzir para o português "
-      ]
-    },
-    {
-      "after": 17,
+      "after": 18,
       "before": 44,
       "concept_id": "technical.principal",
-      "delta": -27,
+      "delta": -26,
       "examples": [
         "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
         "Treasury Bills As tem como principal característica que o seu ."
       ]
     },
     {
-      "after": 290,
+      "after": 148,
+      "before": 173,
+      "concept_id": "entity.market",
+      "delta": -25,
+      "examples": [
+        "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que",
+        "los separados, que são negociados independentemente no mercado secundário."
+      ]
+    },
+    {
+      "after": 47,
+      "before": 70,
+      "concept_id": "entity.resource",
+      "delta": -23,
+      "examples": [
+        "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o ",
+        "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros "
+      ]
+    },
+    {
+      "after": 13,
+      "before": 35,
+      "concept_id": "technical.yield",
+      "delta": -22,
+      "examples": [
+        "de desconto não é a mesma coisa que a taxa de retorno (yield).",
+        "High Yield Bonds: Poderíamos traduzir para o português "
+      ]
+    },
+    {
+      "after": 289,
       "before": 309,
       "concept_id": "quantity.rate",
-      "delta": -19,
+      "delta": -20,
       "examples": [
         " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
         "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
@@ -305,16 +325,6 @@
       "examples": [
         "Realizar uma operação LONG & SHORT significa vender uma ação que não po",
         " com o recurso da venda, comprar uma outra ação (ficar long)."
-      ]
-    },
-    {
-      "after": 29,
-      "before": 46,
-      "concept_id": "technical.option",
-      "delta": -17,
-      "examples": [
-        "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de ina",
-        "➢ Algumas possuem cláusula de opção de compra, onde o governo americano pode rec"
       ]
     },
     {
@@ -378,6 +388,16 @@
       ]
     },
     {
+      "after": 172,
+      "before": 182,
+      "concept_id": "entity.fund",
+      "delta": -10,
+      "examples": [
+        "úblicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+        "Já a taxa de performance incide sobre os ganhos do fundo, uma vez que dificilmente Hedge Funds possue"
+      ]
+    },
+    {
       "after": 74,
       "before": 84,
       "concept_id": "entity.index",
@@ -388,16 +408,6 @@
       ]
     },
     {
-      "after": 163,
-      "before": 173,
-      "concept_id": "entity.market",
-      "delta": -10,
-      "examples": [
-        "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que",
-        "los separados, que são negociados independentemente no mercado secundário."
-      ]
-    },
-    {
       "after": 42,
       "before": 52,
       "concept_id": "quantity.loss",
@@ -405,6 +415,16 @@
       "examples": [
         " eram suporte (momento de comprar a ação) e após a sua perda (diminuição do preço do suporte), se transfo",
         "égia de investimento que proteja a classe de riscos de perdas e volatilidade."
+      ]
+    },
+    {
+      "after": 225,
+      "before": 235,
+      "concept_id": "risk.financial",
+      "delta": -10,
+      "examples": [
+        "nda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
+        "eguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
       ]
     },
     {
@@ -438,6 +458,26 @@
       ]
     },
     {
+      "after": 39,
+      "before": 46,
+      "concept_id": "technical.option",
+      "delta": -7,
+      "examples": [
+        "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de ina",
+        "➢ Algumas possuem cláusula de opção de compra, onde o governo americano pode rec"
+      ]
+    },
+    {
+      "after": 0,
+      "before": 7,
+      "concept_id": "technical.premium",
+      "delta": -7,
+      "examples": [
+        " pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ",
+        "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do "
+      ]
+    },
+    {
       "after": 20,
       "before": 26,
       "concept_id": "risk.default",
@@ -448,23 +488,13 @@
       ]
     },
     {
-      "after": 229,
-      "before": 235,
-      "concept_id": "risk.financial",
+      "after": 12,
+      "before": 18,
+      "concept_id": "technical.spread",
       "delta": -6,
       "examples": [
-        "nda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
-        "eguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
-      ]
-    },
-    {
-      "after": 21,
-      "before": 27,
-      "concept_id": "technical.futures",
-      "delta": -6,
-      "examples": [
-        "pos de transações financeiras, como contratos de swap, futuros, e opções.",
-        "forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ET"
+        "Isso porque se o spread de crédito deles em relação aos títulos livr",
+        "Caso o spread esteja alto, há uma turbulência na economia "
       ]
     },
     {
@@ -478,16 +508,6 @@
       ]
     },
     {
-      "after": 6,
-      "before": 11,
-      "concept_id": "technical.discount",
-      "delta": -5,
-      "examples": [
-        " títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dól",
-        " paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma L"
-      ]
-    },
-    {
       "after": 0,
       "before": 5,
       "concept_id": "technical.forward",
@@ -498,16 +518,6 @@
       ]
     },
     {
-      "after": 13,
-      "before": 18,
-      "concept_id": "technical.spread",
-      "delta": -5,
-      "examples": [
-        "Isso porque se o spread de crédito deles em relação aos títulos livr",
-        "Caso o spread esteja alto, há uma turbulência na economia "
-      ]
-    },
-    {
       "after": 28,
       "before": 33,
       "concept_id": "technical.swap",
@@ -515,6 +525,16 @@
       "examples": [
         "ios tipos de transações financeiras, como contratos de swap, futuros, e opções.",
         "s Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds)."
+      ]
+    },
+    {
+      "after": 9,
+      "before": 13,
+      "concept_id": "entity.dividend",
+      "delta": -4,
+      "examples": [
+        "orno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ga",
+        "italização; - GARP (Growth at a Reasonable Price); e - Dividendos."
       ]
     },
     {
@@ -568,6 +588,16 @@
       ]
     },
     {
+      "after": 200,
+      "before": 203,
+      "concept_id": "instrument.interest",
+      "delta": -3,
+      "examples": [
+        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
+        " o portador do título (a pessoa que compra e recebe os juros)."
+      ]
+    },
+    {
       "after": 12,
       "before": 15,
       "concept_id": "technical.active_management",
@@ -575,6 +605,16 @@
       "examples": [
         "ocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
         " CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o b"
+      ]
+    },
+    {
+      "after": 24,
+      "before": 27,
+      "concept_id": "technical.futures",
+      "delta": -3,
+      "examples": [
+        "pos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ET"
       ]
     },
     {
@@ -598,13 +638,13 @@
       ]
     },
     {
-      "after": 11,
-      "before": 13,
-      "concept_id": "entity.dividend",
+      "after": 69,
+      "before": 71,
+      "concept_id": "entity.sector",
       "delta": -2,
       "examples": [
-        "orno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ga",
-        "italização; - GARP (Growth at a Reasonable Price); e - Dividendos."
+        "Seus índices são considerados a referência para o setor de tecnologia, sendo eles: Nasdaq Composite:",
+        "no mercado norte-americano são classificadas em vários setores."
       ]
     },
     {
@@ -618,13 +658,13 @@
       ]
     },
     {
-      "after": 201,
-      "before": 203,
-      "concept_id": "instrument.interest",
+      "after": 4,
+      "before": 6,
+      "concept_id": "technical.arbitrage",
       "delta": -2,
       "examples": [
-        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
-        " o portador do título (a pessoa que compra e recebe os juros)."
+        "ão, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os",
+        "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamenta"
       ]
     },
     {
@@ -648,6 +688,26 @@
       ]
     },
     {
+      "after": 111,
+      "before": 113,
+      "concept_id": "temporal.term",
+      "delta": -2,
+      "examples": [
+        "o livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor",
+        "eseja adquirir um título público americano de curto de prazo."
+      ]
+    },
+    {
+      "after": 24,
+      "before": 25,
+      "concept_id": "action.buy",
+      "delta": -1,
+      "examples": [
+        "ebe até o momento em que o emissor exerce o direito de comprar de volta o título, uma vez que possui uma op",
+        "xa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra embutida e man"
+      ]
+    },
+    {
       "after": 0,
       "before": 1,
       "concept_id": "action.check",
@@ -664,6 +724,16 @@
       "examples": [
         ", com um preço menor (caso sua expectativa de queda se configure).",
         "A Butterfly pode se configurar de duas formas: - Positiva, em que as taxas "
+      ]
+    },
+    {
+      "after": 36,
+      "before": 37,
+      "concept_id": "actor.bank",
+      "delta": -1,
+      "examples": [
+        "e recursos por um período fixo de tempo e, em troca, o banco emissor paga juros.",
+        "m seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteçã"
       ]
     },
     {
@@ -687,13 +757,23 @@
       ]
     },
     {
-      "after": 181,
-      "before": 182,
-      "concept_id": "entity.fund",
+      "after": 29,
+      "before": 30,
+      "concept_id": "entity.information",
       "delta": -1,
       "examples": [
-        "úblicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
-        "Já a taxa de performance incide sobre os ganhos do fundo, uma vez que dificilmente Hedge Funds possue"
+        "Muitas vezes, essas informações não estão amplamente disponíveis e há ainda ",
+        "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos su"
+      ]
+    },
+    {
+      "after": 216,
+      "before": 217,
+      "concept_id": "entity.portfolio",
+      "delta": -1,
+      "examples": [
+        "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberd",
+        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos"
       ]
     },
     {
@@ -706,13 +786,13 @@
       ]
     },
     {
-      "after": 5,
-      "before": 6,
-      "concept_id": "technical.arbitrage",
+      "after": 10,
+      "before": 11,
+      "concept_id": "technical.discount",
       "delta": -1,
       "examples": [
-        "ão, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os",
-        "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamenta"
+        " títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dól",
+        " paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma L"
       ]
     },
     {
@@ -727,8 +807,438 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 305,
-  "spans_after": 6859,
+  "spans_absorbed_by_a_longer_match": 365,
+  "spans_after": 6873,
   "spans_before": 6522,
-  "spans_suppressed_with_no_replacement": 117
+  "spans_suppressed_with_no_replacement": 107,
+  "suppressed_spans": [
+    {
+      "quote": "tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, par",
+      "surface": "performance"
+    },
+    {
+      "quote": "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimpl",
+      "surface": "opções"
+    },
+    {
+      "quote": "Treasury Bills As tem como principal característica que o seu .",
+      "surface": "principal"
+    },
+    {
+      "quote": "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A D",
+      "surface": "principal"
+    },
+    {
+      "quote": "As TREASURY BONDS (T-BONDS) tem como principal característica que possui VENCIMENTOS COM MAIS DE",
+      "surface": "principal"
+    },
+    {
+      "quote": "o, porém o VALOR do cupom irá MUDAR em função da mudança do principal (correção pelo CPI).",
+      "surface": "principal"
+    },
+    {
+      "quote": "do através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
+      "surface": "principal"
+    },
+    {
+      "quote": "O termo STRIPS significa \"Separate Trading of Registered",
+      "surface": "termo"
+    },
+    {
+      "quote": "a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separ",
+      "surface": "principal"
+    },
+    {
+      "quote": "está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser e",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do que s",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard",
+      "surface": "Bank"
+    },
+    {
+      "quote": "mo no Brasil, a taxa de administração é baseada no NAV (Net Asset Value ou Valor Patrimonial Líquido).",
+      "surface": "Asset"
+    },
+    {
+      "quote": "Brasil, a taxa de administração é baseada no NAV (Net Asset Value ou Valor Patrimonial Líquido).",
+      "surface": "Value"
+    },
+    {
+      "quote": "Esse Viés de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como",
+      "surface": "conferir"
+    },
+    {
+      "quote": "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em provas.",
+      "surface": "principal"
+    },
+    {
+      "quote": "a de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
+      "surface": "principal"
+    },
+    {
+      "quote": "O DI FUTURO é a principal referência para o mercado financeiro em relação à",
+      "surface": "principal"
+    },
+    {
+      "quote": "xpectativas sobre os comportamentos dos juros para períodos futuros do Brasil.",
+      "surface": "futuros"
+    },
+    {
+      "quote": "ecíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
+      "surface": "Ativa"
+    },
+    {
+      "quote": "0% do CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco",
+      "surface": "ATIVA"
+    },
+    {
+      "quote": "juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
+      "surface": "capital"
+    },
+    {
+      "quote": "No entanto, conforme o erro de rastreamento diminui à medida que o tamanho da amostra aumenta, a estratégia se",
+      "surface": "medida"
+    },
+    {
+      "quote": "A principal desvantagem desse método é justamente que se base",
+      "surface": "principal"
+    },
+    {
+      "quote": "O objetivo, então, é neutralizar o risco de mercado na medida em que o gestor acredita não conseguir gerar valo",
+      "surface": "medida"
+    },
+    {
+      "quote": "s Comportamentais são consideradas válidas por investidores value.",
+      "surface": "value"
+    },
+    {
+      "quote": "português “Mistura”, é uma combinação dos estilos Growth e Value, buscando ativos de crescimento e de valor.",
+      "surface": "Value"
+    },
+    {
+      "quote": "a de investimento que busca combinar princípios dos estilos Value e Growth para selecionar ações.",
+      "surface": "Value"
+    },
+    {
+      "quote": "O objetivo é evitar os dois extremos de cada estratégia Value e Growth.",
+      "surface": "Value"
+    },
+    {
+      "quote": "O Rep Risk Index é um índice de risco reputacional em aspectos ASG produzido p",
+      "surface": "índice"
+    },
+    {
+      "quote": "úcleo-satélite, é um método de construção de carteiras cujo principal objetivo é minimizar custos de transação, imposto",
+      "surface": "principal"
+    },
+    {
+      "quote": "quele que proporcionasse um elevado Information Ratio (IR), índice de desempenho que relaciona o Retorno Ativo com o",
+      "surface": "índice"
+    },
+    {
+      "quote": "**Principal Indicador:** - **Suporte:** Preço da ação não dim",
+      "surface": "Principal"
+    },
+    {
+      "quote": "ra melhor embasar suas decisões pode ser de grande valia, à medida em que ele pode ter acesso a diversas opiniões a",
+      "surface": "medida"
+    },
+    {
+      "quote": "Sem dúvida são pontos de atenção quando se utiliza relatórios de terceiros.",
+      "surface": "atenção"
+    },
+    {
+      "quote": "Um termo importante ligado a esse tema é Cherry picking.",
+      "surface": "termo"
+    },
+    {
+      "quote": "[511305] Sobre os estilos de gestão Value e Growth, é correto afirmar que: a) Investidores",
+      "surface": "Value"
+    },
+    {
+      "quote": "ser requerido à CVM concomitantemente ou após a obtenção do registro do fundo.",
+      "surface": "registro"
+    },
+    {
+      "quote": "- É vedada a afetação ou a vinculação, a qualquer título, de parcela do patrimônio de uma classe de cotas",
+      "surface": "título"
+    },
+    {
+      "quote": "dessas classes podem ser transferidas (vendidas), mediante termo de cessão e transferência, assinado pelo cedente",
+      "surface": "termo"
+    },
+    {
+      "quote": "Caso o administrador não adote uma dessas medidas, a Superintendência competente pode cancelar o re",
+      "surface": "medidas"
+    },
+    {
+      "quote": "rador e o escriturador devem compartilhar as informações do registro de cotistas, bem como informações referentes a ev",
+      "surface": "registro"
+    },
+    {
+      "quote": "itos de subscrição podem ser transferidos, seja por meio de termo de cessão e transferência, assinado pelo cedente",
+      "surface": "termo"
+    },
+    {
+      "quote": "e conter obrigação do investidor de integralizar o valor do capital subscrito de acordo com chamadas realizadas pelo",
+      "surface": "capital"
+    },
+    {
+      "quote": "assegurar ou sugerir a existência de garantia de resultados futuros ou isenção de risco para o investidor.",
+      "surface": "futuros"
+    },
+    {
+      "quote": "O registro na categoria gestor de recursos autoriza a gestão",
+      "surface": "registro"
+    },
+    {
+      "quote": "Esse registro pode ocorrer através de pessoa natural ou como pe",
+      "surface": "registro"
+    },
+    {
+      "quote": "corrente de ativos detidos pela classe, realizando todas as ações necessárias para tal exercício, observado o dispo",
+      "surface": "ações"
+    },
+    {
+      "quote": "o acordo de remuneração direta ou indiretamente resulte em desconto, abatimento ou redução de taxa de administração,",
+      "surface": "desconto"
+    },
+    {
+      "quote": "e classe de cotas, o administrador deve adotar as seguintes medidas: - divulgar fato relevante; e - efetuar o cancela",
+      "surface": "medidas"
+    },
+    {
+      "quote": "O cancelamento do registro da classe não mitiga as responsabilidades decorre",
+      "surface": "registro"
+    },
+    {
+      "quote": "O registro e o depósito devem ser realizados em contas espec",
+      "surface": "registro"
+    },
+    {
+      "quote": "A classe tipificada como deve ter como principal fator de risco de sua carteira a variação de taxa",
+      "surface": "principal"
+    },
+    {
+      "quote": "lasse de cotas do fundo tipificado como AÇÕES deve ter como principal fator de risco a variação de preços de ações admi",
+      "surface": "principal"
+    },
+    {
+      "quote": "or, desde que o regulamento preveja tal possibilidade e, no termo de adesão, conste alerta de que a classe de cotas",
+      "surface": "termo"
+    },
+    {
+      "quote": "A classe tipificada como deve ter como principal fator de risco de carteira a variação de preços d",
+      "surface": "principal"
+    },
+    {
+      "quote": "A opção por um dos critérios será exercida em relação a t",
+      "surface": "opção"
+    },
+    {
+      "quote": "rer um dos itens abaixo: - Resgates: ao término do prazo de duração do fundo.",
+      "surface": "duração"
+    },
+    {
+      "quote": "- Base de cálculo: dependerá da operação que deu origem ao rendimento para o cotista (alienação, amortização, resgate o",
+      "surface": "rendimento"
+    },
+    {
+      "quote": "Após, será aplicado a alíquota de curto prazo para o rendimento produzido a partir do dia do desenquadramento.",
+      "surface": "rendimento"
+    },
+    {
+      "quote": "nvestimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras",
+      "surface": "capital"
+    },
+    {
+      "quote": "- Redução de perdas: a principal vantagem da gestão de riscos é a redução das chan",
+      "surface": "principal"
+    },
+    {
+      "quote": "exemplo A para BB), os investidores novos exigirão um maior prêmio para investir nos títulos de dívida desta companh",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "e gerenciamento de riscos e a estrutura de gerenciamento de capital em instituições financeiras e demais instituições",
+      "surface": "capital"
+    },
+    {
+      "quote": "amento contínuo e integrado de riscos e de gerenciamento de capital.",
+      "surface": "capital"
+    },
+    {
+      "quote": "Por exemplo, o gestor que cuida do capital próprio do banco, não será o mesmo que gere os re",
+      "surface": "capital"
+    },
+    {
+      "quote": "A principal crítica ao modelo é que o resultado do VaR NÃO co",
+      "surface": "principal"
+    },
+    {
+      "quote": "rativos), a alta administração aloca diferentes quantias de capital entre os gestores de carteira.",
+      "surface": "capital"
+    },
+    {
+      "quote": "Nesse sentido, a alta administração determina o montante de capital e VaR associado alocado aos gestores de carteiras",
+      "surface": "capital"
+    },
+    {
+      "quote": "parar o desempenho de cada gestor em relação ao montante de capital e risco alocado.",
+      "surface": "capital"
+    },
+    {
+      "quote": "A alta administração de uma asset management decide que irá alocar sua carteira, av",
+      "surface": "asset"
+    },
+    {
+      "quote": "implemente regras ou restrições cambiais que dificultarem o fluxo de capitais entrando e saindo do país.",
+      "surface": "fluxo"
+    },
+    {
+      "quote": "desenvolveu um mecanismo de proteção do sistema, baseada em distribuição de responsabilidades e alocação de garantias que",
+      "surface": "distribuição"
+    },
+    {
+      "quote": "fere o risco de crédito para uma contraparte em troca de um prêmio.",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
+      "surface": "medida"
+    },
+    {
+      "quote": "à possibilidade de perdas devido à necessidade de levantar capital para honrar suas obrigações em contratos derivati",
+      "surface": "capital"
+    },
+    {
+      "quote": "identificar e avaliar os riscos operacionais, quantificar o capital necessário para cobrir os riscos operacionais e t",
+      "surface": "capital"
+    },
+    {
+      "quote": "al de cada risco e deve também auxiliar na implementação de medidas para reduzir a probabilidade ou o impacto de cada",
+      "surface": "medidas"
+    },
+    {
+      "quote": "s são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International).",
+      "surface": "Capital"
+    },
+    {
+      "quote": "Porém, a principal desvantagem é a possibilidade de desvio de estilo",
+      "surface": "principal"
+    },
+    {
+      "quote": "Estilos de investimento são, por exemplo, Value, Growth, Small, Mid e Large Cap.",
+      "surface": "Value"
+    },
+    {
+      "quote": "A conclusão através desta análise é que, entre duas opções, devemos escolher aquela que possui o maior valor",
+      "surface": "opções"
+    },
+    {
+      "quote": "Em outras palavras, a distribuição do retorno de valor agregado em relação a sua méd",
+      "surface": "distribuição"
+    },
+    {
+      "quote": "esconto n = número de fluxos de caixa a serem avaliados P = principal",
+      "surface": "principal"
+    },
+    {
+      "quote": "Retorno do principal (FV) (2) Determinar a taxa de desconto mais adequ",
+      "surface": "principal"
+    },
+    {
+      "quote": "er considerado o risco de recebimento do fluxo de caixa e o principal do investimento no título, ou seja, o risco de cr",
+      "surface": "principal"
+    },
+    {
+      "quote": "o valor presente dos fluxos de caixa estimados, incluindo o principal, e somar cada um deles.",
+      "surface": "principal"
+    },
+    {
+      "quote": "ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emi",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "ação o fato de que os fluxos de caixa esperados flutuarão à medida que as taxas de juros mudam.",
+      "surface": "medida"
+    },
+    {
+      "quote": "À medida que cada título vence, o gestor pode investir o d",
+      "surface": "medida"
+    },
+    {
+      "quote": "Mas o ponto principal da Duration Matching é que as durations dos ativo",
+      "surface": "principal"
+    },
+    {
+      "quote": "taria alavancado, ganhando o percentual do REPO a partir do capital de terceiros.",
+      "surface": "capital"
+    },
+    {
+      "quote": "um preço pré-determinado em uma data futura; - São uma boa opção para proteger contra grandes flutuações cambiais",
+      "surface": "opção"
+    },
+    {
+      "quote": "a moeda por um fluxo de caixa em outra moeda; - São uma boa opção para empresas que possuem receitas ou despesas em",
+      "surface": "opção"
+    },
+    {
+      "quote": "São uma boa opção para especular sobre a direção das taxas de juros",
+      "surface": "opção"
+    },
+    {
+      "quote": "s de juros do que títulos com duration longa, sendo uma boa opção para investidores que desejam minimizar o risco d",
+      "surface": "opção"
+    },
+    {
+      "quote": "O comprador paga um prêmio ao vendedor do CDS, e em caso de inadimplência do",
+      "surface": "prêmio"
+    },
+    {
+      "quote": "imento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimentos.",
+      "surface": "distribuição"
+    },
+    {
+      "quote": "A Butterfly pode se configurar de duas formas: - Positiva, em que as taxas das e",
+      "surface": "configurar"
+    },
+    {
+      "quote": "construção chamamos de ALOCAÇÃO DE ATIVOS, ou em inglês de Asset Allocation.",
+      "surface": "Asset"
+    },
+    {
+      "quote": "Desta forma, entende-se que os retornos futuros serão semelhantes ao retornos passados e a volati",
+      "surface": "futuros"
+    },
+    {
+      "quote": "Também podemos dividir o ASSET ALLOCATION em: ALOCAÇÃO DINÂMICA (ATIVA): Este ti",
+      "surface": "ASSET"
+    },
+    {
+      "quote": "m podemos dividir o ASSET ALLOCATION em: ALOCAÇÃO DINÂMICA (ATIVA): Este tipo de Alocação tem por objetivo ajustar",
+      "surface": "ATIVA"
+    },
+    {
+      "quote": "Assim, devemos apenas calcular a distribuição inicial e aplicar a rentabilidade dos ativos nas",
+      "surface": "distribuição"
+    },
+    {
+      "quote": "l pela gestão de recursos de terceiros que seja devidamente habilitado pela CVM para esta atividade.",
+      "surface": "habilitado"
+    },
+    {
+      "quote": "O apreçamento tem como principal objetivo evitar a transferência de riqueza entre",
+      "surface": "principal"
+    },
+    {
+      "quote": "de investimento, devendo ser diligente e realizar todas as ações necessárias para o exercício desse direito, nos t",
+      "surface": "ações"
+    }
+  ]
 }

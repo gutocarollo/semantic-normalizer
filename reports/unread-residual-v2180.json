@@ -1,0 +1,1582 @@
+{
+  "adjudicated_errors": 0,
+  "adjudication": {
+    "errors": [],
+    "notes": "Distinct filename from every prior draw, per the review's R5: redrawing into an existing path destroyed the evidence for an earlier campaign claim. Items 246, 247 and 252 are the recall amendment 19 restored — `rendimento` and `spread de rendimento` matching the yield concepts again after being silenced by an over-broad demotion.",
+    "read_by": "all 260 drawn occurrences read against their sentences at registry 2.18.0"
+  },
+  "distinct_forms_in_sample": 124,
+  "events_read_by_sweep": 1154,
+  "events_total": 6873,
+  "events_unread": 5719,
+  "registry": {
+    "concepts": 333,
+    "version": "2.18.0"
+  },
+  "sample": [
+    {
+      "concept_id": "action.buy",
+      "form": "comprar",
+      "form_already_swept": true,
+      "quote": "ita que algum setor se desvalorizou rapidamente na bolsa de valores, ele pode comprar essas ações para quando se recuperar, já vender com lucro sua"
+    },
+    {
+      "concept_id": "action.calculate",
+      "form": "calcular",
+      "form_already_swept": true,
+      "quote": "Podemos calcular essa variação no preço do título também através da Duration M"
+    },
+    {
+      "concept_id": "action.invest",
+      "form": "investir",
+      "form_already_swept": true,
+      "quote": "Sua intenção é investir 40% do patrimônio em BOVA11 e o restante num fundo indexado D"
+    },
+    {
+      "concept_id": "action.invest",
+      "form": "investir",
+      "form_already_swept": true,
+      "quote": "É possível também investir nos Estados Unidos através dos chamados Fund of Funds (FoF),"
+    },
+    {
+      "concept_id": "action.rebalance",
+      "form": "rebalancear",
+      "form_already_swept": false,
+      "quote": "Ao invés de uma estratégia dinâmica, através da qual o gestor deve rebalancear a carteira de acordo com alguma regra, a estratégia de BUY AN"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "vender",
+      "form_already_swept": true,
+      "quote": "- Futuros de taxas de juros: permitem comprar ou vender um contrato com base em uma taxa de juros futura."
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "vender",
+      "form_already_swept": true,
+      "quote": "MBUTIDA beneficia O INVESTIDOR, pois caso as taxas de juros subam, ele poderá vender o título de volta para o emissor e com isso, aplicar em taxas"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "vender",
+      "form_already_swept": true,
+      "quote": "- Opções de venda de taxa de juros: dão ao titular o direito de vender um título de renda fixa a um preço pré-determinado, protegend"
+    },
+    {
+      "concept_id": "actor.administrator",
+      "form": "administrador",
+      "form_already_swept": true,
+      "quote": "as não deliberem em favor de qualquer possibilidade prevista anteriormente, o administrador deve ingressar com pedido de declaração judicial de insolvênc"
+    },
+    {
+      "concept_id": "actor.administrator",
+      "form": "administrador",
+      "form_already_swept": true,
+      "quote": "dência competente deve efetuar o cancelamento, informando tal cancelamento ao administrador e publicando comunicado na página da CVM na internet."
+    },
+    {
+      "concept_id": "actor.administrator",
+      "form": "administrador",
+      "form_already_swept": true,
+      "quote": "Incluem-se entre as obrigações do administrador contratar, em nome do fundo, com terceiros devidamente habili"
+    },
+    {
+      "concept_id": "actor.administrator",
+      "form": "administrador",
+      "form_already_swept": true,
+      "quote": "benefício ou vantagem que possa alcançar em decorrência de sua condição como administrador fiduciário, gestor de recursos e/ou gestor de patrimônio, obs"
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "empresa",
+      "form_already_swept": true,
+      "quote": "o aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco."
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "empresa",
+      "form_already_swept": true,
+      "quote": "Lembre que o cupom é pago pelo que a empresa pegou emprestado (para as debêntures, o valor sempre é R$ 1.0"
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "empresa",
+      "form_already_swept": true,
+      "quote": "de evento é a possibilidade de um evento imprevisto afetar negativamente uma empresa e consequentemente suas ações, causando perdas para investido"
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "empresas",
+      "form_already_swept": true,
+      "quote": "s na tomada de decisão de investimentos socialmente responsáveis e induzir as empresas a adotarem as melhores práticas de sustentabilidade empresari"
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "empresas",
+      "form_already_swept": true,
+      "quote": "estacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das empresas em critérios ASG para determinar o risco de crédito de seus t"
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidor",
+      "form_already_swept": true,
+      "quote": "Por sua vez, o melhor cenário foi o 3, em que o investidor fez um resgate antes da rentabilidade negativa do segundo per"
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "É indicado para investidores que desejam ter 100% de exposição líquida ao mercado, mas tam"
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "negativamente uma empresa e consequentemente suas ações, causando perdas para investidores."
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "Por último, temos a Teoria de Segmentação de Mercado, que defende que os investidores têm preferência por dívidas de determinado vencimento."
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "ado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth."
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "- Dividendos: são o foco desses investidores, buscando empresas sólidas que distribuem altos dividendos."
+    },
+    {
+      "concept_id": "actor.investor",
+      "form": "investidores",
+      "form_already_swept": true,
+      "quote": "ta” a classe ou subclasse exclusivamente destinada a aplicação de recursos de investidores qualificados e profissionais."
+    },
+    {
+      "concept_id": "actor.issuer",
+      "form": "emissor",
+      "form_already_swept": true,
+      "quote": "cesso” possui o prazo de 180 dias para atingir os limites de concentração por emissor e por modalidade de ativo estabelecidos em seus regulamentos."
+    },
+    {
+      "concept_id": "actor.portfolio_manager",
+      "form": "gestor",
+      "form_already_swept": true,
+      "quote": ", é provável haver maiores custos de transação, o que deve ser ponderado pelo gestor para que tais custos não prejudiquem o resultado final da car"
+    },
+    {
+      "concept_id": "actor.portfolio_manager",
+      "form": "gestor",
+      "form_already_swept": true,
+      "quote": "Por conta da liberdade do gestor em operar praticamente livremente ativos e empregar estratégi"
+    },
+    {
+      "concept_id": "actor.portfolio_manager",
+      "form": "gestor",
+      "form_already_swept": true,
+      "quote": "Por fim, o gestor pode permitir um maior risco à carteira que possui vários tít"
+    },
+    {
+      "concept_id": "actor.portfolio_manager",
+      "form": "gestor",
+      "form_already_swept": true,
+      "quote": "O objetivo de fazer o gráfico dos retornos de valor adicionado pelo gestor é determinar se são gerados aleatoriamente, ou seja, acontece"
+    },
+    {
+      "concept_id": "actor.portfolio_manager",
+      "form": "gestor de recursos",
+      "form_already_swept": false,
+      "quote": "O gestor de recursos deve possuir em sua estrutura um diretor responsável pela ges"
+    },
+    {
+      "concept_id": "actor.quotaholder",
+      "form": "cotistas",
+      "form_already_swept": false,
+      "quote": "membros dos conselhos ou comitês devem informar ao administrador, e este aos cotistas, qualquer situação que os coloque, potencial ou efetivamente,"
+    },
+    {
+      "concept_id": "actor.quotaholder",
+      "form": "cotistas",
+      "form_already_swept": false,
+      "quote": "l ou parcialmente, as hipóteses de vedação ao direito a voto em assembleia de cotistas."
+    },
+    {
+      "concept_id": "actor.seller",
+      "form": "vendedores",
+      "form_already_swept": true,
+      "quote": "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova"
+    },
+    {
+      "concept_id": "condition.when",
+      "form": "Quando",
+      "form_already_swept": true,
+      "quote": "Quando esses títulos são negociados EM MAIS DE UM PAÍS, eles são cha"
+    },
+    {
+      "concept_id": "condition.when",
+      "form": "quando",
+      "form_already_swept": true,
+      "quote": "sgata as suas cotas a qualquer momento, os fundos fechados possuem tributação quando ocorrer um dos itens abaixo: - Resgates: ao término do prazo"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "form_already_swept": true,
+      "quote": "Perceba que temos a seguinte proporção: 3 unidades do ativo X e 2 unidades do ativo Y."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "form_already_swept": true,
+      "quote": "probabilístico, baseado em estatísticas históricas através do risco total do ativo (desvio padrão)."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "form_already_swept": true,
+      "quote": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passi"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "form_already_swept": true,
+      "quote": "Qual Será o valor presente do título, caso o YTM (retorno do ativo) seja de 4%, 6% e 8%?"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "form_already_swept": true,
+      "quote": "orma, fornece um valor numérico bem objetivo com relação à perda máxima de um ativo ou carteira."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "ndice P/L dos ativos que estão sendo considerados para a carteira, preferindo ativos com altos índices P/L."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "siderado como Prestador de Serviço Essencial; - Compete ao gestor negociar os ativos da carteira, bem como firmar todo e qualquer contrato ou docu"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "O gestor deve submeter a carteira de ativos a testes de estresse periódicos, com cenários que levem em co"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "se tivessem sido investidos simplesmente replicando a alocação estratégica de ativos."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "Compete ao gestor negociar os ativos da carteira, bem como firmar, quando for o caso, todo e qualq"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": ", é possível negociar contratos bastante personalizados; mas, por outro lado, ativos negociados em balcão geralmente têm menor liquidez e são mais"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "eu patrimônio líquido aplicado em valores mobiliários de renda fixa ou outros ativos de renda variável autorizados pela CVM."
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "Por exemplo, 60% dos ativos do fundo investidos no Ibovespa pode se adequar ao objetivo e"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos",
+      "form_already_swept": true,
+      "quote": "O fundo de investimento deve manter o patrimônio aplicado em ativos nos termos estabelecidos no regulamento, observadas, ainda, a"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos financeiros",
+      "form_already_swept": false,
+      "quote": "Os ativos financeiros negociados em países signatários do Tratado de Assunção equip"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativos financeiros",
+      "form_already_swept": false,
+      "quote": "É vedado ao gestor emprestar e tomar ativos financeiros em empréstimo em operações cursadas por meio de serviço que n"
+    },
+    {
+      "concept_id": "entity.cash_flow",
+      "form": "fluxo de caixa",
+      "form_already_swept": false,
+      "quote": "n, i, PV, PMT, FV) Em que: VP = valor presente Fc = cupom do título, ou seja, fluxo de caixa para o período n i = taxa de desconto n = número de fluxos de"
+    },
+    {
+      "concept_id": "entity.cash_flow",
+      "form": "fluxo de caixa",
+      "form_already_swept": false,
+      "quote": "s financeiros como a capacidade de pagamento da dívida (histórico de crédito, fluxo de caixa e lucratividade) e as condições do mercado financeiro (juros,"
+    },
+    {
+      "concept_id": "entity.cash_flow",
+      "form": "fluxos de caixa",
+      "form_already_swept": false,
+      "quote": "ão por Asset Liability Management se preocupa com o tempo em que ocorrerão os fluxos de caixa."
+    },
+    {
+      "concept_id": "entity.cash_flow",
+      "form": "fluxos de caixa",
+      "form_already_swept": false,
+      "quote": "Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos de caixa externos."
+    },
+    {
+      "concept_id": "entity.contract",
+      "form": "contrato",
+      "form_already_swept": true,
+      "quote": "Agora que temos o contrato firmado, vamos simular exatamente alguns cenários e saber o q"
+    },
+    {
+      "concept_id": "entity.coupon",
+      "form": "cupom",
+      "form_already_swept": true,
+      "quote": "Desta forma, na HP 12C: Como a LTN não possui cupom (PMT), podemos escolher se transformamos a taxa dada em ano p"
+    },
+    {
+      "concept_id": "entity.currency",
+      "form": "moeda",
+      "form_already_swept": true,
+      "quote": "estrangeira a um preço pré-determinado, protegendo contra a desvalorização da moeda nacional."
+    },
+    {
+      "concept_id": "entity.dividend",
+      "form": "dividendos",
+      "form_already_swept": true,
+      "quote": "ressaltar que, por retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital c"
+    },
+    {
+      "concept_id": "entity.document",
+      "form": "documento",
+      "form_already_swept": true,
+      "quote": "r negociar os ativos da carteira, bem como firmar todo e qualquer contrato ou documento relativo à negociação de ativos, qualquer que seja a sua natu"
+    },
+    {
+      "concept_id": "entity.fixed_income",
+      "form": "Renda Fixa",
+      "form_already_swept": false,
+      "quote": "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três princip"
+    },
+    {
+      "concept_id": "entity.fixed_income",
+      "form": "renda fixa",
+      "form_already_swept": false,
+      "quote": "um ativo subjacente sensível a flutuações nas taxas de juros, como títulos de renda fixa ou swaps de taxa de juros."
+    },
+    {
+      "concept_id": "entity.fixed_income",
+      "form": "renda fixa",
+      "form_already_swept": false,
+      "quote": "premissa de linearidade entre preço e taxa de juros de títulos prefixados de renda fixa."
+    },
+    {
+      "concept_id": "entity.fixed_income",
+      "form": "renda fixa",
+      "form_already_swept": false,
+      "quote": "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme vi"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundo",
+      "form_already_swept": true,
+      "quote": "no regulamento, observadas, ainda, as regras específicas de cada categoria de fundo."
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundo",
+      "form_already_swept": true,
+      "quote": "Após 12 meses o Ibovespa teve valorização de 30% e o fundo DI de 10%."
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundo de investimento",
+      "form_already_swept": false,
+      "quote": "O funcionamento do fundo de investimento se materializa por meio da atuação dos prestadores de serviço"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundos",
+      "form_already_swept": true,
+      "quote": "- Come-Cotas: Os fundos fechados podem sofrer também a incidência de come-cotas, conf"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundos",
+      "form_already_swept": true,
+      "quote": "Todos os fundos de investimentos devem ser constituídos por deliberação conju"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundos",
+      "form_already_swept": true,
+      "quote": "Diferentemente dos fundos abertos, onde o cotista resgata as suas cotas a qualquer mome"
+    },
+    {
+      "concept_id": "entity.fund_of_funds",
+      "form": "FoF",
+      "form_already_swept": false,
+      "quote": "Como o papel do gestor de um FoF é investir em outros fundos, seu trabalho é muito focado no c"
+    },
+    {
+      "concept_id": "entity.fund_share",
+      "form": "cotas",
+      "form_already_swept": true,
+      "quote": "estinada a investidores qualificados, os limites previstos para cotas de FIF, cotas de FII, cotas de FIDC, certificados de recebíveis ficam major"
+    },
+    {
+      "concept_id": "entity.fund_share",
+      "form": "cotas",
+      "form_already_swept": true,
+      "quote": "regulamento da classe investidora deve prever vedação expressa à aplicação em cotas de classes e subclasses destinadas exclusivamente a investido"
+    },
+    {
+      "concept_id": "entity.fund_share",
+      "form": "cotas",
+      "form_already_swept": true,
+      "quote": "intendência competente pode suspender a emissão, subscrição e distribuição de cotas realizada em desacordo com a Resolução CVM 175, observada, ai"
+    },
+    {
+      "concept_id": "entity.fund_share",
+      "form": "cotas",
+      "form_already_swept": true,
+      "quote": "Por sua vez, tais limites não se aplicam à carteira de ativos da classe de cotas do fundo incentivado de investimento em infraestrutura – FI-I"
+    },
+    {
+      "concept_id": "entity.fund_share",
+      "form": "cotas",
+      "form_already_swept": true,
+      "quote": "onter informações sobre a existência de programa de recompras e quantidade de cotas efetivamente recompradas nos 3 últimos exercícios."
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índice",
+      "form_already_swept": true,
+      "quote": "ulo parte do índice de Sharpe, multiplicando-o pelo desvio padrão de qualquer índice de mercado de referência, e adicionando retorno livre de risc"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índice",
+      "form_already_swept": true,
+      "quote": "ETFs ASG são fundos de índice que investem em empresas levando em conta critérios Ambientai"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índice",
+      "form_already_swept": true,
+      "quote": "reconstituída e rebalanceada para acompanhar fielmente a carteira teórica do índice de referência."
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índice",
+      "form_already_swept": true,
+      "quote": "A diferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência (benchmark)."
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índices",
+      "form_already_swept": true,
+      "quote": "ornos são submetidas a um algoritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos da"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índices",
+      "form_already_swept": true,
+      "quote": "se de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referência"
+    },
+    {
+      "concept_id": "entity.information",
+      "form": "informações",
+      "form_already_swept": true,
+      "quote": "Além disso, as informações referentes aos informes diários e mensais devem ser prestadas"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "l são divididos em títulos separados, que são negociados independentemente no mercado secundário."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "se o desempenho foi afetado principalmente por decisões de investimento, pelo mercado em geral ou pelo acaso."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "o seja necessária a venda de um ativo por um preço menor do que o de valor de mercado, simplesmente por não haver liquidez."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "é ainda menor: EXEMPLO: Uma carteira possui dois títulos, A e B, com valor de mercado de R$ 60.000,00 e R$ 40.000,00, respectivamente."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "A precificação de títulos de renda fixa (principalmente os negociados no mercado secundário) baseia-se em calcular o valor presente de todos o"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "resultado do VaR NÃO consegue capturar os prejuízos em períodos de stress do mercado, ou seja, o verdadeiro prejuízo de uma carteira pode ser muit"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "valor sempre é R$ 1.000,00) e não por quanto estão negociando seus títulos no mercado secundário."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "Há inclusive um importante índice de sustentabilidade empresarial no mercado brasileiro: o ISE."
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "mercado",
+      "form_already_swept": true,
+      "quote": "ibuição normal como parâmetro descritivo da distribuição de probabilidades no mercado financeiro (deficiente na previsão de movimentos bruscos ou d"
+    },
+    {
+      "concept_id": "entity.medium_term_note",
+      "form": "Medium Term Notes",
+      "form_already_swept": false,
+      "quote": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos d"
+    },
+    {
+      "concept_id": "entity.model",
+      "form": "modelo",
+      "form_already_swept": true,
+      "quote": "A principal crítica ao modelo é que o resultado do VaR NÃO consegue capturar os prejuízos e"
+    },
+    {
+      "concept_id": "entity.model",
+      "form": "modelos",
+      "form_already_swept": true,
+      "quote": "Dentre os principais modelos de Análise Técnica, destacamos:"
+    },
+    {
+      "concept_id": "entity.money",
+      "form": "dinheiro",
+      "form_already_swept": true,
+      "quote": "verá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do F"
+    },
+    {
+      "concept_id": "entity.net_assets",
+      "form": "patrimônio",
+      "form_already_swept": true,
+      "quote": "O fundo de investimento deve manter o patrimônio aplicado em ativos nos termos estabelecidos no regulamento, o"
+    },
+    {
+      "concept_id": "entity.net_assets",
+      "form": "patrimônio",
+      "form_already_swept": true,
+      "quote": "A classe de cotas deve manter o patrimônio aplicado em ativos financeiros, nos termos estabelecidos no r"
+    },
+    {
+      "concept_id": "entity.net_assets",
+      "form": "patrimônio líquido",
+      "form_already_swept": false,
+      "quote": "- Composição mínima de 67% do patrimônio líquido em ações."
+    },
+    {
+      "concept_id": "entity.operation",
+      "form": "operações",
+      "form_already_swept": true,
+      "quote": "Quando da realização de operações em nome da classe de cotas, o gestor deve avaliar seus efeito"
+    },
+    {
+      "concept_id": "entity.operation",
+      "form": "operações",
+      "form_already_swept": true,
+      "quote": "Como contraparte central, a B3 se interpõe entre operações e contratos e, assim, torna-se a compradora para todos os ven"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "ongo prazo, o que acarretará grandes perdas ao valor presente do título ou da carteira."
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "Já o seguro de carteira é um tipo específico de estratégia de hedge que visa proteger"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "selhos e comitês não exime o gestor da responsabilidade sobre as operações da carteira de ativos."
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "stimento, por exemplo) é alocado entre as unidades de negócios ou gestores de carteira."
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "A alta administração de uma asset management decide que irá alocar sua carteira, avaliada em R$ 100 milhões, entre dois gestores, ficando R$"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "cados de acordo com seus objetivos, políticas de investimento e composição da carteira, com base em classificação a ser desenvolvida pela Anbima."
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteira",
+      "form_already_swept": true,
+      "quote": "ora com as das classes investidas, os limites de composição e concentração de carteira, de exposição a risco de capital e de concentração em fatores"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteiras",
+      "form_already_swept": true,
+      "quote": "e renda fixa, podemos aproximar seu resultado através da média pondera destas carteiras."
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteiras",
+      "form_already_swept": true,
+      "quote": "ursos de terceiros consiste na gestão profissional dos ativos integrantes das carteiras dos veículos de investimento, nos termos estabelecidos nos do"
+    },
+    {
+      "concept_id": "entity.protection",
+      "form": "proteção do investidor",
+      "form_already_swept": false,
+      "quote": "ão da CVM, órgão responsável por sua **REGULAÇÃO E FISCALIZAÇÃO**, buscando a proteção do investidor através da Resolução CVM 175/22."
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "recursos",
+      "form_already_swept": true,
+      "quote": "O fundo de investimento é uma comunhão de recursos, constituído sob a forma de condomínio de natureza especial,"
+    },
+    {
+      "concept_id": "entity.scenario",
+      "form": "cenários",
+      "form_already_swept": true,
+      "quote": "tabilidade, tolerância ao risco e restrições do investidor são integradas aos cenários econômicos de longo prazo, para que seja definido quais serão"
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "setor",
+      "form_already_swept": true,
+      "quote": "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba"
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "setor",
+      "form_already_swept": true,
+      "quote": "lio do setor i; - = Peso no benchmark do setor i; - = Retorno no benchmark do setor i; - $R_B$ = Retorno do benchmark; - $N$ = Número de setores."
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "setores",
+      "form_already_swept": true,
+      "quote": "da carteira cliente, baseado na expectativa de alta ou baixa de determinados setores da economia, vendendo e comprando ativos."
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "setores",
+      "form_already_swept": true,
+      "quote": "s do setor tendem a ter receitas e lucros mais estáveis do que as empresas de setores mais voláteis, como o setor de tecnologia."
+    },
+    {
+      "concept_id": "entity.securities",
+      "form": "valores mobiliários",
+      "form_already_swept": false,
+      "quote": "mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras."
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "título",
+      "form_already_swept": true,
+      "quote": "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (geralmente título p"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "título",
+      "form_already_swept": true,
+      "quote": "Corresponde a soma de todos os recebimentos em dinheiro pagos pelos juros do título ao credor em um ano em relação ao preço do título."
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "título",
+      "form_already_swept": true,
+      "quote": "seguinte conclusão: O aumento da taxa de juros é prejudicial para o preço do título, porém positiva para os reinvestimentos; A redução da taxa de"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "título",
+      "form_already_swept": true,
+      "quote": "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separados, que são negociad"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "título",
+      "form_already_swept": true,
+      "quote": "rendimento de um título e o rendimento de uma taxa de referência (geralmente título público livre de risco para o mesmo vencimento)."
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "títulos",
+      "form_already_swept": true,
+      "quote": "Desta forma, títulos que não possuem cupom (zero-cupom), seu risco de reinvestimen"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "títulos",
+      "form_already_swept": true,
+      "quote": "do incorporam a todo momento todas as informações disponíveis, de modo que os títulos sempre estão precificados adequadamente."
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "títulos",
+      "form_already_swept": true,
+      "quote": "Com isso, os recursos do investidor passam ser reinvestidos em títulos com retornos mais baixos; ou - Os títulos de renda fixa possu"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "títulos",
+      "form_already_swept": true,
+      "quote": "m títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com diferentes vencimentos e taxas de juros."
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "ação",
+      "form_already_swept": true,
+      "quote": "Percebemos abaixo os pontos aonde eram suporte (momento de comprar a ação) e após a sua perda (diminuição do preço do suporte), se tran"
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "ações",
+      "form_already_swept": true,
+      "quote": "estar mais exposto ao previsto inicialmente no IPS em algum tipo de mercado (ações, renda fixa, imobiliário,...) ou em algum ativo específico."
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "ações",
+      "form_already_swept": true,
+      "quote": "ção em setores do benchmark que tiveram um desempenho melhor que o benchmark (ações e renda fixa) e diminuiu o peso em caixa, setor que teve um d"
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "ações",
+      "form_already_swept": true,
+      "quote": "s e de menor custo e, depois, avaliará a relação benefício/custo de adicionar ações menos líquidas e de menor representatividade no índice."
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "ações",
+      "form_already_swept": true,
+      "quote": "s empresas americanas negociadas na bolsa possuem dois tipos classificação de ações."
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "estratégia",
+      "form_already_swept": true,
+      "quote": "A estratégia Ladder também aumenta a liquidez dos investimentos em títulos"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "estratégia",
+      "form_already_swept": true,
+      "quote": "Nesse cenário, temos justamente o inverso: a estratégia Barbell terá melhor performance e a estratégia Bullet, a pior"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "estratégias",
+      "form_already_swept": true,
+      "quote": "e Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing);"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "estratégias",
+      "form_already_swept": true,
+      "quote": "ercado financeiro pode ocorrer, dentre outras maneiras, através das seguintes estratégias: - Contratos futuros: para abrir uma posição em contratos fut"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "estratégias",
+      "form_already_swept": true,
+      "quote": "Para se proteger contra o risco de crédito, é possível utilizar diversas estratégias de hedge, como: - Credit Default Swaps (CDS): São contratos q"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "podemos citar: - Proteção contra a alta da taxa de juros: - Swap de taxas de juros: permite trocar uma taxa de juros fixa por uma variável ou vi"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "São uma boa opção para especular sobre a direção das taxas de juros."
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "O risco de taxa de juros pode impactar os derivativos de diversas formas: - Valor de m"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "para atender às suas necessidades específicas, incluindo itens como taxas de juros e estruturas de reembolso."
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "io da Gestão de Renda Fixa é proteger a carteira contra variações de taxas de juros."
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "o fato de que os fluxos de caixa esperados flutuarão à medida que as taxas de juros mudam."
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "E, como há uma relação inversa entre taxas de juros e o preço dos títulos prefixados, logo o valor presente desse"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "ar o impacto nos preços dos títulos quando há maiores flutuações nas taxas de juros."
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "Contudo, se as taxas de juros subirem, o preço do título cairá e, nesse cenário, é provável"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De"
+    },
+    {
+      "concept_id": "instrument.interest",
+      "form": "juros",
+      "form_already_swept": true,
+      "quote": "Especificamente nesse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva."
+    },
+    {
+      "concept_id": "polarity.absence",
+      "form": "sem",
+      "form_already_swept": true,
+      "quote": "Tal proibição não se aplica a subscrições de novas cotas, sem prejuízo da incidência das regras que dispõem sobre a divulga"
+    },
+    {
+      "concept_id": "polarity.exception",
+      "form": "exceto",
+      "form_already_swept": false,
+      "quote": "vestidores profissionais não possuem limites de exposição a risco de capital, exceto pelo que porventura dispuser o Regulamento."
+    },
+    {
+      "concept_id": "polarity.negation",
+      "form": "não",
+      "form_already_swept": true,
+      "quote": "ade de arbitragem entre as ações no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa de juros brasil (SELIC)."
+    },
+    {
+      "concept_id": "polarity.negation",
+      "form": "não",
+      "form_already_swept": true,
+      "quote": "É uma ótima maneira de diversificar uma carteira de títulos e não ficar preso a nenhum título por um longo período."
+    },
+    {
+      "concept_id": "polarity.negation",
+      "form": "não",
+      "form_already_swept": true,
+      "quote": "de emissão ou coobrigação de uma mesma pessoa jurídica e seu grupo econômico não pode exceder 10% do patrimônio líquido da classe."
+    },
+    {
+      "concept_id": "polarity.negation",
+      "form": "não",
+      "form_already_swept": true,
+      "quote": "ão estão sujeitas a tais exigências, bem como as classes fechadas cujas cotas não estejam admitidas à negociação em mercado organizado."
+    },
+    {
+      "concept_id": "quantity.difference",
+      "form": "diferença",
+      "form_already_swept": true,
+      "quote": "A diferença de um Total Return Equity Swap para um swap convencional é qu"
+    },
+    {
+      "concept_id": "quantity.exposure",
+      "form": "exposição",
+      "form_already_swept": true,
+      "quote": "s classes investidas, os limites de composição e concentração de carteira, de exposição a risco de capital e de concentração em fatores de risco não"
+    },
+    {
+      "concept_id": "quantity.mean",
+      "form": "média",
+      "form_already_swept": true,
+      "quote": "Isso porque os retornos nos mercados financeiros são desviados da média (skewed) por conta de frequentes picos ou vales em função da"
+    },
+    {
+      "concept_id": "quantity.measure",
+      "form": "medidas de sensibilidade",
+      "form_already_swept": false,
+      "quote": "Podemos mensurar este risco através de medidas de sensibilidade de um título em relação a variações nas taxas de juros (Durat"
+    },
+    {
+      "concept_id": "quantity.percentage",
+      "form": "percentual",
+      "form_already_swept": false,
+      "quote": "ós acumulá-los, simplesmente identificar os menores retornos, de acordo com o percentual de confiança desejado."
+    },
+    {
+      "concept_id": "quantity.percentage",
+      "form": "percentual",
+      "form_already_swept": false,
+      "quote": "ente entre a variação porcentual do valor de um título prefixado e a variação percentual da taxa de juros de mercado."
+    },
+    {
+      "concept_id": "quantity.performance",
+      "form": "performance",
+      "form_already_swept": true,
+      "quote": "esas, que podem ser debitadas diretamente de suas classes de cotas: - taxa de performance; e - taxa máxima de custódia."
+    },
+    {
+      "concept_id": "quantity.performance",
+      "form": "performance",
+      "form_already_swept": true,
+      "quote": "Desta forma, o Alfa de Jensen é uma medida direta de performance, já que: - Se positivo, o gestor está performando acima do re"
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preço",
+      "form_already_swept": true,
+      "quote": "b) de um índice de ações pela variação do preço de uma ação."
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preço",
+      "form_already_swept": true,
+      "quote": "convexidade busca corrigir o pressuposto da duration de relação linear entre preço do título e taxa de juros."
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preço",
+      "form_already_swept": true,
+      "quote": "ge, como: - Opções de venda: dão ao titular o direito de vender um ativo a um preço pré-determinado, protegendo contra quedas no preço do ativo."
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preços",
+      "form_already_swept": true,
+      "quote": "A boa notícia é que, como a curva de preços e taxa de juros apresenta convexidade positiva, podemos dizer"
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preços",
+      "form_already_swept": true,
+      "quote": "do tipificado como AÇÕES deve ter como principal fator de risco a variação de preços de ações admitidas à negociação em mercado organizado."
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "preços",
+      "form_already_swept": true,
+      "quote": "ritmos e métodos quantitativos com o objetivo de identificar discrepâncias de preços em ativos com base em dados históricos."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "TAXA",
+      "form_already_swept": true,
+      "quote": "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO (d"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "Taxa",
+      "form_already_swept": true,
+      "quote": "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aula"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "as, parcela do resultado proveniente da atividade de gestão e se a receita da taxa de administração é suficiente para cobrir os custos da empres"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Va"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Variação da taxa de juros = 0.02$."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "evidos a fundos investidores na hipótese de acordo de remuneração com base na taxa de administração, performance ou gestão; - taxa máxima de dis"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "se o título fosse ser emitido a uma taxa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.)."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxa",
+      "form_already_swept": true,
+      "quote": "Por exemplo uma debenture possui cupom com taxa de 12% ao ano com pagamento anual, ou seja, quer dizer que os"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "dos passivos e é necessário rebalancear constantemente a carteira conforme as taxas de juros mudam."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "Em relação as taxas de juros e esses dois riscos, temos a seguinte conclusão: O a"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "pecialmente aqueles que possuem um ativo subjacente sensível a flutuações nas taxas de juros, como títulos de renda fixa ou swaps de taxa de juro"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "São uma boa opção para especular sobre a direção das taxas de juros."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "im avaliar como ganharíamos ou perderíamos dinheiro em função de mudanças nas taxas de juros."
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "E, como há uma relação inversa entre taxas de juros e o preço dos títulos prefixados, logo o valor prese"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "Ou seja, a convexidade positiva ajuda tanto na alta como na queda das taxas de juros!"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "taxas",
+      "form_already_swept": true,
+      "quote": "dos juros, o gestor deveria reduzir a duration; se a expectativa de queda das taxas, então deveria aumentar a duration; - Gestão de Convexidade:"
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "rentabilidade",
+      "form_already_swept": true,
+      "quote": "Vamos simular dois períodos: no primeiro, o fundo registrou rentabilidade positiva de 10% e, no segundo, negativa de 5%."
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "retorno",
+      "form_already_swept": true,
+      "quote": "Se o fluxo de caixa externo ocorre no início do período de medição, o retorno do ativo ou da carteira deve ser calculado da seguinte forma:"
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "retorno",
+      "form_already_swept": true,
+      "quote": "A taxa de retorno precisa levar em consideração os fluxos de caixa externos."
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "retornos",
+      "form_already_swept": true,
+      "quote": ";\">Histograma de Retornos (frequência relativa)</div> ☐ RESPOSTA: Os 5% menos retornos foram: −3,5% (1% de frequência), −3% (2% de frequência), −2,5"
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "retornos",
+      "form_already_swept": true,
+      "quote": "carteira de investimentos com 95% de confiança que apresentou o histograma de retornos abaixo."
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "valor",
+      "form_already_swept": true,
+      "quote": "Em resumo, o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma el"
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "valor",
+      "form_already_swept": true,
+      "quote": "O valor inicial e a(s) data(s) de vencimento são livremente pactuados"
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "valor",
+      "form_already_swept": true,
+      "quote": "ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negoci"
+    },
+    {
+      "concept_id": "quantity.volatility",
+      "form": "Desvio Padrão",
+      "form_already_swept": false,
+      "quote": "Ou seja, da Variância chegamos no Desvio Padrão, consequentemente, do Desvio Padrão chegamos na Variância."
+    },
+    {
+      "concept_id": "quantity.volatility",
+      "form": "volatilidade",
+      "form_already_swept": true,
+      "quote": "É possível se proteger do risco de volatilidade também através do mercado de derivativos, por exemplo."
+    },
+    {
+      "concept_id": "quantity.volatility",
+      "form": "volatilidade",
+      "form_already_swept": true,
+      "quote": "Isso porque esses instrumentos são impactados pela volatilidade do ativo objeto."
+    },
+    {
+      "concept_id": "quantity.volatility",
+      "form": "volatilidade",
+      "form_already_swept": true,
+      "quote": "xemplo, há uma relação direta entre preços de calls e puts e o desvio-padrão (volatilidade) do ativo-objeto."
+    },
+    {
+      "concept_id": "risk.credit",
+      "form": "risco de crédito",
+      "form_already_swept": false,
+      "quote": "Desta forma, os títulos High Grade possuem baixo risco de crédito, mas também possuem um retorno menor comparado com os títulos"
+    },
+    {
+      "concept_id": "risk.default",
+      "form": "inadimplência",
+      "form_already_swept": true,
+      "quote": "O Spread de Crédito é uma medida que representa a probabilidade de inadimplência do emissor do título, quando comparado com o Ativo Livre de R"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "Risco",
+      "form_already_swept": true,
+      "quote": "a do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra."
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "MULTIMERCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específic"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "Quando falamos em imunização, é fundamental pontuar que esse risco de mudança de taxa de juros é decomposto em duas partes: Risc"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "ites de composição e concentração de carteira e de concentração em fatores de risco, conforme estabelecidos na Resolução CVM 175 e no regulamento"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ativo) é medido pelo desvio-p"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "idade de atuação do gestor, pois permite desvios muito maiores dos fatores de risco do índice e busca elevado Retorno Ativo."
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "que os retornos nos meses 1, 3 e 4 foram exatamente a média, portanto “não há risco”."
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "agem procura maximizar a diferença entre ativos e passivos para cada nível de risco, reduzindo assim o risco de descasamento de fluxos de caixa."
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "tilizado para tomar decisões de investimento - os investidores avaliam quanto risco estão dispostos a assumir em troca de diferentes níveis de re"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "risco",
+      "form_already_swept": true,
+      "quote": "Este risco é conhecido também por Volatilidade, que nada mais é que a su"
+    },
+    {
+      "concept_id": "technical.active_management",
+      "form": "Gestão Ativa",
+      "form_already_swept": false,
+      "quote": "O agregado foi de 1,20%, equivalente a R$ 1.250,00; - Gestão Ativa: as decisões do gestor levaram a um incremento de 2,23% ou R$"
+    },
+    {
+      "concept_id": "technical.anbima",
+      "form": "Anbima",
+      "form_already_swept": false,
+      "quote": "Nesse sentido, a Anbima possui um questionário específico de Due Dilligence para fund"
+    },
+    {
+      "concept_id": "technical.benchmark",
+      "form": "benchmark",
+      "form_already_swept": true,
+      "quote": "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: - Indexaç"
+    },
+    {
+      "concept_id": "technical.cdi",
+      "form": "CDI",
+      "form_already_swept": false,
+      "quote": "0% do patrimônio em BOVA11 e o restante em um fundo de renda fixa indexado ao CDI."
+    },
+    {
+      "concept_id": "technical.convexity",
+      "form": "convexidade",
+      "form_already_swept": true,
+      "quote": "Assim, por conta do efeito convexidade, quanto mais convexo for o título, maior a valorização do pre"
+    },
+    {
+      "concept_id": "technical.derivative",
+      "form": "derivativo",
+      "form_already_swept": true,
+      "quote": "dito da contraparte e risco de mercado relacionado à volatilidade do preço do derivativo."
+    },
+    {
+      "concept_id": "technical.discount",
+      "form": "deságio",
+      "form_already_swept": false,
+      "quote": "de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo)."
+    },
+    {
+      "concept_id": "technical.due_diligence",
+      "form": "due diligence",
+      "form_already_swept": false,
+      "quote": "Assim, a maioria dos FoFs exige um procedimento formal de due diligence."
+    },
+    {
+      "concept_id": "technical.duration",
+      "form": "Duration",
+      "form_already_swept": false,
+      "quote": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar sensibilidade do preço de um título pre"
+    },
+    {
+      "concept_id": "technical.duration",
+      "form": "Duration",
+      "form_already_swept": false,
+      "quote": "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o p"
+    },
+    {
+      "concept_id": "technical.duration",
+      "form": "duration",
+      "form_already_swept": false,
+      "quote": ": - Gestão de caixa: - Contratos futuros de taxa de juros: permitem ajustar a duration da carteira."
+    },
+    {
+      "concept_id": "technical.esg",
+      "form": "ASG",
+      "form_already_swept": false,
+      "quote": "e risco de crédito ASG: o fundo avalia o desempenho das empresas em critérios ASG para determinar o risco de crédito de seus títulos."
+    },
+    {
+      "concept_id": "technical.esg",
+      "form": "ISR",
+      "form_already_swept": false,
+      "quote": "- Retorno financeiro: Os investimentos em ISR podem ter um retorno financeiro semelhante aos investimentos"
+    },
+    {
+      "concept_id": "technical.futures",
+      "form": "contratos futuros",
+      "form_already_swept": false,
+      "quote": "também as perdas) podem ser amplificados; - Opções: de forma parecida com os contratos futuros, é possível pagar uma fração do valor de um ativo para compra"
+    },
+    {
+      "concept_id": "technical.hedge",
+      "form": "hedge",
+      "form_already_swept": false,
+      "quote": "Isso ocorre porque o custo do hedge e a precificação dos instrumentos utilizados podem reduzir o"
+    },
+    {
+      "concept_id": "technical.hedge",
+      "form": "hedge",
+      "form_already_swept": false,
+      "quote": "utilizam como estratégias derivativos para proteção de carteiras (em inglês, hedge)."
+    },
+    {
+      "concept_id": "technical.hedge",
+      "form": "hedge",
+      "form_already_swept": false,
+      "quote": "de modo que as perdas em um investimento não são exatamente compensadas pelo hedge."
+    },
+    {
+      "concept_id": "technical.hedge_fund",
+      "form": "Hedge Funds",
+      "form_already_swept": false,
+      "quote": "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberdade para investir em diversos ativos, tais"
+    },
+    {
+      "concept_id": "technical.ibovespa",
+      "form": "Ibovespa",
+      "form_already_swept": false,
+      "quote": "Por exemplo, 60% dos ativos do fundo investidos no Ibovespa pode se adequar ao objetivo estratégico do fundo, mas o patro"
+    },
+    {
+      "concept_id": "technical.ibovespa",
+      "form": "Ibovespa",
+      "form_already_swept": false,
+      "quote": "estor acredita que o cenário para os próximos meses não seja favorável para o Ibovespa (Carteira de Ações), ele pode diminuir a exposição a ações e"
+    },
+    {
+      "concept_id": "technical.immunisation",
+      "form": "imunização",
+      "form_already_swept": true,
+      "quote": "Iniciando pelos movimentos na curva de juros, as estratégias de imunização que apresentaremos funcionam melhor para variações paralelas"
+    },
+    {
+      "concept_id": "technical.immunisation",
+      "form": "imunização",
+      "form_already_swept": true,
+      "quote": "xa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização."
+    },
+    {
+      "concept_id": "technical.irr",
+      "form": "TIR",
+      "form_already_swept": false,
+      "quote": "Resumindo os resultados dos três cenários: | Cenário | TIR (ao ano) | TIR (ao período) | TWRR | |---|---:|---:|---:| | 1 | 2,23% | 4,50"
+    },
+    {
+      "concept_id": "technical.irr",
+      "form": "TIR",
+      "form_already_swept": false,
+      "quote": "rst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de co"
+    },
+    {
+      "concept_id": "technical.libor",
+      "form": "LIBOR",
+      "form_already_swept": false,
+      "quote": "A SONIA surgiu como substituta da LIBOR na libra esterlina, assim como a SOFR fez para o dólar americ"
+    },
+    {
+      "concept_id": "technical.long_and_short",
+      "form": "Long and Short",
+      "form_already_swept": false,
+      "quote": "Resumindo, a estratégia Long and Short difere da Market Neutral, pois a última tenta explorar as dif"
+    },
+    {
+      "concept_id": "technical.long_and_short",
+      "form": "Long and Short",
+      "form_already_swept": false,
+      "quote": "Por exemplo, um fundo Long and Short possui R$ 10 milhões de patrimônio líquido."
+    },
+    {
+      "concept_id": "technical.long_and_short",
+      "form": "long and short",
+      "form_already_swept": false,
+      "quote": "tral, pois a última tenta explorar as diferenças nos preços das ações ficando long and short em ações intimamente relacionadas e que possuem característic"
+    },
+    {
+      "concept_id": "technical.m2_measure",
+      "form": "M2",
+      "form_already_swept": false,
+      "quote": "O M2 é uma versão estendida e mais útil do índice de Sharpe."
+    },
+    {
+      "concept_id": "technical.option",
+      "form": "opção de venda",
+      "form_already_swept": false,
+      "quote": "> Opção de venda (put): por sua vez, o lançador pode vender o título com uma opção de venda embutida, favorecendo agora o investidor."
+    },
+    {
+      "concept_id": "technical.present_value",
+      "form": "PV",
+      "form_already_swept": false,
+      "quote": "ão se preocupe, a HP-12c fará esse cálculo para nós através das teclas (n, i, PV, PMT, FV) Em que: VP = valor presente Fc = cupom do título, o"
+    },
+    {
+      "concept_id": "technical.present_value",
+      "form": "valor presente",
+      "form_already_swept": false,
+      "quote": "Qual Será o valor presente do título, caso o YTM (retorno do ativo) seja de 4%, 6% e 8%?"
+    },
+    {
+      "concept_id": "technical.stress_test",
+      "form": "Stress Test",
+      "form_already_swept": false,
+      "quote": "- Stress Test NÃO SUBSTITUI O VaR, mas sim, o complementa."
+    },
+    {
+      "concept_id": "technical.swap",
+      "form": "swap",
+      "form_already_swept": false,
+      "quote": "lo ativo; contudo em troca, deve pagar uma taxa fixa ao longo da vida útil do swap."
+    },
+    {
+      "concept_id": "technical.var",
+      "form": "VaR",
+      "form_already_swept": false,
+      "quote": "Se não fosse esse efeito, teríamos que o VaR da carteira seria VaR de X (R$ 5.000) + VaR de Y (R$ 7.000), totalizando R$ 12.000."
+    },
+    {
+      "concept_id": "technical.var",
+      "form": "VaR",
+      "form_already_swept": false,
+      "quote": "Se VaR(X) = R$ 5.000, VaR(Y) = R$ 7.000 e , o VaR da carteira será: Note a materialização do efeito diversifica"
+    },
+    {
+      "concept_id": "technical.variance",
+      "form": "variância",
+      "form_already_swept": true,
+      "quote": "do na Fronteira Eficiente, é o processo de ponderação do risco, expresso como variância, em relação ao retorno esperado."
+    },
+    {
+      "concept_id": "technical.yield",
+      "form": "rendimento",
+      "form_already_swept": true,
+      "quote": "Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de s"
+    },
+    {
+      "concept_id": "technical.yield",
+      "form": "rendimento",
+      "form_already_swept": true,
+      "quote": "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (geralmente título público livre de"
+    },
+    {
+      "concept_id": "technical.yield_curve",
+      "form": "curva",
+      "form_already_swept": true,
+      "quote": "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia mais lucrativa, embora posições"
+    },
+    {
+      "concept_id": "technical.yield_curve",
+      "form": "curva",
+      "form_already_swept": true,
+      "quote": "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia mais lucrativa, embora posições"
+    },
+    {
+      "concept_id": "technical.yield_curve",
+      "form": "curva",
+      "form_already_swept": true,
+      "quote": "der também é beneficiada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimento"
+    },
+    {
+      "concept_id": "technical.yield_curve",
+      "form": "curva de juros",
+      "form_already_swept": false,
+      "quote": "Assim, se a curva de juros estiver: - Positivamente inclinada, a causa seria a baixa dem"
+    },
+    {
+      "concept_id": "technical.yield_spread",
+      "form": "spread de rendimento",
+      "form_already_swept": false,
+      "quote": "Tesouro a 5 anos estiver a 4% e o título do Tesouro a 30 anos estiver a 5%, o spread de rendimento entre os dois instrumentos de dívida é de 1%."
+    },
+    {
+      "concept_id": "temporal.during",
+      "form": "durante",
+      "form_already_swept": true,
+      "quote": "carteira é a variação percentual no valor de mercado desse ativo ou carteira durante um período de tempo definido."
+    },
+    {
+      "concept_id": "temporal.maturity",
+      "form": "vencimento",
+      "form_already_swept": true,
+      "quote": "assivos, a estratégia prevê a compra de múltiplos ativos zero cupom para cada vencimento."
+    },
+    {
+      "concept_id": "temporal.maturity",
+      "form": "vencimento",
+      "form_already_swept": true,
+      "quote": "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mes"
+    },
+    {
+      "concept_id": "temporal.maturity",
+      "form": "vencimentos",
+      "form_already_swept": true,
+      "quote": "to dos juros, mas o impacto pode ser majorado por conta da maior duration dos vencimentos mais longos."
+    },
+    {
+      "concept_id": "temporal.period",
+      "form": "período",
+      "form_already_swept": true,
+      "quote": "poderá solicitar o resgate, mas não terá direito a receber os rendimentos do período."
+    },
+    {
+      "concept_id": "temporal.period",
+      "form": "períodos",
+      "form_already_swept": true,
+      "quote": "das variações dos períodos que registraram alta pela média das variações dos períodos que registraram quedas."
+    },
+    {
+      "concept_id": "temporal.term",
+      "form": "Prazo",
+      "form_already_swept": true,
+      "quote": "e de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%"
+    },
+    {
+      "concept_id": "temporal.term",
+      "form": "Prazo",
+      "form_already_swept": true,
+      "quote": "nquadramento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Pra"
+    }
+  ],
+  "sample_size": 260,
+  "schema_version": "unread-residual-v1",
+  "seed": 6180339,
+  "unread_share": 0.8321
+}

@@ -22,16 +22,16 @@
     "usable": true,
     "youden_j": 0.599
   },
-  "bare_automatic_forms": 556,
-  "bare_forms": 748,
+  "bare_automatic_forms": 572,
+  "bare_forms": 762,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 4.24,
+    "mean": 4.13,
     "median": 3.0,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.6,
-    "zero_sense_forms": 164
+    "stdev": 5.55,
+    "zero_sense_forms": 177
   },
   "forms": [
     {
@@ -933,7 +933,7 @@
       ],
       "language": "en",
       "lemma_used": "capital",
-      "policy": "auto"
+      "policy": "review"
     },
     {
       "concept_id": "action.decide",
@@ -1824,7 +1824,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "rendimento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.result",
@@ -2058,7 +2058,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "futuro",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "technical.hedge",
@@ -3960,7 +3960,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "prêmio",
-      "policy": "auto"
+      "policy": "review"
     },
     {
       "concept_id": "technical.premium",
@@ -3969,7 +3969,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "prêmio",
-      "policy": "auto"
+      "policy": "review"
     },
     {
       "concept_id": "technical.rating",
@@ -4377,7 +4377,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "desconto",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "quantity.performance",
@@ -5650,6 +5650,17 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.otc_market",
+      "form": "OTC",
+      "general_senses": 1,
+      "glosses": [
+        "(of securities) not traded on a stock exchange; \"over-the-counter stoc"
+      ],
+      "language": "en",
+      "lemma_used": "otc",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.var",
       "form": "VaR",
       "general_senses": 1,
@@ -6090,7 +6101,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "opção",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "technical.option",
@@ -6099,7 +6110,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "opção",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.stop",
@@ -6660,6 +6671,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.fund_of_funds",
+      "form": "FoF",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "fof",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.fund_of_funds",
+      "form": "FoF",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "fof",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.garp",
       "form": "GARP",
       "general_senses": 0,
@@ -6804,6 +6833,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.interest_on_equity",
+      "form": "JCP",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "jcp",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.jsonl",
       "form": "JSONL",
       "general_senses": 0,
@@ -6927,6 +6965,42 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "macd",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.medium_term_note",
+      "form": "MTN",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "mtn",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.medium_term_note",
+      "form": "MTN",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "mtn",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.medium_term_note",
+      "form": "MTNs",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "mtns",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.medium_term_note",
+      "form": "MTNs",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "mtns",
       "policy": "auto"
     },
     {
@@ -7011,6 +7085,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.otc_market",
+      "form": "OTC",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "otc",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.pe_ratio",
       "form": "P/E",
       "general_senses": 0,
@@ -7044,6 +7127,24 @@
       "glosses": [],
       "language": "en",
       "lemma_used": "rsi",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.rep_risk_index",
+      "form": "RepRisk",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "reprisk",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.rep_risk_index",
+      "form": "RepRisk",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "reprisk",
       "policy": "auto"
     },
     {
@@ -7152,6 +7253,15 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "twrr",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.twrr",
+      "form": "Time-Weighted",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "time-weighted",
       "policy": "auto"
     },
     {
@@ -7332,6 +7442,24 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "backtesting",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.buy_and_hold",
+      "form": "buy-and-hold",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "buy-and-hold",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.buy_and_hold",
+      "form": "buy-and-hold",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "buy-and-hold",
       "policy": "auto"
     },
     {
@@ -8461,8 +8589,8 @@
     }
   ],
   "registry": {
-    "concepts": 319,
-    "version": "2.16.2"
+    "concepts": 333,
+    "version": "2.18.0"
   },
   "schema_version": "form-polysemy-v1"
 }

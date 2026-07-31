@@ -124,12 +124,18 @@ def main() -> int:
             })
 
     # Absorbed vs suppressed: a lost span still covered by something is absorbed.
+    #
+    # The suppressed spans are ENUMERATED, not just counted. An adversarial review asked whether
+    # the 117 were all wrong senses or included correct matches, and the report could not answer
+    # its own headline number — the reviewer had to reconstruct the list to find that 13 were
+    # correct matches lost. A total without the list is a number nobody can check, which is the
+    # same defect as `known_errors_remaining: 0`.
     covered_before = sum(len(v) for v in before["spans"].values())
     covered_after = sum(len(v) for v in after["spans"].values())
     absorbed = 0
-    suppressed = 0
-    for index, spans in before["spans"].items():
-        for span in spans:
+    suppressed_spans = []
+    for index, spans in sorted(before["spans"].items()):
+        for span in sorted(spans):
             if span in after["spans"].get(index, ()):
                 continue
             overlaps = any(
@@ -139,7 +145,12 @@ def main() -> int:
             if overlaps:
                 absorbed += 1
             else:
-                suppressed += 1
+                sentence = sentences[index]
+                suppressed_spans.append({
+                    "surface": sentence[span[0]:span[1]],
+                    "quote": sentence[max(0, span[0] - 60):span[1] + 50].replace("\n", " ").strip(),
+                })
+    suppressed = len(suppressed_spans)
 
     lost.sort(key=lambda item: item["delta"])
     gained.sort(key=lambda item: -item["delta"])
@@ -152,6 +163,7 @@ def main() -> int:
         "spans_after": covered_after,
         "spans_absorbed_by_a_longer_match": absorbed,
         "spans_suppressed_with_no_replacement": suppressed,
+        "suppressed_spans": suppressed_spans,
         "concepts_that_lost_events": len(lost),
         "concepts_that_gained_events": len(gained),
         "lost": lost,

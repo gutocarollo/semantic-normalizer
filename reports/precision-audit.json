@@ -43,9 +43,9 @@
           "surface": "risco"
         }
       ],
-      "occurrences": 200,
+      "occurrences": 197,
       "policy": "auto",
-      "share_of_concept": 0.873,
+      "share_of_concept": 0.876,
       "tokens": 1
     },
     {
@@ -87,7 +87,7 @@
           "surface": "juros"
         }
       ],
-      "occurrences": 186,
+      "occurrences": 185,
       "policy": "auto",
       "share_of_concept": 0.925,
       "tokens": 1
@@ -178,7 +178,7 @@
       ],
       "occurrences": 177,
       "policy": "auto",
-      "share_of_concept": 0.816,
+      "share_of_concept": 0.819,
       "tokens": 1
     },
     {
@@ -222,7 +222,7 @@
       ],
       "occurrences": 169,
       "policy": "auto",
-      "share_of_concept": 0.583,
+      "share_of_concept": 0.585,
       "tokens": 1
     },
     {
@@ -308,9 +308,9 @@
           "surface": "mercado"
         }
       ],
-      "occurrences": 139,
+      "occurrences": 129,
       "policy": "auto",
-      "share_of_concept": 0.853,
+      "share_of_concept": 0.872,
       "tokens": 1
     },
     {
@@ -574,7 +574,7 @@
       ],
       "occurrences": 106,
       "policy": "auto",
-      "share_of_concept": 0.527,
+      "share_of_concept": 0.53,
       "tokens": 1
     },
     {
@@ -618,7 +618,7 @@
       ],
       "occurrences": 101,
       "policy": "auto",
-      "share_of_concept": 0.348,
+      "share_of_concept": 0.349,
       "tokens": 1
     },
     {
@@ -706,7 +706,7 @@
       ],
       "occurrences": 91,
       "policy": "auto",
-      "share_of_concept": 0.805,
+      "share_of_concept": 0.82,
       "tokens": 1
     },
     {
@@ -970,7 +970,7 @@
       ],
       "occurrences": 67,
       "policy": "auto",
-      "share_of_concept": 0.37,
+      "share_of_concept": 0.39,
       "tokens": 1
     },
     {
@@ -1014,7 +1014,7 @@
       ],
       "occurrences": 66,
       "policy": "auto",
-      "share_of_concept": 0.365,
+      "share_of_concept": 0.384,
       "tokens": 1
     },
     {
@@ -1102,7 +1102,7 @@
       ],
       "occurrences": 61,
       "policy": "auto",
-      "share_of_concept": 0.303,
+      "share_of_concept": 0.305,
       "tokens": 1
     },
     {
@@ -1410,7 +1410,7 @@
       ],
       "occurrences": 45,
       "policy": "auto",
-      "share_of_concept": 0.634,
+      "share_of_concept": 0.652,
       "tokens": 1
     },
     {
@@ -1454,7 +1454,7 @@
       ],
       "occurrences": 43,
       "policy": "auto",
-      "share_of_concept": 0.614,
+      "share_of_concept": 0.915,
       "tokens": 1
     },
     {
@@ -1938,7 +1938,7 @@
       ],
       "occurrences": 32,
       "policy": "auto",
-      "share_of_concept": 0.147,
+      "share_of_concept": 0.148,
       "tokens": 1
     },
     {
@@ -2554,7 +2554,7 @@
       ],
       "occurrences": 25,
       "policy": "auto",
-      "share_of_concept": 0.676,
+      "share_of_concept": 0.694,
       "tokens": 1
     },
     {
@@ -2642,7 +2642,7 @@
       ],
       "occurrences": 25,
       "policy": "unknown",
-      "share_of_concept": 0.109,
+      "share_of_concept": 0.111,
       "tokens": 1
     },
     {
@@ -2862,7 +2862,7 @@
       ],
       "occurrences": 23,
       "policy": "auto",
-      "share_of_concept": 0.324,
+      "share_of_concept": 0.333,
       "tokens": 1
     },
     {
@@ -3126,51 +3126,7 @@
       ],
       "occurrences": 22,
       "policy": "auto",
-      "share_of_concept": 0.88,
-      "tokens": 1
-    },
-    {
-      "alias": "capital",
-      "concept_id": "entity.resource",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "ade de 10% em um período, devendo pagar 20% sobre ganhos de capital de imposto, o retorno líquido seria 10% x (1 - 0,20) = 8%.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "capital"
-        },
-        {
-          "context": "ce do mercado de ações que acompanha 30 grandes empresas de capital aberto negociadas na Bolsa de Valores de Nova York (NYSE) e",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "capital"
-        },
-        {
-          "context": "cente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "capital"
-        },
-        {
-          "context": "idendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "capital"
-        },
-        {
-          "context": " juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "capital"
-        },
-        {
-          "context": "dos; - Geração de caixa (\"EBITDA\" – LAJIDA); - Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patr",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "capital"
-        }
-      ],
-      "occurrences": 22,
-      "policy": "auto",
-      "share_of_concept": 0.314,
+      "share_of_concept": 0.917,
       "tokens": 1
     },
     {
@@ -3214,7 +3170,7 @@
       ],
       "occurrences": 22,
       "policy": "auto",
-      "share_of_concept": 0.733,
+      "share_of_concept": 0.759,
       "tokens": 1
     },
     {
@@ -4358,7 +4314,7 @@
       ],
       "occurrences": 18,
       "policy": "auto",
-      "share_of_concept": 0.099,
+      "share_of_concept": 0.105,
       "tokens": 3
     },
     {
@@ -4626,50 +4582,6 @@
       "tokens": 1
     },
     {
-      "alias": "Fundos",
-      "concept_id": "entity.fund",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "nidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gest",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos ",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundos"
-        }
-      ],
-      "occurrences": 16,
-      "policy": "unknown",
-      "share_of_concept": 0.088,
-      "tokens": 1
-    },
-    {
       "alias": "patrimônio líquido",
       "concept_id": "entity.net_assets",
       "domains": [
@@ -4887,50 +4799,6 @@
       "occurrences": 16,
       "policy": "unknown",
       "share_of_concept": 0.762,
-      "tokens": 1
-    },
-    {
-      "alias": "Prazo",
-      "concept_id": "temporal.term",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos de dívida emitidos por empresas",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Prazo"
-        },
-        {
-          "context": "Prazo overnight: ao contrário da Libor, que podia ter variações p",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Prazo"
-        },
-        {
-          "context": "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua car",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Prazo"
-        },
-        {
-          "context": "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua car",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Prazo"
-        },
-        {
-          "context": "or da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Prazo"
-        },
-        {
-          "context": "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Prazo"
-        }
-      ],
-      "occurrences": 15,
-      "policy": "unknown",
-      "share_of_concept": 0.133,
       "tokens": 1
     },
     {
@@ -5195,6 +5063,50 @@
       "occurrences": 14,
       "policy": "auto",
       "share_of_concept": 0.259,
+      "tokens": 1
+    },
+    {
+      "alias": "Prazo",
+      "concept_id": "temporal.term",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Prazo overnight: ao contrário da Libor, que podia ter variações p",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Prazo"
+        },
+        {
+          "context": "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua car",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Prazo"
+        },
+        {
+          "context": "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua car",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Prazo"
+        },
+        {
+          "context": "or da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Prazo"
+        },
+        {
+          "context": "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Prazo"
+        },
+        {
+          "context": "ndendo exclusivamente de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações:",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Prazo"
+        }
+      ],
+      "occurrences": 14,
+      "policy": "unknown",
+      "share_of_concept": 0.126,
       "tokens": 1
     },
     {
@@ -5726,6 +5638,50 @@
       "tokens": 1
     },
     {
+      "alias": "Fundos",
+      "concept_id": "entity.fund",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": ", no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "s abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundos"
+        }
+      ],
+      "occurrences": 12,
+      "policy": "unknown",
+      "share_of_concept": 0.07,
+      "tokens": 1
+    },
+    {
       "alias": "passivo",
       "concept_id": "entity.liability",
       "domains": [
@@ -5812,6 +5768,50 @@
       "policy": "auto",
       "share_of_concept": 0.324,
       "tokens": 1
+    },
+    {
+      "alias": "valor de face",
+      "concept_id": "technical.principal",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "am cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dó",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        },
+        {
+          "context": "evido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma perc",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        },
+        {
+          "context": "osse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        },
+        {
+          "context": " está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        },
+        {
+          "context": "O investidor nunca recebe menos do que o valor de face.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        },
+        {
+          "context": "eja, se houver deflação e o valor do título for inferior ao valor de face, este automaticamente volta ao valor de face.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "valor de face"
+        }
+      ],
+      "occurrences": 11,
+      "policy": "auto",
+      "share_of_concept": 0.611,
+      "tokens": 3
     },
     {
       "alias": "cupons",
@@ -5942,51 +5942,7 @@
       ],
       "occurrences": 11,
       "policy": "auto",
-      "share_of_concept": 0.067,
-      "tokens": 1
-    },
-    {
-      "alias": "Mercado",
-      "concept_id": "entity.market",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "ercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Mercado"
-        },
-        {
-          "context": "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são n",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Mercado"
-        },
-        {
-          "context": "O Mercado de Balcão é dividido em duas categorias: o mercado de balcã",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Mercado"
-        },
-        {
-          "context": " Valores oferece maior transparência e liquidez, enquanto o Mercado de Balcão oferece maior flexibilidade e acesso a um número ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Mercado"
-        },
-        {
-          "context": "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são considerad",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Mercado"
-        },
-        {
-          "context": "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Mercado"
-        }
-      ],
-      "occurrences": 11,
-      "policy": "unknown",
-      "share_of_concept": 0.067,
+      "share_of_concept": 0.074,
       "tokens": 1
     },
     {
@@ -6343,50 +6299,6 @@
       "tokens": 1
     },
     {
-      "alias": "valor de face",
-      "concept_id": "technical.principal",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "evido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma perc",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        },
-        {
-          "context": "osse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        },
-        {
-          "context": " está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos).",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        },
-        {
-          "context": "O investidor nunca recebe menos do que o valor de face.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        },
-        {
-          "context": "eja, se houver deflação e o valor do título for inferior ao valor de face, este automaticamente volta ao valor de face.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        },
-        {
-          "context": "or inferior ao valor de face, este automaticamente volta ao valor de face.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "valor de face"
-        }
-      ],
-      "occurrences": 10,
-      "policy": "auto",
-      "share_of_concept": 0.588,
-      "tokens": 3
-    },
-    {
       "alias": "inflação",
       "concept_id": "entity.inflation",
       "domains": [
@@ -6471,7 +6383,7 @@
       ],
       "occurrences": 10,
       "policy": "auto",
-      "share_of_concept": 0.27,
+      "share_of_concept": 0.278,
       "tokens": 1
     },
     {
@@ -6605,6 +6517,50 @@
       "policy": "auto",
       "share_of_concept": 0.909,
       "tokens": 1
+    },
+    {
+      "alias": "mercado de balcão",
+      "concept_id": "technical.otc_market",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O mercado de balcão é menos regulamentado do que a bolsa de valores, o que sign",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        },
+        {
+          "context": "s, o que significa que as empresas que listam suas ações no mercado de balcão geralmente têm menos requisitos de divulgação e conformidad",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        },
+        {
+          "context": "O Mercado de Balcão é dividido em duas categorias: o mercado de balcão organizado e o mercado de balcão não organizado.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        },
+        {
+          "context": "dido em duas categorias: o mercado de balcão organizado e o mercado de balcão não organizado.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        },
+        {
+          "context": "O mercado de balcão organizado inclui sistemas de negociação eletrônica, como o",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        },
+        {
+          "context": "Já o mercado de balcão não organizado inclui negociações privadas, como as negocia",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "mercado de balcão"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "auto",
+      "share_of_concept": 0.625,
+      "tokens": 3
     },
     {
       "alias": "diversificação",
@@ -6911,7 +6867,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.31,
+      "share_of_concept": 0.231,
       "tokens": 3
     },
     {
@@ -7003,6 +6959,50 @@
       "tokens": 2
     },
     {
+      "alias": "rendimento",
+      "concept_id": "technical.yield",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) qu",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "rendimento"
+        },
+        {
+          "context": "Assim, o Yield Spread é calculado deduzindo o rendimento de um instrumento do outro.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "rendimento"
+        },
+        {
+          "context": "Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo c",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "rendimento"
+        },
+        {
+          "context": "s são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "rendimento"
+        },
+        {
+          "context": "Agora, se ele comparar o rendimento de sua carteira, gerida ativamente, de 20% contra 15% do Ib",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "rendimento"
+        },
+        {
+          "context": "O Alfa de Jensen é um indicador para determinar o rendimento real da carteira comparado ao retorno exigido do investidor",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "rendimento"
+        }
+      ],
+      "occurrences": 9,
+      "policy": "auto",
+      "share_of_concept": 0.692,
+      "tokens": 1
+    },
+    {
       "alias": "bolsa de valores",
       "concept_id": "entity.securities",
       "domains": [
@@ -7045,50 +7045,6 @@
       "policy": "auto",
       "share_of_concept": 0.375,
       "tokens": 3
-    },
-    {
-      "alias": "Fundo",
-      "concept_id": "entity.fund",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Fundo"
-        },
-        {
-          "context": "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundo"
-        },
-        {
-          "context": "to extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como t",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundo"
-        },
-        {
-          "context": "imentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Fundo"
-        },
-        {
-          "context": "- Fundo Multimercado: depende da constituição da carteira, mas em g",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Fundo"
-        },
-        {
-          "context": " calcularemos a Variância e o Desvio Padrão dos retornos do Fundo de “A” no qual teve retornos de (+3%, +1%, +3%, +3%, +5%).",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Fundo"
-        }
-      ],
-      "occurrences": 9,
-      "policy": "unknown",
-      "share_of_concept": 0.05,
-      "tokens": 1
     },
     {
       "alias": "CDI",
@@ -7928,50 +7884,6 @@
       "tokens": 1
     },
     {
-      "alias": "prêmio",
-      "concept_id": "technical.premium",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": " está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a u",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "prêmio"
-        },
-        {
-          "context": "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do que se não houv",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "prêmio"
-        },
-        {
-          "context": "exemplo A para BB), os investidores novos exigirão um maior prêmio para investir nos títulos de dívida desta companhia.",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "prêmio"
-        },
-        {
-          "context": "fere o risco de crédito para uma contraparte em troca de um prêmio.",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "prêmio"
-        },
-        {
-          "context": "ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "prêmio"
-        },
-        {
-          "context": "O comprador paga um prêmio ao vendedor do CDS, e em caso de inadimplência do devedor, ",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "prêmio"
-        }
-      ],
-      "occurrences": 7,
-      "policy": "auto",
-      "share_of_concept": 1.0,
-      "tokens": 1
-    },
-    {
       "alias": "opção de venda",
       "concept_id": "technical.option",
       "domains": [
@@ -8012,7 +7924,7 @@
       ],
       "occurrences": 7,
       "policy": "auto",
-      "share_of_concept": 0.241,
+      "share_of_concept": 0.179,
       "tokens": 3
     },
     {
@@ -8368,6 +8280,50 @@
       "tokens": 1
     },
     {
+      "alias": "Mercado",
+      "concept_id": "entity.market",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são considerad",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Mercado"
+        },
+        {
+          "context": "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Mercado"
+        },
+        {
+          "context": "A classe de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inf",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Mercado"
+        },
+        {
+          "context": "A classe tipificada como “Ações – Mercado de Acesso” possui o prazo de 180 dias para atingir os limit",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Mercado"
+        },
+        {
+          "context": "de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "Mercado"
+        },
+        {
+          "context": "ivas Puras; - Preferência pela Liquidez; e - Segmentação de Mercado.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Mercado"
+        }
+      ],
+      "occurrences": 7,
+      "policy": "unknown",
+      "share_of_concept": 0.047,
+      "tokens": 1
+    },
+    {
       "alias": "Gestão Ativa",
       "concept_id": "technical.active_management",
       "domains": [
@@ -8496,7 +8452,7 @@
       ],
       "occurrences": 6,
       "policy": "auto",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.054,
       "tokens": 1
     },
     {
@@ -8584,7 +8540,7 @@
       ],
       "occurrences": 6,
       "policy": "auto",
-      "share_of_concept": 0.462,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -8804,7 +8760,7 @@
       ],
       "occurrences": 6,
       "policy": "auto",
-      "share_of_concept": 0.286,
+      "share_of_concept": 0.25,
       "tokens": 2
     },
     {
@@ -9233,7 +9189,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.294,
+      "share_of_concept": 0.278,
       "tokens": 2
     },
     {
@@ -9472,6 +9428,45 @@
       "tokens": 1
     },
     {
+      "alias": "FoF",
+      "concept_id": "entity.fund_of_funds",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "stir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "FoF"
+        },
+        {
+          "context": "Como o papel do gestor de um FoF é investir em outros fundos, seu trabalho é muito focado no",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "FoF"
+        },
+        {
+          "context": "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gestor al",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "FoF"
+        },
+        {
+          "context": " como também nos Fundos que serão investidos pelo gestor do FoF.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "FoF"
+        },
+        {
+          "context": "Independente disso, um importante trabalho do gestor do FoF é escolher diligentemente os fundos nos quais investirá din",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "FoF"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
       "alias": "Cupom",
       "concept_id": "entity.coupon",
       "domains": [
@@ -9663,7 +9658,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.455,
+      "share_of_concept": 0.556,
       "tokens": 1
     },
     {
@@ -9936,7 +9931,46 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.167,
+      "share_of_concept": 0.172,
+      "tokens": 1
+    },
+    {
+      "alias": "Fundo",
+      "concept_id": "entity.fund",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "imentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundo"
+        },
+        {
+          "context": "- Fundo Multimercado: depende da constituição da carteira, mas em g",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundo"
+        },
+        {
+          "context": " calcularemos a Variância e o Desvio Padrão dos retornos do Fundo de “A” no qual teve retornos de (+3%, +1%, +3%, +3%, +5%).",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Fundo"
+        },
+        {
+          "context": " 3% e que apresentem os retornos abaixo, deve-se escolher o Fundo A, pois possui menor oscilação e, consequentemente, menor D",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Fundo"
+        },
+        {
+          "context": "or oscilação e, consequentemente, menor Desvio Padrão que o Fundo B.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Fundo"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "unknown",
+      "share_of_concept": 0.029,
       "tokens": 1
     },
     {
@@ -10092,7 +10126,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.385,
+      "share_of_concept": 0.417,
       "tokens": 1
     },
     {
@@ -10169,40 +10203,6 @@
       "tokens": 1
     },
     {
-      "alias": "yield",
-      "concept_id": "technical.yield",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "taxa de desconto não é a mesma coisa que a taxa de retorno (yield).",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "yield"
-        },
-        {
-          "context": "ice P/L ou do EV / EBITDA, ou um alto numerador do dividend yield.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "yield"
-        },
-        {
-          "context": "Juros (yield) dos vencimentos de longo prazo aumentam com mais intensida",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "yield"
-        },
-        {
-          "context": "Juros (yield) dos vencimentos de longo prazo diminuem com mais intensida",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "yield"
-        }
-      ],
-      "occurrences": 4,
-      "policy": "auto",
-      "share_of_concept": 0.571,
-      "tokens": 1
-    },
-    {
       "alias": "deságio",
       "concept_id": "technical.discount",
       "domains": [
@@ -10233,7 +10233,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.667,
+      "share_of_concept": 0.4,
       "tokens": 1
     },
     {
@@ -10373,6 +10373,74 @@
       "tokens": 1
     },
     {
+      "alias": "opções",
+      "concept_id": "technical.option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " transações financeiras, como contratos de swap, futuros, e opções.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "opções"
+        },
+        {
+          "context": "se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implica",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "opções"
+        },
+        {
+          "context": "s de investimento, como futuros ou termos de moeda ou ainda opções.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "opções"
+        },
+        {
+          "context": "o porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "opções"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.103,
+      "tokens": 1
+    },
+    {
+      "alias": "Mercado de Balcão",
+      "concept_id": "technical.otc_market",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Mercado de Balcão"
+        },
+        {
+          "context": "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são negociadas ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Mercado de Balcão"
+        },
+        {
+          "context": "O Mercado de Balcão é dividido em duas categorias: o mercado de balcão organiza",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Mercado de Balcão"
+        },
+        {
+          "context": " Valores oferece maior transparência e liquidez, enquanto o Mercado de Balcão oferece maior flexibilidade e acesso a um número maior de e",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Mercado de Balcão"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 3
+    },
+    {
       "alias": "vendedores",
       "concept_id": "actor.seller",
       "domains": [
@@ -10405,6 +10473,40 @@
       "policy": "auto",
       "share_of_concept": 0.267,
       "tokens": 1
+    },
+    {
+      "alias": "Fundo de Fundos",
+      "concept_id": "entity.fund_of_funds",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Fundo de Fundos"
+        },
+        {
+          "context": "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gest",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundo de Fundos"
+        },
+        {
+          "context": "to extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundo de Fundos"
+        },
+        {
+          "context": "a setor e para cada gestor (em se tratando, por exemplo, de Fundo de Fundos).",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Fundo de Fundos"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.4,
+      "tokens": 3
     },
     {
       "alias": "Total Return Equity Swap",
@@ -10471,7 +10573,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.19,
+      "share_of_concept": 0.167,
       "tokens": 2
     },
     {
@@ -10573,7 +10675,7 @@
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.364,
+      "share_of_concept": 0.444,
       "tokens": 1
     },
     {
@@ -10709,7 +10811,7 @@
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.018,
+      "share_of_concept": 0.019,
       "tokens": 1
     },
     {
@@ -11049,7 +11151,7 @@
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.19,
+      "share_of_concept": 0.167,
       "tokens": 2
     },
     {
@@ -11121,6 +11223,35 @@
       "tokens": 1
     },
     {
+      "alias": "yield",
+      "concept_id": "technical.yield",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "taxa de desconto não é a mesma coisa que a taxa de retorno (yield).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "yield"
+        },
+        {
+          "context": "Juros (yield) dos vencimentos de longo prazo aumentam com mais intensida",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "yield"
+        },
+        {
+          "context": "Juros (yield) dos vencimentos de longo prazo diminuem com mais intensida",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "yield"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.231,
+      "tokens": 1
+    },
+    {
       "alias": "em seguida",
       "concept_id": "temporal.next",
       "domains": [
@@ -11148,6 +11279,64 @@
       "policy": "auto",
       "share_of_concept": 1.0,
       "tokens": 2
+    },
+    {
+      "alias": "desconto",
+      "concept_id": "technical.discount",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "o aceite a um terceiro, geralmente um banco, em troca de um desconto.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "desconto"
+        },
+        {
+          "context": "DESÁGIO (desconto): O título está “mais barato” em relação a sua emissão.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "desconto"
+        },
+        {
+          "context": "a Selic projetada, ele deve adquirir o título comprando com desconto.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "desconto"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.3,
+      "tokens": 1
+    },
+    {
+      "alias": "MTNs",
+      "concept_id": "entity.medium_term_note",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos de dí",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "MTNs"
+        },
+        {
+          "context": "io dos títulos regulares com cronograma de emissão fixo, os MTNs são emitidos sob um programa que permite a oferta contínua.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "MTNs"
+        },
+        {
+          "context": "Os emissores podem personalizar os termos dos MTNs para atender às suas necessidades específicas, incluindo it",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "MTNs"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.6,
+      "tokens": 1
     },
     {
       "alias": "JUROS",
@@ -11235,35 +11424,6 @@
       "policy": "unknown",
       "share_of_concept": 0.143,
       "tokens": 3
-    },
-    {
-      "alias": "Yield",
-      "concept_id": "technical.yield",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Os Yield Spreads são comumente cotados em termos de um rendimento ve",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Yield"
-        },
-        {
-          "context": "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Yield"
-        },
-        {
-          "context": "Yield Prazo Taxas das extremidades sobem e da intermediária, cai.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Yield"
-        }
-      ],
-      "occurrences": 3,
-      "policy": "unknown",
-      "share_of_concept": 0.429,
-      "tokens": 1
     },
     {
       "alias": "Durante",
@@ -11523,7 +11683,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.143,
+      "share_of_concept": 0.125,
       "tokens": 2
     },
     {
@@ -12049,6 +12209,35 @@
       "tokens": 2
     },
     {
+      "alias": "RepRisk",
+      "concept_id": "technical.rep_risk_index",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "valores referentes aos critérios Score CDP-Climate Change e RepRisk Index – Peak RRI serão consideradas a cada rebalanceamento ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "RepRisk"
+        },
+        {
+          "context": "e risco reputacional em aspectos ASG produzido pela empresa RepRisk e utilizado para avaliar as empresas sob essa perspectiva.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "RepRisk"
+        },
+        {
+          "context": "ior valor nos 24 meses que antecedem a seleção da carteira (RepRisk Index – Peak RRI).",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "RepRisk"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.75,
+      "tokens": 1
+    },
+    {
       "alias": "Information Ratio",
       "concept_id": "technical.information_ratio",
       "domains": [
@@ -12074,7 +12263,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 1.0,
+      "share_of_concept": 0.75,
       "tokens": 2
     },
     {
@@ -12308,6 +12497,35 @@
       "policy": "auto",
       "share_of_concept": 0.011,
       "tokens": 2
+    },
+    {
+      "alias": "risco de capital",
+      "concept_id": "technical.capital_risk_exposure",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "es de composição e concentração de carteira, de exposição a risco de capital e de concentração em fatores de risco não são excedidos.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "risco de capital"
+        },
+        {
+          "context": "asse destinada ao público em geral que originem exposição a risco de capital devem contar com cobertura ou margem de garantia em mercado",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "risco de capital"
+        },
+        {
+          "context": "vestidores profissionais não possuem limites de exposição a risco de capital, exceto pelo que porventura dispuser o Regulamento.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "risco de capital"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 3
     },
     {
       "alias": "exceto",
@@ -12741,7 +12959,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 1.0,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -12800,6 +13018,35 @@
       "occurrences": 3,
       "policy": "auto",
       "share_of_concept": 0.375,
+      "tokens": 1
+    },
+    {
+      "alias": "opção",
+      "concept_id": "technical.option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ndo o emissor recomprar o título nas condições acordadas na opção.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "opção"
+        },
+        {
+          "context": "ois permitem que o titular escolha se quer ou não exercer a opção.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "opção"
+        },
+        {
+          "context": "ois permitem que o titular escolha se quer ou não exercer a opção.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "opção"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.077,
       "tokens": 1
     },
     {
@@ -12886,7 +13133,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.103,
+      "share_of_concept": 0.077,
       "tokens": 3
     },
     {
@@ -12973,7 +13220,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 1.0,
+      "share_of_concept": 0.75,
       "tokens": 1
     },
     {
@@ -13000,6 +13247,30 @@
       "policy": "unknown",
       "share_of_concept": 0.01,
       "tokens": 1
+    },
+    {
+      "alias": "desconto sobre",
+      "concept_id": "technical.discount",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "os os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "desconto sobre"
+        },
+        {
+          "context": ") Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cot",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "desconto sobre"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.2,
+      "tokens": 2
     },
     {
       "alias": "Valor Presente",
@@ -13094,7 +13365,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.069,
+      "share_of_concept": 0.051,
       "tokens": 3
     },
     {
@@ -13238,8 +13509,56 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 1.0,
+      "share_of_concept": 0.4,
       "tokens": 2
+    },
+    {
+      "alias": "ganhos de capital",
+      "concept_id": "technical.capital_gain",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "rentabilidade de 10% em um período, devendo pagar 20% sobre ganhos de capital de imposto, o retorno líquido seria 10% x (1 - 0,20) = 8%.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "ganhos de capital"
+        },
+        {
+          "context": "erada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ganhos de capital"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 3
+    },
+    {
+      "alias": "futuros",
+      "concept_id": "technical.futures",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "os tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "futuros"
+        },
+        {
+          "context": " mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "futuros"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.083,
+      "tokens": 1
     },
     {
       "alias": "Dow Jones Industrial Average",
@@ -13334,7 +13653,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.4,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -13358,7 +13677,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.095,
+      "share_of_concept": 0.083,
       "tokens": 2
     },
     {
@@ -13646,7 +13965,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.4,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -13790,7 +14109,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.067,
+      "share_of_concept": 0.069,
       "tokens": 1
     },
     {
@@ -13814,7 +14133,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.029,
+      "share_of_concept": 0.043,
       "tokens": 1
     },
     {
@@ -14390,7 +14709,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.069,
+      "share_of_concept": 0.051,
       "tokens": 2
     },
     {
@@ -14560,6 +14879,30 @@
       "policy": "unknown",
       "share_of_concept": 0.154,
       "tokens": 4
+    },
+    {
+      "alias": "Time-Weighted",
+      "concept_id": "technical.twrr",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Time-Weighted x Money Weighted Rate of Return Time-Weighted x Money Weigh",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "Time-Weighted"
+        },
+        {
+          "context": "Time-Weighted x Money Weighted Rate of Return Time-Weighted x Money Weighted Rate of Return",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "Time-Weighted"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.333,
+      "tokens": 1
     },
     {
       "alias": "Cenário",
@@ -15018,6 +15361,30 @@
       "tokens": 1
     },
     {
+      "alias": "Opções",
+      "concept_id": "technical.option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "o, os ganhos (e também as perdas) podem ser amplificados; - Opções: de forma parecida com os contratos futuros, é possível pag",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Opções"
+        },
+        {
+          "context": "- Opções de taxa de juros: dão ao titular o direito de comprar ou ve",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Opções"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.051,
+      "tokens": 1
+    },
+    {
       "alias": "Opções de compra",
       "concept_id": "technical.option",
       "domains": [
@@ -15038,7 +15405,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.069,
+      "share_of_concept": 0.051,
       "tokens": 3
     },
     {
@@ -15090,6 +15457,30 @@
       "tokens": 1
     },
     {
+      "alias": "Buy-and-Hold",
+      "concept_id": "technical.buy_and_hold",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "nceamento, veremos as três estratégias cobradas no Exame: - Buy-and-Hold; - Constant Mix; - CPPI.",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "Buy-and-Hold"
+        },
+        {
+          "context": "Rafael adota a estratégia Buy-and-Hold e possui um patrimônio de R$ 500.000.",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "Buy-and-Hold"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
       "alias": "FUNDO",
       "concept_id": "entity.fund",
       "domains": [
@@ -15110,27 +15501,8 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.011,
+      "share_of_concept": 0.012,
       "tokens": 1
-    },
-    {
-      "alias": "desconto sobre o valor de face",
-      "concept_id": "technical.discount",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "os os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dó",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "desconto sobre o valor de face"
-        }
-      ],
-      "occurrences": 1,
-      "policy": "auto",
-      "share_of_concept": 0.167,
-      "tokens": 6
     },
     {
       "alias": "Valor principal",
@@ -15148,7 +15520,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.059,
+      "share_of_concept": 0.056,
       "tokens": 2
     },
     {
@@ -15186,7 +15558,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.059,
+      "share_of_concept": 0.056,
       "tokens": 2
     },
     {
@@ -15247,23 +15619,42 @@
       "tokens": 1
     },
     {
-      "alias": "Term",
-      "concept_id": "temporal.term",
+      "alias": "Medium Term Notes",
+      "concept_id": "entity.medium_term_note",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente t",
+          "context": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Term"
+          "surface": "Medium Term Notes"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.009,
-      "tokens": 1
+      "share_of_concept": 0.2,
+      "tokens": 3
+    },
+    {
+      "alias": "Notas de Médio Prazo",
+      "concept_id": "entity.medium_term_note",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos de dívida emitidos por empresas",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Notas de Médio Prazo"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.2,
+      "tokens": 4
     },
     {
       "alias": "opção de put",
@@ -15281,7 +15672,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.034,
+      "share_of_concept": 0.026,
       "tokens": 3
     },
     {
@@ -15494,8 +15885,27 @@
       "tokens": 3
     },
     {
-      "alias": "Spreads",
-      "concept_id": "technical.spread",
+      "alias": "Spread de Rendimento",
+      "concept_id": "technical.yield_spread",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Um Yield Spread, ou Spread de Rendimento, é a diferença entre os rendimentos de diferentes instrumen",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Spread de Rendimento"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.2,
+      "tokens": 3
+    },
+    {
+      "alias": "Yield Spreads",
+      "concept_id": "technical.yield_spread",
       "domains": [
         "finance",
         "cga"
@@ -15504,13 +15914,32 @@
         {
           "context": "Os Yield Spreads são comumente cotados em termos de um rendimento versus o r",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Spreads"
+          "surface": "Yield Spreads"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
-      "tokens": 1
+      "share_of_concept": 0.2,
+      "tokens": 2
+    },
+    {
+      "alias": "spread de rendimento",
+      "concept_id": "technical.yield_spread",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "stiver a 4% e o título do Tesouro a 30 anos estiver a 5%, o spread de rendimento entre os dois instrumentos de dívida é de 1%.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "spread de rendimento"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.2,
+      "tokens": 3
     },
     {
       "alias": "RETORNO",
@@ -15661,7 +16090,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.027,
+      "share_of_concept": 0.028,
       "tokens": 1
     },
     {
@@ -15722,23 +16151,23 @@
       "tokens": 4
     },
     {
-      "alias": "Market",
-      "concept_id": "entity.market",
+      "alias": "OTC Market",
+      "concept_id": "technical.otc_market",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "a de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
+          "context": "Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Market"
+          "surface": "OTC Market"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.006,
-      "tokens": 1
+      "policy": "auto",
+      "share_of_concept": 0.062,
+      "tokens": 2
     },
     {
       "alias": "Securities",
@@ -15760,23 +16189,42 @@
       "tokens": 1
     },
     {
-      "alias": "Bank",
-      "concept_id": "actor.bank",
+      "alias": "OTC",
+      "concept_id": "technical.otc_market",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consum",
+          "context": "organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são n",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Bank"
+          "surface": "OTC"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.027,
+      "policy": "auto",
+      "share_of_concept": 0.062,
       "tokens": 1
+    },
+    {
+      "alias": "capital aberto",
+      "concept_id": "actor.listed_company",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ce do mercado de ações que acompanha 30 grandes empresas de capital aberto negociadas na Bolsa de Valores de Nova York (NYSE) e na Nas",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "capital aberto"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 2
     },
     {
       "alias": "Security",
@@ -15798,8 +16246,8 @@
       "tokens": 1
     },
     {
-      "alias": "Fund",
-      "concept_id": "entity.fund",
+      "alias": "Fund of Funds",
+      "concept_id": "entity.fund_of_funds",
       "domains": [
         "finance",
         "cga"
@@ -15808,13 +16256,13 @@
         {
           "context": "vel também investir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Fund"
+          "surface": "Fund of Funds"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.006,
-      "tokens": 1
+      "share_of_concept": 0.1,
+      "tokens": 3
     },
     {
       "alias": "due diligence",
@@ -15851,7 +16299,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.048,
+      "share_of_concept": 0.042,
       "tokens": 3
     },
     {
@@ -15965,7 +16413,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.04,
+      "share_of_concept": 0.042,
       "tokens": 1
     },
     {
@@ -16045,6 +16493,25 @@
       "tokens": 1
     },
     {
+      "alias": "juros sobre capital próprio",
+      "concept_id": "technical.interest_on_equity",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "juros sobre capital próprio"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 4
+    },
+    {
       "alias": "risco sistemático",
       "concept_id": "risk.systematic",
       "domains": [
@@ -16117,7 +16584,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.014,
+      "share_of_concept": 0.021,
       "tokens": 1
     },
     {
@@ -16273,8 +16740,8 @@
       "tokens": 2
     },
     {
-      "alias": "dividend",
-      "concept_id": "entity.dividend",
+      "alias": "dividend yield",
+      "concept_id": "technical.dividend_yield",
       "domains": [
         "finance",
         "cga"
@@ -16283,13 +16750,13 @@
         {
           "context": "or do índice P/L ou do EV / EBITDA, ou um alto numerador do dividend yield.",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "dividend"
+          "surface": "dividend yield"
         }
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.091,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
       "alias": "Crescimento a um Preço Razoável",
@@ -16330,8 +16797,8 @@
       "tokens": 1
     },
     {
-      "alias": "Dividend",
-      "concept_id": "entity.dividend",
+      "alias": "Dividend Yield",
+      "concept_id": "technical.dividend_yield",
       "domains": [
         "finance",
         "cga"
@@ -16340,36 +16807,36 @@
         {
           "context": "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Dividend"
+          "surface": "Dividend Yield"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.091,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
-      "alias": "Risk",
-      "concept_id": "risk.financial",
+      "alias": "Rep Risk Index",
+      "concept_id": "technical.rep_risk_index",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "O Rep Risk Index é um índice de risco reputacional em aspectos ASG pro",
+          "context": "O Rep Risk Index é um índice de risco reputacional em aspectos ASG produzido",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Risk"
+          "surface": "Rep Risk Index"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.004,
-      "tokens": 1
+      "share_of_concept": 0.25,
+      "tokens": 3
     },
     {
-      "alias": "Information",
-      "concept_id": "entity.information",
+      "alias": "Information Ratios",
+      "concept_id": "technical.information_ratio",
       "domains": [
         "finance",
         "cga"
@@ -16378,36 +16845,36 @@
         {
           "context": " retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Information"
+          "surface": "Information Ratios"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.033,
-      "tokens": 1
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 2
     },
     {
-      "alias": "Sector",
-      "concept_id": "entity.sector",
+      "alias": "Sector Rotation",
+      "concept_id": "technical.sector_rotation",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "O Sector Rotation, ou Rotação entre Setores, é o movimento de recurs",
+          "context": "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos invest",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Sector"
+          "surface": "Sector Rotation"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.014,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
-      "alias": "Setores",
-      "concept_id": "entity.sector",
+      "alias": "Rotação entre Setores",
+      "concept_id": "technical.sector_rotation",
       "domains": [
         "finance",
         "cga"
@@ -16416,17 +16883,17 @@
         {
           "context": "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor ",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Setores"
+          "surface": "Rotação entre Setores"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.014,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 3
     },
     {
-      "alias": "Arbitrage",
-      "concept_id": "technical.arbitrage",
+      "alias": "Quantitative Arbitrage",
+      "concept_id": "technical.quantitative_arbitrage",
       "domains": [
         "finance",
         "cga"
@@ -16435,13 +16902,13 @@
         {
           "context": "Já a estratégia Quantitative Arbitrage refere-se à arbitragem entre ativos utilizando métodos quan",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Arbitrage"
+          "surface": "Quantitative Arbitrage"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.2,
-      "tokens": 1
+      "share_of_concept": 1.0,
+      "tokens": 2
     },
     {
       "alias": "hedge funds",
@@ -16576,6 +17043,25 @@
       "policy": "unknown",
       "share_of_concept": 0.009,
       "tokens": 1
+    },
+    {
+      "alias": "Estrutura de capital",
+      "concept_id": "technical.capital_structure",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "lo: - Dividendos; - Geração de caixa (\"EBITDA\" – LAJIDA); - Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patr",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Estrutura de capital"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 1.0,
+      "tokens": 3
     },
     {
       "alias": "Moving Average Convergence Divergence",
@@ -17187,6 +17673,25 @@
       "tokens": 1
     },
     {
+      "alias": "Opção",
+      "concept_id": "technical.option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ida por meio de modelos de avaliação de preço do derivativo Opção.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Opção"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.026,
+      "tokens": 1
+    },
+    {
       "alias": "PAGAR",
       "concept_id": "action.pay",
       "domains": [
@@ -17259,7 +17764,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.083,
       "tokens": 1
     },
     {
@@ -17871,6 +18376,44 @@
       "tokens": 3
     },
     {
+      "alias": "capital econômico",
+      "concept_id": "technical.regulatory_capital",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "es bancárias internacionais, pois é utilizado no cálculo de capital econômico, perda esperada e capital regulatório.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "capital econômico"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 2
+    },
+    {
+      "alias": "capital regulatório",
+      "concept_id": "technical.regulatory_capital",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "utilizado no cálculo de capital econômico, perda esperada e capital regulatório.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "capital regulatório"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 2
+    },
+    {
       "alias": "Expected Loss",
       "concept_id": "technical.expected_loss",
       "domains": [
@@ -18118,27 +18661,8 @@
       "tokens": 1
     },
     {
-      "alias": "Rate",
-      "concept_id": "quantity.rate",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar",
-          "source": "07-avaliacao-de-desempenho.md",
-          "surface": "Rate"
-        }
-      ],
-      "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.003,
-      "tokens": 1
-    },
-    {
-      "alias": "Return",
-      "concept_id": "quantity.return",
+      "alias": "Time Weigthed Rate of Return",
+      "concept_id": "technical.twrr",
       "domains": [
         "finance",
         "cga"
@@ -18147,13 +18671,13 @@
         {
           "context": "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos",
           "source": "07-avaliacao-de-desempenho.md",
-          "surface": "Return"
+          "surface": "Time Weigthed Rate of Return"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.005,
-      "tokens": 1
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 5
     },
     {
       "alias": "Gestores",
@@ -18172,25 +18696,6 @@
       "occurrences": 1,
       "policy": "unknown",
       "share_of_concept": 0.006,
-      "tokens": 1
-    },
-    {
-      "alias": "Capital",
-      "concept_id": "entity.resource",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "s são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International).",
-          "source": "07-avaliacao-de-desempenho.md",
-          "surface": "Capital"
-        }
-      ],
-      "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.014,
       "tokens": 1
     },
     {
@@ -18513,7 +19018,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.167,
+      "share_of_concept": 0.1,
       "tokens": 1
     },
     {
@@ -18570,7 +19075,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.006,
+      "share_of_concept": 0.007,
       "tokens": 1
     },
     {
@@ -18722,7 +19227,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.034,
+      "share_of_concept": 0.026,
       "tokens": 3
     },
     {
@@ -18741,7 +19246,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.034,
+      "share_of_concept": 0.026,
       "tokens": 3
     },
     {
@@ -18760,7 +19265,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.034,
+      "share_of_concept": 0.026,
       "tokens": 3
     },
     {
@@ -18897,6 +19402,25 @@
       "tokens": 2
     },
     {
+      "alias": "Futuros",
+      "concept_id": "technical.futures",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "- Futuros: permitem comprar ou vender um ativo a um preço pré-determi",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Futuros"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.042,
+      "tokens": 1
+    },
+    {
       "alias": "falha",
       "concept_id": "risk.failure",
       "domains": [
@@ -18931,7 +19455,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.048,
+      "share_of_concept": 0.042,
       "tokens": 5
     },
     {
@@ -18971,6 +19495,44 @@
       "policy": "unknown",
       "share_of_concept": 0.056,
       "tokens": 3
+    },
+    {
+      "alias": "prêmio pela liquidez",
+      "concept_id": "technical.liquidity_premium",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Seria o chamado prêmio pela liquidez, também associado à maior duration dos títulos de longo pra",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "prêmio pela liquidez"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 3
+    },
+    {
+      "alias": "Yield",
+      "concept_id": "technical.yield",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Yield Prazo Taxas das extremidades sobem e da intermediária, cai.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Yield"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 1
     },
     {
       "alias": "classificar",
@@ -19026,7 +19588,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.04,
+      "share_of_concept": 0.042,
       "tokens": 1
     },
     {
@@ -19182,23 +19744,23 @@
       "tokens": 1
     },
     {
-      "alias": "BUY",
-      "concept_id": "action.buy",
+      "alias": "BUY AND HOLD",
+      "concept_id": "technical.buy_and_hold",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "cear a carteira de acordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer ",
+          "context": "cear a carteira de acordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada.",
           "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
-          "surface": "BUY"
+          "surface": "BUY AND HOLD"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.04,
-      "tokens": 1
+      "share_of_concept": 0.25,
+      "tokens": 3
     },
     {
       "alias": "Estratégia",
@@ -19220,23 +19782,42 @@
       "tokens": 1
     },
     {
-      "alias": "Portfolio",
-      "concept_id": "entity.portfolio",
+      "alias": "buy-and-hold",
+      "concept_id": "technical.buy_and_hold",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "A estratégia CPPI (Constant Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de ",
+          "context": "☐ RESPOSTA: Como o cliente adota uma estratégia buy-and-hold, não haverá alteração da carteira ao longo do tempo por tra",
           "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
-          "surface": "Portfolio"
+          "surface": "buy-and-hold"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.005,
+      "policy": "auto",
+      "share_of_concept": 0.25,
       "tokens": 1
+    },
+    {
+      "alias": "Constant Proportion Portfolio Insurance",
+      "concept_id": "technical.cppi",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A estratégia CPPI (Constant Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de Proporção ",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "Constant Proportion Portfolio Insurance"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 4
     },
     {
       "alias": "ADMINISTRAÇÃO",
@@ -19273,7 +19854,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.014,
+      "share_of_concept": 0.021,
       "tokens": 1
     },
     {
@@ -19297,26 +19878,26 @@
     }
   ],
   "registry": {
-    "concepts": 319,
-    "version": "2.16.2"
+    "concepts": 333,
+    "version": "2.18.0"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 416,
-    "events_from_bare_tokens": 6124,
-    "events_from_phrases": 735,
+    "bare_token_pairs": 412,
+    "events_from_bare_tokens": 6090,
+    "events_from_phrases": 783,
     "occurrences_per_pair": {
-      "max": 200,
-      "mean": 10.8,
+      "max": 197,
+      "mean": 10.43,
       "median": 3,
       "p90": 23,
-      "stdev": 24.28
+      "stdev": 23.76
     },
-    "phrase_pairs": 219
+    "phrase_pairs": 247
   },
   "totals": {
-    "concepts_with_matches": 254,
-    "distinct_pairs": 635,
-    "match_events": 6859
+    "concepts_with_matches": 268,
+    "distinct_pairs": 659,
+    "match_events": 6873
   }
 }

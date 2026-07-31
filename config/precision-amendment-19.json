@@ -1,0 +1,44 @@
+{
+  "id": "precision-sweep-amendment-19",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review round 2, gap R4",
+  "method": "the 132 suppressed spans enumerated by scripts/report_recall.py, read one by one, then every wrong pattern counted against the form's total",
+  "reason": "A method error, not a data error. Demotion was applied to every ambiguous form regardless of HOW wrong it was, because the campaign optimised precision with no recall floor. `rendimento` was wrong in 5 of 30 and demoting it cost roughly 25 correct matches to avoid 5 wrong ones. Where the wrong uses are few and enumerable, forbidding them and keeping the form automatic dominates demotion on both metrics.",
+  "operations": [
+    {
+      "op": "promote", "concept": "technical.yield", "language": "pt-BR", "form": "rendimento",
+      "right": 25, "total": 30,
+      "why": "Restoring what the ungoverned demotion destroyed. The suppressed-span list shows `Yield to Worst: É o rendimento no pior cenário`, `deduzindo o rendimento de um instrumento do outro` and `a diferença entre o rendimento de um título e o rendimento de uma taxa de referência` all going silent — the financial sense, in the chapter that defines it. Only the tax-chapter uses are wrong and they share two collocations, forbidden below."
+    },
+    {"op": "forbid", "concept": "technical.yield", "language": "pt-BR",
+     "variants": ["origem ao rendimento", "rendimento produzido"],
+     "why": "The five wrong occurrences: `a operação que deu origem ao rendimento para o cotista` and `alíquota de curto prazo para o rendimento produzido` are taxable income, not yield."},
+    {
+      "op": "promote", "concept": "technical.discount", "language": "pt-BR", "form": "desconto",
+      "right": 5, "total": 6,
+      "why": "1 of 6 wrong. `em troca de um desconto`, `comprando com desconto` and `DESÁGIO (desconto)` are the financial sense and were all silenced."
+    },
+    {"op": "forbid", "concept": "technical.discount", "language": "pt-BR",
+     "variants": ["desconto, abatimento"],
+     "why": "The single wrong occurrence: `resulte em desconto, abatimento ou redução de taxa de administração` is a fee rebate."},
+    {
+      "op": "promote", "concept": "technical.futures", "language": "pt-BR", "form": "futuros",
+      "right": 8, "total": 10,
+      "why": "2 of 10 wrong, both adjectival and both with a fixed collocation. `contratos de swap, futuros, e opções` and `futuros ou termos de moeda` are the instrument and were silenced."
+    },
+    {"op": "forbid", "concept": "technical.futures", "language": "pt-BR",
+     "variants": ["períodos futuros", "resultados futuros", "retornos futuros"],
+     "why": "All four adjectival uses in the corpus."},
+    {
+      "op": "promote", "concept": "technical.option", "language": "pt-BR", "form": "opções",
+      "right": 4, "total": 6,
+      "why": "`Opções de taxa de juros`, `as opções podem entrar no dinheiro` and `swap, futuros e opções` are the instrument. The alternative sense has two fixed shapes, forbidden below."
+    },
+    {"op": "promote", "concept": "technical.option", "language": "pt-BR", "form": "opção",
+     "right": 8, "total": 12,
+     "why": "`exercer a opção`, `as condições acordadas na opção`, `preço do derivativo Opção` are the instrument."},
+    {"op": "forbid", "concept": "technical.option", "language": "pt-BR",
+     "variants": ["boa opção", "duas opções", "opções mais seguras", "opção por um dos critérios"],
+     "why": "`São uma boa opção para proteger` and `entre duas opções, devemos escolher` are the everyday `alternative`, four and one occurrences. `A opção por um dos critérios` is a choice of accounting method."}
+  ]
+}

@@ -17,6 +17,22 @@ phrase becomes the automatic anchor and the bare token drops to `review`.
 
 These cases were measured by exhaustive sweep of every corpus occurrence, never by sample.
 Sampling reported 95-100 % precision on batches an exhaustive sweep scored at 84 %.
+
+WHEN TO DEMOTE AND WHEN TO FORBID. The campaign originally demoted every ambiguous form,
+because it optimised precision with no recall floor. An adversarial review enumerated what that
+cost: `rendimento` was wrong in 5 of 30 occurrences and demoting it silenced roughly 25 correct
+matches — `Yield to Worst: é o rendimento no pior cenário` among them — to avoid 5 wrong ones.
+That trade is bad on both metrics.
+
+The rule the campaign converged on:
+
+    wrong fraction >= 50 %   demote the form; a collocation becomes the automatic anchor
+    wrong fraction <  50 %   keep the form automatic and forbid the wrong collocations
+
+`principal` (64 % wrong), `Value` (92 %), `prêmio` (86 %), `termo` (100 %) are demoted.
+`rendimento` (17 %), `desconto` (17 %), `futuros` (20 %), `opções` (33 %) are automatic with
+their wrong uses blocked. Both directions are asserted below, so neither can be reverted by
+someone optimising one metric in isolation.
 """
 
 from __future__ import annotations
@@ -50,10 +66,14 @@ CASES = [
     ("O acordo resulte em desconto, abatimento ou redução de taxa de administração.", "technical.discount", False),
     ("O título tem um deságio sobre o valor de face.", "technical.discount", True),
     ("A operação que deu origem ao rendimento para o cotista.", "technical.yield", False),
-    # `Yield to Worst` is its own concept, so longest-match takes the whole term and the
-    # generic yield concept correctly stays out. Asserting both sides keeps that guaranteed.
+    # `Yield to Worst` is its own concept and longest-match takes the whole term. `rendimento`
+    # later in the same sentence is separately the generic yield, so BOTH must appear — an
+    # earlier version of this case asserted technical.yield stayed out, which was true only
+    # because `rendimento` had been demoted, and the comment claiming longest-match as the
+    # reason was false. An adversarial review caught the false rationale; restoring `rendimento`
+    # made the honest assertion possible.
     ("O Yield to Worst é o rendimento no pior cenário.", "technical.yield_to_worst", True),
-    ("O Yield to Worst é o rendimento no pior cenário.", "technical.yield", False),
+    ("O Yield to Worst é o rendimento no pior cenário.", "technical.yield", True),
     ("O Current Yield divide o cupom anual pelo preço de mercado.", "technical.current_yield", True),
     ("O Oscilador Estocástico gera valores entre 0 e 100.", "entity.securities", False),
     ("A Bolsa de Valores oferece maior transparência.", "entity.securities", True),
@@ -171,6 +191,34 @@ CASES = [
     ("Comprar um título e mantê-lo até o vencimento ou resgate.", "temporal.until", True),
     ("A distância de cada ponto até a média será maior.", "quantity.at_most", False),
     ("Permite ao gestor até mesmo alavancar posições.", "quantity.at_most", False),
+    # Forms kept AUTOMATIC with their wrong uses forbidden — the sub-50 % branch of the rule in
+    # this module's docstring. Demoting these was measured to cost far more than it saved.
+    ("Yield to Worst: é o rendimento no pior cenário.", "technical.yield", True),
+    ("A operação que deu origem ao rendimento para o cotista.", "technical.yield", False),
+    ("A alíquota de curto prazo para o rendimento produzido a partir do dia.", "technical.yield", False),
+    ("O exportador vende o aceite em troca de um desconto.", "technical.discount", True),
+    ("O acordo resulte em desconto, abatimento ou redução de taxa.", "technical.discount", False),
+    ("Contratos de swap, futuros, e opções são derivativos.", "technical.futures", True),
+    ("Contratos de swap, futuros, e opções são derivativos.", "technical.option", True),
+    ("Expectativas sobre os juros para períodos futuros do Brasil.", "technical.futures", False),
+    ("Garantia de resultados futuros ou isenção de risco.", "technical.futures", False),
+    ("São uma boa opção para proteger contra flutuações cambiais.", "technical.option", False),
+    ("Entre duas opções, devemos escolher aquela de maior valor.", "technical.option", False),
+    ("O titular escolhe se quer ou não exercer a opção.", "technical.option", True),
+    # Adversarial review round 2: senses that two bare forms were absorbing.
+    ("O comprador paga um prêmio ao vendedor do CDS.", "technical.premium", False),
+    ("Seria o chamado prêmio pela liquidez, associado à maior duration.", "technical.liquidity_premium", True),
+    ("Pagar 20% sobre ganhos de capital de imposto.", "entity.resource", False),
+    ("Pagar 20% sobre ganhos de capital de imposto.", "technical.capital_gain", True),
+    ("O MSCI (Morgan Stanley Capital International) é um índice.", "entity.resource", False),
+    ("A alta administração aloca diferentes quantias de recursos entre os gestores.", "entity.resource", True),
+    ("Dividendos, juros sobre capital próprio e ganhos de capital.", "technical.interest_on_equity", True),
+    # Two declared restorations that did not restore, found by testing them against the text.
+    ("T-bills possuem um desconto sobre seu valor de face.", "technical.discount", True),
+    ("O spread de rendimento entre os dois instrumentos de dívida é de 1%.", "technical.yield_spread", True),
+    ("Os Yield Spreads são comumente cotados em pontos-base.", "technical.yield_spread", True),
+    ("Com relação à estrutura de custos, os Hedge Funds empregam 2 com 20.", "entity.fund_of_funds", False),
+    ("O Fund of Funds (FoF) investe em outros fundos.", "entity.fund_of_funds", True),
 ]
 
 

@@ -1,36 +1,36 @@
 {
-  "events_total": 6859,
+  "events_total": 6873,
   "occurrences_per_pair": {
-    "max": 200,
-    "mean": 10.8,
+    "max": 197,
+    "mean": 10.43,
     "median": 3,
-    "stdev": 24.28
+    "stdev": 23.76
   },
   "registry": {
-    "concepts": 319,
-    "version": "2.16.2"
+    "concepts": 333,
+    "version": "2.18.0"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 735,
-      "share": 0.1072
+      "events": 783,
+      "share": 0.1139
     },
     "B_domain_exclusive": {
-      "events": 608,
-      "share": 0.0886
+      "events": 621,
+      "share": 0.0904
     },
     "D_risk_surface": {
-      "events": 5516,
-      "share": 0.8042
+      "events": 5469,
+      "share": 0.7957
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 5516,
-    "floor_if_sweep_all_wrong": 0.1958,
-    "pairs": 311,
-    "share_of_all_events": 0.8042
+    "events": 5469,
+    "floor_if_sweep_all_wrong": 0.2043,
+    "pairs": 301,
+    "share_of_all_events": 0.7957
   },
   "sweep_queue": [
     {
@@ -41,7 +41,7 @@
         "um risco empreendido sem levar em conta possíveis perdas ou danos",
         "A qualidade de ser algo que não te deixa avançar"
       ],
-      "occurrences": 200,
+      "occurrences": 197,
       "quotes": [
         "ulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
         "rado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
@@ -68,7 +68,6 @@
         "a classe de cotas seja destinada ao público em geral, tal retenção de risco deve ser previamente autorizada pela assembleia de cotistas",
         "composição e concentração de carteira e de concentração em fatores de risco, conforme estabelecidos na Resolução CVM 175 e no regulamen",
         "entificar situação na qual seu patrimônio líquido negativo represente risco para o funcionamento eficiente do mercado de valores mobili",
-        ", os limites de composição e concentração de carteira, de exposição a risco de capital e de concentração em fatores de risco não são ex",
         "eira, de exposição a risco de capital e de concentração em fatores de risco não são excedidos.",
         "A classe tipificada como deve ter como principal fator de risco de sua carteira a variação de taxa de juros, índice de preç",
         "elacionados diretamente, ou sintetizados via derivativos, ao fator de risco que dá nome ao tipo.",
@@ -77,12 +76,13 @@
         "A classe tipificada como deve ter como principal fator de risco de carteira a variação de preços de moeda estrangeira ou do",
         "elacionados diretamente, ou sintetizados via derivativos, ao fator de risco que dá nome ao tipo.",
         "RCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específ",
-        "ivos da classe destinada ao público em geral que originem exposição a risco de capital devem contar com cobertura ou margem de garantia",
-        "nadas a investidores profissionais não possuem limites de exposição a risco de capital, exceto pelo que porventura dispuser o Regulamen",
         "A gestão de risco é um componente muito importante na gestão de investimentos",
         "O processo de gestão de risco demanda: - Identificar quais riscos são enfrentados e qual ",
         "ntados e qual a tolerância a tais riscos; - Medir os níveis atuais de risco e explorar aqueles que se julgam pertinentes para obter ret",
-        "o é fundamental para definir políticas e procedimentos para gestão do risco, que é um processo contínuo."
+        "o é fundamental para definir políticas e procedimentos para gestão do risco, que é um processo contínuo.",
+        "Além disso, os responsáveis pela medição do risco devem ser independentes daqueles que tomam decisões envolve",
+        " risco devem ser independentes daqueles que tomam decisões envolvendo risco, ou seja, principalmente gestores de recursos.",
+        "A gestão de risco é um processo crucial para qualquer investidor ou gestor de"
       ],
       "stratum": "D_risk_surface"
     },
@@ -91,7 +91,7 @@
       "form": "juros",
       "general_senses": 1,
       "glosses": [],
-      "occurrences": 186,
+      "occurrences": 185,
       "quotes": [
         "eterminado para o portador do título (a pessoa que compra e recebe os juros).",
         "cipal indexado à variação do CPI (Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação.",
@@ -129,10 +129,10 @@
         "do se faz uma venda financiada com preço fixo, é embutido uma taxa de juros prefixada).",
         " e fazer um contrato de SWAP, no qual se houver um aumento da taxa de juros, o banco paga a diferença e caso a taxa de juros caia, a em",
         "m aumento da taxa de juros, o banco paga a diferença e caso a taxa de juros caia, a empresa paga ao banco.",
-        "retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capita",
         "e de fatores macroeconômicos, como PIB, emprego, tributação, taxas de juros, antes de examinar questões específicas do ativo, como seto",
         "icas, como PIB, balança comercial, taxa de câmbio, inflação, taxas de juros, entre outros.",
-        "da como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referência para o cálculo d"
+        "da como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referência para o cálculo d",
+        "r como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -346,7 +346,7 @@
       "glosses": [
         "o universo da atividade comercial onde bens e serviços são comprados e"
       ],
-      "occurrences": 139,
+      "occurrences": 129,
       "quotes": [
         "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que possam consegu",
         "vididos em títulos separados, que são negociados independentemente no mercado secundário.",
@@ -363,12 +363,6 @@
         "ente pelo Banco Central Europeu (BCE) com base em transações reais de mercado.",
         "A Bolsa de Valores é um mercado organizado e regulado, onde as ações são negociadas publica",
         "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são negociadas diretamente e",
-        "O mercado de balcão é menos regulamentado do que a bolsa de valores, ",
-        " de valores, o que significa que as empresas que listam suas ações no mercado de balcão geralmente têm menos requisitos de divulgação e c",
-        "O Mercado de Balcão é dividido em duas categorias: o mercado de balcão organizado e o mercado de balcão não organizado.",
-        "cão é dividido em duas categorias: o mercado de balcão organizado e o mercado de balcão não organizado.",
-        "O mercado de balcão organizado inclui sistemas de negociação eletrôni",
-        "Já o mercado de balcão não organizado inclui negociações privadas, como ",
         "rial Average (DJIA): Também conhecido como Dow 30, ele é um índice do mercado de ações que acompanha 30 grandes empresas de capital abert",
         "As ações no mercado norte-americano são classificadas em vários setores.",
         "Além desses setores, existem muitos outros setores importantes no mercado de ações dos EUA, incluindo o setor de saúde, o setor de en",
@@ -383,11 +377,17 @@
         "tar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os devidos preços não condizerem com o seu ",
         "O DI FUTURO é a principal referência para o mercado financeiro em relação às expectativas sobre os comportament",
         "sso, o valor atual do contrato futuro DI demonstra qual o valor que o mercado financeiro está querendo receber de retorno da renda fixa, ",
-        "As principais características do Swap são: - São operações ocorrem no mercado de balcão.",
         "Assim, a Rtoro assume o risco sistemático ou de mercado.",
-        "ado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
         "dicado para investidores que desejam ter 100% de exposição líquida ao mercado, mas também permitir ao gestor assumir algum tipo de estrat",
-        "vo de obter um beta zero, ou seja, totalmente descorrelacionado com o mercado."
+        "vo de obter um beta zero, ou seja, totalmente descorrelacionado com o mercado.",
+        "tégia long and short permite aos gestores lucrar com as tendências de mercado e até mesmo alavancar posições para amplificar tais ganhos,",
+        "xistem ativos incorretamente precificados, por conta de movimentos de mercado explicados pelas Finanças Comportamentais.",
+        "ntem um crescimento consistente dos lucros acima dos níveis gerais do mercado (mais em linha com o estilo Growth), excluindo as empresas ",
+        "estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
+        "Há inclusive um importante índice de sustentabilidade empresarial no mercado brasileiro: o ISE.",
+        "eço dos ativos; - Merger Arbitrage: envolve explorar ineficiências de mercado antes ou depois de uma fusão ou aquisição.",
+        "lidade, para com isso obter retornos capazes de superar os índices de mercado.",
+        "os geridos passivamente como, por exemplo, um índice de referência de mercado (Ibovespa, S&P 500, entre outros)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2913,45 +2913,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.resource",
-      "form": "capital",
-      "general_senses": 11,
-      "glosses": [
-        "uppercase; \"capital A\"; \"great A\"; \"many medieval manuscripts are in m",
-        "of primary importance; \"our capital concern was to avoid defeat\"",
-        "first-rate; \"a capital fellow\"; \"a capital idea\"",
-        "a book written by Karl Marx (1867) describing his economic theories",
-        "the upper part of a column that supports the entablature",
-        "the federal government of the United States"
-      ],
-      "occurrences": 22,
-      "quotes": [
-        "rentabilidade de 10% em um período, devendo pagar 20% sobre ganhos de capital de imposto, o retorno líquido seria 10% x (1 - 0,20) = 8%.",
-        " é um índice do mercado de ações que acompanha 30 grandes empresas de capital aberto negociadas na Bolsa de Valores de Nova York (NYSE) e",
-        "tivo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação ",
-        "erada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
-        "ividendos, juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
-        " - Dividendos; - Geração de caixa (\"EBITDA\" – LAJIDA); - Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patr",
-        "echada pode conter obrigação do investidor de integralizar o valor do capital subscrito de acordo com chamadas realizadas pelo gestor, ob",
-        "tes de composição e concentração de carteira, de exposição a risco de capital e de concentração em fatores de risco não são excedidos.",
-        "lasse destinada ao público em geral que originem exposição a risco de capital devem contar com cobertura ou margem de garantia em mercado",
-        "nvestidores profissionais não possuem limites de exposição a risco de capital, exceto pelo que porventura dispuser o Regulamento.",
-        "ferentes investimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitiga",
-        "strutura de gerenciamento de riscos e a estrutura de gerenciamento de capital em instituições financeiras e demais instituições autorizad",
-        "de gerenciamento contínuo e integrado de riscos e de gerenciamento de capital.",
-        "Por exemplo, o gestor que cuida do capital próprio do banco, não será o mesmo que gere os recursos dos",
-        "scos Corporativos), a alta administração aloca diferentes quantias de capital entre os gestores de carteira.",
-        "Nesse sentido, a alta administração determina o montante de capital e VaR associado alocado aos gestores de carteiras, com base",
-        "ade de comparar o desempenho de cada gestor em relação ao montante de capital e risco alocado.",
-        "ulamentações bancárias internacionais, pois é utilizado no cálculo de capital econômico, perda esperada e capital regulatório.",
-        "s, pois é utilizado no cálculo de capital econômico, perda esperada e capital regulatório.",
-        " se refere à possibilidade de perdas devido à necessidade de levantar capital para honrar suas obrigações em contratos derivativos.",
-        "nceiras a identificar e avaliar os riscos operacionais, quantificar o capital necessário para cobrir os riscos operacionais e tomar decis",
-        "so, ele estaria alavancado, ganhando o percentual do REPO a partir do capital de terceiros."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.information",
       "form": "informações",
       "general_senses": 6,
@@ -3679,34 +3640,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.fund",
-      "form": "Fundos",
-      "general_senses": 10,
-      "glosses": [
-        "o lado inferior de qualquer coisa"
-      ],
-      "occurrences": 16,
-      "quotes": [
-        " Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
-        "ssivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
-        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
-        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
-        "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gest",
-        "sto extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos ",
-        " de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
-        "aula, vamos abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
-        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
-        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
-        "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
-        "XA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
-        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
-        "estimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
-        "da setor e para cada gestor (em se tratando, por exemplo, de Fundo de Fundos).",
-        "para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.fund_share",
       "form": "cota",
       "general_senses": 2,
@@ -3818,34 +3751,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "temporal.term",
-      "form": "Prazo",
-      "general_senses": 5,
-      "glosses": [
-        "um período de tempo durante o qual ocorre algo ou algo está previsto p",
-        "A duração completa de algo"
-      ],
-      "occurrences": 15,
-      "quotes": [
-        "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos de dívida emitidos por empresas",
-        "Prazo overnight: ao contrário da Libor, que podia ter variações p",
-        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua car",
-        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua car",
-        "mpre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
-        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
-        "rtos, dependendo exclusivamente de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações:",
-        " composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%",
-        "ento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo P",
-        "os de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Pra",
-        "Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
-        "a Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
-        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o ponto de equilíbrio do praz",
-        "Relação de Duration com: Prazo do título → Direta ▶ Taxas de juros → Inversa TIR (YTM) Inv",
-        "Yield Prazo Taxas das extremidades sobem e da intermediária, cai."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "actor.buyer",
       "form": "comprador",
       "general_senses": 4,
@@ -3943,6 +3848,33 @@
         "s de recursos podem manipular o resultado ao eventualmente escolherem períodos de menor volatilidade e maior retorno.",
         "stóricos; - O gestor de carteiras pode manipular os dados ao computar períodos de maiores retornos e menores volatilidades.",
         "corre o passivo e procura-se ativos que vencem no mesmo período ou em períodos muito próximos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "temporal.term",
+      "form": "Prazo",
+      "general_senses": 5,
+      "glosses": [
+        "um período de tempo durante o qual ocorre algo ou algo está previsto p",
+        "A duração completa de algo"
+      ],
+      "occurrences": 14,
+      "quotes": [
+        "Prazo overnight: ao contrário da Libor, que podia ter variações p",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua car",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua car",
+        "mpre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+        "rtos, dependendo exclusivamente de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações:",
+        " composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%",
+        "ento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo P",
+        "os de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Pra",
+        "Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "a Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o ponto de equilíbrio do praz",
+        "Relação de Duration com: Prazo do título → Direta ▶ Taxas de juros → Inversa TIR (YTM) Inv",
+        "Yield Prazo Taxas das extremidades sobem e da intermediária, cai."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4116,6 +4048,30 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.fund",
+      "form": "Fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 12,
+      "quotes": [
+        "ssivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
+        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
+        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
+        " de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
+        "aula, vamos abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
+        "XA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+        "estimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.liability",
       "form": "passivo",
       "general_senses": 6,
@@ -4226,29 +4182,6 @@
         "Esse risco é especialmente relevante para os mercados de derivativos, uma vez que os valores nocionais podem exce",
         "ntral garantidora para a maior parte das operações realizadas em seus mercados.",
         "Isso porque os retornos nos mercados financeiros são desviados da média (skewed) por conta de fr"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.market",
-      "form": "Mercado",
-      "general_senses": 9,
-      "glosses": [
-        "o universo da atividade comercial onde bens e serviços são comprados e"
-      ],
-      "occurrences": 11,
-      "quotes": [
-        "tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-        "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são n",
-        "O Mercado de Balcão é dividido em duas categorias: o mercado de balcã",
-        "A Bolsa de Valores oferece maior transparência e liquidez, enquanto o Mercado de Balcão oferece maior flexibilidade e acesso a um número ",
-        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são considerad",
-        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
-        "A classe de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inf",
-        "A classe tipificada como “Ações – Mercado de Acesso” possui o prazo de 180 dias para atingir os limit",
-        "o, o Alfa de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
-        "- Expectativas Puras; - Preferência pela Liquidez; e - Segmentação de Mercado.",
-        "Por último, temos a Teoria de Segmentação de Mercado, que defende que os investidores têm preferência por dívida"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4544,23 +4477,24 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.fund",
-      "form": "Fundo",
-      "general_senses": 10,
+      "concept_id": "technical.yield",
+      "form": "rendimento",
+      "general_senses": 8,
       "glosses": [
-        "o lado inferior de qualquer coisa"
+        "produção de uma certa quantia",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
       ],
       "occurrences": 9,
       "quotes": [
-        "estir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
-        "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento",
-        " há um custo extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como t",
-        " de investimentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
-        "- Fundo Multimercado: depende da constituição da carteira, mas em g",
-        "Agora calcularemos a Variância e o Desvio Padrão dos retornos do Fundo de “A” no qual teve retornos de (+3%, +1%, +3%, +3%, +5%).",
-        "o médio de 3% e que apresentem os retornos abaixo, deve-se escolher o Fundo A, pois possui menor oscilação e, consequentemente, menor D",
-        "possui menor oscilação e, consequentemente, menor Desvio Padrão que o Fundo B.",
-        "a para cada setor e para cada gestor (em se tratando, por exemplo, de Fundo de Fundos)."
+        "Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) qu",
+        "Assim, o Yield Spread é calculado deduzindo o rendimento de um instrumento do outro.",
+        "Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo c",
+        "eld Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de",
+        "Agora, se ele comparar o rendimento de sua carteira, gerida ativamente, de 20% contra 15% do Ib",
+        "O Alfa de Jensen é um indicador para determinar o rendimento real da carteira comparado ao retorno exigido do investidor",
+        "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (gera",
+        "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (geralmente título público livre ",
+        "inheiro poderia ser usado para ser investido em outro título de maior rendimento."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4709,23 +4643,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.premium",
-      "form": "prêmio",
-      "general_senses": 4,
-      "glosses": [],
-      "occurrences": 7,
-      "quotes": [
-        "orma, quem está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a u",
-        "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do que se não houv",
-        "rada (por exemplo A para BB), os investidores novos exigirão um maior prêmio para investir nos títulos de dívida desta companhia.",
-        " que transfere o risco de crédito para uma contraparte em troca de um prêmio.",
-        "ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido.",
-        "O comprador paga um prêmio ao vendedor do CDS, e em caso de inadimplência do devedor, ",
-        "Seria o chamado prêmio pela liquidez, também associado à maior duration dos título"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.currency",
       "form": "moedas",
       "general_senses": 6,
@@ -4806,6 +4723,25 @@
         "O gestor investe R$ 13 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
         "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valo",
         "iras pautada pela busca de retornos exclusivamente através da compra (long) de ativos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "Mercado",
+      "general_senses": 9,
+      "glosses": [
+        "o universo da atividade comercial onde bens e serviços são comprados e"
+      ],
+      "occurrences": 7,
+      "quotes": [
+        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são considerad",
+        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
+        "A classe de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inf",
+        "A classe tipificada como “Ações – Mercado de Acesso” possui o prazo de 180 dias para atingir os limit",
+        "o, o Alfa de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
+        "- Expectativas Puras; - Preferência pela Liquidez; e - Segmentação de Mercado.",
+        "Por último, temos a Teoria de Segmentação de Mercado, que defende que os investidores têm preferência por dívida"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5175,6 +5111,23 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.fund",
+      "form": "Fundo",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 5,
+      "quotes": [
+        " de investimentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
+        "- Fundo Multimercado: depende da constituição da carteira, mas em g",
+        "Agora calcularemos a Variância e o Desvio Padrão dos retornos do Fundo de “A” no qual teve retornos de (+3%, +1%, +3%, +3%, +5%).",
+        "o médio de 3% e que apresentem os retornos abaixo, deve-se escolher o Fundo A, pois possui menor oscilação e, consequentemente, menor D",
+        "possui menor oscilação e, consequentemente, menor Desvio Padrão que o Fundo B."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.volatility",
       "form": "Volatilidade",
       "general_senses": 2,
@@ -5247,6 +5200,20 @@
         "Com isso, Rafael deveria comprar o contrato para ter um ágio.",
         "de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
         "SOLUÇÃO: As LFTs também podem ser negociadas com ágio ou deságio."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.option",
+      "form": "opções",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "s tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "jetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implica",
+        "nstrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
+        "Isso porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5351,6 +5318,19 @@
         "Primeiramente, a ALOCAÇÃO DE ATIVOS é dividida entre a classe dos ativos, chamado de MACRO-ALOC",
         "Neste sentido, a ALOCAÇÃO DE ATIVOS é dividida em Estratégica x Tática e Dinâmica x Estática, q",
         "Conforme citamos, a ALOCAÇÃO DE ATIVOS pode ser segmentada entre: > MACRO-ALOCAÇÃO: Esta é a parte"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.discount",
+      "form": "desconto",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "de vender o aceite a um terceiro, geralmente um banco, em troca de um desconto.",
+        "DESÁGIO (desconto): O título está “mais barato” em relação a sua emissão.",
+        "ima da taxa Selic projetada, ele deve adquirir o título comprando com desconto."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5726,6 +5706,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.option",
+      "form": "opção",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "enda, devendo o emissor recomprar o título nas condições acordadas na opção.",
+        "futuros, pois permitem que o titular escolha se quer ou não exercer a opção.",
+        "e juros, pois permitem que o titular escolha se quer ou não exercer a opção."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.increase",
       "form": "Aumento",
       "general_senses": 13,
@@ -5789,6 +5782,22 @@
       "quotes": [
         "Observação: Caso haja Cupons durante o prazo da repo, geralmente são repassados para o v",
         "(YTM) Inversa Tamanho do Cupom ___ Inversa Frequência de pagamento de Cupons ___ Inversa CONCLUSÕES: Quanto menor a duration MENOR o ris"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.futures",
+      "form": "futuros",
+      "general_senses": 7,
+      "glosses": [
+        "que ainda não e, ou que esta para vir ou ser",
+        "um tempo verbal ou outra formação gramatical referindo-se a eventos ou",
+        "comodidades compradas ou vendidas em grandes quantidades a um preço ac"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        " para vários tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+        " podem ser mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções."
       ],
       "stratum": "D_risk_surface"
     },
@@ -6180,6 +6189,18 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.option",
+      "form": "Opções",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Com isso, os ganhos (e também as perdas) podem ser amplificados; - Opções: de forma parecida com os contratos futuros, é possível pag",
+        "- Opções de taxa de juros: dão ao titular o direito de comprar ou ve"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.invest",
       "form": "Investir",
       "general_senses": 7,
@@ -6220,24 +6241,6 @@
       "occurrences": 1,
       "quotes": [
         "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VALOR do cupom irá MUDAR em função da mudança do principal (corre"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "temporal.term",
-      "form": "Term",
-      "general_senses": 8,
-      "glosses": [
-        "(architecture) a statue or a human bust or an animal carved out of the",
-        "any distinct quantity contained in a polynomial; \"the general term of ",
-        "a word or expression used for some particular thing; \"he learned many ",
-        "one of the substantive phrases in a logical proposition; \"the major te",
-        "(usually plural) a statement of what is required as part of an agreeme",
-        "a limited period of time; \"a prison term\"; \"he left school before the "
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente t"
       ],
       "stratum": "D_risk_surface"
     },
@@ -6309,42 +6312,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.market",
-      "form": "Market",
-      "general_senses": 9,
-      "glosses": [
-        "the world of commercial activity where goods and services are bought a",
-        "a marketplace where groceries are sold; \"the grocery store included a ",
-        "an area in a town where a public mercantile establishment is set up",
-        "the securities markets in the aggregate; \"the market always frustrates",
-        "the customers for a particular product or service; \"before they publis",
-        "make commercial; \"Some Amish people have commercialized their way of l"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "os: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\")."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "actor.bank",
-      "form": "Bank",
-      "general_senses": 18,
-      "glosses": [
-        "a flight maneuver; aircraft tips laterally about its longitudinal axis",
-        "a building in which the business of banking transacted; \"the bank is o",
-        "a container (usually with a slot in the top) for keeping money at home",
-        "a financial institution that accepts deposits and channels the money i",
-        "an arrangement of similar objects in a row or in tiers; \"he operated a",
-        "a long ridge or pile; \"a huge bank of earth\""
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consum"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.security",
       "form": "Security",
       "general_senses": 9,
@@ -6359,24 +6326,6 @@
       "occurrences": 1,
       "quotes": [
         "ica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.fund",
-      "form": "Fund",
-      "general_senses": 9,
-      "glosses": [
-        "a financial institution that sells shares to individuals and invests i",
-        "a reserve of money set aside for some purpose",
-        "a supply of something available for future use; \"he brought back a lar",
-        "furnish money for; \"The government funds basic research in many areas\"",
-        "accumulate a fund for the discharge of a recurrent liability; \"fund a ",
-        "invest money in government securities"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "É possível também investir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -6488,114 +6437,6 @@
       "occurrences": 1,
       "quotes": [
         "eu lucro ocorre com a valorização do seu preço; já quando você vende (SHORT), o seu lucro vem da desvalorização."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.dividend",
-      "form": "dividend",
-      "general_senses": 3,
-      "glosses": [
-        "a bonus; something extra (especially a share of a surplus)",
-        "that part of the earnings of a corporation that is distributed to its ",
-        "a number to be divided by another number"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "xo numerador do índice P/L ou do EV / EBITDA, ou um alto numerador do dividend yield."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.dividend",
-      "form": "Dividend",
-      "general_senses": 3,
-      "glosses": [
-        "a bonus; something extra (especially a share of a surplus)",
-        "that part of the earnings of a corporation that is distributed to its ",
-        "a number to be divided by another number"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "risk.financial",
-      "form": "Risk",
-      "general_senses": 6,
-      "glosses": [
-        "a venture undertaken without regard to possible loss or injury; \"he sa",
-        "the probability of being exposed to an infectious agent",
-        "the probability of becoming infected given that exposure to an infecti",
-        "a source of danger; a possibility of incurring loss or misfortune; \"dr",
-        "take a risk in the hope of a favorable outcome; \"When you buy these st",
-        "expose to a chance of loss or damage; \"We risked losing a lot of money"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "O Rep Risk Index é um índice de risco reputacional em aspectos ASG pro"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.information",
-      "form": "Information",
-      "general_senses": 5,
-      "glosses": [
-        "(communication theory) a numerical measure of the uncertainty of an ou",
-        "knowledge acquired through study or experience or instruction",
-        "a message received and understood",
-        "formal accusation of a crime",
-        "a collection of facts from which conclusions may be drawn; \"statistica"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "ng error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR)."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.sector",
-      "form": "Sector",
-      "general_senses": 6,
-      "glosses": [
-        "measuring instrument consisting of two graduated arms hinged at one en",
-        "a particular aspect of life or activity; \"he was helpless in an import",
-        "a social group that forms part of the society or the economy; \"the pub",
-        "a portion of a military position",
-        "the minimum track length that can be assigned to store information; un",
-        "a plane figure bounded by two radii and the included arc of a circle"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recurs"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.sector",
-      "form": "Setores",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 1,
-      "quotes": [
-        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor "
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "technical.arbitrage",
-      "form": "Arbitrage",
-      "general_senses": 2,
-      "glosses": [
-        "a kind of hedged investment meant to capture slight differences in pri",
-        "practice arbitrage, as in the stock market"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "Já a estratégia Quantitative Arbitrage refere-se à arbitragem entre ativos utilizando métodos quan"
       ],
       "stratum": "D_risk_surface"
     },
@@ -6793,6 +6634,17 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.option",
+      "form": "Opção",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Ela é obtida por meio de modelos de avaliação de preço do derivativo Opção."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.pay",
       "form": "PAGAR",
       "general_senses": 13,
@@ -6950,42 +6802,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "quantity.rate",
-      "form": "Rate",
-      "general_senses": 7,
-      "glosses": [
-        "the relative speed of progress or change; \"he lived at a fast pace\"; \"",
-        "amount of a charge or payment relative to some basis; \"a 10-minute pho",
-        "a quantity or amount or measure considered as a proportion of another ",
-        "a magnitude or frequency relative to a time unit; \"they traveled at a ",
-        "assign a rank or rating to; \"how would you rank these students?\"; \"The",
-        "estimate the value of; \"How would you rate his chances to become Presi"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "quantity.return",
-      "form": "Return",
-      "general_senses": 29,
-      "glosses": [
-        "the act of someone appearing again; \"his reappearance as Hamlet has be",
-        "a coming to or returning home; \"on his return from Australia we gave h",
-        "getting something back again; \"upon the restitution of the book to its",
-        "the act of going back to a prior location; \"they set out on their retu",
-        "(American football) the act of running back the ball after a kickoff o",
-        "a tennis stroke that sends the ball back to the other player; \"he won "
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "actor.portfolio_manager",
       "form": "Gestores",
       "general_senses": 1,
@@ -6993,24 +6809,6 @@
       "occurrences": 1,
       "quotes": [
         "Já o tipo de benchmark Universo de Gestores refere-se a um benchmark em que se compara o retorno com re"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.resource",
-      "form": "Capital",
-      "general_senses": 11,
-      "glosses": [
-        "uppercase; \"capital A\"; \"great A\"; \"many medieval manuscripts are in m",
-        "of primary importance; \"our capital concern was to avoid defeat\"",
-        "first-rate; \"a capital fellow\"; \"a capital idea\"",
-        "a book written by Karl Marx (1867) describing his economic theories",
-        "the upper part of a column that supports the entablature",
-        "the federal government of the United States"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "ns exemplos são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -7182,6 +6980,21 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.futures",
+      "form": "Futuros",
+      "general_senses": 7,
+      "glosses": [
+        "que ainda não e, ou que esta para vir ou ser",
+        "um tempo verbal ou outra formação gramatical referindo-se a eventos ou",
+        "comodidades compradas ou vendidas em grandes quantidades a um preço ac"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "- Futuros: permitem comprar ou vender um ativo a um preço pré-determi"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "risk.failure",
       "form": "falha",
       "general_senses": 7,
@@ -7248,24 +7061,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.buy",
-      "form": "BUY",
-      "general_senses": 6,
-      "glosses": [
-        "an advantageous purchase; \"she got a bargain at the auction\"; \"the sto",
-        "accept as true; \"I can't buy this story\"",
-        "obtain by purchase; acquire by means of a financial transaction; \"The ",
-        "acquire by trade or sacrifice or exchange; \"She wanted to buy his love",
-        "make illegal payments to in exchange for favors or influence; \"This ju",
-        "be worth or be capable of buying; \"This sum will buy you a ride on the"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "ve rebalancear a carteira de acordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer "
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.strategy",
       "form": "Estratégia",
       "general_senses": 3,
@@ -7273,22 +7068,6 @@
       "occurrences": 1,
       "quotes": [
         "- Estratégia linear; - Potencial de alta ilimitado."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.portfolio",
-      "form": "Portfolio",
-      "general_senses": 4,
-      "glosses": [
-        "the role of the head of a government department; \"he holds the portfol",
-        "a large, flat, thin case for carrying loose papers or drawings or maps",
-        "a list of the financial assets held by an individual or a bank or othe",
-        "a set of pieces of creative work collected to be shown to potential cu"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "A estratégia CPPI (Constant Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de "
       ],
       "stratum": "D_risk_surface"
     },

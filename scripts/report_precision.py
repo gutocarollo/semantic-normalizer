@@ -37,6 +37,12 @@ DEFAULT_OUTPUT = ROOT / "reports" / "precision-final.json"
 
 # Every residual draw run in this campaign, with the number of wrong events adjudicated in each.
 # Each sample was read in full, occurrence by occurrence, against the sentence it came from.
+#
+# `overwritten: true` marks an entry whose file was later redrawn against a newer registry, so
+# the numbers recorded here can no longer be re-derived from that path. An adversarial review
+# caught this: the 2.14.1 entry claims two errors and the file at that path is now a 2.15.0 draw
+# with none. Redrawing into the same filename destroyed the evidence for a campaign claim, which
+# is the same defect as overwriting coverage-baseline.json. Later draws use distinct filenames.
 DRAWS = [
     {
         "report": "reports/unread-residual-sample.json", "seed": 20260731, "registry": "2.8.2",
@@ -64,6 +70,13 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2180.json", "seed": 6180339, "registry": "2.18.0",
+        "errors": 0,
+        "found": [],
+        "state": "after adversarial review round 2 and its repairs, including the demote-vs-forbid "
+                 "rule that restored `rendimento`, `desconto`, `futuros` and `opções`",
+    },
+    {
         "report": "reports/unread-residual-v216.json", "seed": 770231, "registry": "2.16.2",
         "errors": 0,
         "found": [],
@@ -72,7 +85,11 @@ DRAWS = [
     },
     {
         "report": "reports/unread-residual-v2141.json", "seed": 41077, "registry": "2.14.1",
-        "errors": 2, "superseded_by": "the same seed redrawn against 2.15.0, which found none",
+        "errors": 2, "overwritten": True,
+        "superseded_by": "the same seed redrawn into the same filename against 2.15.0, which "
+                         "found none — so this entry's two errors are no longer re-derivable "
+                         "from that path and are recorded here on the strength of the "
+                         "adjudication written at the time, not on a surviving artifact",
         "found": ["índices in `índices P/L` (plural form unregistered)",
                   "distribuição in `distribuição de dividendos` (exposed by narrowing entity.distribution)"],
         "state": "after adversarial review round 1 and its repairs; both repaired by batch 12",
@@ -93,7 +110,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-final.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2180.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 

@@ -72,6 +72,20 @@
       "error_rate": 0.0,
       "errors": 0,
       "found": [],
+      "registry": "2.18.0",
+      "report": "reports/unread-residual-v2180.json",
+      "sample_size": 260,
+      "seed": 6180339,
+      "state": "after adversarial review round 2 and its repairs, including the demote-vs-forbid rule that restored `rendimento`, `desconto`, `futuros` and `opções`",
+      "wilson_95": [
+        0.0,
+        0.0146
+      ]
+    },
+    {
+      "error_rate": 0.0,
+      "errors": 0,
+      "found": [],
       "registry": "2.16.2",
       "report": "reports/unread-residual-v216.json",
       "sample_size": 260,
@@ -89,28 +103,29 @@
         "índices in `índices P/L` (plural form unregistered)",
         "distribuição in `distribuição de dividendos` (exposed by narrowing entity.distribution)"
       ],
+      "overwritten": true,
       "registry": "2.14.1",
       "report": "reports/unread-residual-v2141.json",
       "sample_size": 240,
       "seed": 41077,
       "state": "after adversarial review round 1 and its repairs; both repaired by batch 12",
-      "superseded_by": "the same seed redrawn against 2.15.0, which found none",
+      "superseded_by": "the same seed redrawn into the same filename against 2.15.0, which found none — so this entry's two errors are no longer re-derivable from that path and are recorded here on the strength of the adjudication written at the time, not on a surviving artifact",
       "wilson_95": [
         0.0023,
         0.0299
       ]
     }
   ],
-  "concepts": 319,
+  "concepts": 333,
   "errors_repaired_total": 10,
-  "events_total": 6859,
+  "events_total": 6873,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
     "lower_bound_95": 0.9879,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.16.2",
+  "registry_version": "2.18.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
@@ -118,16 +133,16 @@
       0.0146
     ],
     "errors_adjudicated": 0,
-    "events": 5706,
+    "events": 5719,
     "sample_size": 260,
-    "share": 0.8319
+    "share": 0.8321
   },
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding — it does not mean the swept set is provably clean, which the known_limitation above rules out claiming.",
-    "events": 1153,
+    "events": 1154,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1681
+    "share": 0.1679
   }
 }

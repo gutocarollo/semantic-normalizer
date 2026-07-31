@@ -1,0 +1,21 @@
+{
+  "id": "precision-sweep-amendment-18",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; find_compound_fragments.py at --min-occurrences 1",
+  "method": "every remaining form at fragment_share 1.0 judged individually",
+  "reason": "Plurals, an OCR spelling the corpus actually contains, and two proper names that are not concepts.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.information_ratio", "language": "en", "form": "Information Ratios",
+     "why": "`Information` matched alone inside the plural because only the singular was registered."},
+    {"op": "add_form", "concept": "technical.twrr", "language": "en", "form": "Time Weigthed Rate of Return",
+     "why": "The corpus spells it `Weigthed` once — an OCR defect in the source. Registering the misspelling is not endorsing it: a dictionary built to read THIS corpus must match what the corpus says, and correcting the source is out of scope and would break the frozen sha256."},
+    {"op": "add_form", "concept": "technical.twrr", "language": "en", "form": "Time-Weighted",
+     "why": "Eight occurrences of the hyphenated short form."},
+    {"op": "add_form", "concept": "technical.cppi", "language": "en", "form": "Constant Proportion Portfolio Insurance",
+     "why": "`Portfolio` matched inside the expansion; only the acronym was registered."},
+    {"op": "forbid", "concept": "actor.bank", "language": "en", "variants": ["Bank of America"],
+     "why": "A proper name, not a concept this dictionary needs. Blocking the fragment is the right repair when registering the compound would add an entry with no definitional content."},
+    {"op": "forbid", "concept": "entity.securities", "language": "en", "variants": ["Securities Identification"],
+     "why": "Fragment of `International Securities Identification Number`, which is technical.isin."}
+  ]
+}

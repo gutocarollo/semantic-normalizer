@@ -42,7 +42,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--corpus", default=str(DEFAULT_CORPUS))
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--min-occurrences", type=int, default=2)
+    # Default 1, not 2. A compound-fragment error has no obligation to happen twice: an
+    # adversarial review found `Morgan Stanley Capital International` — one occurrence, one
+    # wrong match — structurally invisible to this script while it required two.
+    parser.add_argument("--min-occurrences", type=int, default=1)
     args = parser.parse_args()
 
     sys.path.insert(0, str(ROOT / "src"))

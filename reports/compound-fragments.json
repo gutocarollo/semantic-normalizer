@@ -1,16 +1,88 @@
 {
-  "bare_english_automatic_forms": 243,
+  "bare_english_automatic_forms": 249,
   "findings": [
     {
       "compounds": [
         [
-          "Os Yield Spreads",
+          "Securities a",
           1
-        ],
+        ]
+      ],
+      "concept_id": "entity.securities",
+      "examples": [
+        "nsparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC)."
+      ],
+      "form": "Securities",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
         [
-          "Alto Dividend Yield",
+          "OTC Bulletin Board",
           1
-        ],
+        ]
+      ],
+      "concept_id": "technical.otc_market",
+      "examples": [
+        "organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as a"
+      ],
+      "form": "OTC",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
+        [
+          "Security a",
+          1
+        ]
+      ],
+      "concept_id": "entity.security",
+      "examples": [
+        " dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
+      ],
+      "form": "Security",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
+        [
+          "NDICE FUTURO DE IBOVESPA",
+          1
+        ]
+      ],
+      "concept_id": "technical.ibovespa",
+      "examples": [
+        "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em provas."
+      ],
+      "form": "IBOVESPA",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
+        [
+          "DARF a",
+          1
+        ]
+      ],
+      "concept_id": "technical.darf",
+      "examples": [
+        "sponsabilidade do investidor, com o recolhimento através de DARF até o último dia do mês subsequente."
+      ],
+      "form": "DARF",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
         [
           "Yield Prazo Taxas",
           1
@@ -18,13 +90,28 @@
       ],
       "concept_id": "technical.yield",
       "examples": [
-        "Os Yield Spreads são comumente cotados em termos de um ren",
-        "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
         "Yield Prazo Taxas das extremidades sobem e da intermedi"
       ],
       "form": "Yield",
       "fragment_share": 1.0,
-      "inside_a_compound": 3,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
+        [
+          "RepRisk Index",
+          2
+        ]
+      ],
+      "concept_id": "technical.rep_risk_index",
+      "examples": [
+        "valores referentes aos critérios Score CDP-Climate Change e RepRisk Index – Peak RRI serão consideradas a cada rebala",
+        "ior valor nos 24 meses que antecedem a seleção da carteira (RepRisk Index – Peak RRI)."
+      ],
+      "form": "RepRisk",
+      "fragment_share": 0.667,
+      "inside_a_compound": 2,
       "occurrences": 3
     },
     {
@@ -56,6 +143,22 @@
         "**IR Come-Cotas** = (R$ 15,00) ÷ (R$ 1,10) = **13,64 cotas** Dest"
       ],
       "form": "Come-Cotas",
+      "fragment_share": 0.5,
+      "inside_a_compound": 1,
+      "occurrences": 2
+    },
+    {
+      "compounds": [
+        [
+          "Money Weighted Rate of Return Time-Weighted",
+          1
+        ]
+      ],
+      "concept_id": "technical.twrr",
+      "examples": [
+        "Time-Weighted x Money Weighted Rate of Return Time-Weighted x Money Weighted Rate of Return"
+      ],
+      "form": "Time-Weighted",
       "fragment_share": 0.5,
       "inside_a_compound": 1,
       "occurrences": 2
@@ -336,11 +439,11 @@
       "occurrences": 41
     }
   ],
-  "forms_with_fragment_matches": 15,
+  "forms_with_fragment_matches": 22,
   "registry": {
-    "concepts": 319,
-    "version": "2.16.2"
+    "concepts": 333,
+    "version": "2.18.0"
   },
   "schema_version": "compound-fragments-v1",
-  "total_fragment_events": 42
+  "total_fragment_events": 48
 }

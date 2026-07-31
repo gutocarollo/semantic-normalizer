@@ -1,0 +1,11 @@
+{
+  "id": "precision-sweep-amendment-17",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; batch 14 refusal",
+  "method": "the importer correctly refused technical.capital_gain as already present, and the plural the corpus uses was lost with the refusal",
+  "reason": "Third time a concept registered in the singular missed the plural the corpus writes. The importer's refusal is right; what was missing is checking the forms of the concept it refused.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.capital_gain", "language": "pt-BR", "form": "ganhos de capital",
+     "why": "Two occurrences, both the taxable event. Without the plural, `capital` escaped to entity.resource — the same split match as `índices P/L`."}
+  ]
+}

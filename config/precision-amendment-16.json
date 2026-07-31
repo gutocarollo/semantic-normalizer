@@ -1,0 +1,41 @@
+{
+  "id": "precision-sweep-amendment-16",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review round 2, gaps R1/R2/R4",
+  "method": "exhaustive re-sweep of `prêmio` (7 occurrences) and `capital` (23) against their current definitions; the two declared restorations tested against the corpus text they claimed to restore",
+  "reason": "A narrowing that was not followed by a sweep, a bare form absorbing five distinct senses, and two collocations written from paraphrase instead of from the text.",
+  "operations": [
+    {
+      "op": "demote", "concept": "technical.premium", "language": "pt-BR", "form": "prêmio",
+      "wrong": 6, "total": 7,
+      "why": "Amendment 3 narrowed this definition to `the amount paid above a reference value` and did not re-sweep the form, which is the exact discipline that amendment applied to entity.distribution in the same file. Against the narrowed definition only `ÁGIO (prêmio): O título está mais caro` fits; the rest are an insurance premium, a CDS premium twice, a risk premium and a liquidity premium. Bare `prêmio` carries four unrelated senses here and none of them has a distinguishing collocation except liquidity, so review is the correct outcome — `ágio` keeps the above-par sense on technical.premium_price."
+    },
+    {"op": "demote", "concept": "technical.premium", "language": "pt-BR", "form": "prêmios"},
+    {
+      "op": "demote", "concept": "entity.resource", "language": "en", "form": "capital",
+      "wrong": 12, "total": 23,
+      "why": "Defined as `the capital available to be allocated by a manager` and matching `ganhos de capital`, `capital aberto`, `juros sobre capital próprio`, `Estrutura de capital`, `capital subscrito`, `capital econômico`, `capital regulatório` and `Morgan Stanley Capital International`. `recursos` keeps the concept anchored and the absorbed senses are now their own concepts."
+    },
+    {
+      "op": "forbid", "concept": "entity.resource", "language": "en",
+      "variants": ["Capital International", "capital subscrito", "capital de terceiros"],
+      "why": "`Morgan Stanley Capital International` is the compound-fragment class in a proper name — the same defect as `Hedge Funds`, and invisible to find_compound_fragments.py because it occurs once and the script required two."
+    },
+    {
+      "op": "remove_form", "concept": "technical.discount", "language": "pt-BR", "form": "desconto sobre o valor de face",
+      "why": "The collocation I registered to restore this sense does not match the corpus, which writes `desconto sobre SEU valor de face`. Written from a paraphrase rather than from the text — the same mistake as the translated Portuguese labels, made while repairing that mistake."
+    },
+    {"op": "add_form", "concept": "technical.discount", "language": "pt-BR", "form": "desconto sobre",
+     "why": "The prefix both occurrences share, verified against the text."},
+    {
+      "op": "remove_form", "concept": "technical.yield", "language": "pt-BR", "form": "spread de rendimento",
+      "why": "technical.yield_spread owns this exact phrase and technical.yield also claimed it, so the collision demoter sent BOTH to review and the expression the corpus uses for a yield spread matched nothing at all. Withdrawing the wrong claim restores it."
+    },
+    {"op": "promote", "concept": "technical.yield_spread", "language": "pt-BR", "form": "spread de rendimento",
+     "right": 2, "total": 2,
+     "why": "Held at review only by the collision withdrawn above."},
+    {"op": "add_form", "concept": "technical.yield_spread", "language": "en", "form": "yield spreads",
+     "why": "`reports/compound-fragments.json` reported `Yield` at fragment_share 1.0 with `Os Yield Spreads` among its compounds and the plural was never registered."},
+    {"op": "add_form", "concept": "technical.yield_spread", "language": "pt-BR", "form": "yield spreads"}
+  ]
+}
