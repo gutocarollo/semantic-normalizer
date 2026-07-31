@@ -1,0 +1,47 @@
+{
+  "id": "precision-sweep-amendment-26",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; completion of amendment 25",
+  "method": "batch 20 could not re-run — the provenance ledger is append-only and correctly refused a second event with the same id",
+  "reason": "entity.service was refused by batch 20 because system.service still owned the preferred label. Amendment 25 withdrew that claim; this adds the concept the corpus needs.",
+  "operations": [
+    {
+      "op": "add_concept",
+      "record": {
+        "concept_id": "entity.service",
+        "definition": "Work performed for a fund or an investor under contract, or a good's counterpart in consumption.",
+        "semantic_class": "entity",
+        "domains": ["finance", "cga"],
+        "pos": "noun",
+        "labels": {
+          "en": {"pref": "service", "alt": ["services"], "hidden": [], "observed": []},
+          "pt-BR": {"pref": "serviço", "alt": ["serviços", "prestação de serviços"], "hidden": [], "observed": []}
+        },
+        "lexical_forms": {
+          "en": [{"form": "service", "features": {}, "policy": "auto"},
+                 {"form": "services", "features": {}, "policy": "auto"}],
+          "pt-BR": [{"form": "serviço", "features": {}, "policy": "auto"},
+                    {"form": "serviços", "features": {}, "policy": "auto"},
+                    {"form": "prestação de serviços", "features": {}, "policy": "auto"}]
+        },
+        "relations": {"broader": [], "narrower": [], "related": []},
+        "forbidden_variants": {"en": [], "pt-BR": []},
+        "contexts": ["finance", "cga"],
+        "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento",
+        "source": "CGA 2026 course material, adjudicated against corpus contexts",
+        "positive_examples": {
+          "en": ["The contract for the provision of services to the fund."],
+          "pt-BR": ["O contrato de prestação de serviços ao fundo."]
+        },
+        "negative_examples": {
+          "en": ["Do not use service for a software process."],
+          "pt-BR": ["Não use serviço para um processo de software."]
+        },
+        "status": "approved",
+        "governed_technical_term": false,
+        "registry_version": "2.22.0"
+      },
+      "why": "All 24 corpus occurrences of `serviço`/`serviços` are this sense; none is a software process."
+    }
+  ]
+}

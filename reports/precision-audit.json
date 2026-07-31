@@ -43,53 +43,9 @@
           "surface": "juros"
         }
       ],
-      "occurrences": 182,
-      "policy": "auto",
-      "share_of_concept": 0.924,
-      "tokens": 1
-    },
-    {
-      "alias": "risco",
-      "concept_id": "risk.financial",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "UA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        },
-        {
-          "context": " Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possue",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        },
-        {
-          "context": "a do banco, maior será a remuneração, pois maior será o seu risco.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        },
-        {
-          "context": " o spread de crédito deles em relação aos títulos livres de risco estiver baixo, há uma confiança grande na economia, pois se",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        },
-        {
-          "context": "cimentos, classificações de crédito, emissores ou níveis de risco.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        },
-        {
-          "context": "Ela também é considerada a taxa de juro sem risco do euro.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "risco"
-        }
-      ],
       "occurrences": 181,
       "policy": "auto",
-      "share_of_concept": 0.696,
+      "share_of_concept": 0.923,
       "tokens": 1
     },
     {
@@ -135,6 +91,50 @@
       "occurrences": 181,
       "policy": "auto",
       "share_of_concept": 0.879,
+      "tokens": 1
+    },
+    {
+      "alias": "risco",
+      "concept_id": "risk.financial",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "UA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        },
+        {
+          "context": " Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possue",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        },
+        {
+          "context": "a do banco, maior será a remuneração, pois maior será o seu risco.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        },
+        {
+          "context": " o spread de crédito deles em relação aos títulos livres de risco estiver baixo, há uma confiança grande na economia, pois se",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        },
+        {
+          "context": "cimentos, classificações de crédito, emissores ou níveis de risco.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        },
+        {
+          "context": "Ela também é considerada a taxa de juro sem risco do euro.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "risco"
+        }
+      ],
+      "occurrences": 179,
+      "policy": "auto",
+      "share_of_concept": 0.696,
       "tokens": 1
     },
     {
@@ -220,9 +220,9 @@
           "surface": "taxa"
         }
       ],
-      "occurrences": 164,
+      "occurrences": 163,
       "policy": "auto",
-      "share_of_concept": 0.577,
+      "share_of_concept": 0.576,
       "tokens": 1
     },
     {
@@ -396,9 +396,9 @@
           "surface": "título"
         }
       ],
-      "occurrences": 125,
+      "occurrences": 122,
       "policy": "auto",
-      "share_of_concept": 0.506,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -442,7 +442,7 @@
       ],
       "occurrences": 115,
       "policy": "auto",
-      "share_of_concept": 0.466,
+      "share_of_concept": 0.471,
       "tokens": 1
     },
     {
@@ -618,7 +618,7 @@
       ],
       "occurrences": 101,
       "policy": "auto",
-      "share_of_concept": 0.356,
+      "share_of_concept": 0.357,
       "tokens": 1
     },
     {
@@ -754,50 +754,6 @@
       "tokens": 1
     },
     {
-      "alias": "investimento",
-      "concept_id": "action.invest",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "iferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "investimento"
-        },
-        {
-          "context": "obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "investimento"
-        },
-        {
-          "context": "ARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth pa",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "investimento"
-        },
-        {
-          "context": "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "investimento"
-        },
-        {
-          "context": "s tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com boas práticas sociais, ambienta",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "investimento"
-        },
-        {
-          "context": "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "investimento"
-        }
-      ],
-      "occurrences": 86,
-      "policy": "auto",
-      "share_of_concept": 0.478,
-      "tokens": 1
-    },
-    {
       "alias": "investidor",
       "concept_id": "actor.investor",
       "domains": [
@@ -930,6 +886,50 @@
       "tokens": 1
     },
     {
+      "alias": "investimento",
+      "concept_id": "action.invest",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "iferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "investimento"
+        },
+        {
+          "context": "obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "investimento"
+        },
+        {
+          "context": "ARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth pa",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "investimento"
+        },
+        {
+          "context": "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "investimento"
+        },
+        {
+          "context": "ão rápida de ordens, normalmente com um curto horizontes de investimento.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "investimento"
+        },
+        {
+          "context": "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tr",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "investimento"
+        }
+      ],
+      "occurrences": 74,
+      "policy": "auto",
+      "share_of_concept": 0.443,
+      "tokens": 1
+    },
+    {
       "alias": "empresas",
       "concept_id": "actor.company",
       "domains": [
@@ -971,50 +971,6 @@
       "occurrences": 69,
       "policy": "auto",
       "share_of_concept": 0.59,
-      "tokens": 1
-    },
-    {
-      "alias": "fundos",
-      "concept_id": "entity.fund",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "m a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        },
-        {
-          "context": " de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aquel",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        },
-        {
-          "context": "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar o desempenho histórico ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        },
-        {
-          "context": " de um fundo de investimento que investe em outros tipos de fundos.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        },
-        {
-          "context": "alavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        },
-        {
-          "context": " comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "fundos"
-        }
-      ],
-      "occurrences": 67,
-      "policy": "auto",
-      "share_of_concept": 0.39,
       "tokens": 1
     },
     {
@@ -1190,7 +1146,7 @@
       ],
       "occurrences": 60,
       "policy": "auto",
-      "share_of_concept": 0.333,
+      "share_of_concept": 0.359,
       "tokens": 1
     },
     {
@@ -1279,6 +1235,50 @@
       "occurrences": 56,
       "policy": "auto",
       "share_of_concept": 0.403,
+      "tokens": 1
+    },
+    {
+      "alias": "fundos",
+      "concept_id": "entity.fund",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "m a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        },
+        {
+          "context": " de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aquel",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        },
+        {
+          "context": "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar o desempenho histórico ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        },
+        {
+          "context": " de um fundo de investimento que investe em outros tipos de fundos.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        },
+        {
+          "context": "alavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        },
+        {
+          "context": " comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "fundos"
+        }
+      ],
+      "occurrences": 56,
+      "policy": "auto",
+      "share_of_concept": 0.326,
       "tokens": 1
     },
     {
@@ -1410,7 +1410,7 @@
       ],
       "occurrences": 49,
       "policy": "auto",
-      "share_of_concept": 0.188,
+      "share_of_concept": 0.191,
       "tokens": 1
     },
     {
@@ -2158,7 +2158,7 @@
       ],
       "occurrences": 31,
       "policy": "auto",
-      "share_of_concept": 0.564,
+      "share_of_concept": 0.633,
       "tokens": 1
     },
     {
@@ -2291,50 +2291,6 @@
       "occurrences": 30,
       "policy": "auto",
       "share_of_concept": 0.714,
-      "tokens": 1
-    },
-    {
-      "alias": "análise",
-      "concept_id": "action.analyse",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "gias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para escolher quais ativos investir.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        },
-        {
-          "context": "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        },
-        {
-          "context": "Por fim, na análise da qualidade da gestão ativa, é importante diferenciarmos o",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        },
-        {
-          "context": "A área de análise é de grande importância para o gestor de recursos.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        },
-        {
-          "context": "s à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; -",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        },
-        {
-          "context": "Esta análise se vale de múltiplos (indicadores extraídos de informações ",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "análise"
-        }
-      ],
-      "occurrences": 30,
-      "policy": "auto",
-      "share_of_concept": 0.526,
       "tokens": 1
     },
     {
@@ -2862,51 +2818,7 @@
       ],
       "occurrences": 25,
       "policy": "auto",
-      "share_of_concept": 0.139,
-      "tokens": 1
-    },
-    {
-      "alias": "Duration",
-      "concept_id": "technical.duration",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Duration"
-        },
-        {
-          "context": "ade de um título em relação a variações nas taxas de juros (Duration de Macaulay ou Duration Modificada).",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "Duration"
-        },
-        {
-          "context": "A seguir, será aprofundado o conceito de Duration, para analisarmos os impactos da mudança da taxa de juros.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "Duration"
-        },
-        {
-          "context": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, su",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "Duration"
-        },
-        {
-          "context": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar sensibilidade do preço de um título p",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "Duration"
-        },
-        {
-          "context": "Qual a Duration da carteira abaixo de duplicatas no valor total de R$ 100.0",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "Duration"
-        }
-      ],
-      "occurrences": 24,
-      "policy": "unknown",
-      "share_of_concept": 0.436,
+      "share_of_concept": 0.15,
       "tokens": 1
     },
     {
@@ -3127,50 +3039,6 @@
       "occurrences": 23,
       "policy": "auto",
       "share_of_concept": 0.958,
-      "tokens": 1
-    },
-    {
-      "alias": "Risco",
-      "concept_id": "risk.financial",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Risco"
-        },
-        {
-          "context": "álise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Risco"
-        },
-        {
-          "context": "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Risco"
-        },
-        {
-          "context": "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Risco"
-        },
-        {
-          "context": "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Risco"
-        },
-        {
-          "context": "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Risco"
-        }
-      ],
-      "occurrences": 23,
-      "policy": "unknown",
-      "share_of_concept": 0.088,
       "tokens": 1
     },
     {
@@ -3479,6 +3347,94 @@
       "occurrences": 22,
       "policy": "auto",
       "share_of_concept": 0.759,
+      "tokens": 1
+    },
+    {
+      "alias": "análise",
+      "concept_id": "action.analyse",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        },
+        {
+          "context": "Por fim, na análise da qualidade da gestão ativa, é importante diferenciarmos o",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        },
+        {
+          "context": "A área de análise é de grande importância para o gestor de recursos.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        },
+        {
+          "context": "s à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; -",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        },
+        {
+          "context": "Esta análise se vale de múltiplos (indicadores extraídos de informações ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        },
+        {
+          "context": "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise"
+        }
+      ],
+      "occurrences": 22,
+      "policy": "auto",
+      "share_of_concept": 0.537,
+      "tokens": 1
+    },
+    {
+      "alias": "Risco",
+      "concept_id": "risk.financial",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Risco"
+        },
+        {
+          "context": "álise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Risco"
+        },
+        {
+          "context": "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Risco"
+        },
+        {
+          "context": "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Risco"
+        },
+        {
+          "context": "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Risco"
+        },
+        {
+          "context": "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Risco"
+        }
+      ],
+      "occurrences": 22,
+      "policy": "unknown",
+      "share_of_concept": 0.086,
       "tokens": 1
     },
     {
@@ -3874,7 +3830,7 @@
       ],
       "occurrences": 21,
       "policy": "auto",
-      "share_of_concept": 0.656,
+      "share_of_concept": 0.677,
       "tokens": 1
     },
     {
@@ -4450,50 +4406,6 @@
       "tokens": 1
     },
     {
-      "alias": "serviços",
-      "concept_id": "system.service",
-      "domains": [
-        "software",
-        "infrastructure"
-      ],
-      "examples": [
-        {
-          "context": "logia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "bet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "cricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "mo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "nceiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "serviços"
-        }
-      ],
-      "occurrences": 19,
-      "policy": "auto",
-      "share_of_concept": 0.792,
-      "tokens": 1
-    },
-    {
       "alias": "cotista",
       "concept_id": "actor.quotaholder",
       "domains": [
@@ -4623,6 +4535,50 @@
       "occurrences": 19,
       "policy": "auto",
       "share_of_concept": 0.322,
+      "tokens": 1
+    },
+    {
+      "alias": "Duration",
+      "concept_id": "technical.duration",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Duration"
+        },
+        {
+          "context": "A seguir, será aprofundado o conceito de Duration, para analisarmos os impactos da mudança da taxa de juros.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration"
+        },
+        {
+          "context": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar sensibilidade do preço de um título p",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration"
+        },
+        {
+          "context": "Qual a Duration da carteira abaixo de duplicatas no valor total de R$ 100.0",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration"
+        },
+        {
+          "context": "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration"
+        },
+        {
+          "context": "A Duration é uma boa aproximação da mudança de preço de um título de r",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration"
+        }
+      ],
+      "occurrences": 18,
+      "policy": "unknown",
+      "share_of_concept": 0.367,
       "tokens": 1
     },
     {
@@ -5418,6 +5374,94 @@
       "tokens": 1
     },
     {
+      "alias": "serviços",
+      "concept_id": "entity.service",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "logia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "bet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "cricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "mo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "nceiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "serviços"
+        }
+      ],
+      "occurrences": 15,
+      "policy": "auto",
+      "share_of_concept": 0.625,
+      "tokens": 1
+    },
+    {
+      "alias": "PMT",
+      "concept_id": "technical.pmt",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " Futuro: - n = 504 ÷ 252 = 2 anos - i = 10 - FV = 100.000 - PMT = 0 - PV = ?",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "PMT"
+        },
+        {
+          "context": "uro a 8%: - n = 504 ÷ 252 = 2 anos - i = 8 - FV = 100.000 - PMT = 0 - PV = ?",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "PMT"
+        },
+        {
+          "context": "Desta forma, utilizaremos a função [g] das teclas [PV], [PMT], [FV] para inserir dados e a função [f], para a resposta d",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "PMT"
+        },
+        {
+          "context": "2c fará esse cálculo para nós através das teclas (n, i, PV, PMT, FV) Em que: VP = valor presente Fc = cupom do título, ou s",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "PMT"
+        },
+        {
+          "context": "ar o fluxo de caixa da vida do título: Cupom de pagamentos (PMT).",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "PMT"
+        },
+        {
+          "context": "Desta forma, na HP 12C: Como a LTN não possui cupom (PMT), podemos escolher se transformamos a taxa dada em ano para",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "PMT"
+        }
+      ],
+      "occurrences": 15,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
       "alias": "ASG",
       "concept_id": "technical.esg",
       "domains": [
@@ -6162,51 +6206,7 @@
       ],
       "occurrences": 12,
       "policy": "auto",
-      "share_of_concept": 0.211,
-      "tokens": 1
-    },
-    {
-      "alias": "Fundos",
-      "concept_id": "entity.fund",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": ", no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "s abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Fundos"
-        },
-        {
-          "context": "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Fundos"
-        }
-      ],
-      "occurrences": 12,
-      "policy": "unknown",
-      "share_of_concept": 0.07,
+      "share_of_concept": 0.293,
       "tokens": 1
     },
     {
@@ -6738,48 +6738,48 @@
       "tokens": 2
     },
     {
-      "alias": "Análise",
-      "concept_id": "action.analyse",
+      "alias": "fundos de investimento",
+      "concept_id": "entity.fund",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": " o questionário aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco",
+          "context": " diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com boas práticas sociais, ambienta",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "surface": "fundos de investimento"
         },
         {
-          "context": "s áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - ",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "context": "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de i",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "fundos de investimento"
         },
         {
-          "context": "ocessos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relat",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "context": "ANBIMA, que **AUXILIA** no aperfeiçoamento da legislação de fundos de investimento, através de códigos próprios.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "fundos de investimento"
         },
         {
-          "context": "dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "context": "A classe de cotas que possa adquirir cotas de outros fundos de investimento deve estabelecer em seu regulamento que suas taxas de admin",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "fundos de investimento"
         },
         {
-          "context": " Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "context": "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "fundos de investimento"
         },
         {
-          "context": "A Análise Fundamentalista utiliza tantos dados financeiros históricos",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Análise"
+          "context": "2/12/2022 e revogou as normas anteriores que tratavam sobre fundos de investimento.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "fundos de investimento"
         }
       ],
       "occurrences": 11,
-      "policy": "unknown",
-      "share_of_concept": 0.193,
-      "tokens": 1
+      "policy": "auto",
+      "share_of_concept": 0.064,
+      "tokens": 3
     },
     {
       "alias": "gestor de recursos",
@@ -7087,50 +7087,6 @@
       "occurrences": 11,
       "policy": "auto",
       "share_of_concept": 0.688,
-      "tokens": 1
-    },
-    {
-      "alias": "curva",
-      "concept_id": "technical.yield_curve",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "sse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "cado, ou seja, o que eles antecipam que irá acontecer com a curva.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "a bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "erá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        }
-      ],
-      "occurrences": 11,
-      "policy": "auto",
-      "share_of_concept": 0.524,
       "tokens": 1
     },
     {
@@ -7531,6 +7487,50 @@
       "tokens": 1
     },
     {
+      "alias": "Fundos",
+      "concept_id": "entity.fund",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": ", no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundos"
+        },
+        {
+          "context": "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Fundos"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "unknown",
+      "share_of_concept": 0.058,
+      "tokens": 1
+    },
+    {
       "alias": "gestão passiva",
       "concept_id": "technical.passive_management",
       "domains": [
@@ -7616,50 +7616,6 @@
       "occurrences": 10,
       "policy": "unknown",
       "share_of_concept": 0.357,
-      "tokens": 1
-    },
-    {
-      "alias": "passivo",
-      "concept_id": "entity.liability",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "ivo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "s que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "omprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "passivo"
-        },
-        {
-          "context": " a carteira em várias imunizações de carteiras com um único passivo.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "passivo"
-        }
-      ],
-      "occurrences": 10,
-      "policy": "auto",
-      "share_of_concept": 0.312,
       "tokens": 1
     },
     {
@@ -7795,6 +7751,50 @@
       "tokens": 1
     },
     {
+      "alias": "patrocinador",
+      "concept_id": "actor.sponsor",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A macro atribuição de performance é feita no nível do patrocinador do fundo (o administrador do fundo, por exemplo); já a micr",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        },
+        {
+          "context": " macro é fornecer informações sobre as decisões feitas pelo patrocinador do fundo e medir os efeitos de tais decisões na carteira.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        },
+        {
+          "context": "Uma das decisões do patrocinador é, por exemplo, quais gestor contratar e como esses gestore",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        },
+        {
+          "context": "determinar como o gestor adicionou ou destruiu valor para o patrocinador.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        },
+        {
+          "context": "os à atribuição macro: - Política de alocação: é decisão do patrocinador determinar as categorias de ativos e os pesos, assim como a",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        },
+        {
+          "context": "pactos da tomada de decisões da política de investimento do patrocinador.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "patrocinador"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
       "alias": "opção de compra",
       "concept_id": "technical.option",
       "domains": [
@@ -7835,7 +7835,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.237,
+      "share_of_concept": 0.257,
       "tokens": 3
     },
     {
@@ -7923,7 +7923,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.375,
+      "share_of_concept": 0.9,
       "tokens": 2
     },
     {
@@ -7972,7 +7972,7 @@
     },
     {
       "alias": "bolsa de valores",
-      "concept_id": "entity.securities",
+      "concept_id": "entity.stock_exchange",
       "domains": [
         "finance",
         "cga"
@@ -8011,7 +8011,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.375,
+      "share_of_concept": 0.391,
       "tokens": 3
     },
     {
@@ -8147,6 +8147,50 @@
       "tokens": 2
     },
     {
+      "alias": "passivo",
+      "concept_id": "entity.liability",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "s que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "omprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        },
+        {
+          "context": " a carteira em várias imunizações de carteiras com um único passivo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "tor concentra a compra de títulos próximas ao vencimento do passivo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        }
+      ],
+      "occurrences": 9,
+      "policy": "auto",
+      "share_of_concept": 0.29,
+      "tokens": 1
+    },
+    {
       "alias": "curva de juros",
       "concept_id": "technical.yield_curve",
       "domains": [
@@ -8187,8 +8231,52 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.429,
+      "share_of_concept": 0.474,
       "tokens": 3
+    },
+    {
+      "alias": "curva",
+      "concept_id": "technical.yield_curve",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "sse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "cado, ou seja, o que eles antecipam que irá acontecer com a curva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "a bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "erá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "iciada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimen",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        }
+      ],
+      "occurrences": 9,
+      "policy": "auto",
+      "share_of_concept": 0.474,
+      "tokens": 1
     },
     {
       "alias": "dívidas",
@@ -8544,6 +8632,50 @@
       "tokens": 2
     },
     {
+      "alias": "premissas",
+      "concept_id": "entity.premise",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investido",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "premissas"
+        },
+        {
+          "context": "- Finanças Comportamentais: as premissas das Finanças Comportamentais são consideradas válidas por i",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "premissas"
+        },
+        {
+          "context": "ais setores ou ativos podem se beneficiar com as análises e premissas macroeconômicas feitas inicialmente.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "premissas"
+        },
+        {
+          "context": "distribuição de retornos desejado pelo analista, assim como premissas sobre correlações, opções embutidas aos ativos, entre outra",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "premissas"
+        },
+        {
+          "context": "um retorno ativo, o Alfa de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "premissas"
+        },
+        {
+          "context": "Com base nas premissas feitas na análise de regressão, podemos concluir que o reto",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "premissas"
+        }
+      ],
+      "occurrences": 8,
+      "policy": "auto",
+      "share_of_concept": 0.8,
+      "tokens": 1
+    },
+    {
       "alias": "liquidação",
       "concept_id": "technical.settlement",
       "domains": [
@@ -8585,6 +8717,50 @@
       "occurrences": 8,
       "policy": "auto",
       "share_of_concept": 0.667,
+      "tokens": 1
+    },
+    {
+      "alias": "desenquadramento",
+      "concept_id": "technical.mandate_breach",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao fin",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desenquadramento"
+        },
+        {
+          "context": "razo o gestor deve encaminhar à CVM suas explicações para o desenquadramento.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desenquadramento"
+        },
+        {
+          "context": "Essas mudanças ocorrem por desenquadramento das devidas regras por um certo período.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desenquadramento"
+        },
+        {
+          "context": "Veremos a seguir, as principais regras de desenquadramento para os fundos de investimentos que serão de: - Renda Fixa ",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desenquadramento"
+        },
+        {
+          "context": " curto prazo para o rendimento produzido a partir do dia do desenquadramento.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desenquadramento"
+        },
+        {
+          "context": "Esse desenquadramento poderá ocorrer uma única vez a cada ano-calendário, retorna",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desenquadramento"
+        }
+      ],
+      "occurrences": 8,
+      "policy": "auto",
+      "share_of_concept": 1.0,
       "tokens": 1
     },
     {
@@ -8718,6 +8894,50 @@
       "policy": "auto",
       "share_of_concept": 0.667,
       "tokens": 3
+    },
+    {
+      "alias": "Duplicata",
+      "concept_id": "entity.trade_receivable",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Duplicata (1): ○ n = 1 ○ i = 3 ○ FV = 10.000 ○ PMT = 0 ○ PV = 9.708,7",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        },
+        {
+          "context": "Duplicata (2): ○ n = 2 ○ i = 3 ○ FV = 20.000 ○ PMT = 0 ○ PV = 18.851,",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        },
+        {
+          "context": "): ○ n = 2 ○ i = 3 ○ FV = 20.000 ○ PMT = 0 ○ PV = 18.851,92 Duplicata (3): ○ n = 3 ○ i = 3 ○ FV = 30.000 ○ PMT = 0 ○ PV = 27.454,",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        },
+        {
+          "context": "): ○ n = 3 ○ i = 3 ○ FV = 30.000 ○ PMT = 0 ○ PV = 27.454,25 Duplicata (4): ○ n = 4 ○ i = 3 ○ FV = 40.000 ○ PMT = 0 ○ PV = 35.539,",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        },
+        {
+          "context": "Duplicata (1): PV × n R$ 9.708,74 × 1 9.708,74 Duplicata (2): PV × n ",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        },
+        {
+          "context": "Duplicata (1): PV × n R$ 9.708,74 × 1 9.708,74 Duplicata (2): PV × n R$ 18.851,92 × 2 37.703,84 Duplicata (3): PV × ",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duplicata"
+        }
+      ],
+      "occurrences": 8,
+      "policy": "unknown",
+      "share_of_concept": 0.889,
+      "tokens": 1
     },
     {
       "alias": "ALOCAÇÃO",
@@ -8892,7 +9112,7 @@
       ],
       "occurrences": 7,
       "policy": "auto",
-      "share_of_concept": 0.184,
+      "share_of_concept": 0.2,
       "tokens": 3
     },
     {
@@ -9116,6 +9336,50 @@
       "tokens": 2
     },
     {
+      "alias": "otimização",
+      "concept_id": "technical.optimisation",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Por sua vez, as vantagens das técnicas de otimização é que normalmente apresentam baixo tracking error e explora",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "otimização"
+        },
+        {
+          "context": "índice (full replication) é geralmente a) mais barata que a otimização, mas com menor tracking error.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "otimização"
+        },
+        {
+          "context": "b) mais cara que a otimização, mas com menor tracking error.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "otimização"
+        },
+        {
+          "context": "c) mais barata que a otimização, mas com maior tracking error.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "otimização"
+        },
+        {
+          "context": "d) mais cara que a otimização e com maior tracking error.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "otimização"
+        },
+        {
+          "context": " outros, proteção contra riscos, aumento da rentabilidade e otimização da carteira.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "otimização"
+        }
+      ],
+      "occurrences": 7,
+      "policy": "auto",
+      "share_of_concept": 0.778,
+      "tokens": 1
+    },
+    {
       "alias": "operação",
       "concept_id": "entity.operation",
       "domains": [
@@ -9336,6 +9600,50 @@
       "tokens": 2
     },
     {
+      "alias": "análise técnica",
+      "concept_id": "technical.technical_analysis",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Em resumo, a análise técnica estuda as movimentações nos preços passados e, a partir daí",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        },
+        {
+          "context": "A análise técnica apresenta várias vantagens e também alguns desafios.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        },
+        {
+          "context": " Oscilador de Médias Móveis: indicador técnico utilizado na análise técnica para ajudar a identificar a força e a direção de uma tendên",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        },
+        {
+          "context": "- Envelopes: indicador técnico na análise técnica que é usado para ajudar os traders a identificar faixas de ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        },
+        {
+          "context": "O envelope mais comum na análise técnica são as bandas de Bollinger; - Bandas de Bollinger: consiste",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        },
+        {
+          "context": "Direcional Médio (ADX), é um indicador técnico utilizado na análise técnica para avaliar a força e a direção de uma tendência de mercad",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise técnica"
+        }
+      ],
+      "occurrences": 7,
+      "policy": "auto",
+      "share_of_concept": 0.636,
+      "tokens": 2
+    },
+    {
       "alias": "classe fechada",
       "concept_id": "entity.closed_class",
       "domains": [
@@ -9512,6 +9820,50 @@
       "tokens": 1
     },
     {
+      "alias": "Barbell",
+      "concept_id": "technical.barbell",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "tratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fl",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        },
+        {
+          "context": "Barbell, em tradução livre, significa barra.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        },
+        {
+          "context": "A estratégia Barbell tenta obter o melhor dos dois mundos, permitindo que os ges",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        },
+        {
+          "context": "Barbell, por conta da concentração de metade da carteira nos vencim",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        },
+        {
+          "context": "Nesse cenário, temos justamente o inverso: a estratégia Barbell terá melhor performance e a estratégia Bullet, a pior.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        },
+        {
+          "context": "uada dos juros dos vencimentos de longo prazo, a estratégia Barbell é muito beneficiada, por alocar metade da carteira nesses v",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Barbell"
+        }
+      ],
+      "occurrences": 7,
+      "policy": "unknown",
+      "share_of_concept": 0.778,
+      "tokens": 1
+    },
+    {
       "alias": "Investimentos",
       "concept_id": "action.invest",
       "domains": [
@@ -9552,7 +9904,7 @@
       ],
       "occurrences": 6,
       "policy": "unknown",
-      "share_of_concept": 0.033,
+      "share_of_concept": 0.036,
       "tokens": 1
     },
     {
@@ -9644,6 +9996,50 @@
       "tokens": 1
     },
     {
+      "alias": "REPO",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na v",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "a de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REP",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "EPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "Esse investidor pode adquirir esse REPO com recursos próprios e também de terceiros.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "timo caso, ele estaria alavancado, ganhando o percentual do REPO a partir do capital de terceiros.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "REPO"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 0.4,
+      "tokens": 1
+    },
+    {
       "alias": "spread",
       "concept_id": "technical.spread",
       "domains": [
@@ -9730,6 +10126,50 @@
       "policy": "unknown",
       "share_of_concept": 0.857,
       "tokens": 2
+    },
+    {
+      "alias": "alíquota",
+      "concept_id": "quantity.tax_rate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "NO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobre o ganho bruto.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "alíquota"
+        },
+        {
+          "context": "Supondo alíquota de imposto de 20%, o retorno equivalente seria de:",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "alíquota"
+        },
+        {
+          "context": "posto de Renda devido nos FUNDOS DE RENDA FIXA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Rend",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "alíquota"
+        },
+        {
+          "context": "A alíquota seguirá a mesma lógica dos fundos abertos, dependendo exclu",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "alíquota"
+        },
+        {
+          "context": "de investimentos poderão mudar de classificação tributária (alíquota), da mesma forma que poderiam ter mudanças na sua nomenclat",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "alíquota"
+        },
+        {
+          "context": "Após, será aplicado a alíquota de curto prazo para o rendimento produzido a partir do dia ",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "alíquota"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "auto",
+      "share_of_concept": 0.75,
+      "tokens": 1
     },
     {
       "alias": "imposto",
@@ -9820,6 +10260,50 @@
       "tokens": 1
     },
     {
+      "alias": "Nasdaq",
+      "concept_id": "entity.nasdaq",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são r",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        },
+        {
+          "context": "rto negociadas na Bolsa de Valores de Nova York (NYSE) e na Nasdaq.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        },
+        {
+          "context": "erados a referência para o setor de tecnologia, sendo eles: Nasdaq Composite: Índice composto pelo desempenho de mais de 3.000",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        },
+        {
+          "context": "posto pelo desempenho de mais de 3.000 empresas listadas na Nasdaq.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        },
+        {
+          "context": "Nasdaq 100: índice composto pelas 100 maiores empresas não finance",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        },
+        {
+          "context": "to pelas 100 maiores empresas não financeiras negociadas na Nasdaq.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nasdaq"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 0.857,
+      "tokens": 1
+    },
+    {
       "alias": "antes de",
       "concept_id": "temporal.before",
       "domains": [
@@ -9862,6 +10346,50 @@
       "policy": "auto",
       "share_of_concept": 1.0,
       "tokens": 2
+    },
+    {
+      "alias": "replicação",
+      "concept_id": "technical.replication",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Estes fundos possuem dificuldades de replicação dos seus benchmarks por questões custos, impostos, dinâmica",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "replicação"
+        },
+        {
+          "context": "Veremos mais adiante formas mais detalhadas de replicação da carteira visando a uma gestão passiva.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "replicação"
+        },
+        {
+          "context": "da amostra aumenta, a estratégia se parece muito mais com a replicação completa.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "replicação"
+        },
+        {
+          "context": "01] A estratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "replicação"
+        },
+        {
+          "context": "s índices (e também diferentes níveis de liquidez), torna a replicação literal do índice muitas vezes impraticável.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "replicação"
+        },
+        {
+          "context": "a diz respeito aos custos de transação, principalmente se a replicação envolver muitos ativos e com baixa liquidez.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "replicação"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "auto",
+      "share_of_concept": 0.545,
+      "tokens": 1
     },
     {
       "alias": "contratos futuros",
@@ -10128,6 +10656,94 @@
       "tokens": 1
     },
     {
+      "alias": "Bottom-up",
+      "concept_id": "technical.bottom_up",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "os: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        },
+        {
+          "context": " estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        },
+        {
+          "context": "Já a estratégia Bottom-up é oposta à Top-Down, uma vez que ignora fatores macroeconôm",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        },
+        {
+          "context": "Ao invés disso, os defensores da análise Bottom-up observam primeiro os fatores microeconômicos que afetam as ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        },
+        {
+          "context": "Assim, análises de investimento Bottom-up podem levar a estilos mais táticos e mais ativos de gestão,",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        },
+        {
+          "context": "Nesse sentido, carteiras Bottom-up geralmente possuem grande parcela distribuída entre ações i",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Bottom-up"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
+      "alias": "Top-Down",
+      "concept_id": "technical.top_down",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ntalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        },
+        {
+          "context": "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        },
+        {
+          "context": "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fat",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        },
+        {
+          "context": "Já a estratégia Bottom-up é oposta à Top-Down, uma vez que ignora fatores macroeconômicos.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        },
+        {
+          "context": "ais táticos e mais ativos de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratégicas e co",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        },
+        {
+          "context": "la distribuída entre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commoditie",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Top-Down"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
       "alias": "registro",
       "concept_id": "entity.registration",
       "domains": [
@@ -10215,6 +10831,50 @@
       "tokens": 1
     },
     {
+      "alias": "mitigar",
+      "concept_id": "action.mitigate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ou gestor de carteira, pois permite identificar, analisar e mitigar os riscos que podem afetar seus investimentos.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "mitigar"
+        },
+        {
+          "context": "apital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, como diversificação, hedging e definição de limi",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "mitigar"
+        },
+        {
+          "context": "Para ajudar a mitigar esse risco, as negociações de derivativos devem envolver as",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "mitigar"
+        },
+        {
+          "context": "ada estratégia de Imunização, que nada mais é do que tentar mitigar ou até mesmo neutralizar o risco da variação do preço dos a",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "mitigar"
+        },
+        {
+          "context": " variações não paralelas, conseguimos com essas estratégias mitigar um pouco o risco, mas será necessária aplicação de métodos ",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "mitigar"
+        },
+        {
+          "context": "estimento sob sua própria gestão, com critérios que busquem mitigar eventuais conflitos de interesse e assimetria entre os veíc",
+          "source": "11-codigo-anbima-administracao-e-gestao.md",
+          "surface": "mitigar"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "auto",
+      "share_of_concept": 0.667,
+      "tokens": 1
+    },
+    {
       "alias": "Alocação",
       "concept_id": "action.allocate",
       "domains": [
@@ -10259,6 +10919,50 @@
       "tokens": 1
     },
     {
+      "alias": "Duration de Macaulay",
+      "concept_id": "technical.macaulay_duration",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ade de um título em relação a variações nas taxas de juros (Duration de Macaulay ou Duration Modificada).",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        },
+        {
+          "context": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para es",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        },
+        {
+          "context": "Este será o resultado da Duration de Macaulay!",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        },
+        {
+          "context": "Duration de Macaulay = 271.933,25 ÷ 91.554,39 = 2,97 meses ou 89 dias.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        },
+        {
+          "context": "Já a média ponderada é uma boa aproximação da Duration de Macaulay, vide nosso exemplo no qual a Média ponderada resultou em 9",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        },
+        {
+          "context": "Sendo a Duration de Macaulay de 4,55 anos, podemos calcular a Duration Modificada: VARIA",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "Duration de Macaulay"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 0.857,
+      "tokens": 3
+    },
+    {
       "alias": "Duration Modificada",
       "concept_id": "technical.modified_duration",
       "domains": [
@@ -10301,6 +11005,50 @@
       "policy": "unknown",
       "share_of_concept": 0.75,
       "tokens": 2
+    },
+    {
+      "alias": "Ladder",
+      "concept_id": "technical.ladder",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "a fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fluxo de Caixa).",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        },
+        {
+          "context": "Temos ainda a estratégia Ladder, também chamada de escada (em tradução livre), que é constr",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        },
+        {
+          "context": "Com a Ladder, conforme os títulos vencem, os recursos podem ser reinvest",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        },
+        {
+          "context": "A estratégia Ladder também aumenta a liquidez dos investimentos em títulos porq",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        },
+        {
+          "context": "O resultado da estratégia Ladder fica no meio das duas!",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        },
+        {
+          "context": "Já a Ladder também é beneficiada, mas esse movimento positivo é “diluíd",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Ladder"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 0.545,
+      "tokens": 1
     },
     {
       "alias": "TAXA",
@@ -10378,6 +11126,84 @@
       "occurrences": 5,
       "policy": "auto",
       "share_of_concept": 0.227,
+      "tokens": 2
+    },
+    {
+      "alias": "corretoras",
+      "concept_id": "actor.broker",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras qu",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "corretoras"
+        },
+        {
+          "context": "ado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "corretoras"
+        },
+        {
+          "context": "financeiros, como bancos, seguradoras, gestoras de ativos e corretoras de valores mobiliários.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "corretoras"
+        },
+        {
+          "context": "bilidades e alocação de garantias que envolve investidores, corretoras, agentes de compensação e a própria B3.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "corretoras"
+        },
+        {
+          "context": "É muito comum de ser visto em carteira de ações de corretoras (exemplo: Carteira Recomendada Mensal de Ações).",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "corretoras"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "auto",
+      "share_of_concept": 0.556,
+      "tokens": 1
+    },
+    {
+      "alias": "aceite bancário",
+      "concept_id": "entity.bankers_acceptance",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Banker's acceptance (ou \"aceite bancário\", em português) é um instrumento financeiro que é emitido p",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "aceite bancário"
+        },
+        {
+          "context": " importadora, em seguida, solicita a seu banco que emita um aceite bancário em nome do exportador, que se torna o beneficiário do aceit",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "aceite bancário"
+        },
+        {
+          "context": "mportadora, em seguida, promete pagar a quantia indicada no aceite bancário na data de vencimento.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "aceite bancário"
+        },
+        {
+          "context": "O aceite bancário é negociável, o que significa que o exportador pode vender ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "aceite bancário"
+        },
+        {
+          "context": "ito do banco emissor, o que significa que o beneficiário do aceite bancário tem a garantia de que receberá o pagamento na data de venci",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "aceite bancário"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "auto",
+      "share_of_concept": 1.0,
       "tokens": 2
     },
     {
@@ -10539,7 +11365,7 @@
     },
     {
       "alias": "Bolsa de Valores",
-      "concept_id": "entity.securities",
+      "concept_id": "entity.stock_exchange",
       "domains": [
         "finance",
         "cga"
@@ -10573,8 +11399,47 @@
       ],
       "occurrences": 5,
       "policy": "unknown",
-      "share_of_concept": 0.208,
+      "share_of_concept": 0.217,
       "tokens": 3
+    },
+    {
+      "alias": "Exchange",
+      "concept_id": "entity.stock_exchange",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Exchange"
+        },
+        {
+          "context": " reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Exchange"
+        },
+        {
+          "context": "nds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Exchange"
+        },
+        {
+          "context": "; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Exchange"
+        },
+        {
+          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Exchange"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "unknown",
+      "share_of_concept": 0.217,
+      "tokens": 1
     },
     {
       "alias": "compradores",
@@ -10729,7 +11594,7 @@
       ],
       "occurrences": 5,
       "policy": "unknown",
-      "share_of_concept": 0.025,
+      "share_of_concept": 0.026,
       "tokens": 1
     },
     {
@@ -11119,15 +11984,15 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.278,
+      "share_of_concept": 0.455,
       "tokens": 4
     },
     {
       "alias": "serviço",
-      "concept_id": "system.service",
+      "concept_id": "entity.service",
       "domains": [
-        "software",
-        "infrastructure"
+        "finance",
+        "cga"
       ],
       "examples": [
         {
@@ -11201,45 +12066,6 @@
       "tokens": 1
     },
     {
-      "alias": "prestadores de serviços",
-      "concept_id": "actor.essential_service_provider",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "**OBSERVAÇÕES:** - A aferição de responsabilidades dos prestadores de serviços tem como parâmetros as obrigações previstas pela CVM e em r",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestadores de serviços"
-        },
-        {
-          "context": "Sem prejuízo das responsabilidades dos prestadores de serviços, podem ser constituídos, por iniciativa dos cotistas ou de ",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestadores de serviços"
-        },
-        {
-          "context": "Os prestadores de serviços devem transferir à classe de cotas qualquer benefício ou va",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestadores de serviços"
-        },
-        {
-          "context": "Nas classes abertas, as taxas devidas aos prestadores de serviços devem ser provisionadas por dia útil, sempre como despesa d",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestadores de serviços"
-        },
-        {
-          "context": "a ligação direta ou indireta entre o contratado e os demais prestadores de serviços ou investidores, na hipótese de potenciais conflitos de int",
-          "source": "11-codigo-anbima-administracao-e-gestao.md",
-          "surface": "prestadores de serviços"
-        }
-      ],
-      "occurrences": 5,
-      "policy": "auto",
-      "share_of_concept": 0.278,
-      "tokens": 3
-    },
-    {
       "alias": "prestador de serviço essencial",
       "concept_id": "actor.essential_service_provider",
       "domains": [
@@ -11275,7 +12101,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.278,
+      "share_of_concept": 0.455,
       "tokens": 4
     },
     {
@@ -11474,6 +12300,45 @@
       "tokens": 1
     },
     {
+      "alias": "contraparte",
+      "concept_id": "actor.counterparty",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "No Brasil, a B3 faz esse papel, operando como contraparte central garantidora para a maior parte das operações realiz",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "contraparte"
+        },
+        {
+          "context": "Como contraparte central, a B3 se interpõe entre operações e contratos e, as",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "contraparte"
+        },
+        {
+          "context": "vativo financeiro que transfere o risco de crédito para uma contraparte em troca de um prêmio.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "contraparte"
+        },
+        {
+          "context": "ativos se não forem atendidas as chamadas de margem ou se a contraparte falhar em cumprir suas obrigações.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "contraparte"
+        },
+        {
+          "context": " riscos na carteira do investidor, como risco de crédito da contraparte e risco de mercado relacionado à volatilidade do preço do d",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "contraparte"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "auto",
+      "share_of_concept": 0.556,
+      "tokens": 1
+    },
+    {
       "alias": "spreads",
       "concept_id": "technical.spread",
       "domains": [
@@ -11549,6 +12414,45 @@
       "occurrences": 5,
       "policy": "auto",
       "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
+      "alias": "Bullet",
+      "concept_id": "technical.bullet_portfolio",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fluxo de C",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bullet"
+        },
+        {
+          "context": "Já na carteira Bullet, o gestor concentra a compra de títulos próximas ao vencime",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bullet"
+        },
+        {
+          "context": "a estratégia Barbell terá melhor performance e a estratégia Bullet, a pior.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bullet"
+        },
+        {
+          "context": "E, por último, a Bullet seria a menos beneficiada.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bullet"
+        },
+        {
+          "context": "taxas das extremidades devem cair ou subir menos) e a pior, Bullet na taxa de médio prazo (taxas devem subir).",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bullet"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "unknown",
+      "share_of_concept": 0.556,
       "tokens": 1
     },
     {
@@ -11791,6 +12695,40 @@
       "tokens": 2
     },
     {
+      "alias": "call",
+      "concept_id": "technical.call_option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "te forma: Preço do Callable Bond = preço do bond - preço da call Preço do Putable Bond = preço do bond + preço da put",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "call"
+        },
+        {
+          "context": "e venda a títulos, esperamos o seguinte: > Opção de compra (call): o lançador de um título pode vendê-lo com uma opção de co",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "call"
+        },
+        {
+          "context": "le pode emitir um título de dívida prefixado em 10% com uma call embutida.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "call"
+        },
+        {
+          "context": "Gráfico com opção de compra (call) embutida Gráfico com opção de venda (put) embutida",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "call"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.444,
+      "tokens": 1
+    },
+    {
       "alias": "rating",
       "concept_id": "technical.rating",
       "domains": [
@@ -11924,6 +12862,74 @@
       "occurrences": 4,
       "policy": "auto",
       "share_of_concept": 0.267,
+      "tokens": 1
+    },
+    {
+      "alias": "bolsa",
+      "concept_id": "entity.stock_exchange",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "a forma que no Brasil, as empresas americanas negociadas na bolsa possuem dois tipos classificação de ações.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "bolsa"
+        },
+        {
+          "context": "do índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechad",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "bolsa"
+        },
+        {
+          "context": "as cotas podem ser transferidas por cessão ou negociadas em bolsa/balcão organizado, ou seja, podem ser vendidas a um terceir",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "bolsa"
+        },
+        {
+          "context": "Além disso, a bolsa desenvolveu um mecanismo de proteção do sistema, baseada em",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "bolsa"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.174,
+      "tokens": 1
+    },
+    {
+      "alias": "staples",
+      "concept_id": "entity.consumer_staples",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As empresas do setor de staples são consideradas defensivas porque os consumidores continua",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "staples"
+        },
+        {
+          "context": "Algumas das empresas mais conhecidas do setor de staples incluem a Coca-Cola, Procter & Gamble, Nestlé, Unilever, Pe",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "staples"
+        },
+        {
+          "context": "O setor de staples é frequentemente comparado ao setor de consumo discricionár",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "staples"
+        },
+        {
+          "context": "Ao contrário do setor de staples, as empresas de consumo discricionário tendem a ter desempe",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "staples"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -12437,6 +13443,142 @@
       "tokens": 1
     },
     {
+      "alias": "Análise",
+      "concept_id": "action.analyse",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " o questionário aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise"
+        },
+        {
+          "context": "dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise"
+        },
+        {
+          "context": " Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise"
+        },
+        {
+          "context": "Dentre as principais características, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das em",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Análise"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.098,
+      "tokens": 1
+    },
+    {
+      "alias": "Análise Técnica",
+      "concept_id": "technical.technical_analysis",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ocessos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Técnica"
+        },
+        {
+          "context": "A Análise Técnica (Gráfica) estabelece projeções para os preços das ações bas",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Técnica"
+        },
+        {
+          "context": "Dentre os principais modelos de Análise Técnica, destacamos:",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Técnica"
+        },
+        {
+          "context": "Dentre os principais modelos de Análise Técnica, destacamos:",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Técnica"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.364,
+      "tokens": 2
+    },
+    {
+      "alias": "câmbio",
+      "concept_id": "technical.exchange_rate_risk",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "áveis macroeconômicas, como PIB, balança comercial, taxa de câmbio, inflação, taxas de juros, entre outros.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "câmbio"
+        },
+        {
+          "context": "pelas condições macroeconômicas, tais como, taxas de juros, câmbio, commodities; mas também podem ocorrer por questões polític",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "câmbio"
+        },
+        {
+          "context": "Exemplos: impeachment, grandes mudanças na taxa de juros ou câmbio.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "câmbio"
+        },
+        {
+          "context": "bial é o risco de perda que surge da flutuação das taxas de câmbio entre diferentes moedas.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "câmbio"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
+      "alias": "prestação de serviços",
+      "concept_id": "entity.service",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestação de serviços"
+        },
+        {
+          "context": "quelas previstas no regulamento e no respectivo contrato de prestação de serviços.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestação de serviços"
+        },
+        {
+          "context": "de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "prestação de serviços"
+        },
+        {
+          "context": "tas conte com cogestão da carteira de ativos, o contrato de prestação de serviços ao fundo celebrado com o cogestor deve conter dispositivo l",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "prestação de serviços"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 3
+    },
+    {
       "alias": "registro de funcionamento",
       "concept_id": "entity.registration",
       "domains": [
@@ -12468,6 +13610,40 @@
       "occurrences": 4,
       "policy": "auto",
       "share_of_concept": 0.333,
+      "tokens": 3
+    },
+    {
+      "alias": "prestadores de serviços",
+      "concept_id": "actor.service_provider",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "**OBSERVAÇÕES:** - A aferição de responsabilidades dos prestadores de serviços tem como parâmetros as obrigações previstas pela CVM e em r",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestadores de serviços"
+        },
+        {
+          "context": "Sem prejuízo das responsabilidades dos prestadores de serviços, podem ser constituídos, por iniciativa dos cotistas ou de ",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestadores de serviços"
+        },
+        {
+          "context": "Os prestadores de serviços devem transferir à classe de cotas qualquer benefício ou va",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestadores de serviços"
+        },
+        {
+          "context": "Nas classes abertas, as taxas devidas aos prestadores de serviços devem ser provisionadas por dia útil, sempre como despesa d",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "prestadores de serviços"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.571,
       "tokens": 3
     },
     {
@@ -12503,6 +13679,40 @@
       "policy": "auto",
       "share_of_concept": 0.364,
       "tokens": 3
+    },
+    {
+      "alias": "corretora",
+      "concept_id": "actor.broker",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": ": gestor tecla um zero a mais quando envia uma ordem para a corretora (é o famoso “dedo-gordo”); um processo mal estruturado que ",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "corretora"
+        },
+        {
+          "context": "geralmente é necessário depositar uma margem de garantia na corretora.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "corretora"
+        },
+        {
+          "context": "Se o preço do ativo subjacente se mover contra, a corretora poderá solicitar o depósito de mais margem para garantir a ",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "corretora"
+        },
+        {
+          "context": "E, em alguns casos, a corretora pode liquidar antecipadamente as posições em derivativos se",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "corretora"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.444,
+      "tokens": 1
     },
     {
       "alias": "gerenciamento de riscos",
@@ -12667,6 +13877,40 @@
           "context": "E, no primeiro cenário, em que não houve movimentações, a MWRR foi igual à TWRR.",
           "source": "07-avaliacao-de-desempenho.md",
           "surface": "MWRR"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.571,
+      "tokens": 1
+    },
+    {
+      "alias": "monitoramento",
+      "concept_id": "action.monitor",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ar: - É considerado um benchmark válido; - Permite contínuo monitoramento do processo de investimento; e - Permite a alocação efetiva",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "monitoramento"
+        },
+        {
+          "context": " outro lado, pode implicar grandes custos de transação e de monitoramento da carteira.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "monitoramento"
+        },
+        {
+          "context": "e recursos deve estabelecer procedimentos para o controle e monitoramento das operações realizadas entre os veículos de investimento ",
+          "source": "11-codigo-anbima-administracao-e-gestao.md",
+          "surface": "monitoramento"
+        },
+        {
+          "context": "to, devendo adotar controles para a realização da análise e monitoramento dos ativos de crédito privado e riscos de crédito associado",
+          "source": "11-codigo-anbima-administracao-e-gestao.md",
+          "surface": "monitoramento"
         }
       ],
       "occurrences": 4,
@@ -12879,6 +14123,74 @@
       "tokens": 3
     },
     {
+      "alias": "Bear Steepening",
+      "concept_id": "technical.steepening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bear Steepening Depois Antes",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Steepening"
+        },
+        {
+          "context": ",00% 1 2 3 4 5 Bull Steepening Antes Depois Bull Flattening Bear Steepening",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Steepening"
+        },
+        {
+          "context": "Já no Bear Steepening (gráfico ao lado), juro de longo prazo sobe mais rápido que",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Steepening"
+        },
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bear Steepening Depois Antes Bear Flattening",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Steepening"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.4,
+      "tokens": 2
+    },
+    {
+      "alias": "Bull Flattening",
+      "concept_id": "technical.flattening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Flattening Antes Depois",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Flattening"
+        },
+        {
+          "context": "0% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Steepening Antes Depois Bull Flattening Bear Steepening",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Flattening"
+        },
+        {
+          "context": "No Bull Flattening (gráfico ao lado), o juro de longo prazo cai mais rápido qu",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Flattening"
+        },
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Flattening Antes Depois",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Flattening"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.364,
+      "tokens": 2
+    },
+    {
       "alias": "ATIVOS",
       "concept_id": "entity.asset",
       "domains": [
@@ -12971,6 +14283,35 @@
       "tokens": 1
     },
     {
+      "alias": "título do Tesouro",
+      "concept_id": "entity.treasury_security",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "paração dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "título do Tesouro"
+        },
+        {
+          "context": "Por exemplo, se o título do Tesouro a 5 anos estiver a 4% e o título do Tesouro a 30 anos estiv",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "título do Tesouro"
+        },
+        {
+          "context": "r exemplo, se o título do Tesouro a 5 anos estiver a 4% e o título do Tesouro a 30 anos estiver a 5%, o spread de rendimento entre os doi",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "título do Tesouro"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.375,
+      "tokens": 3
+    },
+    {
       "alias": "em seguida",
       "concept_id": "temporal.next",
       "domains": [
@@ -13055,6 +14396,64 @@
       "occurrences": 3,
       "policy": "auto",
       "share_of_concept": 0.6,
+      "tokens": 1
+    },
+    {
+      "alias": "put",
+      "concept_id": "technical.put_option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ço da call Preço do Putable Bond = preço do bond + preço da put",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "put"
+        },
+        {
+          "context": "> Opção de venda (put): por sua vez, o lançador pode vender o título com uma opçã",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "put"
+        },
+        {
+          "context": "opção de compra (call) embutida Gráfico com opção de venda (put) embutida",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "put"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.429,
+      "tokens": 1
+    },
+    {
+      "alias": "PUT",
+      "concept_id": "technical.put_option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Já a CLÁUSULA DE PUT EMBUTIDA beneficia O INVESTIDOR, pois caso as taxas de juro",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "PUT"
+        },
+        {
+          "context": "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "PUT"
+        },
+        {
+          "context": "E títulos de renda fixa com cláusula de PUT Embutida não possuem desvalorização “infinita”, quando as t",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "PUT"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.429,
       "tokens": 1
     },
     {
@@ -13199,7 +14598,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.079,
+      "share_of_concept": 0.086,
       "tokens": 1
     },
     {
@@ -14015,6 +15414,35 @@
       "tokens": 1
     },
     {
+      "alias": "Análise Fundamentalista",
+      "concept_id": "technical.fundamental_analysis",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "s áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Fundamentalista"
+        },
+        {
+          "context": "A Análise Fundamentalista utiliza tantos dados financeiros históricos de uma empresa,",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Fundamentalista"
+        },
+        {
+          "context": "**OBS:** a Análise Fundamentalista NÃO utiliza na sua concepção, os preços que foram negociado",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Análise Fundamentalista"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.6,
+      "tokens": 2
+    },
+    {
       "alias": "análises",
       "concept_id": "action.analyse",
       "domains": [
@@ -14040,7 +15468,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.073,
       "tokens": 1
     },
     {
@@ -14595,6 +16023,35 @@
       "tokens": 2
     },
     {
+      "alias": "Monte Carlo",
+      "concept_id": "technical.monte_carlo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "alcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte Carlo.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Monte Carlo"
+        },
+        {
+          "context": "O método de Monte Carlo pode ser aplicado ao VaR a partir do uso de sistemas comput",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Monte Carlo"
+        },
+        {
+          "context": "Com os retornos em mãos, o cálculo do VaR Monte Carlo remete ao VaR Histórico: deve-se organizar tais dados em um",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Monte Carlo"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 2
+    },
+    {
       "alias": "cálculos",
       "concept_id": "action.calculate",
       "domains": [
@@ -14622,6 +16079,35 @@
       "policy": "auto",
       "share_of_concept": 0.051,
       "tokens": 1
+    },
+    {
+      "alias": "Simulação de Monte Carlo",
+      "concept_id": "technical.monte_carlo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A Simulação de Monte Carlo faz referência a um dos distritos do Principado de Mônaco, ",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Simulação de Monte Carlo"
+        },
+        {
+          "context": "Esse problema pode ser superado pelo uso da Simulação de Monte Carlo mas, por sua vez, esse método pode implicar elevados custos",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Simulação de Monte Carlo"
+        },
+        {
+          "context": "A Simulação de Monte Carlo faz referência a um dos distritos do Principado de Mônaco, ",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "Simulação de Monte Carlo"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 4
     },
     {
       "alias": "decide",
@@ -14997,7 +16483,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.079,
+      "share_of_concept": 0.086,
       "tokens": 1
     },
     {
@@ -15059,6 +16545,64 @@
       "tokens": 2
     },
     {
+      "alias": "bullet",
+      "concept_id": "technical.bullet_portfolio",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "bullet"
+        },
+        {
+          "context": "teiras com a mesma duration, mas com estruturas diferentes (bullet, ladder e barbell), ocorrendo um steepening, teremos o segu",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "bullet"
+        },
+        {
+          "context": "Porém, como a carteira bullet está concentrada em um único vencimento no meio da curva, s",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "bullet"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.333,
+      "tokens": 1
+    },
+    {
+      "alias": "ladder",
+      "concept_id": "technical.ladder",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "$ 100.000 para investir em títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com diferentes ",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "ladder"
+        },
+        {
+          "context": "om a mesma duration, mas com estruturas diferentes (bullet, ladder e barbell), ocorrendo um steepening, teremos o seguinte: Qu",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "ladder"
+        },
+        {
+          "context": "ento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, princi",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "ladder"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.273,
+      "tokens": 1
+    },
+    {
       "alias": "Opções de venda",
       "concept_id": "technical.option",
       "domains": [
@@ -15084,7 +16628,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.079,
+      "share_of_concept": 0.086,
       "tokens": 3
     },
     {
@@ -15115,6 +16659,64 @@
       "policy": "unknown",
       "share_of_concept": 0.097,
       "tokens": 1
+    },
+    {
+      "alias": "Flattening",
+      "concept_id": "technical.flattening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "estão de carteiras de renda fixa são, de longe, Steepening, Flattening e Butterfly.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Flattening"
+        },
+        {
+          "context": "O movimento contrário seria o Flattening ou achatamento da curva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Flattening"
+        },
+        {
+          "context": "Flattening Considerando carteiras com mesma duration, mas diferentes e",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Flattening"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.273,
+      "tokens": 1
+    },
+    {
+      "alias": "Bear Flattening",
+      "concept_id": "technical.flattening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "0% 4,00% 4,50% 5,00% 1 2 3 4 5 Bear Steepening Depois Antes Bear Flattening",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Flattening"
+        },
+        {
+          "context": "Por fim, no Bear Flattening (gráfico ao lado), juro de curto prazo sobe mais rápido que",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Flattening"
+        },
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bear Flattening Depois Antes",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bear Flattening"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.273,
+      "tokens": 2
     },
     {
       "alias": "Constant Mix",
@@ -15248,6 +16850,54 @@
       "tokens": 2
     },
     {
+      "alias": "Treasury",
+      "concept_id": "entity.treasury_security",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Treasury Bills As tem como principal característica que o seu .",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Treasury"
+        },
+        {
+          "context": "Uma Treasury STRIPS é um tipo de título criado através da separação dos ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Treasury"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "TREASURY",
+      "concept_id": "entity.treasury_security",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As TREASURY NOTES (T-NOTES) tem como principal característica que possu",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "TREASURY"
+        },
+        {
+          "context": "As TREASURY BONDS (T-BONDS) tem como principal característica que possu",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "TREASURY"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
       "alias": "VENCIMENTOS",
       "concept_id": "temporal.maturity",
       "domains": [
@@ -15345,7 +16995,7 @@
     },
     {
       "alias": "opção de Call",
-      "concept_id": "technical.option",
+      "concept_id": "technical.call_option",
       "domains": [
         "finance",
         "cga"
@@ -15364,7 +17014,79 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.222,
+      "tokens": 3
+    },
+    {
+      "alias": "Call",
+      "concept_id": "technical.call_option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Call"
+        },
+        {
+          "context": "Desta forma títulos com Call Embutida não possuem valorização “infinita”, quando as taxa",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Call"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.222,
+      "tokens": 1
+    },
+    {
+      "alias": "recompra",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Desta forma, percebemos que esta venda com recompra, nada mais é que um empréstimo em que o comprador do título",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "recompra"
+        },
+        {
+          "context": "perações compromissadas em que seja assumido compromisso de recompra.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "recompra"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.133,
+      "tokens": 1
+    },
+    {
+      "alias": "Acordo de Recompra",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Acordo de Recompra"
+        },
+        {
+          "context": " Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Acordo de Recompra"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.133,
       "tokens": 3
     },
     {
@@ -15389,6 +17111,30 @@
       "occurrences": 2,
       "policy": "unknown",
       "share_of_concept": 0.033,
+      "tokens": 1
+    },
+    {
+      "alias": "repo",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Observação: Caso haja Cupons durante o prazo da repo, geralmente são repassados para o vendedor repo, já que o c",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "repo"
+        },
+        {
+          "context": " o prazo da repo, geralmente são repassados para o vendedor repo, já que o comprador detém os títulos como colateral (garant",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "repo"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.133,
       "tokens": 1
     },
     {
@@ -15606,6 +17352,30 @@
       "policy": "unknown",
       "share_of_concept": 1.0,
       "tokens": 4
+    },
+    {
+      "alias": "Staples",
+      "concept_id": "entity.consumer_staples",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Staples O setor de Staples (também conhecido como setor de bens de ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Staples"
+        },
+        {
+          "context": "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é u",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Staples"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
     },
     {
       "alias": "Estratégias",
@@ -15892,7 +17662,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.154,
+      "share_of_concept": 0.143,
       "tokens": 3
     },
     {
@@ -15917,6 +17687,54 @@
       "occurrences": 2,
       "policy": "auto",
       "share_of_concept": 0.4,
+      "tokens": 1
+    },
+    {
+      "alias": "Full Replication",
+      "concept_id": "technical.replication",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "va visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICADA; e - Otimização.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Full Replication"
+        },
+        {
+          "context": "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Full Replication"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.182,
+      "tokens": 2
+    },
+    {
+      "alias": "Otimização",
+      "concept_id": "technical.optimisation",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "rência: - Full Replication: - AMOSTRAGEM ESTRATIFICADA; e - Otimização.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Otimização"
+        },
+        {
+          "context": "Por fim, a Otimização é uma forma alternativa de indexação que utiliza como base ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Otimização"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.222,
       "tokens": 1
     },
     {
@@ -16377,7 +18195,7 @@
     },
     {
       "alias": "prestador de serviços",
-      "concept_id": "actor.essential_service_provider",
+      "concept_id": "actor.service_provider",
       "domains": [
         "finance",
         "cga"
@@ -16396,7 +18214,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.111,
+      "share_of_concept": 0.286,
       "tokens": 3
     },
     {
@@ -16640,6 +18458,30 @@
       "tokens": 1
     },
     {
+      "alias": "Alíquota",
+      "concept_id": "quantity.tax_rate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Alíquota"
+        },
+        {
+          "context": "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Alíquota"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
       "alias": "Come-Cotas",
       "concept_id": "technical.come_cotas",
       "domains": [
@@ -16734,6 +18576,54 @@
       "policy": "unknown",
       "share_of_concept": 0.077,
       "tokens": 3
+    },
+    {
+      "alias": "mitigação",
+      "concept_id": "action.mitigate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A estratégia de mitigação de riscos deve ser adequada ao perfil de risco do investido",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "mitigação"
+        },
+        {
+          "context": "Ela vai além da mera identificação e mitigação de riscos, proporcionando uma visão holística e estratégica",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "mitigação"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.222,
+      "tokens": 1
+    },
+    {
+      "alias": "Monitoramento",
+      "concept_id": "action.monitor",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ao perfil de risco do investidor ou gestor de carteira; e - Monitoramento e revisão contínuos: a gestão de risco é um processo contín",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Monitoramento"
+        },
+        {
+          "context": "- Necessidade de Monitoramento: as posições de hedge precisam ser monitoradas constantemen",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Monitoramento"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.286,
+      "tokens": 1
     },
     {
       "alias": "Medida",
@@ -16900,7 +18790,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.057,
       "tokens": 2
     },
     {
@@ -17240,6 +19130,30 @@
       "tokens": 1
     },
     {
+      "alias": "premissa",
+      "concept_id": "entity.premise",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " precisam ser consideradas: - Assume retornos normais: essa premissa, que torna o modelo relativamente simples, é também uma gra",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "premissa"
+        },
+        {
+          "context": "à frente com relação à duration, que assume justamente essa premissa de linearidade entre preço e taxa de juros de títulos prefi",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "premissa"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.2,
+      "tokens": 1
+    },
+    {
       "alias": "Tracking Error",
       "concept_id": "technical.tracking_error",
       "domains": [
@@ -17552,6 +19466,30 @@
       "tokens": 3
     },
     {
+      "alias": "escada",
+      "concept_id": "technical.ladder",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Temos ainda a estratégia Ladder, também chamada de escada (em tradução livre), que é construída de forma que se tenha",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "escada"
+        },
+        {
+          "context": " tiver R$ 100.000 para investir em títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com dif",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "escada"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.182,
+      "tokens": 1
+    },
+    {
       "alias": "Duration Matching",
       "concept_id": "technical.duration_matching",
       "domains": [
@@ -17644,7 +19582,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.057,
       "tokens": 1
     },
     {
@@ -17668,7 +19606,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.057,
       "tokens": 3
     },
     {
@@ -17692,7 +19630,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.011,
+      "share_of_concept": 0.012,
       "tokens": 1
     },
     {
@@ -17718,6 +19656,78 @@
       "policy": "unknown",
       "share_of_concept": 0.071,
       "tokens": 1
+    },
+    {
+      "alias": "Steepening",
+      "concept_id": "technical.steepening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "atégias de gestão de carteiras de renda fixa são, de longe, Steepening, Flattening e Butterfly.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Steepening"
+        },
+        {
+          "context": "O Steepening ou inclinação ocorre quando as taxas de longo prazo aumenta",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Steepening"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.2,
+      "tokens": 1
+    },
+    {
+      "alias": "barbell",
+      "concept_id": "technical.barbell",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "a duration, mas com estruturas diferentes (bullet, ladder e barbell), ocorrendo um steepening, teremos o seguinte: Qual a melho",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "barbell"
+        },
+        {
+          "context": "rário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no longo prazo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "barbell"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.222,
+      "tokens": 1
+    },
+    {
+      "alias": "Bull Steepening",
+      "concept_id": "technical.steepening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "No Bull Steepening (gráfico ao lado), o juro de curto prazo cai mais rápido qu",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Steepening"
+        },
+        {
+          "context": "% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Steepening Antes Depois Bull Flattening Bear Steepening",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Bull Steepening"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.2,
+      "tokens": 2
     },
     {
       "alias": "PASSIVA",
@@ -17814,6 +19824,25 @@
       "policy": "auto",
       "share_of_concept": 0.167,
       "tokens": 3
+    },
+    {
+      "alias": "treasury",
+      "concept_id": "entity.treasury_security",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "s Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituiç",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "treasury"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.125,
+      "tokens": 1
     },
     {
       "alias": "Valor principal",
@@ -17988,7 +20017,7 @@
     },
     {
       "alias": "opção de put",
-      "concept_id": "technical.option",
+      "concept_id": "technical.put_option",
       "domains": [
         "finance",
         "cga"
@@ -18002,8 +20031,27 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.026,
+      "share_of_concept": 0.143,
       "tokens": 3
+    },
+    {
+      "alias": "CALL",
+      "concept_id": "technical.call_option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "axa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "CALL"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
+      "tokens": 1
     },
     {
       "alias": "INVESTIDOR",
@@ -18025,6 +20073,44 @@
       "tokens": 1
     },
     {
+      "alias": "Repurchase Agreement",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consist",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Repurchase Agreement"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.067,
+      "tokens": 2
+    },
+    {
+      "alias": "ACORDO DE RECOMPRA",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de r",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "ACORDO DE RECOMPRA"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.067,
+      "tokens": 3
+    },
+    {
       "alias": "OPERAÇÃO",
       "concept_id": "entity.operation",
       "domains": [
@@ -18041,6 +20127,25 @@
       "occurrences": 1,
       "policy": "unknown",
       "share_of_concept": 0.034,
+      "tokens": 1
+    },
+    {
+      "alias": "Repo",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "rdo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Repo"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.067,
       "tokens": 1
     },
     {
@@ -18553,7 +20658,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.042,
+      "share_of_concept": 0.1,
       "tokens": 1
     },
     {
@@ -18593,6 +20698,44 @@
       "policy": "auto",
       "share_of_concept": 1.0,
       "tokens": 2
+    },
+    {
+      "alias": "NASDAQ",
+      "concept_id": "entity.nasdaq",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "NASDAQ: Esta bolsa de valores americana, é a segunda maior do mund",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "NASDAQ"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.143,
+      "tokens": 1
+    },
+    {
+      "alias": "bens de consumo básico",
+      "concept_id": "entity.consumer_staples",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba empresas que fabricam e",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "bens de consumo básico"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.125,
+      "tokens": 4
     },
     {
       "alias": "Security",
@@ -18726,6 +20869,25 @@
       "policy": "unknown",
       "share_of_concept": 0.5,
       "tokens": 2
+    },
+    {
+      "alias": "CONTRAPARTE",
+      "concept_id": "actor.counterparty",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ontrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing B3 e todo compr",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "CONTRAPARTE"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
+      "tokens": 1
     },
     {
       "alias": "Liquidação Financeira",
@@ -18971,7 +21133,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -18990,7 +21152,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 5
     },
     {
@@ -19009,8 +21171,27 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
+    },
+    {
+      "alias": "passivo em taxa de juros",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ivo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "passivo em taxa de juros"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.071,
+      "tokens": 5
     },
     {
       "alias": "ativo em prefixado",
@@ -19028,7 +21209,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19047,7 +21228,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19066,7 +21247,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19085,7 +21266,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19104,7 +21285,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19142,7 +21323,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19161,7 +21342,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19180,7 +21361,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.071,
       "tokens": 3
     },
     {
@@ -19222,6 +21403,44 @@
       "tokens": 2
     },
     {
+      "alias": "Replicação Total",
+      "concept_id": "technical.replication",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprand",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Replicação Total"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.091,
+      "tokens": 2
+    },
+    {
+      "alias": "replicação total",
+      "concept_id": "technical.replication",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "alternativa para evitar os altos custos de transação de uma replicação total.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "replicação total"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.091,
+      "tokens": 2
+    },
+    {
       "alias": "erro de rastreamento",
       "concept_id": "technical.tracking_error",
       "domains": [
@@ -19239,6 +21458,25 @@
       "policy": "auto",
       "share_of_concept": 0.056,
       "tokens": 3
+    },
+    {
+      "alias": "full replication",
+      "concept_id": "technical.replication",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "o de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimização, mas com meno",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "full replication"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.091,
+      "tokens": 2
     },
     {
       "alias": "LONG & SHORT",
@@ -19390,6 +21628,25 @@
       "occurrences": 1,
       "policy": "unknown",
       "share_of_concept": 0.1,
+      "tokens": 2
+    },
+    {
+      "alias": "análise fundamentalista",
+      "concept_id": "technical.fundamental_analysis",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "gias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para escolher quais ativos investir.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "análise fundamentalista"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.2,
       "tokens": 2
     },
     {
@@ -19621,6 +21878,25 @@
       "tokens": 2
     },
     {
+      "alias": "Fundos de investimento",
+      "concept_id": "entity.fund",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Fundos de investimento"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.006,
+      "tokens": 3
+    },
+    {
       "alias": "Rep Risk Index",
       "concept_id": "technical.rep_risk_index",
       "domains": [
@@ -19695,6 +21971,25 @@
       "policy": "unknown",
       "share_of_concept": 0.5,
       "tokens": 3
+    },
+    {
+      "alias": "Consumer Staples",
+      "concept_id": "entity.consumer_staples",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Nomes menos conhecidos do público brasileiro incluem: - Consumer Staples: conjunto de produtos essenciais utilizados pelos consumido",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Consumer Staples"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.125,
+      "tokens": 2
     },
     {
       "alias": "Quantitative Arbitrage",
@@ -19888,23 +22183,23 @@
       "tokens": 3
     },
     {
-      "alias": "ANÁLISE",
-      "concept_id": "action.analyse",
+      "alias": "ANÁLISE FUNDAMENTALISTA",
+      "concept_id": "technical.fundamental_analysis",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado ",
+          "context": "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado no desempenho ec",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "ANÁLISE"
+          "surface": "ANÁLISE FUNDAMENTALISTA"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.018,
-      "tokens": 1
+      "share_of_concept": 0.2,
+      "tokens": 2
     },
     {
       "alias": "Estrutura de capital",
@@ -20284,7 +22579,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.056,
+      "share_of_concept": 0.091,
       "tokens": 4
     },
     {
@@ -20307,23 +22602,23 @@
       "tokens": 3
     },
     {
-      "alias": "Investimento",
-      "concept_id": "action.invest",
+      "alias": "Fundos de Investimento",
+      "concept_id": "entity.fund",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
+          "context": "s abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
           "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Investimento"
+          "surface": "Fundos de Investimento"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
       "share_of_concept": 0.006,
-      "tokens": 1
+      "tokens": 3
     },
     {
       "alias": "executar",
@@ -20630,6 +22925,25 @@
       "tokens": 3
     },
     {
+      "alias": "Mitigação",
+      "concept_id": "action.mitigate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "s e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, ",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Mitigação"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
+      "tokens": 1
+    },
+    {
       "alias": "Decisão",
       "concept_id": "action.decide",
       "domains": [
@@ -20740,7 +23054,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.026,
+      "share_of_concept": 0.029,
       "tokens": 1
     },
     {
@@ -21371,6 +23685,25 @@
       "tokens": 3
     },
     {
+      "alias": "monitorar",
+      "concept_id": "action.monitor",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Com isso, é possível monitorar continuamente o orçamento de riscos para que quaisquer desv",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "monitorar"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.143,
+      "tokens": 1
+    },
+    {
       "alias": "Curva de Juros",
       "concept_id": "technical.yield_curve",
       "domains": [
@@ -21386,8 +23719,46 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.048,
+      "share_of_concept": 0.053,
       "tokens": 3
+    },
+    {
+      "alias": "Risco de Câmbio",
+      "concept_id": "technical.exchange_rate_risk",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Risco de Câmbio"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.125,
+      "tokens": 3
+    },
+    {
+      "alias": "Câmbio",
+      "concept_id": "technical.exchange_rate_risk",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local do investidor em re",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Câmbio"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.125,
+      "tokens": 1
     },
     {
       "alias": "ativo objeto",
@@ -21425,6 +23796,44 @@
       "occurrences": 1,
       "policy": "auto",
       "share_of_concept": 0.05,
+      "tokens": 1
+    },
+    {
+      "alias": "Contraparte",
+      "concept_id": "actor.counterparty",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Risco de Contraparte refere-se à possibilidade de um dos envolvidos em uma trans",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Contraparte"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
+      "tokens": 1
+    },
+    {
+      "alias": "Contrapartes",
+      "concept_id": "actor.counterparty",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "o, as negociações de derivativos devem envolver as chamadas Contrapartes Centrais, sempre que possível.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Contrapartes"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
       "tokens": 1
     },
     {
@@ -21483,6 +23892,25 @@
       "policy": "auto",
       "share_of_concept": 0.167,
       "tokens": 3
+    },
+    {
+      "alias": "contrapartes",
+      "concept_id": "actor.counterparty",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "de de referência muda, o que leva a ganhos e perdas para as contrapartes, mesmo que a inadimplência não tenha ocorrido ou possa nunc",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "contrapartes"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.111,
+      "tokens": 1
     },
     {
       "alias": "Loss Given Default",
@@ -22436,6 +24864,44 @@
       "tokens": 3
     },
     {
+      "alias": "D_Mac",
+      "concept_id": "technical.macaulay_duration",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar s",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "D_Mac"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.143,
+      "tokens": 1
+    },
+    {
+      "alias": "duplicatas",
+      "concept_id": "entity.trade_receivable",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Qual a Duration da carteira abaixo de duplicatas no valor total de R$ 100.000,00 na data de hoje, sendo que ",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "duplicatas"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.111,
+      "tokens": 1
+    },
+    {
       "alias": "opções de compra",
       "concept_id": "technical.option",
       "domains": [
@@ -22451,7 +24917,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.026,
+      "share_of_concept": 0.029,
       "tokens": 3
     },
     {
@@ -22470,7 +24936,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.026,
+      "share_of_concept": 0.029,
       "tokens": 3
     },
     {
@@ -22489,7 +24955,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.026,
+      "share_of_concept": 0.029,
       "tokens": 3
     },
     {
@@ -22546,7 +25012,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.031,
+      "share_of_concept": 0.032,
       "tokens": 1
     },
     {
@@ -22646,6 +25112,25 @@
       "tokens": 1
     },
     {
+      "alias": "bala",
+      "concept_id": "technical.bullet_portfolio",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o pas",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "bala"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.111,
+      "tokens": 1
+    },
+    {
       "alias": "pelo menos",
       "concept_id": "quantity.at_least",
       "domains": [
@@ -22701,6 +25186,44 @@
       "policy": "auto",
       "share_of_concept": 0.167,
       "tokens": 1
+    },
+    {
+      "alias": "risco cambial",
+      "concept_id": "technical.exchange_rate_risk",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O risco cambial é o risco de perda que surge da flutuação das taxas de câmb",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "risco cambial"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.125,
+      "tokens": 2
+    },
+    {
+      "alias": "risco de câmbio",
+      "concept_id": "technical.exchange_rate_risk",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Para se proteger contra o risco de câmbio, é possível utilizar diversas estratégias de hedge, como:",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "risco de câmbio"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.125,
+      "tokens": 3
     },
     {
       "alias": "Futuros de taxas de juros",
@@ -22776,6 +25299,63 @@
       "occurrences": 1,
       "policy": "auto",
       "share_of_concept": 1.0,
+      "tokens": 3
+    },
+    {
+      "alias": "inclinação da curva",
+      "concept_id": "technical.steepening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "inclinação da curva"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.1,
+      "tokens": 3
+    },
+    {
+      "alias": "steepening",
+      "concept_id": "technical.steepening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ruturas diferentes (bullet, ladder e barbell), ocorrendo um steepening, teremos o seguinte: Qual a melhor estratégia nesse cenário",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "steepening"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.1,
+      "tokens": 1
+    },
+    {
+      "alias": "achatamento da curva",
+      "concept_id": "technical.flattening",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O movimento contrário seria o Flattening ou achatamento da curva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "achatamento da curva"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.091,
       "tokens": 3
     },
     {
@@ -23157,29 +25737,48 @@
       "policy": "unknown",
       "share_of_concept": 0.006,
       "tokens": 3
+    },
+    {
+      "alias": "demais prestadores de serviços",
+      "concept_id": "actor.service_provider",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "que haja ligação direta ou indireta entre o contratado e os demais prestadores de serviços ou investidores, na hipótese de potenciais conflitos de int",
+          "source": "11-codigo-anbima-administracao-e-gestao.md",
+          "surface": "demais prestadores de serviços"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.143,
+      "tokens": 4
     }
   ],
   "registry": {
-    "concepts": 351,
-    "version": "2.21.0"
+    "concepts": 385,
+    "version": "2.24.0"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 470,
-    "events_from_bare_tokens": 6611,
-    "events_from_phrases": 919,
+    "bare_token_pairs": 527,
+    "events_from_bare_tokens": 6761,
+    "events_from_phrases": 1002,
     "occurrences_per_pair": {
-      "max": 182,
-      "mean": 9.72,
-      "median": 2,
-      "p90": 22,
-      "stdev": 22.07
+      "max": 181,
+      "mean": 8.96,
+      "median": 2.0,
+      "p90": 21,
+      "stdev": 20.84
     },
-    "phrase_pairs": 305
+    "phrase_pairs": 339
   },
   "totals": {
-    "concepts_with_matches": 287,
-    "distinct_pairs": 775,
-    "match_events": 7530
+    "concepts_with_matches": 320,
+    "distinct_pairs": 866,
+    "match_events": 7763
   }
 }

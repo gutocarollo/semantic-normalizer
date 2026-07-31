@@ -1,0 +1,87 @@
+{
+  "id": "precision-sweep-amendment-28",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review of phase two, gap P2",
+  "method": "scripts/audit_promotions.py emitted all 587 occurrences of every promoted form; each read against the concept's definition",
+  "reason": "The deverbal nouns promoted in phase two are not licensed by definitions written as infinitive acts.",
+  "operations": [
+    {
+      "op": "redefine",
+      "concept": "action.invest",
+      "definition": "To commit capital to an asset expecting a future return, and the act so committed — `investimento`, `investimentos`.",
+      "why": "An adversarial review made the charge that stands: these concepts were defined as ACTS in the infinitive, and phase two promoted their deverbal nouns onto them with a morphological justification. Under the definition as written, `o valor da compra` and `a metodologia de cálculo` do not denote acts, so ~350 events were conflation. Two repairs were available: split each into an act and a nominal concept, or state that the concept covers both. Splitting doubles the identifiers for one semantic field, which is the lexical variation this registry exists to remove — a query for the concept should find `investir` AND `investimento`. So the definitions now say what the forms already do. Stating it is the point: a promotion is licensed by the definition or it is not, and the definition is where that has to be visible."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.analyse",
+      "definition": "To examine data or an instrument to support a decision, and the examination itself — `análise`, `análises`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.calculate",
+      "definition": "To compute a value from defined inputs, and the computation itself — `cálculo`, `cálculos`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.pay",
+      "definition": "To transfer the amount owed under an instrument, and the transfer itself — `pagamento`, `pagamentos`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.buy",
+      "definition": "To acquire an instrument in exchange for cash, and the acquisition itself — `compra`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.sell",
+      "definition": "To dispose of an instrument in exchange for cash, and the disposal itself — `venda`, `vendas`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.decide",
+      "definition": "To choose among investment alternatives, and the choice itself — `decisão`, `decisões`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.allocate",
+      "definition": "To distribute capital across assets or asset classes, and the distribution itself — `alocação`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.redeem",
+      "definition": "To withdraw capital from a fund by cancelling shares, and the withdrawal itself — `resgate`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.rebalance",
+      "definition": "To restore a portfolio to its target allocation, and the restoration itself — `rebalanceamento`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.reinvest",
+      "definition": "To apply received cash flows back into the same or a similar position, and the reapplication itself — `reinvestimento`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.identify",
+      "definition": "To determine which item or risk a case corresponds to, and the determination itself — `identificação`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.subscribe",
+      "definition": "To place capital into a fund creating shares, and the placement itself — `aplicação de recursos`, `aporte`."
+    },
+    {
+      "op": "redefine",
+      "concept": "action.manage_portfolio",
+      "definition": "To take and execute the investment decisions of a portfolio, and the activity itself — `gestão de carteiras`, `gestão de recursos`."
+    },
+    {
+      "op": "add_form",
+      "concept": "entity.fund",
+      "language": "pt-BR",
+      "form": "fundos de investimento",
+      "why": "60 occurrences, and without the plural `investimento` escaped to action.invest inside the institutional term — the same missing-plural split match as `índices P/L` and `ganhos de capital`."
+    }
+  ]
+}

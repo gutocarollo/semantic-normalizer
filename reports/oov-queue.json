@@ -72,8 +72,8 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "4e96b6981cf96f41d95498de352a000cce40bdf2171fd5b364a445c9b507eb0c",
-    "version": "2.21.0"
+    "sha256": "9b7804b15dfa09dac3e078b9da126c38b10983a751641eba762738add4b232c3",
+    "version": "2.24.0"
   },
   "schema_version": "oov-queue-v1",
   "strata": {
@@ -1210,15 +1210,6 @@
       },
       {
         "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
-          "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revender estes títulos futuramente por R$ 11 mil para este mesmo banco.",
-          "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo."
-        ],
-        "occurrences": 22,
-        "term": "acordo"
-      },
-      {
-        "contexts": [
           "Assim, o Yield Spread é calculado deduzindo o rendimento de um instrumento do outro.",
           "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
           "Outro ponto muito relevante a se analisar antes de investir em Hedge Funds é verificar os retornos médios do mercado como um todo."
@@ -1279,6 +1270,15 @@
         ],
         "occurrences": 20,
         "term": "ocorre"
+      },
+      {
+        "contexts": [
+          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
+          "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revender estes títulos futuramente por R$ 11 mil para este mesmo banco.",
+          "Um Total Return Equity Swap (TRES) é um acordo de swap em que uma parte faz pagamentos com base em uma taxa definida, fixa ou variável, enquanto a outra parte faz pagamentos com base no retorno de um ativo subjacente."
+        ],
+        "occurrences": 19,
+        "term": "acordo"
       },
       {
         "contexts": [
@@ -2593,21 +2593,21 @@
       },
       {
         "contexts": [
-          "Assim, ele lucrará R$ 20 mil reais ao total.",
-          "A empresa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao total por essa dívida), mas ela já possui vendas realizadas, recebendo os devidos valores em um ano (vendas através de cartão de crédito).",
-          "Com isso, o TRES permite que a parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo."
-        ],
-        "occurrences": 31,
-        "term": "total"
-      },
-      {
-        "contexts": [
           "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
           "Um investidor deseja adquirir um título público americano de curto de prazo.",
           "O commercial paper é utilizado principalmente para recursos de curto prazo das empresas, como pagamento de impostos, aquisição de matéria-prima e eventuais imprevistos."
         ],
         "occurrences": 29,
         "term": "curto"
+      },
+      {
+        "contexts": [
+          "Assim, ele lucrará R$ 20 mil reais ao total.",
+          "A empresa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao total por essa dívida), mas ela já possui vendas realizadas, recebendo os devidos valores em um ano (vendas através de cartão de crédito).",
+          "Com isso, o TRES permite que a parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo."
+        ],
+        "occurrences": 29,
+        "term": "total"
       },
       {
         "contexts": [
@@ -3016,15 +3016,6 @@
       },
       {
         "contexts": [
-          "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "A Análise Técnica (Gráfica) estabelece projeções para os preços das ações baseadas no comportamento em si do preço e do volume na observação do comportamento passado dos preços e dos volumes negociados.",
-          "Em resumo, a análise técnica estuda as movimentações nos preços passados e, a partir daí, explica a sua evolução futura."
-        ],
-        "occurrences": 16,
-        "term": "técnica"
-      },
-      {
-        "contexts": [
           "**Principal Indicador:** - **Suporte:** Preço da ação não diminui mais que o valor do suporte.",
           "Seu cálculo envolve o deslocamento das médias dos preços dos ativos ao longo do tempo; - Oscilador de Médias Móveis: indicador técnico utilizado na análise técnica para ajudar a identificar a força e a direção de uma tendência do mercado.",
           "- Envelopes: indicador técnico na análise técnica que é usado para ajudar os traders a identificar faixas de preço potenciais em que um ativo pode se mover."
@@ -3112,15 +3103,6 @@
         ],
         "occurrences": 15,
         "term": "obrigações"
-      },
-      {
-        "contexts": [
-          "(1) Valor Atual do DI Futuro: - n = 504 ÷ 252 = 2 anos - i = 10 - FV = 100.000 - PMT = 0 - PV = ?",
-          "= R$ 82.644,63 (2) Valor do DI Futuro a 8%: - n = 504 ÷ 252 = 2 anos - i = 8 - FV = 100.000 - PMT = 0 - PV = ?",
-          "Desta forma, utilizaremos a função [g] das teclas [PV], [PMT], [FV] para inserir dados e a função [f], para a resposta dos dados inseridos."
-        ],
-        "occurrences": 15,
-        "term": "pmt"
       },
       {
         "contexts": [
@@ -3727,15 +3709,6 @@
       },
       {
         "contexts": [
-          "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que possam conseguir uma nova certificação, alcançando cargos mais elevados e de maior prestígio dentro das instituições financeiras e demais empresas em que trabalham.",
-          "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
-          "**OBSERVAÇÕES:** - Todas as classes devem pertencer à mesma categoria do fundo, não sendo permitida a constituição de classes de cotas que alterem o tratamento tributário aplicável em relação ao fundo ou às demais classes existentes."
-        ],
-        "occurrences": 10,
-        "term": "demais"
-      },
-      {
-        "contexts": [
           "Com o tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, para as outras certificações do mundo financeiro, como CPA-20, CEA, Ancord, CNPI, CFG, CGA, e outras, bem como nossos cursos livres, MBA, e outros produtos educacionais.",
           "Esta metodologia é mais precisa que o Current Yield.",
           "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo)."
@@ -4060,24 +4033,6 @@
       },
       {
         "contexts": [
-          "A macro atribuição de performance é feita no nível do patrocinador do fundo (o administrador do fundo, por exemplo); já a micro atribuição de performance é feita no nível do gestor de recursos.",
-          "O objetivo da atribuição macro é fornecer informações sobre as decisões feitas pelo patrocinador do fundo e medir os efeitos de tais decisões na carteira.",
-          "Uma das decisões do patrocinador é, por exemplo, quais gestor contratar e como esses gestores estão performando."
-        ],
-        "occurrences": 10,
-        "term": "patrocinador"
-      },
-      {
-        "contexts": [
-          "Falando de forma mais específica, as mais importantes estratégias de gestão de carteiras de renda fixa são, de longe, Steepening, Flattening e Butterfly.",
-          "O movimento contrário seria o Flattening ou achatamento da curva.",
-          "Flattening Considerando carteiras com mesma duration, mas diferentes estratégias, temos:"
-        ],
-        "occurrences": 10,
-        "term": "flattening"
-      },
-      {
-        "contexts": [
           "Tenha acesso a mais materiais gratuitos Válido para 2026 Confira aqui a versão mais atualizada.",
           "A Bolsa de Valores oferece maior transparência e liquidez, enquanto o Mercado de Balcão oferece maior flexibilidade e acesso a um número maior de empresas.",
           "A utilização de relatórios de terceiros pelo gestor para melhor embasar suas decisões pode ser de grande valia, à medida em que ele pode ter acesso a diversas opiniões a respeito da avaliação de determinados ativos."
@@ -4093,6 +4048,15 @@
         ],
         "occurrences": 9,
         "term": "possa"
+      },
+      {
+        "contexts": [
+          "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que possam conseguir uma nova certificação, alcançando cargos mais elevados e de maior prestígio dentro das instituições financeiras e demais empresas em que trabalham.",
+          "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
+          "**OBSERVAÇÕES:** - Todas as classes devem pertencer à mesma categoria do fundo, não sendo permitida a constituição de classes de cotas que alterem o tratamento tributário aplicável em relação ao fundo ou às demais classes existentes."
+        ],
+        "occurrences": 9,
+        "term": "demais"
       },
       {
         "contexts": [
@@ -4150,15 +4114,6 @@
       },
       {
         "contexts": [
-          "Uma Treasury STRIPS é um tipo de título criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
-          "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos.",
-          "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro."
-        ],
-        "occurrences": 9,
-        "term": "tesouro"
-      },
-      {
-        "contexts": [
           "Os rendimentos desses títulos são isentos de impostos federais e, em muitos casos, estaduais e locais, o que os torna atraentes para investidores que procuram renda isenta de impostos.",
           "A empresa importadora, em seguida, solicita a seu banco que emita um aceite bancário em nome do exportador, que se torna o beneficiário do aceite.",
           "Isso torna a análise de risco político um componente importante do investimento em títulos soberanos."
@@ -4192,15 +4147,6 @@
         ],
         "occurrences": 9,
         "term": "estará"
-      },
-      {
-        "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
-          "Esta diferença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
-          "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo."
-        ],
-        "occurrences": 9,
-        "term": "repo"
       },
       {
         "contexts": [
@@ -4267,15 +4213,6 @@
       },
       {
         "contexts": [
-          "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
-          "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba empresas que fabricam e comercializam produtos essenciais do dia a dia, como alimentos, bebidas, produtos de higiene pessoal e de limpeza doméstica.",
-          "O setor de staples é frequentemente comparado ao setor de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível."
-        ],
-        "occurrences": 9,
-        "term": "bens"
-      },
-      {
-        "contexts": [
           "Porém, ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate e geralmente impõem um período de carência de um ano antes que quaisquer cotas possam ser resgatadas.",
           "**Carência:** Os fundos abertos podem estabelecer um prazo mínimo de permanência para que o cotista tenha direito a receber os rendimentos.",
           "Caso o cotista não queira respeitar este prazo de carência, ele poderá solicitar o resgate, mas não terá direito a receber os rendimentos do período."
@@ -4336,15 +4273,6 @@
         ],
         "occurrences": 9,
         "term": "critérios"
-      },
-      {
-        "contexts": [
-          "Ou seja, através deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICADA; e - Otimização.",
-          "Por fim, a Otimização é uma forma alternativa de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking error.",
-          "Por sua vez, as vantagens das técnicas de otimização é que normalmente apresentam baixo tracking error e exploram eficientemente as correlações entre os ativos e a consequente diversificação da carteira."
-        ],
-        "occurrences": 9,
-        "term": "otimização"
       },
       {
         "contexts": [
@@ -4546,33 +4474,6 @@
       },
       {
         "contexts": [
-          "Vamos agora falar de quatro tipos muito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fluxo de Caixa).",
-          "Barbell, em tradução livre, significa barra.",
-          "A estratégia Barbell tenta obter o melhor dos dois mundos, permitindo que os gestores invistam em títulos de curto prazo aproveitando as taxas atuais, ao mesmo tempo em que detêm títulos de longo prazo que pagam geralmente rendimentos mais altos."
-        ],
-        "occurrences": 9,
-        "term": "barbell"
-      },
-      {
-        "contexts": [
-          "Vamos agora falar de quatro tipos muito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fluxo de Caixa).",
-          "Temos ainda a estratégia Ladder, também chamada de escada (em tradução livre), que é construída de forma que se tenha quantidades aproximadamente iguais para cada vencimento.",
-          "Por exemplo, se um gestor tiver R$ 100.000 para investir em títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com diferentes vencimentos e taxas de juros."
-        ],
-        "occurrences": 9,
-        "term": "ladder"
-      },
-      {
-        "contexts": [
-          "Falando de forma mais específica, as mais importantes estratégias de gestão de carteiras de renda fixa são, de longe, Steepening, Flattening e Butterfly.",
-          "O Steepening ou inclinação ocorre quando as taxas de longo prazo aumentam com mais intensidade do que as de curto e médio prazo ou ainda quando as taxas de curto prazo diminuem mais que as de médio e de longo prazo.",
-          "Considerando três carteiras com a mesma duration, mas com estruturas diferentes (bullet, ladder e barbell), ocorrendo um steepening, teremos o seguinte: Qual a melhor estratégia nesse cenário?"
-        ],
-        "occurrences": 9,
-        "term": "steepening"
-      },
-      {
-        "contexts": [
           "Nosso foco está em fazer com que você conquiste a APROVAÇÃO na sua certificação financeira e, com isso, possa avançar na sua carreira.",
           "Os contratos futuros mais relevantes são: - Ibovespa Futuro (foco do nosso exame); - DI Futuro (foco do nosso exame); - Futuro de Dólar; - Cupom Cambial; - FRA de Cupom (FRC).",
           "- Dividendos: são o foco desses investidores, buscando empresas sólidas que distribuem altos dividendos."
@@ -4606,15 +4507,6 @@
         ],
         "occurrences": 8,
         "term": "remuneração"
-      },
-      {
-        "contexts": [
-          "Banker's acceptance (ou \"aceite bancário\", em português) é um instrumento financeiro que é emitido por um banco, em nome de um cliente, como uma promessa de pagamento em uma data futura.",
-          "A empresa importadora, em seguida, solicita a seu banco que emita um aceite bancário em nome do exportador, que se torna o beneficiário do aceite.",
-          "O banco da empresa importadora, em seguida, promete pagar a quantia indicada no aceite bancário na data de vencimento."
-        ],
-        "occurrences": 8,
-        "term": "aceite"
       },
       {
         "contexts": [
@@ -4672,15 +4564,6 @@
       },
       {
         "contexts": [
-          "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobre o ganho bruto.",
-          "Supondo alíquota de imposto de 20%, o retorno equivalente seria de:",
-          "O “Come-cotas” é a ANTECIPAÇÃO do Imposto de Renda devido nos FUNDOS DE RENDA FIXA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%."
-        ],
-        "occurrences": 8,
-        "term": "alíquota"
-      },
-      {
-        "contexts": [
           "A taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros média diária calculada pelos principais bancos de Londres.",
           "É calculada e publicada diariamente pelo Banco da Inglaterra, o banco central britânico.",
           "A taxa ESTR é calculada diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado."
@@ -4735,6 +4618,15 @@
       },
       {
         "contexts": [
+          "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
+          "O setor de staples é frequentemente comparado ao setor de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+          "Ao contrário do setor de staples, as empresas de consumo discricionário tendem a ter desempenho mais fraco durante uma recessão econômica, quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais."
+        ],
+        "occurrences": 8,
+        "term": "bens"
+      },
+      {
+        "contexts": [
           "Esses produtos são considerados essenciais para as pessoas, independentemente do ambiente econômico ou da situação financeira.",
           "Assim, a empresa pode levar a situação ao banco e fazer um contrato de SWAP, no qual se houver um aumento da taxa de juros, o banco paga a diferença e caso a taxa de juros caia, a empresa paga ao banco.",
           "São aqueles produtos que os consumidores não conseguem – ou não querem – cortar de seus orçamentos, independentemente de sua situação financeira."
@@ -4786,15 +4678,6 @@
         ],
         "occurrences": 8,
         "term": "dessas"
-      },
-      {
-        "contexts": [
-          "Estes fundos possuem dificuldades de replicação dos seus benchmarks por questões custos, impostos, dinâmica de cálculo da rentabilidade do fundo, regras de contabilização a mercado e necessidade de liquidez para resgates.",
-          "Veremos mais adiante formas mais detalhadas de replicação da carteira visando a uma gestão passiva.",
-          "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprando todos os ativos do índice e na mesma proporção da carteira teórica."
-        ],
-        "occurrences": 8,
-        "term": "replicação"
       },
       {
         "contexts": [
@@ -4930,15 +4813,6 @@
         ],
         "occurrences": 8,
         "term": "elevação"
-      },
-      {
-        "contexts": [
-          "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
-          "- Finanças Comportamentais: as premissas das Finanças Comportamentais são consideradas válidas por investidores value.",
-          "A partir de então, os investidores examinam as condições gerais do mercado para identificar quais setores ou ativos podem se beneficiar com as análises e premissas macroeconômicas feitas inicialmente."
-        ],
-        "occurrences": 8,
-        "term": "premissas"
       },
       {
         "contexts": [
@@ -5149,15 +5023,6 @@
       },
       {
         "contexts": [
-          "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse prazo o gestor deve encaminhar à CVM suas explicações para o desenquadramento.",
-          "Essas mudanças ocorrem por desenquadramento das devidas regras por um certo período.",
-          "Veremos a seguir, as principais regras de desenquadramento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo."
-        ],
-        "occurrences": 8,
-        "term": "desenquadramento"
-      },
-      {
-        "contexts": [
           "Os critérios utilizados na elaboração das políticas, procedimentos e controles internos de liquidez, inclusive, se for o caso, em cenários de estresse, devem ser consistentes e passíveis de verificação.",
           "Ao otimizar seus processos internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
           "Isso envolve possíveis falhas relacionadas a procedimentos internos, pessoas e sistemas, ou seja, ligadas a fatores internos da organização."
@@ -5209,24 +5074,6 @@
         ],
         "occurrences": 8,
         "term": "peso"
-      },
-      {
-        "contexts": [
-          "Duplicata (1): ○ n = 1 ○ i = 3 ○ FV = 10.000 ○ PMT = 0 ○ PV = 9.708,74",
-          "Duplicata (2): ○ n = 2 ○ i = 3 ○ FV = 20.000 ○ PMT = 0 ○ PV = 18.851,92 Duplicata (3): ○ n = 3 ○ i = 3 ○ FV = 30.000 ○ PMT = 0 ○ PV = 27.454,25 Duplicata (4): ○ n = 4 ○ i = 3 ○ FV = 40.000 ○ PMT = 0 ○ PV = 35.539,48",
-          "Duplicata (1): PV × n R$ 9.708,74 × 1 9.708,74 Duplicata (2): PV × n R$ 18.851,92 × 2 37.703,84 Duplicata (3): PV × n R$ 27.454,25 × 3 82.362,75 Duplicata (4): PV × n R$ 35.539,48 × 4 142.157,92"
-        ],
-        "occurrences": 8,
-        "term": "duplicata"
-      },
-      {
-        "contexts": [
-          "Vamos agora falar de quatro tipos muito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondência de Fluxo de Caixa).",
-          "Já na carteira Bullet, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
-          "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em períodos muito próximos."
-        ],
-        "occurrences": 8,
-        "term": "bullet"
       },
       {
         "contexts": [
@@ -5383,15 +5230,6 @@
       },
       {
         "contexts": [
-          "O preço desses bonds podem ser definidos da seguinte forma: Preço do Callable Bond = preço do bond - preço da call Preço do Putable Bond = preço do bond + preço da put",
-          "Desta forma, quem está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a uma taxa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.).",
-          "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT"
-        ],
-        "occurrences": 7,
-        "term": "call"
-      },
-      {
-        "contexts": [
           "Desta forma, quem está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a uma taxa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.).",
           "- auditoria anual de suas demonstrações contábeis por auditores independentes registrados na CVM; e - tratamento igualitário no caso de alienação de controle, por meio de opção de venda da totalidade das ações emitidas pela companhia ao adquirente do controle pelo mesmo preço pago ao controlador.",
           "SOLUÇÃO: Desta vez, o cupom é pago semestralmente."
@@ -5446,15 +5284,6 @@
       },
       {
         "contexts": [
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "↗ Dow Jones Industrial Average (DJIA): Também conhecido como Dow 30, ele é um índice do mercado de ações que acompanha 30 grandes empresas de capital aberto negociadas na Bolsa de Valores de Nova York (NYSE) e na Nasdaq.",
-          "NASDAQ: Esta bolsa de valores americana, é a segunda maior do mundo."
-        ],
-        "occurrences": 7,
-        "term": "nasdaq"
-      },
-      {
-        "contexts": [
           "Exemplos de empresas nesse setor incluem Apple, Microsoft, Amazon, Facebook e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e corretoras de valores mobiliários.",
           "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
           "Exemplos de empresas nesse setor incluem Nike, Walt Disney, Starbucks, Amazon e Tesla."
@@ -5479,15 +5308,6 @@
         ],
         "occurrences": 7,
         "term": "importantes"
-      },
-      {
-        "contexts": [
-          "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba empresas que fabricam e comercializam produtos essenciais do dia a dia, como alimentos, bebidas, produtos de higiene pessoal e de limpeza doméstica.",
-          "As empresas do setor de staples são consideradas defensivas porque os consumidores continuam comprando esses produtos, mesmo em tempos de recessão econômica.",
-          "Algumas das empresas mais conhecidas do setor de staples incluem a Coca-Cola, Procter & Gamble, Nestlé, Unilever, PepsiCo, Johnson & Johnson, Colgate-Palmolive, entre outras."
-        ],
-        "occurrences": 7,
-        "term": "staples"
       },
       {
         "contexts": [
@@ -5560,15 +5380,6 @@
         ],
         "occurrences": 7,
         "term": "obrigação"
-      },
-      {
-        "contexts": [
-          "Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing B3 e todo comprador compra da clearing B3.",
-          "O Risco de Contraparte refere-se à possibilidade de um dos envolvidos em uma transação não cumprir sua obrigação contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um todo.",
-          "No Brasil, a B3 faz esse papel, operando como contraparte central garantidora para a maior parte das operações realizadas em seus mercados."
-        ],
-        "occurrences": 7,
-        "term": "contraparte"
       },
       {
         "contexts": [
@@ -5788,15 +5599,6 @@
       },
       {
         "contexts": [
-          "Ao iniciar com um olhar mais holístico, os investidores partem da análise e da previsão de variáveis macroeconômicas, como PIB, balança comercial, taxa de câmbio, inflação, taxas de juros, entre outros.",
-          "Saindo do lado “numérico”, as causas do risco de mercado são geradas principalmente pelas condições macroeconômicas, tais como, taxas de juros, câmbio, commodities; mas também podem ocorrer por questões políticas, como impeachments de um governo.",
-          "Suas principais características são: - Medido pelo Beta; - Não pode ser evitado pela diversificação dos ativos; - Exemplos: impeachment, grandes mudanças na taxa de juros ou câmbio."
-        ],
-        "occurrences": 7,
-        "term": "câmbio"
-      },
-      {
-        "contexts": [
           "Porém, um cuidado importante é sobre a qualidade desses relatórios e a idoneidade dos autores, além da questão de possíveis conflitos de interesse.",
           "Os prestadores de serviços essenciais, o cotista ou grupo de cotistas que detenha, no mínimo, 5% do total de cotas emitidas, podem convocar, a qualquer tempo, assembleia de cotistas para deliberar sobre ordem do dia de interesse do fundo, da classe ou da comunhão de cotistas.",
           "Considera-se “Exclusiva” a classe ou subclasse de cotas constituída para receber aplicações exclusivamente de um único investidor profissional, de cotistas que possuam vínculo societário familiar ou de cotistas vinculados por interesse único e indissociável."
@@ -5959,15 +5761,6 @@
       },
       {
         "contexts": [
-          "0,00% 0,50% 1,00% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bear Steepening Depois Antes",
-          "0,00% 0,50% 1,00% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Steepening Antes Depois Bull Flattening Bear Steepening",
-          "Já no Bear Steepening (gráfico ao lado), juro de longo prazo sobe mais rápido que o de longo prazo."
-        ],
-        "occurrences": 7,
-        "term": "bear"
-      },
-      {
-        "contexts": [
           "Autor: Academia de Finanças Rafael Toro Porto Alegre, Rio Grande do Sul, Brasil.",
           "Geralmente está associada a momentos em que as finanças da empresa estão deterioradas.",
           "Caso surta efeito e as finanças da companhia melhorem, espera-se que tal benefício se estenda ao preço dos ativos; - Merger Arbitrage: envolve explorar ineficiências de mercado antes ou depois de uma fusão ou aquisição."
@@ -6032,6 +5825,15 @@
       {
         "contexts": [
           "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos.",
+          "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro.",
+          "Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de spread de crédito."
+        ],
+        "occurrences": 6,
+        "term": "tesouro"
+      },
+      {
+        "contexts": [
+          "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos.",
           "Um Municipal Bond (ou simplesmente Muni) é um título de dívida emitido por governos locais, como cidades, estados ou municípios nos Estados Unidos.",
           "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\")."
         ],
@@ -6091,15 +5893,6 @@
         ],
         "occurrences": 6,
         "term": "chamados"
-      },
-      {
-        "contexts": [
-          "O preço desses bonds podem ser definidos da seguinte forma: Preço do Callable Bond = preço do bond - preço da call Preço do Putable Bond = preço do bond + preço da put",
-          "Já a CLÁUSULA DE PUT EMBUTIDA beneficia O INVESTIDOR, pois caso as taxas de juros subam, ele poderá vender o título de volta para o emissor e com isso, aplicar em taxas mais altas.",
-          "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT"
-        ],
-        "occurrences": 6,
-        "term": "put"
       },
       {
         "contexts": [
@@ -6544,24 +6337,6 @@
       },
       {
         "contexts": [
-          "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
-          "Já a estratégia Bottom-up é oposta à Top-Down, uma vez que ignora fatores macroeconômicos."
-        ],
-        "occurrences": 6,
-        "term": "bottom-up"
-      },
-      {
-        "contexts": [
-          "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
-          "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tributação, taxas de juros, antes de examinar questões específicas do ativo, como setores ou dados de determinadas companhias."
-        ],
-        "occurrences": 6,
-        "term": "top-down"
-      },
-      {
-        "contexts": [
           "Ela se importa somente com os “fundamentos econômicos”, ou seja, os múltiplos da empresa.",
           "Pode ser entendida como uma avaliação bastante eficiente, pois analisa-se primeiro agregados econômicos antes de escolher setores para, em seguida, optar por empresas específicas.",
           "**OBSERVAÇÃO:** As subclasses de classes restritas podem ser diferenciadas no regulamento por outros direitos econômicos e direitos políticos."
@@ -6613,15 +6388,6 @@
         ],
         "occurrences": 6,
         "term": "constituição"
-      },
-      {
-        "contexts": [
-          "A Resolução CVM 175/23 dispõe sobre a constituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
-          "**OBSERVAÇÕES:** - A aferição de responsabilidades dos prestadores de serviços tem como parâmetros as obrigações previstas pela CVM e em regulamentações específicas, assim como aquelas previstas no regulamento e no respectivo contrato de prestação de serviços.",
-          "O regulamento pode prever que a gestão da carteira alcança a utilização de ativos na prestação de fiança, aval, aceite ou qualquer outra forma de retenção de risco."
-        ],
-        "occurrences": 6,
-        "term": "prestação"
       },
       {
         "contexts": [
@@ -6832,30 +6598,12 @@
       },
       {
         "contexts": [
-          "A gestão de risco é um processo crucial para qualquer investidor ou gestor de carteira, pois permite identificar, analisar e mitigar os riscos que podem afetar seus investimentos.",
-          "Isso permite que o investidor ou gestor de carteira compare os riscos de diferentes investimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, como diversificação, hedging e definição de limites de perda.",
-          "Para ajudar a mitigar esse risco, as negociações de derivativos devem envolver as chamadas Contrapartes Centrais, sempre que possível."
-        ],
-        "occurrences": 6,
-        "term": "mitigar"
-      },
-      {
-        "contexts": [
           "Ao implementar uma estratégia eficaz de gestão de risco, é possível tomar decisões mais conscientes e alcançar os objetivos financeiros de forma mais segura e eficiente.",
           "Os riscos devem ser monitorados e revisados periodicamente para garantir que a estratégia de gestão de risco seja eficaz.",
           "A implementação de um processo eficaz de gestão de riscos em uma instituição pode trazer diversos benefícios, mas também apresenta algumas desvantagens que devem ser consideradas."
         ],
         "occurrences": 6,
         "term": "eficaz"
-      },
-      {
-        "contexts": [
-          "A estratégia de mitigação de riscos deve ser adequada ao perfil de risco do investidor ou gestor de carteira; e - Monitoramento e revisão contínuos: a gestão de risco é um processo contínuo.",
-          "Como vantagens, podemos citar: - É considerado um benchmark válido; - Permite contínuo monitoramento do processo de investimento; e - Permite a alocação efetiva de riscos através dos times de gestão.",
-          "Por um lado, isso tende a reduzir bastante o risco de taxa de juros mas, por outro lado, pode implicar grandes custos de transação e de monitoramento da carteira."
-        ],
-        "occurrences": 6,
-        "term": "monitoramento"
       },
       {
         "contexts": [
@@ -6886,39 +6634,12 @@
       },
       {
         "contexts": [
-          "Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte Carlo.",
-          "A Simulação de Monte Carlo faz referência a um dos distritos do Principado de Mônaco, famoso por seus cassinos onde se jogam roletas, dados, entre outros.",
-          "O método de Monte Carlo pode ser aplicado ao VaR a partir do uso de sistemas computacionais que conseguem gerar centenas ou mesmo milhares de possíveis resultados aleatórios baseados no formato de distribuição dos retornos definido pelo analista."
-        ],
-        "occurrences": 6,
-        "term": "monte"
-      },
-      {
-        "contexts": [
-          "Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte Carlo.",
-          "A Simulação de Monte Carlo faz referência a um dos distritos do Principado de Mônaco, famoso por seus cassinos onde se jogam roletas, dados, entre outros.",
-          "O método de Monte Carlo pode ser aplicado ao VaR a partir do uso de sistemas computacionais que conseguem gerar centenas ou mesmo milhares de possíveis resultados aleatórios baseados no formato de distribuição dos retornos definido pelo analista."
-        ],
-        "occurrences": 6,
-        "term": "carlo"
-      },
-      {
-        "contexts": [
           "Determine o VaR analítico (ou paramétrico) de uma carteira de investimentos de R$ 100.000,00, para um Intervalo de Confiança de 95% (a = 1,65), horizonte de 1 mês e desvio padrão dos retornos para este período da carteira sendo de 5%.",
           "Para fazermos isso, calculamos um intervalo de confiança em torno da linha horizontal (onde o retorno de valor agregado pelo gestor é zero).",
           "Se o retorno de valor agregado ficar fora do intervalo de confiança, concluímos que é estatisticamente diferente de zero."
         ],
         "occurrences": 6,
         "term": "intervalo"
-      },
-      {
-        "contexts": [
-          "O VaR Histórico, também chamado de Método de Simulação Histórica, é ainda mais simples do que o VaR Analítico ou Paramétrico.",
-          "A Simulação de Monte Carlo faz referência a um dos distritos do Principado de Mônaco, famoso por seus cassinos onde se jogam roletas, dados, entre outros.",
-          "Esse problema pode ser superado pelo uso da Simulação de Monte Carlo mas, por sua vez, esse método pode implicar elevados custos de modelagem."
-        ],
-        "occurrences": 6,
-        "term": "simulação"
       },
       {
         "contexts": [
@@ -6949,39 +6670,12 @@
       },
       {
         "contexts": [
-          "Podemos mensurar este risco através de medidas de sensibilidade de um título em relação a variações nas taxas de juros (Duration de Macaulay ou Duration Modificada).",
-          "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar sensibilidade do preço de um título prefixado a mudanças nas taxas de juros.",
-          "Este será o resultado da Duration de Macaulay!"
-        ],
-        "occurrences": 6,
-        "term": "macaulay"
-      },
-      {
-        "contexts": [
           "Porém, como ela é uma estimativa linear de alteração de alteração de preço, não possibilita estimativas adequadas por não modelar precisamente a curvatura existente entre a variação porcentual do valor de um título prefixado e a variação percentual da taxa de juros de mercado.",
           "Isso porque a relação entre taxa de juros e preço não é linear.",
           "Para variações não paralelas, conseguimos com essas estratégias mitigar um pouco o risco, mas será necessária aplicação de métodos mais complexos de programação linear para resolver esse problema."
         ],
         "occurrences": 6,
         "term": "linear"
-      },
-      {
-        "contexts": [
-          "0,00% 0,50% 1,00% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Flattening Antes Depois",
-          "No Bull Steepening (gráfico ao lado), o juro de curto prazo cai mais rápido que o de longo prazo.",
-          "0,00% 0,50% 1,00% 1,50% 2,00% 2,50% 3,00% 3,50% 4,00% 4,50% 5,00% 1 2 3 4 5 Bull Steepening Antes Depois Bull Flattening Bear Steepening"
-        ],
-        "occurrences": 6,
-        "term": "bull"
-      },
-      {
-        "contexts": [
-          "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
-          "Treasury Bills As tem como principal característica que o seu .",
-          "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A DEZ ANOS."
-        ],
-        "occurrences": 5,
-        "term": "treasury"
       },
       {
         "contexts": [
@@ -7066,15 +6760,6 @@
       },
       {
         "contexts": [
-          "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro.",
-          "Os Municipal Bonds são negociados no mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras.",
-          "Exemplos de empresas nesse setor incluem Apple, Microsoft, Amazon, Facebook e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e corretoras de valores mobiliários."
-        ],
-        "occurrences": 5,
-        "term": "corretoras"
-      },
-      {
-        "contexts": [
           "Um Municipal Bond (ou simplesmente Muni) é um título de dívida emitido por governos locais, como cidades, estados ou municípios nos Estados Unidos.",
           "Banker's acceptance (ou \"aceite bancário\", em português) é um instrumento financeiro que é emitido por um banco, em nome de um cliente, como uma promessa de pagamento em uma data futura.",
           "Desta forma, quem está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a uma taxa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.)."
@@ -7093,30 +6778,12 @@
       },
       {
         "contexts": [
-          "Banker's acceptance (ou \"aceite bancário\", em português) é um instrumento financeiro que é emitido por um banco, em nome de um cliente, como uma promessa de pagamento em uma data futura.",
-          "A empresa importadora, em seguida, solicita a seu banco que emita um aceite bancário em nome do exportador, que se torna o beneficiário do aceite.",
-          "O banco da empresa importadora, em seguida, promete pagar a quantia indicada no aceite bancário na data de vencimento."
-        ],
-        "occurrences": 5,
-        "term": "bancário"
-      },
-      {
-        "contexts": [
           "Por exemplo, as obrigações estrangeiras emitidas em dólares americanos são conhecidas com Yankee Bonds.",
           "Os prestadores de serviços essenciais, o cotista ou grupo de cotistas que detenha, no mínimo, 5% do total de cotas emitidas, podem convocar, a qualquer tempo, assembleia de cotistas para deliberar sobre ordem do dia de interesse do fundo, da classe ou da comunhão de cotistas.",
           "O custodiante deve: - acatar somente as ordens emitidas pelo administrador, gestor e, se houver, cogestor, ou por seus representantes legais ou mandatários, devidamente autorizados; e - executar somente as ordens que estejam diretamente vinculadas às operações da classe."
         ],
         "occurrences": 5,
         "term": "emitidas"
-      },
-      {
-        "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
-          "Desta forma, percebemos que esta venda com recompra, nada mais é que um empréstimo em que o comprador do título atua como credor (emprestando o dinheiro) e o vendedor atua como devedor (pagando mais caro do que vendeu inicialmente).",
-          "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo."
-        ],
-        "occurrences": 5,
-        "term": "recompra"
       },
       {
         "contexts": [
@@ -7216,15 +6883,6 @@
         ],
         "occurrences": 5,
         "term": "aumenta"
-      },
-      {
-        "contexts": [
-          "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
-        ],
-        "occurrences": 5,
-        "term": "exchange"
       },
       {
         "contexts": [
@@ -7498,15 +7156,6 @@
       },
       {
         "contexts": [
-          "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para escolher quais ativos investir.",
-          "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado no desempenho econômico-financeiro da empresa, descontando fluxos de caixas projetados para orientar a compra e venda de ações."
-        ],
-        "occurrences": 5,
-        "term": "fundamentalista"
-      },
-      {
-        "contexts": [
           "- Dividendos: são o foco desses investidores, buscando empresas sólidas que distribuem altos dividendos.",
           "O estilo BLEND, traduzindo para o português “Mistura”, é uma combinação dos estilos Growth e Value, buscando ativos de crescimento e de valor.",
           "Os fundos funcionam sob a autorização da CVM, órgão responsável por sua **REGULAÇÃO E FISCALIZAÇÃO**, buscando a proteção do investidor através da Resolução CVM 175/22."
@@ -7729,6 +7378,15 @@
         ],
         "occurrences": 5,
         "term": "técnico"
+      },
+      {
+        "contexts": [
+          "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinação do histograma: uma inclinação ascendente indica um momento de compra e uma descendente, de venda.",
+          "Isso porque o acaso e os resultados aleatórios são fundamentais tanto para os jogos no Principado, como para a técnica de modelagem que leva o nome desse local do sul da França.",
+          "Alavancagem é uma técnica utilizada para aumentar o potencial de retorno de um investimento, utilizando recursos de terceiros ou ativos com custos fixos."
+        ],
+        "occurrences": 5,
+        "term": "técnica"
       },
       {
         "contexts": [
@@ -8595,15 +8253,6 @@
       },
       {
         "contexts": [
-          "Da mesma forma que no Brasil, as empresas americanas negociadas na bolsa possuem dois tipos classificação de ações.",
-          "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
-          "- Alienação da cota: as cotas podem ser transferidas por cessão ou negociadas em bolsa/balcão organizado, ou seja, podem ser vendidas a um terceiro."
-        ],
-        "occurrences": 4,
-        "term": "bolsa"
-      },
-      {
-        "contexts": [
           "Common Stocks (Ações Ordinárias): este tipo de ação possuem as mesmas características das ações ordinárias (ON) no Brasil, ou seja, são aquelas que dão direito a voto ao acionista.",
           "Os princípios desta ferramenta são as mesmas do Índice de Sharpe: analisar o retorno excedente pelo risco.",
           "A Duration é uma boa aproximação da mudança de preço de um título de renda fixa para pequenas variações na taxa de juros, mas não para grandes variações, pois pressupõe que as taxas de juros de mercado são flat (para qualquer prazo, as taxas de juros serão sempre as mesmas)."
@@ -8619,15 +8268,6 @@
         ],
         "occurrences": 4,
         "term": "capitalização"
-      },
-      {
-        "contexts": [
-          "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
-          "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba empresas que fabricam e comercializam produtos essenciais do dia a dia, como alimentos, bebidas, produtos de higiene pessoal e de limpeza doméstica.",
-          "O setor de staples é frequentemente comparado ao setor de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível."
-        ],
-        "occurrences": 4,
-        "term": "consumo"
       },
       {
         "contexts": [
@@ -9379,15 +9019,6 @@
       {
         "contexts": [
           "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinação do histograma: uma inclinação ascendente indica um momento de compra e uma descendente, de venda.",
-          "O Steepening ou inclinação ocorre quando as taxas de longo prazo aumentam com mais intensidade do que as de curto e médio prazo ou ainda quando as taxas de curto prazo diminuem mais que as de médio e de longo prazo.",
-          "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam."
-        ],
-        "occurrences": 4,
-        "term": "inclinação"
-      },
-      {
-        "contexts": [
-          "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinação do histograma: uma inclinação ascendente indica um momento de compra e uma descendente, de venda.",
           "Quando as bandas se contraem, indica baixa volatilidade, e quando se expandem, indica alta volatilidade.",
           "Ou seja, um alto IR indica que o gestor conseguiu um resultado significativo em uma base ajustada ao risco."
         ],
@@ -9951,15 +9582,6 @@
         ],
         "occurrences": 4,
         "term": "pequenas"
-      },
-      {
-        "contexts": [
-          "❑ EXEMPLOS: gestor tecla um zero a mais quando envia uma ordem para a corretora (é o famoso “dedo-gordo”); um processo mal estruturado que leve a perdas no processamento de ordens de negociação ou até mesmo uma fraude.",
-          "Ao negociar derivativos, geralmente é necessário depositar uma margem de garantia na corretora.",
-          "Se o preço do ativo subjacente se mover contra, a corretora poderá solicitar o depósito de mais margem para garantir a posição no contrato."
-        ],
-        "occurrences": 4,
-        "term": "corretora"
       },
       {
         "contexts": [
@@ -10643,6 +10265,15 @@
       },
       {
         "contexts": [
+          "A empresa importadora, em seguida, solicita a seu banco que emita um aceite bancário em nome do exportador, que se torna o beneficiário do aceite.",
+          "O aceite bancário é negociável, o que significa que o exportador pode vender o aceite a um terceiro, geralmente um banco, em troca de um desconto.",
+          "O regulamento pode prever que a gestão da carteira alcança a utilização de ativos na prestação de fiança, aval, aceite ou qualquer outra forma de retenção de risco."
+        ],
+        "occurrences": 3,
+        "term": "aceite"
+      },
+      {
+        "contexts": [
           "Os aceites bancários geralmente têm vencimentos que variam de 30 a 180 dias, dependendo do prazo de pagamento acordado entre as partes.",
           "A alíquota seguirá a mesma lógica dos fundos abertos, dependendo exclusivamente de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%",
           "Isso porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas."
@@ -11012,6 +10643,15 @@
           "Ao contrário do setor de staples, as empresas de consumo discricionário tendem a ter desempenho mais fraco durante uma recessão econômica, quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais."
         ],
         "occurrences": 3,
+        "term": "consumo"
+      },
+      {
+        "contexts": [
+          "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
+          "O setor de staples é frequentemente comparado ao setor de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+          "Ao contrário do setor de staples, as empresas de consumo discricionário tendem a ter desempenho mais fraco durante uma recessão econômica, quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais."
+        ],
+        "occurrences": 3,
         "term": "discricionário"
       },
       {
@@ -11352,24 +10992,6 @@
         ],
         "occurrences": 3,
         "term": "genérica"
-      },
-      {
-        "contexts": [
-          "Ou seja, através deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICADA; e - Otimização.",
-          "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprando todos os ativos do índice e na mesma proporção da carteira teórica.",
-          "[511201] A estratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimização, mas com menor tracking error."
-        ],
-        "occurrences": 3,
-        "term": "full"
-      },
-      {
-        "contexts": [
-          "Ou seja, através deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICADA; e - Otimização.",
-          "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprando todos os ativos do índice e na mesma proporção da carteira teórica.",
-          "[511201] A estratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimização, mas com menor tracking error."
-        ],
-        "occurrences": 3,
-        "term": "replication"
       },
       {
         "contexts": [
@@ -11772,6 +11394,14 @@
         ],
         "occurrences": 3,
         "term": "fornecer"
+      },
+      {
+        "contexts": [
+          "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinação do histograma: uma inclinação ascendente indica um momento de compra e uma descendente, de venda.",
+          "O Steepening ou inclinação ocorre quando as taxas de longo prazo aumentam com mais intensidade do que as de curto e médio prazo ou ainda quando as taxas de curto prazo diminuem mais que as de médio e de longo prazo."
+        ],
+        "occurrences": 3,
+        "term": "inclinação"
       },
       {
         "contexts": [
@@ -12632,15 +12262,6 @@
       },
       {
         "contexts": [
-          "Como a classificação para a Receita Federal é diferente da classificação da CVM para fundos de investimentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
-          "- Proteção contra a desvalorização cambial: - Opções de compra de moeda estrangeira: dão ao titular o direito de comprar uma moeda estrangeira a um preço pré-determinado, protegendo contra a desvalorização da moeda nacional.",
-          "O risco cambial é o risco de perda que surge da flutuação das taxas de câmbio entre diferentes moedas."
-        ],
-        "occurrences": 3,
-        "term": "cambial"
-      },
-      {
-        "contexts": [
           "- IOF: Sua cobrança funciona exatamente igual aos ativos de renda fixa: tabela regressiva, zerando no 30º dia.",
           "- Os índices de estilo podem não refletir fielmente o estilo do gestor; - Necessário número elevado de retornos para se obter um padrão estatístico confiável; - Não funciona bem quando o gestor muda de estilo.",
           "A duration funciona bem para pequenas mudanças nas taxas de juros."
@@ -12699,15 +12320,6 @@
         ],
         "occurrences": 3,
         "term": "fundamentais"
-      },
-      {
-        "contexts": [
-          "Isso permite que o investidor ou gestor de carteira compare os riscos de diferentes investimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, como diversificação, hedging e definição de limites de perda.",
-          "A estratégia de mitigação de riscos deve ser adequada ao perfil de risco do investidor ou gestor de carteira; e - Monitoramento e revisão contínuos: a gestão de risco é um processo contínuo.",
-          "Ela vai além da mera identificação e mitigação de riscos, proporcionando uma visão holística e estratégica para a tomada de decisões de investimento mais conscientes e assertivas."
-        ],
-        "occurrences": 3,
-        "term": "mitigação"
       },
       {
         "contexts": [
@@ -12886,6 +12498,15 @@
         ],
         "occurrences": 3,
         "term": "value-at-risk"
+      },
+      {
+        "contexts": [
+          "O VaR Histórico, também chamado de Método de Simulação Histórica, é ainda mais simples do que o VaR Analítico ou Paramétrico.",
+          "Para contornar isso, a simulação foca na repetição constante de amostras aleatórias para atingir os resultados desejados quanto à previsão de determinada variável.",
+          "Assim que a simulação for concluída, os resultados são calculados em conjunto para fornecer uma estimativa."
+        ],
+        "occurrences": 3,
+        "term": "simulação"
       },
       {
         "contexts": [
@@ -14197,14 +13818,6 @@
         ],
         "occurrences": 2,
         "term": "saúde"
-      },
-      {
-        "contexts": [
-          "Staples O setor de Staples (também conhecido como setor de bens de consumo básico) é um setor da economia que engloba empresas que fabricam e comercializam produtos essenciais do dia a dia, como alimentos, bebidas, produtos de higiene pessoal e de limpeza doméstica.",
-          "O conceito básico de atribuição de desempenho é identificar e quantificar as fontes de retorno que são diferentes do benchmark designado."
-        ],
-        "occurrences": 2,
-        "term": "básico"
       },
       {
         "contexts": [
@@ -16201,6 +15814,14 @@
       },
       {
         "contexts": [
+          "O regulamento pode prever que a gestão da carteira alcança a utilização de ativos na prestação de fiança, aval, aceite ou qualquer outra forma de retenção de risco.",
+          "Assim, o cupom será a multiplicação da taxa de cupom por R$ 1.000,00 e o valor recebido na última prestação, será o cupom mais os R$ 1.000,00."
+        ],
+        "occurrences": 2,
+        "term": "prestação"
+      },
+      {
+        "contexts": [
           "Caso a classe de cotas seja destinada ao público em geral, tal retenção de risco deve ser previamente autorizada pela assembleia de cotistas e contar com alerta em destaque no material de divulgação.",
           "Tais investimentos não estão sujeitos a limites de concentração por emissor, desde que o regulamento preveja tal possibilidade e, no termo de adesão, conste alerta de que a classe de cotas pode estar exposta ao risco de concentração em ativos financeiros de poucos emissores."
         ],
@@ -16716,6 +16337,14 @@
         ],
         "occurrences": 2,
         "term": "entidade"
+      },
+      {
+        "contexts": [
+          "Como a classificação para a Receita Federal é diferente da classificação da CVM para fundos de investimentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
+          "- Proteção contra a desvalorização cambial: - Opções de compra de moeda estrangeira: dão ao titular o direito de comprar uma moeda estrangeira a um preço pré-determinado, protegendo contra a desvalorização da moeda nacional."
+        ],
+        "occurrences": 2,
+        "term": "cambial"
       },
       {
         "contexts": [
@@ -17530,14 +17159,6 @@
       },
       {
         "contexts": [
-          "Para ajudar a mitigar esse risco, as negociações de derivativos devem envolver as chamadas Contrapartes Centrais, sempre que possível.",
-          "Os CDS mudam de valor ao longo de suas vidas conforme a qualidade de crédito da entidade de referência muda, o que leva a ganhos e perdas para as contrapartes, mesmo que a inadimplência não tenha ocorrido ou possa nunca ocorrer."
-        ],
-        "occurrences": 2,
-        "term": "contrapartes"
-      },
-      {
-        "contexts": [
           "Além disso, a bolsa desenvolveu um mecanismo de proteção do sistema, baseada em distribuição de responsabilidades e alocação de garantias que envolve investidores, corretoras, agentes de compensação e a própria B3.",
           "Como o próprio nome diz, o comportamento das taxas de juros reflete as expectativas dos agentes de mercado, ou seja, o que eles antecipam que irá acontecer com a curva."
         ],
@@ -17891,14 +17512,6 @@
         ],
         "occurrences": 2,
         "term": "adicional"
-      },
-      {
-        "contexts": [
-          "Porém, há algumas importantes desvantagens que precisam ser consideradas: - Assume retornos normais: essa premissa, que torna o modelo relativamente simples, é também uma grande desvantagem.",
-          "A convexidade dá um passo à frente com relação à duration, que assume justamente essa premissa de linearidade entre preço e taxa de juros de títulos prefixados de renda fixa."
-        ],
-        "occurrences": 2,
-        "term": "premissa"
       },
       {
         "contexts": [
@@ -18267,14 +17880,6 @@
         ],
         "occurrences": 2,
         "term": "próximos"
-      },
-      {
-        "contexts": [
-          "Temos ainda a estratégia Ladder, também chamada de escada (em tradução livre), que é construída de forma que se tenha quantidades aproximadamente iguais para cada vencimento.",
-          "Por exemplo, se um gestor tiver R$ 100.000 para investir em títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com diferentes vencimentos e taxas de juros."
-        ],
-        "occurrences": 2,
-        "term": "escada"
       },
       {
         "contexts": [
@@ -19607,20 +19212,6 @@
         ],
         "occurrences": 1,
         "term": "acrescentará"
-      },
-      {
-        "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura."
-        ],
-        "occurrences": 1,
-        "term": "repurchase"
-      },
-      {
-        "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura."
-        ],
-        "occurrences": 1,
-        "term": "agreement"
       },
       {
         "contexts": [
@@ -21889,13 +21480,6 @@
         ],
         "occurrences": 1,
         "term": "nomes"
-      },
-      {
-        "contexts": [
-          "Nomes menos conhecidos do público brasileiro incluem: - Consumer Staples: conjunto de produtos essenciais utilizados pelos consumidores, tais como alimentos e bebidas, utensílios domésticos e produtos de higiene, bem como álcool e tabaco."
-        ],
-        "occurrences": 1,
-        "term": "consumer"
       },
       {
         "contexts": [
@@ -27565,13 +27149,6 @@
           "Com isso, é possível monitorar continuamente o orçamento de riscos para que quaisquer desvios sejam imediatamente identificados."
         ],
         "occurrences": 1,
-        "term": "monitorar"
-      },
-      {
-        "contexts": [
-          "Com isso, é possível monitorar continuamente o orçamento de riscos para que quaisquer desvios sejam imediatamente identificados."
-        ],
-        "occurrences": 1,
         "term": "continuamente"
       },
       {
@@ -29018,6 +28595,13 @@
       },
       {
         "contexts": [
+          "O conceito básico de atribuição de desempenho é identificar e quantificar as fontes de retorno que são diferentes do benchmark designado."
+        ],
+        "occurrences": 1,
+        "term": "básico"
+      },
+      {
+        "contexts": [
           "Já o objetivo da atribuição micro é analisar as decisões individuais de um gestor e determinar como o gestor adicionou ou destruiu valor para o patrocinador."
         ],
         "occurrences": 1,
@@ -30057,13 +29641,6 @@
           "Qual a Duration da carteira abaixo de duplicatas no valor total de R$ 100.000,00 na data de hoje, sendo que a taxa de desconto dos títulos é de 3,00% a.m?"
         ],
         "occurrences": 1,
-        "term": "duplicatas"
-      },
-      {
-        "contexts": [
-          "Qual a Duration da carteira abaixo de duplicatas no valor total de R$ 100.000,00 na data de hoje, sendo que a taxa de desconto dos títulos é de 3,00% a.m?"
-        ],
-        "occurrences": 1,
         "term": "hoje"
       },
       {
@@ -30652,13 +30229,6 @@
           "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em períodos muito próximos."
         ],
         "occurrences": 1,
-        "term": "bala"
-      },
-      {
-        "contexts": [
-          "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em períodos muito próximos."
-        ],
-        "occurrences": 1,
         "term": "foca-se"
       },
       {
@@ -31143,13 +30713,6 @@
         ],
         "occurrences": 1,
         "term": "acarretará"
-      },
-      {
-        "contexts": [
-          "O movimento contrário seria o Flattening ou achatamento da curva."
-        ],
-        "occurrences": 1,
-        "term": "achatamento"
       },
       {
         "contexts": [
@@ -32104,12 +31667,12 @@
       "terms": 43
     },
     "function": {
-      "occurrences": 7909,
+      "occurrences": 7906,
       "terms": 238
     },
     "unknown": {
-      "occurrences": 10902,
-      "terms": 3794
+      "occurrences": 10584,
+      "terms": 3744
     }
   }
 }

@@ -97,18 +97,18 @@
       "raw_bytes": 6407
     },
     "C": {
-      "bytes": 12825,
-      "delta_bytes": 6418,
+      "bytes": 12857,
+      "delta_bytes": 6450,
       "raw_bytes": 6407
     },
     "D": {
-      "bytes": 8176,
-      "delta_bytes": 1769,
+      "bytes": 8237,
+      "delta_bytes": 1830,
       "raw_bytes": 6407
     },
     "E": {
-      "bytes": 6418,
-      "delta_bytes": 11,
+      "bytes": 6450,
+      "delta_bytes": 43,
       "raw_bytes": 6407
     }
   },
@@ -454,15 +454,15 @@
     }
   },
   "queries": 16,
-  "registry_sha256": "460fca2d7d3089236cd810779cd138d647cdde759514f2dec68bf328668d7d1c",
-  "registry_version": "2.21.1",
+  "registry_sha256": "9b7804b15dfa09dac3e078b9da126c38b10983a751641eba762738add4b232c3",
+  "registry_version": "2.24.0",
   "reproducibility": {
     "dataset_canonical_sha256": "27c4e9eca0d19d5217c1102aba71d6656196af35c15b789be5c46d3e27f16b89",
     "dataset_file_sha256": "ed677a53cbd98d152bef445be218461f487762f8c8e16eaf06aeee2199e63d58",
     "evaluator_sha256": "0d9ff81065b9f3ce1a0e8b5e4790d75536fb6fdb6f6d332fe21ea7354a4b70af",
     "normalizer_sha256": "a3bc389c3979ee17397155083047acef17639617e3ad6df8998f9f3183aac81c",
     "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-    "registry_sha256": "460fca2d7d3089236cd810779cd138d647cdde759514f2dec68bf328668d7d1c",
+    "registry_sha256": "9b7804b15dfa09dac3e078b9da126c38b10983a751641eba762738add4b232c3",
     "sidecar_schema_sha256": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "rows": [
@@ -1228,8 +1228,8 @@
             "dev-en-diataxis",
             "dev-pt-gameplay",
             "dev-pt-education",
-            "dev-pt-wiki",
             "dev-pt-futures",
+            "dev-pt-wiki",
             "dev-en-integrity-docstring"
           ],
           "relevant_rank_delta_vs_A": 0
@@ -2303,8 +2303,8 @@
             "dev-en-diataxis",
             "dev-pt-gameplay",
             "dev-pt-education",
-            "dev-pt-wiki",
             "dev-pt-futures",
+            "dev-pt-wiki",
             "dev-en-actions-security",
             "dev-en-scanner-docstring"
           ],

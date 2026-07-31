@@ -1,0 +1,19 @@
+{
+  "batch": 20,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Adversarial review of phase two, gap P3. Three concepts were matching text that contradicts their own definitions, and all three are the same shape the campaign has hit repeatedly: a surface owned by the wrong concept because the right one did not exist. `system.service` carries `domains: [software, infrastructure]` and means a software process — all 24 of its corpus matches are financial or legal services. `bolsa de valores` was attached to entity.securities, defined as `tradable financial instruments`, while the corpus says `A Bolsa de Valores é um mercado organizado e regulado` — it is the venue, not the instruments. `prestadores de serviços` bare was attached to the ESSENTIAL provider, a concept the material explicitly contrasts with `os demais prestadores de serviços`.",
+  "concepts": [
+    {"id": "entity.stock_exchange", "en": "stock exchange", "pt": "bolsa de valores", "class": "entity", "pos": "noun",
+     "def": "The organised and regulated venue where listed shares are traded, contrasted with the over-the-counter market.",
+     "alt_en": ["exchange"], "alt_pt": ["bolsa"],
+     "authority": "apostila-cga-2026#01-investimentos-no-exterior"},
+    {"id": "entity.service", "en": "service", "pt": "serviço", "class": "entity", "pos": "noun",
+     "def": "Work performed for a fund or an investor under contract, or a good's counterpart in consumption.",
+     "alt_pt": ["serviços", "prestação de serviços"], "alt_en": ["services"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"},
+    {"id": "actor.service_provider", "en": "service provider", "pt": "prestador de serviços", "class": "actor", "pos": "noun",
+     "def": "Any party contracted to perform a service for a fund, essential or not.",
+     "alt_pt": ["prestadores de serviços", "demais prestadores de serviços"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"}
+  ]
+}

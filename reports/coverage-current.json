@@ -2,57 +2,57 @@
   "against_frozen_baseline": {
     "baseline_target_share": 0.4151,
     "baseline_unknown_occurrences": 15116,
-    "current_unknown_occurrences": 10902,
+    "current_unknown_occurrences": 10584,
     "meets_target": false,
-    "resolved_occurrences": 4214,
-    "resolved_share": 0.2788
+    "resolved_occurrences": 4532,
+    "resolved_share": 0.2998
   },
   "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
   "curve": [
     {
       "concepts": 25,
-      "occurrences": 740,
-      "share_of_unknown": 0.0679
+      "occurrences": 738,
+      "share_of_unknown": 0.0697
     },
     {
       "concepts": 50,
-      "occurrences": 1208,
-      "share_of_unknown": 0.1108
+      "occurrences": 1206,
+      "share_of_unknown": 0.1139
     },
     {
       "concepts": 100,
-      "occurrences": 1906,
-      "share_of_unknown": 0.1748
+      "occurrences": 1897,
+      "share_of_unknown": 0.1792
     },
     {
       "concepts": 150,
-      "occurrences": 2448,
-      "share_of_unknown": 0.2245
+      "occurrences": 2435,
+      "share_of_unknown": 0.2301
     },
     {
       "concepts": 200,
-      "occurrences": 2920,
-      "share_of_unknown": 0.2678
+      "occurrences": 2902,
+      "share_of_unknown": 0.2742
     },
     {
       "concepts": 300,
-      "occurrences": 3747,
-      "share_of_unknown": 0.3437
+      "occurrences": 3701,
+      "share_of_unknown": 0.3497
     }
   ],
   "label": "current",
   "queue": {
-    "queue_registry_version": "2.21.0",
-    "unknown_occurrences": 10902,
-    "unknown_terms": 3794
+    "queue_registry_version": "2.24.0",
+    "unknown_occurrences": 10584,
+    "unknown_terms": 3744
   },
   "registry": {
-    "concepts": 351,
-    "sha256": "4e96b6981cf96f41d95498de352a000cce40bdf2171fd5b364a445c9b507eb0c",
-    "version": "2.21.0"
+    "concepts": 385,
+    "sha256": "9b7804b15dfa09dac3e078b9da126c38b10983a751641eba762738add4b232c3",
+    "version": "2.24.0"
   },
   "sample": {
-    "concepts_per_sentence": 3.6133,
+    "concepts_per_sentence": 3.7467,
     "seed": 7,
     "size": 300,
     "status": {
@@ -60,7 +60,7 @@
       "partial": 4,
       "review": 215
     },
-    "unresolved_items": 1970,
+    "unresolved_items": 2000,
     "with_concept": 290,
     "with_concept_share": 0.9667
   },
@@ -68,6 +68,6 @@
   "target": {
     "concepts": 200,
     "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
-    "resolved_share_of_unknown": 0.2678
+    "resolved_share_of_unknown": 0.2742
   }
 }

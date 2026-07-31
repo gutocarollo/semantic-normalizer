@@ -76,7 +76,12 @@ CASES = [
     ("O Yield to Worst é o rendimento no pior cenário.", "technical.yield", True),
     ("O Current Yield divide o cupom anual pelo preço de mercado.", "technical.current_yield", True),
     ("O Oscilador Estocástico gera valores entre 0 e 100.", "entity.securities", False),
-    ("A Bolsa de Valores oferece maior transparência.", "entity.securities", True),
+    # entity.securities is "tradable financial instruments"; a Bolsa de Valores is the VENUE.
+    # An adversarial review found all 18 occurrences contradicting the definition — the form was
+    # added in round 1 as a phrase anchor to save the spans `valores` lost, and it preserved the
+    # span while attaching the wrong concept.
+    ("A Bolsa de Valores oferece maior transparência.", "entity.stock_exchange", True),
+    ("A Bolsa de Valores oferece maior transparência.", "entity.securities", False),
     ("A CVM regula os valores mobiliários.", "entity.securities", True),
     ("Os CDs comprado por meio de um banco segurado possui proteção.", "technical.long_position", False),
     ("O gestor está com posição comprada em dólar.", "technical.long_position", True),
@@ -159,7 +164,10 @@ CASES = [
     ("O Ibovespa é o principal índice do mercado brasileiro.", "entity.index", True),
     # Recall the ungoverned demotions had destroyed: the corpus writes these and the registered
     # `opção de compra`/`opção de venda` never covered them, so they had gone silent.
-    ("São Bonds com opção de Call embutida no contrato.", "technical.option", True),
+    # A generic and a specific concept claiming one phrase is not ambiguity: the specific wins.
+    ("São Bonds com opção de Call embutida no contrato.", "technical.call_option", True),
+    ("São Bonds com opção de Call embutida no contrato.", "technical.option", False),
+    ("O título possui uma opção de venda ao emissor.", "technical.option", True),
     ("O título tem um desconto sobre o valor de face na emissão.", "technical.discount", True),
     ("Futuros de Ações são negociados na B3.", "technical.futures", True),
     # A safety-manual concept from the seed vocabulary claiming ordinary Portuguese prose.
@@ -222,6 +230,18 @@ CASES = [
     # Adversarial review round 3. Two of these falsified a published `0 errors` and both were
     # occurrences this campaign's own sweep had read and passed.
     ("Sem prejuízo de eventuais sanções, a Superintendência pode suspender.", "polarity.absence", False),
+    # Phase-two review. `system.service` is a SOFTWARE concept from the seed vocabulary and all
+    # 24 of its corpus matches were financial or legal services — I promoted `serviços` onto it
+    # with the justification "Plural of `serviço`", which is the entry-by-resemblance defect I
+    # had just removed from the `vendido` guard in the same phase.
+    ("ADMINISTRAÇÃO FIDUCIÁRIA: conjunto de serviços relacionados ao fundo.", "system.service", False),
+    ("ADMINISTRAÇÃO FIDUCIÁRIA: conjunto de serviços relacionados ao fundo.", "entity.service", True),
+    ("Sem prejuízo das responsabilidades dos prestadores de serviços, podem ser constituídos comitês.",
+     "actor.essential_service_provider", False),
+    ("Sem prejuízo das responsabilidades dos prestadores de serviços, podem ser constituídos comitês.",
+     "actor.service_provider", True),
+    ("Os prestadores de serviços essenciais são o administrador e o gestor.",
+     "actor.essential_service_provider", True),
     ("A duration de um título zero-cupom, sem pagamentos de juros, é igual ao prazo.", "polarity.absence", True),
     ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "entity.asset", False),
     ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_leg", True),

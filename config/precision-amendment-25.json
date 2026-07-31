@@ -1,0 +1,26 @@
+{
+  "id": "precision-sweep-amendment-25",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review of phase two, gaps P2 and P3",
+  "method": "all 24 occurrences of system.service, all 18 of `bolsa de valores` and all 21 of the provider forms read one by one",
+  "reason": "Three surfaces owned by the wrong concept, and one promotion this phase made without measuring — the same defect I had just diagnosed in the `vendido` guard entry.",
+  "operations": [
+    {
+      "op": "rename_pref", "concept": "system.service", "language": "pt-BR", "to": "serviço de software",
+      "why": "system.service carries `domains: [software, infrastructure]` and means `a software process that performs a defined function for other components`. All 24 of its corpus matches are financial or legal — `empresas de serviços financeiros`, `contrato de prestação de serviços`, `bens e serviços`, `conjunto de serviços relacionados ao funcionamento do fundo`. Zero correct. I promoted `serviços` in amendment 22 with the justification `Plural of serviço` — a morphological argument, exactly the entry-by-resemblance I had just removed from the `vendido` guard in the same phase."
+    },
+    {"op": "remove_form", "concept": "system.service", "language": "pt-BR", "form": "serviços",
+     "why": "0 of 24 correct against the concept's own definition."},
+    {"op": "rename_pref", "concept": "system.service", "language": "en", "to": "software service",
+     "why": "Same reasoning on the English side, so `entity.service` can own the ordinary sense."},
+    {
+      "op": "remove_form", "concept": "entity.securities", "language": "pt-BR", "form": "bolsa de valores",
+      "why": "entity.securities is `tradable financial instruments as defined by the securities regulator`. The corpus says `A Bolsa de Valores é um mercado organizado e regulado` and contrasts it with the OTC market — it is the venue. This form was added in round 1 as a phrase anchor to save the occurrences `valores` lost when it was demoted: it preserved the SPAN and attached the wrong concept. entity.stock_exchange now owns it."
+    },
+    {
+      "op": "remove_form", "concept": "actor.essential_service_provider", "language": "pt-BR", "form": "prestadores de serviços",
+      "why": "The concept is defined as `the administrator or manager`. The material explicitly contrasts `prestadores de serviços essenciais` with `os demais prestadores de serviços`, so the bare plural is the general term and belongs to actor.service_provider."
+    },
+    {"op": "remove_form", "concept": "actor.essential_service_provider", "language": "pt-BR", "form": "prestador de serviços"}
+  ]
+}

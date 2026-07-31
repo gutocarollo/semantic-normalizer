@@ -43,16 +43,46 @@ DEPLURAL = (
     (re.compile(r"([aeiou])is$"), r"\1l"), (re.compile(r"ns$"), "m"),
     (re.compile(r"(z|r|s)es$"), r"\1"), (re.compile(r"s$"), ""),
 )
+# Portuguese verb endings, enough to recover the infinitive a general wordnet indexes. The first
+# version of this script only undid plurals, so `vamos`, `permitem`, `devemos`, `negociadas` and
+# `emitidos` returned zero senses and were filed as DOMAIN vocabulary — a morphological failure
+# read as a semantic finding. An adversarial review measured the damage: 26 % of the zero-sense
+# bucket is inflected verbs, and the conclusion drawn from that bucket was the whole argument.
+CONJUGATION = (
+    (re.compile(r"(a|e|i)(mos|ram|rem|sse|ssem|ndo|das|dos|da|do|va|vam|ria|riam|rão|rá)$"), r"\1r"),
+    (re.compile(r"(a|e|i)(m|s|u)$"), r"\1r"),
+    (re.compile(r"[aeiou]$"), "ar"),
+)
+ADVERB = re.compile(r"mente$")
 
 
 def lemmas(form: str) -> list[str]:
+    """Every plausible lemma: the surface, its singular, its infinitive, its adjective base.
+
+    Tried as candidates rather than as a decision — whichever the wordnet knows is the one that
+    counts. Over-generating here is safe; under-generating is what produced the wrong verdict.
+    """
     lowered = unicodedata.normalize("NFC", form).casefold()
     out = [lowered]
     for pattern, replacement in DEPLURAL:
         if pattern.search(lowered):
             out.append(pattern.sub(replacement, lowered))
             break
-    return [candidate for candidate in out if len(candidate) > 2]
+    if ADVERB.search(lowered):
+        stem = ADVERB.sub("", lowered)
+        out.extend([stem, stem + "o", stem[:-1] + "o" if stem.endswith("a") else stem])
+    for base in list(out):
+        for pattern, replacement in CONJUGATION:
+            if pattern.search(base):
+                out.append(pattern.sub(replacement, base))
+                break
+        if base.endswith("a"):
+            out.append(base[:-1] + "o")
+    seen: dict[str, None] = {}
+    for candidate in out:
+        if len(candidate) > 2:
+            seen[candidate] = None
+    return list(seen)
 
 
 def main() -> int:
@@ -60,8 +90,9 @@ def main() -> int:
     parser.add_argument("--queue", default=str(DEFAULT_QUEUE))
     parser.add_argument("--baseline", default=str(DEFAULT_BASELINE))
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--top", type=int, default=200,
-                        help="how many terms the target's derivation counted")
+    parser.add_argument("--top", type=int, default=0,
+                        help="classify only the top N terms; 0 means the WHOLE unknown stratum, "
+                             "which is the only scope in which the verdict means anything")
     args = parser.parse_args()
 
     sys.path.insert(0, str(ROOT / "src"))
@@ -70,7 +101,7 @@ def main() -> int:
     queue = json.loads(Path(args.queue).read_text(encoding="utf-8"))
     baseline = json.loads(Path(args.baseline).read_text(encoding="utf-8"))
     unknown = sorted(queue["strata"]["unknown"], key=lambda item: -item["occurrences"])
-    top = unknown[: args.top]
+    top = unknown[: args.top] if args.top else unknown
 
     rows = []
     for item in top:
@@ -93,8 +124,14 @@ def main() -> int:
         return sum(row["occurrences"] for row in rows if row["kind"] == kind)
 
     top_mass = sum(row["occurrences"] for row in rows)
-    unknown_total = queue["totals"]["unknown"]["occurrences"]
+    # The denominator is the FROZEN baseline, not the current queue. `target_as_written` and
+    # `resolved_share` are both fractions of the 86-concept baseline, and the first version of
+    # this script divided by the CURRENT unknown total and compared the two directly — different
+    # populations either side of the same inequality.
+    unknown_total = baseline["queue"]["unknown_occurrences"]
+    current_unknown = queue["totals"]["unknown"]["occurrences"]
     target = baseline["target"]["resolved_share_of_unknown"]
+    already_resolved = (unknown_total - current_unknown) / max(1, unknown_total)
 
     domain_mass = mass("domain_specific") + mass("narrow")
     report = {
@@ -102,7 +139,12 @@ def main() -> int:
         "target_as_written": target,
         "target_derivation": baseline["target"]["derivation"],
         "top_terms_examined": len(rows),
-        "unknown_total_occurrences": unknown_total,
+        "denominator": "frozen baseline unknown_occurrences",
+        "baseline_unknown_occurrences": unknown_total,
+        "current_unknown_occurrences": current_unknown,
+        "already_resolved_share": round(already_resolved, 4),
+        "gap_to_target_share": round(max(0.0, target - already_resolved), 4),
+        "gap_to_target_occurrences": round(max(0.0, target - already_resolved) * unknown_total),
         "top_terms_mass": top_mass,
         "top_terms_share_of_unknown": round(top_mass / max(1, unknown_total), 4),
         "composition_of_the_top_terms": {
@@ -115,8 +157,10 @@ def main() -> int:
         },
         "reachable_share_with_domain_terms_only": round(domain_mass / max(1, unknown_total), 4),
         "verdict": (
-            "The target is reachable by registering domain vocabulary."
-            if domain_mass / max(1, unknown_total) >= target else
+            "The remaining domain vocabulary is larger than the gap: the target IS reachable by "
+            "registering concepts worth having, and the earlier claim that it was not was drawn "
+            "from a 200-term slice with a lemmatiser that could not undo verb inflection."
+            if domain_mass >= max(0.0, target - already_resolved) * unknown_total else
             "The target is NOT reachable by registering domain vocabulary. Most of the remaining "
             "unknown mass is ordinary Portuguese that a stopword list should have removed. "
             "Meeting the number as written would require registering general words as concepts, "
@@ -128,7 +172,7 @@ def main() -> int:
         json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
     print(json.dumps({key: report[key] for key in
-                      ("target_as_written", "top_terms_share_of_unknown",
+                      ("target_as_written", "already_resolved_share", "gap_to_target_occurrences",
                        "composition_of_the_top_terms", "reachable_share_with_domain_terms_only",
                        "verdict")}, ensure_ascii=False, indent=2))
     return 0

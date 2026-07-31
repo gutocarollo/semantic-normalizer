@@ -1,40 +1,40 @@
 {
-  "events_total": 7528,
+  "events_total": 7763,
   "occurrences_per_pair": {
     "max": 181,
-    "mean": 9.7,
+    "mean": 8.96,
     "median": 2.0,
-    "stdev": 22.04
+    "stdev": 20.84
   },
   "registry": {
-    "concepts": 351,
-    "version": "2.21.1"
+    "concepts": 385,
+    "version": "2.24.0"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 920,
-      "share": 0.1222
+      "events": 1002,
+      "share": 0.1291
     },
     "B_domain_exclusive": {
-      "events": 664,
-      "share": 0.0882
+      "events": 785,
+      "share": 0.1011
     },
     "C_narrow": {
-      "events": 1490,
-      "share": 0.1979
+      "events": 1563,
+      "share": 0.2013
     },
     "D_risk_surface": {
-      "events": 4454,
-      "share": 0.5917
+      "events": 4413,
+      "share": 0.5685
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 4454,
-    "floor_if_sweep_all_wrong": 0.4083,
-    "pairs": 262,
-    "share_of_all_events": 0.5917
+    "events": 4413,
+    "floor_if_sweep_all_wrong": 0.4315,
+    "pairs": 265,
+    "share_of_all_events": 0.5685
   },
   "sweep_queue": [
     {
@@ -45,7 +45,7 @@
         "um risco empreendido sem levar em conta possíveis perdas ou danos",
         "A qualidade de ser algo que não te deixa avançar"
       ],
-      "occurrences": 181,
+      "occurrences": 179,
       "quotes": [
         "ulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
         " (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possue",
@@ -303,7 +303,7 @@
         "um direito estabelecido ou reconhecido",
         "direito concedido por lei ou contrato (especialmente o direito às pres"
       ],
-      "occurrences": 125,
+      "occurrences": 122,
       "quotes": [
         "Desta forma, é um contrato onde o emissor do título concorda em pagar uma determinada taxa de juro por um perío",
         "axa de juro por um período de tempo predeterminado para o portador do título (a pessoa que compra e recebe os juros).",
@@ -311,7 +311,6 @@
         "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VALOR do cupom irá MUDAR em função da mudança do p",
         "Ou seja, se houver deflação e o valor do título for inferior ao valor de face, este automaticamente volta a",
         "Uma Treasury STRIPS é um tipo de título criado através da separação dos fluxos de pagamentos de jur",
-        "avés da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
         "riação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separados, que são negoci",
         "Os investidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódic",
         "mas não recebem pagamentos de juros periódicos durante a vida útil do título.",
@@ -329,8 +328,6 @@
         "até o momento em que o emissor exerce o direito de comprar de volta o título, uma vez que possui uma opção de compra.",
         "recebe até o momento em que ele exerce o direito de vender de volta o título ao emissor, uma vez que possui uma opção de venda.",
         "a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra embutida e mantê-lo até o vencimento ou",
-        "Por exemplo, se o título do Tesouro a 5 anos estiver a 4% e o título do Tesouro a 30",
-        "Por exemplo, se o título do Tesouro a 5 anos estiver a 4% e o título do Tesouro a 30 anos estiver a 5%, o spread de rendimento e",
         "Porém, suponha que ele aplicou seus recursos em um título isento de imposto.",
         "orno equivalente = EXEMPLO: Um investidor obteve 10% de retorno em um título isento de imposto de renda.",
         "anto menor for a taxa de juros, mais alto fica o valor presente de um título fazendo com que ele se valorize!",
@@ -344,7 +341,10 @@
         "o, seja uma carteira composta por R$ 2.000.000, sendo R$ 1.000.000 no título X e R$ 1.000.000 no título Y.",
         "ta por R$ 2.000.000, sendo R$ 1.000.000 no título X e R$ 1.000.000 no título Y.",
         "conclusão: - O aumento da taxa de juros é prejudicial para o preço do título, porém positiva para os reinvestimentos; - A redução da tax",
-        "nvestimentos; - A redução da taxa de juros é positiva para o preço do título, porém prejudicial para os reinvestimentos."
+        "nvestimentos; - A redução da taxa de juros é positiva para o preço do título, porém prejudicial para os reinvestimentos.",
+        " a rentabilidade contratada só é garantida se o investidor mantiver o título até o final do prazo.",
+        "ito, bem como todos os pagamentos de juros que teriam sido pagos se o título atingisse sua data de vencimento.",
+        "A decisão de aumentar a alocação de um título específico, por exemplo, também aumentará o peso do setor a"
       ],
       "stratum": "D_risk_surface"
     },
@@ -716,59 +716,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.invest",
-      "form": "investimento",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 86,
-      "quotes": [
-        "a contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
-        "e desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
-        "e Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth pa",
-        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com",
-        " diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com boas práticas sociais, ambienta",
-        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
-        "r a execução rápida de ordens, normalmente com um curto horizontes de investimento.",
-        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tr",
-        " esse tipo de análise pode não se valer de eventuais oportunidades de investimento por desconsiderar ativos cujos setores não apresentem boas ",
-        "Assim, análises de investimento Bottom-up podem levar a estilos mais táticos e mais ativos ",
-        "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de i",
-        "ANBIMA, que **AUXILIA** no aperfeiçoamento da legislação de fundos de investimento, através de códigos próprios.",
-        "A classe de cotas que possa adquirir cotas de outros fundos de investimento deve estabelecer em seu regulamento que suas taxas de admin",
-        "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
-        "2/12/2022 e revogou as normas anteriores que tratavam sobre fundos de investimento.",
-        "licam à carteira de ativos da classe de cotas do fundo incentivado de investimento em infraestrutura – FI-Infra.",
-        "O gestor da classe Renda Fixa - Simples deve adotar estratégia de investimento que proteja a classe de riscos de perdas e volatilidade.",
-        "A classe tipificada como MULTIMERCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de con",
-        "As classes de investimento em cotas devem adquirir classes do mesmo tipo que a sua, ex",
-        "Já os limites previstos para títulos e contratos de investimento coletivo, CBIO, créditos de carbono e criptoativos ficam ma",
-        "ssim como de manter sua carteira de ativos adequada a sua política de investimento.",
-        ", a Receita Federal tem a sua própria classificação para os fundos de investimento.",
-        "Os fundos de investimento em ações são aqueles cujo patrimônio líquido seja composto ",
-        "entais da gestão de risco incluem: - Definição clara dos objetivos de investimento: é essencial definir claramente os objetivos de investiment",
-        "tivos de investimento: é essencial definir claramente os objetivos de investimento antes de tomar qualquer decisão.",
-        ", como inadimplência de emissores de títulos, e riscos específicos do investimento, como mudanças na regulamentação ou na gestão da empresa.",
-        "A gestão de risco desempenha um papel fundamental no processo de investimento e na gestão de carteiras.",
-        " se destaca como uma ferramenta crucial para o sucesso no processo de investimento.",
-        "onando uma visão holística e estratégica para a tomada de decisões de investimento mais conscientes e assertivas.",
-        "Neste caso, é utilizado o cálculo de desvio padrão dos retornos do investimento; ou - Volatilidade IMPLÍCITA: Estimada através da variação ",
-        "❑ EXEMPLOS: investimento em imóveis, ações de pequenas empresas, ativos com carência",
-        "consideração importante a ser feita ao analisar possíveis decisões de investimento.",
-        "No entanto, quanto maior o risco, maior o retorno exigido por aquele investimento e caso dois investimentos possuam o mesmo retorno, devemos ",
-        "tivo; - Quanto maior o desvio padrão/variância, maior será o risco do investimento (mais ele estará se “desviando do seu padrão”).",
-        "Podemos destrinchar o risco total de um investimento, dois grandes grupos, que são chamados de: - Risco sistêmic",
-        "ado por flutuações na moeda local do investidor em relação à moeda de investimento estrangeiro.",
-        "Esses riscos podem ser mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
-        "Isso torna a análise de risco político um componente importante do investimento em títulos soberanos.",
-        " base ocorre quando o hedge é imperfeito, de modo que as perdas em um investimento não são exatamente compensadas pelo hedge.",
-        "Um Sistema de Gestão de Risco no processo de investimento é uma ferramenta crucial para auxiliar investidores, gestor"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.strategy",
       "form": "estratégia",
       "general_senses": 3,
@@ -873,6 +820,59 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.invest",
+      "form": "investimento",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 74,
+      "quotes": [
+        "a contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
+        "e desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
+        "e Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth pa",
+        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
+        "r a execução rápida de ordens, normalmente com um curto horizontes de investimento.",
+        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tr",
+        " esse tipo de análise pode não se valer de eventuais oportunidades de investimento por desconsiderar ativos cujos setores não apresentem boas ",
+        "Assim, análises de investimento Bottom-up podem levar a estilos mais táticos e mais ativos ",
+        "licam à carteira de ativos da classe de cotas do fundo incentivado de investimento em infraestrutura – FI-Infra.",
+        "O gestor da classe Renda Fixa - Simples deve adotar estratégia de investimento que proteja a classe de riscos de perdas e volatilidade.",
+        "A classe tipificada como MULTIMERCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de con",
+        "As classes de investimento em cotas devem adquirir classes do mesmo tipo que a sua, ex",
+        "Já os limites previstos para títulos e contratos de investimento coletivo, CBIO, créditos de carbono e criptoativos ficam ma",
+        "ssim como de manter sua carteira de ativos adequada a sua política de investimento.",
+        "entais da gestão de risco incluem: - Definição clara dos objetivos de investimento: é essencial definir claramente os objetivos de investiment",
+        "tivos de investimento: é essencial definir claramente os objetivos de investimento antes de tomar qualquer decisão.",
+        ", como inadimplência de emissores de títulos, e riscos específicos do investimento, como mudanças na regulamentação ou na gestão da empresa.",
+        "A gestão de risco desempenha um papel fundamental no processo de investimento e na gestão de carteiras.",
+        " se destaca como uma ferramenta crucial para o sucesso no processo de investimento.",
+        "onando uma visão holística e estratégica para a tomada de decisões de investimento mais conscientes e assertivas.",
+        "Neste caso, é utilizado o cálculo de desvio padrão dos retornos do investimento; ou - Volatilidade IMPLÍCITA: Estimada através da variação ",
+        "❑ EXEMPLOS: investimento em imóveis, ações de pequenas empresas, ativos com carência",
+        "consideração importante a ser feita ao analisar possíveis decisões de investimento.",
+        "No entanto, quanto maior o risco, maior o retorno exigido por aquele investimento e caso dois investimentos possuam o mesmo retorno, devemos ",
+        "tivo; - Quanto maior o desvio padrão/variância, maior será o risco do investimento (mais ele estará se “desviando do seu padrão”).",
+        "Podemos destrinchar o risco total de um investimento, dois grandes grupos, que são chamados de: - Risco sistêmic",
+        "ado por flutuações na moeda local do investidor em relação à moeda de investimento estrangeiro.",
+        "Esses riscos podem ser mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
+        "Isso torna a análise de risco político um componente importante do investimento em títulos soberanos.",
+        " base ocorre quando o hedge é imperfeito, de modo que as perdas em um investimento não são exatamente compensadas pelo hedge.",
+        "Um Sistema de Gestão de Risco no processo de investimento é uma ferramenta crucial para auxiliar investidores, gestor",
+        "rem, monitorarem e mitigarem os riscos associados às suas decisões de investimento.",
+        "ve ser capaz de identificar todos os riscos relevantes ao processo de investimento, incluindo risco de mercado, de crédito, operacional, de li",
+        "sões sobre se o desempenho foi afetado principalmente por decisões de investimento, pelo mercado em geral ou pelo acaso.",
+        "íquido (VPL) de um projeto seja igual a zero, ou seja, é o retorno do investimento.",
+        "hmark pode influenciar em demasia as decisões ao longo do processo de investimento.",
+        "necessariamente tais benchmarks refletem a natureza e a finalidade do investimento, o que deve levar a uma conclusão equivocada.",
+        "Estilos de investimento são, por exemplo, Value, Growth, Small, Mid e Large Cap.",
+        "o são conhecidos, facilmente entendidos e amplamente disponíveis para investimento; - Apropriado: se refletir o estilo do gestor, será um benc",
+        "oritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos da carteira."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.company",
       "form": "empresas",
       "general_senses": 4,
@@ -921,58 +921,6 @@
         "Isso porque o objetivo é identificar empresas com perspectivas de grande crescimento de lucros, o que se ",
         "- Exemplos: empresas do setor de tecnologia.",
         "elevantes desse estilo: - Múltiplos: esta estratégia costuma focar em empresas que estão descontadas através de indicadores fundamentalist"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.fund",
-      "form": "fundos",
-      "general_senses": 10,
-      "glosses": [
-        "o lado inferior de qualquer coisa"
-      ],
-      "occurrences": 67,
-      "quotes": [
-        "s, e também a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
-        "Esse Viés de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aquel",
-        "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar o desempenho histórico ",
-        "Trata-se de um fundo de investimento que investe em outros tipos de fundos.",
-        "m outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos",
-        " riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
-        "Como o papel do gestor de um FoF é investir em outros fundos, seu trabalho é muito focado no conhecimento desses gestore",
-        "Estes fundos possuem dificuldades de replicação dos seus benchmarks por ",
-        "(Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em det",
-        "são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
-        "Estes fundos devem manter 95%, no mínimo, de seu patrimônio líquido apli",
-        "ETFs ASG são fundos de índice que investem em empresas levando em conta critéri",
-        "Com isso, esses fundos devem registrar menos volatilidade que as estratégias long ",
-        "ores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais agressivos.",
-        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com boas práticas s",
-        " que um fundo de investimento cujo gestor aloca os recursos em outros fundos.",
-        " um importante trabalho do gestor do FoF é escolher diligentemente os fundos nos quais investirá dinheiro dos próprios cotistas.",
-        "do, a Anbima possui um questionário específico de Due Dilligence para fundos de investimentos.",
-        "bre a constituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços par",
-        "undos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
-        "Os fundos funcionam sob a autorização da CVM, órgão responsável por s",
-        "ados pela ANBIMA, que **AUXILIA** no aperfeiçoamento da legislação de fundos de investimento, através de códigos próprios.",
-        "Todos os fundos de investimentos devem ser constituídos por deliberação con",
-        "**Carência:** Os fundos abertos podem estabelecer um prazo mínimo de permanência pa",
-        "nicar imediatamente aos distribuidores sobre a eventual existência de fundos, classes e subclasses de cotas que não estejam admitindo ca",
-        "No caso de fundos, classes e subclasses destinadas exclusivamente a investido",
-        "- As demonstrações contábeis dos fundos que contam com diferentes classes são compostas, no mínimo,",
-        "- A auditoria das demonstrações contábeis não é obrigatória para fundos e classes em atividade há menos de 90 (noventa) dias.",
-        "A classe de cotas que possa adquirir cotas de outros fundos de investimento deve estabelecer em seu regulamento que sua",
-        "nto que suas taxas de administração e gestão compreendem as taxas dos fundos investidos.",
-        "- taxas de administração e de gestão; - montantes devidos a fundos investidores na hipótese de acordo de remuneração com base ",
-        "bre a constituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços par",
-        "undos de investimento, bem como sobre a prestação de serviços para os fundos.",
-        "icada em 22/12/2022 e revogou as normas anteriores que tratavam sobre fundos de investimento.",
-        "por terceiros não ligados ao gestor da classe investidora; - ETF; e - fundos e classes de cotas que não sejam categorizados como FIF.",
-        "se que possuir o compromisso de obter o tratamento fiscal destinado a fundos de longo prazo previsto na regulamentação fiscal vigente ou",
-        "tributação, a Receita Federal tem a sua própria classificação para os fundos de investimento.",
-        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua carteira co",
-        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua carteira co",
-        "- Fundos de Ações: fundos de investimentos que a carteira seja composta por no mínimo"
       ],
       "stratum": "D_risk_surface"
     },
@@ -1132,6 +1080,58 @@
         "Assim, ao selecionar investimentos que estamos avaliando para fazer aportes, geralmente compar",
         "e designar aos gestores um benchmark diferente daquele da política de investimentos, ou seja, esse nível está relacionado à alocação tática de ",
         "criador do Índice de Sharpe, que mensura o retorno de uma carteira de investimentos (ou fundos de investimentos) por sua volatilidade (sendo a "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 56,
+      "quotes": [
+        "s, e também a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+        "Esse Viés de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aquel",
+        "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar o desempenho histórico ",
+        "Trata-se de um fundo de investimento que investe em outros tipos de fundos.",
+        "m outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos",
+        " riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
+        "Como o papel do gestor de um FoF é investir em outros fundos, seu trabalho é muito focado no conhecimento desses gestore",
+        "Estes fundos possuem dificuldades de replicação dos seus benchmarks por ",
+        "(Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em det",
+        "são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
+        "Estes fundos devem manter 95%, no mínimo, de seu patrimônio líquido apli",
+        "ETFs ASG são fundos de índice que investem em empresas levando em conta critéri",
+        "Com isso, esses fundos devem registrar menos volatilidade que as estratégias long ",
+        "ores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais agressivos.",
+        " que um fundo de investimento cujo gestor aloca os recursos em outros fundos.",
+        " um importante trabalho do gestor do FoF é escolher diligentemente os fundos nos quais investirá dinheiro dos próprios cotistas.",
+        "do, a Anbima possui um questionário específico de Due Dilligence para fundos de investimentos.",
+        "undos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
+        "Os fundos funcionam sob a autorização da CVM, órgão responsável por s",
+        "Todos os fundos de investimentos devem ser constituídos por deliberação con",
+        "**Carência:** Os fundos abertos podem estabelecer um prazo mínimo de permanência pa",
+        "nicar imediatamente aos distribuidores sobre a eventual existência de fundos, classes e subclasses de cotas que não estejam admitindo ca",
+        "No caso de fundos, classes e subclasses destinadas exclusivamente a investido",
+        "- As demonstrações contábeis dos fundos que contam com diferentes classes são compostas, no mínimo,",
+        "- A auditoria das demonstrações contábeis não é obrigatória para fundos e classes em atividade há menos de 90 (noventa) dias.",
+        "nto que suas taxas de administração e gestão compreendem as taxas dos fundos investidos.",
+        "- taxas de administração e de gestão; - montantes devidos a fundos investidores na hipótese de acordo de remuneração com base ",
+        "undos de investimento, bem como sobre a prestação de serviços para os fundos.",
+        "por terceiros não ligados ao gestor da classe investidora; - ETF; e - fundos e classes de cotas que não sejam categorizados como FIF.",
+        "se que possuir o compromisso de obter o tratamento fiscal destinado a fundos de longo prazo previsto na regulamentação fiscal vigente ou",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua carteira co",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua carteira co",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja composta por no mínimo",
+        "Nos fundos sem carência (ou com carência superior a 90 dias), ele ocor",
+        "Já nos fundos com carência menor que 90 dias, o “come-cotas” ocorrerá na ",
+        "Diferentemente dos fundos abertos, onde o cotista resgata as suas cotas a qualquer mo",
+        " abertos, onde o cotista resgata as suas cotas a qualquer momento, os fundos fechados possuem tributação quando ocorrer um dos itens aba",
+        "- Dividendos: por serem empresas, os fundos fechados podem fazer distribuição de dividendos.",
+        "- Come-Cotas: Os fundos fechados podem sofrer também a incidência de come-cotas, co",
+        "A alíquota seguirá a mesma lógica dos fundos abertos, dependendo exclusivamente de sua composição: - Ren"
       ],
       "stratum": "D_risk_surface"
     },
@@ -1891,46 +1891,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.analyse",
-      "form": "análise",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 30,
-      "quotes": [
-        "is estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para escolher quais ativos investir.",
-        "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de",
-        "Por fim, na análise da qualidade da gestão ativa, é importante diferenciarmos o",
-        "A área de análise é de grande importância para o gestor de recursos.",
-        "elacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; -",
-        "Esta análise se vale de múltiplos (indicadores extraídos de informações ",
-        "Em resumo, a análise técnica estuda as movimentações nos preços passados e, a pa",
-        "A análise técnica apresenta várias vantagens e também alguns desafios",
-        "o tempo; - Oscilador de Médias Móveis: indicador técnico utilizado na análise técnica para ajudar a identificar a força e a direção de um",
-        "- Envelopes: indicador técnico na análise técnica que é usado para ajudar os traders a identificar fa",
-        "O envelope mais comum na análise técnica são as bandas de Bollinger; - Bandas de Bollinger: ",
-        "Movimento Direcional Médio (ADX), é um indicador técnico utilizado na análise técnica para avaliar a força e a direção de uma tendência d",
-        "Oscilador Estocástico, é um indicador técnico amplamente utilizado na análise técnica para ajudar a identificar possíveis pontos de rever",
-        "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
-        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como ",
-        "Ao iniciar com um olhar mais holístico, os investidores partem da análise e da previsão de variáveis macroeconômicas, como PIB, balan",
-        "Porém, esse tipo de análise pode não se valer de eventuais oportunidades de investiment",
-        "Ao invés disso, os defensores da análise Bottom-up observam primeiro os fatores microeconômicos que ",
-        " levar a estilos mais táticos e mais ativos de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratég",
-        "A contratação de terceiros deve contar com prévia e criteriosa análise e seleção do contratado, devendo o prestador de serviços es",
-        "Isso torna a análise de risco político um componente importante do investimento ",
-        "Tradicionalmente, a análise de crédito se concentrava em fatores financeiros como a cap",
-        "Entre esses momentos, há seis níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
-        "Temos ainda mais três níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
-        "A conclusão através desta análise é que, entre duas opções, devemos escolher aquela que possu",
-        "Se a análise resultar em um índice de Sharpe negativo, isso significa qu",
-        "Com base nas premissas feitas na análise de regressão, podemos concluir que o retorno (valor agregad",
-        "Contudo, pela análise de regressão, também devemos construir uma medida de signif",
-        "Os fundos de crédito privado com análise de risco de crédito ASG e títulos temáticos são uma modalid",
-        "ículos de investimento, devendo adotar controles para a realização da análise e monitoramento dos ativos de crédito privado e riscos de c"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "quantity.performance",
       "form": "desempenho",
       "general_senses": 3,
@@ -2373,42 +2333,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "risk.financial",
-      "form": "Risco",
-      "general_senses": 7,
-      "glosses": [
-        "um risco empreendido sem levar em conta possíveis perdas ou danos",
-        "A qualidade de ser algo que não te deixa avançar"
-      ],
-      "occurrences": 23,
-      "quotes": [
-        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
-        "l sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
-        "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
-        "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
-        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
-        "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
-        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ati",
-        "e pode ser considerado também como a soma do “Risco Sistêmico” com o “Risco não-sistêmico”.",
-        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio",
-        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local d",
-        "Risco de Inflação genericamente se refere a situações em que os p",
-        "cionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compr",
-        "er de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra.",
-        "O Risco de Volatilidade está associado a uma mudança de preço de um",
-        "O Risco Soberano é a chance de um governo não honrar com o pagament",
-        "O Risco de Contraparte refere-se à possibilidade de um dos envolvid",
-        "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidores que recebem fluxos de caixa",
-        "lidade (sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total).",
-        "s de riscos financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: ",
-        " - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
-        "isco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
-        "e esse risco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
-        "udança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "action.decide",
       "form": "decisões",
       "general_senses": 5,
@@ -2609,6 +2533,73 @@
         "O objetivo da atribuição macro é fornecer informações sobre as decisões feitas pelo patrocinador do fundo e medir",
         "Além disso, informações de valuations e fluxos de caixa externos são necessárias pa",
         "a defende que os preços de mercado incorporam a todo momento todas as informações disponíveis, de modo que os títulos sempre estão precificad"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.analyse",
+      "form": "análise",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 22,
+      "quotes": [
+        "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de",
+        "Por fim, na análise da qualidade da gestão ativa, é importante diferenciarmos o",
+        "A área de análise é de grande importância para o gestor de recursos.",
+        "elacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; -",
+        "Esta análise se vale de múltiplos (indicadores extraídos de informações ",
+        "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
+        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como ",
+        "Ao iniciar com um olhar mais holístico, os investidores partem da análise e da previsão de variáveis macroeconômicas, como PIB, balan",
+        "Porém, esse tipo de análise pode não se valer de eventuais oportunidades de investiment",
+        "Ao invés disso, os defensores da análise Bottom-up observam primeiro os fatores microeconômicos que ",
+        " levar a estilos mais táticos e mais ativos de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratég",
+        "A contratação de terceiros deve contar com prévia e criteriosa análise e seleção do contratado, devendo o prestador de serviços es",
+        "Isso torna a análise de risco político um componente importante do investimento ",
+        "Tradicionalmente, a análise de crédito se concentrava em fatores financeiros como a cap",
+        "Entre esses momentos, há seis níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
+        "Temos ainda mais três níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
+        "A conclusão através desta análise é que, entre duas opções, devemos escolher aquela que possu",
+        "Se a análise resultar em um índice de Sharpe negativo, isso significa qu",
+        "Com base nas premissas feitas na análise de regressão, podemos concluir que o retorno (valor agregad",
+        "Contudo, pela análise de regressão, também devemos construir uma medida de signif",
+        "Os fundos de crédito privado com análise de risco de crédito ASG e títulos temáticos são uma modalid",
+        "ículos de investimento, devendo adotar controles para a realização da análise e monitoramento dos ativos de crédito privado e riscos de c"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "Risco",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 22,
+      "quotes": [
+        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
+        "l sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
+        "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
+        "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
+        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
+        "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
+        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ati",
+        "e pode ser considerado também como a soma do “Risco Sistêmico” com o “Risco não-sistêmico”.",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local d",
+        "Risco de Inflação genericamente se refere a situações em que os p",
+        "cionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compr",
+        "er de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra.",
+        "O Risco de Volatilidade está associado a uma mudança de preço de um",
+        "O Risco Soberano é a chance de um governo não honrar com o pagament",
+        "O Risco de Contraparte refere-se à possibilidade de um dos envolvid",
+        "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidores que recebem fluxos de caixa",
+        "lidade (sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total).",
+        "s de riscos financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: ",
+        " - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "isco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "e esse risco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
+        "udança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3093,37 +3084,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "system.service",
-      "form": "serviços",
-      "general_senses": 13,
-      "glosses": [
-        "uma parte específica do trabalho que requer ser feito como um dever ou"
-      ],
-      "occurrences": 19,
-      "quotes": [
-        "s de tecnologia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
-        "ok e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
-        "onsumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
-        "r de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
-        "quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
-        "setor financeiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
-        "informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
-        "las previstas no regulamento e no respectivo contrato de prestação de serviços.",
-        "- Deve fiscalizar os serviços prestados por ele contratado.",
-        "do, com terceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
-        "informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
-        " conte com cogestão da carteira de ativos, o contrato de prestação de serviços ao fundo celebrado com o cogestor deve conter dispositivo l",
-        "internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
-        "flação genericamente se refere a situações em que os preços de bens e serviços aumentam mais do que o esperado (ou inversamente).",
-        "es pagam cupons fixos e a alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
-        "umo, o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma elevação generalizad",
-        " principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
-        "A administração fiduciária compreende o conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
-        "estimento e no limite de suas competências, terceiros para prestar os serviços permitidos pela regulação em vigor específicos para cada ti"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "action.calculate",
       "form": "calcular",
       "general_senses": 4,
@@ -3382,6 +3342,33 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.service",
+      "form": "serviços",
+      "general_senses": 13,
+      "glosses": [
+        "uma parte específica do trabalho que requer ser feito como um dever ou"
+      ],
+      "occurrences": 15,
+      "quotes": [
+        "s de tecnologia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
+        "ok e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
+        "onsumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
+        "r de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+        "quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
+        "setor financeiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
+        "- Deve fiscalizar os serviços prestados por ele contratado.",
+        "do, com terceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
+        "internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
+        "flação genericamente se refere a situações em que os preços de bens e serviços aumentam mais do que o esperado (ou inversamente).",
+        "es pagam cupons fixos e a alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
+        "umo, o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma elevação generalizad",
+        " principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "A administração fiduciária compreende o conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "estimento e no limite de suas competências, terceiros para prestar os serviços permitidos pela regulação em vigor específicos para cada ti"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "temporal.period",
       "form": "períodos",
       "general_senses": 16,
@@ -3582,30 +3569,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.fund",
-      "form": "Fundos",
-      "general_senses": 10,
-      "glosses": [
-        "o lado inferior de qualquer coisa"
-      ],
-      "occurrences": 12,
-      "quotes": [
-        "ssivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
-        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
-        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
-        " de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
-        "aula, vamos abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
-        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
-        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
-        "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
-        "XA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
-        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
-        "estimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
-        "para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.model",
       "form": "modelos",
       "general_senses": 10,
@@ -3748,27 +3711,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.analyse",
-      "form": "Análise",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 11,
-      "quotes": [
-        "racionais: o questionário aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco",
-        "ação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - ",
-        "nge aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relat",
-        "e análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-        " - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-        "A Análise Fundamentalista utiliza tantos dados financeiros históricos",
-        "**OBS:** a Análise Fundamentalista NÃO utiliza na sua concepção, os preços que",
-        "A Análise Técnica (Gráfica) estabelece projeções para os preços das a",
-        "Dentre os principais modelos de Análise Técnica, destacamos:",
-        "Dentre os principais modelos de Análise Técnica, destacamos:",
-        "Dentre as principais características, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das em"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "actor.institution",
       "form": "instituição",
       "general_senses": 4,
@@ -3812,27 +3754,6 @@
         "Contudo, pela análise de regressão, também devemos construir uma medida de significância estatística.",
         "Sendo assim, a Convexidade é utilizada como medida correção!",
         "A Convexidade é uma medida melhor para avaliar o impacto nos preços dos títulos quando"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "technical.yield_curve",
-      "form": "curva",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 11,
-      "quotes": [
-        "camente nesse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
-        "tes de mercado, ou seja, o que eles antecipam que irá acontecer com a curva.",
-        "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
-        "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
-        " a carteira bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
-        "e ele sofrerá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
-        "O movimento contrário seria o Flattening ou achatamento da curva.",
-        "ém é beneficiada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimen",
-        "e as taxas das extremidades sobem mais que as taxas intermediárias da curva, ou mesmo as taxas das extremidades sobem e a da intermediá",
-        "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia mais lucrativa, embora posiçõe",
-        "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia mais lucrativa, embora posiçõe"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3907,6 +3828,28 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.fund",
+      "form": "Fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 10,
+      "quotes": [
+        "ssivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
+        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
+        " de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
+        "XA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+        "estimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.scenario",
       "form": "cenários",
       "general_senses": 4,
@@ -3971,6 +3914,25 @@
         " bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em perío",
         "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
         "Assim como ocorre quando temos um único passivo para imunizar, quando temos vários é necessário também have"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.yield_curve",
+      "form": "curva",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 9,
+      "quotes": [
+        "camente nesse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
+        "tes de mercado, ou seja, o que eles antecipam que irá acontecer com a curva.",
+        "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
+        " a carteira bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
+        "e ele sofrerá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
+        "ém é beneficiada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimen",
+        "e as taxas das extremidades sobem mais que as taxas intermediárias da curva, ou mesmo as taxas das extremidades sobem e a da intermediá",
+        "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia mais lucrativa, embora posiçõe",
+        "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia mais lucrativa, embora posiçõe"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4307,6 +4269,28 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.stock_exchange",
+      "form": "Exchange",
+      "general_senses": 17,
+      "glosses": [
+        "(chess) the capture by both players (usually on consecutive moves) of ",
+        "(chess) gaining (or losing) a rook in return for a knight or bishop; \"",
+        "the act of putting one thing or person in the place of another: \"he se",
+        "reciprocal transfer of equivalent sums of money (especially the curren",
+        "the act of giving something in return for something received; \"deducti",
+        "the act of changing one thing for another thing; \"Adam was promised im"
+      ],
+      "occurrences": 5,
+      "quotes": [
+        ", existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
+        "ente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
+        "s Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
+        " Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
+        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.buyer",
       "form": "compradores",
       "general_senses": 4,
@@ -4428,7 +4412,7 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "system.service",
+      "concept_id": "entity.service",
       "form": "serviço",
       "general_senses": 13,
       "glosses": [
@@ -4549,6 +4533,20 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.stock_exchange",
+      "form": "bolsa",
+      "general_senses": 8,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "Da mesma forma que no Brasil, as empresas americanas negociadas na bolsa possuem dois tipos classificação de ações.",
+        " determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechad",
+        " da cota: as cotas podem ser transferidas por cessão ou negociadas em bolsa/balcão organizado, ou seja, podem ser vendidas a um terceir",
+        "Além disso, a bolsa desenvolveu um mecanismo de proteção do sistema, baseada em"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.dividend",
       "form": "Dividendos",
       "general_senses": 3,
@@ -4573,6 +4571,20 @@
         " o cenário para os próximos meses não seja favorável para o Ibovespa (Carteira de Ações), ele pode diminuir a exposição a ações e aumentan",
         "muito comum de ser visto em carteira de ações de corretoras (exemplo: Carteira Recomendada Mensal de Ações).",
         "t Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de Proporção Constante”, possui como estratégia uma alocaçã"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.analyse",
+      "form": "Análise",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "racionais: o questionário aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco",
+        "e análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+        " - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+        "Dentre as principais características, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das em"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5359,6 +5371,20 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.ladder",
+      "form": "escada",
+      "general_senses": 3,
+      "glosses": [
+        "um lance de escadas"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "Temos ainda a estratégia Ladder, também chamada de escada (em tradução livre), que é construída de forma que se tenha",
+        " um gestor tiver R$ 100.000 para investir em títulos, a estratégia de escada (ladder) sugeriria que ele comprasse vários títulos com dif"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.invest",
       "form": "Investir",
       "general_senses": 7,
@@ -5703,17 +5729,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.analyse",
-      "form": "ANÁLISE",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 1,
-      "quotes": [
-        "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado "
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "action.stop",
       "form": "stop",
       "general_senses": 22,
@@ -5799,20 +5814,6 @@
       "occurrences": 1,
       "quotes": [
         "Quando do ingresso do cotista no fundo, o agente que tiver realizado a distribuição de cotas deve disponibil"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "action.invest",
-      "form": "Investimento",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "s abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5997,6 +5998,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.monitor",
+      "form": "monitorar",
+      "general_senses": 3,
+      "glosses": [
+        "Vigiar; ficar de olho em; manter sob vigilância"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Com isso, é possível monitorar continuamente o orçamento de riscos para que quaisquer desv"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "risk.default",
       "form": "default",
       "general_senses": 5,
@@ -6162,6 +6176,19 @@
       "occurrences": 1,
       "quotes": [
         "título com a mudança na taxa (YTM) Preço estimado baseado na Duration Erro de Precificação YTM Y* Preço 8% 9% 10% Δi = +1% Δi = -1% Δp"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.bullet_portfolio",
+      "form": "bala",
+      "general_senses": 3,
+      "glosses": [
+        "um doce feito de açúcar aromatizado, muitas vezes combinado com frutas"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o pas"
       ],
       "stratum": "D_risk_surface"
     },

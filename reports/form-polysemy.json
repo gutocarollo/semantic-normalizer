@@ -1,14 +1,14 @@
 {
   "backtest": {
     "best_threshold": 3,
-    "false_alarm_on_known_right": 0.107,
+    "false_alarm_on_known_right": 0.103,
     "known_right": {
       "max": 7,
-      "mean": 0.79,
-      "median": 0.0,
+      "mean": 0.76,
+      "median": 0,
       "min": 0,
-      "n": 28,
-      "stdev": 1.5
+      "n": 29,
+      "stdev": 1.48
     },
     "known_wrong": {
       "max": 9,
@@ -20,18 +20,18 @@
     },
     "recall_of_known_wrong": 0.706,
     "usable": true,
-    "youden_j": 0.599
+    "youden_j": 0.602
   },
-  "bare_automatic_forms": 619,
-  "bare_forms": 777,
+  "bare_automatic_forms": 682,
+  "bare_forms": 840,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 4.03,
-    "median": 3,
+    "mean": 3.9,
+    "median": 2.0,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.41,
-    "zero_sense_forms": 191
+    "stdev": 5.49,
+    "zero_sense_forms": 217
   },
   "forms": [
     {
@@ -48,6 +48,22 @@
       ],
       "language": "en",
       "lemma_used": "run",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.call_option",
+      "form": "call",
+      "general_senses": 41,
+      "glosses": [
+        "a special disposition (as if from a divine source) to pursue a particu",
+        "the option to buy a given stock (or stock index or commodity future) a",
+        "(sports) the decision made by an umpire or referee; \"he was ejected fo",
+        "a visit in an official or professional capacity; \"the pastor's calls o",
+        "a brief social visit; \"senior professors' wives no longer make afterno",
+        "a telephone connection; \"she reported several anonymous calls\"; \"he pl"
+      ],
+      "language": "en",
+      "lemma_used": "call",
       "policy": "auto"
     },
     {
@@ -370,8 +386,24 @@
       "policy": "auto"
     },
     {
-      "concept_id": "system.service",
+      "concept_id": "entity.service",
       "form": "service",
+      "general_senses": 18,
+      "glosses": [
+        "Canadian writer (born in England) who wrote about life in the Yukon Te",
+        "the performance of duties by a waiter or servant; \"that restaurant has",
+        "periodic maintenance on a car or machine; \"it was time for an overhaul",
+        "the act of delivering a writ or summons upon someone; \"he accepted ser",
+        "(sports) a stroke that puts the ball in play; \"his powerful serves won",
+        "work done by one person or group that benefits another; \"budget separa"
+      ],
+      "language": "en",
+      "lemma_used": "service",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.service",
+      "form": "services",
       "general_senses": 18,
       "glosses": [
         "Canadian writer (born in England) who wrote about life in the Yukon Te",
@@ -415,6 +447,22 @@
       ],
       "language": "en",
       "lemma_used": "active",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.stock_exchange",
+      "form": "exchange",
+      "general_senses": 17,
+      "glosses": [
+        "(chess) the capture by both players (usually on consecutive moves) of ",
+        "(chess) gaining (or losing) a rook in return for a knight or bishop; \"",
+        "the act of putting one thing or person in the place of another: \"he se",
+        "reciprocal transfer of equivalent sums of money (especially the curren",
+        "the act of giving something in return for something received; \"deducti",
+        "the act of changing one thing for another thing; \"Adam was promised im"
+      ],
+      "language": "en",
+      "lemma_used": "exchange",
       "policy": "auto"
     },
     {
@@ -744,7 +792,7 @@
       "policy": "auto"
     },
     {
-      "concept_id": "system.service",
+      "concept_id": "entity.service",
       "form": "serviço",
       "general_senses": 13,
       "glosses": [
@@ -755,7 +803,7 @@
       "policy": "auto"
     },
     {
-      "concept_id": "system.service",
+      "concept_id": "entity.service",
       "form": "serviços",
       "general_senses": 13,
       "glosses": [
@@ -1256,6 +1304,22 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.put_option",
+      "form": "put",
+      "general_senses": 10,
+      "glosses": [
+        "the option to sell a given stock (or stock index or commodity future) ",
+        "estimate; \"We put the time of arrival at 8 P.M.\"",
+        "arrange thoughts, ideas, temporal events; \"arrange my schedule\"; \"set ",
+        "formulate in a particular style or language; \"I wouldn't put it that w",
+        "attribute or give; \"She put too much emphasis on her the last statemen",
+        "cause to be in a certain state; cause to be in a certain relation; \"Th"
+      ],
+      "language": "en",
+      "lemma_used": "put",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.resource",
       "form": "recurso",
       "general_senses": 10,
@@ -1479,6 +1543,22 @@
       "policy": "auto"
     },
     {
+      "concept_id": "action.monitor",
+      "form": "monitor",
+      "general_senses": 9,
+      "glosses": [
+        "an ironclad vessel built by Federal forces to do battle with the Merri",
+        "any of various large tropical carnivorous lizards of Africa and Asia a",
+        "a piece of electronic equipment that keeps track of the operation of a",
+        "electronic equipment that is used to check the quality or content of e",
+        "display produced by a device that takes signals and displays them on a",
+        "someone who gives a warning so that a mistake can be avoided"
+      ],
+      "language": "en",
+      "lemma_used": "monitor",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.preserve",
       "form": "preserve",
       "general_senses": 9,
@@ -1633,6 +1713,15 @@
       "language": "en",
       "lemma_used": "sold",
       "policy": "review"
+    },
+    {
+      "concept_id": "entity.stock_exchange",
+      "form": "bolsa",
+      "general_senses": 8,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "bolsa",
+      "policy": "auto"
     },
     {
       "concept_id": "modality.capability",
@@ -2182,6 +2271,22 @@
       ],
       "language": "en",
       "lemma_used": "regulation",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.replication",
+      "form": "replication",
+      "general_senses": 7,
+      "glosses": [
+        "the act of making copies; \"Gutenberg's reproduction of holy texts was ",
+        "the repetition of an experiment in order to test the validity of its c",
+        "copy that is not the original; something that has been copied",
+        "the repetition of a sound resulting from reflection of the sound waves",
+        "(law) a pleading made by a plaintiff in reply to the defendant's plea ",
+        "a quick reply to a question or remark (especially a witty or critical "
+      ],
+      "language": "en",
+      "lemma_used": "replication",
       "policy": "auto"
     },
     {
@@ -2900,6 +3005,22 @@
       "language": "pt-BR",
       "lemma_used": "servidor",
       "policy": "review"
+    },
+    {
+      "concept_id": "entity.treasury_security",
+      "form": "treasury",
+      "general_senses": 6,
+      "glosses": [
+        "the federal department that collects revenue and administers federal f",
+        "a depository (a room or building) where wealth and precious objects ca",
+        "the British cabinet minister responsible for economic strategy",
+        "the government department responsible for collecting and managing and ",
+        "negotiable debt obligations of the United States government which guar",
+        "the funds of a government or institution or individual"
+      ],
+      "language": "en",
+      "lemma_used": "treasury",
+      "policy": "auto"
     },
     {
       "concept_id": "entity.fund_share",
@@ -3850,6 +3971,20 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.ladder",
+      "form": "ladder",
+      "general_senses": 4,
+      "glosses": [
+        "steps consisting of two parallel members connected by rungs; for climb",
+        "a row of unravelled stitches; \"she got a run in her stocking\"",
+        "ascending stages by which somebody or something can progress; \"he clim",
+        "come unraveled or undone as if by snagging; \"Her nylons were running\""
+      ],
+      "language": "en",
+      "lemma_used": "ladder",
+      "policy": "auto"
+    },
+    {
       "concept_id": "modality.logical_necessity",
       "form": "must",
       "general_senses": 4,
@@ -3955,6 +4090,20 @@
       ],
       "language": "en",
       "lemma_used": "portfolio",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.premise",
+      "form": "premise",
+      "general_senses": 4,
+      "glosses": [
+        "a statement that is assumed to be true and from which a conclusion can",
+        "take something as preexisting and given",
+        "furnish with a preface or introduction; \"She always precedes her lectu",
+        "set forth beforehand, often as an explanation; \"He premised these rema"
+      ],
+      "language": "en",
+      "lemma_used": "premise",
       "policy": "auto"
     },
     {
@@ -4210,6 +4359,30 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "arbitragem",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.bullet_portfolio",
+      "form": "bala",
+      "general_senses": 3,
+      "glosses": [
+        "um doce feito de açúcar aromatizado, muitas vezes combinado com frutas"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "bala",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.bullet_portfolio",
+      "form": "bullet",
+      "general_senses": 3,
+      "glosses": [
+        "(baseball) a pitch thrown with maximum velocity; \"he swung late on the",
+        "a projectile that is fired from a gun",
+        "a high-speed passenger train"
+      ],
+      "language": "en",
+      "lemma_used": "bullet",
       "policy": "auto"
     },
     {
@@ -4505,6 +4678,17 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.ladder",
+      "form": "escada",
+      "general_senses": 3,
+      "glosses": [
+        "um lance de escadas"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "escada",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.strategy",
       "form": "estratégia",
       "general_senses": 3,
@@ -4747,6 +4931,19 @@
       "policy": "auto"
     },
     {
+      "concept_id": "action.mitigate",
+      "form": "mitigation",
+      "general_senses": 3,
+      "glosses": [
+        "the action of lessening in severity or intensity; \"the object being co",
+        "to act in such a way as to cause an offense to seem less serious",
+        "a partial excuse to mitigate censure; an attempt to represent an offen"
+      ],
+      "language": "en",
+      "lemma_used": "mitigation",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.money",
       "form": "money",
       "general_senses": 3,
@@ -4757,6 +4954,17 @@
       ],
       "language": "en",
       "lemma_used": "money",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "action.monitor",
+      "form": "monitorar",
+      "general_senses": 3,
+      "glosses": [
+        "Vigiar; ficar de olho em; manter sob vigilância"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "monitorar",
       "policy": "auto"
     },
     {
@@ -5185,6 +5393,18 @@
       "policy": "auto"
     },
     {
+      "concept_id": "actor.broker",
+      "form": "broker",
+      "general_senses": 2,
+      "glosses": [
+        "a businessman who buys or sells for another in exchange for a commissi",
+        "act as a broker"
+      ],
+      "language": "en",
+      "lemma_used": "broker",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.stop",
       "form": "cessar",
       "general_senses": 2,
@@ -5280,6 +5500,17 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.exchange_rate_risk",
+      "form": "câmbio",
+      "general_senses": 2,
+      "glosses": [
+        "o ato de mudar uma coisa por outra; \"Adão foi prometido a imortalidade"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "câmbio",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.source_code",
       "form": "código-fonte",
       "general_senses": 2,
@@ -5336,6 +5567,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.trade_receivable",
+      "form": "duplicata",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "duplicata",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.trade_receivable",
+      "form": "duplicatas",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "duplicata",
+      "policy": "auto"
+    },
+    {
       "concept_id": "polarity.exception",
       "form": "except",
       "general_senses": 2,
@@ -5366,6 +5615,17 @@
       ],
       "language": "en",
       "lemma_used": "governance",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.barbell",
+      "form": "haltere",
+      "general_senses": 2,
+      "glosses": [
+        "Uma barra na qual discos pesados são conectados em cada extremidade; u"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "haltere",
       "policy": "auto"
     },
     {
@@ -5488,6 +5748,27 @@
       "language": "en",
       "lemma_used": "may",
       "policy": "review"
+    },
+    {
+      "concept_id": "action.mitigate",
+      "form": "mitigar",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "mitigar",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "action.mitigate",
+      "form": "mitigate",
+      "general_senses": 2,
+      "glosses": [
+        "make less severe or harsh; \"mitigating circumstances\"",
+        "lessen or to try to lessen the seriousness or extent of; \"The circumst"
+      ],
+      "language": "en",
+      "lemma_used": "mitigate",
+      "policy": "auto"
     },
     {
       "concept_id": "technical.valuation_multiple",
@@ -5766,6 +6047,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "quantity.tax_rate",
+      "form": "alíquota",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "alíquota",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.asset",
       "form": "asset",
       "general_senses": 1,
@@ -5806,6 +6096,17 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.barbell",
+      "form": "barbell",
+      "general_senses": 1,
+      "glosses": [
+        "a bar to which heavy discs are attached at each end; used in weightlif"
+      ],
+      "language": "en",
+      "lemma_used": "barbell",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.benchmark",
       "form": "benchmark",
       "general_senses": 1,
@@ -5814,6 +6115,17 @@
       ],
       "language": "pt-BR",
       "lemma_used": "benchmark",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.bottom_up",
+      "form": "bottom-up",
+      "general_senses": 1,
+      "glosses": [
+        "of an approach to a problem that begins with details and works up to t"
+      ],
+      "language": "en",
+      "lemma_used": "bottom-up",
       "policy": "auto"
     },
     {
@@ -6160,6 +6472,50 @@
       "policy": "auto"
     },
     {
+      "concept_id": "action.mitigate",
+      "form": "mitigação",
+      "general_senses": 1,
+      "glosses": [
+        "a ação de diminuição na severidade ou intensidade"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "mitigação",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "action.monitor",
+      "form": "monitoring",
+      "general_senses": 1,
+      "glosses": [
+        "the act of observing something (and sometimes keeping a record of it);"
+      ],
+      "language": "en",
+      "lemma_used": "monitoring",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.nasdaq",
+      "form": "nasdaq",
+      "general_senses": 1,
+      "glosses": [
+        "a computerized data system to provide brokers with price quotations fo"
+      ],
+      "language": "en",
+      "lemma_used": "nasdaq",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.nasdaq",
+      "form": "nasdaq",
+      "general_senses": 1,
+      "glosses": [
+        "um sistema informatizado para fornecer corretores com cotações de preç"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "nasdaq",
+      "policy": "auto"
+    },
+    {
       "concept_id": "polarity.negation",
       "form": "nem",
       "general_senses": 1,
@@ -6189,6 +6545,28 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.optimisation",
+      "form": "optimisation",
+      "general_senses": 1,
+      "glosses": [
+        "the act of rendering optimal; \"the simultaneous optimization of growth"
+      ],
+      "language": "en",
+      "lemma_used": "optimisation",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.optimisation",
+      "form": "optimization",
+      "general_senses": 1,
+      "glosses": [
+        "the act of rendering optimal; \"the simultaneous optimization of growth"
+      ],
+      "language": "en",
+      "lemma_used": "optimization",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.option",
       "form": "opção",
       "general_senses": 1,
@@ -6207,6 +6585,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.optimisation",
+      "form": "otimização",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "otimização",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.stop",
       "form": "para",
       "general_senses": 1,
@@ -6214,6 +6601,17 @@
       "language": "pt-BR",
       "lemma_used": "para",
       "policy": "review"
+    },
+    {
+      "concept_id": "actor.sponsor",
+      "form": "patrocinador",
+      "general_senses": 1,
+      "glosses": [
+        "pessoa que faz uma doação, geralmente de algum bem material"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "patrocinador",
+      "policy": "auto"
     },
     {
       "concept_id": "quantity.percentage",
@@ -6235,6 +6633,24 @@
       ],
       "language": "pt-BR",
       "lemma_used": "porcentagem",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.premise",
+      "form": "premissa",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "premissa",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.premise",
+      "form": "premissas",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "premissa",
       "policy": "auto"
     },
     {
@@ -6275,6 +6691,15 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "rentabilidade",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.replication",
+      "form": "replicação",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "replicação",
       "policy": "auto"
     },
     {
@@ -6337,6 +6762,17 @@
       ],
       "language": "en",
       "lemma_used": "suitability",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.top_down",
+      "form": "top-down",
+      "general_senses": 1,
+      "glosses": [
+        "of an approach to a problem that begins at the highest conceptual leve"
+      ],
+      "language": "en",
+      "lemma_used": "top-down",
       "policy": "auto"
     },
     {
@@ -6692,6 +7128,24 @@
       "glosses": [],
       "language": "en",
       "lemma_used": "db",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.macaulay_duration",
+      "form": "D_Mac",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "d_mac",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.macaulay_duration",
+      "form": "D_Mac",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "d_mac",
       "policy": "auto"
     },
     {
@@ -7244,6 +7698,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.pmt",
+      "form": "PMT",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "pmt",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.present_value",
       "form": "PV",
       "general_senses": 0,
@@ -7586,6 +8049,33 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.barbell",
+      "form": "barbell",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "barbell",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.bottom_up",
+      "form": "bottom-up",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "bottom-up",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.bullet_portfolio",
+      "form": "bullet",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "bullet",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.buy_and_hold",
       "form": "buy-and-hold",
       "general_senses": 0,
@@ -7601,6 +8091,15 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "buy-and-hold",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.call_option",
+      "form": "call",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "call",
       "policy": "auto"
     },
     {
@@ -7748,6 +8247,42 @@
       "policy": "review"
     },
     {
+      "concept_id": "actor.counterparty",
+      "form": "contraparte",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "contraparte",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.counterparty",
+      "form": "contrapartes",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "contrapartes",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.broker",
+      "form": "corretora",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "corretora",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.broker",
+      "form": "corretoras",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "corretoras",
+      "policy": "auto"
+    },
+    {
       "concept_id": "actor.quotaholder",
       "form": "cotista",
       "general_senses": 0,
@@ -7763,6 +8298,15 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "cotistas",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.counterparty",
+      "form": "counterparty",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "counterparty",
       "policy": "auto"
     },
     {
@@ -7853,6 +8397,15 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "desativado",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.mandate_breach",
+      "form": "desenquadramento",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "desenquadramento",
       "policy": "auto"
     },
     {
@@ -8000,6 +8553,24 @@
       "policy": "review"
     },
     {
+      "concept_id": "technical.flattening",
+      "form": "flattening",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "flattening",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.flattening",
+      "form": "flattening",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "flattening",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.governance",
       "form": "governança",
       "general_senses": 0,
@@ -8108,6 +8679,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.ladder",
+      "form": "ladder",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ladder",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.link",
       "form": "link",
       "general_senses": 0,
@@ -8124,6 +8704,15 @@
       "language": "en",
       "lemma_used": "malfunctions",
       "policy": "review"
+    },
+    {
+      "concept_id": "action.monitor",
+      "form": "monitoramento",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "monitoramento",
+      "policy": "auto"
     },
     {
       "concept_id": "technical.hedge_fund",
@@ -8252,6 +8841,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.put_option",
+      "form": "put",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "put",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.postfixed",
       "form": "pós-fixada",
       "general_senses": 0,
@@ -8313,6 +8911,15 @@
       "language": "en",
       "lemma_used": "rebalancing",
       "policy": "review"
+    },
+    {
+      "concept_id": "technical.repo",
+      "form": "recompra",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "recompra",
+      "policy": "auto"
     },
     {
       "concept_id": "action.restart",
@@ -8441,6 +9048,24 @@
       "policy": "review"
     },
     {
+      "concept_id": "technical.repo",
+      "form": "repo",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "repo",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.repo",
+      "form": "repo",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "repo",
+      "policy": "auto"
+    },
+    {
       "concept_id": "polarity.exception",
       "form": "ressalvada",
       "general_senses": 0,
@@ -8567,6 +9192,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.consumer_staples",
+      "form": "staples",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "staples",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.start",
       "form": "started",
       "general_senses": 0,
@@ -8574,6 +9208,24 @@
       "language": "en",
       "lemma_used": "started",
       "policy": "review"
+    },
+    {
+      "concept_id": "technical.steepening",
+      "form": "steepening",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "steepening",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.steepening",
+      "form": "steepening",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "steepening",
+      "policy": "auto"
     },
     {
       "concept_id": "technical.strips",
@@ -8618,6 +9270,24 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "swaps",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.top_down",
+      "form": "top-down",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "top-down",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_security",
+      "form": "treasury",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "treasury",
       "policy": "auto"
     },
     {
@@ -8739,8 +9409,8 @@
     }
   ],
   "registry": {
-    "concepts": 351,
-    "version": "2.21.1"
+    "concepts": 385,
+    "version": "2.24.0"
   },
   "schema_version": "form-polysemy-v1"
 }

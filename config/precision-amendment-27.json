@@ -1,0 +1,17 @@
+{
+  "id": "precision-sweep-amendment-27",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; completion of amendments 25 and 26",
+  "method": "all 18 occurrences of `bolsa de valores` and all 3 of `demais prestadores de serviços` read",
+  "reason": "Batch 20 registered the concepts while the wrong claimants still held the surfaces, so the collision demoter sent both sides to review. Amendment 25 withdrew the wrong claims; nothing restores a form on its own — the same second step `ativo` needed.",
+  "operations": [
+    {"op": "promote", "concept": "entity.stock_exchange", "language": "pt-BR", "form": "bolsa de valores",
+     "right": 18, "total": 18,
+     "why": "All 18 occurrences name the venue: `A Bolsa de Valores é um mercado organizado e regulado`, `a Bolsa de Valores de Nova York (NYSE)`, `sem intermediação de uma bolsa de valores`."},
+    {"op": "promote", "concept": "actor.service_provider", "language": "pt-BR", "form": "prestadores de serviços",
+     "right": 21, "total": 21,
+     "why": "The general term. `prestadores de serviços essenciais` is longer and takes precedence, so the essential-provider concept keeps its 18 occurrences."},
+    {"op": "promote", "concept": "actor.service_provider", "language": "pt-BR", "form": "prestador de serviços",
+     "right": 6, "total": 6}
+  ]
+}

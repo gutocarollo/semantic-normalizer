@@ -72,11 +72,26 @@
       "error_rate": 0.0,
       "errors": 0,
       "found": [],
+      "registry": "2.24.0",
+      "report": "reports/unread-residual-v2240.json",
+      "sample_size": 240,
+      "seed": 141421356,
+      "state": "after the phase-two review: three concepts corrected, the action definitions rewritten, 31 CGA concepts harvested",
+      "wilson_95": [
+        0.0,
+        0.0158
+      ]
+    },
+    {
+      "error_rate": 0.0,
+      "errors": 0,
+      "found": [],
       "registry": "2.21.1",
       "report": "reports/unread-residual-v2211.json",
       "sample_size": 220,
       "seed": 57721566,
       "state": "after phase two, with the review backlog closed and the coverage target audited",
+      "superseded_note": "re-adjudicated after adversarial review: serviços, bolsa de valores, prestadores de serviços",
       "wilson_95": [
         0.0,
         0.0172
@@ -179,33 +194,33 @@
       ]
     }
   ],
-  "concepts": 351,
+  "concepts": 385,
   "errors_repaired_total": 14,
-  "events_total": 7528,
+  "events_total": 7763,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.9858,
+    "lower_bound_95": 0.987,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.21.1",
+  "registry_version": "2.24.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
       0.0,
-      0.0172
+      0.0158
     ],
     "errors_adjudicated": 0,
-    "events": 6223,
-    "sample_size": 220,
-    "share": 0.8266
+    "events": 6408,
+    "sample_size": 240,
+    "share": 0.8255
   },
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 1305,
+    "events": 1355,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1734
+    "share": 0.1745
   }
 }

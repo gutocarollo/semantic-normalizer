@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-29",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; batch 21 collisions",
+  "method": "the collision demoter fired on two surfaces where one claimant is strictly more specific than the other",
+  "reason": "A generic and a specific concept claiming the same phrase is not ambiguity — the specific one should own it.",
+  "operations": [
+    {"op": "remove_form", "concept": "technical.option", "language": "pt-BR", "form": "opção de call",
+     "why": "`opção de call` is a call, not the generic option instrument. technical.call_option owns it; technical.option keeps `opção de compra`, `opções embutidas` and the bare forms."},
+    {"op": "remove_form", "concept": "technical.option", "language": "pt-BR", "form": "opção de put"},
+    {"op": "promote", "concept": "technical.call_option", "language": "pt-BR", "form": "opção de call",
+     "right": 2, "total": 2, "why": "Held at review only by the collision withdrawn above."},
+    {"op": "promote", "concept": "technical.put_option", "language": "pt-BR", "form": "opção de put",
+     "right": 2, "total": 2}
+  ]
+}

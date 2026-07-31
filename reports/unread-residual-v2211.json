@@ -1,9 +1,28 @@
 {
-  "adjudicated_errors": 0,
+  "adjudicated_errors": 3,
   "adjudication": {
-    "errors": [],
-    "notes": "First draw after phase two closed the review backlog. Items 176, 199, 200, 201, 204 are concepts and collocations registered in this phase, matching correctly.",
-    "read_by": "all 220 drawn occurrences read against their sentences at registry 2.21.1"
+    "errors": [
+      {
+        "concept_id": "system.service",
+        "form": "serviços",
+        "index": 165,
+        "why": "system.service is defined as a software process and carries domains [software, infrastructure]; all 24 corpus matches are financial or legal services. I promoted this form with the justification `Plural of serviço` — a morphological argument, the same entry-by-resemblance defect I had removed from the vendido guard in the same phase."
+      },
+      {
+        "concept_id": "entity.securities",
+        "form": "bolsa de valores",
+        "index": 91,
+        "why": "entity.securities is `tradable financial instruments`; the corpus says `A Bolsa de Valores é um mercado organizado e regulado`. The form was added in round 1 as a phrase anchor and preserved the span while attaching the wrong concept."
+      },
+      {
+        "concept_id": "actor.essential_service_provider",
+        "form": "prestadores de serviços",
+        "index": 30,
+        "why": "The concept is `the administrator or manager`; the material contrasts `prestadores de serviços essenciais` with `os demais prestadores de serviços`."
+      }
+    ],
+    "notes": "All three found by adversarial review of phase two against a draw this file had reported as clean. Repaired by batch 20 and amendments 25-27.",
+    "read_by": "re-adjudicated after the phase-two adversarial review"
   },
   "distinct_forms_in_sample": 124,
   "events_read_by_sweep": 1305,
