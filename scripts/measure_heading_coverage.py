@@ -214,8 +214,21 @@ def conjuncts(title: str) -> list[str]:
         # plural. Rewriting a heading into a number the corpus does not use is the same error in
         # both directions. Leaving the head alone and comparing stems where the comparison
         # actually happens fixes both without inventing a spelling.
-        parts = [parts[0]] + [borrow(part.split()) for part in parts[1:]]
-    return parts
+        # Borrowing the head is a GUESS about whether the heading elides it, and the guess is
+        # wrong as often as it is right. `Classes Aberta e Fechada` does elide — `Fechada` is not
+        # a subject on its own. `Demonstrações Contábeis & Auditoria` does not — `Auditoria` is a
+        # complete subject, and lending it the head produced `Demonstrações Auditoria`, which is
+        # not a phrase in any language and denied credit to a concept that IS registered.
+        #
+        # The heuristic cannot tell these apart from shape alone, so it stops trying: both the
+        # borrowed and the bare form are offered and the REGISTRY decides, the same way the
+        # singular/plural question was settled. This admits no vocabulary — a candidate counts
+        # only when a registered form equals it exactly.
+        parts = [[parts[0]]] + [
+            [borrow(part.split()), part] for part in parts[1:]
+        ]
+        return parts
+    return [[part] for part in parts]
 
 
 def main() -> int:
@@ -269,9 +282,9 @@ def main() -> int:
             pieces = conjuncts(title)
             if len(pieces) > 1:
                 each = []
-                for piece in pieces:
+                for alternatives in pieces:
                     hit = None
-                    for candidate in variants(piece):
+                    for candidate in [c for alt in alternatives for c in variants(alt)]:
                         for record in normalize_text(candidate, source="h", kind="text",
                                                      lexicon=registry):
                             for event in record["match_events"]:
@@ -298,13 +311,13 @@ def main() -> int:
                     for record in normalize_text(f"{head_word} {piece}", source="h", kind="text",
                                                 lexicon=registry)
                     for event in record["match_events"])
-                for piece in pieces
+                for alternatives in pieces for piece in alternatives
             ):
                 covered_by = f"{head_word}+inherited"
 
         resolved_by = covered_by
         if not resolved_by:
-            for candidate in variants(title) + conjuncts(title):
+            for candidate in variants(title) + [c for alt in conjuncts(title) for c in alt]:
                 for record in normalize_text(candidate, source="h", kind="text", lexicon=registry):
                     for event in record.get("ambiguous_candidates", []):
                         if nfc_casefold(event.get("text", candidate)) == nfc_casefold(candidate) or \

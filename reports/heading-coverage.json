@@ -1,11 +1,11 @@
 {
   "by_status": {
-    "covered": 313,
-    "partial": 29
+    "covered": 314,
+    "partial": 28
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.9152,
-  "covered_share_of_mass": 0.9611,
+  "covered_share_of_distinct": 0.9181,
+  "covered_share_of_mass": 0.9623,
   "distinct_headings": 342,
   "heading_occurrences": 822,
   "headings": [
@@ -123,18 +123,6 @@
       "occurrences": 1,
       "partial_matches": [
         "Resolução CVM 175"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Demonstrações Contábeis & Auditoria",
-      "occurrences": 1,
-      "partial_matches": [
-        "Demonstrações Contábeis",
-        "Auditoria"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -1948,6 +1936,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "artifact.financial_statements+technical.audit",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Demonstrações Contábeis & Auditoria",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "artifact.financial_statements+technical.audit",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.regulation",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Regulamento: Geral",
@@ -3164,15 +3161,15 @@
     }
   ],
   "mass_by_status": {
-    "covered": 790,
-    "partial": 32
+    "covered": 791,
+    "partial": 31
   },
   "registry": {
     "concepts": 580,
     "version": "2.32.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
-  "resolved_share_of_mass": 0.9684,
+  "resolved_share_of_mass": 0.9696,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }
