@@ -22,12 +22,12 @@
     "usable": true,
     "youden_j": 0.599
   },
-  "bare_automatic_forms": 572,
-  "bare_forms": 762,
+  "bare_automatic_forms": 573,
+  "bare_forms": 761,
   "distribution_over_automatic": {
     "max": 57,
     "mean": 4.13,
-    "median": 3.0,
+    "median": 3,
     "p75": 6,
     "p90": 10,
     "stdev": 5.55,
@@ -3341,18 +3341,6 @@
       "policy": "review"
     },
     {
-      "concept_id": "artifact.record",
-      "form": "registro",
-      "general_senses": 5,
-      "glosses": [
-        "o ato de se inscrever",
-        "Um documento que pode servir como evidência jurídica de uma transação"
-      ],
-      "language": "pt-BR",
-      "lemma_used": "registro",
-      "policy": "review"
-    },
-    {
       "concept_id": "entity.registration",
       "form": "registro",
       "general_senses": 5,
@@ -3362,7 +3350,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "registro",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "artifact.record",
@@ -8589,8 +8577,8 @@
     }
   ],
   "registry": {
-    "concepts": 333,
-    "version": "2.18.0"
+    "concepts": 334,
+    "version": "2.19.0"
   },
   "schema_version": "form-polysemy-v1"
 }

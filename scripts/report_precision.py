@@ -70,9 +70,17 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2190.json", "seed": 27182818, "registry": "2.19.0",
+        "errors": 1,
+        "found": ["do principal inside `o principal índice brasileiro` — a collocation added by "
+                  "amendment 20 as a repair and never swept"],
+        "state": "after adversarial review round 3 and its repairs; repaired by amendment 21",
+    },
+    {
         "report": "reports/unread-residual-v2180.json", "seed": 6180339, "registry": "2.18.0",
-        "errors": 0,
-        "found": [],
+        "errors": 2,
+        "found": ["sem inside `sem prejuízo de` (a fixed legal expression asserting the opposite)",
+                  "ativo as a swap leg in `FICA PASSIVO EM DÓLAR (e ativo em taxa de juros)`"],
         "state": "after adversarial review round 2 and its repairs, including the demote-vs-forbid "
                  "rule that restored `rendimento`, `desconto`, `futuros` and `opções`",
     },
@@ -110,7 +118,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2180.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2190.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 

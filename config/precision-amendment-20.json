@@ -1,0 +1,130 @@
+{
+  "id": "precision-sweep-amendment-20",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review round 3, gaps S1 and S3 through S8",
+  "method": "every finding re-counted against the corpus before acting; the 43 existing forbidden variants checked for occurrences",
+  "reason": "A fixed legal expression that asserts the opposite of the concept it matched, three collocations the 50 % rule required and did not get, one forbidden variant that blocks a correct occurrence, and seven that block nothing.",
+  "operations": [
+    {
+      "op": "forbid",
+      "concept": "polarity.absence",
+      "language": "pt-BR",
+      "variants": [
+        "sem prejuízo"
+      ],
+      "why": "`sem prejuízo de X` is fixed legal Portuguese meaning X CONTINUES to apply, so matching an absence marker makes the normalised output assert the opposite of the source — in CVM 175 regulatory text, eight times. Exactly the `à medida que` class that precision-amendment-01 blocked on quantity.measure. I read these during the sweep, recorded them as a borderline idiom, accepted them, and then reported 31 of 31 correct. 8/31 is 26 %, so the rule says keep the form and forbid the phrase."
+    },
+    {
+      "op": "forbid",
+      "concept": "technical.yield_curve",
+      "language": "pt-BR",
+      "variants": [
+        "curva de sino",
+        "curva de crédito",
+        "curva que expressa",
+        "curva de preços"
+      ],
+      "why": "The concept is the relation between yields and maturities. A bell curve is a distribution, a credit curve plots spreads rather than yields, and the convexity graph plots price against rate. 4 of 15, under the threshold, so the form stays."
+    },
+    {
+      "op": "forbid",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "variants": [
+        "opções com alto risco"
+      ],
+      "why": "`os Hedge Funds são considerados opções com alto risco` is the everyday `alternative`. The second half of the 50 % rule — forbid the wrong collocations — had missed this one."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.principal",
+      "language": "pt-BR",
+      "form": "juros e principal",
+      "why": "The 50 % rule says demote AND restore, and only the restore half was done here. `os fluxos de pagamentos de juros e principal de um título do Tesouro` (STRIPS) and `a mudança do principal (correção pelo CPI)` (TIPS) went silent because `valor principal` does not cover them."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.principal",
+      "language": "pt-BR",
+      "form": "do principal"
+    },
+    {
+      "op": "rename_pref",
+      "concept": "artifact.record",
+      "language": "pt-BR",
+      "to": "registro de banco de dados",
+      "why": "`registro` was at review on BOTH concepts that claim it, so the surface was unreachable — the same structural defect as `spread de rendimento`, which round 2 fixed and this pair did not inherit. artifact.record carries `domains: [software, data]` and means a stored data item; in a CGA corpus `registro` is registration with the supervisor every time. Renaming rather than removing because a preferred label cannot be deleted, and `registro de banco de dados` was already an automatic form of this concept."
+    },
+    {
+      "op": "promote",
+      "concept": "entity.registration",
+      "language": "pt-BR",
+      "form": "registro",
+      "right": 12,
+      "total": 12,
+      "why": "Held at review only by the collision withdrawn above."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.regulatory_capital",
+      "language": "pt-BR",
+      "form": "gerenciamento de capital",
+      "why": "Three occurrences of `estrutura de gerenciamento de capital em instituições financeiras`, which the registered `capital regulatório`/`capital econômico` do not reach."
+    },
+    {
+      "op": "add_form",
+      "concept": "entity.resource",
+      "language": "pt-BR",
+      "form": "alocação de capital",
+      "why": "`decisões informadas sobre a alocação de capital` is literally this concept's definition and was lost when bare `capital` was demoted."
+    },
+    {
+      "op": "unforbid",
+      "concept": "entity.share",
+      "language": "pt-BR",
+      "variants": [
+        "todas as ações"
+      ],
+      "why": "Blocks a correct occurrence. Of its four uses, three are `todas as ações necessárias` — already covered by the separate `ações necessárias` variant — and the fourth, `ele venderá todas as ações e deixará todo o recurso aplicado em renda fixa`, is exactly entity.share. A guard that costs a true positive and adds no coverage is worse than no guard."
+    },
+    {
+      "op": "unforbid",
+      "concept": "entity.share",
+      "language": "pt-BR",
+      "variants": [
+        "ação necessária",
+        "ações judiciais"
+      ],
+      "why": "Zero occurrences each. Written from imagination rather than from the corpus — the same habit that produced the translated Portuguese labels."
+    },
+    {
+      "op": "unforbid",
+      "concept": "entity.asset",
+      "language": "pt-BR",
+      "variants": [
+        "gestores ativos"
+      ],
+      "why": "Zero occurrences."
+    },
+    {
+      "op": "unforbid",
+      "concept": "risk.caution",
+      "language": "pt-BR",
+      "variants": [
+        "ponto de atenção"
+      ],
+      "why": "Zero occurrences; the plural carries the only real case."
+    },
+    {
+      "op": "unforbid",
+      "concept": "entity.security",
+      "language": "pt-BR",
+      "variants": [
+        "a título gratuito",
+        "a título oneroso",
+        "sob qualquer título"
+      ],
+      "why": "Zero occurrences each."
+    }
+  ]
+}

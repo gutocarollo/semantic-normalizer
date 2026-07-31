@@ -60,7 +60,7 @@ def main() -> int:
 
     applied: dict[str, list[str]] = {
         "demoted": [], "promoted": [], "renamed": [], "redefined": [], "forms_added": [], "forms_removed": [],
-        "variants_forbidden": [], "concepts_added": [],
+        "variants_forbidden": [], "variants_unforbidden": [], "concepts_added": [],
     }
     refused: list[str] = []
 
@@ -225,6 +225,21 @@ def main() -> int:
             if operation["form"] not in labels[bucket] and operation["form"] != labels["pref"]:
                 labels[bucket].append(operation["form"])
             applied["forms_added"].append(f"{operation['concept']}.{language}:{operation['form']}")
+
+        elif kind == "unforbid":
+            # The inverse of `forbid`, and it exists because a guard can be wrong in two ways: it
+            # can block a correct occurrence, or it can block nothing at all. An adversarial
+            # review found both — `todas as ações` cost a true positive while adding no coverage
+            # the neighbouring variant did not already have, and seven others matched nothing in
+            # the corpus, written from imagination rather than observation. Removing a guard is a
+            # change to matching behaviour, so it goes through the ledger like any other.
+            bucket = record.setdefault("forbidden_variants", {}).setdefault(language, [])
+            for variant in operation["variants"]:
+                if variant not in bucket:
+                    refused.append(f"{operation['concept']}.{language}:{variant} (not forbidden)")
+                    continue
+                bucket.remove(variant)
+                applied["variants_unforbidden"].append(f"{operation['concept']}.{language}:{variant}")
 
         elif kind == "forbid":
             bucket = record.setdefault("forbidden_variants", {}).setdefault(language, [])

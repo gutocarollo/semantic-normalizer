@@ -1,36 +1,36 @@
 {
-  "events_total": 6873,
+  "events_total": 6861,
   "occurrences_per_pair": {
     "max": 197,
-    "mean": 10.43,
-    "median": 3,
-    "stdev": 23.76
+    "mean": 10.19,
+    "median": 2,
+    "stdev": 23.49
   },
   "registry": {
-    "concepts": 333,
-    "version": "2.18.0"
+    "concepts": 334,
+    "version": "2.19.0"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 783,
-      "share": 0.1139
+      "events": 804,
+      "share": 0.1172
     },
     "B_domain_exclusive": {
-      "events": 621,
-      "share": 0.0904
+      "events": 611,
+      "share": 0.0891
     },
     "D_risk_surface": {
-      "events": 5469,
-      "share": 0.7957
+      "events": 5446,
+      "share": 0.7938
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 5469,
-    "floor_if_sweep_all_wrong": 0.2043,
-    "pairs": 301,
-    "share_of_all_events": 0.7957
+    "events": 5446,
+    "floor_if_sweep_all_wrong": 0.2062,
+    "pairs": 300,
+    "share_of_all_events": 0.7938
   },
   "sweep_queue": [
     {
@@ -91,12 +91,10 @@
       "form": "juros",
       "general_senses": 1,
       "glosses": [],
-      "occurrences": 185,
+      "occurrences": 182,
       "quotes": [
         "eterminado para o portador do título (a pessoa que compra e recebe os juros).",
         "cipal indexado à variação do CPI (Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação.",
-        "ipo de título criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
-        "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos sep",
         " valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a vida útil do título.",
         "m esses títulos e emprestam dinheiro para o governo local em troca de juros.",
         "cursos por um período fixo de tempo e, em troca, o banco emissor paga juros.",
@@ -121,7 +119,6 @@
         "Isso ocorre, pois quanto menor for a taxa de juros, mais alto fica o valor presente de um título fazendo com q",
         "Isso ocorre, pois quanto maior for a taxa de juros, menor será o valor presente de um título!",
         "Caso Rafael acredite que a taxa de juros irá cair para 8% ao ano, ele deveria comprar ou vender o co",
-        "ra se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de j",
         "xa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
         "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acred",
         "ivo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), a",
@@ -132,7 +129,10 @@
         "e de fatores macroeconômicos, como PIB, emprego, tributação, taxas de juros, antes de examinar questões específicas do ativo, como seto",
         "icas, como PIB, balança comercial, taxa de câmbio, inflação, taxas de juros, entre outros.",
         "da como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referência para o cálculo d",
-        "r como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos."
+        "r como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos.",
+        "scos de mercado, como volatilidade dos preços e mudanças nas taxas de juros, riscos de crédito, como inadimplência de emissores de títu",
+        "s principalmente pelas condições macroeconômicas, tais como, taxas de juros, câmbio, commodities; mas também podem ocorrer por questões",
+        "ação dos ativos; - Exemplos: impeachment, grandes mudanças na taxa de juros ou câmbio."
       ],
       "stratum": "D_risk_surface"
     },
@@ -241,7 +241,7 @@
       "form": "taxa",
       "general_senses": 5,
       "glosses": [],
-      "occurrences": 169,
+      "occurrences": 168,
       "quotes": [
         "m contrato onde o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para o porta",
         "inda é considerado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
@@ -866,16 +866,13 @@
         "caracteriza-se por actividade enérgica",
         "qualquer coisa de valor material ou utilidade que é de propriedade de "
       ],
-      "occurrences": 91,
+      "occurrences": 88,
       "quotes": [
         "mento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
         "RO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual amb",
         "partes possuem obrigações, tendo o vendedor a obrigação de entregar o ativo, e o comprador a obrigação de pagar na data futura.",
         "idação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais com",
         "ica), que é a forma mais comum, ou pela Liquidação Física (entrega do ativo negociado).",
-        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e pas",
-        "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da t",
-        "ssivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da t",
         "capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
         "Portanto, não é somente uma eventual variação positiva do preço do ativo.",
         "parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
@@ -907,7 +904,10 @@
         "Trata-se da DIFICULDADE DE VENDER um determinado ativo pelo preço e no momento desejado.",
         "riamente, quando ele possui uma fatia (percentual) considerável de um ativo específico.",
         "ra que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor do que o de valor de mercado, simplesmen",
-        "nças, o Desvio Padrão e a Variância nos indicam o Risco de Mercado do ativo."
+        "nças, o Desvio Padrão e a Variância nos indicam o Risco de Mercado do ativo.",
+        "cia são: - Medem o risco de mercado (volatilidade ou oscilação) de um ativo; - Quanto maior o desvio padrão/variância, maior será o ris",
+        "êmico (risco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor.",
+        "êmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ativo) é medido pelo desvio-padrão."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2644,39 +2644,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "polarity.absence",
-      "form": "sem",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 23,
-      "quotes": [
-        "Ela também é considerada a taxa de juro sem risco do euro.",
-        "o, onde as ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
-        "onferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
-        "Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
-        "ciar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
-        "- Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
-        "etorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
-        " parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer receita gerada pelo at",
-        "almente investidores institucionais que buscam melhores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais ",
-        "ista, os cotistas respondem por eventual patrimônio líquido negativo, sem prejuízo da responsabilidade do prestador de serviço pelos ",
-        "Tal proibição não se aplica a subscrições de novas cotas, sem prejuízo da incidência das regras que dispõem sobre a divul",
-        " serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação de assembleia de cotistas pa",
-        "Nas operações sem garantia de liquidação por entidade operadora de infraestru",
-        "eve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico.",
-        "Nos fundos sem carência (ou com carência superior a 90 dias), ele ocorre n",
-        "E, sem dúvida, essa taxa de recuperação precisa ser levada em cons",
-        "TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos de caixa externos.",
-        "Como são dois semestres por ano, ele receberá o cupom duas vezes, sem ser considerado o valor do dinheiro no tempo.",
-        "A duration de um título ZERO-CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de ",
-        "ncluir sobre convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos com",
-        "- Eficiente fiscalmente (sem muitas transações).",
-        "nsável pela gestão de risco da carteira dos veículos de investimento, sem prejuízo do disposto na regulação em vigor aplicável a cada",
-        "rsos, conselho consultivo ou comitê para os veículos de investimento, sem prejuízo do disposto na regulação vigente."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.sector",
       "form": "setores",
       "general_senses": 3,
@@ -3494,6 +3461,35 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 19,
+      "quotes": [
+        "Ela também é considerada a taxa de juro sem risco do euro.",
+        "o, onde as ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+        "onferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
+        "Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
+        "ciar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
+        "- Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
+        "etorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
+        " parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer receita gerada pelo at",
+        "almente investidores institucionais que buscam melhores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais ",
+        " serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação de assembleia de cotistas pa",
+        "Nas operações sem garantia de liquidação por entidade operadora de infraestru",
+        "eve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico.",
+        "Nos fundos sem carência (ou com carência superior a 90 dias), ele ocorre n",
+        "E, sem dúvida, essa taxa de recuperação precisa ser levada em cons",
+        "TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos de caixa externos.",
+        "Como são dois semestres por ano, ele receberá o cupom duas vezes, sem ser considerado o valor do dinheiro no tempo.",
+        "A duration de um título ZERO-CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de ",
+        "ncluir sobre convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos com",
+        "- Eficiente fiscalmente (sem muitas transações)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.calculate",
       "form": "calcular",
       "general_senses": 4,
@@ -3801,31 +3797,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.yield_curve",
-      "form": "curva",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 15,
-      "quotes": [
-        "O Stress Test testa a “cauda” da curva de sino (Distribuição Normal), ou seja, os prejuízos possív",
-        "Tais spreads de crédito são geralmente expressos em termos de uma curva de crédito, que demonstra a relação entre os spreads de cré",
-        "Ao formato da curva que expressa graficamente essa relação, damos o nome genéri",
-        "camente nesse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
-        "A boa notícia é que, como a curva de preços e taxa de juros apresenta convexidade positiva, p",
-        "tes de mercado, ou seja, o que eles antecipam que irá acontecer com a curva.",
-        "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
-        "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
-        " a carteira bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
-        "e ele sofrerá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
-        "O movimento contrário seria o Flattening ou achatamento da curva.",
-        "ém é beneficiada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimen",
-        "e as taxas das extremidades sobem mais que as taxas intermediárias da curva, ou mesmo as taxas das extremidades sobem e a da intermediá",
-        "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia mais lucrativa, embora posiçõe",
-        "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia mais lucrativa, embora posiçõe"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "temporal.period",
       "form": "períodos",
       "general_senses": 16,
@@ -4072,33 +4043,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.liability",
-      "form": "passivo",
-      "general_senses": 6,
-      "glosses": [
-        "faltando energia ou vontade",
-        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
-        "A qualidade de ser algo que não te deixa avançar",
-        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
-      ],
-      "occurrences": 12,
-      "quotes": [
-        "ÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-        "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem ",
-        "acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
-        "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
-        "om cenários que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
-        "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
-        "ue basta comprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
-        "o decompor a carteira em várias imunizações de carteiras com um único passivo.",
-        "let, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
-        " bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em perío",
-        "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
-        "Assim como ocorre quando temos um único passivo para imunizar, quando temos vários é necessário também have"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.model",
       "form": "modelos",
       "general_senses": 10,
@@ -4284,6 +4228,27 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.yield_curve",
+      "form": "curva",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 11,
+      "quotes": [
+        "camente nesse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
+        "tes de mercado, ou seja, o que eles antecipam que irá acontecer com a curva.",
+        "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
+        "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
+        " a carteira bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
+        "e ele sofrerá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
+        "O movimento contrário seria o Flattening ou achatamento da curva.",
+        "ém é beneficiada, mas esse movimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimen",
+        "e as taxas das extremidades sobem mais que as taxas intermediárias da curva, ou mesmo as taxas das extremidades sobem e a da intermediá",
+        "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia mais lucrativa, embora posiçõe",
+        "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia mais lucrativa, embora posiçõe"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "polarity.negation",
       "form": "Não",
       "general_senses": 2,
@@ -4410,6 +4375,31 @@
         " características são: - Medido pelo Beta; - Não pode ser evitado pela diversificação dos ativos; - Exemplos: impeachment, grandes mudanças na ta",
         " R$ 7.000 e , o VaR da carteira será: Note a materialização do efeito diversificação, em função do coeficiente de correlação!",
         "Porém, por conta da diversificação, o VaR da carteira foi de apenas R$ 10.440,31."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.liability",
+      "form": "passivo",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 10,
+      "quotes": [
+        "ÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
+        "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
+        "om cenários que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
+        "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
+        "ue basta comprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
+        "o decompor a carteira em várias imunizações de carteiras com um único passivo.",
+        "let, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
+        " bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em perío",
+        "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
+        "Assim como ocorre quando temos um único passivo para imunizar, quando temos vários é necessário também have"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4845,18 +4835,21 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "polarity.absence",
-      "form": "Sem",
-      "general_senses": 3,
-      "glosses": [],
+      "concept_id": "entity.registration",
+      "form": "registro",
+      "general_senses": 5,
+      "glosses": [
+        "o ato de se inscrever",
+        "Um documento que pode servir como evidência jurídica de uma transação"
+      ],
       "occurrences": 6,
       "quotes": [
-        "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
-        "Sem prejuízo da portabilidade das cotas pelos seus titulares, a",
-        "Sem prejuízo de eventuais sanções, a Superintendência competent",
-        "Sem prejuízo das responsabilidades dos prestadores de serviços,",
-        "Sem prejuízo da responsabilidade do gestor, o administrador dev",
-        " | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+        "qual pode ser requerido à CVM concomitantemente ou após a obtenção do registro do fundo.",
+        "O administrador e o escriturador devem compartilhar as informações do registro de cotistas, bem como informações referentes a eventuais di",
+        "O registro na categoria gestor de recursos autoriza a gestão de uma ca",
+        "Esse registro pode ocorrer através de pessoa natural ou como pessoa juríd",
+        "O cancelamento do registro da classe não mitiga as responsabilidades decorrentes das e",
+        "O registro e o depósito devem ser realizados em contas específicas, ab"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5204,20 +5197,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.option",
-      "form": "opções",
-      "general_senses": 1,
-      "glosses": [],
-      "occurrences": 4,
-      "quotes": [
-        "s tipos de transações financeiras, como contratos de swap, futuros, e opções.",
-        "jetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implica",
-        "nstrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
-        "Isso porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "actor.seller",
       "form": "vendedores",
       "general_senses": 3,
@@ -5361,6 +5340,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.option",
+      "form": "opções",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "s tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "nstrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
+        "Isso porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.rate",
       "form": "Taxas",
       "general_senses": 5,
@@ -5471,58 +5463,6 @@
         "ixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap",
         "O Spread de Crédito é uma medida que representa a probabilidade de inadimplênci",
         "es com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.liability",
-      "form": "PASSIVO",
-      "general_senses": 6,
-      "glosses": [
-        "faltando energia ou vontade",
-        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
-        "A qualidade de ser algo que não te deixa avançar",
-        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
-      ],
-      "occurrences": 3,
-      "quotes": [
-        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATI",
-        "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz",
-        "VA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.asset",
-      "form": "ATIVO",
-      "general_senses": 4,
-      "glosses": [
-        "caracteriza-se por actividade enérgica",
-        "qualquer coisa de valor material ou utilidade que é de propriedade de "
-      ],
-      "occurrences": 3,
-      "quotes": [
-        " FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-        "a, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com",
-        "em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "technical.passive_management",
-      "form": "PASSIVA",
-      "general_senses": 6,
-      "glosses": [
-        "faltando energia ou vontade",
-        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
-        "A qualidade de ser algo que não te deixa avançar",
-        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
-      ],
-      "occurrences": 3,
-      "quotes": [
-        "sta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em pref",
-        "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das po",
-        "cordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5975,6 +5915,18 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "Sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
+        " | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.debt",
       "form": "Dívida",
       "general_senses": 3,
@@ -6212,6 +6164,23 @@
       "quotes": [
         "- Diversificação: - Investir em derivativos de diferentes classes de ativos: permite div",
         "Como exemplo, temos: - Escolher entre LFT ou LTN; - Investir no setor elétrico; - Comprar o imóvel A ou o B."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.passive_management",
+      "form": "PASSIVA",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das po",
+        "cordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada."
       ],
       "stratum": "D_risk_surface"
     },

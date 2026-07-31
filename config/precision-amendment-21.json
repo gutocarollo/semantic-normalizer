@@ -1,0 +1,14 @@
+{
+  "id": "precision-sweep-amendment-21",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; draw seed 27182818 against registry 2.19.0",
+  "method": "all 280 drawn occurrences read; the only error is a collocation added in the previous amendment and never swept",
+  "reason": "`do principal` was added to restore recall and matches the adjectival use in `o comportamento do principal índice brasileiro`. Second time in this campaign that a form I added to fix something was itself wrong — `até` was the first. A collocation added as a repair needs the same exhaustive sweep as a form found in the wild.",
+  "operations": [
+    {
+      "op": "forbid", "concept": "technical.principal", "language": "pt-BR",
+      "variants": ["do principal índice"],
+      "why": "One of the two occurrences of `do principal` is `replicar o comportamento do principal índice brasileiro, o Ibovespa` — the ordinary adjective. The other, `a mudança do principal (correção pelo CPI)`, is the TIPS principal and is why the collocation exists."
+    }
+  ]
+}

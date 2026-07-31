@@ -1,0 +1,14 @@
+{
+  "batch": 16,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Adversarial review round 3, gap S2. `ativo em taxa de juros` / `PASSIVO EM DÓLAR` name which side of a swap receives and which pays — not an item of economic value and not an obligation. precision-amendment-01 demoted the FEMININE `ativa` citing this exact construction (`swap ATIVA em pós-fixada is a swap leg`) and the diagnosis was never propagated to the masculine forms, which are the high-frequency ones. Registering the leg is better than forbidding it: the construction is CGA exam content and the concept was simply missing. Bare `ativo em` is NOT a form — `ativo em função de` and `ativo em relação ao` are the noun plus a preposition, so only the collocations that carry an index or a currency are registered.",
+  "concepts": [
+    {"id": "technical.swap_leg", "en": "swap leg", "pt": "perna do swap", "class": "technical_term", "pos": "noun",
+     "def": "The side of a swap a counterparty holds: active means it receives that index, passive means it pays it.",
+     "alt_pt": ["ativo em taxa de juros", "ativo em pós-fixado", "ativo em prefixado", "ativo em prefixada",
+                "ativo em dólar", "ativa em pós-fixada", "passivo em pós-fixado", "passivo em prefixado",
+                "passivo em pós-fixada", "passivo em dólar", "passiva em prefixada"],
+     "alt_en": ["leg of a swap"], "technical": true,
+     "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"}
+  ]
+}

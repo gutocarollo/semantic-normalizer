@@ -1,15 +1,15 @@
 {
   "baseline_ref": "eb622bf",
-  "concepts_that_gained_events": 87,
-  "concepts_that_lost_events": 56,
-  "events_after": 6873,
+  "concepts_that_gained_events": 88,
+  "concepts_that_lost_events": 60,
+  "events_after": 6861,
   "events_before": 6522,
   "gained": [
     {
-      "after": 261,
+      "after": 255,
       "before": 6,
       "concept_id": "entity.asset",
-      "delta": 255
+      "delta": 249
     },
     {
       "after": 85,
@@ -18,16 +18,16 @@
       "delta": 85
     },
     {
-      "after": 31,
-      "before": 0,
-      "concept_id": "polarity.absence",
-      "delta": 31
-    },
-    {
       "after": 26,
       "before": 0,
       "concept_id": "technical.irr",
       "delta": 26
+    },
+    {
+      "after": 23,
+      "before": 0,
+      "concept_id": "polarity.absence",
+      "delta": 23
     },
     {
       "after": 16,
@@ -40,6 +40,18 @@
       "before": 0,
       "concept_id": "technical.loss_given_default",
       "delta": 13
+    },
+    {
+      "after": 13,
+      "before": 0,
+      "concept_id": "technical.swap_leg",
+      "delta": 13
+    },
+    {
+      "after": 12,
+      "before": 0,
+      "concept_id": "entity.registration",
+      "delta": 12
     },
     {
       "after": 11,
@@ -158,12 +170,6 @@
     {
       "after": 6,
       "before": 0,
-      "concept_id": "entity.registration",
-      "delta": 6
-    },
-    {
-      "after": 6,
-      "before": 0,
       "concept_id": "technical.estr",
       "delta": 6
     },
@@ -238,12 +244,6 @@
       "before": 0,
       "concept_id": "technical.yield_spread",
       "delta": 5
-    },
-    {
-      "after": 4,
-      "before": 0,
-      "concept_id": "entity.high_grade_bond",
-      "delta": 4
     }
   ],
   "lost": [
@@ -258,16 +258,6 @@
       ]
     },
     {
-      "after": 18,
-      "before": 44,
-      "concept_id": "technical.principal",
-      "delta": -26,
-      "examples": [
-        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
-        "Treasury Bills As tem como principal característica que o seu ."
-      ]
-    },
-    {
       "after": 148,
       "before": 173,
       "concept_id": "entity.market",
@@ -278,10 +268,10 @@
       ]
     },
     {
-      "after": 47,
+      "after": 48,
       "before": 70,
       "concept_id": "entity.resource",
-      "delta": -23,
+      "delta": -22,
       "examples": [
         "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o ",
         "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros "
@@ -298,13 +288,23 @@
       ]
     },
     {
-      "after": 289,
+      "after": 288,
       "before": 309,
       "concept_id": "quantity.rate",
-      "delta": -20,
+      "delta": -21,
       "examples": [
         " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
         "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
+      ]
+    },
+    {
+      "after": 23,
+      "before": 44,
+      "concept_id": "technical.principal",
+      "delta": -21,
+      "examples": [
+        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
+        "Treasury Bills As tem como principal característica que o seu ."
       ]
     },
     {
@@ -438,6 +438,16 @@
       ]
     },
     {
+      "after": 32,
+      "before": 40,
+      "concept_id": "entity.liability",
+      "delta": -8,
+      "examples": [
+        "Fundos Passivos: procuram acompanhar o benchmark (índice de ",
+        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPO"
+      ]
+    },
+    {
       "after": 108,
       "before": 116,
       "concept_id": "entity.share",
@@ -458,10 +468,10 @@
       ]
     },
     {
-      "after": 39,
+      "after": 38,
       "before": 46,
       "concept_id": "technical.option",
-      "delta": -7,
+      "delta": -8,
       "examples": [
         "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de ina",
         "➢ Algumas possuem cláusula de opção de compra, onde o governo americano pode rec"
@@ -475,6 +485,16 @@
       "examples": [
         " pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ",
         "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do "
+      ]
+    },
+    {
+      "after": 197,
+      "before": 203,
+      "concept_id": "instrument.interest",
+      "delta": -6,
+      "examples": [
+        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
+        " o portador do título (a pessoa que compra e recebe os juros)."
       ]
     },
     {
@@ -518,6 +538,26 @@
       ]
     },
     {
+      "after": 4,
+      "before": 9,
+      "concept_id": "technical.postfixed",
+      "delta": -5,
+      "examples": [
+        "Estes títulos podem possuir remuneração prefixa ou pós-fixada, e quanto maior a probabilidade de inadimplê",
+        "wap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem"
+      ]
+    },
+    {
+      "after": 7,
+      "before": 12,
+      "concept_id": "technical.prefixed",
+      "delta": -5,
+      "examples": [
+        "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da",
+        "de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros."
+      ]
+    },
+    {
       "after": 28,
       "before": 33,
       "concept_id": "technical.swap",
@@ -548,13 +588,13 @@
       ]
     },
     {
-      "after": 37,
-      "before": 40,
-      "concept_id": "entity.liability",
-      "delta": -3,
+      "after": 21,
+      "before": 25,
+      "concept_id": "technical.yield_curve",
+      "delta": -4,
       "examples": [
-        "Fundos Passivos: procuram acompanhar o benchmark (índice de ",
-        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPO"
+        "O Stress Test testa a “cauda” da curva de sino (Distribuição Normal), ou seja, os p",
+        "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aula de Gestão de"
       ]
     },
     {
@@ -585,16 +625,6 @@
       "examples": [
         "Investimentos no Exterior Títulos de Renda Fixa",
         "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por"
-      ]
-    },
-    {
-      "after": 200,
-      "before": 203,
-      "concept_id": "instrument.interest",
-      "delta": -3,
-      "examples": [
-        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
-        " o portador do título (a pessoa que compra e recebe os juros)."
       ]
     },
     {
@@ -796,6 +826,16 @@
       ]
     },
     {
+      "after": 18,
+      "before": 19,
+      "concept_id": "technical.passive_management",
+      "delta": -1,
+      "examples": [
+        "lhar melhor cada uma dessas formas de implementação de gestão passiva de Renda Variável.",
+        "ais detalhadas de replicação da carteira visando a uma gestão passiva."
+      ]
+    },
+    {
       "after": 67,
       "before": 68,
       "concept_id": "temporal.maturity",
@@ -807,10 +847,10 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 365,
-  "spans_after": 6873,
+  "spans_absorbed_by_a_longer_match": 394,
+  "spans_after": 6861,
   "spans_before": 6522,
-  "spans_suppressed_with_no_replacement": 107,
+  "spans_suppressed_with_no_replacement": 97,
   "suppressed_spans": [
     {
       "quote": "tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, par",
@@ -833,20 +873,8 @@
       "surface": "principal"
     },
     {
-      "quote": "o, porém o VALOR do cupom irá MUDAR em função da mudança do principal (correção pelo CPI).",
-      "surface": "principal"
-    },
-    {
-      "quote": "do através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
-      "surface": "principal"
-    },
-    {
       "quote": "O termo STRIPS significa \"Separate Trading of Registered",
       "surface": "termo"
-    },
-    {
-      "quote": "a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separ",
-      "surface": "principal"
     },
     {
       "quote": "está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser e",
@@ -859,6 +887,10 @@
     {
       "quote": "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard",
       "surface": "Bank"
+    },
+    {
+      "quote": "se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez",
+      "surface": "opções"
     },
     {
       "quote": "mo no Brasil, a taxa de administração é baseada no NAV (Net Asset Value ou Valor Patrimonial Líquido).",
@@ -877,10 +909,6 @@
       "surface": "principal"
     },
     {
-      "quote": "a de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
-      "surface": "principal"
-    },
-    {
       "quote": "O DI FUTURO é a principal referência para o mercado financeiro em relação à",
       "surface": "principal"
     },
@@ -891,10 +919,6 @@
     {
       "quote": "ecíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
       "surface": "Ativa"
-    },
-    {
-      "quote": "0% do CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco",
-      "surface": "ATIVA"
     },
     {
       "quote": "juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
@@ -961,10 +985,6 @@
       "surface": "Value"
     },
     {
-      "quote": "ser requerido à CVM concomitantemente ou após a obtenção do registro do fundo.",
-      "surface": "registro"
-    },
-    {
       "quote": "- É vedada a afetação ou a vinculação, a qualquer título, de parcela do patrimônio de uma classe de cotas",
       "surface": "título"
     },
@@ -975,10 +995,6 @@
     {
       "quote": "Caso o administrador não adote uma dessas medidas, a Superintendência competente pode cancelar o re",
       "surface": "medidas"
-    },
-    {
-      "quote": "rador e o escriturador devem compartilhar as informações do registro de cotistas, bem como informações referentes a ev",
-      "surface": "registro"
     },
     {
       "quote": "itos de subscrição podem ser transferidos, seja por meio de termo de cessão e transferência, assinado pelo cedente",
@@ -993,14 +1009,6 @@
       "surface": "futuros"
     },
     {
-      "quote": "O registro na categoria gestor de recursos autoriza a gestão",
-      "surface": "registro"
-    },
-    {
-      "quote": "Esse registro pode ocorrer através de pessoa natural ou como pe",
-      "surface": "registro"
-    },
-    {
       "quote": "corrente de ativos detidos pela classe, realizando todas as ações necessárias para tal exercício, observado o dispo",
       "surface": "ações"
     },
@@ -1011,14 +1019,6 @@
     {
       "quote": "e classe de cotas, o administrador deve adotar as seguintes medidas: - divulgar fato relevante; e - efetuar o cancela",
       "surface": "medidas"
-    },
-    {
-      "quote": "O cancelamento do registro da classe não mitiga as responsabilidades decorre",
-      "surface": "registro"
-    },
-    {
-      "quote": "O registro e o depósito devem ser realizados em contas espec",
-      "surface": "registro"
     },
     {
       "quote": "A classe tipificada como deve ter como principal fator de risco de sua carteira a variação de taxa",
@@ -1053,10 +1053,6 @@
       "surface": "rendimento"
     },
     {
-      "quote": "nvestimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras",
-      "surface": "capital"
-    },
-    {
       "quote": "- Redução de perdas: a principal vantagem da gestão de riscos é a redução das chan",
       "surface": "principal"
     },
@@ -1065,20 +1061,16 @@
       "surface": "prêmio"
     },
     {
-      "quote": "e gerenciamento de riscos e a estrutura de gerenciamento de capital em instituições financeiras e demais instituições",
-      "surface": "capital"
-    },
-    {
-      "quote": "amento contínuo e integrado de riscos e de gerenciamento de capital.",
-      "surface": "capital"
-    },
-    {
       "quote": "Por exemplo, o gestor que cuida do capital próprio do banco, não será o mesmo que gere os re",
       "surface": "capital"
     },
     {
       "quote": "A principal crítica ao modelo é que o resultado do VaR NÃO co",
       "surface": "principal"
+    },
+    {
+      "quote": "O Stress Test testa a “cauda” da curva de sino (Distribuição Normal), ou seja, os prejuí",
+      "surface": "curva"
     },
     {
       "quote": "rativos), a alta administração aloca diferentes quantias de capital entre os gestores de carteira.",
@@ -1107,6 +1099,10 @@
     {
       "quote": "fere o risco de crédito para uma contraparte em troca de um prêmio.",
       "surface": "prêmio"
+    },
+    {
+      "quote": "preads de crédito são geralmente expressos em termos de uma curva de crédito, que demonstra a relação entre os spre",
+      "surface": "curva"
     },
     {
       "quote": "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
@@ -1149,10 +1145,6 @@
       "surface": "principal"
     },
     {
-      "quote": "Retorno do principal (FV) (2) Determinar a taxa de desconto mais adequ",
-      "surface": "principal"
-    },
-    {
       "quote": "er considerado o risco de recebimento do fluxo de caixa e o principal do investimento no título, ou seja, o risco de cr",
       "surface": "principal"
     },
@@ -1167,6 +1159,14 @@
     {
       "quote": "ação o fato de que os fluxos de caixa esperados flutuarão à medida que as taxas de juros mudam.",
       "surface": "medida"
+    },
+    {
+      "quote": "Ao formato da curva que expressa graficamente essa relação, damos o n",
+      "surface": "curva"
+    },
+    {
+      "quote": "A boa notícia é que, como a curva de preços e taxa de juros apresenta convexidade p",
+      "surface": "curva"
     },
     {
       "quote": "À medida que cada título vence, o gestor pode investir o d",

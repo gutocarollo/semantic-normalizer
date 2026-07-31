@@ -69,17 +69,20 @@
       ]
     },
     {
-      "error_rate": 0.0,
-      "errors": 0,
-      "found": [],
+      "error_rate": 0.0077,
+      "errors": 2,
+      "found": [
+        "sem inside `sem prejuízo de` (a fixed legal expression asserting the opposite)",
+        "ativo as a swap leg in `FICA PASSIVO EM DÓLAR (e ativo em taxa de juros)`"
+      ],
       "registry": "2.18.0",
       "report": "reports/unread-residual-v2180.json",
       "sample_size": 260,
       "seed": 6180339,
       "state": "after adversarial review round 2 and its repairs, including the demote-vs-forbid rule that restored `rendimento`, `desconto`, `futuros` and `opções`",
       "wilson_95": [
-        0.0,
-        0.0146
+        0.0021,
+        0.0276
       ]
     },
     {
@@ -117,22 +120,22 @@
     }
   ],
   "concepts": 333,
-  "errors_repaired_total": 10,
+  "errors_repaired_total": 12,
   "events_total": 6873,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.9879,
-    "point": 1.0,
-    "upper_bound_95": 1.0
+    "lower_bound_95": 0.977,
+    "point": 0.9936,
+    "upper_bound_95": 0.9982
   },
   "registry_version": "2.18.0",
   "residual": {
-    "error_rate_point": 0.0,
+    "error_rate_point": 0.0077,
     "error_rate_wilson_95": [
-      0.0,
-      0.0146
+      0.0021,
+      0.0276
     ],
-    "errors_adjudicated": 0,
+    "errors_adjudicated": 2,
     "events": 5719,
     "sample_size": 260,
     "share": 0.8321

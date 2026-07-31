@@ -1,9 +1,24 @@
 {
-  "adjudicated_errors": 0,
+  "adjudicated_errors": 2,
   "adjudication": {
-    "errors": [],
-    "notes": "Distinct filename from every prior draw, per the review's R5: redrawing into an existing path destroyed the evidence for an earlier campaign claim. Items 246, 247 and 252 are the recall amendment 19 restored — `rendimento` and `spread de rendimento` matching the yield concepts again after being silenced by an over-broad demotion.",
-    "read_by": "all 260 drawn occurrences read against their sentences at registry 2.18.0"
+    "errors": [
+      {
+        "concept_id": "polarity.absence",
+        "form": "sem",
+        "index": 148,
+        "quote": "Tal proibição não se aplica a subscrições de novas cotas, sem prejuízo da incidência das regras que dispõem sobre a divulgação",
+        "why": "`sem prejuízo de X` is a fixed legal expression meaning X CONTINUES to apply. The concept marks `the absence of the element that follows`, so the normalised output asserts the opposite of the source. I read this occurrence during the sweep, recorded it as a borderline legal idiom, accepted it, and then reported 31/31 correct. Eight of the 31 are this expression."
+      },
+      {
+        "concept_id": "entity.asset",
+        "form": "ativo",
+        "index": 37,
+        "quote": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR",
+        "why": "`ativo em X` / `passivo em X` is the leg of a swap — which side receives and which pays — not an item of economic value. precision-amendment-01 demoted `technical.active_management 'ativa'` citing this exact construction and the diagnosis was never propagated to the masculine forms, which are the high-frequency ones."
+      }
+    ],
+    "notes": "Both were found by adversarial review round 3 against a draw this file previously reported as clean. The corrected figures are published before the repairs, so the number describes the state that was actually adjudicated.",
+    "read_by": "all 260 drawn occurrences read against their sentences at registry 2.18.0; re-adjudicated after adversarial review round 3"
   },
   "distinct_forms_in_sample": 124,
   "events_read_by_sweep": 1154,

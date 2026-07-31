@@ -310,6 +310,7 @@
     "technical.strips",
     "technical.suitability",
     "technical.swap",
+    "technical.swap_leg",
     "technical.tesouro_direto",
     "technical.total_return_equity_swap",
     "technical.tracking_error",
@@ -337,7 +338,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "A method error, not a data error. Demotion was applied to every ambiguous form regardless of HOW wrong it was, because the campaign optimised precision with no recall floor. `rendimento` was wrong in 5 of 30 and demoting it cost roughly 25 correct matches to avoid 5 wrong ones. Where the wrong uses are few and enumerable, forbidding them and keeping the form automatic dominates demotion on both metrics.",
+  "change_reason": "`do principal` was added to restore recall and matches the adjectival use in `o comportamento do principal índice brasileiro`. Second time in this campaign that a form I added to fix something was itself wrong — `até` was the first. A collocation added as a repair needs the same exhaustive sweep as a form found in the wild.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -353,13 +354,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "25db90daffbf9495d193928e56fbca108eed068f5f3cfef124ca4303c499718c",
-    "registry.provenance.jsonl": "45e8adc184ed89e45e0ab876c4ed6e6aebe09176d7d17db8b36b33ce96bc9da3",
+    "registry.jsonl": "e5ce670fcf997ca97791285774564f5a0cba6d1b71cb7f60929d56ad55fb2c9b",
+    "registry.provenance.jsonl": "5f3fc48011628006b0e5dfb8f830c2ec037b0a8e6418b6d40a57c27e11806c15",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.18.0",
+  "rollback_version": "2.19.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.18.0"
+  "version": "2.19.1"
 }

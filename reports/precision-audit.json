@@ -67,16 +67,6 @@
           "surface": "juros"
         },
         {
-          "context": "ulo criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "juros"
-        },
-        {
-          "context": "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos sep",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "juros"
-        },
-        {
           "context": "inal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a vida útil do título.",
           "source": "01-investimentos-no-exterior.md",
           "surface": "juros"
@@ -85,11 +75,21 @@
           "context": "tulos e emprestam dinheiro para o governo local em troca de juros.",
           "source": "01-investimentos-no-exterior.md",
           "surface": "juros"
+        },
+        {
+          "context": " um período fixo de tempo e, em troca, o banco emissor paga juros.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "juros"
+        },
+        {
+          "context": " emprestado de investidores e concorda em reembolsá-los com juros durante um determinado período.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "juros"
         }
       ],
-      "occurrences": 185,
+      "occurrences": 182,
       "policy": "auto",
-      "share_of_concept": 0.925,
+      "share_of_concept": 0.924,
       "tokens": 1
     },
     {
@@ -220,9 +220,9 @@
           "surface": "taxa"
         }
       ],
-      "occurrences": 169,
+      "occurrences": 168,
       "policy": "auto",
-      "share_of_concept": 0.585,
+      "share_of_concept": 0.583,
       "tokens": 1
     },
     {
@@ -266,7 +266,7 @@
       ],
       "occurrences": 145,
       "policy": "auto",
-      "share_of_concept": 0.556,
+      "share_of_concept": 0.569,
       "tokens": 1
     },
     {
@@ -618,7 +618,7 @@
       ],
       "occurrences": 101,
       "policy": "auto",
-      "share_of_concept": 0.349,
+      "share_of_concept": 0.351,
       "tokens": 1
     },
     {
@@ -743,14 +743,14 @@
           "surface": "ativo"
         },
         {
-          "context": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e pas",
+          "context": "óprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
           "source": "02-gestao-de-carteiras-renda-variavel.md",
           "surface": "ativo"
         }
       ],
-      "occurrences": 91,
+      "occurrences": 88,
       "policy": "auto",
-      "share_of_concept": 0.349,
+      "share_of_concept": 0.345,
       "tokens": 1
     },
     {
@@ -1454,7 +1454,7 @@
       ],
       "occurrences": 43,
       "policy": "auto",
-      "share_of_concept": 0.915,
+      "share_of_concept": 0.896,
       "tokens": 1
     },
     {
@@ -2778,50 +2778,6 @@
       "tokens": 1
     },
     {
-      "alias": "sem",
-      "concept_id": "polarity.absence",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Ela também é considerada a taxa de juro sem risco do euro.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "sem"
-        },
-        {
-          "context": " ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "sem"
-        },
-        {
-          "context": "desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "sem"
-        },
-        {
-          "context": " (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "sem"
-        },
-        {
-          "context": "ta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "sem"
-        },
-        {
-          "context": "Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "sem"
-        }
-      ],
-      "occurrences": 23,
-      "policy": "auto",
-      "share_of_concept": 0.742,
-      "tokens": 1
-    },
-    {
       "alias": "setores",
       "concept_id": "entity.sector",
       "domains": [
@@ -3522,7 +3478,7 @@
       ],
       "occurrences": 21,
       "policy": "auto",
-      "share_of_concept": 0.568,
+      "share_of_concept": 0.656,
       "tokens": 1
     },
     {
@@ -4051,6 +4007,50 @@
       "occurrences": 19,
       "policy": "auto",
       "share_of_concept": 0.95,
+      "tokens": 1
+    },
+    {
+      "alias": "sem",
+      "concept_id": "polarity.absence",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Ela também é considerada a taxa de juro sem risco do euro.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": " ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": "desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": " (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        },
+        {
+          "context": "ta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        },
+        {
+          "context": "Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        }
+      ],
+      "occurrences": 19,
+      "policy": "auto",
+      "share_of_concept": 0.826,
       "tokens": 1
     },
     {
@@ -4978,50 +4978,6 @@
       "tokens": 1
     },
     {
-      "alias": "curva",
-      "concept_id": "technical.yield_curve",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "O Stress Test testa a “cauda” da curva de sino (Distribuição Normal), ou seja, os prejuízos possív",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "curva"
-        },
-        {
-          "context": "preads de crédito são geralmente expressos em termos de uma curva de crédito, que demonstra a relação entre os spreads de cré",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "curva"
-        },
-        {
-          "context": "Ao formato da curva que expressa graficamente essa relação, damos o nome genéri",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "sse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "A boa notícia é que, como a curva de preços e taxa de juros apresenta convexidade positiva, p",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        },
-        {
-          "context": "cado, ou seja, o que eles antecipam que irá acontecer com a curva.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "curva"
-        }
-      ],
-      "occurrences": 15,
-      "policy": "auto",
-      "share_of_concept": 0.6,
-      "tokens": 1
-    },
-    {
       "alias": "períodos",
       "concept_id": "temporal.period",
       "domains": [
@@ -5458,7 +5414,7 @@
       ],
       "occurrences": 12,
       "policy": "auto",
-      "share_of_concept": 0.046,
+      "share_of_concept": 0.047,
       "tokens": 2
     },
     {
@@ -5682,50 +5638,6 @@
       "tokens": 1
     },
     {
-      "alias": "passivo",
-      "concept_id": "entity.liability",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "ivo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "a queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "s que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "passivo"
-        },
-        {
-          "context": "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "passivo"
-        }
-      ],
-      "occurrences": 12,
-      "policy": "auto",
-      "share_of_concept": 0.324,
-      "tokens": 1
-    },
-    {
       "alias": "modelos",
       "concept_id": "entity.model",
       "domains": [
@@ -5810,7 +5722,7 @@
       ],
       "occurrences": 11,
       "policy": "auto",
-      "share_of_concept": 0.611,
+      "share_of_concept": 0.478,
       "tokens": 3
     },
     {
@@ -6254,6 +6166,50 @@
       "tokens": 1
     },
     {
+      "alias": "curva",
+      "concept_id": "technical.yield_curve",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "sse caso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "cado, ou seja, o que eles antecipam que irá acontecer com a curva.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "Dessa forma, os defensores dessa teoria acreditam que a curva será sempre positivamente inclinada.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "Com isso, o grau de inclinação da curva aumenta e os spreads entre os vencimentos também aumentam.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "a bullet está concentrada em um único vencimento no meio da curva, somente ele sofrerá, ao contrário da ladder (vários vencim",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        },
+        {
+          "context": "erá, ao contrário da ladder (vários vencimentos ao longo da curva) e da barbell, principalmente por conta do vencimento no lo",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "curva"
+        }
+      ],
+      "occurrences": 11,
+      "policy": "auto",
+      "share_of_concept": 0.524,
+      "tokens": 1
+    },
+    {
       "alias": "Não",
       "concept_id": "polarity.negation",
       "domains": [
@@ -6647,7 +6603,7 @@
       ],
       "occurrences": 10,
       "policy": "auto",
-      "share_of_concept": 0.526,
+      "share_of_concept": 0.556,
       "tokens": 2
     },
     {
@@ -6692,6 +6648,50 @@
       "occurrences": 10,
       "policy": "unknown",
       "share_of_concept": 0.357,
+      "tokens": 1
+    },
+    {
+      "alias": "passivo",
+      "concept_id": "entity.liability",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ivo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "s que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        },
+        {
+          "context": "omprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        },
+        {
+          "context": " a carteira em várias imunizações de carteiras com um único passivo.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "passivo"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "auto",
+      "share_of_concept": 0.312,
       "tokens": 1
     },
     {
@@ -6867,7 +6867,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.231,
+      "share_of_concept": 0.237,
       "tokens": 3
     },
     {
@@ -7263,7 +7263,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.36,
+      "share_of_concept": 0.429,
       "tokens": 3
     },
     {
@@ -7792,7 +7792,7 @@
       ],
       "occurrences": 7,
       "policy": "auto",
-      "share_of_concept": 0.035,
+      "share_of_concept": 0.036,
       "tokens": 1
     },
     {
@@ -7840,50 +7840,6 @@
       "tokens": 1
     },
     {
-      "alias": "pós-fixada",
-      "concept_id": "technical.postfixed",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Estes títulos podem possuir remuneração prefixa ou pós-fixada, e quanto maior a probabilidade de inadimplência do banco, ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "pós-fixada"
-        },
-        {
-          "context": "sa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto i",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixada"
-        },
-        {
-          "context": "a forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda fin",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixada"
-        },
-        {
-          "context": "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ficará no s",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixada"
-        },
-        {
-          "context": " Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATI",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixada"
-        },
-        {
-          "context": " banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixada"
-        }
-      ],
-      "occurrences": 7,
-      "policy": "auto",
-      "share_of_concept": 0.778,
-      "tokens": 1
-    },
-    {
       "alias": "opção de venda",
       "concept_id": "technical.option",
       "domains": [
@@ -7924,7 +7880,7 @@
       ],
       "occurrences": 7,
       "policy": "auto",
-      "share_of_concept": 0.179,
+      "share_of_concept": 0.184,
       "tokens": 3
     },
     {
@@ -8057,50 +8013,6 @@
       "occurrences": 7,
       "policy": "auto",
       "share_of_concept": 0.269,
-      "tokens": 1
-    },
-    {
-      "alias": "prefixado",
-      "concept_id": "technical.prefixed",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros;",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixado"
-        },
-        {
-          "context": "taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixado"
-        },
-        {
-          "context": "que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixado"
-        },
-        {
-          "context": "n”, surgiu para estimar sensibilidade do preço de um título prefixado a mudanças nas taxas de juros.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "prefixado"
-        },
-        {
-          "context": "existente entre a variação porcentual do valor de um título prefixado e a variação percentual da taxa de juros de mercado.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "prefixado"
-        },
-        {
-          "context": "Por exemplo, ele pode emitir um título de dívida prefixado em 10% com uma call embutida.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "prefixado"
-        }
-      ],
-      "occurrences": 7,
-      "policy": "auto",
-      "share_of_concept": 0.583,
       "tokens": 1
     },
     {
@@ -8984,47 +8896,47 @@
       "tokens": 1
     },
     {
-      "alias": "Sem",
-      "concept_id": "polarity.absence",
+      "alias": "registro",
+      "concept_id": "entity.registration",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Sem"
-        },
-        {
-          "context": "Sem prejuízo da portabilidade das cotas pelos seus titulares, a",
+          "context": "ser requerido à CVM concomitantemente ou após a obtenção do registro do fundo.",
           "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "Sem"
+          "surface": "registro"
         },
         {
-          "context": "Sem prejuízo de eventuais sanções, a Superintendência competent",
+          "context": "rador e o escriturador devem compartilhar as informações do registro de cotistas, bem como informações referentes a eventuais di",
           "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "Sem"
+          "surface": "registro"
         },
         {
-          "context": "Sem prejuízo das responsabilidades dos prestadores de serviços,",
+          "context": "O registro na categoria gestor de recursos autoriza a gestão de uma ca",
           "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "Sem"
+          "surface": "registro"
         },
         {
-          "context": "Sem prejuízo da responsabilidade do gestor, o administrador dev",
+          "context": "Esse registro pode ocorrer através de pessoa natural ou como pessoa juríd",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "registro"
+        },
+        {
+          "context": "O cancelamento do registro da classe não mitiga as responsabilidades decorrentes das e",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "registro"
+        },
+        {
+          "context": "O registro e o depósito devem ser realizados em contas específicas, ab",
           "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "Sem"
-        },
-        {
-          "context": " 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações.",
-          "source": "07-avaliacao-de-desempenho.md",
-          "surface": "Sem"
+          "surface": "registro"
         }
       ],
       "occurrences": 6,
-      "policy": "unknown",
-      "share_of_concept": 0.194,
+      "policy": "auto",
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -9189,7 +9101,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.278,
+      "share_of_concept": 0.217,
       "tokens": 2
     },
     {
@@ -9584,45 +9496,6 @@
       "tokens": 1
     },
     {
-      "alias": "prefixada",
-      "concept_id": "technical.prefixed",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "nda financiada com preço fixo, é embutido uma taxa de juros prefixada).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixada"
-        },
-        {
-          "context": "ucation S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSI",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixada"
-        },
-        {
-          "context": "SIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixada"
-        },
-        {
-          "context": "a) prefixada pela variação do preço de uma ação.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "prefixada"
-        },
-        {
-          "context": "ro, pós-fixada) e comprando LTN (Letra do Tesouro Nacional, prefixada) mais longas; - Elevação das taxas de juros mais longas, el",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "prefixada"
-        }
-      ],
-      "occurrences": 5,
-      "policy": "auto",
-      "share_of_concept": 0.417,
-      "tokens": 1
-    },
-    {
       "alias": "dividendos",
       "concept_id": "entity.dividend",
       "domains": [
@@ -9736,7 +9609,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.263,
+      "share_of_concept": 0.278,
       "tokens": 1
     },
     {
@@ -10271,6 +10144,40 @@
       "tokens": 1
     },
     {
+      "alias": "pós-fixada",
+      "concept_id": "technical.postfixed",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Estes títulos podem possuir remuneração prefixa ou pós-fixada, e quanto maior a probabilidade de inadimplência do banco, ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "pós-fixada"
+        },
+        {
+          "context": "sa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto i",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "pós-fixada"
+        },
+        {
+          "context": "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ficará no s",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "pós-fixada"
+        },
+        {
+          "context": "da, por exemplo, vendendo LFT (Letra Financeira do Tesouro, pós-fixada) e comprando LTN (Letra do Tesouro Nacional, prefixada) mai",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "pós-fixada"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 1.0,
+      "tokens": 1
+    },
+    {
       "alias": "sempre que",
       "concept_id": "condition.when",
       "domains": [
@@ -10370,40 +10277,6 @@
       "occurrences": 4,
       "policy": "auto",
       "share_of_concept": 0.8,
-      "tokens": 1
-    },
-    {
-      "alias": "opções",
-      "concept_id": "technical.option",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": " transações financeiras, como contratos de swap, futuros, e opções.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "opções"
-        },
-        {
-          "context": "se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implica",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "opções"
-        },
-        {
-          "context": "s de investimento, como futuros ou termos de moeda ou ainda opções.",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "opções"
-        },
-        {
-          "context": "o porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas.",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "opções"
-        }
-      ],
-      "occurrences": 4,
-      "policy": "auto",
-      "share_of_concept": 0.103,
       "tokens": 1
     },
     {
@@ -10845,7 +10718,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.667,
+      "share_of_concept": 0.333,
       "tokens": 3
     },
     {
@@ -11121,6 +10994,40 @@
       "tokens": 1
     },
     {
+      "alias": "prefixado",
+      "concept_id": "technical.prefixed",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "n”, surgiu para estimar sensibilidade do preço de um título prefixado a mudanças nas taxas de juros.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "prefixado"
+        },
+        {
+          "context": "existente entre a variação porcentual do valor de um título prefixado e a variação percentual da taxa de juros de mercado.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "prefixado"
+        },
+        {
+          "context": "Por exemplo, ele pode emitir um título de dívida prefixado em 10% com uma call embutida.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "prefixado"
+        },
+        {
+          "context": "não irá exercer sua opção de compra, afinal, é melhor ficar prefixado com uma dívida a 10% do que a um valor maior de mercado.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "prefixado"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.571,
+      "tokens": 1
+    },
+    {
       "alias": "Contratos futuros",
       "concept_id": "technical.futures",
       "domains": [
@@ -11219,7 +11126,7 @@
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.015,
+      "share_of_concept": 0.016,
       "tokens": 1
     },
     {
@@ -11250,6 +11157,35 @@
       "policy": "auto",
       "share_of_concept": 0.231,
       "tokens": 1
+    },
+    {
+      "alias": "do principal",
+      "concept_id": "technical.principal",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "tulo, porém o VALOR do cupom irá MUDAR em função da mudança do principal (correção pelo CPI).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "do principal"
+        },
+        {
+          "context": "sita de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "do principal"
+        },
+        {
+          "context": "Retorno do principal (FV) (2) Determinar a taxa de desconto mais adequada: A tax",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "do principal"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.13,
+      "tokens": 2
     },
     {
       "alias": "em seguida",
@@ -11452,6 +11388,35 @@
       "occurrences": 3,
       "policy": "unknown",
       "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "opções",
+      "concept_id": "technical.option",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " transações financeiras, como contratos de swap, futuros, e opções.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "opções"
+        },
+        {
+          "context": "s de investimento, como futuros ou termos de moeda ou ainda opções.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "opções"
+        },
+        {
+          "context": "o porque, dependendo da movimentação das taxas de juros, as opções podem entrar no dinheiro e, com isso, ser exercidas.",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "opções"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.079,
       "tokens": 1
     },
     {
@@ -11861,90 +11826,32 @@
       "tokens": 3
     },
     {
-      "alias": "PASSIVO",
-      "concept_id": "entity.liability",
+      "alias": "prefixada",
+      "concept_id": "technical.prefixed",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATI",
+          "context": "nda financiada com preço fixo, é embutido uma taxa de juros prefixada).",
           "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "PASSIVO"
+          "surface": "prefixada"
         },
         {
-          "context": "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz",
+          "context": "a) prefixada pela variação do preço de uma ação.",
           "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "PASSIVO"
+          "surface": "prefixada"
         },
         {
-          "context": "ixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "PASSIVO"
+          "context": "ro, pós-fixada) e comprando LTN (Letra do Tesouro Nacional, prefixada) mais longas; - Elevação das taxas de juros mais longas, el",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "prefixada"
         }
       ],
       "occurrences": 3,
-      "policy": "unknown",
-      "share_of_concept": 0.081,
-      "tokens": 1
-    },
-    {
-      "alias": "ATIVO",
-      "concept_id": "entity.asset",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "IVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "ATIVO"
-        },
-        {
-          "context": " afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "ATIVO"
-        },
-        {
-          "context": "ada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "ATIVO"
-        }
-      ],
-      "occurrences": 3,
-      "policy": "unknown",
-      "share_of_concept": 0.011,
-      "tokens": 1
-    },
-    {
-      "alias": "PASSIVA",
-      "concept_id": "technical.passive_management",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": " a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em pref",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "PASSIVA"
-        },
-        {
-          "context": "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das po",
-          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
-          "surface": "PASSIVA"
-        },
-        {
-          "context": "alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada.",
-          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
-          "surface": "PASSIVA"
-        }
-      ],
-      "occurrences": 3,
-      "policy": "unknown",
-      "share_of_concept": 0.158,
+      "policy": "auto",
+      "share_of_concept": 0.429,
       "tokens": 1
     },
     {
@@ -12495,7 +12402,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.011,
+      "share_of_concept": 0.012,
       "tokens": 2
     },
     {
@@ -13046,7 +12953,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.079,
       "tokens": 1
     },
     {
@@ -13133,7 +13040,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.077,
+      "share_of_concept": 0.079,
       "tokens": 3
     },
     {
@@ -13321,6 +13228,30 @@
       "tokens": 1
     },
     {
+      "alias": "juros e principal",
+      "concept_id": "technical.principal",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ulo criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "juros e principal"
+        },
+        {
+          "context": "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separados, que ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "juros e principal"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.087,
+      "tokens": 3
+    },
+    {
       "alias": "máximo de",
       "concept_id": "quantity.at_most",
       "domains": [
@@ -13365,7 +13296,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.051,
+      "share_of_concept": 0.053,
       "tokens": 3
     },
     {
@@ -13777,28 +13708,28 @@
       "tokens": 1
     },
     {
-      "alias": "pós-fixado",
-      "concept_id": "technical.postfixed",
+      "alias": "PASSIVO em pós-fixada",
+      "concept_id": "technical.swap_leg",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em ",
+          "context": "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda fin",
           "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixado"
+          "surface": "PASSIVO em pós-fixada"
         },
         {
-          "context": ") acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
+          "context": "ixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
           "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "pós-fixado"
+          "surface": "PASSIVO em pós-fixada"
         }
       ],
       "occurrences": 2,
-      "policy": "auto",
-      "share_of_concept": 0.222,
-      "tokens": 1
+      "policy": "unknown",
+      "share_of_concept": 0.154,
+      "tokens": 3
     },
     {
       "alias": "governança",
@@ -14133,7 +14064,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.043,
+      "share_of_concept": 0.042,
       "tokens": 1
     },
     {
@@ -14209,6 +14140,30 @@
       "tokens": 1
     },
     {
+      "alias": "Sem",
+      "concept_id": "polarity.absence",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Sem"
+        },
+        {
+          "context": " 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "Sem"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.087,
+      "tokens": 1
+    },
+    {
       "alias": "registro na CVM",
       "concept_id": "entity.registration",
       "domains": [
@@ -14229,7 +14184,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.333,
+      "share_of_concept": 0.167,
       "tokens": 3
     },
     {
@@ -14617,6 +14572,30 @@
       "tokens": 1
     },
     {
+      "alias": "gerenciamento de capital",
+      "concept_id": "technical.regulatory_capital",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "sobre estrutura de gerenciamento de riscos e a estrutura de gerenciamento de capital em instituições financeiras e demais instituições autorizad",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "gerenciamento de capital"
+        },
+        {
+          "context": "uturas de gerenciamento contínuo e integrado de riscos e de gerenciamento de capital.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "gerenciamento de capital"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 3
+    },
+    {
       "alias": "MÉDIA",
       "concept_id": "quantity.mean",
       "domains": [
@@ -14709,7 +14688,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.051,
+      "share_of_concept": 0.053,
       "tokens": 2
     },
     {
@@ -15093,7 +15072,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.065,
+      "share_of_concept": 0.087,
       "tokens": 1
     },
     {
@@ -15381,7 +15360,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.051,
+      "share_of_concept": 0.053,
       "tokens": 1
     },
     {
@@ -15405,7 +15384,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.051,
+      "share_of_concept": 0.053,
       "tokens": 3
     },
     {
@@ -15454,6 +15433,30 @@
       "occurrences": 2,
       "policy": "unknown",
       "share_of_concept": 0.071,
+      "tokens": 1
+    },
+    {
+      "alias": "PASSIVA",
+      "concept_id": "technical.passive_management",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das po",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "PASSIVA"
+        },
+        {
+          "context": "alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada.",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "PASSIVA"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.111,
       "tokens": 1
     },
     {
@@ -15520,7 +15523,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.056,
+      "share_of_concept": 0.043,
       "tokens": 2
     },
     {
@@ -15558,7 +15561,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.056,
+      "share_of_concept": 0.043,
       "tokens": 2
     },
     {
@@ -16432,7 +16435,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.056,
       "tokens": 1
     },
     {
@@ -16474,6 +16477,158 @@
       "tokens": 1
     },
     {
+      "alias": "PASSIVO EM DÓLAR",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓL",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "PASSIVO EM DÓLAR"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "ativo em taxa de juros",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de j",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ativo em taxa de juros"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.077,
+      "tokens": 5
+    },
+    {
+      "alias": "ATIVO EM DÓLAR",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "IVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ATIVO EM DÓLAR"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "ativo em prefixado",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros;",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ativo em prefixado"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "passivo em pós-fixado",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "passivo em pós-fixado"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "ativo em pós-fixado",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ativo em pós-fixado"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "passivo em prefixado",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "a queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "passivo em prefixado"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "ATIVO em prefixado",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ATIVO em prefixado"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
       "alias": "SWAP",
       "concept_id": "technical.swap",
       "domains": [
@@ -16491,6 +16646,63 @@
       "policy": "unknown",
       "share_of_concept": 0.036,
       "tokens": 1
+    },
+    {
+      "alias": "ATIVA em pós-fixada",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "0% do CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATI",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ATIVA em pós-fixada"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "PASSIVA em prefixada",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSI",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "PASSIVA em prefixada"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
+    },
+    {
+      "alias": "ATIVO em prefixada",
+      "concept_id": "technical.swap_leg",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ATIVO em prefixada"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.077,
+      "tokens": 3
     },
     {
       "alias": "juros sobre capital próprio",
@@ -17597,6 +17809,25 @@
       "tokens": 1
     },
     {
+      "alias": "alocação de capital",
+      "concept_id": "entity.resource",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "diferentes investimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitiga",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "alocação de capital"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.021,
+      "tokens": 3
+    },
+    {
       "alias": "Processo",
       "concept_id": "entity.process",
       "domains": [
@@ -18258,7 +18489,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.04,
+      "share_of_concept": 0.048,
       "tokens": 3
     },
     {
@@ -18391,7 +18622,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.5,
+      "share_of_concept": 0.25,
       "tokens": 2
     },
     {
@@ -18410,7 +18641,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.5,
+      "share_of_concept": 0.25,
       "tokens": 2
     },
     {
@@ -19303,7 +19534,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.027,
+      "share_of_concept": 0.031,
       "tokens": 1
     },
     {
@@ -19878,26 +20109,26 @@
     }
   ],
   "registry": {
-    "concepts": 333,
-    "version": "2.18.0"
+    "concepts": 334,
+    "version": "2.19.0"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 412,
-    "events_from_bare_tokens": 6090,
-    "events_from_phrases": 783,
+    "bare_token_pairs": 410,
+    "events_from_bare_tokens": 6057,
+    "events_from_phrases": 804,
     "occurrences_per_pair": {
       "max": 197,
-      "mean": 10.43,
-      "median": 3,
-      "p90": 23,
-      "stdev": 23.76
+      "mean": 10.19,
+      "median": 2,
+      "p90": 22,
+      "stdev": 23.49
     },
-    "phrase_pairs": 247
+    "phrase_pairs": 263
   },
   "totals": {
-    "concepts_with_matches": 268,
-    "distinct_pairs": 659,
-    "match_events": 6873
+    "concepts_with_matches": 269,
+    "distinct_pairs": 673,
+    "match_events": 6861
   }
 }

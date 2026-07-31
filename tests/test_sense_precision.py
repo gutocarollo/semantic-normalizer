@@ -219,6 +219,23 @@ CASES = [
     ("Os Yield Spreads são comumente cotados em pontos-base.", "technical.yield_spread", True),
     ("Com relação à estrutura de custos, os Hedge Funds empregam 2 com 20.", "entity.fund_of_funds", False),
     ("O Fund of Funds (FoF) investe em outros fundos.", "entity.fund_of_funds", True),
+    # Adversarial review round 3. Two of these falsified a published `0 errors` and both were
+    # occurrences this campaign's own sweep had read and passed.
+    ("Sem prejuízo de eventuais sanções, a Superintendência pode suspender.", "polarity.absence", False),
+    ("A duration de um título zero-cupom, sem pagamentos de juros, é igual ao prazo.", "polarity.absence", True),
+    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "entity.asset", False),
+    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_leg", True),
+    ("O valor presente deste ativo acaba sendo valorizado.", "entity.asset", True),
+    ("O Stress Test testa a cauda da curva de sino (Distribuição Normal).", "technical.yield_curve", False),
+    ("A curva de juros pode apresentar outros movimentos.", "technical.yield_curve", True),
+    ("Os Hedge Funds são considerados opções com alto risco.", "technical.option", False),
+    ("Os fluxos de pagamentos de juros e principal de um título do Tesouro.", "technical.principal", True),
+    ("Após a obtenção do registro do fundo na CVM.", "entity.registration", True),
+    # A forbidden variant that cost a true positive and added no coverage: withdrawn.
+    ("Ele venderá todas as ações e deixará o recurso em renda fixa.", "entity.share", True),
+    ("Realizando todas as ações necessárias para tal exercício.", "entity.share", False),
+    ("Decisões informadas sobre a alocação de capital.", "entity.resource", True),
+    ("A estrutura de gerenciamento de capital em instituições financeiras.", "technical.regulatory_capital", True),
 ]
 
 
