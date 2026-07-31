@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-59",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; reversal of a regression I introduced in amendment 58",
+  "method": "the form probed in isolation and in a sentence; neither matches",
+  "reason": "Amendment 58 added `Resolução CVM 175/22` and the form never fires. Probed both ways: `Resolução CVM 175` matches on its own, `Resolução CVM 175/22` matches NOTHING — not even its own three-token prefix — because the slash sits between two protected number spans and something in the candidate filter refuses the whole region. I can state the symptom precisely and cannot trace it to the line without more budget than I have, and guessing at the engine is how the two regressions earlier tonight were made. So this reverses my change rather than building on an untraced cause: the heading returns to `partial`, which is where it was before I touched it, and the registry stops carrying a form that does nothing. The underlying matcher behaviour is a real, reproducible finding and is recorded here rather than left in the tree as a dead entry.",
+  "operations": [
+    {"op":"remove_form","concept":"artifact.cvm_resolution_175","language":"pt-BR",
+     "form":"Resolução CVM 175/22","wrong":1,"total":1,
+     "why":"Never matches. A form that cannot fire is registry noise, and leaving it would also leave the false impression that the citation-with-year spelling is handled."}
+  ]
+}

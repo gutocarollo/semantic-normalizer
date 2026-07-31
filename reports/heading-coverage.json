@@ -1,8 +1,7 @@
 {
   "by_status": {
     "covered": 289,
-    "partial": 49,
-    "uncovered": 1
+    "partial": 50
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
   "covered_share_of_distinct": 0.8525,
@@ -202,9 +201,11 @@
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Resolução CVM 175/22",
       "occurrences": 1,
-      "partial_matches": [],
+      "partial_matches": [
+        "Resolução CVM 175"
+      ],
       "resolved_by": null,
-      "status": "uncovered"
+      "status": "partial"
     },
     {
       "covered_by": null,
@@ -3191,8 +3192,7 @@
   ],
   "mass_by_status": {
     "covered": 754,
-    "partial": 64,
-    "uncovered": 1
+    "partial": 65
   },
   "registry": {
     "concepts": 561,

@@ -565,7 +565,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "Plurals and spellings the headings use for concepts already registered, found in the final read of the partial bucket. `Classes de Cotas` and `Subclasses de Cotas` each have a concept under the singular; `Resolução CVM 175/22` is the citation form with the year suffix.",
+  "change_reason": "Amendment 58 added `Resolução CVM 175/22` and the form never fires. Probed both ways: `Resolução CVM 175` matches on its own, `Resolução CVM 175/22` matches NOTHING — not even its own three-token prefix — because the slash sits between two protected number spans and something in the candidate filter refuses the whole region. I can state the symptom precisely and cannot trace it to the line without more budget than I have, and guessing at the engine is how the two regressions earlier tonight were made. So this reverses my change rather than building on an untraced cause: the heading returns to `partial`, which is where it was before I touched it, and the registry stops carrying a form that does nothing. The underlying matcher behaviour is a real, reproducible finding and is recorded here rather than left in the tree as a dead entry.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -581,8 +581,8 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "46cac059075c53f25f76f69a54a87fc54882a4a18569d4762686a1543001963e",
-    "registry.provenance.jsonl": "0c4097497e638da7bf70a7d6b3219d18a9142b07b85e2bb9a6e93e9ed208d10c",
+    "registry.jsonl": "66e45df95e6a706dcadd14a49d6951d1e9b24271edb55c0101bf93ec95dae605",
+    "registry.provenance.jsonl": "1fae9563c29be8cf21d6cc7995bc913f270fff0d7084e46a87cad09871f7babf",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
