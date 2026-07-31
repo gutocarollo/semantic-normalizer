@@ -70,6 +70,18 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2300-r8.json", "seed": 31622777,
+        "registry": "2.30.0",
+        "errors": 0,
+        "found": [],
+        "state": "after batches 42-43 and amendments 60-61: the heading-coverage vocabulary, the "
+                 "concept the coverage filter had been hiding, and the material_information lemma "
+                 "fix. Drawn because an adversarial review established that the largest single "
+                 "vocabulary delta of the campaign had never passed this pipeline — the precision "
+                 "figure still described registry 2.28.0 while 2.30.0 shipped. All 240 read "
+                 "individually; zero false positives.",
+    },
+    {
         "report": "reports/unread-residual-v2280-r7.json", "seed": 31622777,
         "registry": "2.28.0",
         "errors": 0,
@@ -290,7 +302,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r7.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2300-r8.json",
                         help="the draw taken against the current registry")
     parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "

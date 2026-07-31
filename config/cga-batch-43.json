@@ -1,0 +1,18 @@
+{
+  "batch": 43,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "One concept, registered because an adversarial review proved the coverage instrument was hiding it rather than measuring it. `scripts/measure_heading_coverage.py` carried a clause matching `^\\s*material de divulgação\\b` inside INSTRUCTION — a filter built for `Gráfico:`, `Tabela:` and `ETAPA n:`, headings that label a figure or a step rather than name a subject. `Material de Divulgação: Fundo` is not that. It is a topic heading, and the clause deleted it and two siblings from BOTH the numerator and the denominator, which is worse than scoring them partial: a partial heading costs the score honestly, an excluded one disappears.\n\nThe term is attested ten times in the prose of the CVM 175 chapter — `o gestor deve imediatamente enviar o material de divulgação atualizado aos distribuidores`, `todo o material de divulgação deve apresentar o grau mais recente conferido à classificação` — which is better attestation than `valor futuro` got in batch 42, and batch 42 admitted that one. Refusing this while admitting that was not a defensible line.\n\nThe clause is removed from INSTRUCTION in the same change, so the three headings now score on their merits instead of vanishing.",
+  "concepts": [
+    {
+      "id": "artifact.disclosure_material",
+      "en": "disclosure material",
+      "pt": "material de divulgação",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Any material published to promote or describe a fund, which CVM 175 subjects to rules on performance figures, comparisons, risk-rating disclosure and the warning that past returns do not guarantee future ones.",
+      "alt_en": [],
+      "alt_pt": ["materiais de divulgação", "material publicitário"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    }
+  ]
+}

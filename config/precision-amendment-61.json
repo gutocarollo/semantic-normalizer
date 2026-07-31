@@ -1,0 +1,18 @@
+{
+  "id": "precision-sweep-amendment-61",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "every occurrence of the affected surface re-read; the rewrite output inspected directly rather than inferred from the match",
+  "reason": "Two defects an adversarial review found in batch 42, both mine.\n\nFirst, a preferred label must be a LEMMA, and I took this one from a heading. `technical.material_information` shipped with pt-BR pref `Informações Relevantes` — plural, because that is how the section banner is printed — while all eight corpus occurrences are the singular `informação relevante`. The preferred label is what the canonical projection substitutes, so the concept rewrote its own only attested spelling into a form the corpus never uses, 8 times out of 8. The projection is a lemma projection with span mappings back to the source, so it is not required to emit publishable prose — but it IS required to emit the lemma, and `Informações Relevantes` is not the lemma of `informação relevante`. Renamed, with the plural kept as a form so the heading still resolves.\n\nThe review also reported this as part of a wider claim that the projection corrupts grammatical number generally, citing `os títulos de renda fixa` -> `Os Título de Renda Fixa`. That part is NOT accepted as a defect and no guard is added for it. Projecting a plural onto its singular lemma is what the field is for, and the same output shows `compra` -> `comprar`, an infinitive, which predates this batch and is the same intended behaviour. A blanket number-agreement guard would refuse most of the normalisation the tool exists to perform — the review asked for exactly the trade this campaign already made and recorded once, where a truncation guard blocked 149 legitimate rewrites to catch 24. The defect was the label, and the label is fixed.\n\nSecond, `technical.benchmark_relative_management` never fired on its own textbook definition. Its registered forms were the two heading spellings, so the sentence that defines it at 09-gestao-de-carteiras-de-renda-fixa-2 resolved to three unrelated atomic concepts. A concept whose forms match only its banner and not its definition is the circularity this batch claimed to be avoiding, so the prose wording is registered.",
+  "operations": [
+    {"op":"rename_pref","concept":"technical.material_information","language":"pt-BR",
+     "to":"informação relevante",
+     "why":"The lemma, and the only spelling the corpus uses in all 8 occurrences. The previous pref was the plural heading spelling and rewrote every occurrence wrongly."},
+    {"op":"add_form","concept":"technical.material_information","language":"pt-BR",
+     "form":"Informações Relevantes","policy":"auto","right":2,"total":2,
+     "why":"Restored as a form after the rename, which retires the old pref. It is a real surface — the section heading — it is simply not the lemma."},
+    {"op":"add_form","concept":"technical.benchmark_relative_management","language":"pt-BR",
+     "form":"Gestão de Carteiras de Renda Fixa em relação a um benchmark","policy":"auto","right":1,"total":1,
+     "why":"The wording of the defining sentence, lowercase `em relação`, no `RF` and no `Índice de Mercado`. Without it the concept matched its banner and not its definition."}
+  ]
+}

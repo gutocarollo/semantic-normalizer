@@ -85,6 +85,7 @@
     "artifact.conduct_rules",
     "artifact.configuration",
     "artifact.cvm_resolution_175",
+    "artifact.disclosure_material",
     "artifact.error_code",
     "artifact.financial_statements",
     "artifact.fund_documents",
@@ -576,7 +577,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "Surfaces that belong on concepts the registry ALREADY holds. Registering a second concept for any of these would have bought a duplicate and paid for it with the incumbent's automatic form — which is precisely what the collision demoter caught in the first attempt at batch 42, where `technical.reprisk_index` cost `technical.rep_risk_index` its `RepRisk` surface. So the rule for this pass: find the incumbent first, add the surface to it, and only mint a concept when no incumbent exists.\n\nThe two `Gestão de Carteiras RF …` phrases are section banners repeated once per slide, which is why one of them carries nine occurrences. They are admitted not because they are headings but because the corpus attests the concept independently: `## Asset Liability Management` appears as its own heading with a prose definition — `os ativos precisam estar disponíveis e líquidos no momento do pagamento dos passivos` — and the section the banner heads runs Imunização, Key Rate Duration, Dollar Duration, Spread Duration. That is liability-driven management under its Portuguese name, and `technical.asset_liability_management` was already in the registry holding only the English side of it.\n\nBare `RF` was refused. It has 22 corpus occurrences and every single one sits inside a heading — `Desenquadramento: RF Longo Prazo`, `Gestão de Carteiras RF …` — with none in a sentence. An abbreviation that never appears in prose is not vocabulary this corpus uses; it is a typographic contraction in slide titles. Registering it would have raised the coverage number by teaching the dictionary the shape of the instrument measuring it.",
+  "change_reason": "Two defects an adversarial review found in batch 42, both mine.\n\nFirst, a preferred label must be a LEMMA, and I took this one from a heading. `technical.material_information` shipped with pt-BR pref `Informações Relevantes` — plural, because that is how the section banner is printed — while all eight corpus occurrences are the singular `informação relevante`. The preferred label is what the canonical projection substitutes, so the concept rewrote its own only attested spelling into a form the corpus never uses, 8 times out of 8. The projection is a lemma projection with span mappings back to the source, so it is not required to emit publishable prose — but it IS required to emit the lemma, and `Informações Relevantes` is not the lemma of `informação relevante`. Renamed, with the plural kept as a form so the heading still resolves.\n\nThe review also reported this as part of a wider claim that the projection corrupts grammatical number generally, citing `os títulos de renda fixa` -> `Os Título de Renda Fixa`. That part is NOT accepted as a defect and no guard is added for it. Projecting a plural onto its singular lemma is what the field is for, and the same output shows `compra` -> `comprar`, an infinitive, which predates this batch and is the same intended behaviour. A blanket number-agreement guard would refuse most of the normalisation the tool exists to perform — the review asked for exactly the trade this campaign already made and recorded once, where a truncation guard blocked 149 legitimate rewrites to catch 24. The defect was the label, and the label is fixed.\n\nSecond, `technical.benchmark_relative_management` never fired on its own textbook definition. Its registered forms were the two heading spellings, so the sentence that defines it at 09-gestao-de-carteiras-de-renda-fixa-2 resolved to three unrelated atomic concepts. A concept whose forms match only its banner and not its definition is the circularity this batch claimed to be avoiding, so the prose wording is registered.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -592,13 +593,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "9a1c4c1d68ba17fa1c68b89afbde087b6b2b6a61836882fa1f80ae21b86676f5",
-    "registry.provenance.jsonl": "9d32acfef0dc09b86c070939a0326453d90ddd9469f112b4da50b7d8c354d736",
+    "registry.jsonl": "b20381a560988dd8b04577da8c828bb3296fc5487882f9b223d7bfbe57dfe2b8",
+    "registry.provenance.jsonl": "96409c0d64227e493d429b4fe18a17c2442defcd9be11c00440b6ca7d2439fe7",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.29.0",
+  "rollback_version": "2.30.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.29.0"
+  "version": "2.30.0"
 }

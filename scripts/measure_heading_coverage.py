@@ -75,7 +75,7 @@ FURNITURE = frozenset({
 # both denominators and names the excluded headings, and the two are never collapsed.
 INSTRUCTION = re.compile(
     r"^\s*(?:etapa|passo|fórmula|formula)\s*\d*\s*[:=–-]|^\s*gráfico\b|^\s*tabela\b"
-    r"|^\s*material de divulgação\b|^\s*resumo\s*:", re.IGNORECASE)
+    r"|^\s*resumo\s*:", re.IGNORECASE)
 
 
 def is_furniture(title: str) -> bool:
@@ -141,7 +141,14 @@ def variants(title: str) -> list[str]:
     return [item for item in dict.fromkeys(out) if item]
 
 
-CONJUNCTION = re.compile(r"\s+(?:&|x|×|e|and|ou|or)\s+", re.IGNORECASE)
+# A comma is a coordinator in a list exactly as `e` is, and the shipped contract already says a
+# conjunctive heading counts when EVERY conjunct is covered. Not splitting on it meant
+# `Valor Presente, Valor Futuro e YTM` scored partial while all THREE of its conjuncts were
+# registered and matched — the rule failing to apply to the punctuation rather than the
+# dictionary failing to hold the terms. This admits no vocabulary and removes nothing from the
+# denominator; it moves exactly one heading, which is stated so the change can be checked
+# against its effect rather than taken on the reasoning.
+CONJUNCTION = re.compile(r"\s*,\s*|\s+(?:&|x|×|e|and|ou|or)\s+", re.IGNORECASE)
 
 
 def conjuncts(title: str) -> list[str]:
