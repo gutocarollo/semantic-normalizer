@@ -51,7 +51,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 10215,
-      "sha256": "1c8bb2741fa870ab9c16d8f7a72df1ff5b70ebaaa240685b31a3f724fd6f4809"
+      "sha256": "2826d8e8c9606896aebc287c9af2902008c2c94af2dbc9e1892bb1b523332b95"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -871,7 +871,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7404,
-      "sha256": "876d729fc8a9e72b588c35871bb9852700251360a5896ba61a44ce2f2138230d"
+      "sha256": "6f95e872f2fa887f824ab4b72c4510009afecc1f3b88543cad55abd4c59600a9"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -925,8 +925,8 @@
     },
     {
       "path": "reports/release-manifest.json",
-      "size_bytes": 34447,
-      "sha256": "1d6fcf272a274aa8fbd773307c22a345cacecdfdbd015962dce1e9a0e6a27f51"
+      "size_bytes": 34613,
+      "sha256": "783f440bfc91e080099ad4ae440260a16f6f179a48c5c669ecef848a60dac563"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1362,6 +1362,11 @@
       "path": "scripts/rank_precision_risk.py",
       "size_bytes": 7553,
       "sha256": "1d891ef78f8715c9b49c07cedfeb6f56b02e7f17db690ff325c11d6fe1fc5bac"
+    },
+    {
+      "path": "scripts/rank_term_candidates.py",
+      "size_bytes": 12617,
+      "sha256": "cb8cb5b1ec1410957192fc1c26e9301f1631fb442cb7825a7b252b4baa507ab9"
     },
     {
       "path": "scripts/report_precision.py",
