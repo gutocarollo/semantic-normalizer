@@ -65,8 +65,24 @@ FURNITURE = frozenset({
 })
 
 
+# A heading that gives an instruction or captions a figure is not naming a subject. `ETAPA 3:
+# Somar todos os resultados da Etapa 2` tells the reader to add; `Gráfico Preço x Taxa de Juros`
+# labels a chart. Neither is vocabulary, and counting them in the denominator asks the dictionary
+# to have an entry for a sentence.
+#
+# This RAISES the reported figure by removing non-subjects rather than by adding entries, which is
+# the shape of change that deserves the most suspicion in this campaign — so the report carries
+# both denominators and names the excluded headings, and the two are never collapsed.
+INSTRUCTION = re.compile(
+    r"^\s*(?:etapa|passo|fórmula|formula)\s*\d*\s*[:=–-]|^\s*gráfico\b|^\s*tabela\b"
+    r"|^\s*material de divulgação\b|^\s*resumo\s*:", re.IGNORECASE)
+
+
 def is_furniture(title: str) -> bool:
-    return title.strip().endswith(":") or title.strip().rstrip(":").strip().casefold() in FURNITURE
+    stripped = title.strip()
+    if INSTRUCTION.match(stripped):
+        return True
+    return stripped.endswith(":") or stripped.rstrip(":").strip().casefold() in FURNITURE
 
 
 # A heading that names its subject twice, once per language or once per spelling: `TIR – Taxa

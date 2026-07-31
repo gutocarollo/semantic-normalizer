@@ -33,12 +33,12 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "35fc8eb1a883d4c8dc90ab7271c98e50831b8160883f0892f8526d3709c7c1b9",
+    "installed_package_sha256": "6961ad4d5d4c0518b2b570ca8a8ad11a2a8df50ae3de9231e68aea9461301a18",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
       "identifier_protected": true,
-      "provenance_events": 101,
+      "provenance_events": 102,
       "registry_records": 561,
       "registry_version": "2.28.0",
       "release_governs_registry": true,
@@ -69,10 +69,10 @@
     "site_packages_snapshot": "complete-tree SHA-256 compared before and after runtime commands",
     "site_packages_unchanged": true,
     "validate_registry": {
-      "automatic_keys": 1500,
+      "automatic_keys": 1506,
       "records": 561,
       "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-      "registry_sha256": "925293ffb7d723651a3057eb6af1e66a4ed41eff84935f17ebf8c418ee8a495a",
+      "registry_sha256": "46cac059075c53f25f76f69a54a87fc54882a4a18569d4762686a1543001963e",
       "registry_version": "2.28.0",
       "review_keys": 165,
       "valid": true
@@ -113,9 +113,9 @@
       "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
       "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
       "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-      "registry.jsonl": "925293ffb7d723651a3057eb6af1e66a4ed41eff84935f17ebf8c418ee8a495a",
-      "registry.provenance.jsonl": "d23e7a1dd9d7c0beecae724e6b88e022dc069cd957f85022e3bc5eefb33ec286",
-      "registry.release.json": "a6bd5c82221dfef5c31b27fabae1411c16f999724f10b364be7a3b5a7c39827d",
+      "registry.jsonl": "46cac059075c53f25f76f69a54a87fc54882a4a18569d4762686a1543001963e",
+      "registry.provenance.jsonl": "0c4097497e638da7bf70a7d6b3219d18a9142b07b85e2bb9a6e93e9ed208d10c",
+      "registry.release.json": "5288f08d7882382644da7e2f1b9f9e54112edde5a3687e0832f77df904de744b",
       "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
       "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
     },
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "59d24228cbb30e997dbd2a891bee94aa30ee90c51ffcf6760d2209f3ea88aa8b",
-    "size": 1088769,
+    "sha256": "37ae1ec3982d4a7cb43cd6a0d9ab5bf13b4e3d4c3cb07228d071d690821fb1ed",
+    "size": 1090350,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }

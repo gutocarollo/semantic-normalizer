@@ -1,13 +1,14 @@
 {
   "by_status": {
-    "covered": 287,
-    "partial": 65
+    "covered": 289,
+    "partial": 49,
+    "uncovered": 1
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.8153,
-  "covered_share_of_mass": 0.9038,
-  "distinct_headings": 352,
-  "heading_occurrences": 832,
+  "covered_share_of_distinct": 0.8525,
+  "covered_share_of_mass": 0.9206,
+  "distinct_headings": 339,
+  "heading_occurrences": 819,
   "headings": [
     {
       "covered_by": null,
@@ -117,41 +118,6 @@
     {
       "covered_by": null,
       "file": "01-investimentos-no-exterior",
-      "heading": "Gráfico: Renda Fixa com Call",
-      "occurrences": 1,
-      "partial_matches": [
-        "Renda Fixa",
-        "Call"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
-      "heading": "Gráfico: Renda Fixa com PUT",
-      "occurrences": 1,
-      "partial_matches": [
-        "Renda Fixa",
-        "PUT"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
-      "heading": "Resumo: Euro/Global Bonds",
-      "occurrences": 1,
-      "partial_matches": [
-        "Global Bonds"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "01-investimentos-no-exterior",
       "heading": "Principais Estratégias",
       "occurrences": 1,
       "partial_matches": [
@@ -198,17 +164,6 @@
     {
       "covered_by": null,
       "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "Estratégias Ativas e Agnósticas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Estratégias Ativas"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
       "heading": "RepRisk Index",
       "occurrences": 1,
       "partial_matches": [
@@ -236,7 +191,7 @@
       "heading": "Estruturação de áreas de análise na gestão de Renda Variável",
       "occurrences": 1,
       "partial_matches": [
-        "análise",
+        "Estruturação de áreas de análise",
         "Renda Variável"
       ],
       "resolved_by": "action.manage_portfolio",
@@ -244,81 +199,12 @@
     },
     {
       "covered_by": null,
-      "file": "03-gestao-de-carteiras-renda-variavel-2",
-      "heading": "Estruturação de áreas de análise",
-      "occurrences": 1,
-      "partial_matches": [
-        "análise"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Resolução CVM 175/22",
       "occurrences": 1,
-      "partial_matches": [
-        "Resolução CVM 175"
-      ],
+      "partial_matches": [],
       "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Classes de Cotas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Cotas"
-      ],
-      "resolved_by": "entity.asset_class",
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Subclasses de Cotas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Subclasses",
-        "Cotas"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Material de Divulgação: Rentabilidade (I)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Rentabilidade"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Material de Divulgação: Rentabilidade (II)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Rentabilidade"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Divulgação de Informações e Resultados",
-      "occurrences": 1,
-      "partial_matches": [
-        "Divulgação de Informações"
-      ],
-      "resolved_by": null,
-      "status": "partial"
+      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -618,68 +504,6 @@
       "partial_matches": [
         "Riscos",
         "Investidor"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "ETAPA 1 = Calcular valor presente dos títulos",
-      "occurrences": 1,
-      "partial_matches": [
-        "Calcular",
-        "valor presente",
-        "títulos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "ETAPA 2: Multiplicar cada valor presente calculado pelo seu prazo",
-      "occurrences": 1,
-      "partial_matches": [
-        "valor presente",
-        "prazo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "ETAPA 3: Somar todos os resultados da Etapa 2",
-      "occurrences": 1,
-      "partial_matches": [
-        "todos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "ETAPA 4: Calcular o Valor Presente da Carteira (soma dos VP da ETAPA 1)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Calcular",
-        "Valor Presente",
-        "Carteira"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Gráfico Preço x Taxa de Juros",
-      "occurrences": 1,
-      "partial_matches": [
-        "Preço",
-        "Taxa",
-        "Juros"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -2114,12 +1938,30 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.agnostic_strategy",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "Estratégias Ativas e Agnósticas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.agnostic_strategy",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.corporate_sustainability_index",
       "file": "03-gestao-de-carteiras-renda-variavel-2",
       "heading": "ISE",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "entity.corporate_sustainability_index",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.equity_portfolio_management",
+      "file": "03-gestao-de-carteiras-renda-variavel-2",
+      "heading": "Estruturação de áreas de análise",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.equity_portfolio_management",
       "status": "covered"
     },
     {
@@ -2177,12 +2019,30 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.class",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Classes de Cotas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.class",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.open_class+entity.closed_class",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Classes Aberta e Fechada",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "entity.open_class+entity.closed_class",
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.subclass",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Subclasses de Cotas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.subclass",
       "status": "covered"
     },
     {
@@ -2231,12 +2091,12 @@
       "status": "covered"
     },
     {
-      "covered_by": "entity.fund",
+      "covered_by": "action.disclose_information",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Material de Divulgação: Fundo",
+      "heading": "Divulgação de Informações e Resultados",
       "occurrences": 1,
       "partial_matches": [],
-      "resolved_by": "entity.fund",
+      "resolved_by": "action.disclose_information",
       "status": "covered"
     },
     {
@@ -2879,24 +2739,6 @@
       "status": "covered"
     },
     {
-      "covered_by": "technical.call_option",
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Gráfico com opção de compra (call) embutida",
-      "occurrences": 1,
-      "partial_matches": [],
-      "resolved_by": "technical.call_option",
-      "status": "covered"
-    },
-    {
-      "covered_by": "technical.put_option",
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Gráfico com opção de venda (put) embutida",
-      "occurrences": 1,
-      "partial_matches": [],
-      "resolved_by": "technical.put_option",
-      "status": "covered"
-    },
-    {
       "covered_by": "technical.duration",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Duration: Relações Diretas e Indiretas",
@@ -3348,15 +3190,16 @@
     }
   ],
   "mass_by_status": {
-    "covered": 752,
-    "partial": 80
+    "covered": 754,
+    "partial": 64,
+    "uncovered": 1
   },
   "registry": {
     "concepts": 561,
     "version": "2.28.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
-  "resolved_share_of_mass": 0.9111,
+  "resolved_share_of_mass": 0.9267,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }

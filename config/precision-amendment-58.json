@@ -1,0 +1,22 @@
+{
+  "id": "precision-sweep-amendment-58",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; the last readable heading terms",
+  "method": "each spelling counted in the corpus before being added",
+  "reason": "Plurals and spellings the headings use for concepts already registered, found in the final read of the partial bucket. `Classes de Cotas` and `Subclasses de Cotas` each have a concept under the singular; `Resolução CVM 175/22` is the citation form with the year suffix.",
+  "operations": [
+    {"op":"add_form","concept":"entity.class","language":"pt-BR","form":"Classes de Cotas",
+     "why":"The plural the CVM rule heads its section with; the registry had `classe de cotas`."},
+    {"op":"add_form","concept":"entity.subclass","language":"pt-BR","form":"Subclasses de Cotas",
+     "why":"Same shape, the other concept."},
+    {"op":"add_form","concept":"artifact.cvm_resolution_175","language":"pt-BR","form":"Resolução CVM 175/22",
+     "why":"The citation form with the year, which the corpus uses alongside the bare number."},
+    {"op":"add_form","concept":"technical.agnostic_strategy","language":"pt-BR","form":"Estratégias Ativas e Agnósticas",
+     "why":"The heading's own wording; the registry had the `Outras...` variant."},
+    {"op":"add_form","concept":"technical.equity_portfolio_management","language":"pt-BR",
+     "form":"Estruturação de áreas de análise",
+     "why":"The section on how a manager structures its research function, twice a heading."},
+    {"op":"add_form","concept":"action.disclose_information","language":"pt-BR","form":"Divulgação de Informações e Resultados",
+     "why":"The heading's fuller wording for the concept already registered."}
+  ]
+}
