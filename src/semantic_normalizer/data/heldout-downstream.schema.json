@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/heldout-downstream-v2.schema.json",
+  "title": "Custodian-only held-out downstream questions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset_role", "questions"],
+  "properties": {
+    "schema_version": {"const": "heldout-downstream-v2"},
+    "dataset_role": {"const": "heldout-custodian-only"},
+    "questions": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {"$ref": "#/$defs/question"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doc_id", "start", "end", "original_sha256"],
+      "properties": {
+        "doc_id": {"$ref": "#/$defs/identifier"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "original_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "question": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "question",
+            "language",
+            "answerable",
+            "gold_answer",
+            "gold_evidence"
+          ],
+          "properties": {
+            "id": {"$ref": "#/$defs/identifier"},
+            "question": {"type": "string", "minLength": 1},
+            "language": {"enum": ["en", "pt-BR"]},
+            "answerable": {"const": true},
+            "gold_answer": {"type": "string", "minLength": 1},
+            "gold_evidence": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"$ref": "#/$defs/evidence"}
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "question",
+            "language",
+            "answerable",
+            "gold_answer",
+            "gold_evidence"
+          ],
+          "properties": {
+            "id": {"$ref": "#/$defs/identifier"},
+            "question": {"type": "string", "minLength": 1},
+            "language": {"enum": ["en", "pt-BR"]},
+            "answerable": {"const": false},
+            "gold_answer": {"const": ""},
+            "gold_evidence": {
+              "type": "array",
+              "maxItems": 0,
+              "items": {"$ref": "#/$defs/evidence"}
+            }
+          }
+        }
+      ]
+    }
+  }
+}

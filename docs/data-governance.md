@@ -17,8 +17,10 @@ confusing or negative example where ambiguity is possible.
 
 ## Reference choices
 
-- ASD-STE100: local normative reference for English technical controlled
-  writing; do not redistribute its dictionary without explicit authorization.
+- ASD-STE100: normative reference for English technical controlled writing. Use
+  it as a selection signal (which terms are essential) and as a record template;
+  it is English-only, so every Portuguese label is authored here regardless.
+  Definitions and examples in this registry are original.
 - CILI/Global WordNet: candidate interlingual identity namespace.
 - OpenWN-PT/OMW: candidate Portuguese lexicalization, subject to the exact
   release license and attribution.

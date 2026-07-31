@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/semantic-normalizer-reconciliation-request-v1.schema.json",
+  "title": "Restricted Reconciliation Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query",
+    "type",
+    "type_strict",
+    "properties",
+    "limit",
+    "language",
+    "span",
+    "context",
+    "allowed_candidates",
+    "attempt",
+    "request_id",
+    "occurrence_id",
+    "input_sha256",
+    "registry_version",
+    "registry_sha256",
+    "registry_schema_sha256"
+  ],
+  "properties": {
+    "query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "type_strict": {
+      "enum": [
+        "any",
+        "all",
+        "should"
+      ]
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pid",
+          "v"
+        ],
+        "properties": {
+          "pid": {
+            "type": "string",
+            "minLength": 1
+          },
+          "v": {
+            "type": [
+              "string",
+              "number",
+              "boolean",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "limit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "language": {
+      "enum": [
+        "en",
+        "pt-BR"
+      ],
+      "description": "Local extension to the OpenRefine-inspired contract."
+    },
+    "span": {
+      "$ref": "#/$defs/span"
+    },
+    "context": {
+      "type": "string",
+      "minLength": 1
+    },
+    "allowed_candidates": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+      }
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^req-[a-f0-9]{64}$"
+    },
+    "occurrence_id": {
+      "type": "string",
+      "pattern": "^occ-[a-f0-9]{64}$"
+    },
+    "input_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "registry_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "registry_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "registry_schema_sha256": {
+      "$ref": "#/$defs/sha256"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end",
+        "text"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

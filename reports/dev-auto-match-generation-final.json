@@ -1,0 +1,24 @@
+{
+  "adjudication_status": "partial_public_seed_only",
+  "candidate_set_sha256": "55d4f5ddfe1836a8a0697036a8a63498211172fb2ba6886e1e7b787815353fef",
+  "counts": {
+    "ambiguous_events": 16,
+    "blind_pending": 66,
+    "candidates": 137,
+    "derivable_seed": 71,
+    "dev_document_auto": 34,
+    "dev_query_auto": 10,
+    "golden_auto": 93,
+    "protected_values": 36
+  },
+  "heldout_accessed": false,
+  "inputs": {
+    "dev_sha256": "ed677a53cbd98d152bef445be218461f487762f8c8e16eaf06aeee2199e63d58",
+    "golden_sha256": "8a2c11864b7c8042058d5c2f77ee742718c482b10d888f77c81c9c8ccb18ad2a"
+  },
+  "normalizer_sha256": "f94f05467068d23b49e3673c829527172639f688c7a5e707adc1a71f2ef9d1e4",
+  "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
+  "registry_sha256": "7bd271774bfcd3292349e31400cab2716b90e8d79b301c8c4100be35e6792368",
+  "registry_version": "2.0.0",
+  "schema_version": "auto-match-candidates-o3-v1"
+}

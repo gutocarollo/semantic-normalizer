@@ -1,0 +1,633 @@
+{
+  "batch": 1,
+  "sample_size": 60,
+  "adjudications": [
+    {
+      "occurrence_id": "occ-63b2f5cf828f6fdad7fb9e00283e635b5b2d41ddb2ae3c95ff295ca86468128a",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-313b7c9fc2aa6b0c831bd9bcc4077e2eee5a1d141ce94deb03d541fc586041ed",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-7bdc4d425a3f510bfce46add7e197622b48781489a02eb268f39909d5757d7b6",
+      "gold_concept_id": "entity.strategy",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-c98e0805e1f922dd5555e814cf0c94b172fab56ab324522a22d5b05141601b38",
+      "gold_concept_id": "actor.issuer",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-0ffd82ebae9f3412b33bbf98968db772ddfdbcb0c4edfccbeb953d2f6ddd330a",
+      "gold_concept_id": "actor.investor",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-1a3aaa3e410f0337e41ac411a21bc858eebdae0a4432300f5127312ba3388ef3",
+      "gold_concept_id": "actor.investor",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-f878b98a33e25d554d0f34e0984723e8cbc2a83abd1b38d2501f0022dab6e4cb",
+      "gold_concept_id": "entity.share",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-a5af03bc910092f9f86fdf7b19765d0eb9661c0d4b2f4e8cca4ef6590b0fbd7f",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-21984457d89d42980b0ac21a66fa6a25e70c81be37454d0dfbd0e137e5c74d7c",
+      "gold_concept_id": "actor.portfolio_manager",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-6fcee578f0d825da734e8651a2ad62569e9214a2dd167ba5000a3490266ff637",
+      "gold_concept_id": "technical.duration",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-b6b0cb7452429bdbc21535f681c667021e27c86c96d356cdc0c1f80b5f1b7b60",
+      "gold_concept_id": "entity.fixed_income",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-13224df7f897ddc37a7ae59237b8ea8457f866deb19beb71c3725b441d856002",
+      "gold_concept_id": "instrument.interest",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-9e00d6ea3f0a165bda847814381bde57a12f923121b2272599985f7f2c09e178",
+      "gold_concept_id": "quantity.all",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-45838ef609c6a3e4f86398235cdcd4a130908dd3966c0855d122281ce9ecc52d",
+      "gold_concept_id": "entity.fund_share",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-0c236ca1b7b4703868dafa131a8289982c9142c736768f30c9a40bbdd265d280",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-1e584af52b78f6f6c220a1ac866f284aa9d317627570a3950d05ed8c58e3d08a",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-8f1315e3f3f0e374314ab025623fe420edbc463b5e4740e5771009dfec0d9765",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-88447a714fc3aa8024b986d18cce315ef99efa5219c59c5792a331b0b678b858",
+      "gold_concept_id": "entity.market",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-18f5d2ab59414ca56bca134838d2d7e3f281532e71ac60a1c946afb5543e8ebd",
+      "gold_concept_id": "entity.fund_share",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-4bd5c6371a58530589400bc4b27f9acd3ba8abd9c90457b15b591c8a2565bc1e",
+      "gold_concept_id": "technical.duration",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-1ff05aea05b557c20081f2b6b70e6c7869956dfa1b476016299cfd4f692bd718",
+      "gold_concept_id": "actor.investor",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-a9fa8b7f72974653bf8edbb943d05bb694093ca0d84477d0c2af8c85513fb22b",
+      "gold_concept_id": "actor.company",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-89bccfa08ddeaf80e28a474d32240bc95c31d0daddb31717039445555b4462af",
+      "gold_concept_id": "entity.fund_share",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-14d6c89dadd0bf7aa2e27348c25ef8c8ff461f72d8a7c5a67c4f0fc31fbfd774",
+      "gold_concept_id": "quantity.exactly",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-fc280074041e64f99d5bdfba38004507f07f267c654a5194cedefc57d398d9c7",
+      "gold_concept_id": "NO_CONCEPT",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-aea3aa2a1bf96c706c79d54320adc6a56bf6611702ead804984dcb5b644dc58c",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-2aa8e3d684a7037e19fd04b608f3b2dfb807a2bb0d9feab573d596d207c334e5",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-46c22de6cf605df45c684cd235e845d014f2ede0f59c847bfb54dd3993e8b38f",
+      "gold_concept_id": "temporal.term",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-c4d3d79f446f232e62b98eadc4e5a640e7343fad95b6ac09ee53e2053707911d",
+      "gold_concept_id": "actor.company",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-c441e673e682e2609295e983e8b93c76ec895e58984c56532b97218dbccbbe47",
+      "gold_concept_id": "action.redeem",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-1667b784dc78686a6ddc2bed2e739d4cacac5cc7fc9583ac277d4c3bab03bcda",
+      "gold_concept_id": "entity.fund",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-b36c60fbc6ca5935533e2e068779b15bb9165929a3cde41d02dfa91113bbf7a3",
+      "gold_concept_id": "action.invest",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-b6e4047525305ebfae842efcc908648dcfb265c29cc673bab22ee885c8a6bc97",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-7c05d5d190ffefa98f0587206e536d995290cf385c66f9473c01fdc5d77e5395",
+      "gold_concept_id": "entity.repository",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-113ad877ccff0f99b15c879eaca432475cd4f595d4f8fb3eef2f17068714d77a",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-468dccebea6add6754ebce1a5ed89eee7dc0fd59c7f5dcf5501a4a743e0dfbbd",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-0fece9b4b6633c345655010e57bdc14b04218aac3996ded70bd5566eb7ff13a6",
+      "gold_concept_id": "temporal.before",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-adac7b8bf9bc331d9d64c0dea94b95143fac2551a3fd915595576f36fbbfe1dd",
+      "gold_concept_id": "risk.financial",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-2db0442cb30903a710f971c92bdb2fa4d09859020f079cfbdc3949090c7d6107",
+      "gold_concept_id": "risk.financial",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-59448fbad2bd4adfa8782ad97ed67ad655c6364a7ebac22099a8307469455a76",
+      "gold_concept_id": "actor.attacker",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-2f294aa48ed4c48db734f6fcfe264c287d7fd30590a9cb8886ee0818484f2163",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-a5dc4c7bcc9078c38c9500d97554562fd74505820f0ec9f2d50f9778af5a6553",
+      "gold_concept_id": "quantity.rate",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-2914ea093985f2ca15b9c1f87c93116209ed4af85fa612a4d0bfe05e32acc8b0",
+      "gold_concept_id": "quantity.price",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-afdd4c118a9dfef8c7a399d2ffea975ce33489cd355792b09bb4441f5ec83d1e",
+      "gold_concept_id": "temporal.term",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-5e93a70d23d06b50750573c2e14aaaa0bd4a46be0cfc72b4bf514f9003a07a03",
+      "gold_concept_id": "quantity.volatility",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-adad0fbe364789568cfe89348e357a4174e7283358d698a8430215e2c208f998",
+      "gold_concept_id": "entity.share",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-f84213b674916bbd4457521092ea630414e4856f29201418866ed9436a394b8a",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-d10b0e159274f82a8da4499ec718ed6b591d3652c680a0e48076d41f04285ac5",
+      "gold_concept_id": "actor.company",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-388c80c2f3de4c35efa7ec94ba7ffa83816743d8e96f1169621d299842de4e75",
+      "gold_concept_id": "quantity.value",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-225956887fccf9f267d432bf0c7f85eca3e143d20a281c12cc4a4e301a0b009f",
+      "gold_concept_id": "entity.market",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-b5f2aca4fafc969890c28af82e4e3aee9ec52da42a562b4067b010a61fde0c33",
+      "gold_concept_id": "entity.index",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-c5cd81021063f440dde07f10b9d63a19929afba2dc645e362ce9ac356d95419c",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-3b64b8eb24aa925fd38ece501da61a8915fd0d500299296b5cb6782a275b61a9",
+      "gold_concept_id": "risk.financial",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-74678ca179b521c20f87a08294ccbde4345de9aa495caea2a08dadf65085e115",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-219e9487647194f467054757a49e9f85bbde70038354b586d8a14e4a2f00536b",
+      "gold_concept_id": "temporal.term",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-a7c3b15b2295b95e53b4c63716e8dfea6be6fd4d58224720338beac1169f26c3",
+      "gold_concept_id": "entity.market",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-d9f2ab8c95a5651fef6b1277a6ce46497d9746cfdeb5c88feed8dd21a9d71cf7",
+      "gold_concept_id": "technical.benchmark",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-176eadb64aa39f3afe3b6425b09095e62566750b741e024d9c248a2f9266acc1",
+      "gold_concept_id": "polarity.negation",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-ae45fe7b05688abbeedd8dfba3ee23bff8e82256002016ffcb5632b2aa1b559f",
+      "gold_concept_id": "entity.security",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    },
+    {
+      "occurrence_id": "occ-c30cd2b541571e120f4eea38538199990b2d1552d02842e4d2ab702d74144c67",
+      "gold_concept_id": "quantity.return",
+      "decision_source": "blind_adjudication_batch01",
+      "reason": "judged against the corpus context"
+    }
+  ],
+  "evaluation": {
+    "evaluation_type": "auto-match-selective-o3",
+    "counts": {
+      "TP": 59,
+      "FP": 1,
+      "FN": 0,
+      "UNCERTAIN": 0
+    },
+    "auto_match_precision": 0.9833333333333333,
+    "adjudicated_subset_precision": 0.9833333333333333,
+    "selective_coverage": 1.0,
+    "adjudication_coverage": 1.0,
+    "ambiguous_review_detections": 0,
+    "false_automatic_merges": [
+      {
+        "occurrence_id": "occ-fc280074041e64f99d5bdfba38004507f07f267c654a5194cedefc57d398d9c7",
+        "predicted_concept_id": "risk.credit",
+        "gold_concept_id": "NO_CONCEPT"
+      }
+    ],
+    "protected_spans_checked": 0,
+    "protected_span_mutations": 0,
+    "protected_mutation_details": [],
+    "rows": [
+      {
+        "occurrence_id": "occ-63b2f5cf828f6fdad7fb9e00283e635b5b2d41ddb2ae3c95ff295ca86468128a",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-313b7c9fc2aa6b0c831bd9bcc4077e2eee5a1d141ce94deb03d541fc586041ed",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-7bdc4d425a3f510bfce46add7e197622b48781489a02eb268f39909d5757d7b6",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-c98e0805e1f922dd5555e814cf0c94b172fab56ab324522a22d5b05141601b38",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-0ffd82ebae9f3412b33bbf98968db772ddfdbcb0c4edfccbeb953d2f6ddd330a",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-1a3aaa3e410f0337e41ac411a21bc858eebdae0a4432300f5127312ba3388ef3",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-f878b98a33e25d554d0f34e0984723e8cbc2a83abd1b38d2501f0022dab6e4cb",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-a5af03bc910092f9f86fdf7b19765d0eb9661c0d4b2f4e8cca4ef6590b0fbd7f",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-21984457d89d42980b0ac21a66fa6a25e70c81be37454d0dfbd0e137e5c74d7c",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-6fcee578f0d825da734e8651a2ad62569e9214a2dd167ba5000a3490266ff637",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-b6b0cb7452429bdbc21535f681c667021e27c86c96d356cdc0c1f80b5f1b7b60",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-13224df7f897ddc37a7ae59237b8ea8457f866deb19beb71c3725b441d856002",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-9e00d6ea3f0a165bda847814381bde57a12f923121b2272599985f7f2c09e178",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-45838ef609c6a3e4f86398235cdcd4a130908dd3966c0855d122281ce9ecc52d",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-0c236ca1b7b4703868dafa131a8289982c9142c736768f30c9a40bbdd265d280",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-1e584af52b78f6f6c220a1ac866f284aa9d317627570a3950d05ed8c58e3d08a",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-8f1315e3f3f0e374314ab025623fe420edbc463b5e4740e5771009dfec0d9765",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-88447a714fc3aa8024b986d18cce315ef99efa5219c59c5792a331b0b678b858",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-18f5d2ab59414ca56bca134838d2d7e3f281532e71ac60a1c946afb5543e8ebd",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-4bd5c6371a58530589400bc4b27f9acd3ba8abd9c90457b15b591c8a2565bc1e",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-1ff05aea05b557c20081f2b6b70e6c7869956dfa1b476016299cfd4f692bd718",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-a9fa8b7f72974653bf8edbb943d05bb694093ca0d84477d0c2af8c85513fb22b",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-89bccfa08ddeaf80e28a474d32240bc95c31d0daddb31717039445555b4462af",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-14d6c89dadd0bf7aa2e27348c25ef8c8ff461f72d8a7c5a67c4f0fc31fbfd774",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-fc280074041e64f99d5bdfba38004507f07f267c654a5194cedefc57d398d9c7",
+        "label": "FP"
+      },
+      {
+        "occurrence_id": "occ-aea3aa2a1bf96c706c79d54320adc6a56bf6611702ead804984dcb5b644dc58c",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-2aa8e3d684a7037e19fd04b608f3b2dfb807a2bb0d9feab573d596d207c334e5",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-46c22de6cf605df45c684cd235e845d014f2ede0f59c847bfb54dd3993e8b38f",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-c4d3d79f446f232e62b98eadc4e5a640e7343fad95b6ac09ee53e2053707911d",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-c441e673e682e2609295e983e8b93c76ec895e58984c56532b97218dbccbbe47",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-1667b784dc78686a6ddc2bed2e739d4cacac5cc7fc9583ac277d4c3bab03bcda",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-b36c60fbc6ca5935533e2e068779b15bb9165929a3cde41d02dfa91113bbf7a3",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-b6e4047525305ebfae842efcc908648dcfb265c29cc673bab22ee885c8a6bc97",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-7c05d5d190ffefa98f0587206e536d995290cf385c66f9473c01fdc5d77e5395",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-113ad877ccff0f99b15c879eaca432475cd4f595d4f8fb3eef2f17068714d77a",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-468dccebea6add6754ebce1a5ed89eee7dc0fd59c7f5dcf5501a4a743e0dfbbd",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-0fece9b4b6633c345655010e57bdc14b04218aac3996ded70bd5566eb7ff13a6",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-adac7b8bf9bc331d9d64c0dea94b95143fac2551a3fd915595576f36fbbfe1dd",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-2db0442cb30903a710f971c92bdb2fa4d09859020f079cfbdc3949090c7d6107",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-59448fbad2bd4adfa8782ad97ed67ad655c6364a7ebac22099a8307469455a76",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-2f294aa48ed4c48db734f6fcfe264c287d7fd30590a9cb8886ee0818484f2163",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-a5dc4c7bcc9078c38c9500d97554562fd74505820f0ec9f2d50f9778af5a6553",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-2914ea093985f2ca15b9c1f87c93116209ed4af85fa612a4d0bfe05e32acc8b0",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-afdd4c118a9dfef8c7a399d2ffea975ce33489cd355792b09bb4441f5ec83d1e",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-5e93a70d23d06b50750573c2e14aaaa0bd4a46be0cfc72b4bf514f9003a07a03",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-adad0fbe364789568cfe89348e357a4174e7283358d698a8430215e2c208f998",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-f84213b674916bbd4457521092ea630414e4856f29201418866ed9436a394b8a",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-d10b0e159274f82a8da4499ec718ed6b591d3652c680a0e48076d41f04285ac5",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-388c80c2f3de4c35efa7ec94ba7ffa83816743d8e96f1169621d299842de4e75",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-225956887fccf9f267d432bf0c7f85eca3e143d20a281c12cc4a4e301a0b009f",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-b5f2aca4fafc969890c28af82e4e3aee9ec52da42a562b4067b010a61fde0c33",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-c5cd81021063f440dde07f10b9d63a19929afba2dc645e362ce9ac356d95419c",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-3b64b8eb24aa925fd38ece501da61a8915fd0d500299296b5cb6782a275b61a9",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-74678ca179b521c20f87a08294ccbde4345de9aa495caea2a08dadf65085e115",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-219e9487647194f467054757a49e9f85bbde70038354b586d8a14e4a2f00536b",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-a7c3b15b2295b95e53b4c63716e8dfea6be6fd4d58224720338beac1169f26c3",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-d9f2ab8c95a5651fef6b1277a6ce46497d9746cfdeb5c88feed8dd21a9d71cf7",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-176eadb64aa39f3afe3b6425b09095e62566750b741e024d9c248a2f9266acc1",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-ae45fe7b05688abbeedd8dfba3ee23bff8e82256002016ffcb5632b2aa1b559f",
+        "label": "TP"
+      },
+      {
+        "occurrence_id": "occ-c30cd2b541571e120f4eea38538199990b2d1552d02842e4d2ab702d74144c67",
+        "label": "TP"
+      }
+    ],
+    "claim_status": "fully_adjudicated"
+  }
+}

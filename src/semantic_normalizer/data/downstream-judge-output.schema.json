@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/downstream-judge-output-v2.schema.json",
+  "title": "Downstream blinded judge output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "judge_packet_id",
+    "factual_accuracy",
+    "factual_claim_count",
+    "unsupported_claim_count",
+    "cited_claim_count",
+    "citation_supported_claim_count",
+    "abstention_correctness",
+    "reason_codes"
+  ],
+  "properties": {
+    "judge_packet_id": {"type": "string", "pattern": "^J[0-9]{3}$"},
+    "factual_accuracy": {"enum": [0, 1]},
+    "factual_claim_count": {"type": "integer", "minimum": 0},
+    "unsupported_claim_count": {"type": "integer", "minimum": 0},
+    "cited_claim_count": {"type": "integer", "minimum": 0},
+    "citation_supported_claim_count": {"type": "integer", "minimum": 0},
+    "abstention_correctness": {"enum": [0, 1]},
+    "reason_codes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "SUPPORTED",
+          "UNSUPPORTED",
+          "CONTRADICTED",
+          "MISSING_CITATION",
+          "CORRECT_ABSTENTION",
+          "INCORRECT_ABSTENTION",
+          "INSUFFICIENT_GOLD",
+          "FORMAT_ERROR"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,3624 @@
+{
+  "adapters": {
+    "dense": {
+      "reason": "no frozen dense adapter",
+      "status": "not_run"
+    },
+    "reranker": {
+      "reason": "no frozen reranker",
+      "status": "not_run"
+    },
+    "rrf": {
+      "reason": "no second executed retriever",
+      "status": "not_run"
+    }
+  },
+  "analyzer": {
+    "accent_folding": false,
+    "b": 0.75,
+    "case": "casefold",
+    "k1": 1.2,
+    "tie_break": "document_id",
+    "unicode_normalization": "NFC"
+  },
+  "conditions": {
+    "A": {
+      "latency_ns_observed": {
+        "measurement": "observational_not_an_inference_gate",
+        "total": 8983457
+      },
+      "mrr@10": 0.611111111111111,
+      "ndcg@10": 0.625,
+      "precision@5": 0.13333333333333333,
+      "recall@1": 0.5833333333333334,
+      "recall@10": 0.6666666666666666,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@50": 0.6666666666666666,
+      "zero_result_rate": 0.0
+    },
+    "B": {
+      "latency_ns_observed": {
+        "measurement": "observational_not_an_inference_gate",
+        "total": 23262082
+      },
+      "mrr@10": 0.638888888888889,
+      "ndcg@10": 0.6666666666666666,
+      "precision@5": 0.15,
+      "recall@1": 0.5833333333333334,
+      "recall@10": 0.75,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@50": 0.75,
+      "zero_result_rate": 0.0
+    },
+    "C": {
+      "latency_ns_observed": {
+        "measurement": "observational_not_an_inference_gate",
+        "total": 18831417
+      },
+      "mrr@10": 0.611111111111111,
+      "ndcg@10": 0.625,
+      "precision@5": 0.13333333333333333,
+      "recall@1": 0.5833333333333334,
+      "recall@10": 0.6666666666666666,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@50": 0.6666666666666666,
+      "zero_result_rate": 0.0
+    },
+    "D": {
+      "latency_ns_observed": {
+        "measurement": "observational_not_an_inference_gate",
+        "total": 9962962
+      },
+      "mrr@10": 0.638888888888889,
+      "ndcg@10": 0.6666666666666666,
+      "precision@5": 0.15,
+      "recall@1": 0.5833333333333334,
+      "recall@10": 0.75,
+      "recall@3": 0.75,
+      "recall@5": 0.75,
+      "recall@50": 0.75,
+      "zero_result_rate": 0.0
+    },
+    "E": {
+      "latency_ns_observed": {
+        "measurement": "observational_not_an_inference_gate",
+        "total": 8233624
+      },
+      "mrr@10": 0.611111111111111,
+      "ndcg@10": 0.625,
+      "precision@5": 0.13333333333333333,
+      "recall@1": 0.5833333333333334,
+      "recall@10": 0.6666666666666666,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 0.6666666666666666,
+      "recall@50": 0.6666666666666666,
+      "zero_result_rate": 0.0
+    }
+  },
+  "dataset_role": "public-development-only",
+  "documents": 8,
+  "evaluation_type": "retrieval",
+  "evaluation_version": "ablations-o3-v1",
+  "index_size_utf8_bytes": {
+    "A": {
+      "bytes": 6407,
+      "delta_bytes": 0,
+      "raw_bytes": 6407
+    },
+    "B": {
+      "bytes": 6407,
+      "delta_bytes": 0,
+      "raw_bytes": 6407
+    },
+    "C": {
+      "bytes": 12795,
+      "delta_bytes": 6388,
+      "raw_bytes": 6407
+    },
+    "D": {
+      "bytes": 7400,
+      "delta_bytes": 993,
+      "raw_bytes": 6407
+    },
+    "E": {
+      "bytes": 6388,
+      "delta_bytes": -19,
+      "raw_bytes": 6407
+    }
+  },
+  "limitations": [
+    "Development retrieval results are not held-out evidence.",
+    "perf_counter_ns latency is observational and excluded from inference.",
+    "A positive mean is not a significant improvement when the paired CI includes zero."
+  ],
+  "literal_regressions_vs_A": {
+    "B": [],
+    "C": [],
+    "D": [],
+    "E": []
+  },
+  "paired_comparisons_vs_A": {
+    "B": {
+      "mrr@10": {
+        "ci95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "delta": 0.027777777777777776,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "ndcg@10": {
+        "ci95": [
+          0.0,
+          0.125
+        ],
+        "delta": 0.041666666666666664,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "precision@5": {
+        "ci95": [
+          0.0,
+          0.05000000000000001
+        ],
+        "delta": 0.016666666666666666,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@10": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@3": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@5": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@50": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      }
+    },
+    "C": {
+      "mrr@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "ndcg@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "precision@5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@3": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@50": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      }
+    },
+    "D": {
+      "mrr@10": {
+        "ci95": [
+          0.0,
+          0.08333333333333333
+        ],
+        "delta": 0.027777777777777776,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "ndcg@10": {
+        "ci95": [
+          0.0,
+          0.125
+        ],
+        "delta": 0.041666666666666664,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "precision@5": {
+        "ci95": [
+          0.0,
+          0.05000000000000001
+        ],
+        "delta": 0.016666666666666666,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@10": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@3": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@5": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@50": {
+        "ci95": [
+          0.0,
+          0.25
+        ],
+        "delta": 0.08333333333333333,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      }
+    },
+    "E": {
+      "mrr@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "ndcg@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "precision@5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@10": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@3": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      },
+      "recall@50": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "delta": 0.0,
+        "n_queries": 12,
+        "repetitions": 2000,
+        "seed": 1729
+      }
+    }
+  },
+  "queries": 16,
+  "registry_sha256": "9ed00a5a73cbaa2b98c32ccd1e622df8b337bf87a8da3313a1b6af8872ab9e80",
+  "registry_version": "2.0.0",
+  "rows": [
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 744167,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-education"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 2049375,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1298292,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 764834,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 621042,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q01",
+      "relevant_doc_ids": [
+        "dev-pt-gameplay"
+      ],
+      "stratum": "literal"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 674166,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-futures"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 744750,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1370042,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 685834,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 513166,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q02",
+      "relevant_doc_ids": [
+        "dev-pt-wiki"
+      ],
+      "stratum": "literal"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 462208,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1724125,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1185833,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 687459,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 602375,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q03",
+      "relevant_doc_ids": [
+        "dev-en-diataxis"
+      ],
+      "stratum": "literal"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 602791,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 1,
+          "ranking": [
+            "dev-en-integrity-docstring"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1308917,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 1,
+          "ranking": [
+            "dev-en-integrity-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1440084,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 1,
+          "ranking": [
+            "dev-en-integrity-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 550250,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 1,
+          "ranking": [
+            "dev-en-integrity-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 470042,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 1,
+          "ranking": [
+            "dev-en-integrity-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q04",
+      "relevant_doc_ids": [
+        "dev-en-integrity-docstring"
+      ],
+      "stratum": "literal"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 462916,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1340000,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-actions-security"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1005083,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 500708,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-actions-security"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 442375,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q05",
+      "relevant_doc_ids": [
+        "dev-pt-wiki"
+      ],
+      "stratum": "synonym-paraphrase"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 439209,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-pt-wiki"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 438167,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 871334,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 641542,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 494583,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-pt-futures",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q06",
+      "relevant_doc_ids": [
+        "dev-pt-futures"
+      ],
+      "stratum": "synonym-paraphrase"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 732083,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 584333,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1528750,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 756375,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 526209,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q07",
+      "relevant_doc_ids": [
+        "dev-en-actions-security"
+      ],
+      "stratum": "synonym-paraphrase"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 708417,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 2320041,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 1486208,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 636709,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": 1,
+          "latency_ns_observed": 470625,
+          "metrics": {
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0,
+            "precision@5": 0.2,
+            "recall@1": 1.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q08",
+      "relevant_doc_ids": [
+        "dev-en-scanner-docstring"
+      ],
+      "stratum": "synonym-paraphrase"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 663792,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 614500,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 885750,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 621375,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 515292,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-en-diataxis",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q09",
+      "relevant_doc_ids": [
+        "dev-pt-education"
+      ],
+      "stratum": "cross-language"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 476041,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 662291,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1353917,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 514792,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 432458,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-actions-security",
+            "dev-en-integrity-docstring",
+            "dev-en-scanner-docstring",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q10",
+      "relevant_doc_ids": [
+        "dev-pt-futures"
+      ],
+      "stratum": "cross-language"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 435500,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 437541,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 858834,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 460458,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 428708,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q11",
+      "relevant_doc_ids": [
+        "dev-en-diataxis"
+      ],
+      "stratum": "cross-language"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 430375,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-futures",
+            "dev-pt-education"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 5185000,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 6,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-futures",
+            "dev-en-actions-security",
+            "dev-pt-education",
+            "dev-en-diataxis",
+            "dev-en-integrity-docstring"
+          ],
+          "relevant_rank_delta_vs_A": -6
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1259000,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-futures",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": 3,
+          "latency_ns_observed": 841709,
+          "metrics": {
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5,
+            "precision@5": 0.2,
+            "recall@1": 0.0,
+            "recall@10": 1.0,
+            "recall@3": 1.0,
+            "recall@5": 1.0,
+            "recall@50": 1.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-futures",
+            "dev-en-actions-security",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": -6
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 654583,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 3,
+          "ranking": [
+            "dev-pt-wiki",
+            "dev-pt-futures",
+            "dev-pt-education"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q12",
+      "relevant_doc_ids": [
+        "dev-en-actions-security"
+      ],
+      "stratum": "cross-language"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 643750,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-gameplay"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1535417,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-gameplay",
+            "dev-en-actions-security"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1017666,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 589125,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 5,
+          "ranking": [
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-en-actions-security",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 508375,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-pt-education",
+            "dev-pt-gameplay"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q13",
+      "relevant_doc_ids": [],
+      "stratum": "ambiguous-negative"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 499917,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-diataxis"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 592500,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1103791,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 557792,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 506458,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-en-scanner-docstring",
+            "dev-en-integrity-docstring",
+            "dev-en-actions-security",
+            "dev-en-diataxis"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q14",
+      "relevant_doc_ids": [],
+      "stratum": "ambiguous-negative"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 505625,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay",
+            "dev-pt-wiki"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 513291,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 995875,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 547708,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 505250,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 4,
+          "ranking": [
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-gameplay",
+            "dev-pt-wiki"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q15",
+      "relevant_doc_ids": [],
+      "stratum": "ambiguous-negative"
+    },
+    {
+      "conditions": {
+        "A": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 502500,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ]
+        },
+        "B": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 3211834,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "C": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 1170958,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "D": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 606292,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-integrity-docstring",
+            "dev-pt-wiki",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        },
+        "E": {
+          "first_relevant_rank": null,
+          "latency_ns_observed": 542083,
+          "metrics": {
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0,
+            "precision@5": 0.0,
+            "recall@1": 0.0,
+            "recall@10": 0.0,
+            "recall@3": 0.0,
+            "recall@5": 0.0,
+            "recall@50": 0.0,
+            "zero_result": false
+          },
+          "nonzero_scores": 8,
+          "ranking": [
+            "dev-en-integrity-docstring",
+            "dev-en-diataxis",
+            "dev-pt-gameplay",
+            "dev-pt-education",
+            "dev-pt-futures",
+            "dev-pt-wiki",
+            "dev-en-actions-security",
+            "dev-en-scanner-docstring"
+          ],
+          "relevant_rank_delta_vs_A": 0
+        }
+      },
+      "id": "dev-q16",
+      "relevant_doc_ids": [],
+      "stratum": "ambiguous-negative"
+    }
+  ],
+  "strata": {
+    "ambiguous-negative": {
+      "n_queries": 0,
+      "reason": "stratum_has_no_queries_with_qrels",
+      "status": "not_run"
+    },
+    "cross-language": {
+      "conditions": {
+        "A": {
+          "mrr@10": 0.0,
+          "ndcg@10": 0.0,
+          "precision@5": 0.0,
+          "recall@1": 0.0,
+          "recall@10": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@50": 0.0
+        },
+        "B": {
+          "mrr@10": 0.08333333333333333,
+          "ndcg@10": 0.125,
+          "precision@5": 0.05,
+          "recall@1": 0.0,
+          "recall@10": 0.25,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "recall@50": 0.25
+        },
+        "C": {
+          "mrr@10": 0.0,
+          "ndcg@10": 0.0,
+          "precision@5": 0.0,
+          "recall@1": 0.0,
+          "recall@10": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@50": 0.0
+        },
+        "D": {
+          "mrr@10": 0.08333333333333333,
+          "ndcg@10": 0.125,
+          "precision@5": 0.05,
+          "recall@1": 0.0,
+          "recall@10": 0.25,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "recall@50": 0.25
+        },
+        "E": {
+          "mrr@10": 0.0,
+          "ndcg@10": 0.0,
+          "precision@5": 0.0,
+          "recall@1": 0.0,
+          "recall@10": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "recall@50": 0.0
+        }
+      },
+      "n_queries": 4,
+      "paired_comparisons_vs_A": {
+        "B": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "delta": 0.08333333333333333,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.375
+            ],
+            "delta": 0.125,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.15000000000000002
+            ],
+            "delta": 0.05,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "C": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "D": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "delta": 0.08333333333333333,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.375
+            ],
+            "delta": 0.125,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.15000000000000002
+            ],
+            "delta": 0.05,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "delta": 0.25,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "E": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "literal": {
+      "conditions": {
+        "A": {
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "precision@5": 0.2,
+          "recall@1": 1.0,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "B": {
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "precision@5": 0.2,
+          "recall@1": 1.0,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "C": {
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "precision@5": 0.2,
+          "recall@1": 1.0,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "D": {
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "precision@5": 0.2,
+          "recall@1": 1.0,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "E": {
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "precision@5": 0.2,
+          "recall@1": 1.0,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        }
+      },
+      "n_queries": 4,
+      "paired_comparisons_vs_A": {
+        "B": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "C": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "D": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "E": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        }
+      },
+      "status": "evaluated"
+    },
+    "synonym-paraphrase": {
+      "conditions": {
+        "A": {
+          "mrr@10": 0.8333333333333334,
+          "ndcg@10": 0.875,
+          "precision@5": 0.2,
+          "recall@1": 0.75,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "B": {
+          "mrr@10": 0.8333333333333334,
+          "ndcg@10": 0.875,
+          "precision@5": 0.2,
+          "recall@1": 0.75,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "C": {
+          "mrr@10": 0.8333333333333334,
+          "ndcg@10": 0.875,
+          "precision@5": 0.2,
+          "recall@1": 0.75,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "D": {
+          "mrr@10": 0.8333333333333334,
+          "ndcg@10": 0.875,
+          "precision@5": 0.2,
+          "recall@1": 0.75,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        },
+        "E": {
+          "mrr@10": 0.8333333333333334,
+          "ndcg@10": 0.875,
+          "precision@5": 0.2,
+          "recall@1": 0.75,
+          "recall@10": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "recall@50": 1.0
+        }
+      },
+      "n_queries": 4,
+      "paired_comparisons_vs_A": {
+        "B": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "C": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "D": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        },
+        "E": {
+          "mrr@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "ndcg@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "precision@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@10": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@3": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@5": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          },
+          "recall@50": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "delta": 0.0,
+            "n_queries": 4,
+            "repetitions": 2000,
+            "seed": 1729
+          }
+        }
+      },
+      "status": "evaluated"
+    }
+  },
+  "worst_regressions": []
+}

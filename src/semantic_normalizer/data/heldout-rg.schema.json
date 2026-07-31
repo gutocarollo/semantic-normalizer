@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/heldout-rg-v2.schema.json",
+  "title": "Custodian-only held-out ripgrep ground truth",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset_role", "queries"],
+  "properties": {
+    "schema_version": {"const": "heldout-rg-v2"},
+    "dataset_role": {"const": "heldout-custodian-only"},
+    "queries": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "items": {"$ref": "#/$defs/query"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "identifierList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/identifier"}
+    },
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["doc_id", "start", "end", "original_sha256"],
+      "properties": {
+        "doc_id": {"$ref": "#/$defs/identifier"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "original_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text",
+        "relevant_spans",
+        "negative_doc_ids",
+        "literal"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "text": {"type": "string", "minLength": 1},
+        "relevant_spans": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/span"}
+        },
+        "negative_doc_ids": {"$ref": "#/$defs/identifierList"},
+        "literal": {"type": "boolean"}
+      }
+    }
+  }
+}

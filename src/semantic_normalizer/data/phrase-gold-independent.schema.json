@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/phrase-gold-independent-v1.schema.json",
+  "title": "Independent phrase-level semantic gold",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_id",
+    "dataset_role",
+    "language_scope",
+    "sense_catalog",
+    "phrases"
+  ],
+  "properties": {
+    "schema_version": {"const": "phrase-gold-independent-v1"},
+    "dataset_id": {"type": "string", "minLength": 1},
+    "dataset_role": {"enum": ["public-development-only", "heldout-evaluation"]},
+    "language_scope": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["en", "pt-BR"]}
+    },
+    "sense_catalog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/sense"}
+    },
+    "phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/phrase"}
+    }
+  },
+  "$defs": {
+    "senseId": {
+      "type": "string",
+      "pattern": "^s_[a-f0-9]{8,32}$"
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sense_id", "definition", "semantic_class"],
+      "properties": {
+        "sense_id": {"$ref": "#/$defs/senseId"},
+        "definition": {"type": "string", "minLength": 1},
+        "semantic_class": {"type": "string", "minLength": 1}
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_id", "start", "end", "sense_id", "role"],
+      "properties": {
+        "unit_id": {"type": "string", "pattern": "^[a-z][a-z0-9_-]*$"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "sense_id": {"$ref": "#/$defs/senseId"},
+        "role": {"type": "string", "minLength": 1}
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "source", "target"],
+      "properties": {
+        "type": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1},
+        "target": {"type": "string", "minLength": 1}
+      }
+    },
+    "protected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "kind", "original"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "kind": {"type": "string", "minLength": 1},
+        "original": {"type": "string", "minLength": 1}
+      }
+    },
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "language",
+        "kind",
+        "text",
+        "units",
+        "relations",
+        "protected"
+      ],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "language": {"enum": ["en", "pt-BR"]},
+        "kind": {"enum": ["text", "markdown"]},
+        "text": {"type": "string", "minLength": 1},
+        "units": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/unit"}
+        },
+        "relations": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/relation"}
+        },
+        "protected": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/protected"}
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 ---
 name: semantic-normalizer
-version: 0.2.0
+version: 0.4.0
 description: "Normalize English and Portuguese technical text into a reversible concept-based representation for BM25, grep, filters, and hybrid retrieval. Use for ingestion, query normalization, terminology governance, ambiguity review, and retrieval evaluation."
 ---
 
-<!-- argument-hint: [normalize, audit, propose-term, validate-registry, export-skos, export-synonyms, evaluate] [text-or-path] -->
+<!-- argument-hint: [validate-registry, normalize, query, index, evaluate, reconcile-request, reconcile-apply, export, init-workspace] [text-or-path] -->
 
 # English-Portuguese Semantic Normalizer
 
@@ -55,10 +55,10 @@ Treat the concept as the source of semantic identity:
 ```text
 concept_id: action.start
 preferred label EN: start
-preferred label PT: iniciar
+preferred label PT (pt-BR): iniciar
 alternative EN: begin, commence
 alternative PT: começar, dar início
-surface forms: starts, started, inicie, iniciou
+observed forms: starts, started, starting, inicie, iniciou, começa
 ```
 
 ## Controlled lexicon and source policy
@@ -73,13 +73,15 @@ Keep two governed artifacts separate:
 
 Every imported or curated lexical record must retain `source`, `version`,
 `license`, `retrieved_at`, and `sha256`. Imported candidates are **staged**,
-never automatically approved. A source's license applies to its data, not to
-this MIT implementation; do not embed or redistribute a protected vocabulary
-only because it was available for local consultation.
+never automatically approved. `registry.provenance.jsonl` is the append-only
+ledger of every import; `registry.release.json` binds a registry version to the
+hashes it governs. Both are enforced by `tests/test_registry_governance.py`.
 
-Use ASD-STE100 as a local English technical-writing reference, not as a
-redistributable EN/PT lexicon. Use open resources such as CILI/WordNet and
-OpenWN-PT only through a versioned, attributed import review.
+Use ASD-STE100 as a **selection signal** — which English terms are essential in
+technical writing — and as a **record template** (term, part of speech, approved
+meaning, alternatives, positive and negative example). It is English-only, so
+every Portuguese label is authored here regardless. Definitions and examples in
+this registry are original; no third-party dictionary text is embedded.
 
 Follow these controls:
 
@@ -112,9 +114,27 @@ Accept a unique candidate. For competing candidates, use part of speech, domain,
 Example:
 
 ```text
-remove the panel -> action.remove_physical
-remove the database record -> action.delete_data
+remove the panel        -> action.remove
+delete the database row -> action.delete
+check the base          -> review: entity.facility_base | technical.numeral_base
 ```
+
+Three different things produce a `review`, and they are not interchangeable:
+
+- **cross-concept ambiguity** — one surface, several concepts. `base` is a facility
+  or a numeral base; no automatic rule decides it. `ambiguous_candidates` lists both.
+- **unverified inflection** — one concept, an inflected form carrying
+  `policy: review` because it was imported without a verified paradigm. `remova`
+  points only at `action.remove`, but the form itself is not yet approved for
+  automatic expansion. One candidate, still not automatic.
+- **grammatical abstention** — the finite grammar refuses to bind a span at all:
+  anaphora, coordination, or an ambiguous temporal structure. `Remove it.` returns
+  `ambiguous_candidates: []` and `warnings: ["finite_grammar_abstained_coordination_or_anaphora"]`.
+  Nothing lexical is uncertain; the *referent* is.
+
+All three go to review. Only the first has more than one candidate, and only the
+third carries a `warnings` entry — read that field before assuming a `review` is
+a terminology problem.
 
 ### 5. Run the bounded ambiguity loop
 
@@ -212,34 +232,52 @@ Never add a synonym only because an embedding score is high.
 
 ## ASD-STE100 relationship
 
-ASD-STE100 supplies useful design principles: controlled vocabulary, stable terminology, restricted meanings, explicit constructions, and context-preserving reconstruction. It does not define this bilingual concept scheme, concept-token indexing, BM25 expansion, or a hallucination-reduction guarantee.
+ASD-STE100 supplies useful design principles: controlled vocabulary, stable terminology, restricted meanings, explicit constructions, and context-preserving reconstruction. It does not define this bilingual concept scheme, concept-token indexing, BM25 expansion, or a hallucination-reduction guarantee — and it carries no Portuguese at all, so it can inform which terms matter but never supply half of a bilingual registry.
 
 Use the separate ASD-STE100 skill when the task requires an actual STE audit, exact dictionary evidence, procedural sentence limits, or certified technical-writing review.
 
 ## Commands
 
 ```bash
-# Normalize in the source language.
-PYTHONPATH=src python -m semantic_normalizer normalize \
-  --text "O operador deve começar o servidor APP-01." \
-  --lang pt --pretty
-
-# Create an English pivot projection for retrieval experiments.
-PYTHONPATH=src python -m semantic_normalizer normalize \
-  --input examples/sample-input.txt \
-  --lang pt --target-lang en --pretty
-
-# Run the included raw/canonical/expanded BM25 comparison.
-PYTHONPATH=src python -m semantic_normalizer evaluate \
-  --documents examples/documents.jsonl \
-  --queries examples/queries.jsonl \
-  --k 1 3 5
-
-# Validate and export the terminology registry.
+# Validate the registry and print its hashes.
 PYTHONPATH=src python -m semantic_normalizer validate-registry
-PYTHONPATH=src python -m semantic_normalizer export-skos --output exports/concepts.ttl
-PYTHONPATH=src python -m semantic_normalizer export-synonyms --output exports/synonyms.txt
+
+# Normalize one text or file into sidecar records.
+PYTHONPATH=src python -m semantic_normalizer normalize --text "Remove the panel."
+PYTHONPATH=src python -m semantic_normalizer normalize docs/architecture.md
+
+# Walk a corpus and emit sidecars with path, line and byte offsets.
+PYTHONPATH=src python -m semantic_normalizer index docs --output-dir sidecars/
+
+# Normalize a query through the same pipeline.
+PYTHONPATH=src python -m semantic_normalizer query --text "Como iniciar o servidor?"
+
+# Run the retrieval ablations over a fixture.
+PYTHONPATH=src python -m semantic_normalizer evaluate tests/fixtures/dev_retrieval.json
+
+# Export SKOS and the synonym graph.
+PYTHONPATH=src python -m semantic_normalizer export skos --output exports/concepts.ttl
+PYTHONPATH=src python -m semantic_normalizer export synonym-graph --output exports/synonyms.txt
+
+# Terminology reconciliation: request a decision, then apply the reviewed response.
+PYTHONPATH=src python -m semantic_normalizer init-workspace reconciliation/
+PYTHONPATH=src python -m semantic_normalizer reconcile-request \
+  --workspace reconciliation/ --context "Check the base." --start 10 --end 14 --language en
+PYTHONPATH=src python -m semantic_normalizer reconcile-apply \
+  --workspace reconciliation/ --request <req.json> --response <resp.json> \
+  --reviewer <name> --rationale "context names the numeral base" \
+  --protected-slot-comparison preserved
+
+# Import a legacy registry (append-only; refuses a second run for the same version).
+PYTHONPATH=src python scripts/migrate_v02_concepts.py --old-registry <path> --dry-run
+
+# Build the reproducible offline wheel and skill ZIP.
+PYTHONPATH=src python scripts/build_release.py --json
 ```
+
+Run `--help` on any subcommand for its exact flags. The full list is
+`validate-registry, normalize, query, index, evaluate, reconcile-request,
+reconcile-apply, export, init-workspace`.
 
 ## Acceptance gate
 

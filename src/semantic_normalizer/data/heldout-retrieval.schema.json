@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/heldout-retrieval-v2.schema.json",
+  "title": "Custodian-only held-out retrieval dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset_role", "documents", "queries"],
+  "properties": {
+    "schema_version": {"const": "heldout-retrieval-v2"},
+    "dataset_role": {"const": "heldout-custodian-only"},
+    "documents": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {"$ref": "#/$defs/document"}
+    },
+    "queries": {
+      "type": "array",
+      "minItems": 40,
+      "maxItems": 40,
+      "items": {"$ref": "#/$defs/query"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "identifier": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "identifierList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/identifier"}
+    },
+    "document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "language",
+        "kind",
+        "content",
+        "source_ref_hash",
+        "source_content_sha256"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "language": {"enum": ["en", "pt-BR"]},
+        "kind": {"enum": ["text", "markdown", "python"]},
+        "content": {"type": "string", "minLength": 1},
+        "source_ref_hash": {"$ref": "#/$defs/sha256"},
+        "source_content_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "query": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "language",
+        "stratum",
+        "text",
+        "relevant_doc_ids",
+        "negative_doc_ids"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/identifier"},
+        "language": {"enum": ["en", "pt-BR"]},
+        "stratum": {"type": "string", "minLength": 1},
+        "text": {"type": "string", "minLength": 1},
+        "relevant_doc_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/identifier"}
+        },
+        "negative_doc_ids": {"$ref": "#/$defs/identifierList"}
+      }
+    }
+  }
+}

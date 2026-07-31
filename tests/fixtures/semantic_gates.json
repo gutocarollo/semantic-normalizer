@@ -1,0 +1,503 @@
+{
+  "schema_version": "semantic-gates-public-dev-v1",
+  "dataset_role": "public-development-only",
+  "phrase_gold": {
+    "schema_version": "semantic-phrase-gold-v1",
+    "dataset_role": "public-development-only",
+    "language_scope": [
+      "en",
+      "pt-BR"
+    ],
+    "phrases": [
+      {
+        "id": "phrase-en-actor-action-object",
+        "language": "en",
+        "kind": "text",
+        "text": "The user preserve the file.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "actor",
+            "start": 4,
+            "end": 8,
+            "concept_id": "actor.user",
+            "role": "actor",
+            "sense": "A person who uses a documented product or system."
+          },
+          {
+            "id": "action",
+            "start": 9,
+            "end": 17,
+            "concept_id": "action.preserve",
+            "role": "action",
+            "sense": "To keep an artifact or semantic property unchanged and available."
+          },
+          {
+            "id": "object",
+            "start": 22,
+            "end": 26,
+            "concept_id": "entity.file",
+            "role": "object",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [
+          {
+            "type": "actor_of",
+            "source": "actor",
+            "target": "action"
+          },
+          {
+            "type": "object_of",
+            "source": "object",
+            "target": "action"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-pt-actor-action-object",
+        "language": "pt-BR",
+        "kind": "text",
+        "text": "O usuário preservar o arquivo.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "actor",
+            "start": 2,
+            "end": 9,
+            "concept_id": "actor.user",
+            "role": "actor",
+            "sense": "A person who uses a documented product or system."
+          },
+          {
+            "id": "action",
+            "start": 10,
+            "end": 19,
+            "concept_id": "action.preserve",
+            "role": "action",
+            "sense": "To keep an artifact or semantic property unchanged and available."
+          },
+          {
+            "id": "object",
+            "start": 22,
+            "end": 29,
+            "concept_id": "entity.file",
+            "role": "object",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [
+          {
+            "type": "actor_of",
+            "source": "actor",
+            "target": "action"
+          },
+          {
+            "type": "object_of",
+            "source": "object",
+            "target": "action"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-en-condition-polarity",
+        "language": "en",
+        "kind": "text",
+        "text": "If the job fails, do not delete the file.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "condition",
+            "start": 0,
+            "end": 2,
+            "concept_id": "condition.if",
+            "role": "condition_marker",
+            "sense": "Introduces a condition whose truth enables the governed clause."
+          },
+          {
+            "id": "job",
+            "start": 7,
+            "end": 10,
+            "concept_id": "entity.job",
+            "role": "unassigned",
+            "sense": "A workflow execution unit that contains one or more steps."
+          },
+          {
+            "id": "negation",
+            "start": 21,
+            "end": 24,
+            "concept_id": "polarity.negation",
+            "role": "polarity_marker",
+            "sense": "An explicit marker that negates the governed proposition."
+          },
+          {
+            "id": "delete",
+            "start": 25,
+            "end": 31,
+            "concept_id": "action.delete",
+            "role": "action",
+            "sense": "To erase an artifact or record so that it is no longer retained."
+          },
+          {
+            "id": "file",
+            "start": 36,
+            "end": 40,
+            "concept_id": "entity.file",
+            "role": "object",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [
+          {
+            "type": "object_of",
+            "source": "file",
+            "target": "delete"
+          },
+          {
+            "type": "condition_of",
+            "source": "condition",
+            "target": "delete"
+          },
+          {
+            "type": "negates",
+            "source": "negation",
+            "target": "delete"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-en-temporal-order",
+        "language": "en",
+        "kind": "text",
+        "text": "Validate the file before delete the document.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "validate",
+            "start": 0,
+            "end": 8,
+            "concept_id": "action.validate",
+            "role": "action",
+            "sense": "To determine whether input conforms to declared rules or a schema."
+          },
+          {
+            "id": "file",
+            "start": 13,
+            "end": 17,
+            "concept_id": "entity.file",
+            "role": "unassigned",
+            "sense": "A named persistent sequence of bytes in a file system."
+          },
+          {
+            "id": "before",
+            "start": 18,
+            "end": 24,
+            "concept_id": "temporal.before",
+            "role": "temporal_marker",
+            "sense": "Marks that the governed event occurs earlier than another event."
+          },
+          {
+            "id": "delete",
+            "start": 25,
+            "end": 31,
+            "concept_id": "action.delete",
+            "role": "action",
+            "sense": "To erase an artifact or record so that it is no longer retained."
+          },
+          {
+            "id": "document",
+            "start": 36,
+            "end": 44,
+            "concept_id": "entity.document",
+            "role": "unassigned",
+            "sense": "A bounded written artifact intended to communicate information."
+          }
+        ],
+        "relations": [
+          {
+            "type": "before",
+            "source": "validate",
+            "target": "delete"
+          },
+          {
+            "type": "after",
+            "source": "delete",
+            "target": "validate"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-en-modality",
+        "language": "en",
+        "kind": "text",
+        "text": "The user is required to preserve the file.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "actor",
+            "start": 4,
+            "end": 8,
+            "concept_id": "actor.user",
+            "role": "actor",
+            "sense": "A person who uses a documented product or system."
+          },
+          {
+            "id": "obligation",
+            "start": 9,
+            "end": 23,
+            "concept_id": "modality.obligation",
+            "role": "modality_marker",
+            "sense": "A rule imposes a mandatory action or state."
+          },
+          {
+            "id": "preserve",
+            "start": 24,
+            "end": 32,
+            "concept_id": "action.preserve",
+            "role": "action",
+            "sense": "To keep an artifact or semantic property unchanged and available."
+          },
+          {
+            "id": "file",
+            "start": 37,
+            "end": 41,
+            "concept_id": "entity.file",
+            "role": "object",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [
+          {
+            "type": "actor_of",
+            "source": "actor",
+            "target": "preserve"
+          },
+          {
+            "type": "object_of",
+            "source": "file",
+            "target": "preserve"
+          },
+          {
+            "type": "modality",
+            "source": "obligation",
+            "target": "preserve"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-en-quantity",
+        "language": "en",
+        "kind": "text",
+        "text": "All file records.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "all",
+            "start": 0,
+            "end": 3,
+            "concept_id": "quantity.all",
+            "role": "quantity_marker",
+            "sense": "Specifies every member of the governed set without exception."
+          },
+          {
+            "id": "file",
+            "start": 4,
+            "end": 8,
+            "concept_id": "entity.file",
+            "role": "unassigned",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [
+          {
+            "type": "modifies_quantity",
+            "source": "all",
+            "target": "file"
+          }
+        ],
+        "protected": []
+      },
+      {
+        "id": "phrase-pt-polarity",
+        "language": "pt-BR",
+        "kind": "text",
+        "text": "Não exclua o arquivo.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "negation",
+            "start": 0,
+            "end": 3,
+            "concept_id": "polarity.negation",
+            "role": "polarity_marker",
+            "sense": "An explicit marker that negates the governed proposition."
+          },
+          {
+            "id": "file",
+            "start": 13,
+            "end": 20,
+            "concept_id": "entity.file",
+            "role": "unassigned",
+            "sense": "A named persistent sequence of bytes in a file system."
+          }
+        ],
+        "relations": [],
+        "protected": []
+      },
+      {
+        "id": "phrase-en-protected-identifier",
+        "language": "en",
+        "kind": "text",
+        "text": "Preserve APP-01.",
+        "expected_behavior": "match",
+        "units": [
+          {
+            "id": "preserve",
+            "start": 0,
+            "end": 8,
+            "concept_id": "action.preserve",
+            "role": "action",
+            "sense": "To keep an artifact or semantic property unchanged and available."
+          }
+        ],
+        "relations": [],
+        "protected": [
+          {
+            "start": 9,
+            "end": 15,
+            "kind": "identifier",
+            "original": "APP-01"
+          }
+        ]
+      },
+      {
+        "id": "phrase-en-raw-abstain",
+        "language": "en",
+        "kind": "text",
+        "text": "Unmapped quaternion payload.",
+        "expected_behavior": "abstain",
+        "units": [],
+        "relations": [],
+        "protected": []
+      }
+    ]
+  },
+  "rg": {
+    "schema_version": "semantic-rg-gate-v1",
+    "dataset_role": "public-development-only",
+    "documents": [
+      {
+        "id": "rg-preserve",
+        "kind": "text",
+        "content": "Preserve the file."
+      },
+      {
+        "id": "rg-delete",
+        "kind": "text",
+        "content": "Delete the workflow."
+      },
+      {
+        "id": "rg-validate-pt",
+        "kind": "text",
+        "content": "O agente validar o documento."
+      },
+      {
+        "id": "rg-flag",
+        "kind": "markdown",
+        "content": "Run checks with --staged before commit."
+      },
+      {
+        "id": "rg-markdown-code",
+        "kind": "markdown",
+        "content": "Preserve `<code>delete the file</code>` as an example."
+      }
+    ],
+    "queries": [
+      {
+        "id": "rg-literal-preserve",
+        "stratum": "literal",
+        "text": "Preserve the file.",
+        "relevant_doc_ids": [
+          "rg-preserve"
+        ],
+        "negative_doc_ids": [
+          "rg-delete",
+          "rg-validate-pt"
+        ]
+      },
+      {
+        "id": "rg-literal-leading-hyphen",
+        "stratum": "literal",
+        "text": "--staged",
+        "relevant_doc_ids": [
+          "rg-flag"
+        ],
+        "negative_doc_ids": [
+          "rg-preserve",
+          "rg-delete"
+        ]
+      },
+      {
+        "id": "rg-synonym-retain",
+        "stratum": "synonym",
+        "text": "retain",
+        "relevant_doc_ids": [
+          "rg-preserve"
+        ],
+        "negative_doc_ids": [
+          "rg-delete"
+        ]
+      },
+      {
+        "id": "rg-synonym-preservar",
+        "stratum": "synonym",
+        "text": "preservar",
+        "relevant_doc_ids": [
+          "rg-preserve"
+        ],
+        "negative_doc_ids": [
+          "rg-delete"
+        ]
+      },
+      {
+        "id": "rg-synonym-excluir",
+        "stratum": "synonym",
+        "text": "excluir",
+        "relevant_doc_ids": [
+          "rg-delete"
+        ],
+        "negative_doc_ids": [
+          "rg-preserve"
+        ]
+      },
+      {
+        "id": "rg-literal-pt",
+        "stratum": "literal",
+        "text": "O agente",
+        "relevant_doc_ids": [
+          "rg-validate-pt"
+        ],
+        "negative_doc_ids": [
+          "rg-preserve",
+          "rg-delete"
+        ]
+      },
+      {
+        "id": "rg-synonym-protected-markdown",
+        "stratum": "synonym",
+        "text": "action.delete",
+        "relevant_doc_ids": [
+          "rg-delete"
+        ],
+        "negative_doc_ids": [
+          "rg-markdown-code"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{"id":"g01-en-basic","type":"normalize","kind":"text","input":"The user preserves the file.","expected":{"contains_concepts":["actor.user","entity.file"],"language":"en"}}
+{"id":"g02-pt-basic","type":"normalize","kind":"text","input":"O usuário preserva o arquivo.","expected":{"contains_concepts":["actor.user","entity.file"],"language":"pt-BR"}}
+{"id":"g03-mixed","type":"normalize","kind":"text","input":"The user valida o arquivo.","expected":{"contains_concepts":["actor.user","entity.file"],"language":"mixed"}}
+{"id":"g04-unknown","type":"normalize","kind":"text","input":"Zyxw quux.","expected":{"concept_ids":[],"language":"unknown"}}
+{"id":"g05-auto-en","type":"normalize","kind":"text","input":"Retain the file.","expected":{"contains_concepts":["action.preserve","entity.file"]}}
+{"id":"g06-auto-pt","type":"normalize","kind":"text","input":"Manter intacto o arquivo.","expected":{"contains_concepts":["action.preserve","entity.file"]}}
+{"id":"g07-longest-en","type":"normalize","kind":"text","input":"The end user checks the file.","expected":{"contains_concepts":["actor.user","entity.file"],"excludes_concepts":[]}}
+{"id":"g08-longest-pt","type":"normalize","kind":"text","input":"O usuário final confere o arquivo.","expected":{"contains_concepts":["actor.user","entity.file"]}}
+{"id":"g09-review-base-en","type":"normalize","kind":"text","input":"Check the base.","expected":{"ambiguous_candidates":["entity.facility_base","technical.numeral_base"],"needs_review":true}}
+{"id":"g10-review-base-pt","type":"normalize","kind":"text","input":"Confira a base.","expected":{"ambiguous_candidates":["entity.facility_base","technical.numeral_base"],"needs_review":true}}
+{"id":"g11-review-must","type":"normalize","kind":"text","input":"The user must validate the file.","expected":{"ambiguous_candidates":["modality.logical_necessity","modality.obligation"],"needs_review":true}}
+{"id":"g12-review-can","type":"normalize","kind":"text","input":"The agent can run the job.","expected":{"ambiguous_candidates":["modality.capability","modality.permission","modality.possibility"],"needs_review":true}}
+{"id":"g13-review-pode","type":"normalize","kind":"text","input":"O agente pode executar o job.","expected":{"ambiguous_candidates":["modality.capability","modality.permission","modality.possibility"],"needs_review":true}}
+{"id":"g14-markdown-inline","type":"normalize","kind":"markdown","input":"Preserve `delete file` and validate the document.","expected":{"contains_concepts":["action.preserve","action.validate","entity.document"],"excludes_concepts":["action.delete"],"protected_originals":["`delete file`"]}}
+{"id":"g15-markdown-url","type":"normalize","kind":"markdown","input":"Check https://example.com/delete/file before validation.","expected":{"excludes_concepts":["action.delete"],"protected_originals":["https://example.com/delete/file"]}}
+{"id":"g16-markdown-link","type":"normalize","kind":"markdown","input":"Check the [document](docs/delete-file.md).","expected":{"contains_concepts":["entity.document"],"excludes_concepts":["action.delete"],"protected_originals":["docs/delete-file.md"]}}
+{"id":"g17-markdown-html","type":"normalize","kind":"markdown","input":"Preserve <code>delete file</code>.","expected":{"contains_concepts":["action.preserve"],"excludes_concepts":["action.delete","entity.file"],"protected_originals":["<code>delete file</code>"]}}
+{"id":"g18-placeholder","type":"normalize","kind":"text","input":"Preserve ${{ delete_file }}.","expected":{"contains_concepts":["action.preserve"],"excludes_concepts":["action.delete"],"protected_originals":["${{ delete_file }}"]}}
+{"id":"g19-number-unit","type":"normalize","kind":"text","input":"Validate 25 kg before the job.","expected":{"contains_concepts":["action.validate","entity.job"],"protected_originals":["25 kg"]}}
+{"id":"g20-version","type":"normalize","kind":"text","input":"Install v1.2.3 after validation.","expected":{"contains_concepts":["action.install"],"protected_originals":["v1.2.3"]}}
+{"id":"g21-identifier","type":"normalize","kind":"text","input":"Preserve delete_file.","expected":{"contains_concepts":["action.preserve"],"excludes_concepts":["action.delete"],"protected_originals":["delete_file"]}}
+{"id":"g22-negation-en","type":"normalize","kind":"text","input":"Do not delete the file.","expected":{"contains_concepts":["polarity.negation","action.delete","entity.file"],"relation_types":["negates"]}}
+{"id":"g23-negation-pt","type":"normalize","kind":"text","input":"Não exclua o arquivo.","expected":{"contains_concepts":["polarity.negation","entity.file"]}}
+{"id":"g24-modality-governed","type":"normalize","kind":"text","input":"The user is required to preserve the file.","expected":{"contains_concepts":["actor.user","modality.obligation","action.preserve","entity.file"],"relation_types":["modality"]}}
+{"id":"g25-condition-en","type":"normalize","kind":"text","input":"If the job fails, stop the workflow.","expected":{"contains_concepts":["condition.if","entity.job","action.stop","entity.workflow"],"relation_types":["condition_of"]}}
+{"id":"g26-condition-pt","type":"normalize","kind":"text","input":"Se o job falhar, interromper o workflow.","expected":{"contains_concepts":["entity.job","action.stop","entity.workflow"],"excludes_concepts":["condition.if"],"ambiguous_candidates":["condition.if"],"needs_review":true}}
+{"id":"g27-before-order","type":"normalize","kind":"text","input":"Validate the file before delete the document.","expected":{"contains_concepts":["action.validate","action.delete","temporal.before"],"relation_types":["before","after"]}}
+{"id":"g28-after-order","type":"normalize","kind":"text","input":"Delete the file after validate the document.","expected":{"contains_concepts":["action.delete","action.validate","temporal.after"],"relation_types":["before","after"]}}
+{"id":"g29-coordination-abstain","type":"normalize","kind":"text","input":"Validate and delete the file.","expected":{"contains_concepts":["action.validate","action.delete","entity.file"],"needs_review":true}}
+{"id":"g30-three-actions-abstain","type":"normalize","kind":"text","input":"Validate, index, delete the file.","expected":{"contains_concepts":["action.validate","action.delete"],"excludes_concepts":["action.index"],"ambiguous_candidates":["action.index"],"needs_review":true}}
+{"id":"g31-technical-jsonl","type":"normalize","kind":"text","input":"Validate JSONL with BM25.","expected":{"contains_concepts":["action.validate","technical.jsonl","technical.bm25"]}}
+{"id":"g32-technical-nfc","type":"normalize","kind":"text","input":"Use NFC and SHA-256.","expected":{"contains_concepts":["technical.nfc","technical.sha256"]}}
+{"id":"g33-accent-preserved","type":"normalize","kind":"text","input":"O repositório contém um arquivo.","expected":{"contains_concepts":["entity.repository","entity.file"],"language":"pt-BR"}}
+{"id":"g34-casefold","type":"normalize","kind":"text","input":"VALIDATE THE FILE.","expected":{"contains_concepts":["action.validate","entity.file"],"language":"en"}}
+{"id":"g35-raw-no-semantic","type":"normalize","kind":"text","input":"Unmapped payload quaternion.","expected":{"concept_ids":[]}}
+{"id":"g36-risk-warning","type":"normalize","kind":"text","input":"WARNING: do not delete the file.","expected":{"contains_concepts":["risk.warning","polarity.negation","action.delete","entity.file"],"relation_types":["negates"]}}
+{"id":"g37-risk-caution-pt","type":"normalize","kind":"text","input":"ATENÇÃO: não excluir o arquivo.","expected":{"contains_concepts":["risk.caution","polarity.negation","entity.file"]}}
+{"id":"g38-python-comment","type":"normalize","kind":"python","input":"value = 1\n# Validate the file\n","expected":{"contains_concepts":["action.validate","entity.file"],"excludes_concepts":[]}}
+{"id":"g39-python-docstring","type":"normalize","kind":"python","input":"def f():\n    \"\"\"Validate the file.\"\"\"\n    return 1\n","expected":{"contains_concepts":["action.validate","entity.file"]}}
+{"id":"g40-python-ordinary-string","type":"normalize","kind":"python","input":"message = \"delete the file\"\n","expected":{"concept_ids":[]}}
+{"id":"g41-invalid-suffix","type":"invalid_suffix","suffix":".xyz","expected":{"error":"unknown suffix"}}
+{"id":"g42-invalid-utf8","type":"invalid_utf8","bytes_hex":"fffe","expected":{"error":"UTF-8"}}
+{"id":"g43-query-pipeline","type":"query","kind":"text","input":"consulta de busca","expected":{"contains_concepts":["entity.query"],"needs_review":false}}
+{"id":"g44-index-fields","type":"index","documents":[{"source":"a.md","kind":"markdown","input":"Retain the file."}],"expected":{"contains":["Retain the file.","retain","action.preserve"]}}
+{"id":"g45-evaluate-bm25","type":"retrieval","dataset":{"schema_version":"golden-retrieval-v1","dataset_role":"golden","seed":20260730,"documents":[{"id":"relevant","content":"Preserve the file."},{"id":"other","content":"Delete the workflow."}],"queries":[{"id":"q","stratum":"literal","text":"preserve file","relevant_doc_ids":["relevant"],"negative_doc_ids":["other"]}]},"expected":{"normalized_top":"relevant","exact_literal_regressions":[]}}

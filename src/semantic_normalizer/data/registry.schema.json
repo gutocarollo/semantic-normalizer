@@ -1,0 +1,350 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/semantic-normalizer-registry-record-v2.schema.json",
+  "title": "Semantic Normalizer Registry Record v2",
+  "description": "Structural schema for one JSONL concept record. The runtime validator enforces SKOS S13 label disjointness, S14 one-pref enforcement, lexical-form coverage of pref, alt, hidden, and observed labels, review policy for every observed label, no duplicate or cross-policy surface, automatic-form collisions, and relation integrity. Preferred, alternative, and hidden labels can independently use auto or review policy.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "concept_id",
+    "definition",
+    "semantic_class",
+    "domains",
+    "pos",
+    "labels",
+    "lexical_forms",
+    "relations",
+    "forbidden_variants",
+    "contexts",
+    "authority",
+    "source",
+    "positive_examples",
+    "negative_examples",
+    "status",
+    "governed_technical_term",
+    "registry_version"
+  ],
+  "properties": {
+    "concept_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 96
+    },
+    "definition": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 320
+    },
+    "semantic_class": {
+      "enum": [
+        "actor",
+        "action",
+        "entity",
+        "modality",
+        "polarity",
+        "condition_marker",
+        "temporal_marker",
+        "quantity_marker",
+        "risk",
+        "technical_term"
+      ]
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      }
+    },
+    "pos": {
+      "enum": [
+        "noun",
+        "proper_noun",
+        "verb",
+        "adjective",
+        "adverb",
+        "auxiliary",
+        "conjunction",
+        "preposition",
+        "determiner",
+        "pronoun",
+        "phrase",
+        "symbol"
+      ]
+    },
+    "labels": {
+      "$ref": "#/$defs/bilingualLabels"
+    },
+    "lexical_forms": {
+      "$ref": "#/$defs/bilingualLexicalForms"
+    },
+    "relations": {
+      "$ref": "#/$defs/relations"
+    },
+    "forbidden_variants": {
+      "$ref": "#/$defs/bilingualTerms"
+    },
+    "contexts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmptyString"
+      }
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 160
+    },
+    "source": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 240
+    },
+    "positive_examples": {
+      "$ref": "#/$defs/bilingualExamples"
+    },
+    "negative_examples": {
+      "$ref": "#/$defs/bilingualExamples"
+    },
+    "status": {
+      "enum": [
+        "approved",
+        "deprecated"
+      ]
+    },
+    "governed_technical_term": {
+      "type": "boolean"
+    },
+    "registry_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 320,
+      "pattern": ".*\\S.*"
+    },
+    "term": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "pattern": ".*\\S.*"
+    },
+    "termList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/term"
+      }
+    },
+    "labelSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pref",
+        "alt",
+        "hidden",
+        "observed"
+      ],
+      "properties": {
+        "pref": {
+          "$ref": "#/$defs/term"
+        },
+        "alt": {
+          "$ref": "#/$defs/termList"
+        },
+        "hidden": {
+          "$ref": "#/$defs/termList"
+        },
+        "observed": {
+          "$ref": "#/$defs/termList"
+        }
+      }
+    },
+    "bilingualLabels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "pt-BR"
+      ],
+      "properties": {
+        "en": {
+          "$ref": "#/$defs/labelSet"
+        },
+        "pt-BR": {
+          "$ref": "#/$defs/labelSet"
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lemma": {
+          "$ref": "#/$defs/term"
+        },
+        "number": {
+          "enum": [
+            "singular",
+            "plural",
+            "invariant"
+          ]
+        },
+        "gender": {
+          "enum": [
+            "masculine",
+            "feminine",
+            "common",
+            "neuter",
+            "invariant"
+          ]
+        },
+        "tense": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "mood": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "person": {
+          "enum": [
+            "first",
+            "second",
+            "third",
+            "impersonal"
+          ]
+        },
+        "degree": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "variant": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "lexicalForm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "form",
+        "features",
+        "policy"
+      ],
+      "properties": {
+        "form": {
+          "$ref": "#/$defs/term"
+        },
+        "features": {
+          "$ref": "#/$defs/features"
+        },
+        "policy": {
+          "enum": [
+            "auto",
+            "review"
+          ]
+        }
+      }
+    },
+    "bilingualLexicalForms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "pt-BR"
+      ],
+      "properties": {
+        "en": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/lexicalForm"
+          }
+        },
+        "pt-BR": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/lexicalForm"
+          }
+        }
+      }
+    },
+    "conceptIdList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+      }
+    },
+    "relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "broader",
+        "narrower",
+        "related"
+      ],
+      "properties": {
+        "broader": {
+          "$ref": "#/$defs/conceptIdList"
+        },
+        "narrower": {
+          "$ref": "#/$defs/conceptIdList"
+        },
+        "related": {
+          "$ref": "#/$defs/conceptIdList"
+        }
+      }
+    },
+    "bilingualTerms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "pt-BR"
+      ],
+      "properties": {
+        "en": {
+          "$ref": "#/$defs/termList"
+        },
+        "pt-BR": {
+          "$ref": "#/$defs/termList"
+        }
+      }
+    },
+    "bilingualExamples": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "en",
+        "pt-BR"
+      ],
+      "properties": {
+        "en": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "pt-BR": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    }
+  }
+}

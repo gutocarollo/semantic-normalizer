@@ -1,0 +1,152 @@
+"""The release record and the provenance ledger must describe the registry that ships.
+
+`test_packaging.py` used to enforce part of this; it was dropped with the held-out custody
+machinery in 0.3.0 because its `test_12` required the removed held-out evaluator. Without a
+replacement, `registry.release.json` would be an unverified claim — which is exactly the defect
+the 0.2.0 review found in `MANIFEST.json`, whose declared hash never matched its own file.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import unittest
+from pathlib import Path
+
+DATA = Path(__file__).resolve().parent.parent / "src" / "semantic_normalizer" / "data"
+REGISTRY = DATA / "registry.jsonl"
+RELEASE = DATA / "registry.release.json"
+PROVENANCE = DATA / "registry.provenance.jsonl"
+SCHEMA = DATA / "registry.schema.json"
+
+
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+class RegistryGovernanceTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.records = [
+            json.loads(line)
+            for line in REGISTRY.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        cls.release = json.loads(RELEASE.read_text(encoding="utf-8"))
+        cls.provenance = [
+            json.loads(line)
+            for line in PROVENANCE.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+
+    def test_declared_hashes_match_the_shipped_files(self):
+        for name, path in (
+            ("registry.jsonl", REGISTRY),
+            ("registry.schema.json", SCHEMA),
+            ("registry.provenance.jsonl", PROVENANCE),
+        ):
+            with self.subTest(file=name):
+                self.assertIn(name, self.release["hashes"])
+                self.assertEqual(
+                    sha256(path),
+                    self.release["hashes"][name],
+                    f"{name}: release record declares a hash that does not match the file",
+                )
+
+    def test_release_version_matches_every_record(self):
+        versions = {record["registry_version"] for record in self.records}
+        self.assertEqual({self.release["version"]}, versions)
+
+    def test_affected_concepts_is_the_registry(self):
+        self.assertEqual(
+            sorted(record["concept_id"] for record in self.records),
+            sorted(self.release["affected_concepts"]),
+        )
+
+    def test_added_concepts_are_present_and_not_retired(self):
+        live = {record["concept_id"] for record in self.records}
+        for concept_id in self.release["added_concepts"]:
+            with self.subTest(concept=concept_id):
+                self.assertIn(concept_id, live)
+
+    def test_rollback_version_is_a_real_predecessor(self):
+        recorded = {event["target"]["registry_version"] for event in self.provenance}
+        self.assertIn(self.release["rollback_version"], recorded | {"1.0.0"})
+
+    def test_provenance_ends_at_the_shipped_version(self):
+        last = self.provenance[-1]
+        self.assertEqual(self.release["version"], last["target"]["registry_version"])
+        self.assertEqual(len(self.records), last["target"]["record_count"])
+
+    def test_every_provenance_event_declares_source_and_time(self):
+        for event in self.provenance:
+            with self.subTest(event=event["event_id"]):
+                self.assertTrue(event.get("source"))
+                self.assertIn("recorded_at", event)
+
+    def test_current_import_declares_authority_and_license(self):
+        """Events written from 2.1.0 on carry the governance fields 0.2.0 only promised.
+
+        The two pre-2.1.0 seed events predate the requirement and are not rewritten: a
+        provenance ledger is append-only, so back-filling them would be the forgery it exists
+        to prevent.
+        """
+        event = self.provenance[-1]
+        self.assertTrue(str(event.get("license", "")).strip())
+        self.assertTrue(str(event.get("authority", "")).strip())
+        self.assertTrue(str(event.get("importer", "")).strip())
+
+    def test_provenance_event_ids_are_unique(self):
+        """Append-only: an event id may never be rewritten in place.
+
+        The importer previously filtered its own event out and re-added it, so a rerun
+        silently rewrote `added_records: 13` to `0`. Duplicate or rewritten ids are the
+        observable symptom; the importer now refuses the rerun outright.
+        """
+        ids = [event["event_id"] for event in self.provenance]
+        self.assertEqual(len(ids), len(set(ids)))
+
+    def test_provenance_record_counts_only_grow(self):
+        counts = [event["target"]["record_count"] for event in self.provenance]
+        self.assertEqual(sorted(counts), counts, f"record_count went backwards: {counts}")
+
+    def test_authority_of_domain_concepts_uses_the_closed_set(self):
+        """Plan D1 encodes verification state in `authority`, so the set must be closed.
+
+        The schema has `additionalProperties: false`, so a dedicated field was not an option
+        and the state rides in a string. A convention without a test is a suggestion; this is
+        the enum, implemented where it fits. Scope is the CGA domain batch — the 86 concepts
+        that predate D1 carry free-form authorities and are not retro-fitted.
+        """
+        prefixes = ("apostila-cga-2026", "openwordnet-pt:", "project-authored:")
+        offenders = [
+            record["concept_id"]
+            for record in self.records
+            if "cga" in record["domains"] and not record["authority"].startswith(prefixes)
+        ]
+        self.assertEqual([], offenders)
+
+    def test_every_domain_concept_is_bilingual_with_content(self):
+        """The anchor asks for an EN/PT dictionary; a blank English side would satisfy the
+        schema's `minItems` while delivering half the objective."""
+        for record in self.records:
+            if "cga" not in record["domains"]:
+                continue
+            with self.subTest(concept=record["concept_id"]):
+                for language in ("en", "pt-BR"):
+                    self.assertTrue(record["labels"][language]["pref"].strip())
+                    self.assertTrue(record["lexical_forms"][language])
+                    self.assertTrue(record["positive_examples"][language])
+
+    def test_retired_ids_are_not_referenced_as_concepts(self):
+        """A renamed id is history, not a concept: it must not appear in any relation."""
+        live = {record["concept_id"] for record in self.records}
+        for record in self.records:
+            for kind, targets in record["relations"].items():
+                for target in targets:
+                    with self.subTest(concept=record["concept_id"], relation=kind):
+                        self.assertIn(target, live)
+
+
+if __name__ == "__main__":
+    unittest.main()

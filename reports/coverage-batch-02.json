@@ -1,0 +1,66 @@
+{
+  "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
+  "curve": [
+    {
+      "concepts": 25,
+      "occurrences": 743,
+      "share_of_unknown": 0.069
+    },
+    {
+      "concepts": 50,
+      "occurrences": 1266,
+      "share_of_unknown": 0.1176
+    },
+    {
+      "concepts": 100,
+      "occurrences": 2088,
+      "share_of_unknown": 0.194
+    },
+    {
+      "concepts": 150,
+      "occurrences": 2711,
+      "share_of_unknown": 0.2519
+    },
+    {
+      "concepts": 200,
+      "occurrences": 3204,
+      "share_of_unknown": 0.2977
+    },
+    {
+      "concepts": 300,
+      "occurrences": 4021,
+      "share_of_unknown": 0.3737
+    }
+  ],
+  "label": "after-batch-02",
+  "queue": {
+    "resolved_occurrences": 0,
+    "resolved_share": 0.0,
+    "unknown_occurrences": 10761,
+    "unknown_terms": 3652
+  },
+  "registry": {
+    "concepts": 187,
+    "sha256": "80e45ffb60952c01d4ba3b44ca320a7ea3ecde0b270b320e2e7b0ad341ec81a9",
+    "version": "2.3.0"
+  },
+  "sample": {
+    "concepts_per_sentence": 2.8833,
+    "seed": 7,
+    "size": 300,
+    "status": {
+      "accepted": 47,
+      "partial": 5,
+      "review": 248
+    },
+    "unresolved_items": 2042,
+    "with_concept": 273,
+    "with_concept_share": 0.91
+  },
+  "schema_version": "coverage-v1",
+  "target": {
+    "concepts": 200,
+    "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
+    "resolved_share_of_unknown": 0.2977
+  }
+}

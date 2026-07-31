@@ -1,0 +1,137 @@
+{
+  "schema_version": "dev-retrieval-v1",
+  "dataset_role": "public-development-only",
+  "seed": 20260730,
+  "language_scope": ["en", "pt-BR"],
+  "analyzer": {
+    "name": "bm25-baseline",
+    "tokenization": "unicode-word",
+    "unicode_normalization": "NFC",
+    "case": "casefold",
+    "accent_folding": false,
+    "stemming": false,
+    "stopword_removal": false,
+    "k1": 1.2,
+    "b": 0.75
+  },
+  "separation": {
+    "heldout_overlap_allowed": false,
+    "selection_rule": "All sources are Git-tracked files that are disjoint from the encrypted held-out source set."
+  },
+  "documents": [
+    {
+      "id": "dev-pt-gameplay",
+      "language": "pt-BR",
+      "kind": "documentation",
+      "source_path": "README.md",
+      "source_sha256": "52c4cafdf85799943d58fa433b0d76dec5acd15bf1c20f1aea1ed4896a7fb09c",
+      "line_start": 17,
+      "line_end": 20,
+      "content_sha256": "ceb049e5453e3bad0caf2f7b13a89d9778a8f5d5ae62072a4c4d00ba5d3c664e",
+      "content": "A IA vê por através / investiga:\n* Entende o que o user compreendeu e procura entender a **causa raiz** da falha no aprendizado dele e reduzir a um único ponto central.\n* Cria um \"exemplo feliz\" aplicado didático.\n* Dá pistas fazendo perguntas com o **método socrático**, procurando direcionar o user à solução."
+    },
+    {
+      "id": "dev-pt-wiki",
+      "language": "pt-BR",
+      "kind": "documentation",
+      "source_path": "docs/SCHEMA.md",
+      "source_sha256": "ec000face9cbc0cf9d0c9f46c6e183ed1e0dad0a6ecaf06aefe751dc326df86c",
+      "line_start": 16,
+      "line_end": 27,
+      "content_sha256": "126a62f10dc4709cf5191de52a289770d5f3f3ea97fbeed969e108ac506b7321",
+      "content": "Documentação bagunçada = **IA tomando decisão errada**. Quando lixo legado e verdade atual convivem sem\nmarcação temporal, o agente escolhe o documento errado em caso de ambiguidade e propaga o erro. Escalar\ndesenvolvimento assistido por IA exige que **cada documento declare o que é, de quando é e se ainda vale**.\nAs ferramentas adotadas servem a este fim único — repositório limpo, consistido e alinhado ao estado atual\ndo código:\n\n- **Karpathy LLM Wiki** (este SCHEMA + índices + lint): organização, indexação temporal, curadoria.\n- **Self-improvement loop** (loop de manutenção — `.claude/loop.md`,\n  `tasks/lessons.md`, CLAUDE.md/AGENTS.md §16): a curadoria roda em **loop contínuo**, não em\n  mutirões pontuais.\n\nA curadoria é **contínua e automatizada**, não um evento. Cada sessão deixa o repo mais limpo que encontrou."
+    },
+    {
+      "id": "dev-pt-education",
+      "language": "pt-BR",
+      "kind": "general-prose",
+      "source_path": "cga-2026-markdown/00-apresentacao-e-sumario.md",
+      "source_sha256": "e9b7a5b1efc0e404ae8e0278cf898d7f964f11434236642e1630a91b5b9d4a20",
+      "line_start": 23,
+      "line_end": 29,
+      "content_sha256": "bf68017062e9aa4f53e746b4433f1f23e0ab0b34adf37866f56bfc0645a735cd",
+      "content": "Nosso foco está em fazer com que você conquiste a APROVAÇÃO na sua certificação financeira e, com isso, possa avançar na sua carreira.\n\nAtuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que possam conseguir uma nova certificação, alcançando cargos mais elevados e de maior prestígio dentro das instituições financeiras e demais empresas em que trabalham.\n\nComeçamos a nossa história com o curso preparatório para a certificação CFP®, a certificação mais avançada para planejadores financeiros e private bankers no Brasil.\n\nCom o tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, para as outras certificações do mundo financeiro, como CPA-20, CEA, Ancord, CNPI, CFG, CGA, e outras, bem como nossos cursos livres, MBA, e outros produtos educacionais."
+    },
+    {
+      "id": "dev-pt-futures",
+      "language": "pt-BR",
+      "kind": "documentation",
+      "source_path": "cga-2026-markdown/02-gestao-de-carteiras-renda-variavel.md",
+      "source_sha256": "fdaf186cf2e356053394790332616b8b126b27db7a0876ab873397af5e5f0696",
+      "line_start": 52,
+      "line_end": 62,
+      "content_sha256": "3eadc3a937ab5e99567482f298b2d761fbf500790500d330403703f37543b2db",
+      "content": "O CONTRATO FUTURO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual ambas as partes possuem obrigações, tendo o vendedor a obrigação de entregar o ativo, e o comprador a obrigação de pagar na data futura. Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing B3 e todo comprador compra da clearing B3.\n\nEstes contratos se encerram por Liquidação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, ou pela Liquidação Física (entrega do ativo negociado).\n\nOs contratos futuros mais relevantes são:\n\n- Ibovespa Futuro (foco do nosso exame);\n- DI Futuro (foco do nosso exame);\n- Futuro de Dólar;\n- Cupom Cambial;\n- FRA de Cupom (FRC)."
+    },
+    {
+      "id": "dev-en-diataxis",
+      "language": "en",
+      "kind": "general-prose",
+      "source_path": ".claude/skills/diataxis/references/foundations.md",
+      "source_sha256": "1b11ef95d85954e92c78139eb2e2c424217700df76fe6322784a2f4913871e48",
+      "line_start": 6,
+      "line_end": 18,
+      "content_sha256": "80372fcd5af1ebb6ebd8123b78146d911f2d8e3ab08aa62a5a18a0b82108d83e",
+      "content": "Diátaxis is successful because it _works_ — both users and creators have a\nbetter experience of documentation as a result. But \"it seems to work\" is not\nenough to be confident in Diátaxis as a theory. As a theory, it must show\n**why** it works. It must demonstrate that there is a reason there are exactly\nfour kinds of documentation — not three, not five.\n\nThis page is that argument.\n\n## Two dimensions of craft\n\nDiátaxis is based on the principle that documentation must serve the needs of\nits users. Knowing how to do that means understanding what the needs of users\nare."
+    },
+    {
+      "id": "dev-en-actions-security",
+      "language": "en",
+      "kind": "documentation",
+      "source_path": ".claude/skills/agentic-actions-auditor/references/foundations.md",
+      "source_sha256": "9e0eb90b3bfb53e195251685b1291bdd1d75e07d6c60e634ecb28f72b1723bf3",
+      "line_start": 28,
+      "line_end": 38,
+      "content_sha256": "8db9d71916459b795d2f8f09529faf613f6f1a96533520291d5936ec08120abd",
+      "content": "Any `${{ }}` expression referencing these contexts carries attacker-controlled content into whatever consumes the resolved value.\n\n## How env: Blocks Work in GitHub Actions\n\nEnvironment variables can be set at three scopes:\n\n1. **Workflow-level** `env:` (top of file) -- inherited by all jobs and steps\n2. **Job-level** `env:` (under `jobs.<id>:`) -- inherited by all steps in that job\n3. **Step-level** `env:` (under a step) -- available only to that step\n\nNarrower scopes override broader ones. Critically, `${{ }}` expressions in `env:` values are evaluated BEFORE the step runs. The step only sees the resolved string value, never the expression. This is the mechanism behind Vector A: the AI agent receives attacker content through an env var without any `${{ }}` expression appearing in the prompt field itself."
+    },
+    {
+      "id": "dev-en-scanner-docstring",
+      "language": "en",
+      "kind": "python-docstring",
+      "source_path": ".harness/lib/scan_project.py",
+      "source_sha256": "f8cc67babdc5fd9b7dae991287476aed45ae96d351a3c095fa2a22603909f8d0",
+      "line_start": 2,
+      "line_end": 20,
+      "content_sha256": "ce6d586473e595e6b30891d515f6a5356297f7b09bfbe4749bfde1e1a4628e69",
+      "content": "\"\"\"scan_project.py — deterministic scanner + per-stack applicability classifier (F5).\n\nEngine for the `harness-init` skill. ZERO LLM calls in this file — blueprint\nported from `scan-project.mjs` of understand-anything (docs/planning/research/\n07-autoconfig-patterns.md §A.4): \"file enumeration, classification by\nextension/name, counting, import resolution and structural diffing are ALWAYS\ndeterministic\". The skill (SKILL.md) only decides BASED ON the JSON this\nscript prints — it never reimplements the detection logic in prose.\n\nDecision D5 (docs/planning/00-plano-consolidado.md §11): the framework installs\nEVERYTHING, but each component is classified APLICAVEL / NAO_APLICAVEL / CONDICIONAL\nby RULE (not by LLM \"guesswork\"). CONDICIONAL always requires human\nconfirmation before activating — it is never silently assumed.\n\nZero external dependencies (pure stdlib, same decision as `_tooling_conf.py` —\nthis script runs INSIDE any target project, which may not have PyYAML/\ntomli installed; `tomllib` is stdlib since 3.11, used only for real TOML\n[pyproject.toml/Cargo.toml]; YAML is always handled by lightweight regex over\nraw text — it is not a full YAML parser, it is key-presence detection)."
+    },
+    {
+      "id": "dev-en-integrity-docstring",
+      "language": "en",
+      "kind": "python-docstring",
+      "source_path": ".harness/lib/ref_integrity.py",
+      "source_sha256": "da2664e541fc12f7bf1ecbb9da821576f6226a85f716e20f5e524cdd7393e5ca",
+      "line_start": 30,
+      "line_end": 41,
+      "content_sha256": "7dadc123685f06cdf633f51f8bd0a90eb8af7e8c870564b4f1125cb61cdb94b1",
+      "content": "SINGLE SOURCE (SOLID/DRY) consumed by 3 thin adapters:\n  - pre-commit git hook  → --staged   (resolve/grep in the INDEX; blocks the commit)\n  - invocable skill      → --range A..B\n  - scheduled loop       → --since <ref>\n\nTwo deterministic checks:\n  (A) broken-md-links   — markdown links `](path)` that do not resolve.\n  (B) stale-citations   — live citations to the OLD PATH/name of files renamed/deleted\n                          in the selector's git diff. Reconciles false-positive vs false-negative:\n                          basename that VANISHED from the repo → search by basename (catches a citation with no path);\n                          basename that STILL exists (renamed) → search only by the old full PATH\n                          (does not flag `multi-tenancy.md` which resolves to the new location)."
+    }
+  ],
+  "queries": [
+    {"id": "dev-q01", "language": "pt-BR", "stratum": "literal", "text": "causa raiz da falha no aprendizado", "relevant_doc_ids": ["dev-pt-gameplay"], "negative_doc_ids": ["dev-pt-wiki", "dev-pt-education"]},
+    {"id": "dev-q02", "language": "pt-BR", "stratum": "literal", "text": "marcação temporal da documentação", "relevant_doc_ids": ["dev-pt-wiki"], "negative_doc_ids": ["dev-pt-gameplay", "dev-pt-futures"]},
+    {"id": "dev-q03", "language": "en", "stratum": "literal", "text": "exactly four kinds of documentation", "relevant_doc_ids": ["dev-en-diataxis"], "negative_doc_ids": ["dev-en-actions-security", "dev-en-scanner-docstring"]},
+    {"id": "dev-q04", "language": "en", "stratum": "literal", "text": "broken markdown links stale citations", "relevant_doc_ids": ["dev-en-integrity-docstring"], "negative_doc_ids": ["dev-en-scanner-docstring", "dev-en-diataxis"]},
+    {"id": "dev-q05", "language": "pt-BR", "stratum": "synonym-paraphrase", "text": "documentos antigos confundem o agente e espalham decisões incorretas", "relevant_doc_ids": ["dev-pt-wiki"], "negative_doc_ids": ["dev-pt-education", "dev-pt-futures"]},
+    {"id": "dev-q06", "language": "pt-BR", "stratum": "synonym-paraphrase", "text": "derivativo uniforme com vencimento e acerto cotidiano", "relevant_doc_ids": ["dev-pt-futures"], "negative_doc_ids": ["dev-pt-gameplay", "dev-pt-education"]},
+    {"id": "dev-q07", "language": "en", "stratum": "synonym-paraphrase", "text": "a smaller environment scope takes precedence over a larger scope", "relevant_doc_ids": ["dev-en-actions-security"], "negative_doc_ids": ["dev-en-diataxis", "dev-en-integrity-docstring"]},
+    {"id": "dev-q08", "language": "en", "stratum": "synonym-paraphrase", "text": "the repository scanner avoids probabilistic model decisions", "relevant_doc_ids": ["dev-en-scanner-docstring"], "negative_doc_ids": ["dev-en-actions-security", "dev-en-integrity-docstring"]},
+    {"id": "dev-q09", "language": "en", "stratum": "cross-language", "text": "financial certification training and career advancement", "relevant_doc_ids": ["dev-pt-education"], "negative_doc_ids": ["dev-en-diataxis", "dev-pt-futures"]},
+    {"id": "dev-q10", "language": "en", "stratum": "cross-language", "text": "daily settlement removes counterparty risk in futures", "relevant_doc_ids": ["dev-pt-futures"], "negative_doc_ids": ["dev-pt-wiki", "dev-en-actions-security"]},
+    {"id": "dev-q11", "language": "pt-BR", "stratum": "cross-language", "text": "necessidades práticas e cognitivas de quem usa documentação", "relevant_doc_ids": ["dev-en-diataxis"], "negative_doc_ids": ["dev-pt-gameplay", "dev-en-integrity-docstring"]},
+    {"id": "dev-q12", "language": "pt-BR", "stratum": "cross-language", "text": "variável de ambiente entrega conteúdo controlado pelo atacante ao agente", "relevant_doc_ids": ["dev-en-actions-security"], "negative_doc_ids": ["dev-en-scanner-docstring", "dev-pt-wiki"]},
+    {"id": "dev-q13", "language": "pt-BR", "stratum": "ambiguous-negative", "text": "qual é o prazo de vencimento exato de todos os contratos futuros?", "relevant_doc_ids": [], "negative_doc_ids": ["dev-pt-futures"]},
+    {"id": "dev-q14", "language": "en", "stratum": "ambiguous-negative", "text": "which machine-learning model classifies the project?", "relevant_doc_ids": [], "negative_doc_ids": ["dev-en-scanner-docstring"]},
+    {"id": "dev-q15", "language": "pt-BR", "stratum": "ambiguous-negative", "text": "qual certificação garante o maior salário?", "relevant_doc_ids": [], "negative_doc_ids": ["dev-pt-education"]},
+    {"id": "dev-q16", "language": "en", "stratum": "ambiguous-negative", "text": "does every renamed filename create a stale citation error?", "relevant_doc_ids": [], "negative_doc_ids": ["dev-en-integrity-docstring"]}
+  ],
+  "counts": {
+    "documents": 8,
+    "queries": 16,
+    "literal": 4,
+    "synonym_paraphrase": 4,
+    "cross_language": 4,
+    "ambiguous_negative": 4
+  }
+}

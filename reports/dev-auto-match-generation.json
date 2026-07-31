@@ -1,0 +1,29 @@
+{
+  "adjudication_status": "partial_public_seed_only",
+  "candidate_set_sha256": "f30678d1092de567ecc9b174f4ae85e747638ac427977e727edec9729d1a5069",
+  "counts": {
+    "ambiguous_events": 10,
+    "blind_pending": 72,
+    "candidates": 145,
+    "derivable_seed": 73,
+    "dev_document_auto": 37,
+    "dev_query_auto": 11,
+    "golden_auto": 97,
+    "protected_values": 37
+  },
+  "heldout_accessed": false,
+  "inputs": {
+    "dev_sha256": "ed677a53cbd98d152bef445be218461f487762f8c8e16eaf06aeee2199e63d58",
+    "golden_sha256": "ce9df805cf205d6af8c8647d598c50befa9b9fc70e54103ec0c106ba82dc6021"
+  },
+  "normalizer_sha256": "78a51eeeafceca68026efd94ceee490deb22e2efbc7ac77ee1c7c1b76760320f",
+  "output_sha256": {
+    "dev-auto-match-adjudication-seed.jsonl": "973d21cdb70eb50dc1cae8e392ccecc1aefef894fbc707b9de100684e69c7e13",
+    "dev-auto-match-blind-pending.jsonl": "494ec474efb206eb4d41d744757bab7558f20a05a597e2f0d78ab74a8bd88680",
+    "dev-auto-match-candidates.jsonl": "f30678d1092de567ecc9b174f4ae85e747638ac427977e727edec9729d1a5069"
+  },
+  "registry_schema_sha256": "623034fe45c1686d625b87b6d8b607cec040fb9aebd98d40cff9703fefdb3d2b",
+  "registry_sha256": "9ed00a5a73cbaa2b98c32ccd1e622df8b337bf87a8da3313a1b6af8872ab9e80",
+  "registry_version": "2.0.0",
+  "schema_version": "auto-match-candidates-o3-v1"
+}

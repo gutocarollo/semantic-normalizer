@@ -1,0 +1,102 @@
+{
+  "schema_version": "phrase-gold-independent-v1",
+  "dataset_id": "public-independent-phrase-smoke-v1",
+  "dataset_role": "public-development-only",
+  "language_scope": ["en", "pt-BR"],
+  "sense_catalog": [
+    {
+      "sense_id": "s_1a2b3c4d",
+      "definition": "A person who uses a system.",
+      "semantic_class": "participant"
+    },
+    {
+      "sense_id": "s_2b3c4d5e",
+      "definition": "Keep an artifact unchanged and available.",
+      "semantic_class": "process"
+    },
+    {
+      "sense_id": "s_3c4d5e6f",
+      "definition": "A persistent named byte sequence.",
+      "semantic_class": "thing"
+    },
+    {
+      "sense_id": "s_4d5e6f70",
+      "definition": "A token that is protected from semantic interpretation.",
+      "semantic_class": "protected-token"
+    },
+    {
+      "sense_id": "s_5e6f7081",
+      "definition": "A candidate meaning that adjudication could not resolve.",
+      "semantic_class": "unresolved"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "independent-en-correct",
+      "language": "en",
+      "kind": "text",
+      "text": "The user preserve the file.",
+      "units": [
+        {"unit_id": "actor", "start": 4, "end": 8, "sense_id": "s_1a2b3c4d", "role": "actor"},
+        {"unit_id": "action", "start": 9, "end": 17, "sense_id": "s_2b3c4d5e", "role": "action"},
+        {"unit_id": "object", "start": 22, "end": 26, "sense_id": "s_3c4d5e6f", "role": "object"}
+      ],
+      "relations": [
+        {"type": "actor_of", "source": "actor", "target": "action"},
+        {"type": "object_of", "source": "object", "target": "action"}
+      ],
+      "protected": []
+    },
+    {
+      "id": "independent-pt-correct",
+      "language": "pt-BR",
+      "kind": "text",
+      "text": "O usuário preservar o arquivo.",
+      "units": [
+        {"unit_id": "actor", "start": 2, "end": 9, "sense_id": "s_1a2b3c4d", "role": "actor"},
+        {"unit_id": "action", "start": 10, "end": 19, "sense_id": "s_2b3c4d5e", "role": "action"},
+        {"unit_id": "object", "start": 22, "end": 29, "sense_id": "s_3c4d5e6f", "role": "object"}
+      ],
+      "relations": [
+        {"type": "actor_of", "source": "actor", "target": "action"},
+        {"type": "object_of", "source": "object", "target": "action"}
+      ],
+      "protected": []
+    },
+    {
+      "id": "independent-no-concept",
+      "language": "en",
+      "kind": "text",
+      "text": "Quaternion payload.",
+      "units": [
+        {"unit_id": "quaternion", "start": 0, "end": 10, "sense_id": "s_4d5e6f70", "role": "unassigned"}
+      ],
+      "relations": [],
+      "protected": []
+    },
+    {
+      "id": "independent-protected",
+      "language": "en",
+      "kind": "text",
+      "text": "Preserve APP-01.",
+      "units": [
+        {"unit_id": "action", "start": 0, "end": 8, "sense_id": "s_2b3c4d5e", "role": "action"}
+      ],
+      "relations": [],
+      "protected": [
+        {"start": 9, "end": 15, "kind": "identifier", "original": "APP-01"}
+      ]
+    },
+    {
+      "id": "independent-uncertain",
+      "language": "en",
+      "kind": "text",
+      "text": "Preserve.",
+      "units": [
+        {"unit_id": "candidate", "start": 0, "end": 8, "sense_id": "s_5e6f7081", "role": "action"}
+      ],
+      "relations": [],
+      "protected": []
+    }
+  ]
+}

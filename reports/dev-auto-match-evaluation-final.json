@@ -1,0 +1,574 @@
+{
+  "adjudicated_subset_precision": 1.0,
+  "adjudication_coverage": 1.0,
+  "adjudication_scope": "complete_seed_plus_blind_reused_by_exact_occurrence_id",
+  "ambiguous_review_detections": 16,
+  "auto_match_precision": 1.0,
+  "baseline_candidate_set_sha256": "f30678d1092de567ecc9b174f4ae85e747638ac427977e727edec9729d1a5069",
+  "candidate_set_sha256": "55d4f5ddfe1836a8a0697036a8a63498211172fb2ba6886e1e7b787815353fef",
+  "claim_status": "fully_adjudicated",
+  "counts": {
+    "FN": 0,
+    "FP": 0,
+    "TP": 137,
+    "UNCERTAIN": 0
+  },
+  "evaluation_type": "auto-match-selective-o3",
+  "false_automatic_merges": [],
+  "heldout_accessed": false,
+  "protected_mutation_details": [],
+  "protected_span_mutations": 0,
+  "protected_spans_checked": 36,
+  "rows": [
+    {
+      "label": "TP",
+      "occurrence_id": "occ-04841ec1af10ef1b0d8ae5b339ab796b8a12e351062a9e29cac1d2e25279ec3c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-0aa1d94bf75f148b2f18ba69eca8c854f7edd00b5484ae0ecf28e0eb17139652"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-0b3d6a95f72242df9a648eeef29d6e8154d94d330e7e8895c2e281a9703f80be"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-0d4f87ce9a759469ab398af650de3b149656b2223cfa6cb3e0cf687ed3b66ed7"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-0e3c19e9382f3e6f43f04bc98fee35d2cedab9db89a4bc7175b24e913f92e6cc"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-0ee6967688d17c16f61f2bd68960f245eea7f7196ee45becfdfa87e460921fda"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-176eadb64aa39f3afe3b6425b09095e62566750b741e024d9c248a2f9266acc1"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-1be2d4035d2cee7b5576db09ffbf83827843fab8419b1a1f33086c9eab280f45"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-1cad6b0a44a87b55bf22b732bdb61567d04d2ec766ff0469dc98080b56b3ff33"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-22a05e4825d46dd0c0830bd06e8d7e4e8cc3c53e0f685234660edccab93d5e9c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-2a4e9605e49ffd30342295a4329ea1818784c1f1bc849ac8f85b0a6d7bad5424"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-2a7411849bd3e5d6def95eda955a4775a167b3f3446558612898ea292db73358"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-2b32f76974fb6ce23a4a076cc82c06a4b9985469391c5e8e40f756b8e1fa15dc"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-2eecce072264ac57e6f07742b94286b1575ecc8cd6ebbf1bb4dbbcd609b9764d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-2ff21419952ec4c337d1d5d3edba7934e2468d7cf29928b6dbcf5d5d9754bedc"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-31a2a4219e122333d025c2b8e2cf0319200e8a1c7cbf77a84f89698b3c1fcd2b"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-3293af5366259061d3844d1b9fc77bb7c1ed0a030508bfd1507bae00a0babea0"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-3480c05b60dc28884acf1f5143ce957839a82fe9b79f2701057222fc6e4009c0"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-3ad43c33410883858b762a140099618317e0bd0a8118e70943e12784627075ce"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-3f033d5f3f1811559beaaa799237083959540cd86311565503e21743dcf1c4ce"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-45293839de435be20eb1f08494b0f776fc8996d92e4547801d22c1e262c4ed00"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4646a3f6793b3ad798154eedea7658eefd4081f69d58cdcc875f03b10091aef7"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-49260736ae3eb1d3098fe40aa89fbd3fd783efc5966a567e455223128c3da48b"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4a1368b52e9a2bdec8fcf090939230c3e480076a85bcbf309e64ad57287b04cb"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4c4b4703dc59ecfe571afbe59cef56ce5c424a3aa663827b9e019ce4005b9400"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4c8eb406996b703a5d2060aa6ff10768737f590b2c5d1f3de983e097cdd64a02"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4ed6c659c3c937666a26b592636ded57fd3f2e426bedd3c320a13560c2280be8"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-4f833ce6f8598dd6617271dace77df0849c925facdfe37bbecd975fc49620531"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-50a6a57667c88a74a0ceb8e155b85f9038783585de7196122c2af40a46ecd4d5"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-53cf12276ed1e9da5d3715718423157152e546850fa7c2118cf033c159294646"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-53eaecae0061bd6cca87091c6df4467f5587029d21a1d5d8eec51572f9006a7b"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-544688aef593994fc18bdaee7b3398a81f2e4ab08d0e41364a6ba911ad16d894"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-583a38a87eb20c50ee8ce117e07b8b05938d61b473ad48a7d108c7ee41edadb5"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-59448fbad2bd4adfa8782ad97ed67ad655c6364a7ebac22099a8307469455a76"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-5a21e756e3765ca8eba3fc8293f29912176f12f59f7a646825e8ed0dade9710a"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-5cbb662df055c03dd2b7d8e4437f859c1fa993afacb9e950708a55e83137e11d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-5dff1add9117e815896877a82e78060108606864a435e63792df4620a327b6ac"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-5e7da4e1192ac354586696620c3b0de4d899c56a50d3554e9a2f56478a2bacb3"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-5ff16072dd505acf235c4ab1bf5277cb236acfa7f311a61fba5f18d3e0dbd881"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-615a889c422a4cc2671d97382d689ccd42fc52b85866070debcb9dde297e25c8"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-61bf981831a50a6baf0eca267e8bf70da28141a990d7864986f1abc5d233ba0d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-61edafdbf38acad579585319b9b9ba13f0ef836da102d70b022c52d9407022cb"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-63a2e1eee4340fa13c99b92dabe7484683ec5d1a7f1d4c3b1f3268f015ca0ea3"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-63ec34c11450558aa5621a8f6e0c4eb8225ce661aed2bbdffc55e7c8d90ecdaf"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-64fd6e0be42d9a8ef87f7b268d4050d28eb3cfd81b6690fec97927779bb8007b"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-66b08d44ea17457064eddef6a41056c9ad601df750e4880c91bb982a0762023e"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-6a6bc894fdf127e304c14809458acef70d8bdd96ed71b9aaf4028f775c6dc1fd"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-6d89e4f57e93612f496a3087a9c3164715268e822ac037de0c32416ab83acb73"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-6ec56dac00a840c3dc3405330c71ba58c707f7de7a58e3f1431265cb4d0f78a8"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-6ef87372aed7c5620a3185a2a5aa04dd0bb549daff5933a1fa3ba79fa5d4d4ed"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-740c838f1aafe1908acbe42c87e5002b1d79259c7bee77d6794ae3cb39ad60b4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-76f9b747d731627df84b50a9a6eaf414b991c69b7deca308dbf3c53e18d5a9f4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-77883fe8e0e8f2a923f7cf3040d05791880dc29d1b764a7ae13acbd0920e7175"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-79d095623a76653aec8aa896067124b5203e6bfe9355bc97e5df82bb640da412"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7b2876c7806b9672655c61d54e26576d4da473b1c598bf7558230e50838515af"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7c05d5d190ffefa98f0587206e536d995290cf385c66f9473c01fdc5d77e5395"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7c162aa0ed0207f6b4d1680c75944f51bb636279ec8083863fa305c390709301"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7c3564b05629115c375e312acd6b0bc12344b308286fd42490329f958f30a303"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7cba523f199ae50754da8d50a2e6422248686fb39cdfc0c8ed186adce06f49f6"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7cdfc5917e76c795988292f329f5a898d669482e956b7572c847c230e0f5e38d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-7f1f4cd70273df5d4c0a07ec747e66ec514808eeb6b79695bd5f668ed1bb3f84"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-830c47de514d46493ffc3a812cbe0d74b50672fb97f810a1e8223d8a42370324"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-83d6316db1a9cd52d0667b36de6391f659ea9e3a15b88a5be9360b2006251672"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8570de4c299cf46952bdb1b7fe573ae5185253ed612b4951e9d58a2e6c5f4ef1"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-85c2c5e936ae7aff22abb0baa342b597404004cf94f3ced2dc8f9dda50f3429d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-88ec8241582665cfd44ca489920c06d2ab46ddba77a43e38be6ce1f290433679"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8a210c5e2c4aee4e46b648c18a230710adb0ebbcf02903acce75df01d49ba620"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8afd7b933c3a5182b322419fc238b11be648ee0f3fbdf1ab9be619109ca2fece"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8cb3a12ef0086cd73e966491c3b347a86833b4181694c9c90bc7c1e6c5c1c0c5"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8d1d313540b4e3f3eb2c581ea5f5c72e236050fcfc7e6c34035ec4bd75a2a6e2"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-8ef0592065e8db0a73db70f14570b041b3c3e96b25dce0112f43b061a0439fae"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-9269be71829bd62ac3f9c727a3af8e7582ffd3f0eca99d8e834daef845950d30"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-93070dee4333bd9c9e78c440e6de742f35d3e0d11c4d9c273363acf6480fb62a"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-932d4430d852ad4865af7a9dd9c0c2a7890532ec55d63d425aff49c48dda4549"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-93b2fe800319798a6ea7414efb0f8d70d400f1aa99314ccfe15944779c553cb7"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-9872355dd85cc77b5fa0fb2f5503cd1b2b5a3eb27189bb9e70cd6bd12c9b432e"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-991736ea647d52b6afa328fb09c47b6bea991c30d514630a6d8f1a7d9b7e6044"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-991894a48bb3d599b44ae17fa89676cd7ad4a39644d9afdb87bb38ab4be8da32"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-9a3f9ddab2ca658fab9d297107bb4d5488a6ed27af4091bed8b493e9c8cc6f4d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-9e00d6ea3f0a165bda847814381bde57a12f923121b2272599985f7f2c09e178"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-a0435f8ea011407b67ddc12d7084aa2efbe99f6c8bff902590ffe27efc98ef9c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-a0a8a9e6defe8e3a68a76c08aaaa81049b4445d0ef330907b93d8a26c53c8f20"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-a1ea05f60c60262c3502d84b0087403afc785d3dec55e31aae209317d472a10e"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-a352754307edf19b94dc41b148ae8a88e55cb577f543d91ffcda1496fb2f0aed"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-a3d5a6ae74631754cc2796ff4252519a75fa43ae08b00c546adc2c1b2915b3f4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-aaa8156b76da24f0e27c6d90b3f539a4ef025ab5c2006f94922fe641cfe59878"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ae925eca23a3c14eb8db5abfa2000d1f145b199b1001a91e167f1022b1073bc4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-b133567cf6db99a7bcc44091a0cc9c3db77529ed05b8df626361b29fb6f7e477"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-b53ead25c173fd0d525a349b788d672ec9ef67ba7b544f0fcfb00e574ab7903c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-b6e4047525305ebfae842efcc908648dcfb265c29cc673bab22ee885c8a6bc97"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-b84d6c7a0c75f5c1253ce44c002041a43fba5cdac753967e7ceb796a08afb332"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-bb546386b10b1e5c361db0e05de7772b4f340436319e436fcb6e78d93a0ce30c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-bdba5dcb8fa161dea0155c0dd97854d6c22a932a88c8931cdcd8ae0cfebecac0"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-be05920301dad31f3f3649b1f6c2bb0bde396ef2f9b4e806421546277ccab505"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-bf364a90032762da6ef604bb449f9addd5648437d30222d83e805c505d55bf86"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c1edef7bf0d5dfef666134d41a3ae1ecf454b39eef31bde748c3c07c0e02324e"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c21bea02f4188859270758e455f8b7bb172b859932a6c6234b94541eb8b48286"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c3930b92224487c2d2697e769f0e55519cfb911a3e129c395d41f1fb94c104b3"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c4eb0404b2e24166f895508df5652096cd47dfa704dfaec52939b608c80e11fd"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c5776c200212db05c5b2c3c7fec1d4b50b085144339b659c46e91d0c436fd703"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c5c98ed899062eb48835560e088119271730d2dc681f3b63be227504d491f7b1"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c6a0336eb338a19758b6e5df0a78df4e1cdd98990ae5f15c10009bb7d4649e56"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-c7de6b249c7ee98140dd552e0d7b38f9819fcafdd2998ad14631c7085d484449"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-cacc29ec0c7ccf4e18057f184b569e4949343e7d7c09200cb21d819c81e0d999"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ce64b621862a8a5be861e7c57ff8e10cee1bede6f287fe57187110fc8295a96a"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ce8a20d21aecafc4c433cb2ced8b00dd6d8a470d314906d4a36eb6d4bc9b2c18"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d1437e0ff0676fb5b3ab3d4ec33c54dd1af12583f9f06cc52f961c70fac22bcf"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d38bed66180c482c3561a2092aa37173ddf4c858489935d98b8a21644bdf491c"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d40fb372f066f94951d50a399267053ca5c9decfec293b345be178559061d2d1"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d4d9e68aadebd4d18534e668c14d8ab99ba50e2432d232bc28ef09088237d45d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d5b45d9d7ffaf4b81cb41980bac8ba5e14b8feb6505155c7efb2fc89f20d2796"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-d71cb2f71fcaa6e7fa3c5434b37626ddbed1d57df9d62efbecec1fd920b10c30"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-dd908c49c4bfb0183ada2d993ed37a43a6f63a44451308cbdb41e17b567faa6d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e03b498322f4c22481ebdd7f330cb096b97ea5bc39b38bc73d7d0f5e82adf67f"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e06a982ed8baf679125b66457367364e1004a9a61cea374c9f95d9492c7ee7e4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e0f797e5031cfa960838c8a535141611e5628eca296bd2a3d93cb0c2b94f3e83"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e1f6e0f5fac117e8d10052c51d3f43d20dc96447c900da163f2ba7fa7841af5d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e3b6adcdde2e089d4c6ac3418614e87a3e2757c3f64acebce53865c48fbd5799"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e66f043dce8d4b84a8556d7f0977714951ed6b70b74fd4ad082b60335e3d61bc"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e7034db84d87e359fb66ae5362b907cc5ee40d02e19fb004ce6e0d1154c5cbf2"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-e9d1ae98010f39f238cd377cb022eb57120d1fa3f9389431f66adf53fb122467"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ecff0acc46b5fb3bfbcbca0df17523f911c3aa25168dcbe7aa085d258b5ea58b"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ed82efd85120897eacb00577efa95e69910967e5eb6e19306e65a41ed5673b58"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ef20eede94bed33258fa9626056c050798d869495889834657daf81b0f628081"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f2d602609e35066c6bcfc2b849259ba73f24ca1b9f21a4c096fd02ce7d76b649"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f38bed5d243841d2b47c445e1b89026a5aa97b2773562b181f55fa8810fea3ea"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f5bacddf5a61029e4632b69128bbeda4f26c8c45a4653b94cde240116f672c9d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f62ee09d8dc8fe9223dd92554c3f0c51c228d197adc22d7f257b8e6a4ceaf3a4"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f806a59ff5f260bdbd6a61717db968a75ea00ea48cdb29983f1c852d35634dcb"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f8e936153dacfaaf9c898475fc886277bee629b7793a38166c538f5af7941564"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-f940595276e99a3b3c9b820da746f2fd7f7fcf8f638aa501095b368864a71b53"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-fa66dbb5ed4f9c39b933fc448049b2131047922fd8dcfdeee7a97eec06e58d1d"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-fd6bdd2966dee3c763b945536848f54251c66df95cd722211ab5bcb03edc0281"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-fde6e6d56c58b3b2aff20ea98962cc1d67e9dc431c331bfc37292b2cd12e9960"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-fe517d8ea19e568b00a1a2b1e0254a8fa71ae041d6c332b118e3e8fb4a061da6"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ff049bcad6a228f2177daacbfbefc5908e08fa95ba7fbeee06371fda5b309bbd"
+    },
+    {
+      "label": "TP",
+      "occurrence_id": "occ-ff78889ae754d7b09ea37b35c7204a380ab0ef0a236c6e4a54ba04f14ebb4ecd"
+    }
+  ],
+  "schema_version": "auto-match-candidates-o3-corrected-v1",
+  "selective_coverage": 0.8954248366013072
+}

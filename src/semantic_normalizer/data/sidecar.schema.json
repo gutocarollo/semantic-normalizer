@@ -1,0 +1,359 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/semantic-normalizer-sidecar-v2.schema.json",
+  "title": "Semantic Normalizer Sidecar v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "tool_version", "lexicon_version", "lexicon_sha256",
+    "registry_version", "registry_sha256", "registry_schema_sha256",
+    "source", "source_sha256", "kind", "segment_kind", "line", "column",
+    "start", "end", "byte_start", "byte_end", "original", "original_text",
+    "canonical_text", "canonical_status", "canonical_mappings",
+    "concept_tokens", "operator_tokens", "protected_values", "text_expanded",
+    "reconciliation", "language", "concept_ids", "preferred_terms",
+    "search_fields", "match_events", "ambiguous_candidates", "protected",
+    "unresolved", "warnings", "needs_review", "semantic_sequence",
+    "semantic_units", "semantic_relations"
+  ],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "tool_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "lexicon_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "lexicon_sha256": {"$ref": "#/$defs/sha256"},
+    "registry_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "registry_sha256": {"$ref": "#/$defs/sha256"},
+    "registry_schema_sha256": {"$ref": "#/$defs/sha256"},
+    "source": {"type": "string", "minLength": 1},
+    "source_sha256": {"$ref": "#/$defs/sha256"},
+    "kind": {"type": "string", "minLength": 1},
+    "segment_kind": {"type": "string", "minLength": 1},
+    "line": {"type": "integer", "minimum": 1},
+    "column": {"type": "integer", "minimum": 0},
+    "start": {"type": "integer", "minimum": 0},
+    "end": {"type": "integer", "minimum": 0},
+    "byte_start": {"type": "integer", "minimum": 0},
+    "byte_end": {"type": "integer", "minimum": 0},
+    "original": {"type": "string"},
+    "original_text": {"type": "string"},
+    "canonical_text": {"type": "string"},
+    "canonical_status": {"enum": ["accepted", "partial", "review"]},
+    "canonical_mappings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalMapping"}
+    },
+    "concept_tokens": {"$ref": "#/$defs/uniqueStrings"},
+    "operator_tokens": {"$ref": "#/$defs/uniqueStrings"},
+    "protected_values": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/protectedValue"}
+    },
+    "text_expanded": {"type": "string"},
+    "reconciliation": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/reconciliation"}
+    },
+    "language": {"enum": ["en", "pt-BR", "mixed", "unknown"]},
+    "concept_ids": {"$ref": "#/$defs/uniqueConceptIds"},
+    "preferred_terms": {"$ref": "#/$defs/preferredTerms"},
+    "search_fields": {"$ref": "#/$defs/searchFields"},
+    "match_events": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/matchEvent"}
+    },
+    "ambiguous_candidates": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/ambiguity"}
+    },
+    "protected": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/protected"}
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/unresolved"}
+    },
+    "warnings": {"$ref": "#/$defs/uniqueStrings"},
+    "needs_review": {"type": "boolean"},
+    "semantic_sequence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/semanticSequenceItem"}
+    },
+    "semantic_units": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/semanticUnit"}
+    },
+    "semantic_relations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/semanticRelation"}
+    }
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "conceptId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+    },
+    "uniqueStrings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "uniqueConceptIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/conceptId"}
+    },
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "text"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "text": {"type": "string", "minLength": 1}
+      }
+    },
+    "canonicalMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "concept_id", "original_start", "original_end", "source_start",
+        "source_end", "canonical_start", "canonical_end", "original",
+        "canonical", "policy"
+      ],
+      "properties": {
+        "concept_id": {"$ref": "#/$defs/conceptId"},
+        "original_start": {"type": "integer", "minimum": 0},
+        "original_end": {"type": "integer", "minimum": 0},
+        "source_start": {"type": "integer", "minimum": 0},
+        "source_end": {"type": "integer", "minimum": 0},
+        "canonical_start": {"type": "integer", "minimum": 0},
+        "canonical_end": {"type": "integer", "minimum": 0},
+        "original": {"type": "string", "minLength": 1},
+        "canonical": {"type": "string", "minLength": 1},
+        "policy": {"const": "auto"}
+      }
+    },
+    "protectedValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "start", "end"],
+      "properties": {
+        "value": {"type": "string", "minLength": 1},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0}
+      }
+    },
+    "reconciliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["span", "state", "attempts", "candidate_id", "reason_code"],
+      "properties": {
+        "span": {"$ref": "#/$defs/span"},
+        "state": {
+          "enum": [
+            "candidate", "deterministic_match", "unresolved",
+            "constrained_resolution", "validation", "accepted", "review", "rejected"
+          ]
+        },
+        "attempts": {"type": "integer", "minimum": 0, "maximum": 2},
+        "candidate_id": {"type": ["string", "null"]},
+        "reason_code": {"type": ["string", "null"]}
+      }
+    },
+    "preferredTerms": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "pt-BR"],
+      "properties": {
+        "en": {"$ref": "#/$defs/uniqueStrings"},
+        "pt-BR": {"$ref": "#/$defs/uniqueStrings"}
+      }
+    },
+    "searchFields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw_exact", "same_language_terms", "cross_language_terms",
+        "concept_terms", "ascii_fallback"
+      ],
+      "properties": {
+        "raw_exact": {"type": "string"},
+        "same_language_terms": {"type": "string"},
+        "cross_language_terms": {"type": "string"},
+        "concept_terms": {"type": "string"},
+        "ascii_fallback": {"type": "string"}
+      }
+    },
+    "matchEvent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start", "end", "alias", "alias_language", "concept_id", "sense",
+        "semantic_class", "pos", "source", "basis"
+      ],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "alias": {"type": "string", "minLength": 1},
+        "alias_language": {"type": "string", "minLength": 1},
+        "concept_id": {"$ref": "#/$defs/conceptId"},
+        "sense": {"type": "string", "minLength": 1},
+        "semantic_class": {"type": "string", "minLength": 1},
+        "pos": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1},
+        "basis": {"const": "approved_exact"}
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "concept_id", "language", "term", "sense", "semantic_class", "pos", "source"
+      ],
+      "properties": {
+        "concept_id": {"$ref": "#/$defs/conceptId"},
+        "language": {"enum": ["en", "pt-BR"]},
+        "term": {"type": "string", "minLength": 1},
+        "sense": {"type": "string", "minLength": 1},
+        "semantic_class": {"type": "string", "minLength": 1},
+        "pos": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1}
+      }
+    },
+    "ambiguity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "alias", "candidates", "reason"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "alias": {"type": "string", "minLength": 1},
+        "candidates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/candidate"}
+        },
+        "reason": {"const": "review_alias_requires_disambiguation"}
+      }
+    },
+    "protected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "kind", "original"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "kind": {"type": "string", "minLength": 1},
+        "original": {"type": "string", "minLength": 1}
+      }
+    },
+    "unresolved": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end", "original"],
+      "properties": {
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "original": {"type": "string", "minLength": 1}
+      }
+    },
+    "semanticSequenceItem": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type", "start", "end", "local_start", "local_end", "text",
+            "concept_id", "sense"
+          ],
+          "properties": {
+            "type": {"const": "concept"},
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 0},
+            "local_start": {"type": "integer", "minimum": 0},
+            "local_end": {"type": "integer", "minimum": 0},
+            "text": {"type": "string", "minLength": 1},
+            "concept_id": {"$ref": "#/$defs/conceptId"},
+            "sense": {"type": "string", "minLength": 1}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type", "start", "end", "local_start", "local_end", "text", "protected_kind"
+          ],
+          "properties": {
+            "type": {"const": "protected"},
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 0},
+            "local_start": {"type": "integer", "minimum": 0},
+            "local_end": {"type": "integer", "minimum": 0},
+            "text": {"type": "string", "minLength": 1},
+            "protected_kind": {"type": "string", "minLength": 1}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "start", "end", "local_start", "local_end", "text"],
+          "properties": {
+            "type": {"const": "raw"},
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 0},
+            "local_start": {"type": "integer", "minimum": 0},
+            "local_end": {"type": "integer", "minimum": 0},
+            "text": {"type": "string", "minLength": 1},
+            "candidates": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"$ref": "#/$defs/conceptId"}
+            }
+          }
+        }
+      ]
+    },
+    "semanticUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id", "start", "end", "concept_id", "sense",
+        "semantic_class", "role", "governance"
+      ],
+      "properties": {
+        "unit_id": {"type": "string", "pattern": "^u[1-9][0-9]*$"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 0},
+        "concept_id": {"$ref": "#/$defs/conceptId"},
+        "sense": {"type": "string", "minLength": 1},
+        "semantic_class": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1},
+        "governance": {"const": "approved_lexicon"}
+      }
+    },
+    "semanticRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relation_id", "type", "source_unit", "target_unit", "evidence"
+      ],
+      "properties": {
+        "relation_id": {"type": "string", "pattern": "^r[1-9][0-9]*$"},
+        "type": {"type": "string", "minLength": 1},
+        "source_unit": {"type": "string", "pattern": "^u[1-9][0-9]*$"},
+        "target_unit": {"type": "string", "pattern": "^u[1-9][0-9]*$"},
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": {"type": "integer", "minimum": 0},
+            "end": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    }
+  }
+}

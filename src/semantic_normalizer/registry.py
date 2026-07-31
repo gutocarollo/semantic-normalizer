@@ -1,367 +1,352 @@
+"""Zip-safe loading and fail-closed validation for registry v2."""
+
 from __future__ import annotations
 
 import hashlib
 import json
 import re
 import unicodedata
-from dataclasses import dataclass
+from collections import defaultdict
+from importlib import resources
 from pathlib import Path
 from typing import Any
 
-from .models import AliasEntry, Candidate, Concept
-from .text_utils import normalize_key, overlaps, sentence_spans
+LANGUAGES = ("en", "pt-BR")
+REGISTRY_VERSION = "2.4.0"
+CONCEPT_ID_RE = re.compile(r"^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$")
 
 
-@dataclass(frozen=True, slots=True)
-class RegistryDiagnostic:
-    severity: str
-    code: str
-    message: str
-    details: dict[str, Any]
-
-    def to_dict(self) -> dict[str, Any]:
-        return {
-            "severity": self.severity,
-            "code": self.code,
-            "message": self.message,
-            "details": self.details,
-        }
+class ContractError(ValueError):
+    """A fail-closed public contract error."""
 
 
-class ConceptRegistry:
-    """In-memory concept scheme with multilingual lexical labels."""
+def canonical_json(value: object) -> str:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
-    def __init__(
-        self,
-        *,
-        scheme_id: str,
-        version: str,
-        default_language: str,
-        supported_languages: tuple[str, ...],
-        concepts: tuple[Concept, ...],
-        raw_bytes: bytes,
-    ) -> None:
-        self.scheme_id = scheme_id
-        self.version = version
-        self.default_language = default_language
-        self.supported_languages = supported_languages
-        self.concepts = concepts
-        self.raw_bytes = raw_bytes
-        self.sha256 = hashlib.sha256(raw_bytes).hexdigest()
-        self._by_id = {concept.concept_id: concept for concept in concepts}
-        self._aliases: dict[str, list[AliasEntry]] = {}
-        for concept in concepts:
-            if concept.status == "draft":
-                continue
-            for label, language, label_type in concept.all_labels():
-                key = normalize_key(label)
-                if not key:
-                    continue
-                self._aliases.setdefault(key, []).append(
-                    AliasEntry(
-                        label=label,
-                        normalized_label=key,
-                        language=language,
-                        label_type=label_type,
-                        concept_id=concept.concept_id,
-                    )
-                )
-        self._sorted_alias_keys = sorted(self._aliases, key=lambda value: (-len(value), value))
 
-    @classmethod
-    def from_path(cls, path: str | Path) -> "ConceptRegistry":
-        registry_path = Path(path)
-        raw_bytes = registry_path.read_bytes()
-        payload = json.loads(raw_bytes.decode("utf-8"))
-        return cls(
-            scheme_id=str(payload["scheme_id"]),
-            version=str(payload["version"]),
-            default_language=str(payload.get("default_language", "en")),
-            supported_languages=tuple(str(value) for value in payload["supported_languages"]),
-            concepts=tuple(Concept.from_dict(value) for value in payload["concepts"]),
-            raw_bytes=raw_bytes,
+def sha256(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def nfc_casefold(text: str) -> str:
+    return unicodedata.normalize("NFC", text).casefold()
+
+
+def automatic_surfaces(record: dict, language: str) -> tuple[str, ...]:
+    """Project deterministic retrieval surfaces from approved lexical forms only."""
+    observed = {
+        nfc_casefold(value) for value in record["labels"][language]["observed"]
+    }
+    return tuple(
+        form["form"]
+        for form in record["lexical_forms"][language]
+        if form["policy"] == "auto" and nfc_casefold(form["form"]) not in observed
+    )
+
+
+def package_data(name: str):
+    """Return a Traversable so default loading also works from a wheel/zip."""
+    return resources.files("semantic_normalizer.data").joinpath(name)
+
+
+def _read_bytes(source: str | Path | Any | None, default_name: str) -> tuple[bytes, str]:
+    target = package_data(default_name) if source is None else source
+    if isinstance(target, (str, Path)):
+        path = Path(target)
+        return path.read_bytes(), str(path)
+    return target.read_bytes(), str(target)
+
+
+def _require_keys(value: object, required: set[str], where: str) -> dict:
+    if not isinstance(value, dict):
+        raise ContractError(f"{where}: must be an object")
+    if set(value) != required:
+        raise ContractError(
+            f"{where}: keys differ; missing={sorted(required - set(value))} "
+            f"extra={sorted(set(value) - required)}"
         )
+    return value
 
-    def get(self, concept_id: str) -> Concept:
+
+def _term(value: object, where: str) -> str:
+    if not isinstance(value, str) or not value.strip() or len(value) > 320:
+        raise ContractError(f"{where}: invalid non-empty string")
+    return value
+
+
+def _term_list(value: object, where: str) -> list[str]:
+    if not isinstance(value, list) or len(value) != len(set(value)):
+        raise ContractError(f"{where}: must be a unique string list")
+    return [_term(item, where) for item in value]
+
+
+RECORD_FIELDS = {
+    "concept_id", "definition", "semantic_class", "domains", "pos", "labels",
+    "lexical_forms", "relations", "forbidden_variants", "contexts", "authority",
+    "source", "positive_examples", "negative_examples", "status",
+    "governed_technical_term", "registry_version",
+}
+LABEL_FIELDS = {"pref", "alt", "hidden", "observed"}
+RELATION_FIELDS = {"broader", "narrower", "related"}
+FORM_FIELDS = {"form", "features", "policy"}
+
+
+def validate_record(record: object, line_no: int, schema: dict) -> dict:
+    """Validate one record against the canonical schema's closed shape."""
+    item = _require_keys(record, RECORD_FIELDS, f"registry line {line_no}")
+    schema_fields = set(schema.get("required", ()))
+    schema_properties = set(schema.get("properties", ()))
+    if schema.get("$schema") != "https://json-schema.org/draft/2020-12/schema":
+        raise ContractError("registry schema is not Draft 2020-12")
+    if schema.get("additionalProperties") is not False:
+        raise ContractError("registry schema must fail closed")
+    if schema_fields != RECORD_FIELDS or schema_properties != RECORD_FIELDS:
+        raise ContractError("registry schema and runtime record fields diverge")
+    cid = item["concept_id"]
+    if not isinstance(cid, str) or not CONCEPT_ID_RE.fullmatch(cid):
+        raise ContractError(f"registry line {line_no}: invalid concept_id")
+    if item["registry_version"] != REGISTRY_VERSION:
+        raise ContractError(f"registry line {line_no}: unsupported registry_version")
+    for field in ("semantic_class", "pos"):
+        allowed = set(schema["properties"][field].get("enum", ()))
+        if item[field] not in allowed:
+            raise ContractError(f"registry line {line_no}: invalid {field}")
+    _term(item["definition"], f"{cid}.definition")
+    _term(item["authority"], f"{cid}.authority")
+    _term(item["source"], f"{cid}.source")
+    if item["status"] not in {"approved", "deprecated"}:
+        raise ContractError(f"{cid}: invalid status")
+    if not isinstance(item["governed_technical_term"], bool):
+        raise ContractError(f"{cid}: governed_technical_term must be boolean")
+    for field in ("domains", "contexts"):
+        values = _term_list(item[field], f"{cid}.{field}")
+        if not values:
+            raise ContractError(f"{cid}.{field}: cannot be empty")
+    labels = _require_keys(item["labels"], set(LANGUAGES), f"{cid}.labels")
+    lexical_forms = _require_keys(
+        item["lexical_forms"], set(LANGUAGES), f"{cid}.lexical_forms"
+    )
+    forbidden = _require_keys(
+        item["forbidden_variants"], set(LANGUAGES), f"{cid}.forbidden_variants"
+    )
+    for language in LANGUAGES:
+        label_set = _require_keys(
+            labels[language], LABEL_FIELDS, f"{cid}.labels.{language}"
+        )
+        pref = _term(label_set["pref"], f"{cid}.labels.{language}.pref")
+        alt = set(_term_list(label_set["alt"], f"{cid}.labels.{language}.alt"))
+        hidden = set(
+            _term_list(label_set["hidden"], f"{cid}.labels.{language}.hidden")
+        )
+        observed = set(
+            _term_list(label_set["observed"], f"{cid}.labels.{language}.observed")
+        )
+        if pref in alt or pref in hidden or alt & hidden:
+            raise ContractError(f"{cid}.{language}: SKOS S13 label overlap")
+        if not isinstance(lexical_forms[language], list) or not lexical_forms[language]:
+            raise ContractError(f"{cid}.lexical_forms.{language}: cannot be empty")
+        auto_forms, review_forms = set(), set()
+        lexical_surfaces: set[str] = set()
+        normalized_surfaces: dict[str, tuple[str, str]] = {}
+        for number, form in enumerate(lexical_forms[language], 1):
+            entry = _require_keys(
+                form, FORM_FIELDS, f"{cid}.lexical_forms.{language}[{number}]"
+            )
+            surface = _term(entry["form"], f"{cid}.lexical_forms.{language}.form")
+            if not isinstance(entry["features"], dict):
+                raise ContractError(f"{cid}.{language}.{surface}: features must be object")
+            feature_schema = schema["$defs"]["features"]
+            if (
+                feature_schema.get("additionalProperties") is not False
+                or not set(entry["features"]).issubset(feature_schema["properties"])
+            ):
+                raise ContractError(f"{cid}.{language}.{surface}: invalid feature keys")
+            if entry["policy"] == "auto":
+                auto_forms.add(surface)
+            elif entry["policy"] == "review":
+                review_forms.add(surface)
+            else:
+                raise ContractError(f"{cid}.{language}.{surface}: invalid policy")
+            normalized = nfc_casefold(surface)
+            if normalized in normalized_surfaces:
+                previous_surface, previous_policy = normalized_surfaces[normalized]
+                raise ContractError(
+                    f"{cid}.{language}: duplicate lexical form {surface!r}; "
+                    f"already declared as {previous_surface!r} with policy "
+                    f"{previous_policy!r}"
+                )
+            normalized_surfaces[normalized] = (surface, entry["policy"])
+            lexical_surfaces.add(surface)
+        label_surfaces = {pref} | alt | hidden | observed
+        if lexical_surfaces != label_surfaces:
+            raise ContractError(
+                f"{cid}.{language}: lexical forms and label surfaces differ"
+            )
+        if observed - review_forms:
+            raise ContractError(
+                f"{cid}.{language}: observed labels must use review policy"
+            )
+        if auto_forms & review_forms:
+            raise ContractError(
+                f"{cid}.{language}: a lexical form cannot use both policies"
+            )
+        _term_list(forbidden[language], f"{cid}.forbidden_variants.{language}")
+    relations = _require_keys(item["relations"], RELATION_FIELDS, f"{cid}.relations")
+    for relation, targets in relations.items():
+        for target in _term_list(targets, f"{cid}.relations.{relation}"):
+            if not CONCEPT_ID_RE.fullmatch(target):
+                raise ContractError(f"{cid}: invalid relation target {target!r}")
+    for field in ("positive_examples", "negative_examples"):
+        examples = _require_keys(item[field], set(LANGUAGES), f"{cid}.{field}")
+        for language in LANGUAGES:
+            if not _term_list(examples[language], f"{cid}.{field}.{language}"):
+                raise ContractError(f"{cid}.{field}.{language}: cannot be empty")
+    return item
+
+
+def load_registry(
+    registry: str | Path | Any | None = None,
+    schema: str | Path | Any | None = None,
+) -> dict:
+    from .schema_validation import validate_instance
+
+    registry_bytes, registry_origin = _read_bytes(registry, "registry.jsonl")
+    schema_bytes, schema_origin = _read_bytes(schema, "registry.schema.json")
+    try:
+        schema_doc = json.loads(schema_bytes)
+    except json.JSONDecodeError as exc:
+        raise ContractError(f"{schema_origin}: invalid JSON schema: {exc}") from exc
+    records = []
+    for line_no, line in enumerate(registry_bytes.decode("utf-8").splitlines(), 1):
+        if not line.strip():
+            raise ContractError(f"registry line {line_no}: blank JSONL record")
         try:
-            return self._by_id[concept_id]
-        except KeyError as exc:
-            raise KeyError(f"Unknown concept_id: {concept_id}") from exc
-
-    def contains(self, concept_id: str) -> bool:
-        return concept_id in self._by_id
-
-    def preferred_label(self, concept_id: str, language: str) -> str:
-        concept = self.get(concept_id)
-        return (
-            concept.preferred_labels.get(language)
-            or concept.preferred_labels.get(self.default_language)
-            or next(iter(concept.preferred_labels.values()))
-        )
-
-    def find_candidates(
-        self,
-        text: str,
-        *,
-        language: str,
-        protected_intervals: list[tuple[int, int]],
-    ) -> list[Candidate]:
-        accepted_languages = (
-            set(self.supported_languages)
-            if language == "und"
-            else {language}
-        )
-        candidates: list[Candidate] = []
-        source_sentence_spans = sentence_spans(text)
-
-        for alias_key in self._sorted_alias_keys:
-            entries = [
-                entry
-                for entry in self._aliases[alias_key]
-                if entry.language in accepted_languages
-            ]
-            if not entries:
-                continue
-            # Search each source spelling. Entries sharing the same normalized label can have
-            # different capitalization but should produce one span/candidate per concept.
-            spellings = sorted({entry.label for entry in entries}, key=lambda value: -len(value))
-            matched_spans: set[tuple[int, int]] = set()
-            for spelling in spellings:
-                pattern = re.compile(
-                    rf"(?<!\w){re.escape(spelling)}(?!\w)",
-                    flags=re.IGNORECASE | re.UNICODE,
+            parsed = json.loads(line)
+            validate_instance(parsed, schema_doc, path=f"registry line {line_no}")
+            records.append(validate_record(parsed, line_no, schema_doc))
+        except json.JSONDecodeError as exc:
+            raise ContractError(f"registry line {line_no}: invalid JSON: {exc}") from exc
+    if not records:
+        raise ContractError("registry is empty")
+    ids = [record["concept_id"] for record in records]
+    if len(ids) != len(set(ids)):
+        raise ContractError("duplicate concept_id")
+    by_id = {record["concept_id"]: record for record in records}
+    automatic: dict[str, tuple[str, str, str, str]] = {}
+    reviews: dict[str, list[tuple[str, str, str, str]]] = defaultdict(list)
+    for record in records:
+        cid = record["concept_id"]
+        for language in LANGUAGES:
+            labels = record["labels"][language]
+            auto_surface_keys = {
+                nfc_casefold(surface)
+                for surface in automatic_surfaces(record, language)
+            }
+            for form in record["lexical_forms"][language]:
+                surface, policy = form["form"], form["policy"]
+                key = nfc_casefold(surface)
+                if key not in auto_surface_keys:
+                    reviews[key].append((cid, language, surface, "review"))
+                    continue
+                source = (
+                    "preferred" if surface == labels["pref"]
+                    else "hidden" if surface in labels["hidden"]
+                    else "alt"
                 )
-                for match in pattern.finditer(text):
-                    span = match.span()
-                    if span in matched_spans or overlaps(*span, protected_intervals):
-                        continue
-                    matched_spans.add(span)
-                    for entry in entries:
-                        if normalize_key(entry.label) != normalize_key(match.group(0)):
-                            continue
-                        concept = self.get(entry.concept_id)
-                        lexical_score = {
-                            "preferred": 0.94,
-                            "alternative": 0.88,
-                            "surface": 0.84,
-                            "hidden": 0.70,
-                        }.get(entry.label_type, 0.75)
-                        context_span = next(
-                            (
-                                (sentence_start, sentence_end)
-                                for sentence_start, sentence_end in source_sentence_spans
-                                if sentence_start <= match.start() and match.end() <= sentence_end
-                            ),
-                            (max(0, match.start() - 160), min(len(text), match.end() + 160)),
-                        )
-                        context_score, context_reason = self._context_score(
-                            concept,
-                            language=entry.language,
-                            text=text,
-                            source_span=span,
-                            context_span=context_span,
-                        )
-                        confidence = max(0.0, min(0.99, lexical_score + context_score))
-                        candidates.append(
-                            Candidate(
-                                start=match.start(),
-                                end=match.end(),
-                                surface=match.group(0),
-                                concept_id=entry.concept_id,
-                                language=entry.language,
-                                label_type=entry.label_type,
-                                lexical_score=round(lexical_score, 4),
-                                context_score=round(context_score, 4),
-                                confidence=round(confidence, 4),
-                                rationale=(
-                                    f"{entry.label_type} label match"
-                                    + (f"; {context_reason}" if context_reason else "")
-                                ),
-                            )
-                        )
-        return candidates
-
-    def _context_score(
-        self,
-        concept: Concept,
-        *,
-        language: str,
-        text: str,
-        source_span: tuple[int, int],
-        context_span: tuple[int, int],
-    ) -> tuple[float, str]:
-        """Score context near one occurrence, not against the whole document.
-
-        For verbs, evidence after the verb receives full weight because it commonly identifies
-        the object. Evidence before the verb remains usable but receives a smaller weight. This
-        prevents one occurrence from borrowing the object of another occurrence elsewhere.
-        """
-        positive = concept.context_terms.positive.get(language, ())
-        negative = concept.context_terms.negative.get(language, ())
-        if not positive and not negative:
-            return 0.0, ""
-
-        context_start, context_end = context_span
-        local_text = unicodedata.normalize("NFKC", text[context_start:context_end]).casefold()
-        local_source_start = source_span[0] - context_start
-        local_source_end = source_span[1] - context_start
-        directional = concept.part_of_speech == "verb"
-
-        def best_weight(term: str) -> float:
-            normalized_term = unicodedata.normalize("NFKC", term).casefold().strip()
-            if not normalized_term:
-                return 0.0
-            escaped = re.escape(normalized_term).replace(r"\ ", r"\s+")
-            pattern = re.compile(rf"(?<!\w){escaped}(?!\w)", re.UNICODE)
-            best = 0.0
-            for match in pattern.finditer(local_text):
-                if match.end() <= local_source_start:
-                    gap = local_source_start - match.end()
-                    direction_weight = 0.35 if directional else 1.0
-                elif match.start() >= local_source_end:
-                    gap = match.start() - local_source_end
-                    direction_weight = 1.0
+                value = (cid, language, surface, source)
+                if key in automatic and automatic[key][0] != cid:
+                    raise ContractError(
+                        f"automatic form collision {surface!r}: "
+                        f"{automatic[key][0]} vs {cid}"
+                    )
+                if key in automatic and automatic[key][1] != language:
+                    automatic[key] = (cid, "shared", surface, source)
                 else:
-                    gap = 0
-                    direction_weight = 0.5
-                distance_weight = 1.0 / (1.0 + (gap / 20.0))
-                best = max(best, direction_weight * distance_weight)
-            return best
+                    automatic[key] = value
+    for record in records:
+        cid = record["concept_id"]
+        for target in record["relations"]["broader"]:
+            if target not in by_id or cid not in by_id[target]["relations"]["narrower"]:
+                raise ContractError(f"{cid}: broader/narrower inverse is invalid")
+        for target in record["relations"]["narrower"]:
+            if target not in by_id or cid not in by_id[target]["relations"]["broader"]:
+                raise ContractError(f"{cid}: narrower/broader inverse is invalid")
+        for target in record["relations"]["related"]:
+            if target not in by_id or cid not in by_id[target]["relations"]["related"]:
+                raise ContractError(f"{cid}: related relation is not symmetric")
 
-        positive_weights = [(term, best_weight(term)) for term in positive]
-        negative_weights = [(term, best_weight(term)) for term in negative]
-        positive_hits = [(term, weight) for term, weight in positive_weights if weight > 0.0]
-        negative_hits = [(term, weight) for term, weight in negative_weights if weight > 0.0]
-
-        strongest_positive = max((weight for _term, weight in positive_hits), default=0.0)
-        strongest_negative = max((weight for _term, weight in negative_hits), default=0.0)
-        score = (0.16 * strongest_positive) - (0.18 * strongest_negative)
-
-        parts: list[str] = []
-        if positive_hits:
-            term, weight = max(positive_hits, key=lambda item: item[1])
-            parts.append(f"nearest positive context={term!r}:{weight:.2f}")
-        if negative_hits:
-            term, weight = max(negative_hits, key=lambda item: item[1])
-            parts.append(f"nearest negative context={term!r}:{weight:.2f}")
-        return score, "; ".join(parts)
-
-    def validate(self) -> list[RegistryDiagnostic]:
-        diagnostics: list[RegistryDiagnostic] = []
-        if len(self._by_id) != len(self.concepts):
-            diagnostics.append(
-                RegistryDiagnostic("error", "duplicate_concept_id", "Concept IDs must be unique", {})
-            )
-
-        for concept in self.concepts:
-            missing = [
-                language
-                for language in self.supported_languages
-                if language not in concept.preferred_labels
+    # Compatibility view for the existing deterministic parser. Authority stays
+    # in canonical v2 records; these derived aliases are never serialized.
+    runtime_records = []
+    for record in records:
+        view = dict(record)
+        view["sense"] = record["definition"]
+        view["preferred"] = {
+            language: record["labels"][language]["pref"] for language in LANGUAGES
+        }
+        view["automatic_surfaces"] = {
+            language: list(automatic_surfaces(record, language))
+            for language in LANGUAGES
+        }
+        view["auto_aliases"] = {
+            language: [
+                surface
+                for surface in automatic_surfaces(record, language)
+                if surface != record["labels"][language]["pref"]
             ]
-            if missing:
-                diagnostics.append(
-                    RegistryDiagnostic(
-                        "error",
-                        "missing_preferred_label",
-                        f"{concept.concept_id} has no preferred label for {missing}",
-                        {"concept_id": concept.concept_id, "languages": missing},
-                    )
-                )
-            for relation in (*concept.broader, *concept.related):
-                if relation not in self._by_id:
-                    diagnostics.append(
-                        RegistryDiagnostic(
-                            "error",
-                            "unknown_relation_target",
-                            f"{concept.concept_id} references unknown concept {relation}",
-                            {"concept_id": concept.concept_id, "target": relation},
-                        )
-                    )
-
-        for alias, entries in sorted(self._aliases.items()):
-            concept_ids = sorted({entry.concept_id for entry in entries})
-            languages = sorted({entry.language for entry in entries})
-            if len(concept_ids) > 1:
-                diagnostics.append(
-                    RegistryDiagnostic(
-                        "warning",
-                        "ambiguous_alias",
-                        f"Alias {alias!r} maps to multiple concepts",
-                        {
-                            "alias": alias,
-                            "concept_ids": concept_ids,
-                            "languages": languages,
-                        },
-                    )
-                )
-        return diagnostics
-
-    def to_skos_turtle(self, base_uri: str = "https://example.org/semantic-normalizer/") -> str:
-        base_uri = base_uri.rstrip("/") + "/"
-
-        def quote(value: str) -> str:
-            return (
-                value.replace("\\", "\\\\")
-                .replace('"', '\\"')
-                .replace("\n", "\\n")
-            )
-
-        lines = [
-            "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-            "@prefix dct: <http://purl.org/dc/terms/> .",
-            "",
-            f"<{base_uri}scheme/{self.scheme_id}> a skos:ConceptScheme ;",
-            f'    dct:identifier "{quote(self.scheme_id)}" ;',
-            f'    dct:hasVersion "{quote(self.version)}" .',
-            "",
-        ]
-        for concept in sorted(self.concepts, key=lambda item: item.concept_id):
-            uri = f"{base_uri}concept/{concept.concept_id}"
-            statements: list[str] = [
-                "a skos:Concept",
-                f"skos:inScheme <{base_uri}scheme/{self.scheme_id}>",
+            for language in LANGUAGES
+        }
+        view["review_aliases"] = {
+            language: [
+                form["form"]
+                for form in record["lexical_forms"][language]
+                if form["policy"] == "review"
             ]
-            for lang, label in sorted(concept.preferred_labels.items()):
-                statements.append(f'skos:prefLabel "{quote(label)}"@{lang}')
-            for lang, labels in sorted(concept.alternative_labels.items()):
-                for label in labels:
-                    statements.append(f'skos:altLabel "{quote(label)}"@{lang}')
-            for lang, labels in sorted(concept.hidden_labels.items()):
-                for label in labels:
-                    statements.append(f'skos:hiddenLabel "{quote(label)}"@{lang}')
-            for lang, labels in sorted(concept.surface_forms.items()):
-                occupied = {
-                    concept.preferred_labels.get(lang),
-                    *concept.alternative_labels.get(lang, ()),
-                    *concept.hidden_labels.get(lang, ()),
-                }
-                for label in labels:
-                    if label not in occupied:
-                        statements.append(f'skos:hiddenLabel "{quote(label)}"@{lang}')
-            for lang, definition in sorted(concept.definitions.items()):
-                statements.append(f'skos:definition "{quote(definition)}"@{lang}')
-            for target in concept.broader:
-                statements.append(f"skos:broader <{base_uri}concept/{target}>")
-            for target in concept.related:
-                statements.append(f"skos:related <{base_uri}concept/{target}>")
-            lines.append(f"<{uri}> " + " ;\n    ".join(statements) + " .")
-            lines.append("")
-        return "\n".join(lines)
+            for language in LANGUAGES
+        }
+        runtime_records.append(view)
+    runtime_by_id = {record["concept_id"]: record for record in runtime_records}
+    return {
+        "path": registry_origin,
+        "schema_path": schema_origin,
+        "hash": sha256(registry_bytes),
+        "schema_hash": sha256(schema_bytes),
+        "version": REGISTRY_VERSION,
+        "records": runtime_records,
+        "canonical_records": records,
+        "by_id": runtime_by_id,
+        "automatic": automatic,
+        "reviews": reviews,
+    }
 
-    def to_elasticsearch_synonyms(self) -> str:
-        """Export only unambiguous aliases to stable concept tokens.
 
-        A flat synonym analyzer has no sentence context. Aliases that point to more than one
-        concept are deliberately omitted and must pass through the normalizer instead.
-        """
-        lines: list[str] = []
-        for alias, entries in sorted(self._aliases.items()):
-            concept_ids = sorted({entry.concept_id for entry in entries})
-            if len(concept_ids) != 1:
-                continue
-            concept_id = concept_ids[0]
-            token = "c__" + re.sub(r"[^a-z0-9]+", "__", concept_id.casefold()).strip("_")
-            escaped_alias = alias.replace("\\", "\\\\").replace(",", "\\,")
-            lines.append(f"{escaped_alias} => {token}")
-        return "\n".join(lines) + "\n"
+load_lexicon = load_registry
+
+
+def init_workspace(
+    directory: str | Path,
+    registry: str | Path | Any | None = None,
+    schema: str | Path | Any | None = None,
+) -> dict:
+    target = Path(directory)
+    target.mkdir(parents=True, exist_ok=True)
+    registry_bytes, _ = _read_bytes(registry, "registry.jsonl")
+    schema_bytes, _ = _read_bytes(schema, "registry.schema.json")
+    files = {
+        "registry.jsonl": registry_bytes,
+        "registry.schema.json": schema_bytes,
+        "candidates.jsonl": b"",
+        "decisions.jsonl": b"",
+    }
+    existing = [target / name for name in files if (target / name).exists()]
+    if existing:
+        raise ContractError(f"workspace target already exists: {existing[0]}")
+    for name, content in files.items():
+        path = target / name
+        path.write_bytes(content)
+    return {
+        "workspace": str(target),
+        "registry_sha256": sha256(registry_bytes),
+        "schema_sha256": sha256(schema_bytes),
+        "files": sorted(files),
+    }

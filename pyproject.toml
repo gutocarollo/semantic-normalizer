@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "semantic-normalizer"
-version = "0.2.0"
+version = "0.4.0"
 description = "Reversible English-Portuguese concept canonicalization for lexical retrieval"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -37,4 +37,16 @@ python_version = "3.11"
 strict = true
 
 [tool.setuptools.package-data]
-semantic_normalizer = ["data/*.json"]
+semantic_normalizer = ["data/*.json", "data/*.jsonl"]
+
+# Authoritative package-data contract for scripts/build_release.py. It is validated against
+# the real contents of src/semantic_normalizer/data, so a file added there without a matching
+# pattern fails the build instead of silently missing from the wheel.
+[tool.semantic-normalizer.package-data]
+include = ["data/*.json", "data/*.jsonl"]
+
+[tool.semantic-normalizer.release]
+builder = "scripts/build_release.py"
+wheel-tag = "py3-none-any"
+offline = true
+reproducible = true

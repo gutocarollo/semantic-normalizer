@@ -11,7 +11,7 @@ The project does **not** try to reduce English and Portuguese to one universal w
 3. **Observed variants** — synonyms, inflections, abbreviations, and hidden labels.
 4. **Source assertions** — negation, modality, conditions, numbers, identifiers, and original spans.
 
-This prevents a common failure of synonym replacement: two words can be close in one context and materially different in another. Version 0.2.0 also separates the domain concept registry from the human controlled lexicon: concepts are stable identities; lexical forms are governed, sourced, licensed and approved evidence.
+This prevents a common failure of synonym replacement: two words can be close in one context and materially different in another. Version 0.3.0 makes that split executable: concepts are stable identities, lexical forms carry an explicit `auto`/`review` policy, and every import is recorded in an append-only provenance ledger bound to a release record.
 
 Concept IDs and concept tokens are the authoritative canonical layer. `canonical_text` is deliberately conservative: it preserves an inflected source form when replacing it with a lemma would damage grammar.
 
@@ -52,18 +52,15 @@ cd semantic-normalizer-skill
 # Registry validation
 PYTHONPATH=src python3 -m semantic_normalizer validate-registry
 
-# Source-language canonicalization
+# Canonicalization: the language is detected from the text
 PYTHONPATH=src python3 -m semantic_normalizer normalize \
-  --text "O operador deve começar o servidor APP-01." \
-  --lang pt --pretty
+  --text "O operador deve começar o servidor APP-01."
 
-# English pivot projection for a retrieval experiment
-PYTHONPATH=src python3 -m semantic_normalizer normalize \
-  --text "O operador deve começar o servidor APP-01." \
-  --lang pt --target-lang en --pretty
+# Walk a corpus and emit sidecars carrying path, line and byte offsets
+PYTHONPATH=src python3 -m semantic_normalizer index docs --output-dir sidecars/
 
-# Unit tests
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+# Tests
+PYTHONPATH=src python3 -m pytest tests -q
 ```
 
 Install as an editable CLI:
@@ -72,8 +69,12 @@ Install as an editable CLI:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
-semantic-normalizer normalize --text "Begin the service." --lang en --pretty
+semantic-normalizer normalize --text "Begin the service."
 ```
+
+Subcommands: `validate-registry, normalize, query, index, evaluate,
+reconcile-request, reconcile-apply, export, init-workspace`. Run `--help` on any
+of them for its flags.
 
 ## Example projection
 
@@ -89,45 +90,38 @@ Important output fields:
 {
   "original_text": "O operador deve começar o servidor APP-01.",
   "canonical_text": "O operador deve iniciar o servidor APP-01.",
-  "concept_ids": [
-    "role.operator",
-    "action.start",
-    "system.server"
-  ],
-  "concept_tokens": [
-    "c__role__operator",
-    "c__action__start",
-    "c__system__server"
-  ],
-  "operator_tokens": [
-    "modality__obligation"
-  ],
-  "status": "accepted"
+  "concept_ids": ["actor.operator", "action.start", "system.server"],
+  "concept_tokens": ["c__actor__operator", "c__action__start", "c__system__server"],
+  "canonical_status": "review",
+  "needs_review": true,
+  "protected_values": [{"value": "APP-01", "start": 35, "end": 41}],
+  "unresolved": [
+    {"original": "O ", "start": 0, "end": 2},
+    {"original": "deve", "start": 11, "end": 15},
+    {"original": " o ", "start": 23, "end": 26},
+    {"original": ".", "start": 41, "end": 42}
+  ]
 }
 ```
 
-`APP-01` remains unchanged and is stored as a protected value. The source text also remains unchanged.
+`APP-01` remains unchanged and is stored as a protected value at its exact offsets. The source text also remains unchanged.
 
-## BM25 smoke test
+Note the status: three concepts resolved and the sentence is still `review`, because `deve` is ambiguous between `modality.obligation` and `modality.logical_necessity` and the remaining spans are unresolved. Resolving part of a sentence never certifies the whole of it — a projection is `accepted` only when nothing is left in `unresolved`.
 
-The repository includes nine small bilingual documents and nine cross-language queries. The dependency-free BM25 harness produced this result with the sample registry:
+## Retrieval evaluation
 
-| Projection | MRR | HitRate@1 | HitRate@3 |
-|---|---:|---:|---:|
-| Raw | 0.000 | 0.000 | 0.000 |
-| Canonical English pivot | 0.778 | 0.556 | 1.000 |
-| Expanded concept projection | 0.944 | 0.889 | 1.000 |
-
-Run it with:
+The retrieval ablations run against a development dataset and report per-condition metrics
+with bootstrap confidence intervals:
 
 ```bash
-PYTHONPATH=src python3 -m semantic_normalizer evaluate \
-  --documents examples/documents.jsonl \
-  --queries examples/queries.jsonl \
-  --k 1 3 --summary-only
+PYTHONPATH=src python3 -m semantic_normalizer evaluate tests/fixtures/dev_retrieval.json
 ```
 
-This is a deliberately favorable synthetic test. It proves that the pipeline and metrics work. It does not prove production retrieval improvement or hallucination reduction.
+The 0.2.0 release shipped a 9x9 synthetic benchmark whose queries shared no content token
+with their target documents, so its raw-BM25 baseline of MRR 0.000 was a property of the
+fixtures, not a measurement. It was removed rather than reported. No production retrieval
+claim is made until a real corpus with held-out relevance judgements exists — see
+`docs/evaluation-plan.md`.
 
 ## Retrieval fields
 
@@ -137,10 +131,9 @@ Use separate fields rather than replacing the source:
 {
   "text_raw": "O operador deve começar o servidor APP-01.",
   "text_canonical": "O operador deve iniciar o servidor APP-01.",
-  "concept_tokens": "c__role__operator c__action__start c__system__server",
-  "operator_tokens": "modality__obligation",
+  "concept_tokens": "c__actor__operator c__action__start c__system__server",
   "text_expanded": "...",
-  "registry_version": "0.1.0"
+  "registry_version": "2.1.0"
 }
 ```
 
@@ -148,71 +141,77 @@ Apply the same normalizer to queries. Tune field boosts against a held-out query
 
 ## Ambiguity behavior
 
-The registry intentionally maps `remove/remover` to two concepts:
+Two different situations produce a `review`, and conflating them hides a real distinction.
 
-- `action.remove_physical`
-- `action.delete_data`
-
-Context separates these cases:
+**Cross-concept ambiguity** — one surface, several concepts. Verified in the registry:
 
 ```text
-remove the panel          -> action.remove_physical
-remove the database row   -> action.delete_data
-remove it                 -> review
+check the base   -> review: entity.facility_base | technical.numeral_base
 ```
 
-An unresolved span is not silently forced into either concept.
+No automatic rule chooses between a facility base and a numeral base, so the span goes to
+reconciliation with both candidates.
 
-## Optional agent resolver
+**Unverified inflection** — one concept, but the inflected form is not yet approved for
+automatic expansion:
 
-Install the optional adapter:
+```text
+remova o painel  -> review: action.remove (single candidate, policy: review)
+```
+
+`remove`/`remover` themselves are *not* cross-concept ambiguous: they are the preferred
+labels of `action.remove`, and the importer refused to attach them to `action.delete` as
+alternatives precisely to keep that boundary. What carries `policy: review` is the imported
+inflection whose paradigm was never verified.
+
+**Grammatical abstention** — nothing lexical is uncertain; the *referent* is:
+
+```text
+Remove it.       -> review: ambiguous_candidates [], warnings
+                    ["finite_grammar_abstained_coordination_or_anaphora"]
+```
+
+The finite grammar refuses to bind a span across anaphora, coordination, or an ambiguous
+temporal structure. Read `warnings` before treating a `review` as a terminology gap: this
+third case is not fixed by adding a concept.
+
+An unresolved span is never silently forced into a concept — in any of the three cases.
+
+## Terminology reconciliation
+
+An unresolved span becomes a reconciliation request, not a guess. The workspace is a
+directory outside the package, so a decision is always an explicit, auditable act:
 
 ```bash
-pip install -e '.[agent]'
+semantic-normalizer init-workspace reconciliation/
+semantic-normalizer reconcile-request --workspace reconciliation/ \
+  --context "Check the base." --start 10 --end 14 --language en
+# review the request, write the response, then apply it with an accountable reviewer:
+semantic-normalizer reconcile-apply --workspace reconciliation/ \
+  --request <req.json> --response <resp.json> --reviewer <name> \
+  --rationale "context names the numeral base" --protected-slot-comparison preserved
 ```
 
-Then use an Instructor provider/model identifier:
-
-```bash
-semantic-normalizer normalize \
-  --text "Remove it." \
-  --lang en \
-  --agent-model "ollama/qwen3:8b" \
-  --max-attempts 2 \
-  --pretty
-```
-
-The model receives only the unresolved span, source context, and an allow-list of candidate concepts. A low-confidence decision is rejected.
-
-A human-approved JSON decision file can replace the model:
-
-```json
-{
-  "remove": "action.remove_physical"
-}
-```
-
-```bash
-semantic-normalizer normalize \
-  --text "Remove it." \
-  --lang en \
-  --decision-file decisions.json \
-  --pretty
-```
+A request carries only the unresolved span, its context, and an allow-list of candidate
+concept IDs. A response that names a concept outside the allow-list is rejected.
 
 ## Registry exports
 
 Export a SKOS projection:
 
 ```bash
-semantic-normalizer export-skos --output exports/concepts.ttl
+semantic-normalizer export skos --output exports/concepts.ttl
 ```
 
 Export explicit Elasticsearch `synonym_graph` rules that map variants to concept tokens:
 
 ```bash
-semantic-normalizer export-synonyms --output exports/synonyms.txt
+semantic-normalizer export synonym-graph --output exports/synonyms.txt
 ```
+
+Only aliases with `policy: auto` reach the flat synonym rules. An ambiguous alias such as
+`remove`/`remover` carries `policy: review` and is deliberately excluded, because a flat
+analyzer rule cannot disambiguate it.
 
 The export omits aliases that map to more than one concept. A flat synonym analyzer has no sentence context, so ambiguous forms must pass through the normalizer.
 
@@ -220,30 +219,32 @@ The export omits aliases that map to more than one concept. A flat synonym analy
 
 ```text
 SKILL.md                         Agent operating contract
-config/concepts.json             Editable bilingual concept registry
+src/semantic_normalizer/data/    Registry, its schema, release record and provenance ledger
 schemas/                         JSON Schema contracts
 src/semantic_normalizer/         Runtime, loop, validators, BM25 harness
 prompts/                         Constrained resolver and curation prompts
 examples/                        Synthetic retrieval benchmark
 reports/                         Generated validation and retrieval outputs
 exports/                         Generated SKOS and safe synonym projections
-scripts/run_smoke_test.sh        Complete local validation run
+scripts/build_release.py         Reproducible offline wheel and skill ZIP
+scripts/migrate_v02_concepts.py  Governed import of a legacy registry
 tests/                           Dependency-free regression tests
 docs/architecture.md             System design and invariants
 docs/evaluation-plan.md          Production measurement protocol
 docs/governance.md               Terminology approval and versioning
 docs/integration.md              Indexing and grep patterns
 docs/references.md               Curated standards, libraries, and discussions
+docs/data-governance.md          Provenance and approval rules for lexical data
+docs/migration-crosswalk-0.3.0.md  Measured 0.2.0 -> 0.3.0 migration record
 docs/rollout-plan.md             Delivery phases and acceptance gates
 ```
 
 ## Current limits
 
-- The included registry has only 21 demonstration concepts.
+- The registry has 86 concepts. It carries no vocabulary for any specific business domain yet.
 - Morphology is represented by explicit surface forms, not a full English or Portuguese morphological analyzer.
 - Same-language `canonical_text` preserves an inflected surface form when no verified canonical inflection is available; concept tokens still normalize it.
 - The deterministic layer does not perform full syntactic or semantic-role parsing.
-- The English pivot can create mixed-language syntax because it replaces terms, not complete grammar.
 - Operator detection is conservative and rule-based.
 - Exact semantic equivalence requires a domain gold set and, for difficult propositions, structured human review.
 - Better retrieval is a prerequisite for grounded answers, not a sufficient condition for faithful generation.

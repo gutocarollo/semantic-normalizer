@@ -1,0 +1,151 @@
+{
+  "commands": [
+    "python3 -m wheel pack <staging> --dest-dir <packed>",
+    "PIP_NO_INDEX=1 <venv>/bin/pip install --no-index --no-deps --disable-pip-version-check dist/semantic_normalizer-2.0.0-py3-none-any.whl",
+    "PIP_NO_INDEX=1 <venv>/bin/pip check",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer --help",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer validate-registry",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer normalize --text \"O operador deve começar o servidor APP-01.\" --kind text",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer init-workspace <external-workspace>",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer reconcile-request --workspace <external-workspace> --context \"Check the base.\" --start 10 --end 14 --language en",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/semantic-normalizer reconcile-apply --workspace <external-workspace> --request <request.json> --response <response.json> --reviewer release-smoke --rationale <rationale> --protected-slot-comparison not-applicable",
+    "PYTHONDONTWRITEBYTECODE=1 <venv>/bin/python -c <public-contract-smoke-without-heldout-corpus>"
+  ],
+  "environment": {
+    "build_backend_used": false,
+    "network_used": false,
+    "pip": "26.1.2",
+    "python": "3.14.6",
+    "wheel": "0.47.0"
+  },
+  "offline_install": {
+    "canonical_example": {
+      "canonical_status": "review",
+      "invented_entity_server": false,
+      "protected_value": "APP-01",
+      "resolves_action_start": true
+    },
+    "console_help": true,
+    "init_workspace": [
+      "candidates.jsonl",
+      "decisions.jsonl",
+      "registry.jsonl",
+      "registry.schema.json"
+    ],
+    "installed_data_equal_source": true,
+    "installed_package_sha256": "ea0c90a85581edd083f5fab1687057b8f0399a09ea874d0a84687252468ebd13",
+    "pip_check": "No broken requirements found.",
+    "pip_install": "PASS",
+    "public_contract_smoke": {
+      "identifier_protected": true,
+      "provenance_events": 6,
+      "registry_records": 232,
+      "registry_version": "2.4.0",
+      "release_governs_registry": true,
+      "schemas": [
+        "registry.schema.json",
+        "sidecar.schema.json",
+        "reconciliation-request.schema.json",
+        "reconciliation-response.schema.json",
+        "reconciliation-decision.schema.json"
+      ],
+      "source_preserved": true,
+      "unknown_vocabulary_status": "partial"
+    },
+    "reconciliation": {
+      "allowed_candidates": [
+        "entity.facility_base",
+        "technical.numeral_base"
+      ],
+      "candidate_ledger_records": 1,
+      "decision_ledger_records": 1,
+      "mutable_ledgers_in_site_packages": [],
+      "registry_seed_unchanged": true,
+      "state": "accepted",
+      "workspace_external_to_site_packages": true
+    },
+    "site_packages_changed_files": [],
+    "site_packages_files_compared": 908,
+    "site_packages_snapshot": "complete-tree SHA-256 compared before and after runtime commands",
+    "site_packages_unchanged": true,
+    "validate_registry": {
+      "automatic_keys": 570,
+      "records": 232,
+      "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
+      "registry_sha256": "f6661444c7f1934ac31b366a04a4b3f3bde20056a0ed156b44886bf7103ba103",
+      "registry_version": "2.4.0",
+      "review_keys": 161,
+      "valid": true
+    }
+  },
+  "release_version": "0.4.0",
+  "report_version": "1.0.0",
+  "skill_zip": {
+    "cache_members": 0,
+    "compression": "ZIP_STORED",
+    "double_build_byte_identical": true,
+    "hash_location": "checksums.sha256 (external)",
+    "heldout_members": 0,
+    "manifest_entries_verified": 99,
+    "members": 100,
+    "mode": "0644",
+    "path": "dist/semantic-normalizer-skill-0.4.0.zip",
+    "prefix": "semantic-normalizer-0.4.0",
+    "timestamps": "1980-01-01T00:00:00"
+  },
+  "wheel": {
+    "compression": "ZIP_STORED",
+    "double_build_byte_identical": true,
+    "entry_point": "semantic-normalizer = semantic_normalizer.cli:main",
+    "forbidden_non_runtime_members": [],
+    "governed_data_sha256": {
+      "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
+      "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
+      "downstream-eval-config-v2.json": "918866786f4209d88aee52e77383b02d9a44ef8e815ed77b9496e9ed1106578e",
+      "downstream-judge-output.schema.json": "4769dfc32efac7a9f211aba93004ecb2b566584f83d4837bf1850a8bdf82f0b5",
+      "downstream-judge-packet.schema.json": "9e12c4f94855074cda8a1bc201bb31677a71cd6705be34cc633f1937783b6303",
+      "heldout-downstream.schema.json": "ccaa4018b978aa7052a7f6f24168ce928a944dc0dc568efed3d05e180b8a4536",
+      "heldout-manifest.schema.json": "183d558189e732545bba4bf723428b96258ac80ff3607e7ff4896807553b9dd2",
+      "heldout-retrieval.schema.json": "ff3a072c435b3134a201a864cbba72b9f5f24c6bfead0231515087a16694edbd",
+      "heldout-rg.schema.json": "941c47d82c7bf430382cda313a730339b8c6f4165b432d5a6749766fda842866",
+      "phrase-gold-independent.schema.json": "53878737f183ce91b60755d679d07f28ee5a071a470e14b9ec633aa998da5a23",
+      "phrase-sense-crosswalk.schema.json": "af5f9e7bfeb2083118da87d4cd1cc4b1857ad2c5995dfbc441acf59db14d4ca0",
+      "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
+      "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
+      "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
+      "registry.jsonl": "f6661444c7f1934ac31b366a04a4b3f3bde20056a0ed156b44886bf7103ba103",
+      "registry.provenance.jsonl": "8ed560f532ddb0e1965ed3fc75f57f599e2d8a6bdc032fd6066582fe55758fb7",
+      "registry.release.json": "a28491380fdd00773d29fc64f5d76d04e8fb619d6ff0cdedcd3c7fc5232b73a7",
+      "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
+      "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
+    },
+    "members": 33,
+    "mode": "0644",
+    "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
+    "public_contract_members": [
+      "semantic_normalizer/__init__.py",
+      "semantic_normalizer/__main__.py",
+      "semantic_normalizer/cli.py",
+      "semantic_normalizer/data/reconciliation-decision.schema.json",
+      "semantic_normalizer/data/reconciliation-request.schema.json",
+      "semantic_normalizer/data/reconciliation-response.schema.json",
+      "semantic_normalizer/data/registry.jsonl",
+      "semantic_normalizer/data/registry.provenance.jsonl",
+      "semantic_normalizer/data/registry.release.json",
+      "semantic_normalizer/data/registry.schema.json",
+      "semantic_normalizer/data/sidecar.schema.json",
+      "semantic_normalizer/evaluator.py",
+      "semantic_normalizer/exporters.py",
+      "semantic_normalizer/normalizer.py",
+      "semantic_normalizer/reconciliation.py",
+      "semantic_normalizer/registry.py",
+      "semantic_normalizer/schema_validation.py"
+    ],
+    "record_entries": 33,
+    "requires_python": ">=3.14",
+    "sha256": "fc9de53eb5840f62f59de040c9b97def4a05da2d96ae5f861f9c22362b746c0f",
+    "size": 512211,
+    "source_data_members_equal": true,
+    "timestamps": "1980-01-01T00:00:00"
+  }
+}

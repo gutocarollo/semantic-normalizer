@@ -1,0 +1,526 @@
+{
+  "archive_prefix": "semantic-normalizer-0.4.0",
+  "excluded_from_internal_hashes": [
+    "semantic-normalizer-skill-0.4.0.zip",
+    "checksums.sha256",
+    "reports/release-manifest.json"
+  ],
+  "exclusions": [
+    "heldout",
+    "__pycache__",
+    "*.pyc",
+    ".venv",
+    "workspace",
+    "candidates.jsonl",
+    "decisions.jsonl",
+    "reports/dev-auto-match-adjudication-blind.jsonl",
+    "reports/dev-auto-match-adjudication-seed-final.jsonl",
+    "reports/dev-auto-match-adjudication-seed.jsonl",
+    "reports/dev-auto-match-blind-pending-final.jsonl",
+    "reports/dev-auto-match-blind-pending.jsonl",
+    "reports/dev-auto-match-candidates-final.jsonl",
+    "reports/dev-auto-match-candidates.jsonl"
+  ],
+  "manifest_version": "1.0.0",
+  "package_validation_sha256": "cc227ab6656956bb996a1b1f920cd9e0e701a7c59444eaa698f087052585ffca",
+  "payload": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "18dc7396195a2e6cba0efe95c97326977cdbc675506298717224571201361184",
+      "size": 23118
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "097abb76a6d00a6310e949c6a4a2cfb9bc07003afdd83375264c4f8d48d0bcbe",
+      "size": 1089
+    },
+    {
+      "path": "README.md",
+      "sha256": "c05488f2686eeec9e6e3984567e4db32607f221f698bd7cdf2ed08db8846a22c",
+      "size": 10739
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "33af61d13260ad2066e6cdd6f4d5e4973cfd7b9943f99c904571aaecbd83a8d2",
+      "size": 12812
+    },
+    {
+      "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
+      "sha256": "fc9de53eb5840f62f59de040c9b97def4a05da2d96ae5f861f9c22362b746c0f",
+      "size": 512211
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "3c068229200f642d72c02d5d941be588e94687c6bcb84103392094c7e4771056",
+      "size": 4991
+    },
+    {
+      "path": "docs/data-governance.md",
+      "sha256": "e3f9f79c64c1c3c71c71be2ef3415d56e1378e6eac73a751587f8e1e153fab85",
+      "size": 1402
+    },
+    {
+      "path": "docs/evaluation-plan.md",
+      "sha256": "b7dbbc2f256378e43b8589ad2e7ad2986fcea83dd493f0f53b625da96918d9cf",
+      "size": 3748
+    },
+    {
+      "path": "docs/governance.md",
+      "sha256": "4bb79af64d997fc175285d7bfedbd7d66f9d49760b1caddc24d3ceeb4f0abb74",
+      "size": 2569
+    },
+    {
+      "path": "docs/integration.md",
+      "sha256": "2ce7040243eec77b7be183f831fee98c2cb0e11957ab524c04310106a02ee6bf",
+      "size": 2782
+    },
+    {
+      "path": "docs/migration-crosswalk-0.3.0.md",
+      "sha256": "73f5d7f0d11be90c492e0a54c71331ad5609d2341b30c7f7913a1379d514e9e6",
+      "size": 6966
+    },
+    {
+      "path": "docs/plan-cga-domain-lexicon-0.4.0.md",
+      "sha256": "0bb14ac0a168d38072be3189f6880c965df8b061adf1bccd93a846b3fe09d15c",
+      "size": 26956
+    },
+    {
+      "path": "docs/references.md",
+      "sha256": "e5fe842d20421e760324fa3632d06b1612fe11647d80b093e650fa977285f2da",
+      "size": 16485
+    },
+    {
+      "path": "docs/rollout-plan.md",
+      "sha256": "b0a02fd15a13c0e652e237bb02bdb66ce13a71c63e9f432c4568611ea580c1b7",
+      "size": 2109
+    },
+    {
+      "path": "prompts/disambiguate.md",
+      "sha256": "f157cdb5e2e094c2c5f45683e420c079a92235eda4c5ff9e442caea810a3ee1a",
+      "size": 1285
+    },
+    {
+      "path": "prompts/propose-concept.md",
+      "sha256": "4a03525d17e2edcc2a107123dc558e0ec890d02d619879e3730b6283d03927b7",
+      "size": 1285
+    },
+    {
+      "path": "prompts/semantic-validation.md",
+      "sha256": "b7fdba2357764e8697b3895d32f62997dc938a3521894a454ca1950024f2bc97",
+      "size": 819
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "2d585467fb2b9ae2114b3cb698f479cc8222c722d2f26e613e4d921035759151",
+      "size": 1353
+    },
+    {
+      "path": "reports/adjudication-batch-01.json",
+      "sha256": "75bb8af2adb4fbf29df57c35d8f38d6f99241d45f9d636cd81e17296b7e1f941",
+      "size": 24532
+    },
+    {
+      "path": "reports/adjudication-batch-02.json",
+      "sha256": "52009769787528487d05dd89969e8c9d690667907ad7b31479755e0e4a8db53c",
+      "size": 24308
+    },
+    {
+      "path": "reports/adjudication-batch-03.json",
+      "sha256": "3fc2091b8247374cf707a459961718f29a11c703b28f62e9dc87c1e092f44bac",
+      "size": 24895
+    },
+    {
+      "path": "reports/bm25-smoke-test.json",
+      "sha256": "501ff37b7986b2681909cd22ed9219ae3ea93627d15c6a22ed0ddcbf81bf763c",
+      "size": 17934
+    },
+    {
+      "path": "reports/coverage-baseline.json",
+      "sha256": "7fa81c08f77b5466eb573d2bb10a50b01f64e7caa26831177982a35eb75514bf",
+      "size": 1447
+    },
+    {
+      "path": "reports/coverage-batch-01.json",
+      "sha256": "dc6a8532d9e5449f07918e0c475c5ae38edbbcfc9fc25f775a5bc1086628cae3",
+      "size": 1455
+    },
+    {
+      "path": "reports/coverage-batch-02.json",
+      "sha256": "136de3d4a5180542e911eee965bdd6292f123d08798d9178baa51432dbac8509",
+      "size": 1453
+    },
+    {
+      "path": "reports/coverage-final.json",
+      "sha256": "99d85c61b983b51cd3da7ec521287fcff8e236ef8b131757d600b62e1243753c",
+      "size": 1672
+    },
+    {
+      "path": "reports/dev-auto-match-correction-manifest.json",
+      "sha256": "aa961b8b9b0a8c717c189a081cde83b94941faf671ce3e738f7e918e07bc3e33",
+      "size": 5595
+    },
+    {
+      "path": "reports/dev-auto-match-evaluation-baseline.json",
+      "sha256": "588c0affef19b891f2df9623c586d8f49bcf3c4e2006ffeb0778cfdb0d02277a",
+      "size": 20505
+    },
+    {
+      "path": "reports/dev-auto-match-evaluation-final.json",
+      "sha256": "6fc2b6612d9cd5daaa125f623dd0a14625cfdf425e4905cd40e51fb43a37d4f1",
+      "size": 18407
+    },
+    {
+      "path": "reports/dev-auto-match-evaluation.json",
+      "sha256": "0647fac69f3abe4129edf250adccec96472181e1d088c95222c99ff779c0d615",
+      "size": 19829
+    },
+    {
+      "path": "reports/dev-auto-match-generation-final.json",
+      "sha256": "2fd23109782cbba6a468e48d6dbe4c41a13ef3bc3f559f0b9d781f589cefa3ce",
+      "size": 956
+    },
+    {
+      "path": "reports/dev-auto-match-generation.json",
+      "sha256": "e41a49cde6a92dcd8b3a92786607bc247713d187bcd2e040ad2827346139f35a",
+      "size": 1312
+    },
+    {
+      "path": "reports/dev-retrieval-ablations-baseline.json",
+      "sha256": "e47e76eade772de9379c11612870fe2f90e3832649d30047196afe566d6ba390",
+      "size": 90870
+    },
+    {
+      "path": "reports/dev-retrieval-ablations-final.json",
+      "sha256": "ad91dd4373a4c32879fcdfdff3fe184b920a1a13bbf743e20b6a13af0055b99a",
+      "size": 88205
+    },
+    {
+      "path": "reports/dev-retrieval-ablations.json",
+      "sha256": "e47e76eade772de9379c11612870fe2f90e3832649d30047196afe566d6ba390",
+      "size": 90870
+    },
+    {
+      "path": "reports/dev-semantic-gates.json",
+      "sha256": "44698a0b3e359e657ee99b7d2ac534d1131d66ed7fee40ba60e7ceb9ca464d56",
+      "size": 6879
+    },
+    {
+      "path": "reports/oov-queue.json",
+      "sha256": "28c34dbfafea9d5d9ea33389bf2db26818d89e86e88278a6956f65ef574778e9",
+      "size": 1709574
+    },
+    {
+      "path": "reports/package-validation.json",
+      "sha256": "cc227ab6656956bb996a1b1f920cd9e0e701a7c59444eaa698f087052585ffca",
+      "size": 7397
+    },
+    {
+      "path": "reports/registry-migration.json",
+      "sha256": "28a39a98d1411c51b4c216b5c0ecbb163f5f5d1214cfb3dd9a53a58ee68ce30d",
+      "size": 6103
+    },
+    {
+      "path": "reports/registry-validation.json",
+      "sha256": "6e15469cd2b86483570e392f730107f17042821373e60ae43f459cb3ee1a06b6",
+      "size": 1498
+    },
+    {
+      "path": "reports/sample-output.json",
+      "sha256": "1f07d656cbaf167ff04a00f05de6339bd1cdbd2f2a1d013afebed68918e89d66",
+      "size": 8354
+    },
+    {
+      "path": "reports/wordnet-candidates.json",
+      "sha256": "39eb6dc0c15ac9f75c27848113dbe64cf8b703bb604578220ab070f28e40824f",
+      "size": 534541
+    },
+    {
+      "path": "schemas/normalization-result.schema.json",
+      "sha256": "0846ff6afb7f8314c5886128067c8e9bc8819f70df311421296740a9933f67ff",
+      "size": 3164
+    },
+    {
+      "path": "scripts/build_adjudication_fixture.py",
+      "sha256": "523d1ad702489290a94d477bd2574ce7349b6baddf80a1fe9db8bd4d029172be",
+      "size": 4296
+    },
+    {
+      "path": "scripts/build_oov_queue.py",
+      "sha256": "e28c616a3655ec5a5c276e92eb4d737f0f37571072f48c6c2c00daa226b56c31",
+      "size": 12142
+    },
+    {
+      "path": "scripts/build_release.py",
+      "sha256": "5200e907fd203f4debf0dcc73a9fc96d116cb8c487d8e347c30cbef93e99e1d6",
+      "size": 39770
+    },
+    {
+      "path": "scripts/controlled_language.py",
+      "sha256": "885c4cbca5b7497e809a81124f60e51fc6c1f4669947afddaa0de0a8faf9d651",
+      "size": 470
+    },
+    {
+      "path": "scripts/cut_manifest.py",
+      "sha256": "e1d4c01753dca037e835c2a0d4c40c6aff8fd69697414e986d3f6bc0bf201229",
+      "size": 2019
+    },
+    {
+      "path": "scripts/evaluate_semantic_gates.py",
+      "sha256": "42c2de8f3bbfde32670197e98bfdb9cbeca3f126b3e13ceb6e26253e967eaac5",
+      "size": 5460
+    },
+    {
+      "path": "scripts/generate_auto_match_candidates.py",
+      "sha256": "71ef88a6a3ccf1a7af0c625251a27aea195a89547836404319826cd88ef150af",
+      "size": 22512
+    },
+    {
+      "path": "scripts/import_cga_batch.py",
+      "sha256": "724774e1a92517e98a02a66af1c6edc12cfbe6f2e7aa7ec397df9857942b2218",
+      "size": 9152
+    },
+    {
+      "path": "scripts/measure_domain_coverage.py",
+      "sha256": "3c849f0d4828b0063d297384e64ecd0b389ee07c9396abe16dd408ea36b33da3",
+      "size": 6970
+    },
+    {
+      "path": "scripts/migrate_v02_concepts.py",
+      "sha256": "b9815d2c6553abf5a54b0548c620a065f6003aedb2ca71cddc58eec3a9054cf9",
+      "size": 18382
+    },
+    {
+      "path": "scripts/propose_from_wordnet.py",
+      "sha256": "013cff4ff16c719a1d802cb083c494c0c1da3f137f01779b403f1b74d711ac11",
+      "size": 4625
+    },
+    {
+      "path": "src/semantic_normalizer/__init__.py",
+      "sha256": "559857d7c238680361ea193c44182e3d0cda5e40e58fa3fbb494936b3dcffde2",
+      "size": 1385
+    },
+    {
+      "path": "src/semantic_normalizer/__main__.py",
+      "sha256": "669ed05401be9023eefaa49ba4f674cec454c35b436745f16e37d1c9a69b8f73",
+      "size": 148
+    },
+    {
+      "path": "src/semantic_normalizer/cli.py",
+      "sha256": "0090cc877fe63b025747edae47a8a5e003918b0e65ee06c2550498fa19470156",
+      "size": 9463
+    },
+    {
+      "path": "src/semantic_normalizer/data/__init__.py",
+      "sha256": "12ac409510a58457f8f5ee2965d65acdad415653e82ad52802c413142140f226",
+      "size": 54
+    },
+    {
+      "path": "src/semantic_normalizer/data/downstream-answerer-output.schema.json",
+      "sha256": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
+      "size": 968
+    },
+    {
+      "path": "src/semantic_normalizer/data/downstream-answerer-packet.schema.json",
+      "sha256": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
+      "size": 942
+    },
+    {
+      "path": "src/semantic_normalizer/data/downstream-eval-config-v2.json",
+      "sha256": "918866786f4209d88aee52e77383b02d9a44ef8e815ed77b9496e9ed1106578e",
+      "size": 6956
+    },
+    {
+      "path": "src/semantic_normalizer/data/downstream-judge-output.schema.json",
+      "sha256": "4769dfc32efac7a9f211aba93004ecb2b566584f83d4837bf1850a8bdf82f0b5",
+      "size": 1304
+    },
+    {
+      "path": "src/semantic_normalizer/data/downstream-judge-packet.schema.json",
+      "sha256": "9e12c4f94855074cda8a1bc201bb31677a71cd6705be34cc633f1937783b6303",
+      "size": 2264
+    },
+    {
+      "path": "src/semantic_normalizer/data/heldout-downstream.schema.json",
+      "sha256": "ccaa4018b978aa7052a7f6f24168ce928a944dc0dc568efed3d05e180b8a4536",
+      "size": 2651
+    },
+    {
+      "path": "src/semantic_normalizer/data/heldout-manifest.schema.json",
+      "sha256": "183d558189e732545bba4bf723428b96258ac80ff3607e7ff4896807553b9dd2",
+      "size": 2211
+    },
+    {
+      "path": "src/semantic_normalizer/data/heldout-retrieval.schema.json",
+      "sha256": "ff3a072c435b3134a201a864cbba72b9f5f24c6bfead0231515087a16694edbd",
+      "size": 2298
+    },
+    {
+      "path": "src/semantic_normalizer/data/heldout-rg.schema.json",
+      "sha256": "941c47d82c7bf430382cda313a730339b8c6f4165b432d5a6749766fda842866",
+      "size": 1805
+    },
+    {
+      "path": "src/semantic_normalizer/data/phrase-gold-independent.schema.json",
+      "sha256": "53878737f183ce91b60755d679d07f28ee5a071a470e14b9ec633aa998da5a23",
+      "size": 3367
+    },
+    {
+      "path": "src/semantic_normalizer/data/phrase-sense-crosswalk.schema.json",
+      "sha256": "af5f9e7bfeb2083118da87d4cd1cc4b1857ad2c5995dfbc441acf59db14d4ca0",
+      "size": 1741
+    },
+    {
+      "path": "src/semantic_normalizer/data/reconciliation-decision.schema.json",
+      "sha256": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
+      "size": 2962
+    },
+    {
+      "path": "src/semantic_normalizer/data/reconciliation-request.schema.json",
+      "sha256": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
+      "size": 3003
+    },
+    {
+      "path": "src/semantic_normalizer/data/reconciliation-response.schema.json",
+      "sha256": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
+      "size": 1314
+    },
+    {
+      "path": "src/semantic_normalizer/data/registry.jsonl",
+      "sha256": "f6661444c7f1934ac31b366a04a4b3f3bde20056a0ed156b44886bf7103ba103",
+      "size": 295735
+    },
+    {
+      "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
+      "sha256": "8ed560f532ddb0e1965ed3fc75f57f599e2d8a6bdc032fd6066582fe55758fb7",
+      "size": 8285
+    },
+    {
+      "path": "src/semantic_normalizer/data/registry.release.json",
+      "sha256": "a28491380fdd00773d29fc64f5d76d04e8fb619d6ff0cdedcd3c7fc5232b73a7",
+      "size": 9457
+    },
+    {
+      "path": "src/semantic_normalizer/data/registry.schema.json",
+      "sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
+      "size": 7598
+    },
+    {
+      "path": "src/semantic_normalizer/data/sidecar.schema.json",
+      "sha256": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c",
+      "size": 13224
+    },
+    {
+      "path": "src/semantic_normalizer/evaluator.py",
+      "sha256": "0d9ff81065b9f3ce1a0e8b5e4790d75536fb6fdb6f6d332fe21ea7354a4b70af",
+      "size": 38278
+    },
+    {
+      "path": "src/semantic_normalizer/exporters.py",
+      "sha256": "5d761a93e5f1dde73e0c90e707c3d7d45bd80b5147df06113e6e07508904cb16",
+      "size": 2768
+    },
+    {
+      "path": "src/semantic_normalizer/normalizer.py",
+      "sha256": "f94f05467068d23b49e3673c829527172639f688c7a5e707adc1a71f2ef9d1e4",
+      "size": 40744
+    },
+    {
+      "path": "src/semantic_normalizer/reconciliation.py",
+      "sha256": "0558e1405fac707b3f46f5d65318c8ff45200dc8f59f419a6e0e2614ee38d56e",
+      "size": 19252
+    },
+    {
+      "path": "src/semantic_normalizer/registry.py",
+      "sha256": "e9b61f3ebc7aa2910b77ce7dab6ac5e270751e3e8ed0005753a03b64d1768612",
+      "size": 15253
+    },
+    {
+      "path": "src/semantic_normalizer/schema_validation.py",
+      "sha256": "176391cf9568c2dbdd09bcab8bf45f358aff4feab4362259d6b7f74a806913b1",
+      "size": 7446
+    },
+    {
+      "path": "tests/fixtures/cga_adjudication.jsonl",
+      "sha256": "551a99c2136ff55e93259f152901b95877c1e6555f72c9972cf0efe66c7c34e1",
+      "size": 30475
+    },
+    {
+      "path": "tests/fixtures/dev_retrieval.json",
+      "sha256": "ed677a53cbd98d152bef445be218461f487762f8c8e16eaf06aeee2199e63d58",
+      "size": 14382
+    },
+    {
+      "path": "tests/fixtures/golden.jsonl",
+      "sha256": "8a2c11864b7c8042058d5c2f77ee742718c482b10d888f77c81c9c8ccb18ad2a",
+      "size": 9114
+    },
+    {
+      "path": "tests/fixtures/independent_phrase_crosswalk.json",
+      "sha256": "7255c3b951d4cc9b926c03ac66d7339d74b5e7c437ac7d74aa82d08a31f44e1c",
+      "size": 767
+    },
+    {
+      "path": "tests/fixtures/independent_phrase_gold.json",
+      "sha256": "29d2936fddd823905e63ef0369b97c2ff3288a559f6229843bda09dd2b49ee9b",
+      "size": 3264
+    },
+    {
+      "path": "tests/fixtures/semantic_gates.json",
+      "sha256": "8822618456f970e188c2f4f19a84f6ed8276ba520445e95d226360786e4e584e",
+      "size": 13551
+    },
+    {
+      "path": "tests/test_controlled_language.py",
+      "sha256": "b19665223d5e3728563e18321337c3de544a6e05707bb09478c8dc921e1730d1",
+      "size": 30705
+    },
+    {
+      "path": "tests/test_documented_commands.py",
+      "sha256": "5a9dba1dd95b0247a73ae05567787148e3a87470e4fe8b0e797f92a4554d1a03",
+      "size": 9076
+    },
+    {
+      "path": "tests/test_manifest_integrity.py",
+      "sha256": "1177297908e41df2c14d960687b50cf623b7d1b5084726a9ae7c44e9943f95b8",
+      "size": 2436
+    },
+    {
+      "path": "tests/test_o3_evaluator.py",
+      "sha256": "fa07d2f14f2e87e043a91e679d7933ca685522ceffd8f2fdcc080d2b855e0eb2",
+      "size": 15270
+    },
+    {
+      "path": "tests/test_packaging.py",
+      "sha256": "8c8593d254473f82921a41b34b0c2575d7e5619c382ca56b9aef66b4841ecded",
+      "size": 17021
+    },
+    {
+      "path": "tests/test_registry_governance.py",
+      "sha256": "873b208d43ea9ec5b22d8e19e6c28908f20ada46e4a82477f25f08fbd81a7100",
+      "size": 6816
+    },
+    {
+      "path": "tests/test_runtime_contracts.py",
+      "sha256": "f3e621637c96ba29b1d45b198e3768f5d30c378e631838ff5ec63ca192a99933",
+      "size": 14337
+    },
+    {
+      "path": "tests/test_schema_keyword_contracts.py",
+      "sha256": "9605fce3713a62a2194ef88107b9861fef939d4ccdf91c155bef2ec98b70d35d",
+      "size": 6383
+    },
+    {
+      "path": "tests/test_semantic_gates.py",
+      "sha256": "e48c1a1ac08ddef2be1e3d7d56efff524fce51c684fda9c5c323d2b442a3c0fe",
+      "size": 8949
+    },
+    {
+      "path": "tests/test_semantic_regressions.py",
+      "sha256": "9382bb83de4988eeb00efa7b8864a017aa8b0870201569e3afc61ad6b21bfb10",
+      "size": 11930
+    }
+  ],
+  "payload_files": 99,
+  "release_version": "0.4.0",
+  "wheel_sha256": "fc9de53eb5840f62f59de040c9b97def4a05da2d96ae5f861f9c22362b746c0f"
+}

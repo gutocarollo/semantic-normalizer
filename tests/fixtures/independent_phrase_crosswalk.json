@@ -1,0 +1,19 @@
+{
+  "schema_version": "phrase-sense-crosswalk-v1",
+  "dataset_sha256": "41bc594d16c20b61fc5714a688a932343e572e690d1c8761135bad9d5946c256",
+  "catalog_sha256": "00852eebc3e41190fd3e572260be66fc0f15a84dcd93ac4e21c6503b2366ac0b",
+  "registry_sha256": "7bd271774bfcd3292349e31400cab2716b90e8d79b301c8c4100be35e6792368",
+  "created_after_freeze": true,
+  "blindness": {
+    "text_seen": false,
+    "predictions_seen": false,
+    "registry_policies_seen": false
+  },
+  "mappings": [
+    {"sense_id": "s_1a2b3c4d", "target": "actor.user"},
+    {"sense_id": "s_2b3c4d5e", "target": "action.preserve"},
+    {"sense_id": "s_3c4d5e6f", "target": "entity.file"},
+    {"sense_id": "s_4d5e6f70", "target": "NO_CONCEPT"},
+    {"sense_id": "s_5e6f7081", "target": "UNCERTAIN"}
+  ]
+}

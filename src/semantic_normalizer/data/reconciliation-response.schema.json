@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/semantic-normalizer-reconciliation-response-v1.schema.json",
+  "title": "Restricted Reconciliation Response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_id",
+    "confidence",
+    "evidence_span",
+    "reason_code"
+  ],
+  "properties": {
+    "candidate_id": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$"
+        },
+        {
+          "const": "ABSTAIN"
+        }
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end",
+        "text"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "reason_code": {
+      "enum": [
+        "EXACT_APPROVED_FORM",
+        "CONTEXT_DISAMBIGUATED",
+        "INSUFFICIENT_CONTEXT",
+        "NO_ALLOWED_CANDIDATE",
+        "CONFLICTING_EVIDENCE"
+      ]
+    }
+  }
+}

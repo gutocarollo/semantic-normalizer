@@ -1,231 +1,266 @@
+"""Command-line interface for semantic-normalizer."""
+
 from __future__ import annotations
 
 import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Any
 
-from .evaluation import evaluate_retrieval
-from .loop import NormalizationLoop, StaticResolver
-from .normalizer import SemanticNormalizer
-from .registry import ConceptRegistry
-
-
-def default_registry_path() -> Path:
-    project_path = Path(__file__).resolve().parents[2] / "config" / "concepts.json"
-    if project_path.exists():
-        return project_path
-    package_path = Path(__file__).resolve().parent / "data" / "concepts.json"
-    if package_path.exists():
-        return package_path
-    raise FileNotFoundError("Cannot locate the default concept registry")
-
-
-def _add_registry_argument(parser: argparse.ArgumentParser) -> None:
-    parser.add_argument(
-        "--registry",
-        default=str(default_registry_path()),
-        help="Path to the concept registry JSON file",
-    )
+from .evaluator import evaluate_ablations
+from .exporters import export_skos, export_synonym_graph
+from .normalizer import (
+    KNOWN_SUFFIXES,
+    SCHEMA_VERSION,
+    TOOL_VERSION,
+    canonical_json,
+    evaluate_golden,
+    evaluate_retrieval,
+    indexed_paths,
+    infer_kind,
+    normalize_text,
+    read_utf8,
+    write_jsonl,
+)
+from .reconciliation import apply_workspace_response, create_workspace_request
+from .registry import ContractError, automatic_surfaces, init_workspace, load_registry
 
 
-def _write_json(payload: Any, *, output: str | None, pretty: bool = True) -> None:
-    text = json.dumps(
-        payload,
-        ensure_ascii=False,
-        indent=2 if pretty else None,
-        sort_keys=False,
-    )
-    if output:
-        output_path = Path(output)
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        output_path.write_text(text + "\n", encoding="utf-8")
-    else:
-        print(text)
+def _registry(args) -> dict:
+    return load_registry(args.registry, args.registry_schema)
 
 
-def _load_text(text: str | None, input_path: str | None) -> str:
-    if text is not None and input_path is not None:
-        raise ValueError("Use --text or --input, not both")
-    if text is not None:
-        return text
-    if input_path is not None:
-        return Path(input_path).read_text(encoding="utf-8")
-    if not sys.stdin.isatty():
-        return sys.stdin.read()
-    raise ValueError("Provide --text, --input, or stdin")
+def _input(args) -> tuple[str, str, Path | None]:
+    if getattr(args, "text", None) is not None:
+        return args.text, "<query>", None
+    if not getattr(args, "input", None):
+        raise ContractError("provide INPUT or --text")
+    path = Path(args.input)
+    _, text = read_utf8(path)
+    return text, str(path), path
 
 
-def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        prog="semantic-normalizer",
-        description=(
-            "Create a reversible English-Portuguese canonical projection for lexical retrieval."
+def command_validate(args) -> int:
+    registry = _registry(args)
+    print(canonical_json({
+        "valid": True,
+        "records": len(registry["records"]),
+        "registry_version": registry["version"],
+        "registry_sha256": registry["hash"],
+        "registry_schema_sha256": registry["schema_hash"],
+        "automatic_keys": len(registry["automatic"]),
+        "review_keys": len(registry["reviews"]),
+    }))
+    return 0
+
+
+def command_normalize(args) -> int:
+    registry = _registry(args)
+    text, source, path = _input(args)
+    records = normalize_text(text, source, infer_kind(path, args.kind), registry)
+    write_jsonl(records, Path(args.output) if args.output else None)
+    return 0
+
+
+def command_query(args) -> int:
+    registry = _registry(args)
+    text, source, path = _input(args)
+    records = normalize_text(text, source, infer_kind(path, args.kind), registry)
+    payload = {
+        "schema_version": SCHEMA_VERSION,
+        "tool_version": TOOL_VERSION,
+        "registry_version": registry["version"],
+        "registry_sha256": registry["hash"],
+        "registry_schema_sha256": registry["schema_hash"],
+        "original": text,
+        "segments": records,
+        "concept_ids": list(dict.fromkeys(
+            cid for record in records for cid in record["concept_ids"]
+        )),
+        "concept_tokens": list(dict.fromkeys(
+            token for record in records for token in record["concept_tokens"]
+        )),
+        "search_text": " ".join(
+            record["text_expanded"] for record in records if record["text_expanded"]
         ),
+        "needs_review": any(record["needs_review"] for record in records),
+    }
+    print(canonical_json(payload))
+    return 0
+
+
+def command_index(args) -> int:
+    registry = _registry(args)
+    root, output_dir = Path(args.input), Path(args.output_dir)
+    records = []
+    for path in indexed_paths(root, output_dir):
+        _, text = read_utf8(path)
+        records.extend(normalize_text(text, str(path), infer_kind(path, "auto"), registry))
+    records.sort(key=lambda record: (record["source"], record["start"], record["end"]))
+    output_dir.mkdir(parents=True, exist_ok=True)
+    write_jsonl(records, output_dir / "index.jsonl")
+    rg_lines = []
+    for record in records:
+        approved_surfaces = []
+        for concept_id in record["concept_ids"]:
+            item = registry["by_id"][concept_id]
+            for language in ("en", "pt-BR"):
+                approved_surfaces.extend(automatic_surfaces(item, language))
+        values = [
+            record["source"], str(record["line"]),
+            record["original"].replace("\n", "\\n"),
+            *approved_surfaces,
+            *record["concept_ids"],
+            *record["concept_tokens"],
+        ]
+        rg_lines.append("\t".join(dict.fromkeys(value for value in values if value)))
+    (output_dir / "rg.txt").write_text(
+        "\n".join(rg_lines) + ("\n" if rg_lines else ""), encoding="utf-8"
     )
-    subparsers = parser.add_subparsers(dest="command", required=True)
+    print(canonical_json({
+        "documents": len({record["source"] for record in records}),
+        "segments": len(records),
+        "registry_sha256": registry["hash"],
+        "index": str(output_dir / "index.jsonl"),
+        "rg": str(output_dir / "rg.txt"),
+    }))
+    return 0
 
-    normalize_parser = subparsers.add_parser("normalize", help="Normalize one text")
-    _add_registry_argument(normalize_parser)
-    normalize_parser.add_argument("--text")
-    normalize_parser.add_argument("--input")
-    normalize_parser.add_argument("--output")
-    normalize_parser.add_argument("--lang", default="auto", choices=("auto", "en", "pt"))
-    normalize_parser.add_argument("--target-lang", default="source", choices=("source", "en", "pt"))
-    normalize_parser.add_argument("--pretty", action="store_true")
-    normalize_parser.add_argument(
-        "--strict",
-        action="store_true",
-        help="Return exit code 2 unless status is accepted",
+
+def command_evaluate(args) -> int:
+    registry = _registry(args)
+    fixture = Path(args.fixture)
+    _, text = read_utf8(fixture)
+    try:
+        dataset = json.loads(text) if text.lstrip().startswith("{") else None
+    except json.JSONDecodeError:
+        dataset = None
+    if isinstance(dataset, dict) and "documents" in dataset and "queries" in dataset:
+        report = evaluate_ablations(dataset, registry)
+    else:
+        report = evaluate_golden(fixture, registry)
+    content = json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
+    if args.output:
+        Path(args.output).write_text(content, encoding="utf-8")
+    else:
+        sys.stdout.write(content)
+    return 1 if report.get("failed", 0) else 0
+
+
+def command_reconcile_request(args) -> int:
+    request = create_workspace_request(
+        args.workspace, args.context, args.start, args.end, args.language
     )
-    resolver_group = normalize_parser.add_mutually_exclusive_group()
-    resolver_group.add_argument(
-        "--decision-file",
-        help='JSON object mapping lower-cased surface forms to approved concept IDs',
+    print(canonical_json(request))
+    return 0
+
+
+def command_reconcile_apply(args) -> int:
+    request = json.loads(Path(args.request).read_text(encoding="utf-8"))
+    response = json.loads(Path(args.response).read_text(encoding="utf-8"))
+    print(canonical_json(apply_workspace_response(
+        args.workspace,
+        request,
+        response,
+        args.reviewer,
+        args.rationale,
+        args.protected_slot_comparison,
+        args.timestamp,
+    )))
+    return 0
+
+
+def command_export(args) -> int:
+    registry = _registry(args)
+    content = (
+        export_skos(registry, args.base_iri)
+        if args.format == "skos"
+        else export_synonym_graph(registry)
     )
-    resolver_group.add_argument(
-        "--agent-model",
-        help='Instructor provider/model string, for example "ollama/qwen3:8b"',
+    if args.output:
+        Path(args.output).write_text(content, encoding="utf-8")
+    else:
+        sys.stdout.write(content)
+    return 0
+
+
+def command_init_workspace(args) -> int:
+    print(canonical_json(
+        init_workspace(args.directory, args.registry, args.registry_schema)
+    ))
+    return 0
+
+
+def _registry_options(command: argparse.ArgumentParser) -> None:
+    command.add_argument("--registry")
+    command.add_argument("--registry-schema")
+    command.add_argument("--lexicon", dest="registry", help=argparse.SUPPRESS)
+
+
+def parser() -> argparse.ArgumentParser:
+    result = argparse.ArgumentParser(prog="semantic-normalizer", description=__doc__)
+    sub = result.add_subparsers(dest="command", required=True)
+    validate = sub.add_parser("validate-registry")
+    _registry_options(validate)
+    validate.set_defaults(func=command_validate)
+    for name, function in (("normalize", command_normalize), ("query", command_query)):
+        command = sub.add_parser(name)
+        command.add_argument("input", nargs="?")
+        command.add_argument("--text")
+        command.add_argument("--kind", choices=("auto", "markdown", "text", "python"), default="auto")
+        command.add_argument("--output") if name == "normalize" else None
+        _registry_options(command)
+        command.set_defaults(func=function)
+    index = sub.add_parser("index")
+    index.add_argument("input")
+    index.add_argument("--output-dir", required=True)
+    _registry_options(index)
+    index.set_defaults(func=command_index)
+    evaluate = sub.add_parser("evaluate")
+    evaluate.add_argument("fixture")
+    evaluate.add_argument("--output")
+    _registry_options(evaluate)
+    evaluate.set_defaults(func=command_evaluate)
+    request = sub.add_parser("reconcile-request")
+    request.add_argument("--workspace", required=True)
+    request.add_argument("--context", required=True)
+    request.add_argument("--start", type=int, required=True)
+    request.add_argument("--end", type=int, required=True)
+    request.add_argument("--language", choices=("en", "pt-BR"), required=True)
+    request.set_defaults(func=command_reconcile_request)
+    apply = sub.add_parser("reconcile-apply")
+    apply.add_argument("--workspace", required=True)
+    apply.add_argument("--request", required=True)
+    apply.add_argument("--response", required=True)
+    apply.add_argument("--reviewer", required=True)
+    apply.add_argument("--rationale", required=True)
+    apply.add_argument(
+        "--protected-slot-comparison",
+        choices=("preserved", "changed", "not-applicable"),
+        required=True,
     )
-    normalize_parser.add_argument("--max-attempts", type=int, default=2)
-
-    evaluate_parser = subparsers.add_parser("evaluate", help="Compare raw and normalized BM25")
-    _add_registry_argument(evaluate_parser)
-    evaluate_parser.add_argument("--documents", required=True)
-    evaluate_parser.add_argument("--queries", required=True)
-    evaluate_parser.add_argument("--output")
-    evaluate_parser.add_argument("--target-lang", default="en", choices=("en", "pt"))
-    evaluate_parser.add_argument("--k", nargs="+", type=int, default=[1, 3, 5])
-    evaluate_parser.add_argument("--summary-only", action="store_true")
-
-    validate_parser = subparsers.add_parser(
-        "validate-registry",
-        help="Validate concept IDs, labels, relations, and ambiguous aliases",
-    )
-    _add_registry_argument(validate_parser)
-    validate_parser.add_argument("--output")
-
-    skos_parser = subparsers.add_parser("export-skos", help="Export the registry as SKOS Turtle")
-    _add_registry_argument(skos_parser)
-    skos_parser.add_argument("--base-uri", default="https://example.org/semantic-normalizer/")
-    skos_parser.add_argument("--output", required=True)
-
-    synonym_parser = subparsers.add_parser(
-        "export-synonyms",
-        help="Export explicit alias-to-concept rules for Elasticsearch synonym_graph",
-    )
-    _add_registry_argument(synonym_parser)
-    synonym_parser.add_argument("--output", required=True)
-
-    inspect_parser = subparsers.add_parser("inspect-concept", help="Show one concept record")
-    _add_registry_argument(inspect_parser)
-    inspect_parser.add_argument("concept_id")
-
-    return parser
+    apply.add_argument("--timestamp")
+    apply.set_defaults(func=command_reconcile_apply)
+    export = sub.add_parser("export")
+    export.add_argument("format", choices=("skos", "synonym-graph"))
+    export.add_argument("--base-iri", default="https://cga-game.local/concept")
+    export.add_argument("--output")
+    _registry_options(export)
+    export.set_defaults(func=command_export)
+    workspace = sub.add_parser("init-workspace")
+    workspace.add_argument("directory")
+    _registry_options(workspace)
+    workspace.set_defaults(func=command_init_workspace)
+    return result
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = build_parser()
-    args = parser.parse_args(argv)
-
     try:
-        registry = ConceptRegistry.from_path(args.registry)
-
-        if args.command == "normalize":
-            text = _load_text(args.text, args.input)
-            normalizer = SemanticNormalizer(registry)
-            resolver = None
-            if args.decision_file:
-                decisions = json.loads(Path(args.decision_file).read_text(encoding="utf-8"))
-                if not isinstance(decisions, dict):
-                    raise ValueError("--decision-file must contain a JSON object")
-                resolver = StaticResolver({str(key): str(value) for key, value in decisions.items()})
-            elif args.agent_model:
-                from .adapters.instructor_resolver import InstructorResolver
-
-                resolver = InstructorResolver(args.agent_model)
-            result = NormalizationLoop(
-                normalizer,
-                resolver,
-                max_attempts=args.max_attempts,
-            ).run(
-                text,
-                source_language=args.lang,
-                target_language=args.target_lang,
-            )
-            _write_json(result.to_dict(), output=args.output, pretty=args.pretty)
-            if args.strict and result.status.value != "accepted":
-                return 2
-            return 0
-
-        if args.command == "evaluate":
-            report = evaluate_retrieval(
-                normalizer=SemanticNormalizer(registry),
-                documents_path=args.documents,
-                queries_path=args.queries,
-                k_values=tuple(sorted(set(args.k))),
-                target_language=args.target_lang,
-            )
-            if args.summary_only:
-                for mode in report["modes"].values():
-                    mode.pop("per_query", None)
-            _write_json(report, output=args.output, pretty=True)
-            return 0
-
-        if args.command == "validate-registry":
-            diagnostics = [item.to_dict() for item in registry.validate()]
-            payload = {
-                "scheme_id": registry.scheme_id,
-                "version": registry.version,
-                "concept_count": len(registry.concepts),
-                "diagnostics": diagnostics,
-            }
-            _write_json(payload, output=args.output, pretty=True)
-            return 1 if any(item["severity"] == "error" for item in diagnostics) else 0
-
-        if args.command == "export-skos":
-            output = Path(args.output)
-            output.parent.mkdir(parents=True, exist_ok=True)
-            output.write_text(registry.to_skos_turtle(args.base_uri), encoding="utf-8")
-            print(output)
-            return 0
-
-        if args.command == "export-synonyms":
-            output = Path(args.output)
-            output.parent.mkdir(parents=True, exist_ok=True)
-            output.write_text(registry.to_elasticsearch_synonyms(), encoding="utf-8")
-            print(output)
-            return 0
-
-        if args.command == "inspect-concept":
-            concept = registry.get(args.concept_id)
-            payload = {
-                "concept_id": concept.concept_id,
-                "preferred_labels": concept.preferred_labels,
-                "alternative_labels": {
-                    key: list(value) for key, value in concept.alternative_labels.items()
-                },
-                "hidden_labels": {
-                    key: list(value) for key, value in concept.hidden_labels.items()
-                },
-                "surface_forms": {
-                    key: list(value) for key, value in concept.surface_forms.items()
-                },
-                "definitions": concept.definitions,
-                "part_of_speech": concept.part_of_speech,
-                "domains": list(concept.domains),
-                "source_authority": concept.source_authority,
-                "status": concept.status,
-            }
-            _write_json(payload, output=None, pretty=True)
-            return 0
-
-        parser.error(f"Unknown command: {args.command}")
-        return 2
-    except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
+        args = parser().parse_args(argv)
+        return args.func(args)
+    except (ContractError, OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
         print(f"error: {exc}", file=sys.stderr)
-        return 1
+        return 2
 
 
 if __name__ == "__main__":

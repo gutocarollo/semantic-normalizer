@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cga-game.local/schemas/downstream-judge-packet-v2.schema.json",
+  "title": "Masked downstream judge packet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "judge_packet_id",
+    "question",
+    "snippets",
+    "response",
+    "gold_answer",
+    "gold_evidence",
+    "output_contract"
+  ],
+  "properties": {
+    "judge_packet_id": {"type": "string", "pattern": "^J[0-9]{3}$"},
+    "question": {"type": "string", "minLength": 1},
+    "snippets": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {"$ref": "#/$defs/snippet"}
+    },
+    "response": {"$ref": "#/$defs/response"},
+    "gold_answer": {"type": "string"},
+    "gold_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidence"}
+    },
+    "output_contract": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "snippet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["snippet_id", "text"],
+      "properties": {
+        "snippet_id": {"type": "string", "pattern": "^S[0-9]{2}$"},
+        "text": {"type": "string", "minLength": 1, "maxLength": 2000}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "citations"],
+      "properties": {
+        "text": {"type": "string", "minLength": 1},
+        "citations": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^S[0-9]{2}$"}
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["answer", "claims", "abstained"],
+      "properties": {
+        "answer": {"type": "string", "minLength": 1},
+        "claims": {"type": "array", "items": {"$ref": "#/$defs/claim"}},
+        "abstained": {"type": "boolean"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["snippet_id", "start", "end"],
+      "properties": {
+        "snippet_id": {"type": "string", "pattern": "^S[0-9]{2}$"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}
