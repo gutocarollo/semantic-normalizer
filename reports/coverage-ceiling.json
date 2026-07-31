@@ -1,0 +1,323 @@
+{
+  "ceiling_under_the_rule": 0.9152,
+  "covered": 313,
+  "covered_share_of_distinct": 0.9152,
+  "covered_share_of_mass": 0.9611,
+  "distinct_headings": 342,
+  "finding": "26 of the 29 headings still partial contain a phrase that occurs ZERO times in the corpus prose — prose measured with every heading line removed. They exist only as headings. This campaign's admission rule states that a phrase is registered only when the concept is independently attested (already in the registry, or defined in the prose) and never because it appears as a heading; the rule refused bare `RF`, `títulos híbridos`, `aplicações de renda fixa`, `riscos de derivativos`, `call/put` and `estruturação de áreas de análise` on exactly this ground. Registering the remaining 26 to move the number would abandon the rule at the point where it costs something, which is the only point where a rule is worth anything.",
+  "headings": [
+    {
+      "admissible_under_the_rule": false,
+      "class": "ellipsis",
+      "heading": "Macro e Micro-Alocação",
+      "matched_parts": [
+        "Micro-Alocação"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "ellipsis",
+      "heading": "Regular e Percentual",
+      "matched_parts": [
+        "Percentual"
+      ],
+      "occurrences": 2,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "ellipsis",
+      "heading": "Relação entre Títulos Públicos e Privados",
+      "matched_parts": [
+        "Títulos Públicos"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "ellipsis",
+      "heading": "Renda Fixa com Call/Put",
+      "matched_parts": [
+        "Renda Fixa",
+        "Call",
+        "Put"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "instruction",
+      "heading": "Exemplo: Compra de Contrato Futuro",
+      "matched_parts": [
+        "Compra",
+        "Contrato Futuro"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 1
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "instruction",
+      "heading": "Exemplo: Venda de Contrato Futuro",
+      "matched_parts": [
+        "Venda",
+        "Contrato Futuro"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 1
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "instruction",
+      "heading": "Títulos Híbridos: Exemplo de Cálculo",
+      "matched_parts": [
+        "Títulos",
+        "Cálculo"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "matcher-bug",
+      "heading": "Resolução CVM 175/22",
+      "matched_parts": [
+        "Resolução CVM 175"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 2
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "modifier",
+      "heading": "Fundamentos da Gestão de Risco",
+      "matched_parts": [
+        "Gestão de Risco"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "modifier",
+      "heading": "Outras Estratégias de Gestão de Carteiras de Renda Fixa",
+      "matched_parts": [
+        "Estratégias",
+        "Gestão de Carteiras de Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 1
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "modifier",
+      "heading": "Principais Estratégias",
+      "matched_parts": [
+        "Estratégias"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 2
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "modifier",
+      "heading": "Principais Riscos",
+      "matched_parts": [
+        "Riscos"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "modifier",
+      "heading": "Principais Riscos do Investidor",
+      "matched_parts": [
+        "Riscos",
+        "Investidor"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "ocr-typo",
+      "heading": "Medidas de Retorno de Renda Rixa",
+      "matched_parts": [
+        "Medidas de Retorno"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Demonstrações Contábeis & Auditoria",
+      "matched_parts": [
+        "Demonstrações Contábeis",
+        "Auditoria"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Em relação à contraparte da classe",
+      "matched_parts": [
+        "contraparte da classe"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Estruturação de áreas de análise na gestão de Renda Variável",
+      "matched_parts": [
+        "Estruturação de áreas de análise",
+        "Renda Variável"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Gestão de Fundos de Fundos de Renda Variável",
+      "matched_parts": [
+        "Fundos de Fundos",
+        "Renda Variável"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "IPS e Alocação Estratégica na prática",
+      "matched_parts": [
+        "IPS",
+        "Alocação Estratégica"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Investimento em cotas de outros FIF",
+      "matched_parts": [
+        "Investimento",
+        "cotas",
+        "FIF"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Negociação em Mercados Organizados",
+      "matched_parts": [
+        "Negociação",
+        "Mercados Organizados"
+      ],
+      "occurrences": 2,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Performance das Estratégias",
+      "matched_parts": [
+        "Performance",
+        "Estratégias"
+      ],
+      "occurrences": 2,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Riscos associados a títulos de Renda Fixa",
+      "matched_parts": [
+        "Riscos",
+        "títulos de Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "prepositional-compound",
+      "heading": "Riscos em Aplicações de Renda Fixa",
+      "matched_parts": [
+        "Riscos",
+        "Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "serial",
+      "heading": "CY: Exemplo de Cálculo 1",
+      "matched_parts": [
+        "Cálculo"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "serial",
+      "heading": "CY: Exemplo de Cálculo 2",
+      "matched_parts": [
+        "Cálculo"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": true,
+      "class": "serial",
+      "heading": "Gestão de Carteiras de Renda Fixa 2",
+      "matched_parts": [
+        "Gestão de Carteiras de Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 1
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "serial",
+      "heading": "Gestão de Carteiras de Renda Fixa I",
+      "matched_parts": [
+        "Gestão de Carteiras de Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    },
+    {
+      "admissible_under_the_rule": false,
+      "class": "serial",
+      "heading": "Gestão de Carteiras de Renda Fixa II",
+      "matched_parts": [
+        "Gestão de Carteiras de Renda Fixa"
+      ],
+      "occurrences": 1,
+      "prose_occurrences_of_the_phrase": 0
+    }
+  ],
+  "registry": {
+    "version": "2.32.0"
+  },
+  "schema_version": "coverage-ceiling-v1",
+  "target": 0.95,
+  "what_would_be_needed_to_reach_95": "13 more headings. The only classes with that much mass left are `modifier` (a registered subject behind a quantifier: `Principais Riscos`, where `riscos` IS registered) and `serial` (a fully-matched concept followed by a volume numeral: `Gestão de Carteiras de Renda Fixa II`). Both could be closed by widening what the metric strips as non-subject decoration — `variants()` already strips enumerations and chapter citations on the same principle. That change is NOT made here. Widening the strip list at the moment it is what closes the gate is the exact move an adversarial review already caught once in this campaign, when an INSTRUCTION clause was deleting a real CVM concept from the denominator. Whether the metric SHOULD credit a heading whose subject is registered but whose modifier is not is a definition question, and it is not one to settle while it doubles as the difference between passing and failing."
+}

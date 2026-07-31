@@ -1,0 +1,73 @@
+{
+  "batch": 45,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Six terms from the remaining partial-heading bucket, every one prose-attested, none admitted on the strength of appearing in a heading. Prose counts exclude heading lines outright: `negociação` 40, `auditoria` 9, `gestão de recursos de terceiros` 6, `IPS` 6, `contraparte da classe` 2, `obrigações do gestor` 1.\n\n`IPS` is the clearest gap of the six and shows how the heading metric earns its keep: the corpus writes `a Política de Investimentos (IPS)` three separate times, glossing the acronym against the Portuguese name, and NEITHER side was registered. A dictionary of this domain missing the investment policy statement is a real hole, and it surfaced from a heading (`IPS e Alocação Estratégica na prática`) that the dictionary could not resolve.\n\nRefused again, for the third batch running, on the same rule: `aplicações de renda fixa` (0 prose), `riscos de derivativos` (0 prose), `estruturação de áreas de análise` (0 prose), `performance das estratégias` (0 prose), `call/put` (0 prose), `títulos híbridos` (0 prose). All appear only as headings. Their headings stay partial and count against the score, which is where the remaining shortfall lives.",
+  "concepts": [
+    {
+      "id": "artifact.investment_policy_statement",
+      "en": "investment policy statement",
+      "pt": "Política de Investimentos",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The document fixing a portfolio's objectives, constraints and admissible asset classes, which the allocation process then takes as its premises.",
+      "alt_en": ["IPS"],
+      "alt_pt": ["Políticas de Investimentos"],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "action.trade",
+      "en": "trading",
+      "pt": "negociação",
+      "class": "action",
+      "pos": "noun",
+      "def": "Buying and selling an instrument in a market, whether on an exchange or over the counter.",
+      "alt_en": [],
+      "alt_pt": ["negociações"],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "technical.audit",
+      "en": "audit",
+      "pt": "auditoria",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Independent examination of a fund's accounts by a firm registered with the regulator, required annually.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.third_party_asset_management",
+      "en": "third party asset management",
+      "pt": "Gestão de Recursos de Terceiros",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Managing money belonging to others under a fiduciary mandate, the activity the ANBIMA code regulates.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "technical.manager_obligations",
+      "en": "manager obligations",
+      "pt": "Obrigações do Gestor",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The duties the regulation places on the portfolio manager, as distinct from those it places on the administrator.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "actor.class_counterparty",
+      "en": "counterparty of the class",
+      "pt": "contraparte da classe",
+      "class": "actor",
+      "pos": "noun",
+      "def": "The party on the other side of a transaction entered into by a share class, whose credit the class is exposed to.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    }
+  ]
+}

@@ -138,7 +138,22 @@ def variants(title: str) -> list[str]:
         dash = GLOSS_DASH.match(candidate)
         if dash:
             out += [dash.group(1).strip(), dash.group(2).strip()]
-    return [item for item in dict.fromkeys(out) if item]
+    # A conjunctive heading states its shared head ONCE, and the two sides of the ellipsis do not
+    # agree in number: `Classes Aberta e Fechada` needs `Classe Fechada` (singular, because that
+    # is the registered compound) while `Riscos de Derivativos e Risco Operacional` needs `Riscos
+    # de Derivativos` (plural, for the same reason). Two attempts to pick ONE number in the
+    # splitter each fixed one of these and broke the other, which is the signal that the choice
+    # does not belong in the splitter at all.
+    #
+    # So both numbers are offered and the REGISTRY decides. This cannot over-generate a false
+    # match: a candidate only counts when a registered form equals it exactly, so a spelling the
+    # dictionary does not hold matches nothing. It admits no vocabulary and changes no denominator.
+    singular = [
+        " ".join(word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
+                 for word in item.split())
+        for item in out
+    ]
+    return [item for item in dict.fromkeys(out + singular) if item]
 
 
 # A comma is a coordinator in a list exactly as `e` is, and the shipped contract already says a
@@ -177,34 +192,29 @@ def conjuncts(title: str) -> list[str]:
     head = parts[0].split()
     if len(head) > 1 and all(len(part.split()) < len(head) for part in parts[1:]):
         shared = head[:len(head) - len(parts[1].split())]
-        singular = [word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
-                    for word in shared]
-        def borrow(words: list[str]) -> str:
-            # Only lend the head to a conjunct that does not already have one. Without this,
-            # `Riscos de Derivativos e Risco Operacional` came out `Risco Risco Operacional` —
-            # the shared word prepended to a conjunct that already carried it. Found by reverting
-            # a failed experiment and reading what the existing rule actually produces, which is
-            # not the same as reading what it was written to produce.
-            if words and singular and words[0].casefold() == singular[-1].casefold():
-                return " ".join(words)
-            # Lending a SINGULAR head to a conjunct left plural produces a phrase in neither
-            # number. `Classes Restritas & Exclusivas` came out `Classe Exclusivas`, matching
-            # neither the registered `Classe Exclusiva` nor `classes exclusivas`, so an already
-            # registered concept was denied credit by this function rather than by the dictionary.
-            # The head and what it governs have to agree, so the conjunct is singularised by the
-            # same rule that singularised the head — not a new rule, the existing one applied to
-            # the part it was skipping.
-            return " ".join(singular + [
-                word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
-                for word in words
-            ])
 
-        parts = [" ".join(singular + [
-            word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
-            for word in parts[0].split()[len(shared):]
-        ])] + [
-            borrow(part.split()) for part in parts[1:]
-        ]
+        def stem(word: str) -> str:
+            return word.casefold().rstrip("s")
+
+        def borrow(words: list[str]) -> str:
+            # Only lend the head to a conjunct that already lacks one. Without this,
+            # `Riscos de Derivativos e Risco Operacional` came out `Risco Risco Operacional`.
+            # The comparison is on STEMS because the two sides routinely differ in number — the
+            # shared head is plural (`Riscos`) and the conjunct restates it singular (`Risco
+            # Operacional`) — and an exact-string test called those different words and
+            # prepended anyway.
+            if words and shared and stem(words[0]) == stem(shared[-1]):
+                return " ".join(words)
+            return " ".join(shared + words)
+
+        # The head is lent AS THE CORPUS WROTE IT, not singularised. An earlier version
+        # singularised it so that `Classes Restritas & Exclusivas` produced `Classe Exclusiva`,
+        # and that worked for the borrowed conjunct while turning the FIRST conjunct into `Risco
+        # de Derivativo` — a phrase the registry does not hold, because the registered form is
+        # plural. Rewriting a heading into a number the corpus does not use is the same error in
+        # both directions. Leaving the head alone and comparing stems where the comparison
+        # actually happens fixes both without inventing a spelling.
+        parts = [parts[0]] + [borrow(part.split()) for part in parts[1:]]
     return parts
 
 
