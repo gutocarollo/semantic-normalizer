@@ -23,6 +23,30 @@ cl = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(cl)
 
 
+def registry_lines() -> int:
+    """Concepts on disk, derived instead of pinned to a number.
+
+    These tests carried `assertEqual(584, ...)` and `assertEqual("2.36.0", ...)`. What they are
+    actually asserting is that the loader loads EVERYTHING on disk and reports the module's own
+    version — and stating that as literals means every concept added by hand or by
+    `lexicon_pipeline.py` requires hand-editing three tests, which is precisely what stops the
+    build loop from being automatic.
+
+    Deriving loses nothing here: a registry that shrinks in silence is caught by
+    `test_provenance_record_counts_only_grow_unless_a_removal_is_declared`, which reads the
+    append-only ledger and is not fooled by a file that agrees with itself.
+    """
+    return sum(1 for line in REGISTRY.read_text(encoding="utf-8").splitlines() if line.strip())
+
+
+def declared_registry_version() -> str:
+    import re
+    source = (ROOT / "src" / "semantic_normalizer" / "registry.py").read_text(encoding="utf-8")
+    match = re.search(r'REGISTRY_VERSION\s*=\s*"(\d+\.\d+\.\d+)"', source)
+    assert match, "REGISTRY_VERSION not found"
+    return match.group(1)
+
+
 class ControlledLanguageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -38,9 +62,9 @@ class ControlledLanguageTests(unittest.TestCase):
         )
 
     def test_01_registry_is_valid_and_hashed(self):
-        self.assertEqual(584, len(self.lexicon["records"]))
+        self.assertEqual(registry_lines(), len(self.lexicon["records"]))
         self.assertEqual(64, len(self.lexicon["hash"]))
-        self.assertEqual("2.36.0", self.lexicon["version"])
+        self.assertEqual(declared_registry_version(), self.lexicon["version"])
 
     def test_02_validate_registry_cli(self):
         result = self.cli(
@@ -388,7 +412,7 @@ class ControlledLanguageTests(unittest.TestCase):
         explicit = cl.load_registry(REGISTRY, REGISTRY_SCHEMA)
         self.assertEqual(explicit["hash"], packaged["hash"])
         self.assertEqual(explicit["schema_hash"], packaged["schema_hash"])
-        self.assertEqual(584, len(packaged["records"]))
+        self.assertEqual(registry_lines(), len(packaged["records"]))
 
     def test_29_invalid_schema_override_fails_closed(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -595,7 +619,8 @@ class ControlledLanguageTests(unittest.TestCase):
                 check=False,
             )
         self.assertEqual(0, result.returncode, result.stderr)
-        self.assertEqual("584 2.36.0 64", result.stdout.strip())
+        self.assertEqual(
+            f"{registry_lines()} {declared_registry_version()} 64", result.stdout.strip())
 
     def test_42_canonical_mapping_has_local_and_absolute_offsets(self):
         records = self.normalize("First line.\nRetain the file.")

@@ -1,0 +1,64 @@
+{
+  "adjudication_note": "Round 4 of lexicon_pipeline run. Adjudication and adversarial refutation by AI nodes; every citation and example byte-verified against the corpus by the deterministic validator. Per-term reasons live in the run directory.\nRefuted this round: racionalidade (Broken on (f) ONE-SENSE and (a) COMMON-LANGUAGE. The decisive citation is one th); estruturar (Broken on (a) COMMON-LANGUAGE. The def ('lay a problem, a decision or a line of ); estruturado (Broken on (a) COMMON-LANGUAGE and (f) ONE-SENSE. The def ('laid out in explicit,)",
+  "batch": 4,
+  "concepts": [
+    {
+      "alt_en": [],
+      "alt_pt": [
+        "cooperar"
+      ],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#colaborar",
+      "class": "action",
+      "def": "In a strategic game, to choose the mutually beneficial strategy rather than the individually advantageous one that betrays the other player.",
+      "en": "cooperate",
+      "id": "reasoning.cooperate",
+      "neg_pt": [
+        "A vizinha se ofereceu para colaborar com a festa levando um bolo de chocolate."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "colaborarem",
+        "colaborassem",
+        "cooperarem"
+      ],
+      "pos": "verb",
+      "pos_pt": [
+        "Nesse caso, se você também colaborar, pegará um ano de prisão."
+      ],
+      "pt": "colaborar",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [
+        "unstated premise"
+      ],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#premissa-oculta",
+      "class": "technical_term",
+      "def": "A premise an argument leaves unsaid yet which must be true for its conclusion to hold, so it escapes explicit examination.",
+      "en": "hidden premise",
+      "id": "reasoning.hidden_premise",
+      "neg_pt": [
+        "A vistoria encontrou uma premissa oculta atrás do galpão, sem acesso pela rua principal.",
+        "O corretor descobriu uma premissa oculta no fundo do terreno, coberta por mato alto."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "premissas ocultas"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Essas são as premissas ocultas: ideias que não foram ditas, mas que precisam ser verdadeiras para que a conclusão faça sentido.",
+        "Expõe a premissa oculta: o mercado reage às leis, às vezes de forma a contrariar seus efeitos esperados.",
+        "O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento."
+      ],
+      "pt": "premissa oculta",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    }
+  ],
+  "contexts": [
+    "reasoning"
+  ],
+  "corpus_sha256": "a1c046604ae17e7a",
+  "domain": "reasoning"
+}

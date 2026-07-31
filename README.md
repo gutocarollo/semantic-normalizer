@@ -15,13 +15,27 @@ concepts, measured against a 12-file course corpus.
 > ### Construir vs. usar
 >
 > Este README ensina a **usar** o dicionário. Para **construir** um — para um domínio novo, ou para
-> estender este — leia **[BUILDING.md](BUILDING.md)**.
+> estender este — leia **[BUILDING.md](BUILDING.md)**, e rode:
+>
+> ```bash
+> python scripts/lexicon_pipeline.py run --run-dir runs/<nome> \
+>     --domain <dominio> --corpus <dir-com-md> --reference <dir-com-md>
+> ```
 >
 > A distinção importa: `normalize` APLICA um dicionário existente e é instantâneo (3.009 segmentos
 > de um livro em ~2 s). CONSTRUIR o dicionário não é: o pacote CGA custou 47 batches, 68 emendas e
-> 65 mil caracteres de justificativa escrita à mão, tudo versionado em `config/`. A extração de
-> candidatos é automática; **a adjudicação não é**, e três tentativas de automatizá-la estão
-> documentadas como fracassos no cabeçalho de `scripts/score_term_specificity.py`.
+> 65 mil caracteres de justificativa escrita à mão, tudo versionado em `config/`.
+>
+> O `lexicon_pipeline.py` é o orquestrador dessa construção — 9 fases determinísticas, 3 nós de IA
+> (adjudicar, refutar adversarialmente, ler para precisão) e um laço que itera até parar de achar
+> coisa nova. A extração e o ranqueamento de candidatos são automáticos (ATE: keyness G2 +
+> C-value); a **adjudicação é um nó de IA cuja saída passa inteira por um validador determinístico**
+> — citação conferida byte a byte contra a prosa do corpus, atestação de cada grafia, enums do
+> schema. Nada que um modelo devolve entra sem passar por código, e o `APPLY` roda a suíte completa
+> e **reverte** se ela ficar vermelha. Três tentativas antigas de automatizar a adjudicação com
+> estatística pura estão documentadas como fracassos no cabeçalho de
+> `scripts/score_term_specificity.py`; o que mudou não foi a estatística, foi ter um nó que LÊ o
+> corpus e um segundo nó que tenta derrubá-lo.
 
 
 ---

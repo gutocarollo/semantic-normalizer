@@ -19,6 +19,145 @@ divisão que faz o número final significar alguma coisa.
 
 ---
 
+## Um comando: `lexicon_pipeline.py`
+
+Os passos manuais abaixo continuam válidos e continuam sendo a explicação de POR QUE cada decisão
+existe. Mas eles agora têm um orquestrador que os encadeia, roda os independentes em paralelo e
+itera até parar de achar coisa nova:
+
+```bash
+python scripts/lexicon_pipeline.py run --run-dir runs/<nome> \
+    --domain <dominio> --corpus <dir-com-md> --reference <dir-com-md>
+```
+
+O comando avança até onde consegue sozinho e para quando precisa de um nó de IA, saindo com
+**código 3** e a lista de tarefas pendentes. Um driver (sessão de agente, pessoa, ou um adaptador
+de API) responde as tarefas e re-invoca o mesmo comando. O estado inteiro vive em disco.
+
+```
+PREFLIGHT   [det]     corpus e referência resolvem, registry carrega, ou o loop para
+MATCH       [det]     normaliza o corpus com o dicionário ATUAL
+PARTITION   [det]     por frase: coberta / decidida / pendente — coberta NÃO custa IA
+RANK        [det]     ATE: keyness G2 + piso de weirdness + C-value
+ADJUDICATE  [modelo]  é conceito de domínio? propõe o registro inteiro
+REFUTE      [modelo]  revisor adversarial, default REFUTA; proposta tem de sobreviver
+VALIDATE    [det]     citação conferida byte a byte, enums, colisões, atestação em prosa
+APPLY       [det]     batch -> config/, import, bump, SUÍTE INTEIRA — vermelho REVERTE
+MEASURE     [det]     cobertura e contabilidade de decisões por rodada
+CONVERGE    [det]     volta ao MATCH até a fila secar (ou 2 rodadas sem admissão)
+PRECISION   [modelo×2] sorteio semeado, dois leitores independentes, limite Wilson
+REPORT      [det]     3 capítulos: admitido / recusado-com-motivo / precisa-de-dono
+```
+
+**A iteração é Newton-Raphson, com uma ressalva que muda o critério de parada.** Cada rodada
+reduz o resíduo — as frases de prosa que ainda têm token não decidido. Newton converge para a raiz
+de uma função contínua e para quando o resíduo cai abaixo da tolerância; aqui o ponto fixo é
+discreto ("uma rodada inteira não admitiu nada"). A armadilha é que o resíduo pode ir a zero por
+dois motivos opostos: o corpus está coberto, ou os filtros estão estritos demais e a fila secou —
+o análogo de Newton travando num ponto estacionário. Por isso o `REPORT` publica o **teto**: a
+lista dos tokens que sobraram e o motivo de cada recusa. Convergir com teto declarado é honesto;
+convergir e chamar de 100% seria a métrica medindo a si mesma.
+
+### O grafo
+
+```mermaid
+flowchart TD
+    START([corpus .md novo]) --> PRE["PREFLIGHT<br/><i>det</i> — corpus, referência e registry<br/>resolvem, ou o loop para"]
+    PRE --> MATCH["MATCH<br/><i>det</i> — normaliza com o dicionário ATUAL"]
+    MATCH --> PART{"PARTITION<br/><i>det</i> — a frase tem<br/>token não decidido?"}
+
+    PART -->|não| DONE_S["frase encerrada<br/><b>ZERO chamada de IA</b>"]
+    PART -->|sim| RANK["RANK<br/><i>det</i> — keyness G2 + weirdness + C-value"]
+
+    RANK --> PROSE{"o termo ocorre<br/>em PROSA?"}
+    PROSE -->|não| REJ1["recusado: só título,<br/>legenda ou artefato"]
+    PROSE -->|sim| ADJ
+
+    subgraph WAVE1["onda 1 — tarefas independentes, em paralelo"]
+        ADJ["ADJUDICATE<br/><b>IA</b> — conceito de domínio?<br/>propõe o registro inteiro"]
+    end
+
+    ADJ --> VAL{"VALIDATE<br/><i>det</i> — citação é byte a byte?<br/>superfície atestada? enum? id livre?"}
+    VAL -->|falhou, 1ª vez| RETRY["devolve com o erro anexado"]
+    RETRY --> ADJ
+    VAL -->|falhou, 2ª vez| OWNER["capítulo 3:<br/>precisa de dono"]
+    VAL -->|ok| MERGE["MERGE<br/><i>det</i> — dois candidatos, um conceito:<br/>funde e contabiliza AMBOS<br/><i>não fundir = não converge</i>"]
+
+    subgraph WAVE2["onda 2 — depende da onda 1"]
+        MERGE --> REF["REFUTE<br/><b>IA adversarial</b><br/>default REFUTA; lê o corpus por conta própria"]
+    end
+
+    REF -->|refutado| REJ2["capítulo 2:<br/>recusado com motivo"]
+    REF -->|mantido| APPLY["APPLY<br/><i>det</i> — batch, import, bump,<br/>re-corte dos artefatos"]
+
+    APPLY --> SUITE{"SUÍTE INTEIRA<br/>verde?"}
+    SUITE -->|não| REVERT["REVERTE tudo e PARA<br/><i>snapshot restaurado</i>"]
+    SUITE -->|sim| CONV{"CONVERGE<br/>admitiu algo<br/>nesta rodada?"}
+
+    CONV -->|sim| MATCH
+    CONV -->|não, 2ª vez seguida| PREC
+
+    subgraph WAVE3["onda 3 — dois leitores independentes"]
+        PREC["PRECISION<br/><b>IA</b> leitor A + <b>IA</b> leitor B adversarial<br/>sorteio semeado sobre os matches do pack"]
+    end
+
+    PREC --> WILSON["<i>det</i> — discordância entre leitores<br/>conta como ERRO; limite Wilson"]
+    WILSON --> REP["REPORT<br/>admitido / recusado-com-motivo / precisa-de-dono<br/>+ <b>o TETO declarado</b>"]
+    REP --> FIM([pack pronto e medido])
+
+    style ADJ fill:#b05108,color:#fff
+    style REF fill:#b05108,color:#fff
+    style PREC fill:#b05108,color:#fff
+    style REVERT fill:#c22929,color:#fff
+    style OWNER fill:#b05108,color:#fff
+    style DONE_S fill:#dcfce7,stroke:#15803d,color:#111827
+    style FIM fill:#dcfce7,stroke:#15803d,color:#111827
+    style WAVE1 fill:#fafafa,stroke:#9ca3af,stroke-dasharray:6 4
+    style WAVE2 fill:#fafafa,stroke:#9ca3af,stroke-dasharray:6 4
+    style WAVE3 fill:#fafafa,stroke:#9ca3af,stroke-dasharray:6 4
+```
+
+**Laranja = nó de IA. Vermelho = fail-closed. Verde = terminou sem custar IA.**
+
+### Quando a IA NÃO é chamada
+
+A pergunta que o desenho responde: *frase que já bate no dicionário precisa de IA?* **Não.** E a
+unidade de trabalho do modelo não é a frase, é o **termo** — uma decisão sobre `raciocínio` encerra
+as 146 frases onde ele aparece. Medido na rodada 1 sobre o livro de reasoning:
+
+| | frases de prosa | com conceito | sem token indeciso | pendentes |
+|---|---|---|---|---|
+| início da rodada 1 | 2.655 | 3 | 1.001 | 1.651 |
+
+As 1.001 frases sem token indeciso são frases inteiramente de vocabulário comum: já decididas, não
+voltam. As 3 com conceito vieram de `core` — o pack compartilhado — **antes de qualquer rodada de
+IA**, que é a economia se acumulando entre corpora.
+
+### O contrato IA↔código: proposta, nunca escrita
+
+O modelo nunca escreve no registry. A fronteira é um protocolo de arquivo:
+
+```
+<run-dir>/rounds/NN/tasks/pending/<id>.json    o que decidir (auto-contido)
+<run-dir>/rounds/NN/tasks/results/<id>.json    o que o modelo decidiu
+```
+
+Tudo que volta passa pelo `VALIDATE` antes de tocar o estado. Os gates que já barraram coisa de
+verdade:
+
+- **citação verbatim** — `pos_pt` tem de ser substring exata da PROSA do corpus (título e legenda
+  não contam). Citação inventada não entra;
+- **superfície atestada** — cada grafia proposta tem de ocorrer no corpus;
+- **o termo tem de ser decidido** — se o conceito proposto não cobre o candidato, a proposta é
+  recusada. Sem isso o loop admitiria conceito e deixaria o termo pendente para sempre;
+- **exemplo negativo autorado** — `neg_pt` NÃO pode existir no corpus; se existir, foi copiado;
+- **enums do schema**, **id livre**, **autoridade resolve num arquivo do corpus**.
+
+Falhou uma vez: volta ao mesmo nó com o erro anexado. Falhou de novo: vai para o capítulo
+"precisa de dono" e o loop segue. Nenhuma decisão de modelo entra sem passar por código.
+
+---
+
 ## O que a máquina resolve, e o que ela não resolve
 
 Rode o extrator num corpus novo e veja o que ele devolve. Este é o resultado real sobre

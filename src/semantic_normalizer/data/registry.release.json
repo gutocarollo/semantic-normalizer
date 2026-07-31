@@ -1,5 +1,8 @@
 {
-  "added_concepts": [],
+  "added_concepts": [
+    "reasoning.cooperate",
+    "reasoning.hidden_premise"
+  ],
   "affected_concepts": [
     "action.allocate",
     "action.allocate_orders",
@@ -267,6 +270,20 @@
     "quantity.value_added",
     "quantity.variation",
     "quantity.volatility",
+    "reasoning.analogy",
+    "reasoning.argument",
+    "reasoning.attribute",
+    "reasoning.cognitive_bias",
+    "reasoning.conclusion",
+    "reasoning.cooperate",
+    "reasoning.fallacy",
+    "reasoning.heuristic",
+    "reasoning.hidden_premise",
+    "reasoning.matrix",
+    "reasoning.mece",
+    "reasoning.premise",
+    "reasoning.reasoning",
+    "reasoning.reasoning_skills",
     "risk.caution",
     "risk.counterparty",
     "risk.credit",
@@ -587,8 +604,8 @@
     "temporal.until"
   ],
   "approved_at": "2026-07-31T00:00:00Z",
-  "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "The last MEDIA finding from the fresh review, and it needed a narrow fix rather than an obvious one.\n\n`Ao embutir opções de compra ou de venda a títulos` is an elided coordination: `opções de [compra] ou de [venda]` means call options or PUT options. The matcher takes `opções de compra` as `technical.call_option` correctly and then `venda` alone as `action.sell`, so the sentence rewrites to `Ao embutir call ou de vender a título` — the put meaning gone and a noun turned into a verb.\n\nThe obvious fix is wrong. `venda` as `action.sell` is CORRECT nearly everywhere else: `as ordens de compra e venda de ativos devem ser registradas` is genuinely buy and sell orders, and demoting the form would cost that to buy back one event. The campaign already made this mistake once, blocking 149 legitimate rewrites to catch 24. So the collocation is forbidden and the form is left alone, which is what the below-50 % branch of the rule prescribes.\n\nRegistering the coordination as a single concept was considered and rejected: it names call AND put, and a concept holding two opposite senses is the defect that put every corpus put into a call. The residual cost is stated rather than hidden — in that one sentence the put option is now UNTAGGED rather than mistagged. A gap is not as good as a match, and it is much better than an inversion. One occurrence corpus-wide.",
+  "approved_by": "cga-game-delivery-council execution; batch adjudicated against corpus contexts",
+  "change_reason": "reasoning batch 4: 2 concepts added.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -604,13 +621,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "9f1f19ca5a6f261b1724b2acb12893ab3704497ac62396dc72d15d1d559d3441",
-    "registry.provenance.jsonl": "77881b352dc50daed5aacfd42ee204e25f6eb8806c1e65549005f9369ba5838a",
+    "registry.jsonl": "179215a82d174afc06655e0d1b5f1b5c1ad0f159320fd53b19a8f6bacc9d9bdc",
+    "registry.provenance.jsonl": "22d24a263514d7c97bc37b0066d7c580c7676e49facb96e46777aa7ef981aa5f",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.36.0",
+  "rollback_version": "2.1.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.36.0"
+  "version": "2.40.0"
 }

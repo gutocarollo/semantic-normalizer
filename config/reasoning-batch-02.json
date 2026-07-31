@@ -1,0 +1,67 @@
+{
+  "adjudication_note": "Round 2 of lexicon_pipeline run. Adjudication and adversarial refutation by AI nodes; every citation and example byte-verified against the corpus by the deterministic validator. Per-term reasons live in the run directory.\nRefuted this round: alternativas (Fails COMMON-LANGUAGE and SENSE-VS-CITATIONS. The def stipulates the narrow deci); trair (Fails COMMON-LANGUAGE, LABELS and evidence integrity. The corpus uses the ordina); jogo (Fails SENSE-VS-CITATIONS outright: zero of the six supplied citations exhibit th); heurísticas (Fails ONE-SENSE. The corpus explicitly declares two types and the def only cover); julgamento (Fails SENSE-VS-CITATIONS and ONE-SENSE. The def restricts it to the structured e)",
+  "batch": 2,
+  "concepts": [
+    {
+      "alt_en": [
+        "comparison criterion"
+      ],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#atributo",
+      "class": "technical_term",
+      "def": "A criterion of comparison in a structured decision, the dimension along which each alternative is weighted and scored so that the options can be told apart.",
+      "en": "attribute",
+      "id": "reasoning.attribute",
+      "neg_pt": [
+        "A cor vibrante e o aroma cítrico são atributos que tornam o sabonete mais atraente na prateleira."
+      ],
+      "obs_en": [
+        "attributes"
+      ],
+      "obs_pt": [
+        "atributos"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "É justamente nesse ponto que os atributos de comparação entram em cena – são eles que tornam o julgamento possível.",
+        "Sem atributos, qualquer escolha será feita de maneira intuitiva, mesmo que todo o processo anterior tenha sido racional e bem estruturado."
+      ],
+      "pt": "atributo",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [
+        "bias"
+      ],
+      "alt_pt": [
+        "viés cognitivo"
+      ],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#vies",
+      "class": "technical_term",
+      "def": "A systematic distortion of perception or judgement, arising when a mental shortcut runs unchecked, that steers a decision away from the rational choice.",
+      "en": "cognitive bias",
+      "id": "reasoning.cognitive_bias",
+      "neg_pt": [
+        "A costureira cortou o tecido no viés para que a saia caísse melhor no corpo."
+      ],
+      "obs_en": [
+        "cognitive biases"
+      ],
+      "obs_pt": [
+        "vieses",
+        "vieses cognitivos"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Empresas exploram esse viés investindo na repetição constante de marcas e mensagens para criar uma sensação de confiança e familiaridade."
+      ],
+      "pt": "viés",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    }
+  ],
+  "contexts": [
+    "reasoning"
+  ],
+  "corpus_sha256": "a1c046604ae17e7a",
+  "domain": "reasoning"
+}

@@ -1,0 +1,81 @@
+{
+  "adjudication_note": "Round 3 of lexicon_pipeline run. Adjudication and adversarial refutation by AI nodes; every citation and example byte-verified against the corpus by the deterministic validator. Per-term reasons live in the run directory.\nRefuted this round: none",
+  "batch": 3,
+  "concepts": [
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#analogia",
+      "class": "technical_term",
+      "def": "A form of inference that carries a conclusion from one case to another because the two share a relational structure, treated in this corpus as suggestive and illustrative but never probative.",
+      "en": "analogy",
+      "id": "reasoning.analogy",
+      "neg_pt": [
+        "O estilista apresentou a coleção como uma analogia de cores entre o verão e o inverno, apenas para enfeitar o desfile.",
+        "O restaurante montou o prato em analogia às cores da bandeira, sem qualquer intenção de comparar estruturas."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "analogias"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Mas a analogia é traiçoeira: nunca prova nada, apenas sugere.",
+        "Essas quatro formas de inferência — dedução, indução, abdução e analogia — convivem o tempo todo nas decisões do dia a dia."
+      ],
+      "pt": "analogia",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#heuristica",
+      "class": "technical_term",
+      "def": "A mental shortcut or simple decision rule that reaches a judgement from few cues instead of exhaustive analysis, effective when fitted to its environment but a source of cognitive bias when applied automatically.",
+      "en": "heuristic",
+      "id": "reasoning.heuristic",
+      "neg_pt": [
+        "O compilador aplica uma heurística de alocação de registradores para acelerar a compilação do binário."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "heurísticas"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "A boa heurística é aquela que elimina o excesso sem perder a essência.",
+        "A proposta da regra simples, formulada por Kathleen Eisenhardt e Donald Sull⁵⁶, amplia o conceito de heurística para o campo organizacional."
+      ],
+      "pt": "heurística",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [
+        "mutually exclusive and collectively exhaustive"
+      ],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#mece",
+      "class": "technical_term",
+      "def": "The structuring principle that a decomposition must split a problem into categories that are mutually exclusive, with no overlap, and collectively exhaustive, covering the whole.",
+      "en": "MECE",
+      "id": "reasoning.mece",
+      "neg_pt": [
+        "MECE é o código de três letras do aeroporto impresso na etiqueta da bagagem despachada."
+      ],
+      "obs_en": [],
+      "obs_pt": [],
+      "pos": "proper_noun",
+      "pos_pt": [
+        "Ethan Rasiel apresenta os dois componentes básicos de um bom raciocínio estruturado usando o acrônimo MECE.",
+        "O principal benefício do conceito MECE é organizar o pensamento com o máximo de clareza possível."
+      ],
+      "pt": "MECE",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    }
+  ],
+  "contexts": [
+    "reasoning"
+  ],
+  "corpus_sha256": "a1c046604ae17e7a",
+  "domain": "reasoning"
+}

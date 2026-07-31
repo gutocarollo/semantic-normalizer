@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 LANGUAGES = ("en", "pt-BR")
-REGISTRY_VERSION = "2.36.0"
+REGISTRY_VERSION = "2.40.0"
 CONCEPT_ID_RE = re.compile(r"^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$")
 
 
@@ -304,8 +304,34 @@ def load_registry(
             )
         records = selected
 
+    # Building the matcher table. The invariant is that a surface never resolves automatically
+    # to two concepts — but WHERE that is a defect depends on scope, and conflating the two
+    # cases is what would make domain packs impossible.
+    #
+    # Same scope (contexts intersect, or either side is global): a defect. The importer's
+    # demoter should have caught it, and the ledger records the time it did not (`CDS`, batch
+    # 24). Raise, exactly as before.
+    #
+    # Disjoint scopes in an UNSCOPED load: not a defect. `premise` is `entity.premise` in the
+    # CGA pack and `reasoning.premise` in the reasoning pack, and no scoped table ever holds
+    # both — `load_lexicon(contexts=["cga"])` and `load_lexicon(contexts=["reasoning"])` each
+    # see exactly one. What `contexts=None` does is merge every domain, and in a merged view
+    # that surface IS ambiguous. So it is demoted to review, the way an ambiguous surface
+    # always is here, and both owners are reported under `cross_domain_ambiguous` rather than
+    # silently dropped. Raising instead would mean adding any second pack breaks the default
+    # load — plug-and-play that stops working the moment you plug the second thing in.
+    concept_contexts = {
+        record["concept_id"]: {str(name).casefold() for name in record.get("contexts", [])}
+        for record in records
+    }
+
+    def _same_scope(first: str, second: str) -> bool:
+        left, right = concept_contexts.get(first, set()), concept_contexts.get(second, set())
+        return (not left) or (not right) or bool(left & right)
+
     automatic: dict[str, tuple[str, str, str, str]] = {}
     reviews: dict[str, list[tuple[str, str, str, str]]] = defaultdict(list)
+    cross_domain_ambiguous: dict[str, list[str]] = {}
     for record in records:
         cid = record["concept_id"]
         for language in LANGUAGES:
@@ -326,11 +352,22 @@ def load_registry(
                     else "alt"
                 )
                 value = (cid, language, surface, source)
+                if key in cross_domain_ambiguous:
+                    cross_domain_ambiguous[key].append(cid)
+                    reviews[key].append((cid, language, surface, "review"))
+                    continue
                 if key in automatic and automatic[key][0] != cid:
-                    raise ContractError(
-                        f"automatic form collision {surface!r}: "
-                        f"{automatic[key][0]} vs {cid}"
-                    )
+                    incumbent = automatic[key][0]
+                    if _same_scope(incumbent, cid):
+                        raise ContractError(
+                            f"automatic form collision {surface!r}: "
+                            f"{incumbent} vs {cid}"
+                        )
+                    cross_domain_ambiguous[key] = sorted({incumbent, cid})
+                    reviews[key].append((incumbent, automatic[key][1], surface, "review"))
+                    reviews[key].append((cid, language, surface, "review"))
+                    del automatic[key]
+                    continue
                 if key in automatic and automatic[key][1] != language:
                     automatic[key] = (cid, "shared", surface, source)
                 else:
@@ -389,6 +426,13 @@ def load_registry(
         "by_id": runtime_by_id,
         "automatic": automatic,
         "reviews": reviews,
+        # Surfaces two DISJOINT domains both claim automatically. Empty for every scoped load
+        # by construction; non-empty only when `contexts=None` merges packs that were built to
+        # be loaded apart. Reported rather than hidden: a caller seeing `premise` fail to fire
+        # deserves to know it is because two packs own it, not because it is missing.
+        "cross_domain_ambiguous": {
+            surface: sorted(owners) for surface, owners in sorted(cross_domain_ambiguous.items())
+        },
         "contexts": sorted(scope) if scope else None,
         "contexts_available": sorted({
             str(name).casefold()

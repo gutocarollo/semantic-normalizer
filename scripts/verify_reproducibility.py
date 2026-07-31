@@ -20,12 +20,28 @@ The digest is over the concatenated JSONL of every corpus file, in sorted filena
 same `source` string passed to both runs — because `source` is echoed into every record, and
 comparing two runs that were given different paths would compare the paths rather than the
 behaviour.
+
+TWO DIFFERENT QUESTIONS, TWO DIGESTS
+
+Every record echoes the registry seal: `registry_version`, `registry_sha256`,
+`registry_schema_sha256`, `lexicon_version`, `lexicon_sha256`, `tool_version`. Those change on
+every release BY DESIGN, so the byte digest answers "did anything at all change" — the right
+question when checking that a fresh clone reproduces this one, and the wrong question when
+checking whether adding a DOMAIN PACK changed what an existing pack resolves to. There the seal
+always differs and the byte digest reports a difference that is guaranteed and uninformative.
+
+`--semantic` hashes the same records with the seal fields removed. A change there is a change in
+behaviour: a different concept matched, a different span, a different rewrite. It is the digest
+that can actually falsify "packs do not interfere with each other" — and if the two disagree
+(bytes differ, semantics identical) the honest reading is that the release moved and the
+behaviour did not.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -34,7 +50,17 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CORPUS = ROOT.parent / "cga-2026-markdown"
 
 
-def digest_of(src: Path, corpus: Path, contexts: list[str]) -> tuple[str, int, int]:
+# Fields that carry the release identity rather than the result. They change whenever the
+# registry is re-sealed, which is every batch, so a digest that includes them cannot answer a
+# question about behaviour.
+SEAL_FIELDS = (
+    "registry_version", "registry_sha256", "registry_schema_sha256",
+    "lexicon_version", "lexicon_sha256", "tool_version", "schema_version",
+)
+
+
+def digest_of(src: Path, corpus: Path, contexts: list[str],
+              semantic: bool = False) -> tuple[str, int, int]:
     """Normalize every corpus file with the install at `src`; return (sha256, records, files)."""
     chunks: list[bytes] = []
     files = sorted(corpus.glob("*.md"))
@@ -53,6 +79,16 @@ def digest_of(src: Path, corpus: Path, contexts: list[str]) -> tuple[str, int, i
         chunks.append(result.stdout)
     blob = b"".join(chunks)
     records = sum(1 for line in blob.splitlines() if line.strip())
+    if semantic:
+        stripped = []
+        for line in blob.splitlines():
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            for field in SEAL_FIELDS:
+                record.pop(field, None)
+            stripped.append(json.dumps(record, ensure_ascii=False, sort_keys=True))
+        blob = ("\n".join(stripped) + "\n").encode("utf-8")
     return hashlib.sha256(blob).hexdigest(), records, len(files)
 
 
@@ -63,6 +99,9 @@ def main() -> int:
                         help="path to another checkout's src/ to compare against")
     parser.add_argument("--contexts", nargs="+", default=["core", "cga"])
     parser.add_argument("--expect", help="fail unless the digest equals this sha256")
+    parser.add_argument("--semantic", action="store_true",
+                        help="hash the records WITHOUT the release seal, so the digest answers "
+                             "'did behaviour change' instead of 'did the release move'")
     args = parser.parse_args()
 
     corpus = Path(args.corpus)
@@ -73,12 +112,14 @@ def main() -> int:
             f"corpus and not a pass."
         )
 
-    mine, records, files = digest_of(ROOT / "src", corpus, args.contexts)
-    print(f"this install : {mine}  ({records} records over {files} files)")
+    kind = "semantic (seal stripped)" if args.semantic else "bytes (seal included)"
+    mine, records, files = digest_of(ROOT / "src", corpus, args.contexts, args.semantic)
+    print(f"this install : {mine}  ({records} records over {files} files) [{kind}]")
 
     failed = False
     if args.against:
-        other, other_records, _ = digest_of(Path(args.against), corpus, args.contexts)
+        other, other_records, _ = digest_of(Path(args.against), corpus, args.contexts,
+                                            args.semantic)
         print(f"other install: {other}  ({other_records} records)")
         if other == mine:
             print("\nIDENTICAL — the two installs produce byte-identical output.")

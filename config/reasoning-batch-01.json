@@ -1,0 +1,173 @@
+{
+  "adjudication_note": "Round 1 of lexicon_pipeline run. Adjudication and adversarial refutation by AI nodes; every citation and example byte-verified against the corpus by the deterministic validator. Per-term reasons live in the run directory.\nRefuted this round: decisão (Breaks on SENSE-VS-CITATIONS and ONE-SENSE. The def ('the commitment to one alte)",
+  "batch": 1,
+  "concepts": [
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#argumento",
+      "class": "technical_term",
+      "def": "A structured set of premises joined by a logical chain that supports a stated conclusion, and the unit that critical reasoning analyses and evaluates.",
+      "en": "argument",
+      "id": "reasoning.argument",
+      "neg_pt": [
+        "O argumento do filme se passa numa pequena cidade litorânea nos anos 1950."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "argumentos"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Na sua configuração mais simples, um argumento tem três elementos: premissas, encadeamento lógico e conclusão."
+      ],
+      "pt": "argumento",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#conclusao",
+      "class": "technical_term",
+      "def": "The proposition an argument asserts on the basis of its premises, reached through the logical chain that connects them.",
+      "en": "conclusion",
+      "id": "reasoning.conclusion",
+      "neg_pt": [
+        "A conclusão da obra do viaduto ficou para o mês que vem por falta de material."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "conclusões"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Argumentar é apresentar um caminho de razões que leva a uma conclusão."
+      ],
+      "pt": "conclusão",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [
+        "logical fallacy"
+      ],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#falacia",
+      "class": "technical_term",
+      "def": "A rhetorical construction that imitates the appearance of valid logic while hiding a structural error, leading the audience to accept a false conclusion.",
+      "en": "fallacy",
+      "id": "reasoning.fallacy",
+      "neg_pt": [
+        "Chamou de falácia a promessa do vizinho de devolver a furadeira no domingo."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "falácias"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Enquanto os vieses são desvios automáticos do pensamento, as falácias lógicas são construções retóricas que se aproveitam desses desvios para nos convencer de algo falso.",
+        "A falácia do falso dilema, também conhecida como falsa dicotomia, ocorre quando um argumento apresenta apenas duas opções extremas, ignorando alternativas intermediárias."
+      ],
+      "pt": "falácia",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [
+        "decision matrix"
+      ],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#matriz",
+      "class": "technical_term",
+      "def": "A grid whose axes cross two or more relevant dimensions so that alternatives and criteria can be compared in one structured view.",
+      "en": "matrix",
+      "id": "reasoning.matrix",
+      "neg_pt": [
+        "A matriz da transportadora fica em Curitiba e as filiais ficam no litoral."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "matrizes"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Uma matriz nada mais é do que uma grade, com tantas células quanto forem necessárias para representar as variáveis em questão.",
+        "Esse tipo de matriz permite cruzar diferentes dimensões relevantes, como esforço, retorno, risco, complexidade ou prazo, e visualizar as compensações entre elas."
+      ],
+      "pt": "matriz",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#premissa",
+      "class": "technical_term",
+      "def": "A statement taken as given at the start of an argument, on whose truth the validity of the conclusion depends.",
+      "en": "premise",
+      "id": "reasoning.premise",
+      "neg_pt": [
+        "A premissa do romance é que um pescador acha uma garrafa com um mapa dentro."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "premissas"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "A premissa é a condição, o dado, a razão.",
+        "O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento.",
+        "É importante lembrar que as premissas são o solo onde o argumento pisa."
+      ],
+      "pt": "premissa",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#raciocinio",
+      "class": "technical_term",
+      "def": "The structured mental process that links premises, evidence and inference to reach conclusions and guide action, treated in this corpus as a trainable professional competence.",
+      "en": "reasoning",
+      "id": "reasoning.reasoning",
+      "neg_pt": [
+        "Perdi o raciocínio quando o telefone tocou e não lembrei mais onde tinha guardado a chave do carro."
+      ],
+      "obs_en": [],
+      "obs_pt": [
+        "raciocínios"
+      ],
+      "pos": "noun",
+      "pos_pt": [
+        "Faltava-lhes um modelo claro de raciocínio que conectasse conhecimento e ação de maneira eficaz."
+      ],
+      "pt": "raciocínio",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    },
+    {
+      "alt_en": [],
+      "alt_pt": [
+        "Reasoning Skills"
+      ],
+      "authority": "corpus:REASONING_SKILLS_CONSOLIDATED.md#reasoning-skills",
+      "class": "technical_term",
+      "def": "The third pillar of professional competence in this corpus, comprising problem solving, decision making and critical reasoning, which links technical knowledge and interpersonal skill to effective action.",
+      "en": "reasoning skills",
+      "id": "reasoning.reasoning_skills",
+      "neg_pt": [
+        "O jogo mostra as reasoning skills de cada personagem numa barra lateral e libera uma nova a cada dez níveis."
+      ],
+      "obs_en": [],
+      "obs_pt": [],
+      "pos": "noun",
+      "pos_pt": [
+        "As *reasoning skills* são formadas por três elementos essenciais, cada um com um corpo de conhecimento próprio, composto por princípios, métodos e ferramentas específicas."
+      ],
+      "pt": "reasoning skills",
+      "source": "reasoning corpus, adjudicated by an AI node under lexicon_pipeline, upheld by an independent adversarial refuter, citations byte-verified"
+    }
+  ],
+  "contexts": [
+    "reasoning"
+  ],
+  "corpus_sha256": "a1c046604ae17e7a",
+  "domain": "reasoning"
+}

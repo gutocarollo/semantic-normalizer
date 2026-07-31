@@ -452,26 +452,77 @@ class RegistryGovernanceTests(unittest.TestCase):
         Three properties are pinned here, because getting any one wrong makes the packaging
         unsafe rather than merely unhelpful:
 
-          1. an unscoped load is unchanged, so every existing caller is unaffected;
+          1. an unscoped load still carries every record, so no existing caller loses a concept;
           2. a scope strictly shrinks the matcher's automatic table — a form outside the scope is
              not demoted or down-ranked, it is absent, so it cannot collide with the active domain;
           3. the domain-agnostic operators are reachable from EVERY pack. Without this a pack is
-             not a smaller dictionary but a broken one: no `não`, no `exceto`, no `vencimento`.
+             not a smaller dictionary but a broken one: no `não`, no `exceto`, no `vencimento`;
+          4. a surface two DISJOINT packs both claim automatically is ambiguous only in the
+             merged view. This is the property a second pack forced into the open. `premise` is
+             `entity.premise` under `cga` and `reasoning.premise` under `reasoning`; no scoped
+             table ever holds both, so neither pack is degraded, and `contexts=None` — which
+             merges every domain — demotes it to review and names both owners in
+             `cross_domain_ambiguous`. The earlier version of this test asserted
+             `scoped automatic ⊆ unscoped automatic`, which quietly required that two packs
+             never share an automatic surface — a condition no two real domains satisfy, and
+             one that would have made plug-and-play false at the second pack. The
+             non-fabrication property it was reaching for is kept below in its exact form: a
+             scoped table may only contain surfaces the registry actually declares.
         """
         from semantic_normalizer.registry import ContractError, load_registry
+        from semantic_normalizer.normalizer import nfc_casefold
 
         everything = load_registry()
         cga = load_registry(contexts=["cga"])
         core = load_registry(contexts=["core"])
         composed = load_registry(contexts=["core", "cga"])
 
-        self.assertEqual(584, len(everything["records"]))
+        on_disk = sum(1 for line in REGISTRY.read_text(encoding="utf-8").splitlines()
+                      if line.strip())
+        self.assertEqual(on_disk, len(everything["records"]))
         self.assertIsNone(everything["contexts"])
 
         self.assertLess(len(cga["records"]), len(everything["records"]))
         self.assertLess(len(cga["automatic"]), len(everything["automatic"]))
-        self.assertTrue(set(cga["automatic"]) <= set(everything["automatic"]),
-                        "a scoped load invented a surface the full registry does not have")
+
+        # Nothing invented: every automatic surface in a scope is a declared lexical form of the
+        # concept that owns it there. Stronger than the old subset check, which only compared
+        # two derived tables and would have passed a scope that fabricated a surface both views
+        # happened to share.
+        declared = {
+            (record["concept_id"], nfc_casefold(form["form"]))
+            for record in everything["canonical_records"]
+            for forms in record["lexical_forms"].values()
+            for form in forms
+        }
+        for surface, (concept_id, _, _, _) in cga["automatic"].items():
+            self.assertIn((concept_id, surface), declared,
+                          f"scoped load produced {surface!r} for {concept_id}, "
+                          "which the registry does not declare")
+
+        # A scoped load can never report cross-domain ambiguity: by construction the table was
+        # built from one scope.
+        for view in (cga, core, composed):
+            self.assertEqual({}, view["cross_domain_ambiguous"])
+
+        # Anything the merged view demoted is owned by packs that do not share a context, and
+        # each owner still resolves it automatically inside its own scope.
+        contexts_of = {
+            record["concept_id"]: {str(name).casefold() for name in record["contexts"]}
+            for record in everything["canonical_records"]
+        }
+        for surface, owners in everything["cross_domain_ambiguous"].items():
+            self.assertNotIn(surface, everything["automatic"],
+                             "a surface reported as ambiguous is still firing automatically")
+            for first in owners:
+                for second in owners:
+                    if first != second:
+                        self.assertEqual(
+                            set(), contexts_of[first] & contexts_of[second],
+                            f"{surface!r}: {first} and {second} share a context, so this is a "
+                            "registry defect the importer should have demoted, not a "
+                            "cross-domain merge",
+                        )
 
         operators = {record["concept_id"] for record in core["records"]}
         self.assertTrue(operators, "the core pack is empty")

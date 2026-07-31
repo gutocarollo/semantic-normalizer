@@ -7,12 +7,25 @@ Input is an adjudication file: one record per concept, with the sense already de
 the corpus contexts. This script does not choose senses; it expands decisions into records the
 schema accepts and appends one governance event per batch.
 
-`authority` carries the verification state, per plan D1, in one of three closed forms — the
+`authority` carries the verification state, per plan D1, in a closed set of forms — the
 schema has `additionalProperties: false`, so a new field was not an option:
 
     apostila-cga-2026#<file>          definition anchored in the exam material
     openwordnet-pt:1.0.0 ILI=<id>     sense adjudicated over an external candidate
     project-authored:pending-review   authored, no normative source yet
+    corpus:<file>#<hint>              definition anchored in the batch's own corpus file
+
+Domain packs: a batch may carry top-level `"domain"` and `"contexts"` — every concept it adds
+is tagged with those contexts, and the collision demoter below only counts a collision when the
+two owners' contexts INTERSECT. Two concepts in disjoint domains sharing a surface is safe by
+construction: `load_lexicon(contexts=[...])` builds the matcher from the requested scope only,
+so the other domain's form is not in the table. Demoting both — what this script did before —
+destroyed the incumbent pack's automatic form to protect against a collision that cannot occur.
+A record with EMPTY contexts is treated as global and collides with everything.
+
+Real examples: a concept entry may carry `pos_pt`/`neg_pt`/`pos_en`/`neg_en` (lists of example
+sentences). When present they are used verbatim; the template fallback below is the declared
+debt of the CGA campaign (494/584 concepts) and every new pack should send the real thing.
 """
 
 from __future__ import annotations
@@ -30,7 +43,7 @@ RELEASE = DATA / "registry.release.json"
 PROVENANCE = DATA / "registry.provenance.jsonl"
 RECORDED_AT = "2026-07-31T00:00:00Z"
 
-AUTHORITY_PREFIXES = ("apostila-cga-2026", "openwordnet-pt:", "project-authored:")
+AUTHORITY_PREFIXES = ("apostila-cga-2026", "openwordnet-pt:", "project-authored:", "corpus:")
 
 
 def forms(automatic: list[str], observed: list[str]) -> list[dict]:
@@ -63,13 +76,13 @@ def distinct_alts(preferred: str, alternatives: list[str]) -> list[str]:
     return out
 
 
-def build(entry: dict, version: str) -> dict:
+def build(entry: dict, version: str, domains: list[str] | None = None) -> dict:
     en, pt = entry["en"], entry["pt"]
     alt_en = distinct_alts(en, entry.get("alt_en", []))
     alt_pt = distinct_alts(pt, entry.get("alt_pt", []))
     obs_en = entry.get("obs_en", [])
     obs_pt = entry.get("obs_pt", [])
-    domains = ["finance", "cga"]
+    domains = domains or ["finance", "cga"]
     authority = entry["authority"]
     if not authority.startswith(AUTHORITY_PREFIXES):
         raise SystemExit(f"{entry['id']}: authority {authority!r} is outside the closed set")
@@ -91,19 +104,69 @@ def build(entry: dict, version: str) -> dict:
         "forbidden_variants": {"en": [], "pt-BR": []},
         "contexts": domains,
         "authority": authority,
-        "source": "CGA 2026 course material, adjudicated against corpus contexts",
+        "source": entry.get("source", "CGA 2026 course material, adjudicated against corpus contexts"),
         "positive_examples": {
-            "en": [f"The {en} is defined in the CGA material."],
-            "pt-BR": [f"O termo {pt} é definido no material da CGA."],
+            "en": entry.get("pos_en") or [f"The {en} is defined in the CGA material."],
+            "pt-BR": entry.get("pos_pt") or [f"O termo {pt} é definido no material da CGA."],
         },
         "negative_examples": {
-            "en": [f"Do not use {en} outside its financial sense."],
-            "pt-BR": [f"Não use {pt} fora do sentido financeiro."],
+            "en": entry.get("neg_en") or [f"Do not use {en} outside its financial sense."],
+            "pt-BR": entry.get("neg_pt") or [f"Não use {pt} fora do sentido financeiro."],
         },
         "status": "approved",
         "governed_technical_term": bool(entry.get("technical", False)),
         "registry_version": version,
     }
+
+
+def _contexts_of(record: dict) -> frozenset:
+    """Casefolded context set. Empty means GLOBAL: it collides with everything."""
+    return frozenset(str(name).casefold() for name in record.get("contexts", []))
+
+
+def _colliding(ctx_a: frozenset, ctx_b: frozenset) -> bool:
+    return (not ctx_a) or (not ctx_b) or bool(ctx_a & ctx_b)
+
+
+def demote_ambiguous(current: list[dict]) -> list[str]:
+    """Demote automatic forms that two SAME-SCOPE concepts claim.
+
+    Any surface that would resolve automatically to two concepts in the same domain is
+    ambiguous, not automatic: demote every colliding side. Keyed CASEFOLDED, because the
+    contract is. `CDs` and `CDS` are one surface to the matcher and were two keys here, so the
+    demoter passed them and the registry validator rejected the load — a guard that is stricter
+    than the guard it is meant to satisfy is not a guard.
+
+    Context-aware since the domain-pack work: `opção` owned by `cga` and by `reasoning` is NOT a
+    collision, because `load_lexicon(contexts=[...])` never puts both in one matcher table. Only
+    owners whose context sets intersect (or records with no contexts at all, which are global)
+    demote each other — and only the intersecting participants are demoted, never a disjoint
+    third owner of the same surface.
+    """
+    owners: dict[tuple[str, str], list[tuple[str, frozenset]]] = {}
+    for record in current:
+        ctx = _contexts_of(record)
+        for lang, entries in record["lexical_forms"].items():
+            for item in entries:
+                if item["policy"] == "auto":
+                    owners.setdefault((lang, item["form"].casefold()), []).append(
+                        (record["concept_id"], ctx)
+                    )
+    to_demote: set[tuple[tuple[str, str], str]] = set()
+    for key, claimants in owners.items():
+        for cid_a, ctx_a in claimants:
+            for cid_b, ctx_b in claimants:
+                if cid_a != cid_b and _colliding(ctx_a, ctx_b):
+                    to_demote.add((key, cid_a))
+    demoted = []
+    for record in current:
+        for lang, entries in record["lexical_forms"].items():
+            for item in entries:
+                key = (lang, item["form"].casefold())
+                if (key, record["concept_id"]) in to_demote and item["policy"] == "auto":
+                    item["policy"] = "review"
+                    demoted.append(f"{record['concept_id']}.{lang}:{item['form']}")
+    return demoted
 
 
 def main() -> int:
@@ -114,6 +177,8 @@ def main() -> int:
     args = parser.parse_args()
 
     batch = json.loads(Path(args.batch).read_text(encoding="utf-8"))
+    batch_domains = batch.get("contexts") or ["finance", "cga"]
+    batch_ctx = frozenset(str(name).casefold() for name in batch_domains)
     current = [
         json.loads(line)
         for line in REGISTRY.read_text(encoding="utf-8").splitlines()
@@ -121,24 +186,28 @@ def main() -> int:
     ]
     by_id = {record["concept_id"]: record for record in current}
 
-    # Every preferred label already owned, so a batch cannot silently steal one.
-    reserved = {
-        (lang, record["labels"][lang]["pref"]): record["concept_id"]
-        for record in current
-        for lang in ("en", "pt-BR")
-    }
+    # Every preferred label already owned IN AN INTERSECTING SCOPE, so a batch cannot silently
+    # steal one. A pack in a disjoint domain may reuse a pref — SKOS uniqueness holds per
+    # concept scheme, and the scheme here is the context set.
+    reserved: dict[tuple[str, str], list[tuple[str, frozenset]]] = {}
+    for record in current:
+        for lang in ("en", "pt-BR"):
+            reserved.setdefault((lang, record["labels"][lang]["pref"]), []).append(
+                (record["concept_id"], _contexts_of(record))
+            )
 
     added, refused = [], []
     for entry in batch["concepts"]:
-        record = build(entry, args.registry_version)
+        record = build(entry, args.registry_version, batch_domains)
         if record["concept_id"] in by_id:
             refused.append(f"{record['concept_id']} (already in registry)")
             continue
         clash = [
             f"{record['concept_id']}.{lang}:{record['labels'][lang]['pref']} "
-            f"(pref of {reserved[(lang, record['labels'][lang]['pref'])]})"
+            f"(pref of {owner})"
             for lang in ("en", "pt-BR")
-            if (lang, record["labels"][lang]["pref"]) in reserved
+            for owner, ctx in reserved.get((lang, record["labels"][lang]["pref"]), [])
+            if _colliding(batch_ctx, ctx)
         ]
         if clash:
             refused.extend(clash)
@@ -146,33 +215,16 @@ def main() -> int:
         current.append(record)
         by_id[record["concept_id"]] = record
         for lang in ("en", "pt-BR"):
-            reserved[(lang, record["labels"][lang]["pref"])] = record["concept_id"]
+            reserved.setdefault((lang, record["labels"][lang]["pref"]), []).append(
+                (record["concept_id"], batch_ctx)
+            )
         added.append(record["concept_id"])
 
     current.sort(key=lambda record: record["concept_id"])
     for record in current:
         record["registry_version"] = args.registry_version
 
-    # Any surface that would resolve automatically to two concepts is ambiguous, not
-    # automatic: demote every side. The registry contract rejects the collision outright.
-    #
-    # Keyed CASEFOLDED, because the contract is. `CDs` and `CDS` are one surface to the matcher
-    # and were two keys here, so the demoter passed them and the registry validator rejected the
-    # load — a guard that is stricter than the guard it is meant to satisfy is not a guard.
-    owners: dict[tuple[str, str], set[str]] = {}
-    for record in current:
-        for lang, entries in record["lexical_forms"].items():
-            for item in entries:
-                if item["policy"] == "auto":
-                    owners.setdefault((lang, item["form"].casefold()), set()).add(record["concept_id"])
-    ambiguous = {key for key, ids in owners.items() if len(ids) > 1}
-    demoted = []
-    for record in current:
-        for lang, entries in record["lexical_forms"].items():
-            for item in entries:
-                if (lang, item["form"].casefold()) in ambiguous and item["policy"] == "auto":
-                    item["policy"] = "review"
-                    demoted.append(f"{record['concept_id']}.{lang}:{item['form']}")
+    demoted = demote_ambiguous(current)
 
     print(json.dumps({
         "batch": batch["batch"], "added": len(added), "refused": refused,
@@ -182,7 +234,10 @@ def main() -> int:
         print("dry-run: nothing written")
         return 0
 
-    event_id = f"cga-domain-batch-{batch['batch']:02d}-to-{args.registry_version}"
+    event_id = (
+        f"{batch.get('domain', 'cga-domain')}-batch-{batch['batch']:02d}"
+        f"-to-{args.registry_version}"
+    )
     events = [
         line for line in PROVENANCE.read_text(encoding="utf-8").splitlines() if line.strip()
     ]
@@ -219,7 +274,10 @@ def main() -> int:
         "version": args.registry_version,
         "approved_by": "cga-game-delivery-council execution; batch adjudicated against corpus contexts",
         "approved_at": RECORDED_AT,
-        "change_reason": f"CGA domain batch {batch['batch']}: {len(added)} concepts added.",
+        "change_reason": (
+            f"{batch.get('domain', 'CGA domain')} batch {batch['batch']}: "
+            f"{len(added)} concepts added."
+        ),
         "affected_concepts": sorted(r["concept_id"] for r in current),
         "added_concepts": sorted(added),
         "reindex_required": True,

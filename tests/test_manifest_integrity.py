@@ -10,24 +10,26 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "MANIFEST.json"
-SKIP_DIRS = {".git", "__pycache__", "dist", "exports", ".venv", ".pytest_cache"}
-SKIP_NAMES = {"MANIFEST.json", ".DS_Store", ".manifest.before"}
+
+# Imported from the generator instead of restated. This file kept its own copy of the two skip
+# lists, and the copies drifted the moment `runs/` was excluded from cut_manifest.py: the
+# manifest legitimately stopped describing the run directories and the test called that a
+# missing file. Two lists that must agree, maintained in two places, is the same defect this
+# test exists to catch — one level up.
+sys.path.insert(0, str(ROOT / "scripts"))
+from cut_manifest import is_tracked  # noqa: E402
 
 
 def tracked_files() -> set[str]:
-    found = set()
-    for path in ROOT.rglob("*"):
-        if path.is_dir() or any(part in SKIP_DIRS for part in path.parts):
-            continue
-        if path.name in SKIP_NAMES or path.suffix == ".pyc":
-            continue
-        found.add(str(path.relative_to(ROOT)))
-    return found
+    return {
+        str(path.relative_to(ROOT)) for path in ROOT.rglob("*") if is_tracked(path)
+    }
 
 
 class ManifestIntegrityTests(unittest.TestCase):
