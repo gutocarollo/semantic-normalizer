@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "570225d4bc4a823992b1b66cae9cda4f2dc73b1c2372dc3a5064ed0a3a2e3ed8",
+  "package_validation_sha256": "876d729fc8a9e72b588c35871bb9852700251360a5896ba61a44ce2f2138230d",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -256,7 +256,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "570225d4bc4a823992b1b66cae9cda4f2dc73b1c2372dc3a5064ed0a3a2e3ed8",
+      "sha256": "876d729fc8a9e72b588c35871bb9852700251360a5896ba61a44ce2f2138230d",
       "size": 7404
     },
     {
@@ -775,6 +775,11 @@
       "size": 5019
     },
     {
+      "path": "scripts/verify_reproducibility.py",
+      "sha256": "dbe0aeacc30fe618e350752ac9e207904c267f6683dbe2e368ee39081000dfd2",
+      "size": 4291
+    },
+    {
       "path": "src/semantic_normalizer/__init__.py",
       "sha256": "559857d7c238680361ea193c44182e3d0cda5e40e58fa3fbb494936b3dcffde2",
       "size": 1385
@@ -1010,7 +1015,7 @@
       "size": 40326
     }
   ],
-  "payload_files": 197,
+  "payload_files": 198,
   "release_version": "0.4.0",
   "wheel_sha256": "89cb81ef9f14ef2d780cdcddbfdd346ffb59a5b189ee012d9a36bc48724a905c"
 }

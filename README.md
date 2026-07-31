@@ -508,6 +508,32 @@ when the *concept* is independently attested — already in the registry, or def
 prose — **never because it appears as a heading**. Fifteen of the sixteen occur zero times outside a
 heading. Registering them would make the metric measure itself.
 
+
+### Reprodutibilidade entre checkouts
+
+Um clone limpo tem de produzir os mesmos bytes que este. Todo o resto deste repo verifica uma
+ENTRADA — hashes do registry, selo do release, a suíte. Isto verifica a SAÍDA:
+
+```bash
+git clone git@github.com:gutocarollo/semantic-normalizer.git /tmp/check
+python scripts/verify_reproducibility.py --against /tmp/check/semantic-normalizer/src
+```
+
+```
+this install : 416ea7988e8800a33b328d9696ef0cc0d1f8d43902774f81f0bac05292844bf2  (4572 records over 13 files)
+other install: 416ea7988e8800a33b328d9696ef0cc0d1f8d43902774f81f0bac05292844bf2  (4572 records)
+
+IDENTICAL — the two installs produce byte-identical output.
+```
+
+Vale como guarda porque a falha que ele pega é silenciosa: uma mudança na ordem de match, na
+iteração de um `dict`, ou num argumento default deixaria toda a suíte verde e alteraria o que os
+consumidores indexam. O primeiro sintoma seria uma busca que parou de achar algo, meses depois.
+
+Canariado: alterar UMA `definition` no clone faz o digest divergir e o script sair com código 1.
+Um guard que só foi visto passando não é um guard.
+
+
 ---
 
 ## Repository map
