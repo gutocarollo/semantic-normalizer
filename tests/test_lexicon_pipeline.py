@@ -304,6 +304,139 @@ class CitationsMustContainTheTerm(unittest.TestCase):
             self.assertFalse(citation["text"].startswith("#"))
 
 
+class AThirdClaimantCannotLaunderASameScopeCollision(unittest.TestCase):
+    """The cross-domain demotion must not become a hiding place for a real registry defect.
+
+    Found by adversarial review, reproduced here. `load_registry` demotes a surface two DISJOINT
+    packs both claim, which is correct. The first version then waved every LATER claimant
+    through without checking it — so with owners arriving as [cga.a, reasoning.c, cga.b], the
+    same-scope pair cga.a/cga.b landed in `cross_domain_ambiguous` instead of raising, because
+    the disjoint owner had already opened the bucket. Order-dependent, silent, and exactly the
+    failure the branch exists to avoid.
+
+    Built through the real loader and the real schema — a hand-rolled stand-in for
+    `load_registry` would test the stand-in.
+    """
+
+    @staticmethod
+    def concept(cid: str, contexts: list[str], pt: str, en: str) -> dict:
+        forms = lambda s: [{"form": s, "features": {}, "policy": "auto"}]  # noqa: E731
+        labels = lambda s: {"pref": s, "alt": [], "hidden": [], "observed": []}  # noqa: E731
+        return {
+            "concept_id": cid, "definition": f"Definition of {cid} for the collision canary.",
+            "semantic_class": "technical_term", "domains": contexts, "pos": "noun",
+            "labels": {"en": labels(en), "pt-BR": labels(pt)},
+            "lexical_forms": {"en": forms(en), "pt-BR": forms(pt)},
+            "relations": {"broader": [], "narrower": [], "related": []},
+            "forbidden_variants": {"en": [], "pt-BR": []},
+            "contexts": contexts, "authority": "project-authored:pending-review",
+            "source": "canary", "status": "approved", "governed_technical_term": False,
+            "positive_examples": {"en": [f"The {en} appears here."],
+                                  "pt-BR": [f"O {pt} aparece aqui."]},
+            "negative_examples": {"en": [f"Do not use {en} loosely."],
+                                  "pt-BR": [f"Não use {pt} de forma vaga."]},
+        }
+
+    def load(self, concepts: list[dict]):
+        import json as _json
+        sys.path.insert(0, str(SCRIPTS.parent / "src"))
+        from semantic_normalizer.registry import REGISTRY_VERSION, load_registry
+        data = SCRIPTS.parent / "src" / "semantic_normalizer" / "data"
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "registry.jsonl"
+            path.write_text("\n".join(
+                _json.dumps({**c, "registry_version": REGISTRY_VERSION}, ensure_ascii=False,
+                            sort_keys=True) for c in concepts) + "\n", encoding="utf-8")
+            return load_registry(path, data / "registry.schema.json")
+
+    def test_two_disjoint_packs_sharing_a_surface_is_still_allowed(self):
+        view = self.load([
+            self.concept("cga.a", ["cga"], "prazo", "term"),
+            self.concept("reasoning.c", ["reasoning"], "prazo", "deadline"),
+        ])
+        self.assertEqual(sorted(view["cross_domain_ambiguous"]["prazo"]),
+                         ["cga.a", "reasoning.c"])
+        self.assertNotIn("prazo", view["automatic"])
+
+    def test_a_same_scope_collision_still_raises_when_it_arrives_first(self):
+        from semantic_normalizer.registry import ContractError
+        with self.assertRaises(ContractError):
+            self.load([
+                self.concept("cga.a", ["cga"], "prazo", "term"),
+                self.concept("cga.b", ["cga"], "prazo", "period"),
+            ])
+
+    def test_a_same_scope_collision_still_raises_when_a_disjoint_owner_arrives_between(self):
+        """The regression itself: the bucket must not launder the third claimant."""
+        from semantic_normalizer.registry import ContractError
+        with self.assertRaises(ContractError):
+            self.load([
+                self.concept("cga.a", ["cga"], "prazo", "term"),
+                self.concept("reasoning.c", ["reasoning"], "prazo", "deadline"),
+                self.concept("cga.b", ["cga"], "prazo", "period"),
+            ])
+
+
+class TheDryRoundRuleActuallyEndsTheLoop(unittest.TestCase):
+    """`2 dry rounds -> converged` is the loop's central exit and had no test.
+
+    The real run terminated on budget, so this branch was never exercised. Verbatim from the
+    request: "LOOPS DE VERIFICAÇÃO E RE EXECUÇÃO"; the exit condition deserves a canary rather
+    than an inspection.
+    """
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.round_dir = Path(self.tmp.name)
+        (self.round_dir / "round.json").write_text(json.dumps({"round": 1}), encoding="utf-8")
+        self.state = {"round": 1, "dry_rounds": 0, "domain": "d",
+                      "config": {"max_rounds": 8}, "needs_owner": []}
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def close(self, upheld):
+        return pipeline._close_round(self.state, self.round_dir, upheld, [], note="n")
+
+    def test_one_dry_round_keeps_iterating(self):
+        self.close([])
+        self.assertEqual(self.state["dry_rounds"], 1)
+        self.assertEqual(self.state["phase"], "match")
+        self.assertEqual(self.state["round"], 2)
+
+    def test_two_dry_rounds_in_a_row_end_the_loop(self):
+        self.close([])
+        message = self.close([])
+        self.assertEqual(self.state["phase"], "precision")
+        self.assertIn("converged", message)
+
+    def test_an_admission_resets_the_counter(self):
+        """A round that admits something must not count toward the dry streak.
+
+        `apply_batch` is stubbed: it writes to the real registry and runs the whole suite, and
+        it is proven by the live run, not here. What this pins is that one productive round
+        clears a streak — otherwise two isolated dry rounds separated by a productive one would
+        end the loop while the pool is still yielding concepts.
+        """
+        self.close([])
+        self.assertEqual(self.state["dry_rounds"], 1)
+        self.state["round"] = 2
+        original = pipeline.apply_batch
+        pipeline.apply_batch = lambda *a, **k: {"stubbed": True}
+        try:
+            self.close([{"id": "d.x", "term": "x", "terms": ["x"], "why": "w"}])
+        finally:
+            pipeline.apply_batch = original
+        self.assertEqual(self.state["dry_rounds"], 0)
+        self.assertEqual(self.state["phase"], "match")
+
+    def test_the_budget_stops_the_loop_even_while_admissions_continue(self):
+        self.state["config"]["max_rounds"] = 1
+        message = self.close([])
+        self.assertEqual(self.state["phase"], "precision")
+        self.assertIn("max rounds", message)
+
+
 class TheSemanticDigestAnswersTheRightQuestion(unittest.TestCase):
     """Stripping the seal must remove the release identity and nothing else.
 

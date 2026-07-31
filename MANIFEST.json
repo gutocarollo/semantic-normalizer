@@ -51,7 +51,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 10316,
-      "sha256": "2ddf46e371edcd518357bf9cf0d96c2f9251401ce6358fda9bd75c8eeebc731b"
+      "sha256": "6a0246c3b31977af2d225b8e40263f543de9ba7a4a59f4716ab4455ab6cd93be"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -896,7 +896,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7404,
-      "sha256": "1c47f8c0137ce84a45b6586c734cb422a882220a5113853215fef7e71854219c"
+      "sha256": "1b14d3ed983f6a4ee20053517a095d58a1df734fdd961b4c223b46078c980cec"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -951,7 +951,7 @@
     {
       "path": "reports/release-manifest.json",
       "size_bytes": 35110,
-      "sha256": "8a4a0bc3a0094046334feab1133495f1a373e3b784727b61038700878c7184a3"
+      "sha256": "d5717a808ea1616f10b04a38aad26704f2c429fbbe8db382b825d80d8101229a"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1575,8 +1575,8 @@
     },
     {
       "path": "src/semantic_normalizer/registry.py",
-      "size_bytes": 22334,
-      "sha256": "49c0714b59d432819c62ff983efa6f0eb70933bf6d437a2ccf2408083c99eec5"
+      "size_bytes": 23369,
+      "sha256": "0abf0fa6ffde455ad95b9df5682bad9c7e08e8777817b279a17772e69aab2337"
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -1625,8 +1625,8 @@
     },
     {
       "path": "tests/test_lexicon_pipeline.py",
-      "size_bytes": 18664,
-      "sha256": "67b3b65ea13b9de64a5de3c46d6ac5f48bafc4d4cf86de3040e379309e490189"
+      "size_bytes": 25267,
+      "sha256": "a1fdbb2c5d35ebc5ac8e50b25d7ead1d0d4fdc9150199e2cf3b33e319740d227"
     },
     {
       "path": "tests/test_manifest_integrity.py",

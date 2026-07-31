@@ -353,6 +353,19 @@ def load_registry(
                 )
                 value = (cid, language, surface, source)
                 if key in cross_domain_ambiguous:
+                    # A third claimant must be checked against EVERY owner already collected,
+                    # not waved through because the surface is already marked ambiguous. The
+                    # first version appended blindly, and an adversarial review reproduced the
+                    # consequence: with owners arriving as [cga.a, reasoning.c, cga.b], the
+                    # same-scope pair `cga.a`/`cga.b` was silently demoted to review instead of
+                    # raising, because `reasoning.c` had already opened the bucket. That is a
+                    # registry defect wearing the costume of a legitimate cross-domain merge —
+                    # precisely the failure this whole branch must not be able to produce.
+                    for owner in cross_domain_ambiguous[key]:
+                        if _same_scope(owner, cid):
+                            raise ContractError(
+                                f"automatic form collision {surface!r}: {owner} vs {cid}"
+                            )
                     cross_domain_ambiguous[key].append(cid)
                     reviews[key].append((cid, language, surface, "review"))
                     continue
