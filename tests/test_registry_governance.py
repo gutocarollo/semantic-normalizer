@@ -253,7 +253,12 @@ class RegistryGovernanceTests(unittest.TestCase):
         ("entity.class", "pt-BR", "classes"): "matched asset-class context as fund-share class",
         ("artifact.configuration", "pt-BR", "ajustes"): "matched daily futures margin",
         ("technical.long_position", "pt-BR", "comprado"): "matched a purchased CD, not a trading long",
-        ("technical.short_position", "pt-BR", "vendido"): "same shape as `comprado`",
+        # REMOVED after measurement. This entry was reasoning by analogy — `comprado` was
+        # measured wrong, `vendido` looked similar, so it was rejected without being read. The
+        # corpus has one occurrence, `está vendido (short) no valor de R$ 15 milhões`, and it is
+        # the short position. A guard entered on a resemblance is the same defect this whole
+        # campaign kept finding, in the guard rather than in the registry. `comprado` stays: its
+        # single occurrence, `os CDs comprado por meio de um banco segurado`, really is wrong.
         ("technical.information_ratio", "pt-BR", "IR"): "shares the acronym with Imposto de Renda",
         ("entity.income_tax", "pt-BR", "IR"): "shares the acronym with Information Ratio",
         ("entity.resource", "en", "funds"): "matched 'Hedge Funds'",
@@ -262,6 +267,11 @@ class RegistryGovernanceTests(unittest.TestCase):
 
     def test_forms_adjudication_rejected_never_return_as_automatic(self):
         """A form rejected on a concept must not come back automatic on that concept.
+
+        Every entry must name a MEASURED failure, not a resemblance to one. `vendido` sat here
+        for looking like `comprado` until someone read its single occurrence and found it
+        correct; an unmeasured guard costs recall exactly as silently as an unmeasured form
+        costs precision.
 
         This guards the one defect that recurred across batches: `valores` was removed from
         `quantity.value` in batch 3 for matching *Bolsa de Valores*, then reintroduced in

@@ -1,0 +1,22 @@
+{
+  "batch": 17,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Phase two: closing the review backlog the round-3 review named as where the remaining recall lives. scripts/audit_review_backlog.py measured all 194 forms held at review and found only 28 are contested and 9 measured — the other 157 are `observed` inflections, filed there by the importer because a GENERATOR must not emit them, which is a different question from whether a MATCHER may accept them. Five of the high-volume candidates turned out to be genuinely ambiguous and are registered here as the concepts they were absorbing rather than promoted: `ajuste` is daily futures settlement and convexity adjustment, `Banco Central` is the ECB as often as BACEN, `gestão` is portfolio, resource and risk management, `aplicação` is both investing and applying a rate.",
+  "concepts": [
+    {"id": "technical.daily_settlement", "en": "daily settlement", "pt": "ajuste diário", "class": "technical_term", "pos": "noun",
+     "def": "The daily cash adjustment of a futures position to the settlement price, which removes counterparty risk.",
+     "alt_pt": ["ajustes diários"], "technical": true,
+     "authority": "apostila-cga-2026#02-gestao-de-carteiras-renda-variavel"},
+    {"id": "technical.convexity_adjustment", "en": "convexity adjustment", "pt": "ajuste de convexidade", "class": "technical_term", "pos": "noun",
+     "def": "The correction added to a duration estimate to account for the curvature of the price-yield relation.",
+     "technical": true, "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"},
+    {"id": "actor.ecb", "en": "european central bank", "pt": "banco central europeu", "class": "actor", "pos": "proper_noun",
+     "def": "The central bank of the euro area, which publishes the ESTR reference rate.",
+     "alt_en": ["ECB"], "alt_pt": ["BCE"],
+     "authority": "apostila-cga-2026#01-investimentos-no-exterior"},
+    {"id": "technical.risk_management", "en": "risk management", "pt": "gestão de risco", "class": "technical_term", "pos": "noun",
+     "def": "The process of identifying, measuring and mitigating the risks a portfolio or institution runs.",
+     "alt_pt": ["gestão de riscos", "gerenciamento de riscos"], "technical": true,
+     "authority": "apostila-cga-2026#06-gestao-de-riscos"}
+  ]
+}

@@ -1,15 +1,21 @@
 {
   "baseline_ref": "eb622bf",
-  "concepts_that_gained_events": 88,
+  "concepts_that_gained_events": 125,
   "concepts_that_lost_events": 60,
-  "events_after": 6860,
+  "events_after": 7528,
   "events_before": 6522,
   "gained": [
     {
-      "after": 255,
+      "after": 253,
       "before": 6,
       "concept_id": "entity.asset",
-      "delta": 249
+      "delta": 247
+    },
+    {
+      "after": 180,
+      "before": 27,
+      "concept_id": "action.invest",
+      "delta": 153
     },
     {
       "after": 85,
@@ -18,10 +24,64 @@
       "delta": 85
     },
     {
+      "after": 67,
+      "before": 20,
+      "concept_id": "action.pay",
+      "delta": 47
+    },
+    {
+      "after": 57,
+      "before": 12,
+      "concept_id": "action.analyse",
+      "delta": 45
+    },
+    {
+      "after": 59,
+      "before": 22,
+      "concept_id": "action.calculate",
+      "delta": 37
+    },
+    {
+      "after": 41,
+      "before": 6,
+      "concept_id": "action.decide",
+      "delta": 35
+    },
+    {
+      "after": 32,
+      "before": 3,
+      "concept_id": "action.allocate",
+      "delta": 29
+    },
+    {
+      "after": 51,
+      "before": 25,
+      "concept_id": "action.buy",
+      "delta": 26
+    },
+    {
       "after": 26,
       "before": 0,
       "concept_id": "technical.irr",
       "delta": 26
+    },
+    {
+      "after": 26,
+      "before": 0,
+      "concept_id": "technical.risk_management",
+      "delta": 26
+    },
+    {
+      "after": 260,
+      "before": 235,
+      "concept_id": "risk.financial",
+      "delta": 25
+    },
+    {
+      "after": 23,
+      "before": 0,
+      "concept_id": "entity.subclass",
+      "delta": 23
     },
     {
       "after": 23,
@@ -30,10 +90,58 @@
       "delta": 23
     },
     {
+      "after": 25,
+      "before": 3,
+      "concept_id": "action.redeem",
+      "delta": 22
+    },
+    {
+      "after": 26,
+      "before": 5,
+      "concept_id": "action.subscribe",
+      "delta": 21
+    },
+    {
+      "after": 42,
+      "before": 22,
+      "concept_id": "action.sell",
+      "delta": 20
+    },
+    {
+      "after": 18,
+      "before": 0,
+      "concept_id": "actor.essential_service_provider",
+      "delta": 18
+    },
+    {
       "after": 16,
       "before": 0,
       "concept_id": "technical.otc_market",
       "delta": 16
+    },
+    {
+      "after": 15,
+      "before": 0,
+      "concept_id": "technical.indexing",
+      "delta": 15
+    },
+    {
+      "after": 14,
+      "before": 0,
+      "concept_id": "technical.swap_leg",
+      "delta": 14
+    },
+    {
+      "after": 15,
+      "before": 2,
+      "concept_id": "action.reinvest",
+      "delta": 13
+    },
+    {
+      "after": 24,
+      "before": 11,
+      "concept_id": "system.service",
+      "delta": 13
     },
     {
       "after": 13,
@@ -44,8 +152,14 @@
     {
       "after": 13,
       "before": 0,
-      "concept_id": "technical.swap_leg",
+      "concept_id": "technical.valuation_multiple",
       "delta": 13
+    },
+    {
+      "after": 12,
+      "before": 0,
+      "concept_id": "actor.debtor",
+      "delta": 12
     },
     {
       "after": 12,
@@ -54,15 +168,39 @@
       "delta": 12
     },
     {
+      "after": 12,
+      "before": 0,
+      "concept_id": "technical.settlement",
+      "delta": 12
+    },
+    {
+      "after": 11,
+      "before": 0,
+      "concept_id": "quantity.value_added",
+      "delta": 11
+    },
+    {
       "after": 11,
       "before": 0,
       "concept_id": "technical.sofr",
       "delta": 11
     },
     {
+      "after": 12,
+      "before": 2,
+      "concept_id": "action.manage_portfolio",
+      "delta": 10
+    },
+    {
       "after": 10,
       "before": 0,
       "concept_id": "condition.provided_that",
+      "delta": 10
+    },
+    {
+      "after": 10,
+      "before": 0,
+      "concept_id": "entity.closed_class",
       "delta": 10
     },
     {
@@ -90,6 +228,12 @@
       "delta": 9
     },
     {
+      "after": 9,
+      "before": 0,
+      "concept_id": "technical.risk_free_rate",
+      "delta": 9
+    },
+    {
       "after": 8,
       "before": 0,
       "concept_id": "polarity.prohibition",
@@ -100,150 +244,6 @@
       "before": 0,
       "concept_id": "technical.active_return",
       "delta": 8
-    },
-    {
-      "after": 12,
-      "before": 4,
-      "concept_id": "technical.hedge_fund",
-      "delta": 8
-    },
-    {
-      "after": 8,
-      "before": 0,
-      "concept_id": "technical.modified_duration",
-      "delta": 8
-    },
-    {
-      "after": 8,
-      "before": 0,
-      "concept_id": "technical.performance_attribution",
-      "delta": 8
-    },
-    {
-      "after": 8,
-      "before": 0,
-      "concept_id": "technical.strips",
-      "delta": 8
-    },
-    {
-      "after": 8,
-      "before": 0,
-      "concept_id": "technical.total_return_equity_swap",
-      "delta": 8
-    },
-    {
-      "after": 7,
-      "before": 0,
-      "concept_id": "polarity.exception",
-      "delta": 7
-    },
-    {
-      "after": 206,
-      "before": 199,
-      "concept_id": "polarity.negation",
-      "delta": 7
-    },
-    {
-      "after": 7,
-      "before": 0,
-      "concept_id": "technical.current_yield",
-      "delta": 7
-    },
-    {
-      "after": 7,
-      "before": 0,
-      "concept_id": "technical.expected_loss",
-      "delta": 7
-    },
-    {
-      "after": 7,
-      "before": 0,
-      "concept_id": "technical.garp",
-      "delta": 7
-    },
-    {
-      "after": 7,
-      "before": 0,
-      "concept_id": "technical.money_weighted_return",
-      "delta": 7
-    },
-    {
-      "after": 6,
-      "before": 0,
-      "concept_id": "technical.estr",
-      "delta": 6
-    },
-    {
-      "after": 6,
-      "before": 0,
-      "concept_id": "technical.expected_default_probability",
-      "delta": 6
-    },
-    {
-      "after": 6,
-      "before": 0,
-      "concept_id": "technical.twrr",
-      "delta": 6
-    },
-    {
-      "after": 6,
-      "before": 0,
-      "concept_id": "temporal.until",
-      "delta": 6
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "entity.medium_term_note",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.consumer_price_index",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.long_extension",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.long_only",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.m2_measure",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.pe_ratio",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.probability_distribution",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.value_investing",
-      "delta": 5
-    },
-    {
-      "after": 5,
-      "before": 0,
-      "concept_id": "technical.yield_spread",
-      "delta": 5
     }
   ],
   "lost": [
@@ -258,6 +258,26 @@
       ]
     },
     {
+      "after": 41,
+      "before": 70,
+      "concept_id": "entity.resource",
+      "delta": -29,
+      "examples": [
+        "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o ",
+        "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros "
+      ]
+    },
+    {
+      "after": 283,
+      "before": 309,
+      "concept_id": "quantity.rate",
+      "delta": -26,
+      "examples": [
+        " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
+        "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
+      ]
+    },
+    {
       "after": 148,
       "before": 173,
       "concept_id": "entity.market",
@@ -268,13 +288,13 @@
       ]
     },
     {
-      "after": 48,
-      "before": 70,
-      "concept_id": "entity.resource",
-      "delta": -22,
+      "after": 127,
+      "before": 152,
+      "concept_id": "quantity.value",
+      "delta": -25,
       "examples": [
-        "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o ",
-        "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros "
+        "Valor principal indexado à variação do CPI (Consum",
+        "Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação."
       ]
     },
     {
@@ -295,16 +315,6 @@
       "examples": [
         "de desconto não é a mesma coisa que a taxa de retorno (yield).",
         "High Yield Bonds: Poderíamos traduzir para o português "
-      ]
-    },
-    {
-      "after": 288,
-      "before": 309,
-      "concept_id": "quantity.rate",
-      "delta": -21,
-      "examples": [
-        " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
-        "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
       ]
     },
     {
@@ -338,16 +348,6 @@
       ]
     },
     {
-      "after": 138,
-      "before": 152,
-      "concept_id": "quantity.value",
-      "delta": -14,
-      "examples": [
-        "Valor principal indexado à variação do CPI (Consum",
-        "Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação."
-      ]
-    },
-    {
       "after": 0,
       "before": 12,
       "concept_id": "artifact.record",
@@ -358,16 +358,6 @@
       ]
     },
     {
-      "after": 9,
-      "before": 21,
-      "concept_id": "technical.short_position",
-      "delta": -12,
-      "examples": [
-        "Realizar uma operação LONG & SHORT significa vender uma ação que não possui (fi",
-        " SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outr"
-      ]
-    },
-    {
       "after": 20,
       "before": 31,
       "concept_id": "entity.distribution",
@@ -375,6 +365,16 @@
       "examples": [
         "resgate; e - taxas de administração, gestão, máxima de distribuição, ingresso e saída.",
         "A distribuição de cotas deve ser realizada por instituições"
+      ]
+    },
+    {
+      "after": 10,
+      "before": 21,
+      "concept_id": "technical.short_position",
+      "delta": -11,
+      "examples": [
+        "Realizar uma operação LONG & SHORT significa vender uma ação que não possui (fi",
+        " SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outr"
       ]
     },
     {
@@ -418,13 +418,13 @@
       ]
     },
     {
-      "after": 225,
-      "before": 235,
-      "concept_id": "risk.financial",
-      "delta": -10,
+      "after": 31,
+      "before": 40,
+      "concept_id": "entity.liability",
+      "delta": -9,
       "examples": [
-        "nda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
-        "eguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
+        "Fundos Passivos: procuram acompanhar o benchmark (índice de ",
+        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPO"
       ]
     },
     {
@@ -435,16 +435,6 @@
       "examples": [
         "No entanto, conforme o erro de rastreamento diminui à medida que o tamanho da amostra aumenta, a estratég",
         "O objetivo, então, é neutralizar o risco de mercado na medida em que o gestor acredita não conseguir gerar"
-      ]
-    },
-    {
-      "after": 32,
-      "before": 40,
-      "concept_id": "entity.liability",
-      "delta": -8,
-      "examples": [
-        "Fundos Passivos: procuram acompanhar o benchmark (índice de ",
-        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPO"
       ]
     },
     {
@@ -478,6 +468,26 @@
       ]
     },
     {
+      "after": 210,
+      "before": 217,
+      "concept_id": "entity.portfolio",
+      "delta": -7,
+      "examples": [
+        "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberd",
+        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos"
+      ]
+    },
+    {
+      "after": 196,
+      "before": 203,
+      "concept_id": "instrument.interest",
+      "delta": -7,
+      "examples": [
+        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
+        " o portador do título (a pessoa que compra e recebe os juros)."
+      ]
+    },
+    {
       "after": 0,
       "before": 7,
       "concept_id": "technical.premium",
@@ -485,16 +495,6 @@
       "examples": [
         " pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ",
         "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do "
-      ]
-    },
-    {
-      "after": 197,
-      "before": 203,
-      "concept_id": "instrument.interest",
-      "delta": -6,
-      "examples": [
-        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
-        " o portador do título (a pessoa que compra e recebe os juros)."
       ]
     },
     {
@@ -578,16 +578,6 @@
       ]
     },
     {
-      "after": 159,
-      "before": 163,
-      "concept_id": "quantity.price",
-      "delta": -4,
-      "examples": [
-        "ireito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
-        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de"
-      ]
-    },
-    {
       "after": 21,
       "before": 25,
       "concept_id": "technical.yield_curve",
@@ -628,6 +618,16 @@
       ]
     },
     {
+      "after": 160,
+      "before": 163,
+      "concept_id": "quantity.price",
+      "delta": -3,
+      "examples": [
+        "ireito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
+        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de"
+      ]
+    },
+    {
       "after": 12,
       "before": 15,
       "concept_id": "technical.active_management",
@@ -635,6 +635,16 @@
       "examples": [
         "ocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
         " CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o b"
+      ]
+    },
+    {
+      "after": 19,
+      "before": 22,
+      "concept_id": "technical.convexity",
+      "delta": -3,
+      "examples": [
+        "Sendo assim, a Convexidade é utilizada como medida correção!",
+        "Esse ajuste é chamado Convexidade e que visa justamente a incorporar esse form"
       ]
     },
     {
@@ -728,16 +738,6 @@
       ]
     },
     {
-      "after": 24,
-      "before": 25,
-      "concept_id": "action.buy",
-      "delta": -1,
-      "examples": [
-        "ebe até o momento em que o emissor exerce o direito de comprar de volta o título, uma vez que possui uma op",
-        "xa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra embutida e man"
-      ]
-    },
-    {
       "after": 0,
       "before": 1,
       "concept_id": "action.check",
@@ -787,6 +787,16 @@
       ]
     },
     {
+      "after": 131,
+      "before": 132,
+      "concept_id": "entity.fund_share",
+      "delta": -1,
+      "examples": [
+        "m um período de carência de um ano antes que quaisquer cotas possam ser resgatadas.",
+        "- Proibida a utilização de cota de abertura (ou seja, sempre cota de fechame"
+      ]
+    },
+    {
       "after": 29,
       "before": 30,
       "concept_id": "entity.information",
@@ -794,16 +804,6 @@
       "examples": [
         "Muitas vezes, essas informações não estão amplamente disponíveis e há ainda ",
         "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos su"
-      ]
-    },
-    {
-      "after": 216,
-      "before": 217,
-      "concept_id": "entity.portfolio",
-      "delta": -1,
-      "examples": [
-        "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberd",
-        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos"
       ]
     },
     {
@@ -847,8 +847,8 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 393,
-  "spans_after": 6860,
+  "spans_absorbed_by_a_longer_match": 451,
+  "spans_after": 7528,
   "spans_before": 6522,
   "spans_suppressed_with_no_replacement": 98,
   "suppressed_spans": [

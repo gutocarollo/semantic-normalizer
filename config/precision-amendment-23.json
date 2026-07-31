@@ -1,0 +1,22 @@
+{
+  "id": "precision-sweep-amendment-23",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; tail of the review backlog after amendment 22",
+  "method": "each remaining recoverable form read in every corpus context it occurs in",
+  "reason": "The tail of the backlog: inflections of forms already promoted, plus one that was a missing concept rather than a wrong form.",
+  "operations": [
+    {"op": "promote", "concept": "technical.short_position", "language": "pt-BR", "form": "vendido",
+     "right": 2, "total": 2,
+     "why": "`está vendido (short) no valor de R$ 15 milhões` and `Short Bias ou Viés Vendido` — both the short position, both silent."},
+    {"op": "promote", "concept": "action.calculate", "language": "pt-BR", "form": "cálculos", "right": 4, "total": 4,
+     "why": "Plural of `cálculo`, promoted in amendment 22."},
+    {"op": "promote", "concept": "action.analyse", "language": "pt-BR", "form": "análises", "right": 3, "total": 3},
+    {"op": "promote", "concept": "action.start", "language": "pt-BR", "form": "começa", "right": 4, "total": 4},
+    {"op": "promote", "concept": "action.verify", "language": "pt-BR", "form": "verifique", "right": 4, "total": 4},
+    {"op": "promote", "concept": "action.verify", "language": "pt-BR", "form": "verifica", "right": 1, "total": 1},
+    {"op": "promote", "concept": "action.configure", "language": "pt-BR", "form": "configurando", "right": 1, "total": 1},
+    {"op": "promote", "concept": "action.delete", "language": "pt-BR", "form": "excluindo", "right": 1, "total": 1},
+    {"op": "promote", "concept": "action.start", "language": "pt-BR", "form": "iniciando", "right": 1, "total": 1},
+    {"op": "promote", "concept": "action.start", "language": "pt-BR", "form": "começando", "right": 1, "total": 1}
+  ]
+}

@@ -1,6 +1,25 @@
 {
-  "bare_english_automatic_forms": 249,
+  "bare_english_automatic_forms": 255,
   "findings": [
+    {
+      "compounds": [
+        [
+          "Enhanced Indexing",
+          4
+        ]
+      ],
+      "concept_id": "technical.indexing",
+      "examples": [
+        "ão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
+        "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
+        "ratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
+        "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilidade adicional em constr"
+      ],
+      "form": "Indexing",
+      "fragment_share": 1.0,
+      "inside_a_compound": 4,
+      "occurrences": 4
+    },
     {
       "compounds": [
         [
@@ -61,6 +80,22 @@
         "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em provas."
       ],
       "form": "IBOVESPA",
+      "fragment_share": 1.0,
+      "inside_a_compound": 1,
+      "occurrences": 1
+    },
+    {
+      "compounds": [
+        [
+          "Reasonable Price",
+          1
+        ]
+      ],
+      "concept_id": "quantity.price",
+      "examples": [
+        "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma e"
+      ],
+      "form": "Price",
       "fragment_share": 1.0,
       "inside_a_compound": 1,
       "occurrences": 1
@@ -439,11 +474,11 @@
       "occurrences": 41
     }
   ],
-  "forms_with_fragment_matches": 22,
+  "forms_with_fragment_matches": 24,
   "registry": {
-    "concepts": 333,
-    "version": "2.18.0"
+    "concepts": 351,
+    "version": "2.21.0"
   },
   "schema_version": "compound-fragments-v1",
-  "total_fragment_events": 48
+  "total_fragment_events": 53
 }

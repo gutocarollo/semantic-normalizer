@@ -1,0 +1,73 @@
+{
+  "against_frozen_baseline": {
+    "baseline_target_share": 0.4151,
+    "baseline_unknown_occurrences": 15116,
+    "current_unknown_occurrences": 10902,
+    "meets_target": false,
+    "resolved_occurrences": 4214,
+    "resolved_share": 0.2788
+  },
+  "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
+  "curve": [
+    {
+      "concepts": 25,
+      "occurrences": 740,
+      "share_of_unknown": 0.0679
+    },
+    {
+      "concepts": 50,
+      "occurrences": 1208,
+      "share_of_unknown": 0.1108
+    },
+    {
+      "concepts": 100,
+      "occurrences": 1906,
+      "share_of_unknown": 0.1748
+    },
+    {
+      "concepts": 150,
+      "occurrences": 2448,
+      "share_of_unknown": 0.2245
+    },
+    {
+      "concepts": 200,
+      "occurrences": 2920,
+      "share_of_unknown": 0.2678
+    },
+    {
+      "concepts": 300,
+      "occurrences": 3747,
+      "share_of_unknown": 0.3437
+    }
+  ],
+  "label": "current",
+  "queue": {
+    "queue_registry_version": "2.21.0",
+    "unknown_occurrences": 10902,
+    "unknown_terms": 3794
+  },
+  "registry": {
+    "concepts": 351,
+    "sha256": "4e96b6981cf96f41d95498de352a000cce40bdf2171fd5b364a445c9b507eb0c",
+    "version": "2.21.0"
+  },
+  "sample": {
+    "concepts_per_sentence": 3.6133,
+    "seed": 7,
+    "size": 300,
+    "status": {
+      "accepted": 81,
+      "partial": 4,
+      "review": 215
+    },
+    "unresolved_items": 1970,
+    "with_concept": 290,
+    "with_concept_share": 0.9667
+  },
+  "schema_version": "coverage-v1",
+  "target": {
+    "concepts": 200,
+    "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
+    "resolved_share_of_unknown": 0.2678
+  }
+}

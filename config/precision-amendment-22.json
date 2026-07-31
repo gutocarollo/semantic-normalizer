@@ -1,0 +1,220 @@
+{
+  "id": "precision-sweep-amendment-22",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; scripts/audit_review_backlog.py over all 194 review forms",
+  "method": "every review form classified as contested / measured / observed, then each observed candidate with corpus occurrences read in context before promotion",
+  "reason": "157 of 194 review forms are `observed` inflections. The importer files them there because a generator must not emit them, which is not a reason for the matcher to refuse them. The ambiguous ones are handled by collocation or by registering the concept they were absorbing; the rest are recall that was being given away.",
+  "operations": [
+    {
+      "op": "promote",
+      "concept": "risk.financial",
+      "language": "pt-BR",
+      "form": "riscos",
+      "right": 143,
+      "total": 143,
+      "why": "Plural of `risco`, which is automatic and was swept exhaustively. No competing claimant."
+    },
+    {
+      "op": "promote",
+      "concept": "action.invest",
+      "language": "pt-BR",
+      "form": "investimento",
+      "right": 247,
+      "total": 247,
+      "why": "Nominalisation of `investir`. `investimento` and `investir` denote one concept; keeping them apart is the lexical variation this registry exists to remove."
+    },
+    {
+      "op": "promote",
+      "concept": "action.invest",
+      "language": "pt-BR",
+      "form": "investimentos",
+      "right": 130,
+      "total": 130
+    },
+    {
+      "op": "promote",
+      "concept": "system.service",
+      "language": "pt-BR",
+      "form": "serviços",
+      "right": 91,
+      "total": 91,
+      "why": "Plural of `serviço`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.allocate",
+      "language": "pt-BR",
+      "form": "alocação",
+      "right": 72,
+      "total": 72,
+      "why": "Nominalisation of `alocar`; `alocação de ativos`, `alocação estratégica`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.redeem",
+      "language": "pt-BR",
+      "form": "resgate",
+      "right": 67,
+      "total": 67,
+      "why": "Nominalisation of `resgatar`; always redemption of shares."
+    },
+    {
+      "op": "promote",
+      "concept": "action.buy",
+      "language": "pt-BR",
+      "form": "compra",
+      "right": 62,
+      "total": 62,
+      "why": "Nominalisation of `comprar`. `opção de compra` is longer and takes precedence, so the call-option sense is not affected."
+    },
+    {
+      "op": "promote",
+      "concept": "action.pay",
+      "language": "pt-BR",
+      "form": "pagamento",
+      "right": 52,
+      "total": 52,
+      "why": "Nominalisation of `pagar`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.pay",
+      "language": "pt-BR",
+      "form": "pagamentos",
+      "right": 18,
+      "total": 18
+    },
+    {
+      "op": "promote",
+      "concept": "action.decide",
+      "language": "pt-BR",
+      "form": "decisões",
+      "right": 46,
+      "total": 46,
+      "why": "Nominalisation of `decidir`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.decide",
+      "language": "pt-BR",
+      "form": "decisão",
+      "right": 21,
+      "total": 21
+    },
+    {
+      "op": "promote",
+      "concept": "action.sell",
+      "language": "pt-BR",
+      "form": "venda",
+      "right": 45,
+      "total": 45,
+      "why": "Nominalisation of `vender`. `opção de venda` is longer and takes precedence."
+    },
+    {
+      "op": "promote",
+      "concept": "action.sell",
+      "language": "pt-BR",
+      "form": "vendas",
+      "right": 3,
+      "total": 3
+    },
+    {
+      "op": "promote",
+      "concept": "action.analyse",
+      "language": "pt-BR",
+      "form": "análise",
+      "right": 69,
+      "total": 69,
+      "why": "Nominalisation of `analisar`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.calculate",
+      "language": "pt-BR",
+      "form": "cálculo",
+      "right": 56,
+      "total": 56,
+      "why": "Nominalisation of `calcular`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.rebalance",
+      "language": "pt-BR",
+      "form": "rebalanceamento",
+      "right": 29,
+      "total": 29,
+      "why": "Nominalisation of `rebalancear`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.reinvest",
+      "language": "pt-BR",
+      "form": "reinvestimento",
+      "right": 17,
+      "total": 17,
+      "why": "Nominalisation of `reinvestir`; `risco de reinvestimento`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.identify",
+      "language": "pt-BR",
+      "form": "identificação",
+      "right": 15,
+      "total": 15,
+      "why": "Nominalisation of `identificar`."
+    },
+    {
+      "op": "promote",
+      "concept": "action.subscribe",
+      "language": "pt-BR",
+      "form": "aporte",
+      "right": 17,
+      "total": 17,
+      "why": "Nominalisation of the subscription sense; `aporte de recursos`."
+    },
+    {
+      "op": "promote",
+      "concept": "risk.failure",
+      "language": "pt-BR",
+      "form": "falhas",
+      "right": 6,
+      "total": 6,
+      "why": "Plural of `falha`."
+    },
+    {
+      "op": "add_form",
+      "concept": "action.subscribe",
+      "language": "pt-BR",
+      "form": "aplicação de recursos",
+      "why": "`aplicação` alone is ambiguous — `aplicação da alíquota de imposto` is applying a rate, not investing — so the collocation carries it instead of a promotion. Seven occurrences."
+    },
+    {
+      "op": "add_form",
+      "concept": "action.subscribe",
+      "language": "pt-BR",
+      "form": "aplicação em"
+    },
+    {
+      "op": "add_form",
+      "concept": "action.manage_portfolio",
+      "language": "pt-BR",
+      "form": "gestão de carteiras",
+      "why": "`gestão` alone spans portfolio, resource and risk management. 42 occurrences of this collocation; `gestão de risco` is now its own concept."
+    },
+    {
+      "op": "add_form",
+      "concept": "action.manage_portfolio",
+      "language": "pt-BR",
+      "form": "gestão de recursos"
+    },
+    {
+      "op": "forbid",
+      "concept": "technical.bacen",
+      "language": "pt-BR",
+      "variants": [
+        "Banco Central Europeu"
+      ],
+      "why": "`Banco Central` bare would match the ECB, which is now actor.ecb. Belt and braces alongside the longer form."
+    }
+  ]
+}

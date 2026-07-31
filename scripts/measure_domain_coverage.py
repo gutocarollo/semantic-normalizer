@@ -50,9 +50,23 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--queue", default=str(DEFAULT_QUEUE))
     parser.add_argument("--corpus", default=str(DEFAULT_CORPUS))
-    parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--label", default="baseline", help="tag recorded in the report")
+    parser.add_argument("--output", default=str(ROOT / "reports" / "coverage-current.json"))
+    parser.add_argument("--label", default="current", help="tag recorded in the report")
+    parser.add_argument("--rebaseline", action="store_true",
+                        help="deliberately overwrite the frozen baseline; refuses without this")
     args = parser.parse_args()
+
+    # The frozen baseline is the ONLY stable denominator: every concept added removes its own
+    # occurrences from `unknown`, so a live queue is not comparable across runs. This script used
+    # to DEFAULT to writing over it, and an adversarial review found it had done exactly that —
+    # a 2.13.0 run sitting under `label: baseline`, destroying the 86-concept denominator the
+    # comparison depends on. Defaults now write elsewhere and overwriting takes an explicit flag.
+    if Path(args.output).resolve() == DEFAULT_OUTPUT.resolve() and not args.rebaseline:
+        raise SystemExit(
+            f"refusing to overwrite the frozen baseline at {DEFAULT_OUTPUT.name}. It is the only "
+            "stable denominator this measurement has. Pass --rebaseline if that is really what "
+            "you want, or leave --output at its default."
+        )
 
     sys.path.insert(0, str(ROOT / "src"))
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -110,7 +124,7 @@ def main() -> int:
     # removes its own occurrences from `unknown`.
     frozen = None
     baseline_path = DEFAULT_OUTPUT
-    if baseline_path.is_file() and args.label != "baseline":
+    if baseline_path.is_file() and Path(args.output).resolve() != baseline_path.resolve():
         base = json.loads(baseline_path.read_text(encoding="utf-8"))
         base_total = base["queue"]["unknown_occurrences"]
         resolved = base_total - unknown_total

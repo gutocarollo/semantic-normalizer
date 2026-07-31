@@ -22,16 +22,16 @@
     "usable": true,
     "youden_j": 0.599
   },
-  "bare_automatic_forms": 573,
-  "bare_forms": 761,
+  "bare_automatic_forms": 619,
+  "bare_forms": 777,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 4.13,
+    "mean": 4.03,
     "median": 3,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.55,
-    "zero_sense_forms": 177
+    "stdev": 5.41,
+    "zero_sense_forms": 191
   },
   "forms": [
     {
@@ -763,7 +763,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "serviço",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.stop",
@@ -1941,7 +1941,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "começo",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.credit",
@@ -2045,7 +2045,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "falha",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "technical.futures",
@@ -2222,7 +2222,23 @@
       ],
       "language": "pt-BR",
       "lemma_used": "risco",
-      "policy": "review"
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.settlement",
+      "form": "settlement",
+      "general_senses": 7,
+      "glosses": [
+        "termination of a business operation by using its assets to discharge i",
+        "the act of colonizing; the establishment of colonies; \"the British col",
+        "something settled or resolved; the outcome of decision making; \"they f",
+        "a conclusive resolution of a matter and disposition of it",
+        "a community of people smaller than a town",
+        "a body of people who settle far from home but maintain ties with their"
+      ],
+      "language": "en",
+      "lemma_used": "settlement",
+      "policy": "auto"
     },
     {
       "concept_id": "technical.variance",
@@ -2251,7 +2267,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "venda",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.sell",
@@ -2264,7 +2280,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "venda",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.sell",
@@ -2464,7 +2480,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "cálculo",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.calculate",
@@ -2477,7 +2493,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "cálculo",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "quantity.difference",
@@ -2988,7 +3004,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "compra",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.buy",
@@ -3040,7 +3056,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "decisão",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.decide",
@@ -3053,7 +3069,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "decisão",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "risk.default",
@@ -3122,7 +3138,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "identificação",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.information",
@@ -4185,7 +4201,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "análise",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "technical.arbitrage",
@@ -4659,7 +4675,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "investimento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.invest",
@@ -4671,7 +4687,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "investimento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.liability",
@@ -4778,7 +4794,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "pagamento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.pay",
@@ -4789,7 +4805,7 @@
       ],
       "language": "pt-BR",
       "lemma_used": "pagamento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.pay",
@@ -4866,7 +4882,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "resgate",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.scenario",
@@ -5017,7 +5033,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "vendido",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "quantity.volatility",
@@ -5397,12 +5413,32 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.indexing",
+      "form": "indexação",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "indexação",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.inflation",
       "form": "inflação",
       "general_senses": 2,
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "inflação",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.settlement",
+      "form": "liquidação",
+      "general_senses": 2,
+      "glosses": [
+        "uma ocasião para comprar a preços especialmente reduzidos (geralmente "
+      ],
+      "language": "pt-BR",
+      "lemma_used": "liquidação",
       "policy": "auto"
     },
     {
@@ -5452,6 +5488,36 @@
       "language": "en",
       "lemma_used": "may",
       "policy": "review"
+    },
+    {
+      "concept_id": "technical.valuation_multiple",
+      "form": "multiples",
+      "general_senses": 2,
+      "glosses": [
+        "having or involving or consisting of more than one part or entity or i",
+        "the product of a quantity by an integer; \"36 is a multiple of 9\""
+      ],
+      "language": "en",
+      "lemma_used": "multiple",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.valuation_multiple",
+      "form": "múltiplo",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "múltiplo",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.valuation_multiple",
+      "form": "múltiplos",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "múltiplo",
+      "policy": "auto"
     },
     {
       "concept_id": "action.normalize",
@@ -5697,7 +5763,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "alocação",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "entity.asset",
@@ -5862,6 +5928,17 @@
       "policy": "auto"
     },
     {
+      "concept_id": "actor.debtor",
+      "form": "debtor",
+      "general_senses": 1,
+      "glosses": [
+        "a person who owes a creditor; someone who has the obligation of paying"
+      ],
+      "language": "en",
+      "lemma_used": "debtor",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.bond",
       "form": "debênture",
       "general_senses": 1,
@@ -5897,6 +5974,24 @@
       ],
       "language": "pt-BR",
       "lemma_used": "desenvolvedor",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.debtor",
+      "form": "devedor",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "devedor",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.debtor",
+      "form": "devedores",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "devedor",
       "policy": "auto"
     },
     {
@@ -5982,6 +6077,17 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "imunização",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.indexing",
+      "form": "indexing",
+      "general_senses": 1,
+      "glosses": [
+        "the act of classifying and providing an index in order to make items e"
+      ],
+      "language": "en",
+      "lemma_used": "indexing",
       "policy": "auto"
     },
     {
@@ -6203,6 +6309,26 @@
       "policy": "review"
     },
     {
+      "concept_id": "entity.subclass",
+      "form": "subclasse",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "subclasse",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.subclass",
+      "form": "subclasses",
+      "general_senses": 1,
+      "glosses": [
+        "(biology) a taxonomic category below a class and above an order"
+      ],
+      "language": "en",
+      "lemma_used": "subclass",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.suitability",
       "form": "suitability",
       "general_senses": 1,
@@ -6407,6 +6533,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "actor.ecb",
+      "form": "BCE",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "bce",
+      "policy": "auto"
+    },
+    {
       "concept_id": "system.database",
       "form": "BD",
       "general_senses": 0,
@@ -6557,6 +6692,15 @@
       "glosses": [],
       "language": "en",
       "lemma_used": "db",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.ecb",
+      "form": "ECB",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "ecb",
       "policy": "auto"
     },
     {
@@ -7217,6 +7361,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.risk_free_rate",
+      "form": "TLR",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "tlr",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.total_return_equity_swap",
       "form": "TRES",
       "general_senses": 0,
@@ -7376,7 +7529,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "análises",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.delete",
@@ -7412,7 +7565,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "aporte",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "technical.backtesting",
@@ -7502,7 +7655,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "começando",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.start",
@@ -7547,7 +7700,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "configurando",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "artifact.configuration",
@@ -7826,7 +7979,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "excluindo",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.delete",
@@ -7889,7 +8042,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "iniciando",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.start",
@@ -8141,7 +8294,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "rebalanceamento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.rebalance",
@@ -8222,7 +8375,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "reinvestimento",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.reinvest",
@@ -8432,6 +8585,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.subclass",
+      "form": "subclasses",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "subclasses",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.suitability",
       "form": "suitability",
       "general_senses": 0,
@@ -8501,7 +8663,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "verifica",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "action.verify",
@@ -8537,7 +8699,7 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "verifique",
-      "policy": "review"
+      "policy": "auto"
     },
     {
       "concept_id": "polarity.absence",
@@ -8577,8 +8739,8 @@
     }
   ],
   "registry": {
-    "concepts": 334,
-    "version": "2.19.1"
+    "concepts": 351,
+    "version": "2.21.1"
   },
   "schema_version": "form-polysemy-v1"
 }

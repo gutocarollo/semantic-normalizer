@@ -1,40 +1,40 @@
 {
-  "events_total": 6860,
+  "events_total": 7528,
   "occurrences_per_pair": {
-    "max": 197,
-    "mean": 10.19,
-    "median": 2,
-    "stdev": 23.49
+    "max": 181,
+    "mean": 9.7,
+    "median": 2.0,
+    "stdev": 22.04
   },
   "registry": {
-    "concepts": 334,
-    "version": "2.19.1"
+    "concepts": 351,
+    "version": "2.21.1"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 803,
-      "share": 0.1171
+      "events": 920,
+      "share": 0.1222
     },
     "B_domain_exclusive": {
-      "events": 611,
-      "share": 0.0891
+      "events": 664,
+      "share": 0.0882
     },
     "C_narrow": {
-      "events": 1406,
-      "share": 0.205
+      "events": 1490,
+      "share": 0.1979
     },
     "D_risk_surface": {
-      "events": 4040,
-      "share": 0.5889
+      "events": 4454,
+      "share": 0.5917
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 4040,
-    "floor_if_sweep_all_wrong": 0.4111,
-    "pairs": 229,
-    "share_of_all_events": 0.5889
+    "events": 4454,
+    "floor_if_sweep_all_wrong": 0.4083,
+    "pairs": 262,
+    "share_of_all_events": 0.5917
   },
   "sweep_queue": [
     {
@@ -45,10 +45,9 @@
         "um risco empreendido sem levar em conta possíveis perdas ou danos",
         "A qualidade de ser algo que não te deixa avançar"
       ],
-      "occurrences": 197,
+      "occurrences": 181,
       "quotes": [
         "ulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
-        "rado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
         " (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possue",
         "adimplência do banco, maior será a remuneração, pois maior será o seu risco.",
         " porque se o spread de crédito deles em relação aos títulos livres de risco estiver baixo, há uma confiança grande na economia, pois se",
@@ -80,13 +79,14 @@
         "A classe tipificada como deve ter como principal fator de risco de carteira a variação de preços de moeda estrangeira ou do",
         "elacionados diretamente, ou sintetizados via derivativos, ao fator de risco que dá nome ao tipo.",
         "RCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específ",
-        "A gestão de risco é um componente muito importante na gestão de investimentos",
-        "O processo de gestão de risco demanda: - Identificar quais riscos são enfrentados e qual ",
         "ntados e qual a tolerância a tais riscos; - Medir os níveis atuais de risco e explorar aqueles que se julgam pertinentes para obter ret",
         "o é fundamental para definir políticas e procedimentos para gestão do risco, que é um processo contínuo.",
         "Além disso, os responsáveis pela medição do risco devem ser independentes daqueles que tomam decisões envolve",
         " risco devem ser independentes daqueles que tomam decisões envolvendo risco, ou seja, principalmente gestores de recursos.",
-        "A gestão de risco é um processo crucial para qualquer investidor ou gestor de"
+        "A estratégia de mitigação de riscos deve ser adequada ao perfil de risco do investidor ou gestor de carteira; e - Monitoramento e re",
+        "ões com uma cultura arraigada; - Possibilidade de decisões avessas ao risco: o foco excessivo na gestão de riscos pode levar a decisões",
+        "o foco excessivo na gestão de riscos pode levar a decisões avessas ao risco, que podem limitar as oportunidades de crescimento da insti",
+        "Quando maior for a diferença de taxas, maior o risco de inadimplência desse emissor."
       ],
       "stratum": "D_risk_surface"
     },
@@ -145,10 +145,9 @@
       "form": "taxa",
       "general_senses": 5,
       "glosses": [],
-      "occurrences": 168,
+      "occurrences": 163,
       "quotes": [
         "m contrato onde o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para o porta",
-        "inda é considerado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
         "ais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao c",
         "➢ A taxa de desconto não é a mesma coisa que a taxa de retorno (yield).",
         "Após 6 meses de sua emissão, a taxa anual de inflação americana (CPI) foi de 6%.",
@@ -186,7 +185,8 @@
         "Isso ocorre, pois quanto menor for a taxa de juros, mais alto fica o valor presente de um título faze",
         "o contrato de DI FUTURO (dizemos que ele está vendendo PU e comprando taxa).",
         "Isso ocorre, pois quanto maior for a taxa de juros, menor será o valor presente de um título!",
-        "uro de DI com vencimento em 504 dias úteis está sendo negociado a uma taxa de 10% ao ano."
+        "uro de DI com vencimento em 504 dias úteis está sendo negociado a uma taxa de 10% ao ano.",
+        "Caso Rafael acredite que a taxa de juros irá cair para 8% ao ano, ele deveria comprar ou ve"
       ],
       "stratum": "D_risk_surface"
     },
@@ -296,60 +296,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "quantity.value",
-      "form": "valor",
-      "general_senses": 6,
-      "glosses": [
-        "uma quantidade numérica, medida ou atribuída ou computada",
-        "um ideal aceito por algum indivíduo ou grupo",
-        "A quantidade (de dinheiro ou bens ou serviços) que é considerada um eq"
-      ],
-      "occurrences": 126,
-      "quotes": [
-        "Ou seja, se houver deflação e o valor do título for inferior ao valor de face, este automaticamen",
-        "posit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00.",
-        "e na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
-        " retorno (TIR) dada ao ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a",
-        "fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título nego",
-        "O YTW considera o menor valor entre o YTM e o YTC.",
-        "a de uma empresa, estes acionistas são o último a receber um possível valor.",
-        "no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa de juros brasil (SELIC).",
-        "a seguinte forma: ele é um contrato com diversos vencimentos, mas com valor final sempre de R$ 100.000,00.",
-        "Com isso, o valor atual do contrato futuro DI demonstra qual o valor que o me",
-        "Com isso, o valor atual do contrato futuro DI demonstra qual o valor que o mercado financeiro está querendo receber de retorno d",
-        " 8% ao ano, ele deveria comprar ou vender o contrato de DI e por qual valor?",
-        "O valor inicial e a(s) data(s) de vencimento são livremente pactuad",
-        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição",
-        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
-        "Já a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short).",
-        " milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2.",
-        "sco de mercado na medida em que o gestor acredita não conseguir gerar valor agregado à carteira a partir de suas previsão.",
-        "Nesse sentido, a estratégia Market Neutral tenta manter o valor total de suas participações long and short aproximadamente ",
-        "s cujo preço das ações esteja subavaliado (sendo negociadas abaixo do valor intrínseco ou do valor patrimonial).",
-        "esteja subavaliado (sendo negociadas abaixo do valor intrínseco ou do valor patrimonial).",
-        "nação dos estilos Growth e Value, buscando ativos de crescimento e de valor.",
-        "ero de ações em circulação (ações negociadas na bolsa de valores) e o valor de cada ação.",
-        "Esse índice varia de 0 a 100, e é considerado o seu maior valor nos 24 meses que antecedem a seleção da carteira (RepRisk I",
-        "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado no desempenho econômico-financeiro d",
-        "ipal Indicador:** - **Suporte:** Preço da ação não diminui mais que o valor do suporte.",
-        "- **Resistência:** Preço da ação não sobe mais que o valor da resistência.",
-        " suporte), se transformou em resistência (não consegue mais superar o valor).",
-        "O valor da cota resulta da divisão do valor do patrimônio líquido d",
-        "O valor da cota resulta da divisão do valor do patrimônio líquido da respectiva classe pelo número de c",
-        "Caso a classe tenha subclasses, o valor da cota de cada subclasse resulta da divisão do valor do pa",
-        "a subclasses, o valor da cota de cada subclasse resulta da divisão do valor do patrimônio líquido atribuído à respectiva subclasse pelo",
-        "gulamento pode prever que a responsabilidade do cotista é limitada ao valor por ele subscrito.",
-        "Na emissão de cotas de classe aberta deve ser utilizado o valor da cota do dia ou do dia seguinte ao da data da integraliza",
-        "Na emissão de cotas de classe fechada deve ser utilizado o valor definido ou calculado conforme definido na assembleia de co",
-        "O regulamento pode estabelecer método para o cálculo do valor de emissão, que deve ser consistente e passível de verifica",
-        "Assim que subscrito o valor mínimo previsto para a distribuição de cotas, os recursos p",
-        " classe fechada pode conter obrigação do investidor de integralizar o valor do capital subscrito de acordo com chamadas realizadas pelo",
-        "É vedada a cobrança de taxa de performance quando o valor da cota for inferior ao valor da cota base.",
-        "obrança de taxa de performance quando o valor da cota for inferior ao valor da cota base."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.security",
       "form": "título",
       "general_senses": 8,
@@ -452,6 +398,60 @@
         "taxas de juros, riscos de crédito, como inadimplência de emissores de títulos, e riscos específicos do investimento, como mudanças na reg",
         "ializadas para que elas classifiquem o risco de crédito referente aos títulos de dívida que irão lançar no mercado, como por exemplo, deb",
         "BB), os investidores novos exigirão um maior prêmio para investir nos títulos de dívida desta companhia."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "valor",
+      "general_senses": 6,
+      "glosses": [
+        "uma quantidade numérica, medida ou atribuída ou computada",
+        "um ideal aceito por algum indivíduo ou grupo",
+        "A quantidade (de dinheiro ou bens ou serviços) que é considerada um eq"
+      ],
+      "occurrences": 115,
+      "quotes": [
+        "Ou seja, se houver deflação e o valor do título for inferior ao valor de face, este automaticamen",
+        "posit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00.",
+        "e na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
+        " retorno (TIR) dada ao ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a",
+        "fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título nego",
+        "O YTW considera o menor valor entre o YTM e o YTC.",
+        "a de uma empresa, estes acionistas são o último a receber um possível valor.",
+        "no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa de juros brasil (SELIC).",
+        "a seguinte forma: ele é um contrato com diversos vencimentos, mas com valor final sempre de R$ 100.000,00.",
+        "Com isso, o valor atual do contrato futuro DI demonstra qual o valor que o me",
+        "Com isso, o valor atual do contrato futuro DI demonstra qual o valor que o mercado financeiro está querendo receber de retorno d",
+        " 8% ao ano, ele deveria comprar ou vender o contrato de DI e por qual valor?",
+        "O valor inicial e a(s) data(s) de vencimento são livremente pactuad",
+        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição",
+        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
+        "Já a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short).",
+        " milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2.",
+        "Nesse sentido, a estratégia Market Neutral tenta manter o valor total de suas participações long and short aproximadamente ",
+        "s cujo preço das ações esteja subavaliado (sendo negociadas abaixo do valor intrínseco ou do valor patrimonial).",
+        "esteja subavaliado (sendo negociadas abaixo do valor intrínseco ou do valor patrimonial).",
+        "nação dos estilos Growth e Value, buscando ativos de crescimento e de valor.",
+        "ero de ações em circulação (ações negociadas na bolsa de valores) e o valor de cada ação.",
+        "Esse índice varia de 0 a 100, e é considerado o seu maior valor nos 24 meses que antecedem a seleção da carteira (RepRisk I",
+        "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado no desempenho econômico-financeiro d",
+        "ipal Indicador:** - **Suporte:** Preço da ação não diminui mais que o valor do suporte.",
+        "- **Resistência:** Preço da ação não sobe mais que o valor da resistência.",
+        " suporte), se transformou em resistência (não consegue mais superar o valor).",
+        "O valor da cota resulta da divisão do valor do patrimônio líquido d",
+        "O valor da cota resulta da divisão do valor do patrimônio líquido da respectiva classe pelo número de c",
+        "Caso a classe tenha subclasses, o valor da cota de cada subclasse resulta da divisão do valor do pa",
+        "a subclasses, o valor da cota de cada subclasse resulta da divisão do valor do patrimônio líquido atribuído à respectiva subclasse pelo",
+        "gulamento pode prever que a responsabilidade do cotista é limitada ao valor por ele subscrito.",
+        "Na emissão de cotas de classe aberta deve ser utilizado o valor da cota do dia ou do dia seguinte ao da data da integraliza",
+        "Na emissão de cotas de classe fechada deve ser utilizado o valor definido ou calculado conforme definido na assembleia de co",
+        "O regulamento pode estabelecer método para o cálculo do valor de emissão, que deve ser consistente e passível de verifica",
+        "Assim que subscrito o valor mínimo previsto para a distribuição de cotas, os recursos p",
+        " classe fechada pode conter obrigação do investidor de integralizar o valor do capital subscrito de acordo com chamadas realizadas pelo",
+        "É vedada a cobrança de taxa de performance quando o valor da cota for inferior ao valor da cota base.",
+        "obrança de taxa de performance quando o valor da cota for inferior ao valor da cota base.",
+        "Para fins do cálculo da taxa de performance, o valor da cota no momento de apuração do resultado deve ser compar"
       ],
       "stratum": "D_risk_surface"
     },
@@ -670,7 +670,7 @@
         "caracteriza-se por actividade enérgica",
         "qualquer coisa de valor material ou utilidade que é de propriedade de "
       ],
-      "occurrences": 88,
+      "occurrences": 87,
       "quotes": [
         "mento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
         "RO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual amb",
@@ -712,6 +712,59 @@
         "cia são: - Medem o risco de mercado (volatilidade ou oscilação) de um ativo; - Quanto maior o desvio padrão/variância, maior será o ris",
         "êmico (risco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor.",
         "êmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ativo) é medido pelo desvio-padrão."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.invest",
+      "form": "investimento",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 86,
+      "quotes": [
+        "a contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
+        "e desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
+        "e Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth pa",
+        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com",
+        " diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam em empresas com boas práticas sociais, ambienta",
+        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
+        "r a execução rápida de ordens, normalmente com um curto horizontes de investimento.",
+        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tr",
+        " esse tipo de análise pode não se valer de eventuais oportunidades de investimento por desconsiderar ativos cujos setores não apresentem boas ",
+        "Assim, análises de investimento Bottom-up podem levar a estilos mais táticos e mais ativos ",
+        "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de i",
+        "ANBIMA, que **AUXILIA** no aperfeiçoamento da legislação de fundos de investimento, através de códigos próprios.",
+        "A classe de cotas que possa adquirir cotas de outros fundos de investimento deve estabelecer em seu regulamento que suas taxas de admin",
+        "tituição, o funcionamento e a divulgação de informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
+        "2/12/2022 e revogou as normas anteriores que tratavam sobre fundos de investimento.",
+        "licam à carteira de ativos da classe de cotas do fundo incentivado de investimento em infraestrutura – FI-Infra.",
+        "O gestor da classe Renda Fixa - Simples deve adotar estratégia de investimento que proteja a classe de riscos de perdas e volatilidade.",
+        "A classe tipificada como MULTIMERCADO deve ter política de investimento que envolva vários fatores de risco, sem compromisso de con",
+        "As classes de investimento em cotas devem adquirir classes do mesmo tipo que a sua, ex",
+        "Já os limites previstos para títulos e contratos de investimento coletivo, CBIO, créditos de carbono e criptoativos ficam ma",
+        "ssim como de manter sua carteira de ativos adequada a sua política de investimento.",
+        ", a Receita Federal tem a sua própria classificação para os fundos de investimento.",
+        "Os fundos de investimento em ações são aqueles cujo patrimônio líquido seja composto ",
+        "entais da gestão de risco incluem: - Definição clara dos objetivos de investimento: é essencial definir claramente os objetivos de investiment",
+        "tivos de investimento: é essencial definir claramente os objetivos de investimento antes de tomar qualquer decisão.",
+        ", como inadimplência de emissores de títulos, e riscos específicos do investimento, como mudanças na regulamentação ou na gestão da empresa.",
+        "A gestão de risco desempenha um papel fundamental no processo de investimento e na gestão de carteiras.",
+        " se destaca como uma ferramenta crucial para o sucesso no processo de investimento.",
+        "onando uma visão holística e estratégica para a tomada de decisões de investimento mais conscientes e assertivas.",
+        "Neste caso, é utilizado o cálculo de desvio padrão dos retornos do investimento; ou - Volatilidade IMPLÍCITA: Estimada através da variação ",
+        "❑ EXEMPLOS: investimento em imóveis, ações de pequenas empresas, ativos com carência",
+        "consideração importante a ser feita ao analisar possíveis decisões de investimento.",
+        "No entanto, quanto maior o risco, maior o retorno exigido por aquele investimento e caso dois investimentos possuam o mesmo retorno, devemos ",
+        "tivo; - Quanto maior o desvio padrão/variância, maior será o risco do investimento (mais ele estará se “desviando do seu padrão”).",
+        "Podemos destrinchar o risco total de um investimento, dois grandes grupos, que são chamados de: - Risco sistêmic",
+        "ado por flutuações na moeda local do investidor em relação à moeda de investimento estrangeiro.",
+        "Esses riscos podem ser mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções.",
+        "Isso torna a análise de risco político um componente importante do investimento em títulos soberanos.",
+        " base ocorre quando o hedge é imperfeito, de modo que as perdas em um investimento não são exatamente compensadas pelo hedge.",
+        "Um Sistema de Gestão de Risco no processo de investimento é uma ferramenta crucial para auxiliar investidores, gestor"
       ],
       "stratum": "D_risk_surface"
     },
@@ -1030,6 +1083,59 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.invest",
+      "form": "investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 60,
+      "quotes": [
+        "to seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
+        "Os investimentos socialmente responsáveis (ISR) são aqueles que buscam conci",
+        "Vantagens de investir em ISR: - Diversificação: Os investimentos em ISR podem ser uma forma de diversificar o portfólio de i",
+        "vestimentos em ISR podem ser uma forma de diversificar o portfólio de investimentos.",
+        "- Retorno financeiro: Os investimentos em ISR podem ter um retorno financeiro semelhante aos inves",
+        "s investimentos em ISR podem ter um retorno financeiro semelhante aos investimentos tradicionais.",
+        "vantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também apresentam risco.",
+        "- Menor liquidez: Alguns investimentos em ISR podem ser menos líquidos que os investimentos tradic",
+        "liquidez: Alguns investimentos em ISR podem ser menos líquidos que os investimentos tradicionais.",
+        "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empresas a adotarem a",
+        "ma possui um questionário específico de Due Dilligence para fundos de investimentos.",
+        "fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
+        "Trata-se do processo de escolha de investimentos e negociações seguindo outros investidores e instituições q",
+        "nvestimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
+        "Todos os fundos de investimentos devem ser constituídos por deliberação conjunta dos prestad",
+        "O regulamento deve prever que tipos de investimentos podem ser realizados, e, em caso de possibilidade de aplica",
+        "r de serviço essencial, conselhos consultivos, comitês técnicos ou de investimentos, os quais não podem ser remunerados pelo fundo.",
+        "Tais investimentos não estão sujeitos a limites de concentração por emissor, d",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua carteira com prazo médio MEN",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua carteira com prazo médio MAI",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja composta por no mínimo 67% de ações.",
+        "Os fundos de investimentos poderão mudar de classificação tributária (alíquota), da me",
+        " a seguir, as principais regras de desenquadramento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - ",
+        " a Receita Federal é diferente da classificação da CVM para fundos de investimentos, é importante salientar alguns pontos relevantes: - Fundo C",
+        "A gestão de risco é um componente muito importante na gestão de investimentos.",
+        "rmite identificar, analisar e mitigar os riscos que podem afetar seus investimentos.",
+        "importante identificar todos os riscos potenciais que podem afetar os investimentos.",
+        "ue o investidor ou gestor de carteira compare os riscos de diferentes investimentos e tome decisões informadas sobre a alocação de capital; - M",
+        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrangente que integra diversos asp",
+        " de recursos próprios e recursos de terceiros (por exemplo, fundos de investimentos), totalmente separadas e independentes, como forma a preven",
+        " o risco, maior o retorno exigido por aquele investimento e caso dois investimentos possuam o mesmo retorno, devemos escolher o que possui o me",
+        "o para mensurar a perda financeira máxima possível de uma carteira de investimentos em um período, com um certo grau de confiança.",
+        "Por exemplo, um fundo de investimentos informa que possui um VaR de R$ 1 milhão para 1 dia, com gr",
+        "Determine o VaR analítico (ou paramétrico) de uma carteira de investimentos de R$ 100.000,00, para um Intervalo de Confiança de 95% (a ",
+        "Determine o VaR histórico de uma carteira de investimentos com 95% de confiança que apresentou o histograma de retorno",
+        "É um risco muito relevante quando se trata de investimentos no exterior ou em moeda diferente daquela de referência do ",
+        "amente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um todo.",
+        "Assim, ao selecionar investimentos que estamos avaliando para fazer aportes, geralmente compar",
+        "e designar aos gestores um benchmark diferente daquele da política de investimentos, ou seja, esse nível está relacionado à alocação tática de ",
+        "criador do Índice de Sharpe, que mensura o retorno de uma carteira de investimentos (ou fundos de investimentos) por sua volatilidade (sendo a "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.index",
       "form": "índice",
       "general_senses": 3,
@@ -1126,6 +1232,59 @@
         "Por exemplo, há uma relação direta entre preços de calls e puts e o desvio-padrão (volatilidade) do ativo-o",
         "Os preços dos CDS são frequentemente cotados em termos de spreads de ",
         " se refere à possibilidade de perdas devido às oscilações bruscas nos preços dos ativos subjacentes."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "riscos",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 49,
+      "quotes": [
+        "em pequenos investidores que desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo ",
+        "que buscam melhores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais agressivos.",
+        "imples deve adotar estratégia de investimento que proteja a classe de riscos de perdas e volatilidade.",
+        "Os gestores devem assumir os riscos necessários para gerar retorno.",
+        "Outros riscos devem ser reduzidos, evitados ou completamente cobertos (he",
+        "Nesse sentido, é fundamental reconhecer riscos desnecessários de modo a reduzi-los, eliminá-los ou evitá-l",
+        "O processo de gestão de risco demanda: - Identificar quais riscos são enfrentados e qual a tolerância a tais riscos; - Medir ",
+        "- Identificar quais riscos são enfrentados e qual a tolerância a tais riscos; - Medir os níveis atuais de risco e explorar aqueles que s",
+        "Boas governanças de riscos envolvem transparência, responsabilidades, eficiência de cu",
+        "r capaz de avaliar o impacto geral de uma eventual materialização dos riscos corridos pela companhia.",
+        "u gestor de carteira, pois permite identificar, analisar e mitigar os riscos que podem afetar seus investimentos.",
+        "Isso permite que o investidor ou gestor de carteira identifique os riscos toleráveis e tome decisões alinhadas com seus objetivos; - ",
+        "decisões alinhadas com seus objetivos; - Identificação e avaliação de riscos: é importante identificar todos os riscos potenciais que po",
+        "dentificação e avaliação de riscos: é importante identificar todos os riscos potenciais que podem afetar os investimentos.",
+        "Isso inclui riscos de mercado, como volatilidade dos preços e mudanças nas tax",
+        " mercado, como volatilidade dos preços e mudanças nas taxas de juros, riscos de crédito, como inadimplência de emissores de títulos, e r",
+        "ros, riscos de crédito, como inadimplência de emissores de títulos, e riscos específicos do investimento, como mudanças na regulamentaçã",
+        "- Quantificação de riscos: os riscos devem ser quantificados sempre que possível.",
+        "- Quantificação de riscos: os riscos devem ser quantificados sempre que possível.",
+        "Isso permite que o investidor ou gestor de carteira compare os riscos de diferentes investimentos e tome decisões informadas sobr",
+        " tome decisões informadas sobre a alocação de capital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, como diver",
+        "pital; - Mitigação de riscos: existem diversas maneiras de mitigar os riscos, como diversificação, hedging e definição de limites de per",
+        "A estratégia de mitigação de riscos deve ser adequada ao perfil de risco do investidor ou gesto",
+        "Os riscos devem ser monitorados e revisados periodicamente para garan",
+        "Ela vai além da mera identificação e mitigação de riscos, proporcionando uma visão holística e estratégica para a to",
+        "a constituição de estruturas de gerenciamento contínuo e integrado de riscos e de gerenciamento de capital.",
+        "sk Budgeting, ou Orçamento de Risco, é o processo de determinar quais riscos são aceitáveis e como o risco total da empresa (ou de um fu",
+        "Com isso, é possível monitorar continuamente o orçamento de riscos para que quaisquer desvios sejam imediatamente identificado",
+        "Esses riscos podem ser mitigados usando vários instrumentos de investime",
+        "Em relação às taxas de juros e esses dois riscos, temos a seguinte conclusão: - O aumento da taxa de juros é",
+        "ser melhor gerenciados por meio de apólices de seguro que cobrem tais riscos.",
+        "Podemos elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - D",
+        "ções dos modelos utilizados para quantificar, analisar e gerenciar os riscos operacionais.",
+        "s que auxiliam as instituições financeiras a identificar e avaliar os riscos operacionais, quantificar o capital necessário para cobrir ",
+        " riscos operacionais, quantificar o capital necessário para cobrir os riscos operacionais e tomar decisões de gerenciamento de risco.",
+        "es financeiras a identificarem, avaliarem, monitorarem e mitigarem os riscos associados às suas decisões de investimento.",
+        "O sistema deve ser capaz de identificar todos os riscos relevantes ao processo de investimento, incluindo risco de ",
+        "podem ser caras para implementação; - Focar em exposição a fatores de riscos pode não ser tão intuitiva para todos os gestores.",
+        "amento do processo de investimento; e - Permite a alocação efetiva de riscos através dos times de gestão.",
+        "livre de risco pelo risco TOTAL, independentemente das proporções dos riscos sistêmicos e não sistêmicos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -1232,58 +1391,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.resource",
-      "form": "recursos",
-      "general_senses": 10,
-      "glosses": [
-        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
-      ],
-      "occurrences": 43,
-      "quotes": [
-        "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o banco emissor p",
-        "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros do programa.",
-        "São instrumentos para a obtenção de recursos no mercado, a um custo inferior às taxas praticadas pelos b",
-        "O commercial paper é utilizado principalmente para recursos de curto prazo das empresas, como pagamento de impostos, aq",
-        "Porém, suponha que ele aplicou seus recursos em um título isento de imposto.",
-        "lificados (Accredited Investors), que possuem mais de US$ 1 milhão em recursos financeiros, e também a públicos específicos, como investid",
-        "estidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de res",
-        " sociais: Existem plataformas que permitem que um investidor empreste recursos para empresas e projetos que geram impacto social e ambient",
-        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor para outro.",
-        "FoF) nada mais é do que um fundo de investimento cujo gestor aloca os recursos em outros fundos.",
-        "O fundo de investimento é uma comunhão de recursos, constituído sob a forma de condomínio de natureza especial",
-        "ue subscrito o valor mínimo previsto para a distribuição de cotas, os recursos podem ser investidos na forma prevista no regulamento.",
-        "stão de uma carteira de valores mobiliários, incluindo a aplicação de recursos financeiros no mercado de valores mobiliários por conta do ",
-        "otas de classes que nele invistam, assim como é vedada a aplicação de recursos de uma classe em cotas de outra classe do mesmo fundo.",
-        "strita” a classe ou subclasse exclusivamente destinada a aplicação de recursos de investidores qualificados e profissionais.",
-        "rança de ajuste sobre a performance individual do cotista que aplicar recursos na classe ou subclasse posteriormente à data da última cobr",
-        "E, como regra geral, é vedada a manutenção ou aplicação no País de recursos captados pelo fundo, exceto nos pontos previstos anteriorme",
-        "Por fim, os recursos excedentes da carteira podem ser aplicados em quaisquer out",
-        "vem transparência, responsabilidades, eficiência de custos no uso dos recursos e eficácia para atingir os objetivos desejados.",
-        " tomam decisões envolvendo risco, ou seja, principalmente gestores de recursos.",
-        "esejar vender sua posição, precisará de muito tempo para conseguir os recursos desejados (ou terá que vender a um preço menor que o oferta",
-        "m planejamento das necessidades de caixa, para que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor",
-        "a forma, tal diretor não pode exercer a atividade de administração de recursos de terceiros.",
-        "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fundos de in",
-        "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fundos de investimentos), totalm",
-        "r que cuida do capital próprio do banco, não será o mesmo que gere os recursos dos clientes.",
-        "Com isso, os recursos do investidor passam ser reinvestidos em títulos com retorn",
-        "Isso significa, por exemplo, que o comprador pode não ter os recursos financeiros disponíveis para pagar pelo ativo adquirido ou ",
-        "que uma transação não seja concluída como esperado, seja por falta de recursos financeiros ou pela não entrega dos ativos.",
-        "r determinar as categorias de ativos e os pesos, assim como alocar os recursos totais dentre os gestores de recursos.",
-        " os pesos, assim como alocar os recursos totais dentre os gestores de recursos.",
-        "Logo, administradores de recursos podem manipular o resultado ao eventualmente escolherem per",
-        "ecem por acaso, ou se de fato são decorrentes da gestão eficiente dos recursos.",
-        "s variações nas taxas de juros, o gestor corre o risco de não possuir recursos suficientes para fazer frente aos passivos da carteira (com",
-        "Com a Ladder, conforme os títulos vencem, os recursos podem ser reinvestidos para aproveitar as taxas de juros ev",
-        "a para aumentar o potencial de retorno de um investimento, utilizando recursos de terceiros ou ativos com custos fixos.",
-        "Esse investidor pode adquirir esse REPO com recursos próprios e também de terceiros.",
-        "Porém, existem as formas de como será feita a aplicação dos recursos, ou seja, se o investidor deseja buscar oportunidades de cu",
-        "micos derivadas da experiência e opinião de economistas e gestores de recursos.",
-        "cionada à riqueza, - Possui valor de piso (valor formado com todos os recursos investidos em títulos públicos de curto prazo)."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "temporal.period",
       "form": "período",
       "general_senses": 16,
@@ -1381,6 +1488,56 @@
         "O regulamento da classe de cotas e, se aplicável, sua lâmina deve especif",
         "O regulamento da classe restrita pode estabelecer prazos para conversão d",
         "Em acréscimo a tais encargos, o regulamento do FIF pode prever como encargos as seguintes despesas, que"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "recursos",
+      "general_senses": 10,
+      "glosses": [
+        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
+      ],
+      "occurrences": 38,
+      "quotes": [
+        "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o banco emissor p",
+        "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros do programa.",
+        "São instrumentos para a obtenção de recursos no mercado, a um custo inferior às taxas praticadas pelos b",
+        "O commercial paper é utilizado principalmente para recursos de curto prazo das empresas, como pagamento de impostos, aq",
+        "Porém, suponha que ele aplicou seus recursos em um título isento de imposto.",
+        "lificados (Accredited Investors), que possuem mais de US$ 1 milhão em recursos financeiros, e também a públicos específicos, como investid",
+        "estidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de res",
+        " sociais: Existem plataformas que permitem que um investidor empreste recursos para empresas e projetos que geram impacto social e ambient",
+        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor para outro.",
+        "FoF) nada mais é do que um fundo de investimento cujo gestor aloca os recursos em outros fundos.",
+        "O fundo de investimento é uma comunhão de recursos, constituído sob a forma de condomínio de natureza especial",
+        "ue subscrito o valor mínimo previsto para a distribuição de cotas, os recursos podem ser investidos na forma prevista no regulamento.",
+        "rança de ajuste sobre a performance individual do cotista que aplicar recursos na classe ou subclasse posteriormente à data da última cobr",
+        "E, como regra geral, é vedada a manutenção ou aplicação no País de recursos captados pelo fundo, exceto nos pontos previstos anteriorme",
+        "Por fim, os recursos excedentes da carteira podem ser aplicados em quaisquer out",
+        "vem transparência, responsabilidades, eficiência de custos no uso dos recursos e eficácia para atingir os objetivos desejados.",
+        " tomam decisões envolvendo risco, ou seja, principalmente gestores de recursos.",
+        "esejar vender sua posição, precisará de muito tempo para conseguir os recursos desejados (ou terá que vender a um preço menor que o oferta",
+        "m planejamento das necessidades de caixa, para que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor",
+        "a forma, tal diretor não pode exercer a atividade de administração de recursos de terceiros.",
+        "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fundos de in",
+        "Uma dessas áreas é a de administração de recursos próprios e recursos de terceiros (por exemplo, fundos de investimentos), totalm",
+        "r que cuida do capital próprio do banco, não será o mesmo que gere os recursos dos clientes.",
+        "Com isso, os recursos do investidor passam ser reinvestidos em títulos com retorn",
+        "Isso significa, por exemplo, que o comprador pode não ter os recursos financeiros disponíveis para pagar pelo ativo adquirido ou ",
+        "que uma transação não seja concluída como esperado, seja por falta de recursos financeiros ou pela não entrega dos ativos.",
+        "r determinar as categorias de ativos e os pesos, assim como alocar os recursos totais dentre os gestores de recursos.",
+        " os pesos, assim como alocar os recursos totais dentre os gestores de recursos.",
+        "Logo, administradores de recursos podem manipular o resultado ao eventualmente escolherem per",
+        "ecem por acaso, ou se de fato são decorrentes da gestão eficiente dos recursos.",
+        "s variações nas taxas de juros, o gestor corre o risco de não possuir recursos suficientes para fazer frente aos passivos da carteira (com",
+        "Com a Ladder, conforme os títulos vencem, os recursos podem ser reinvestidos para aproveitar as taxas de juros ev",
+        "a para aumentar o potencial de retorno de um investimento, utilizando recursos de terceiros ou ativos com custos fixos.",
+        "Esse investidor pode adquirir esse REPO com recursos próprios e também de terceiros.",
+        "Porém, existem as formas de como será feita a aplicação dos recursos, ou seja, se o investidor deseja buscar oportunidades de cu",
+        "micos derivadas da experiência e opinião de economistas e gestores de recursos.",
+        "cionada à riqueza, - Possui valor de piso (valor formado com todos os recursos investidos em títulos públicos de curto prazo).",
+        "- **FUNDO DE INVESTIMENTO OU FUNDO:** comunhão de recursos, constituído sob a forma de condomínio de natureza especial"
       ],
       "stratum": "D_risk_surface"
     },
@@ -1565,44 +1722,48 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.portfolio",
-      "form": "carteiras",
-      "general_senses": 7,
-      "glosses": [],
+      "concept_id": "action.calculate",
+      "form": "cálculo",
+      "general_senses": 6,
+      "glosses": [
+        "o procedimento de calcular, determinando algo por métodos matemáticos ",
+        "um julgamento das qualidades de algo ou alguém; \"vários fatores estão ",
+        "planejamento cuidadoso e intencional de alguma coisa"
+      ],
       "occurrences": 32,
       "quotes": [
-        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto",
-        "impactos, eles utilizam como estratégias derivativos para proteção de carteiras (em inglês, hedge).",
-        "ma alternativa de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking error.",
-        "Long Extension são carteiras que tipicamente tem a restrição de uma exposição.",
-        "Market Neutral, por sua vez, são carteiras cujo objetivo é neutralizar a exposição ao risco de mercado",
-        "Uma forma de construir carteiras Market neutral é através de pairs trading, em que ativos de",
-        "De forma genérica, uma estratégia Long Only refere-se à gestão de carteiras pautada pela busca de retornos exclusivamente através da co",
-        "agem Core-Satellite, ou núcleo-satélite, é um método de construção de carteiras cujo principal objetivo é minimizar custos de transação, im",
-        "de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratégicas e com visão de longo prazo, favorecendo g",
-        "Nesse sentido, carteiras Bottom-up geralmente possuem grande parcela distribuída ent",
-        "penha um papel fundamental no processo de investimento e na gestão de carteiras.",
-        "Value-at-Risk (VaR) de carteiras com dois ativos Value-at-Risk (VaR) de carteiras com dois a",
-        "lue-at-Risk (VaR) de carteiras com dois ativos Value-at-Risk (VaR) de carteiras com dois ativos",
-        "termina o montante de capital e VaR associado alocado aos gestores de carteiras, com base na desejada para cada setor e para cada gestor (e",
-        "É um conceito mais usualmente aplicado a carteiras que possuem derivativos.",
-        "Atribuição de desempenho micro analisa carteiras individuais relativas ao benchmark designado.",
-        "Com a sua criação, podemos comparar duas carteiras de investimentos e analisar qual delas é mais eficiente em ",
-        "Em outras palavras, se as duas carteiras tivessem o mesmo risco total, qual delas teria maior retorn",
-        "estacar: - Os dados inseridos no modelo são históricos; - O gestor de carteiras pode manipular os dados ao computar períodos de maiores ret",
-        "Para calcularmos a Duration de diversas carteiras de renda fixa, podemos aproximar seu resultado através da m",
-        "fixa, podemos aproximar seu resultado através da média pondera destas carteiras.",
-        "Logo, a imunização das carteiras é um grande desafio ao gestor de renda fixa.",
-        "Idealmente, em casos de carteiras com múltiplos passivos, o gestor deveria comprar vários tít",
-        "Seria como decompor a carteira em várias imunizações de carteiras com um único passivo.",
-        "Outra estratégia de imunização de carteiras é através da chamada Spread Duration, que mede a sensibilid",
-        "ito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondên",
-        "Vamos agora falar de outras estratégias de gestão de carteiras de Renda Fixa.",
-        "e forma mais específica, as mais importantes estratégias de gestão de carteiras de renda fixa são, de longe, Steepening, Flattening e Butte",
-        "Considerando três carteiras com a mesma duration, mas com estruturas diferentes (bullet",
-        "Flattening Considerando carteiras com mesma duration, mas diferentes estratégias, temos:",
-        "Estas são duas maneiras de modificar os ativos nas carteiras de investimentos.",
-        " terceiros consiste na gestão profissional dos ativos integrantes das carteiras dos veículos de investimento, nos termos estabelecidos nos "
+        "foi descontinuada devido a questões relacionadas à sua metodologia de cálculo.",
+        "Garantia do Tesouro dos EUA: considerados no cálculo da SOFR são garantidos por títulos do governo americano, to",
+        "A metodologia de cálculo da taxa ESTR é transparente e robusta, o que aumenta sua co",
+        "icação dos seus benchmarks por questões custos, impostos, dinâmica de cálculo da rentabilidade do fundo, regras de contabilização a merca",
+        "Seu cálculo envolve o deslocamento das médias dos preços dos ativos ao ",
+        "- Índice de Força Relativa: se baseia no cálculo resultante da divisão entre as médias das variações dos per",
+        "O resultado desse cálculo é um número que varia entre 0 (grande força dos vendedores)",
+        "O regulamento pode estabelecer método para o cálculo do valor de emissão, que deve ser consistente e passível de",
+        "Para fins do cálculo da taxa de performance, o valor da cota no momento de apura",
+        "s atrelados a juros ou à inflação como parâmetro de referência para o cálculo da taxa de performance.",
+        "es qualificados ficam dispensadas de observar parte das exigências no cálculo da taxa de performance mencionadas anteriormente.",
+        "tivos financeiros no exterior não são cumulativamente consideradas no cálculo dos correspondentes limites de concentração por emissor e p",
+        "O cálculo de margem potencial deve se basear em modelo de cálculo de ",
+        "O cálculo de margem potencial deve se basear em modelo de cálculo de garantia do administrador, consistente e passível de ver",
+        "- Base de cálculo: dependerá da operação que deu origem ao rendimento para o ",
+        "Neste caso, é utilizado o cálculo de desvio padrão dos retornos do investimento; ou - Volatil",
+        "Este é um cálculo estatístico, que diz qual o risco financeiro dos ativos (ou",
+        "Com os retornos em mãos, o cálculo do VaR Monte Carlo remete ao VaR Histórico: deve-se organiz",
+        "unto de regulamentações bancárias internacionais, pois é utilizado no cálculo de capital econômico, perda esperada e capital regulatório.",
+        "O cálculo do LGD compara o valor em unidades monetárias da perda pote",
+        " várias maneiras de calcular a LGD, a mais preferida pelo mercado é o cálculo que envolve apenas esses fatores.",
+        "Ou seja, o quanto a mais o investidor teve de retorno extra ao cálculo do CAPM.",
+        "O Alfa de Jensen possui um cálculo simples e objetivo: excesso de retorno gerado sobre o retor",
+        "Como vimos, o índice de Sharpe é de fácil cálculo e envolve uma lógica relativamente pouco complexa.",
+        "Assim como no índice de Sharpe, o índice de Treynor é de fácil cálculo e envolve uma lógica relativamente pouco complexa.",
+        "Isso porque seu cálculo parte do índice de Sharpe, multiplicando-o pelo desvio padr",
+        "e M2, podemos citar: - Medida de retorno ajustada ao risco de simples cálculo e entendimento; - Serve também quando os retornos do ativo ",
+        "Como dissemos anteriormente, para realizarmos o cálculo para mensurar qual o valor justo atual de um título de rend",
+        "Mas não se preocupe, a HP-12c fará esse cálculo para nós através das teclas (n, i, PV, PMT, FV) Em que: VP ",
+        "A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas.",
+        "Com isso, o erro gerado no cálculo é ainda menor: EXEMPLO: Uma carteira possui dois títulos, A",
+        "O ajuste da Convexidade ao cálculo da Duraton Modificada é feito através da seguinte fórmula: "
       ],
       "stratum": "D_risk_surface"
     },
@@ -1648,6 +1809,48 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.pay",
+      "form": "pagamento",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de pagar em dinheiro"
+      ],
+      "occurrences": 30,
+      "quotes": [
+        "Os investidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem p",
+        "s STRIPS são mais adequados para investidores que desejam garantir um pagamento futuro específico, mas não têm necessidade de fluxos de cai",
+        "e é emitido por um banco, em nome de um cliente, como uma promessa de pagamento em uma data futura.",
+        "e têm vencimentos que variam de 30 a 180 dias, dependendo do prazo de pagamento acordado entre as partes.",
+        "ue o beneficiário do aceite bancário tem a garantia de que receberá o pagamento na data de vencimento.",
+        "lizado principalmente para recursos de curto prazo das empresas, como pagamento de impostos, aquisição de matéria-prima e eventuais imprevi",
+        "Estes contratos se encerram por Liquidação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessi",
+        "classe restrita pode estabelecer prazos para conversão de cota e para pagamento dos resgates diferentes daqueles previstos na regulamentaçã",
+        "ação, sendo admitido o estabelecimento de prazo máximo de conversão e pagamento.",
+        "- Amortização: pagamento em dinheiro e diminuição do número de cotas.",
+        " de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        "Porém, havendo cupons e quanto maior o pagamento do cupom for, maior o risco de Reinvestimento.",
+        "O Risco Soberano é a chance de um governo não honrar com o pagamento de sua dívida (chamada Soberana), ou mesmo implemente regra",
+        "Caso ocorra o evento de crédito, ou seja, haja a inadimplência, o pagamento da liquidação em dinheiro é determinado por um leilão da dí",
+        "de crédito se concentrava em fatores financeiros como a capacidade de pagamento da dívida (histórico de crédito, fluxo de caixa e lucrativi",
+        "Por exemplo uma debenture possui cupom com taxa de 12% ao ano com pagamento anual, ou seja, quer dizer que os juros periódicos pagos ao",
+        "Caso o pagamento fosse SEMESTRALMENTE, deveríamos transformar os 12% a.a.",
+        "o cupom e multiplicada por R$ 1.000,00, encontrando assim, o Cupom de pagamento.",
+        "Sabendo que sua taxa do cupom é de 12% ao ano, com pagamento anual, calcule qual é seu YTM.",
+        "Sabendo que sua taxa do cupom é de 12% ao ano, com pagamento SEMESTRAL, calcule qual é seu YTM.",
+        "Sabendo que sua taxa do cupom é de 12% ao ano, com pagamento semestral, calcule qual é seu Current Yield?",
+        "Seu grande problema era que não considerava os efeitos do pagamento dos cupons e amortizações intermediárias de um título.",
+        " Inversa TIR (YTM) Inversa Tamanho do Cupom ___ Inversa Frequência de pagamento de Cupons ___ Inversa CONCLUSÕES: Quanto menor a duration M",
+        "tégia para imunização desse risco, seria o de investir em títulos com pagamento de cupom, pois com isso há a diminuição da Duration.",
+        " de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        "as de diminuição deste risco, é realizar investimentos em títulos com pagamento de cupom.",
+        "Porém, quanto maior o pagamento do cupom, maior o risco de Reinvestimento.",
+        "tivos e fluxos de caixa para reduzir o risco de perdas em caso de não pagamento de passivos.",
+        "tivos e fluxos de caixa para reduzir o risco de perdas em caso de não pagamento de passivos.",
+        " porque os ativos precisam estar disponíveis e líquidos no momento do pagamento dos passivos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.mean",
       "form": "média",
       "general_senses": 4,
@@ -1684,6 +1887,46 @@
         "Importante salientar que neste caso, estamos fazendo a média ponderada das durations dos títulos de renda fixa que a com",
         "Leva esse nome porque o retorno é estimado pelo média e pelo risco, definido como sendo a variância.",
         "A incerteza que existe nas estimativas futuras da média e da variância dos retornos dos ativos e a sensibilidade ao"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.analyse",
+      "form": "análise",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 30,
+      "quotes": [
+        "is estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para escolher quais ativos investir.",
+        "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de",
+        "Por fim, na análise da qualidade da gestão ativa, é importante diferenciarmos o",
+        "A área de análise é de grande importância para o gestor de recursos.",
+        "elacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; -",
+        "Esta análise se vale de múltiplos (indicadores extraídos de informações ",
+        "Em resumo, a análise técnica estuda as movimentações nos preços passados e, a pa",
+        "A análise técnica apresenta várias vantagens e também alguns desafios",
+        "o tempo; - Oscilador de Médias Móveis: indicador técnico utilizado na análise técnica para ajudar a identificar a força e a direção de um",
+        "- Envelopes: indicador técnico na análise técnica que é usado para ajudar os traders a identificar fa",
+        "O envelope mais comum na análise técnica são as bandas de Bollinger; - Bandas de Bollinger: ",
+        "Movimento Direcional Médio (ADX), é um indicador técnico utilizado na análise técnica para avaliar a força e a direção de uma tendência d",
+        "Oscilador Estocástico, é um indicador técnico amplamente utilizado na análise técnica para ajudar a identificar possíveis pontos de rever",
+        "Há duas estratégias opostas de fazer análise de ativos: Top-Down e Bottom-up.",
+        "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como ",
+        "Ao iniciar com um olhar mais holístico, os investidores partem da análise e da previsão de variáveis macroeconômicas, como PIB, balan",
+        "Porém, esse tipo de análise pode não se valer de eventuais oportunidades de investiment",
+        "Ao invés disso, os defensores da análise Bottom-up observam primeiro os fatores microeconômicos que ",
+        " levar a estilos mais táticos e mais ativos de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratég",
+        "A contratação de terceiros deve contar com prévia e criteriosa análise e seleção do contratado, devendo o prestador de serviços es",
+        "Isso torna a análise de risco político um componente importante do investimento ",
+        "Tradicionalmente, a análise de crédito se concentrava em fatores financeiros como a cap",
+        "Entre esses momentos, há seis níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
+        "Temos ainda mais três níveis de análise aos quais são atribuídas as mudanças no valor de mercado a ",
+        "A conclusão através desta análise é que, entre duas opções, devemos escolher aquela que possu",
+        "Se a análise resultar em um índice de Sharpe negativo, isso significa qu",
+        "Com base nas premissas feitas na análise de regressão, podemos concluir que o retorno (valor agregad",
+        "Contudo, pela análise de regressão, também devemos construir uma medida de signif",
+        "Os fundos de crédito privado com análise de risco de crédito ASG e títulos temáticos são uma modalid",
+        "ículos de investimento, devendo adotar controles para a realização da análise e monitoramento dos ativos de crédito privado e riscos de c"
       ],
       "stratum": "D_risk_surface"
     },
@@ -1725,6 +1968,44 @@
         "do, se tenderem a estar consistentemente acima ou abaixo da linha, um desempenho superior ou inferior poderá ser indicado.",
         "Por fim, temos a Gestão Ativa, cujo objetivo é superar o desempenho do benchmark de referência.",
         "icas, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das empresas em critérios ASG para determinar o risco de cr"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "carteiras",
+      "general_senses": 7,
+      "glosses": [],
+      "occurrences": 28,
+      "quotes": [
+        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto",
+        "impactos, eles utilizam como estratégias derivativos para proteção de carteiras (em inglês, hedge).",
+        "ma alternativa de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking error.",
+        "Long Extension são carteiras que tipicamente tem a restrição de uma exposição.",
+        "Market Neutral, por sua vez, são carteiras cujo objetivo é neutralizar a exposição ao risco de mercado",
+        "Uma forma de construir carteiras Market neutral é através de pairs trading, em que ativos de",
+        "agem Core-Satellite, ou núcleo-satélite, é um método de construção de carteiras cujo principal objetivo é minimizar custos de transação, im",
+        "de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratégicas e com visão de longo prazo, favorecendo g",
+        "Nesse sentido, carteiras Bottom-up geralmente possuem grande parcela distribuída ent",
+        "Value-at-Risk (VaR) de carteiras com dois ativos Value-at-Risk (VaR) de carteiras com dois a",
+        "lue-at-Risk (VaR) de carteiras com dois ativos Value-at-Risk (VaR) de carteiras com dois ativos",
+        "termina o montante de capital e VaR associado alocado aos gestores de carteiras, com base na desejada para cada setor e para cada gestor (e",
+        "É um conceito mais usualmente aplicado a carteiras que possuem derivativos.",
+        "Atribuição de desempenho micro analisa carteiras individuais relativas ao benchmark designado.",
+        "Com a sua criação, podemos comparar duas carteiras de investimentos e analisar qual delas é mais eficiente em ",
+        "Em outras palavras, se as duas carteiras tivessem o mesmo risco total, qual delas teria maior retorn",
+        "estacar: - Os dados inseridos no modelo são históricos; - O gestor de carteiras pode manipular os dados ao computar períodos de maiores ret",
+        "Para calcularmos a Duration de diversas carteiras de renda fixa, podemos aproximar seu resultado através da m",
+        "fixa, podemos aproximar seu resultado através da média pondera destas carteiras.",
+        "Logo, a imunização das carteiras é um grande desafio ao gestor de renda fixa.",
+        "Idealmente, em casos de carteiras com múltiplos passivos, o gestor deveria comprar vários tít",
+        "Seria como decompor a carteira em várias imunizações de carteiras com um único passivo.",
+        "Outra estratégia de imunização de carteiras é através da chamada Spread Duration, que mede a sensibilid",
+        "ito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet, Ladder e Cash Flow Matching (Correspondên",
+        "Considerando três carteiras com a mesma duration, mas com estruturas diferentes (bullet",
+        "Flattening Considerando carteiras com mesma duration, mas diferentes estratégias, temos:",
+        "Estas são duas maneiras de modificar os ativos nas carteiras de investimentos.",
+        " terceiros consiste na gestão profissional dos ativos integrantes das carteiras dos veículos de investimento, nos termos estabelecidos nos "
       ],
       "stratum": "D_risk_surface"
     },
@@ -1919,44 +2200,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "risk.financial",
-      "form": "Risco",
-      "general_senses": 7,
-      "glosses": [
-        "um risco empreendido sem levar em conta possíveis perdas ou danos",
-        "A qualidade de ser algo que não te deixa avançar"
-      ],
-      "occurrences": 25,
-      "quotes": [
-        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
-        "l sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
-        "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
-        "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
-        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
-        "implência do emissor do título, quando comparado com o Ativo Livre de Risco.",
-        "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
-        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ati",
-        "e pode ser considerado também como a soma do “Risco Sistêmico” com o “Risco não-sistêmico”.",
-        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio",
-        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local d",
-        "Risco de Inflação genericamente se refere a situações em que os p",
-        "cionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compr",
-        "er de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra.",
-        "O Risco de Volatilidade está associado a uma mudança de preço de um",
-        "O Risco Soberano é a chance de um governo não honrar com o pagament",
-        "O Risco de Contraparte refere-se à possibilidade de um dos envolvid",
-        "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidores que recebem fluxos de caixa",
-        "Um Sistema de Gestão de Risco no processo de investimento é uma ferramenta crucial para a",
-        "lidade (sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total).",
-        "s de riscos financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: ",
-        " - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
-        "isco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
-        "e esse risco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
-        "udança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.factor",
       "form": "fatores",
       "general_senses": 3,
@@ -1987,6 +2230,39 @@
         "revisão: a precificação dos instrumentos de hedge depende de diversos fatores, como a volatilidade do mercado, as expectativas de futuro ",
         "A imprevisibilidade desses fatores pode dificultar a escolha da estratégia ideal e a definição",
         "os fundos, de acordo com as suas respectivas estratégias e principais fatores de risco."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.buy",
+      "form": "compra",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 23,
+      "quotes": [
+        "ríodo de tempo predeterminado para o portador do título (a pessoa que compra e recebe os juros).",
+        "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% a",
+        "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revend",
+        "(TIR) dada ao ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de m",
+        " nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
+        "PARTE, já que todo vendedor vende para a clearing B3 e todo comprador compra da clearing B3.",
+        "a do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe este índice.",
+        "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do se",
+        "de carteiras pautada pela busca de retornos exclusivamente através da compra (long) de ativos.",
+        "Remete ao oposto da estratégia long only, que por sua vez refere-se à compra de ativos, na expectativa que os preços subam.",
+        "Geralmente, o preço da ação da empresa que é objeto da compra ou fusão costuma subir e o da companhia que fará a compra, ",
+        "é objeto da compra ou fusão costuma subir e o da companhia que fará a compra, pode cair.",
+        "o da empresa, descontando fluxos de caixas projetados para orientar a compra e venda de ações.",
+        "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na ",
+        "linação do histograma: uma inclinação ascendente indica um momento de compra e uma descendente, de venda.",
+        "- As ordens de compra e venda de ativos devem sempre ser expedidas pelo gestor co",
+        "As ordens de compra e venda de ativos devem sempre ser expedidas pelo gestor co",
+        "Em situações inflacionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Ri",
+        "anceiro é o risco de que, após a realização de uma negociação (como a compra e venda de um ativo), uma das partes não consiga cumprir co",
+        "(TIR) dada ai ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de m",
+        " nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
+        "Já na carteira Bullet, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
+        "Para múltiplos passivos, a estratégia prevê a compra de múltiplos ativos zero cupom para cada vencimento."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2093,6 +2369,79 @@
         "Além dos custos de transação, podem existir taxas de administração e outros encargos que impactam o retorno final do investime",
         "- Custos: taxas de administração e outras despesas podem ser mais elevadas.",
         "A administração fiduciária compreende o conjunto de serviços relacionados d"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "Risco",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 23,
+      "quotes": [
+        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
+        "l sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
+        "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
+        "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
+        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
+        "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
+        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ati",
+        "e pode ser considerado também como a soma do “Risco Sistêmico” com o “Risco não-sistêmico”.",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local d",
+        "Risco de Inflação genericamente se refere a situações em que os p",
+        "cionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compr",
+        "er de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra.",
+        "O Risco de Volatilidade está associado a uma mudança de preço de um",
+        "O Risco Soberano é a chance de um governo não honrar com o pagament",
+        "O Risco de Contraparte refere-se à possibilidade de um dos envolvid",
+        "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidores que recebem fluxos de caixa",
+        "lidade (sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total).",
+        "s de riscos financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: ",
+        " - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "isco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "e esse risco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
+        "udança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.decide",
+      "form": "decisões",
+      "general_senses": 5,
+      "glosses": [
+        "o ato de se decidir sobre alguma coisa;\"o peso da decisão era dele\"; \"",
+        "Uma posição ou opinião ou decisão chegada após consideração",
+        "uma vitória vencida por pontos quando nenhum nocaute ocorreu"
+      ],
+      "occurrences": 23,
+      "quotes": [
+        "zação de relatórios de terceiros pelo gestor para melhor embasar suas decisões pode ser de grande valia, à medida em que ele pode ter aces",
+        "veis pela medição do risco devem ser independentes daqueles que tomam decisões envolvendo risco, ou seja, principalmente gestores de recur",
+        "mplementar uma estratégia eficaz de gestão de risco, é possível tomar decisões mais conscientes e alcançar os objetivos financeiros de for",
+        "estidor ou gestor de carteira identifique os riscos toleráveis e tome decisões alinhadas com seus objetivos; - Identificação e avaliação d",
+        "stor de carteira compare os riscos de diferentes investimentos e tome decisões informadas sobre a alocação de capital; - Mitigação de risc",
+        "os, proporcionando uma visão holística e estratégica para a tomada de decisões de investimento mais conscientes e assertivas.",
+        "em grandes instituições com uma cultura arraigada; - Possibilidade de decisões avessas ao risco: o foco excessivo na gestão de riscos pode",
+        "s avessas ao risco: o foco excessivo na gestão de riscos pode levar a decisões avessas ao risco, que podem limitar as oportunidades de cre",
+        ", mas é uma consideração importante a ser feita ao analisar possíveis decisões de investimento.",
+        "Mas o risco soberano pode também se materializar por decisões mais políticas do que econômicas.",
+        "ficar o capital necessário para cobrir os riscos operacionais e tomar decisões de gerenciamento de risco.",
+        "arem, avaliarem, monitorarem e mitigarem os riscos associados às suas decisões de investimento.",
+        "tirar conclusões sobre se o desempenho foi afetado principalmente por decisões de investimento, pelo mercado em geral ou pelo acaso.",
+        "A escolha do benchmark pode influenciar em demasia as decisões ao longo do processo de investimento.",
+        "Se a cobertura for baixa, haveria baixa relação entre as decisões do gestor e o resultado do benchmark; e - Baixo turnover do",
+        "O objetivo da atribuição macro é fornecer informações sobre as decisões feitas pelo patrocinador do fundo e medir os efeitos de tai",
+        "decisões feitas pelo patrocinador do fundo e medir os efeitos de tais decisões na carteira.",
+        "Uma das decisões do patrocinador é, por exemplo, quais gestor contratar e co",
+        "Já o objetivo da atribuição micro é analisar as decisões individuais de um gestor e determinar como o gestor adicion",
+        "caixa externos são necessárias para calcular os impactos da tomada de decisões da política de investimento do patrocinador.",
+        " agregado foi de 1,20%, equivalente a R$ 1.250,00; - Gestão Ativa: as decisões do gestor levaram a um incremento de 2,23% ou R$ 2.350,00; ",
+        "ar a explicar se os retornos excedentes de uma carteira são devidos a decisões de investimento acertadas do gestor ou resultado de muito r",
+        "É utilizado para tomar decisões de investimento - os investidores avaliam quanto risco estã"
       ],
       "stratum": "D_risk_surface"
     },
@@ -2260,6 +2609,37 @@
         "O objetivo da atribuição macro é fornecer informações sobre as decisões feitas pelo patrocinador do fundo e medir",
         "Além disso, informações de valuations e fluxos de caixa externos são necessárias pa",
         "a defende que os preços de mercado incorporam a todo momento todas as informações disponíveis, de modo que os títulos sempre estão precificad"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.redeem",
+      "form": "resgate",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 21,
+      "quotes": [
+        "um título com opção de compra embutida e mantê-lo até o vencimento ou resgate (exercício da opção de compra pelo emissor).",
+        "seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate e geralmente impõem um período de carência de um ano antes ",
+        "a não queira respeitar este prazo de carência, ele poderá solicitar o resgate, mas não terá direito a receber os rendimentos do período.",
+        "por: - público-alvo; - prazos e condições de aplicação, amortização e resgate; e - taxas de administração, gestão, máxima de distribuição",
+        "Todos os pedidos de resgate que estejam pendentes de conversão quando do fechamento par",
+        "O fechamento para resgate deve ser imediatamente comunicado à CVM pelo gestor.",
+        " que deu origem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos).",
+        "iormente, o cotista de um fundo fechado será tributado quando ocorrer resgate, amortização, distribuição de dividendos ou a alienação da ",
+        "ue as atuais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        "O risco de resgate antecipado ocorre de duas formas: - Se a taxa de juros cair",
+        "rimeiro cenário: investidor não faz qualquer solicitação de aporte ou resgate; - Segundo cenário: investidor faz uma solicitação de aport",
+        " R$ 200.000,00; - Terceiro cenário: investidor faz uma solicitação de resgate de R$ 200.000,00.",
+        "rimeiro cenário: investidor não faz qualquer solicitação de aporte ou resgate.",
+        "rimeiro cenário: investidor não faz qualquer solicitação de aporte ou resgate.",
+        "Terceiro cenário: investidor faz uma solicitação de resgate de R$ 200.000.",
+        "Por sua vez, o melhor cenário foi o 3, em que o investidor fez um resgate antes da rentabilidade negativa do segundo período.",
+        "rimeiro cenário: investidor não faz qualquer solicitação de aporte ou resgate.",
+        "Terceiro cenário: investidor faz uma solicitação de resgate de R$ 200.000.",
+        "Calcule o preço para cada R$ 1.000,00 de resgate.",
+        "ue as atuais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        "- Liquidez mais limitada: resgate dos investimentos pode ser mais difícil e demorado."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2713,6 +3093,37 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "system.service",
+      "form": "serviços",
+      "general_senses": 13,
+      "glosses": [
+        "uma parte específica do trabalho que requer ser feito como um dever ou"
+      ],
+      "occurrences": 19,
+      "quotes": [
+        "s de tecnologia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
+        "ok e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
+        "onsumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
+        "r de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+        "quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
+        "setor financeiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
+        "informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos de investimentos.",
+        "las previstas no regulamento e no respectivo contrato de prestação de serviços.",
+        "- Deve fiscalizar os serviços prestados por ele contratado.",
+        "do, com terceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
+        "informações dos fundos de investimento, bem como sobre a prestação de serviços para os fundos.",
+        " conte com cogestão da carteira de ativos, o contrato de prestação de serviços ao fundo celebrado com o cogestor deve conter dispositivo l",
+        "internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
+        "flação genericamente se refere a situações em que os preços de bens e serviços aumentam mais do que o esperado (ou inversamente).",
+        "es pagam cupons fixos e a alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
+        "umo, o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma elevação generalizad",
+        " principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "A administração fiduciária compreende o conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "estimento e no limite de suas competências, terceiros para prestar os serviços permitidos pela regulação em vigor específicos para cada ti"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.calculate",
       "form": "calcular",
       "general_senses": 4,
@@ -2828,6 +3239,36 @@
         "vido à necessidade de levantar capital para honrar suas obrigações em contratos derivativos.",
         "vo adquirido ou que o vendedor pode não entregar os títulos, ações ou contratos vendidos.",
         "iversas estratégias de hedge, como: - Credit Default Swaps (CDS): São contratos que protegem o comprador contra a inadimplência de um deved"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "venda",
+      "general_senses": 7,
+      "glosses": [
+        "a troca de bens por um valor acordado de dinheiro",
+        "a atividade de convencer alguém a comprar; \"foi uma venda difícil\"",
+        "a atividade geral de vender; \"eles tentaram impulsionar as vendas\"; \"l"
+      ],
+      "occurrences": 16,
+      "quotes": [
+        "ement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um ",
+        "Desta forma, percebemos que esta venda com recompra, nada mais é que um empréstimo em que o compra",
+        "SSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, é embutido uma taxa de juros pre",
+        "fica vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long).",
+        " expectativa de queda do preço dos ativos e, com isso, pode fazer uma venda a descoberto, por exemplo, e recomprar o ativo mais à frent",
+        "esa, descontando fluxos de caixas projetados para orientar a compra e venda de ações.",
+        "A partir dessa observação, a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinaç",
+        "clinação ascendente indica um momento de compra e uma descendente, de venda.",
+        "pode resgatar suas quotas ou liquidar quando desejar; - Não permite a venda (cessão) de cotas a outro cotista.",
+        "- As ordens de compra e venda de ativos devem sempre ser expedidas pelo gestor com a iden",
+        "As ordens de compra e venda de ativos devem sempre ser expedidas pelo gestor com a iden",
+        "de caixa, para que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor do que o de valor de mercado",
+        "tualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        " o risco de que, após a realização de uma negociação (como a compra e venda de um ativo), uma das partes não consiga cumprir com suas o",
+        "Ao embutir opções de compra ou de venda a títulos, esperamos o seguinte: > Opção de compra (call): ",
+        "tualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3016,6 +3457,31 @@
         "Rafael adota a estratégia CPPI e possui um patrimônio de R$ 500.000.",
         "ição como administrador fiduciário, gestor de recursos e/ou gestor de patrimônio, observada as eventuais exceções previstas na regulação em ",
         "A gestão de patrimônio financeiro compreende, em adição ao capítulo V, a gestão do"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.pay",
+      "form": "pagamentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de pagar em dinheiro"
+      ],
+      "occurrences": 13,
+      "quotes": [
+        " STRIPS é um tipo de título criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
+        "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em tí",
+        "o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a vida útil do título.",
+        "al Return Equity Swap (TRES) é um acordo de swap em que uma parte faz pagamentos com base em uma taxa definida, fixa ou variável, enquanto a",
+        "se em uma taxa definida, fixa ou variável, enquanto a outra parte faz pagamentos com base no retorno de um ativo subjacente.",
+        "Em resumo, em um Total Return Equity Swap: - Uma parte faz pagamentos de acordo com uma taxa definida, enquanto a outra parte faz",
+        "agamentos de acordo com uma taxa definida, enquanto a outra parte faz pagamentos com base na taxa de um ativo subjacente ou de referência.",
+        " alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
+        "o contrato, o COMPRADOR da proteção de crédito (comprador do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencime",
+        "dutos cobertos decorrentes de um evento de crédito, bem como todos os pagamentos de juros que teriam sido pagos se o título atingisse sua da",
+        "enda fixa é: (1) Estimar o fluxo de caixa da vida do título: Cupom de pagamentos (PMT).",
+        "A duration de um título ZERO-CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de vencimento.",
+        "de caixa ocorram quando e no tamanho necessário para fazer frente aos pagamentos dos passivos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3231,6 +3697,31 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.decide",
+      "form": "decisão",
+      "general_senses": 5,
+      "glosses": [
+        "o ato de se decidir sobre alguma coisa;\"o peso da decisão era dele\"; \"",
+        "Uma posição ou opinião ou decisão chegada após consideração",
+        "uma vitória vencida por pontos quando nenhum nocaute ocorreu"
+      ],
+      "occurrences": 11,
+      "quotes": [
+        "ções não estão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
+        "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empr",
+        "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode ",
+        "omendações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
+        " transferidas (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão universal (verem",
+        "finir claramente os objetivos de investimento antes de tomar qualquer decisão.",
+        "- Pode ser aplicado para diferentes períodos de tempo de acordo com a decisão do analista.",
+        "is fatores relacionados à atribuição macro: - Política de alocação: é decisão do patrocinador determinar as categorias de ativos e os pes",
+        "A decisão de aumentar a alocação de um título específico, por exemplo",
+        "deríamos resumir como um “não fazer nada”, que também é uma tomada de decisão.",
+        " um processo de investimento que combine modelos de apoio à tomada de decisão com análises de cenários econômicos derivadas da experiênci"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.position",
       "form": "posição",
       "general_senses": 25,
@@ -3253,6 +3744,27 @@
         "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia m",
         "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia m",
         "Com isso, este ativo passa a ter uma posição muito mais expressiva do que o inicial (aproximadamente de "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.analyse",
+      "form": "Análise",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 11,
+      "quotes": [
+        "racionais: o questionário aborda perguntas de cunho operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco",
+        "ação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - ",
+        "nge aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relat",
+        "e análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+        " - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
+        "A Análise Fundamentalista utiliza tantos dados financeiros históricos",
+        "**OBS:** a Análise Fundamentalista NÃO utiliza na sua concepção, os preços que",
+        "A Análise Técnica (Gráfica) estabelece projeções para os preços das a",
+        "Dentre os principais modelos de Análise Técnica, destacamos:",
+        "Dentre os principais modelos de Análise Técnica, destacamos:",
+        "Dentre as principais características, destacamos: - Análise de risco de crédito ASG: o fundo avalia o desempenho das em"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3395,31 +3907,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.liability",
-      "form": "passivo",
-      "general_senses": 6,
-      "glosses": [
-        "faltando energia ou vontade",
-        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
-        "A qualidade de ser algo que não te deixa avançar",
-        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
-      ],
-      "occurrences": 10,
-      "quotes": [
-        "ÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
-        "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
-        "om cenários que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
-        "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
-        "ue basta comprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
-        "o decompor a carteira em várias imunizações de carteiras com um único passivo.",
-        "let, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
-        " bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em perío",
-        "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
-        "Assim como ocorre quando temos um único passivo para imunizar, quando temos vários é necessário também have"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.scenario",
       "form": "cenários",
       "general_senses": 4,
@@ -3442,28 +3929,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "system.service",
-      "form": "serviço",
-      "general_senses": 13,
-      "glosses": [
-        "uma parte específica do trabalho que requer ser feito como um dever ou"
-      ],
-      "occurrences": 10,
-      "quotes": [
-        "io líquido negativo, sem prejuízo da responsabilidade do prestador de serviço pelos prejuízos que causar quando proceder com dolo ou má-f",
-        " assim como segregadas das demonstrações contábeis dos prestadores de serviço essenciais.",
-        "odem ser constituídos, por iniciativa dos cotistas ou de prestador de serviço essencial, conselhos consultivos, comitês técnicos ou de in",
-        "- Quando constituídos por iniciativa de prestador de serviço essencial, os membros do conselho ou comitê podem ser remun",
-        "O prestador de serviço essencial pode reduzir unilateralmente taxa que lhe compete",
-        "ue expressamente autorizados pelo diretor responsável do prestador de serviço essencial.",
-        " ou gestão; - taxa máxima de distribuição; - despesas relacionadas ao serviço de formação de mercado.",
-        "não previstas como encargos do fundo correm por conta do prestador de serviço essencial que a tiver contratado.",
-        "ar ativos financeiros em empréstimo em operações cursadas por meio de serviço que não seja autorizado pelo Banco Central do Brasil ou pel",
-        "títulos devem ser custodiados em entidades habilitadas a prestar esse serviço pelo supervisor local."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "technical.yield",
       "form": "rendimento",
       "general_senses": 8,
@@ -3482,6 +3947,30 @@
         "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (gera",
         "O spread de crédito é a diferença entre o rendimento de um título e o rendimento de uma taxa de referência (geralmente título público livre ",
         "inheiro poderia ser usado para ser investido em outro título de maior rendimento."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.liability",
+      "form": "passivo",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 9,
+      "quotes": [
+        "**OBSERVAÇÃO:** Caso o desenquadramento passivo se prolongue por 15 dias úteis consecutivos, ao final desse",
+        "om cenários que levem em consideração, no mínimo, as movimentações do passivo, a liquidez dos ativos, as obrigações e a cotização da clas",
+        "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mais fácil de ser implementada e ",
+        "ue basta comprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
+        "o decompor a carteira em várias imunizações de carteiras com um único passivo.",
+        "let, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
+        " bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em perío",
+        "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
+        "Assim como ocorre quando temos um único passivo para imunizar, quando temos vários é necessário também have"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3657,6 +4146,25 @@
         "o, o Alfa de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
         "- Expectativas Puras; - Preferência pela Liquidez; e - Segmentação de Mercado.",
         "Por último, temos a Teoria de Segmentação de Mercado, que defende que os investidores têm preferência por dívida"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.invest",
+      "form": "Investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 6,
+      "quotes": [
+        "Investimentos no Exterior Títulos de Renda Fixa",
+        "Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equi",
+        "amente como: - Renda Fixa; - Renda variável; - Ativos Imobiliários; - Investimentos Internacionais; - Investimentos alternativos.",
+        "da variável; - Ativos Imobiliários; - Investimentos Internacionais; - Investimentos alternativos.",
+        "definido quais serão as classes de ativos aceitas no IPS (Política de Investimentos).",
+        "O gestor aloca os ativos da carteira de acordo com a Política de Investimentos (IPS) e depois não altera mais."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3920,6 +4428,23 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "system.service",
+      "form": "serviço",
+      "general_senses": 13,
+      "glosses": [
+        "uma parte específica do trabalho que requer ser feito como um dever ou"
+      ],
+      "occurrences": 5,
+      "quotes": [
+        "io líquido negativo, sem prejuízo da responsabilidade do prestador de serviço pelos prejuízos que causar quando proceder com dolo ou má-f",
+        " assim como segregadas das demonstrações contábeis dos prestadores de serviço essenciais.",
+        " ou gestão; - taxa máxima de distribuição; - despesas relacionadas ao serviço de formação de mercado.",
+        "ar ativos financeiros em empréstimo em operações cursadas por meio de serviço que não seja autorizado pelo Banco Central do Brasil ou pel",
+        "títulos devem ser custodiados em entidades habilitadas a prestar esse serviço pelo supervisor local."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.information",
       "form": "informação",
       "general_senses": 6,
@@ -3954,6 +4479,25 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "risk.failure",
+      "form": "falhas",
+      "general_senses": 7,
+      "glosses": [
+        "o ato de não alcançar o objetivo desejado",
+        "um ato que falha; \"sua falha em passar o teste\"",
+        "uma ação errada atribuível ao mau julgamento ou ignorância ou desatenç"
+      ],
+      "occurrences": 5,
+      "quotes": [
+        "Isso envolve possíveis falhas relacionadas a procedimentos internos, pessoas e sistemas, ",
+        "Falando de forma mais genérica, está relacionado com falhas decorrentes de um erro humano.",
+        "iro, o risco operacional se refere à possibilidade de perdas devido a falhas, deficiências ou inadequação de processos internos, pessoas",
+        "As falhas que podem levar ao risco operacional incluem, entre outros,",
+        "As falhas que podem levar ao risco operacional incluem, entre outros, falhas em sistemas de informação, erros humanos, processos inadequ"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.security",
       "form": "Títulos",
       "general_senses": 8,
@@ -3967,6 +4511,23 @@
         "- Títulos de renda fixa com baixa duration: são menos sensíveis às mu",
         "- Títulos de renda fixa com rating alto: são títulos que são consider",
         "- Títulos temáticos: investem em empresas que atuam em setores especí"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.start",
+      "form": "começa",
+      "general_senses": 7,
+      "glosses": [
+        "o ato de começar algo; \"ele foi responsável pelo início das negociaçõe",
+        "O evento que consiste no início de algo"
+      ],
+      "occurrences": 4,
+      "quotes": [
+        "O processo começa quando um exportador apresenta uma fatura a uma empresa imp",
+        ", em função da direção apontada pela linha no gráfico, o momento onde começa ou termina uma tendência.",
+        "A atribuição macro começa com o valor de mercado inicial do fundo e termina com seu v",
+        "Porém, para mudanças maiores, a aproximação começa a ficar muito grosseira e precisamos fazer um ajuste para r"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4195,6 +4756,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.identify",
+      "form": "identificação",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "compra e venda de ativos devem sempre ser expedidas pelo gestor com a identificação precisa do fundo e, se for o caso, da classe de cotas em no",
+        "compra e venda de ativos devem sempre ser expedidas pelo gestor com a identificação precisa do fundo e, se for o caso, da classe de cotas em no",
+        "Ela vai além da mera identificação e mitigação de riscos, proporcionando uma visão holística e"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.decide",
       "form": "decidir",
       "general_senses": 11,
@@ -4225,6 +4799,22 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "risk.financial",
+      "form": "Riscos",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "stema abrangente que integra diversos aspectos: - Visão Holística dos Riscos; - Integração à Tomada de Decisão; e - Processo Contínuo e ",
+        "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratado",
+        "- Riscos Adicionais: o uso de alguns instrumentos de hedge, como der"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.calculate",
       "form": "Calcular",
       "general_senses": 4,
@@ -4237,6 +4827,23 @@
         "Calcular a distância de cada ponto até a média; 3.",
         "Calcular a média desses números que foram elevados ao quadrado.",
         "(3) Calcular o valor presente dos fluxos de caixa estimados, incluindo o"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.calculate",
+      "form": "cálculos",
+      "general_senses": 6,
+      "glosses": [
+        "o procedimento de calcular, determinando algo por métodos matemáticos ",
+        "um julgamento das qualidades de algo ou alguém; \"vários fatores estão ",
+        "planejamento cuidadoso e intencional de alguma coisa"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "- Fáceis cálculos e entendimento; - Não assume que os retornos são normalment",
+        "e YTM – Yield to Maturity, na renda fixa) Para a prova, os principais cálculos envolverão LTN e Debêntures.",
+        "Outro ponto que deve ser salientado é que os cálculos de remunerações no Brasil são sempre em DIAS ÚTEIS."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4317,6 +4924,22 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.calculate",
+      "form": "Cálculo",
+      "general_senses": 6,
+      "glosses": [
+        "o procedimento de calcular, determinando algo por métodos matemáticos ",
+        "um julgamento das qualidades de algo ou alguém; \"vários fatores estão ",
+        "planejamento cuidadoso e intencional de alguma coisa"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplic",
+        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o ponto de equilíbri"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "technical.futures",
       "form": "futuros",
       "general_senses": 7,
@@ -4357,6 +4980,18 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.buy",
+      "form": "Compra",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Exemplo: Compra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO E",
+        "r isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.result",
       "form": "RESULTADO",
       "general_senses": 8,
@@ -4365,6 +5000,18 @@
       "quotes": [
         "Exemplo: Compra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Fut",
         "ULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.buy",
+      "form": "COMPRA",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Exemplo: Compra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULT",
+        "**CONCLUSÃO:** no suporte se COMPRA e na resistência se VENDE o ativo."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4393,6 +5040,22 @@
       "quotes": [
         "PAGA A VARIAÇÃO DO DÓLAR INSTITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA",
         "A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI Swap"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "vendas",
+      "general_senses": 7,
+      "glosses": [
+        "a troca de bens por um valor acordado de dinheiro",
+        "a atividade de convencer alguém a comprar; \"foi uma venda difícil\"",
+        "a atividade geral de vender; \"eles tentaram impulsionar as vendas\"; \"l"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        " sabe o quanto irá pagar ao total por essa dívida), mas ela já possui vendas realizadas, recebendo os devidos valores em um ano (vendas ",
+        " já possui vendas realizadas, recebendo os devidos valores em um ano (vendas através de cartão de crédito)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4459,20 +5122,6 @@
       "quotes": [
         "Está dividido em três seções: Informações sobre a Empresa, Declaração e Eventos Importantes.",
         "- Informações Operacionais: o questionário aborda perguntas de cunho oper"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.resource",
-      "form": "Recursos",
-      "general_senses": 10,
-      "glosses": [
-        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
-      ],
-      "occurrences": 2,
-      "quotes": [
-        "- Recursos Humanos: detalhes sobre as regras de remuneração e comissio",
-        " operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4604,14 +5253,16 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.portfolio",
-      "form": "Carteiras",
-      "general_senses": 7,
-      "glosses": [],
+      "concept_id": "action.pay",
+      "form": "Pagamento",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de pagar em dinheiro"
+      ],
       "occurrences": 2,
       "quotes": [
-        "uros e de Curva de Juros, mas que serão tratados na aula de Gestão de Carteiras de Renda Fixa.",
-        "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta"
+        "ido, é importante distinguir dois pontos importantes: - Capacidade de Pagamento: função de posição econômica do governo.",
+        "- Disposição para Pagamento: função do sistema político ou liderança do governo."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4754,6 +5405,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.pay",
+      "form": "Pagamentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de pagar em dinheiro"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Valor principal indexado à variação do CPI (Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflaçã"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.value",
       "form": "VALOR",
       "general_senses": 6,
@@ -4850,6 +5514,36 @@
       "occurrences": 1,
       "quotes": [
         "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "Venda",
+      "general_senses": 7,
+      "glosses": [
+        "a troca de bens por um valor acordado de dinheiro",
+        "a atividade de convencer alguém a comprar; \"foi uma venda difícil\"",
+        "a atividade geral de vender; \"eles tentaram impulsionar as vendas\"; \"l"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "VENDA",
+      "general_senses": 7,
+      "glosses": [
+        "a troca de bens por um valor acordado de dinheiro",
+        "a atividade de convencer alguém a comprar; \"foi uma venda difícil\"",
+        "a atividade geral de vender; \"eles tentaram impulsionar as vendas\"; \"l"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "PRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4954,6 +5648,35 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.short_position",
+      "form": "vendido",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        " fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "Price",
+      "general_senses": 9,
+      "glosses": [
+        "United States operatic soprano (born 1927)",
+        "the high value or worth of something; \"her price is far above rubies\"",
+        "the property of having material worth (often indicated by the amount o",
+        "value measured by what must be given or done or undergone to obtain so",
+        "a monetary reward for helping to catch a criminal; \"the cattle thief h",
+        "the amount of money needed to purchase something; \"the price of gasoli"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.company",
       "form": "Empresa",
       "general_senses": 4,
@@ -4963,6 +5686,30 @@
       "occurrences": 1,
       "quotes": [
         "Está dividido em três seções: Informações sobre a Empresa, Declaração e Eventos Importantes."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "Recursos",
+      "general_senses": 10,
+      "glosses": [
+        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "- Recursos Humanos: detalhes sobre as regras de remuneração e comissio"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.analyse",
+      "form": "ANÁLISE",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "A ANÁLISE FUNDAMENTALISTA diz que há um valor para cada ação baseado "
       ],
       "stratum": "D_risk_surface"
     },
@@ -5056,15 +5803,16 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "system.service",
-      "form": "Serviço",
-      "general_senses": 13,
+      "concept_id": "action.invest",
+      "form": "Investimento",
+      "general_senses": 3,
       "glosses": [
-        "uma parte específica do trabalho que requer ser feito como um dever ou"
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
       ],
       "occurrences": 1,
       "quotes": [
-        "**OBSERVAÇÕES:** - Considerado como Prestador de Serviço Essencial; - Compete ao gestor negociar os ativos da cartei"
+        "s abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5121,6 +5869,32 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.identify",
+      "form": "Identificação",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        " os riscos toleráveis e tome decisões alinhadas com seus objetivos; - Identificação e avaliação de riscos: é importante identificar todos os ri"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.decide",
+      "form": "Decisão",
+      "general_senses": 5,
+      "glosses": [
+        "o ato de se decidir sobre alguma coisa;\"o peso da decisão era dele\"; \"",
+        "Uma posição ou opinião ou decisão chegada após consideração",
+        "uma vitória vencida por pontos quando nenhum nocaute ocorreu"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "rsos aspectos: - Visão Holística dos Riscos; - Integração à Tomada de Decisão; e - Processo Contínuo e Adaptável."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.process",
       "form": "Processo",
       "general_senses": 5,
@@ -5154,20 +5928,6 @@
       "occurrences": 1,
       "quotes": [
         "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS)."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.asset",
-      "form": "Ativo",
-      "general_senses": 4,
-      "glosses": [
-        "caracteriza-se por actividade enérgica",
-        "qualquer coisa de valor material ou utilidade que é de propriedade de "
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "ilidade de inadimplência do emissor do título, quando comparado com o Ativo Livre de Risco."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5216,6 +5976,20 @@
       "form": "MODELO",
       "general_senses": 10,
       "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Portanto, VERIFICA A PRECISÃO DE UM MODELO DE MENSURAÇÃO DE RISCOS."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "RISCOS",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
       "occurrences": 1,
       "quotes": [
         "Portanto, VERIFICA A PRECISÃO DE UM MODELO DE MENSURAÇÃO DE RISCOS."
@@ -5333,6 +6107,30 @@
       "occurrences": 1,
       "quotes": [
         "UMA DEBÊNTURE COM VENCIMENTO EM 10 ANOS, ESTÁ SENDO NEGOCIADA NO MERCADO POR R$ 1.040,00."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.pay",
+      "form": "PAGAMENTO",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de pagar em dinheiro"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL É SEU CURRENT YIELD?"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.redeem",
+      "form": "Resgate",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "iquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5470,19 +6268,6 @@
       "occurrences": 1,
       "quotes": [
         "Neste capítulo, as principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou i"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.resource",
-      "form": "RECURSOS",
-      "general_senses": 10,
-      "glosses": [
-        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "- **GESTÃO DE RECURSOS DE TERCEIROS:** gestão profissional dos ativos integrantes "
       ],
       "stratum": "D_risk_surface"
     }

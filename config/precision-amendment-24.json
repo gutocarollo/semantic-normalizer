@@ -1,0 +1,11 @@
+{
+  "id": "precision-sweep-amendment-24",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; draw seed 16180339 against registry 2.21.0",
+  "method": "all 280 drawn occurrences read; one swap-leg collocation was missing from batch 16",
+  "reason": "`ativo em taxa de juros` was registered and `passivo em taxa de juros` was not, in the same sentence. An enumerated list of collocations has to be enumerated completely.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.swap_leg", "language": "pt-BR", "form": "passivo em taxa de juros",
+     "why": "`o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros)` — four legs in one sentence, three of which batch 16 covered."}
+  ]
+}

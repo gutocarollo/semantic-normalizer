@@ -1,0 +1,11 @@
+{
+  "batch": 18,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "`operadora` sat at review on actor.operator, whose definition is a machine operator from the controlled-instruction seed. Its two corpus occurrences are `entidade operadora de infraestrutura do mercado financeiro` — the clearing and settlement infrastructure, a CVM 175 term. Missing concept, not a wrong form: the same pattern as `ativo`, `registro` and the normative operators.",
+  "concepts": [
+    {"id": "actor.market_infrastructure", "en": "market infrastructure entity", "pt": "entidade operadora de infraestrutura", "class": "actor", "pos": "noun",
+     "def": "The entity that operates clearing and settlement infrastructure and may guarantee the settlement of a trade.",
+     "alt_pt": ["infraestrutura do mercado financeiro"], "alt_en": ["financial market infrastructure"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"}
+  ]
+}
