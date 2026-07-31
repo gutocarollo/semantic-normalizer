@@ -5,7 +5,7 @@
   "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
   "validation": {
     "unit_tests_passed": 19,
-    "registry_concepts": 315,
+    "registry_concepts": 319,
     "registry_errors": 0,
     "registry_warnings": 4,
     "schema_validation": "passed",
@@ -45,8 +45,8 @@
     },
     {
       "path": "checksums.sha256",
-      "size_bytes": 5370,
-      "sha256": "22d117d20e882c39cb6e65325adbf070b5fe51cea2fb705028efd4a3cbf7b5bf"
+      "size_bytes": 5564,
+      "sha256": "ddc97d4aa8792c29f8d28c318ac0ba4b13ff322e94301c4c5e210c6356ce18b6"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -109,6 +109,11 @@
       "sha256": "febc3c44de8f11b3aa4bef66682c03e910fb1922cd769c656f21371f1b6f5c70"
     },
     {
+      "path": "config/cga-batch-13.json",
+      "size_bytes": 2436,
+      "sha256": "bb7101ebbeac24ac66613e794ac9907b06a67de9d835b427d2cceff098147ed6"
+    },
+    {
       "path": "config/precision-amendment-01.json",
       "size_bytes": 8936,
       "sha256": "56da0a7bd43897ce97c2acbfd7864e136228ee2ecd716763ceb2ebfd8756c56c"
@@ -167,6 +172,21 @@
       "path": "config/precision-amendment-12.json",
       "size_bytes": 1636,
       "sha256": "0ee9017a0e85e78a7462202258b727c68297901be1f89e4d96bb1ef11c44180d"
+    },
+    {
+      "path": "config/precision-amendment-13.json",
+      "size_bytes": 2283,
+      "sha256": "7fa23dcad2c5d4ee8cfcd138ae951ec3913efdccd66c6acb41e519fb3885c549"
+    },
+    {
+      "path": "config/precision-amendment-14.json",
+      "size_bytes": 1248,
+      "sha256": "cfd25bd9220b4d87cb23d4261233f0981471d4c11e2c30425b22426e06e95020"
+    },
+    {
+      "path": "config/precision-amendment-15.json",
+      "size_bytes": 2024,
+      "sha256": "458196e07597f053f76b764c0e36bcff32db33ef0587b22176332cb3b8a81743"
     },
     {
       "path": "docs/architecture.md",
@@ -266,7 +286,7 @@
     {
       "path": "reports/compound-fragments.json",
       "size_bytes": 8535,
-      "sha256": "c65911266b06f54d3dc828d397111c8bcbd01aea81c19762a97e03a62ff95e20"
+      "sha256": "6e62ab9bc72fb7aaf3a1153f3221a941655b9b013521b714345f34d4e969343d"
     },
     {
       "path": "reports/coverage-baseline.json",
@@ -360,8 +380,8 @@
     },
     {
       "path": "reports/dev-retrieval-ablations-final.json",
-      "size_bytes": 88207,
-      "sha256": "27f79fa99ff607f0ab91879fe856b9437d681ff4ab52db0314ff974b7d120b6d"
+      "size_bytes": 88164,
+      "sha256": "0c8af2d0233e184bb242f227dffcf9fdbdf120607492ee28f357aa28c5c538b8"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -371,12 +391,12 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "d48b928b45e3c0b166086f3305db7f6d2c066d7a26e4793d376470b5e58befbd"
+      "sha256": "f3b6a0b599492f1e66e72ee42c256acac43925d836fe1c9f51891fd346dc3314"
     },
     {
       "path": "reports/form-polysemy.json",
-      "size_bytes": 248883,
-      "sha256": "07a78a3c6a78b841898f489fb9b4d51968971b852f2ee615fe06089de560d0bb"
+      "size_bytes": 252365,
+      "sha256": "3492880320cf3de1d952d7177e4d96001f17618cf97f59440ac31094d6ce0b15"
     },
     {
       "path": "reports/oov-queue.json",
@@ -391,7 +411,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7401,
-      "sha256": "5a7d20f8069f8740728e7ed4c904816c8dc1a01e305dbb59824954039aebea75"
+      "sha256": "ae965b3f7c7ac18188a72b9dc6a4681365163d25db1cb4332dfde19c8d964d22"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -400,13 +420,13 @@
     },
     {
       "path": "reports/precision-audit.json",
-      "size_bytes": 650705,
-      "sha256": "1f2c5c4bb8b769331d722d4178a0fd16178ffb94691635e29f4fe2de068f4aa1"
+      "size_bytes": 674342,
+      "sha256": "0d0b355e280cf8537e7e72a5222e228949ba7dc5bdb0f89af8ac57018e7c86fd"
     },
     {
       "path": "reports/precision-final.json",
-      "size_bytes": 3474,
-      "sha256": "4300100e5aee9ba2acf3e309a662f7fb7dc764dfe2c51b60ac4e79c2b28f1838"
+      "size_bytes": 3898,
+      "sha256": "ba86b18ddcd891e1cda82e778375719b09c0c8755e2cb929a5e1208e304c1cd7"
     },
     {
       "path": "reports/precision-risk.json",
@@ -415,18 +435,18 @@
     },
     {
       "path": "reports/precision-strata-wide.json",
-      "size_bytes": 515403,
-      "sha256": "7e748635b1fc138fc5577490a90663dd9582472b100c26f22bd182a8cc30ae2e"
+      "size_bytes": 528362,
+      "sha256": "006ea882b0aedc744ebd74f69677ebb3dfeda10fab7acd26061b8cb2b9f6dad0"
     },
     {
       "path": "reports/precision-strata.json",
-      "size_bytes": 408535,
-      "sha256": "048a6863833550f7eda9b74325736d3bfa64ccbad9dbf7637c55b6d30fe6e3b7"
+      "size_bytes": 412772,
+      "sha256": "e7529b94d88c7ec1788d60f84b2e3cd675c7a5ddfb0cf481f81719d9bf75402c"
     },
     {
       "path": "reports/recall-delta.json",
-      "size_bytes": 20729,
-      "sha256": "9501c895dd9ba0fcf4a8547934f3b1f463a2c13310bf8e0aea134ee1c7a59072"
+      "size_bytes": 21038,
+      "sha256": "e08d596b464b962830a2f1613960106cb40e181d03c21ce0e0f0823ba840d850"
     },
     {
       "path": "reports/registry-migration.json",
@@ -440,8 +460,8 @@
     },
     {
       "path": "reports/release-manifest.json",
-      "size_bytes": 24828,
-      "sha256": "413fcbf9444a58723bf2e1c5c9dbea34dee14ac9268f8e2442d78069b55c7534"
+      "size_bytes": 25159,
+      "sha256": "97741d10da4d74724f035d7369961207eb3edea4ed17f18cd7fb5099e4364b35"
     },
     {
       "path": "reports/sample-output.json",
@@ -494,6 +514,11 @@
       "sha256": "2ff6d32c7fc1aaa1e35cc9e2965ef4e5446932488ce990fe2930538f9973ec40"
     },
     {
+      "path": "reports/sweep-queue-r8.json",
+      "size_bytes": 336465,
+      "sha256": "b01a8b60802026cf8384ce9bc38e283d47b882a36232d59c37a55c3d1168d7f9"
+    },
+    {
       "path": "reports/sweep-queue.json",
       "size_bytes": 166432,
       "sha256": "4c356bb108f6d745449c79552472fab7421db23d4d19fe213c6a2e9de36e720c"
@@ -524,6 +549,11 @@
       "sha256": "2dc1e71a981f0b218b1f4e34675fed6d7fd70cf02689d131cfdb24b356da292a"
     },
     {
+      "path": "reports/unread-residual-v216.json",
+      "size_bytes": 64486,
+      "sha256": "5caa6c8c0ca9d407a147bd3cb1be1f2c0e7698234f17db5317bc74efb44c9dc5"
+    },
+    {
       "path": "reports/validation-summary.md",
       "size_bytes": 2517,
       "sha256": "9e327ac70d1ac5a1b0d7cd1deb92aa490f556c321418f07d0863452eefa3e0b8"
@@ -540,8 +570,8 @@
     },
     {
       "path": "scripts/amend_registry.py",
-      "size_bytes": 17364,
-      "sha256": "215d29876f82d77af095cda409728ecaa7f6618f7ea1e87ecdf6fbffb1e2dcaf"
+      "size_bytes": 17880,
+      "sha256": "2eb22360f72e764c3de62adb6f36429fc2975bf25245ff57fed2f73b116417a1"
     },
     {
       "path": "scripts/audit_precision.py",
@@ -640,8 +670,8 @@
     },
     {
       "path": "scripts/report_precision.py",
-      "size_bytes": 9556,
-      "sha256": "59b8b3ea39b328a3bb133822521d3fae4130135fa58bcbec2ecfaf65c24e6a72"
+      "size_bytes": 9888,
+      "sha256": "62ce55a934d9ce4ad7817216b7b31b196241c2f4c29616797a2b052ab5c023a4"
     },
     {
       "path": "scripts/report_recall.py",
@@ -755,18 +785,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 411627,
-      "sha256": "279bc40b370438e5fb12cbc0907b5cea86742e5a6f02dbcc30672d287b9fd55b"
+      "size_bytes": 418179,
+      "sha256": "46131e53d5c4ff3345feff96a9e008d5390aaf740f7dfe66aaad37c3850687be"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "size_bytes": 28309,
-      "sha256": "efd6c915f759443fce237bd973fe2db3a725554116cef0e09a23572407a6723d"
+      "size_bytes": 32424,
+      "sha256": "998715d2cc9910c20087705dc6489c493c2d7ceaa27b2d9859a76fca94d26e35"
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 10515,
-      "sha256": "072c3a61fd6efbfc962e0ba9d497a970925ca7062f7fc987408c1d3f890879f9"
+      "size_bytes": 10666,
+      "sha256": "c434f01f9fa672518cfb5eee7997b222c2ebbe9b5f0d8b1e47240674eea1bef5"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -801,7 +831,7 @@
     {
       "path": "src/semantic_normalizer/registry.py",
       "size_bytes": 15254,
-      "sha256": "21e0d7d2b4594a5c115690e1a0ce7a34ee74db83fee034a0863d19abee1b45f4"
+      "sha256": "572340d90025b438b9958910ae56cf07eb1e73ef0a991c2dc0ec78aec338f132"
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -841,7 +871,7 @@
     {
       "path": "tests/test_controlled_language.py",
       "size_bytes": 30707,
-      "sha256": "fded5b79f5441922f9fbf3fb2b4eba88fcf7aa4a17dc04da66c68a5386df76a5"
+      "sha256": "b02c128fb239f924a0d3ca823b7dcf7a4af94ae978f8f87adbd3e981811107f7"
     },
     {
       "path": "tests/test_documented_commands.py",
@@ -865,8 +895,8 @@
     },
     {
       "path": "tests/test_registry_governance.py",
-      "size_bytes": 12505,
-      "sha256": "36e5f1b08b4db97e24f114e0d50dff73101a0f5ff1e03fbe483eb9141a982dbf"
+      "size_bytes": 15402,
+      "sha256": "5b6f19fb22b4936a6ae030ebbd58d2c35fdf7412609bb6451c8fd188e8769519"
     },
     {
       "path": "tests/test_runtime_contracts.py",
@@ -890,8 +920,8 @@
     },
     {
       "path": "tests/test_sense_precision.py",
-      "size_bytes": 13850,
-      "sha256": "c8dd6ffff69725a4a59baf74cd78da9e952b6d7fb5c97bb2265198055eed3c87"
+      "size_bytes": 16011,
+      "sha256": "263e6e45bde181943652cf09693cca3bd490e849984f968714fc44a5e2e2c1f5"
     }
   ]
 }

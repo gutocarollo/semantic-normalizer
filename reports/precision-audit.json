@@ -134,7 +134,7 @@
       ],
       "occurrences": 181,
       "policy": "auto",
-      "share_of_concept": 0.91,
+      "share_of_concept": 0.879,
       "tokens": 1
     },
     {
@@ -1106,6 +1106,50 @@
       "tokens": 1
     },
     {
+      "alias": "quando",
+      "concept_id": "condition.when",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "O processo começa quando um exportador apresenta uma fatura a uma empresa importador",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        },
+        {
+          "context": "tulos com Call Embutida não possuem valorização “infinita”, quando as taxas de juros do mercado (ou título) diminuem, conforme",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        },
+        {
+          "context": "sula de PUT Embutida não possuem desvalorização “infinita”, quando as taxas de juros do mercado (ou título) sobem, conforme gr",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        },
+        {
+          "context": "e acredita em uma baixa probabilidade de calote de empresas quando houvesse uma crise mundial.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        },
+        {
+          "context": "mpresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entreteni",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        },
+        {
+          "context": "mpresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "quando"
+        }
+      ],
+      "occurrences": 60,
+      "policy": "auto",
+      "share_of_concept": 0.706,
+      "tokens": 1
+    },
+    {
       "alias": "investidores",
       "concept_id": "actor.investor",
       "domains": [
@@ -1370,50 +1414,6 @@
       "tokens": 1
     },
     {
-      "alias": "vencimento",
-      "concept_id": "temporal.maturity",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "de o governo americano pode recomprar a dívida antes do seu vencimento.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        },
-        {
-          "context": "em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a v",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        },
-        {
-          "context": "mete pagar a quantia indicada no aceite bancário na data de vencimento.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        },
-        {
-          "context": "cário tem a garantia de que receberá o pagamento na data de vencimento.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        },
-        {
-          "context": "Eles normalmente têm vencimento, o que significa que precisam ser resgatados geralmente em ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        },
-        {
-          "context": "título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "vencimento"
-        }
-      ],
-      "occurrences": 43,
-      "policy": "auto",
-      "share_of_concept": 0.632,
-      "tokens": 1
-    },
-    {
       "alias": "recursos",
       "concept_id": "entity.resource",
       "domains": [
@@ -1499,6 +1499,50 @@
       "occurrences": 42,
       "policy": "auto",
       "share_of_concept": 0.689,
+      "tokens": 1
+    },
+    {
+      "alias": "vencimento",
+      "concept_id": "temporal.maturity",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "de o governo americano pode recomprar a dívida antes do seu vencimento.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        },
+        {
+          "context": "em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a v",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        },
+        {
+          "context": "mete pagar a quantia indicada no aceite bancário na data de vencimento.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        },
+        {
+          "context": "cário tem a garantia de que receberá o pagamento na data de vencimento.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        },
+        {
+          "context": "Eles normalmente têm vencimento, o que significa que precisam ser resgatados geralmente em ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        },
+        {
+          "context": "título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "vencimento"
+        }
+      ],
+      "occurrences": 42,
+      "policy": "auto",
+      "share_of_concept": 0.627,
       "tokens": 1
     },
     {
@@ -2734,6 +2778,50 @@
       "tokens": 1
     },
     {
+      "alias": "sem",
+      "concept_id": "polarity.absence",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Ela também é considerada a taxa de juro sem risco do euro.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": " ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": "desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sem"
+        },
+        {
+          "context": " (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        },
+        {
+          "context": "ta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        },
+        {
+          "context": "Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "sem"
+        }
+      ],
+      "occurrences": 23,
+      "policy": "auto",
+      "share_of_concept": 0.742,
+      "tokens": 1
+    },
+    {
       "alias": "setores",
       "concept_id": "entity.sector",
       "domains": [
@@ -2994,7 +3082,7 @@
       ],
       "occurrences": 22,
       "policy": "auto",
-      "share_of_concept": 0.324,
+      "share_of_concept": 0.328,
       "tokens": 1
     },
     {
@@ -3171,6 +3259,50 @@
       "occurrences": 21,
       "policy": "auto",
       "share_of_concept": 0.724,
+      "tokens": 1
+    },
+    {
+      "alias": "Quando",
+      "concept_id": "condition.when",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "Quando esses títulos são negociados EM MAIS DE UM PAÍS, eles são c",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Quando"
+        },
+        {
+          "context": "Quando falamos em estratégias passivas de Renda Variável, podemos ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Quando"
+        },
+        {
+          "context": "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR,",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Quando"
+        },
+        {
+          "context": "Quando não se possui a ação, é necessário alugá-la e, assim, vende",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Quando"
+        },
+        {
+          "context": "Quando as bandas se contraem, indica baixa volatilidade, e quando ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Quando"
+        },
+        {
+          "context": "Quando do ingresso do cotista no fundo, o agente que tiver realiza",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "Quando"
+        }
+      ],
+      "occurrences": 21,
+      "policy": "unknown",
+      "share_of_concept": 0.247,
       "tokens": 1
     },
     {
@@ -6207,7 +6339,7 @@
       ],
       "occurrences": 10,
       "policy": "unknown",
-      "share_of_concept": 0.05,
+      "share_of_concept": 0.049,
       "tokens": 1
     },
     {
@@ -7047,6 +7179,50 @@
       "tokens": 1
     },
     {
+      "alias": "desde que",
+      "concept_id": "condition.provided_that",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "er momento, novas aplicações em classe ou subclasse aberta, desde que tal suspensão se aplique indistintamente a novos investidor",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desde que"
+        },
+        {
+          "context": "ação de membros do comitê pode constituir encargo do fundo, desde que prevista no regulamento.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desde que"
+        },
+        {
+          "context": "s prestadores de serviços essenciais e partes relacionadas, desde que expressamente autorizados pelo diretor responsável do prest",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desde que"
+        },
+        {
+          "context": ", é permitida a manifestação dos credores, nessa qualidade, desde que prevista na ata da convocação ou autorizada pela mesa ou pe",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "desde que"
+        },
+        {
+          "context": "da última cobrança por método distinto do método do ajuste, desde que causando os mesmos efeitos.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desde que"
+        },
+        {
+          "context": "Por sua vez e desde que expressamente previsto em seus regulamentos, as classes e s",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "desde que"
+        }
+      ],
+      "occurrences": 9,
+      "policy": "auto",
+      "share_of_concept": 0.9,
+      "tokens": 2
+    },
+    {
       "alias": "Convexidade",
       "concept_id": "technical.convexity",
       "domains": [
@@ -7396,7 +7572,7 @@
       ],
       "occurrences": 8,
       "policy": "unknown",
-      "share_of_concept": 0.04,
+      "share_of_concept": 0.039,
       "tokens": 1
     },
     {
@@ -8852,6 +9028,50 @@
       "tokens": 1
     },
     {
+      "alias": "Sem",
+      "concept_id": "polarity.absence",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Sem"
+        },
+        {
+          "context": "Sem prejuízo da portabilidade das cotas pelos seus titulares, a",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "Sem"
+        },
+        {
+          "context": "Sem prejuízo de eventuais sanções, a Superintendência competent",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "Sem"
+        },
+        {
+          "context": "Sem prejuízo das responsabilidades dos prestadores de serviços,",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "Sem"
+        },
+        {
+          "context": "Sem prejuízo da responsabilidade do gestor, o administrador dev",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Sem"
+        },
+        {
+          "context": " 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "Sem"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "unknown",
+      "share_of_concept": 0.194,
+      "tokens": 1
+    },
+    {
       "alias": "documento",
       "concept_id": "entity.document",
       "domains": [
@@ -9093,6 +9313,46 @@
       "policy": "auto",
       "share_of_concept": 0.192,
       "tokens": 4
+    },
+    {
+      "alias": "nem",
+      "concept_id": "polarity.negation",
+      "domains": [
+        "documentation",
+        "controlled_instruction",
+        "safety"
+      ],
+      "examples": [
+        {
+          "context": "ta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deság",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "nem"
+        },
+        {
+          "context": "se tipo de benchmark infelizmente não pode ser identificado nem especificado de antemão.",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "nem"
+        },
+        {
+          "context": "- As informações e a modelagem nem sempre estão disponíveis e ainda podem ser caras para imple",
+          "source": "07-avaliacao-de-desempenho.md",
+          "surface": "nem"
+        },
+        {
+          "context": "ta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deság",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "nem"
+        },
+        {
+          "context": "Todos nós temos acesso a investimentos em ações, mas nem todos tem acesso a comprar ações de uma companhia fechada.",
+          "source": "10-alocacao-de-ativos-e-rebalanceamento.md",
+          "surface": "nem"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "auto",
+      "share_of_concept": 0.024,
+      "tokens": 1
     },
     {
       "alias": "ESTR",
@@ -10009,6 +10269,40 @@
       "policy": "auto",
       "share_of_concept": 0.8,
       "tokens": 1
+    },
+    {
+      "alias": "sempre que",
+      "concept_id": "condition.when",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros do programa.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "sempre que"
+        },
+        {
+          "context": "isponibilizar a demonstração de desempenho a seus cotistas, sempre que solicitado.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "sempre que"
+        },
+        {
+          "context": " Quantificação de riscos: os riscos devem ser quantificados sempre que possível.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "sempre que"
+        },
+        {
+          "context": "rivativos devem envolver as chamadas Contrapartes Centrais, sempre que possível.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "sempre que"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.047,
+      "tokens": 2
     },
     {
       "alias": "rating",
@@ -11842,6 +12136,35 @@
       "tokens": 1
     },
     {
+      "alias": "É vedada",
+      "concept_id": "polarity.prohibition",
+      "domains": [
+        "controlled_instruction",
+        "safety"
+      ],
+      "examples": [
+        {
+          "context": "- É vedada a afetação ou a vinculação, a qualquer título, de parcela d",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "É vedada"
+        },
+        {
+          "context": "É vedada a utilização de informação relevante ainda não divulgada, p",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "É vedada"
+        },
+        {
+          "context": "É vedada a cobrança de taxa de performance quando o valor da cota fo",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "É vedada"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.375,
+      "tokens": 2
+    },
+    {
       "alias": "decidir",
       "concept_id": "action.decide",
       "domains": [
@@ -11868,6 +12191,64 @@
       "occurrences": 3,
       "policy": "auto",
       "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
+      "alias": "É vedado",
+      "concept_id": "polarity.prohibition",
+      "domains": [
+        "controlled_instruction",
+        "safety"
+      ],
+      "examples": [
+        {
+          "context": "É vedado que o acordo de remuneração direta ou indiretamente resulte",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "É vedado"
+        },
+        {
+          "context": "É vedado ao fundo a aplicação em cotas de classes que nele invistam,",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "É vedado"
+        },
+        {
+          "context": "É vedado ao gestor emprestar e tomar ativos financeiros em empréstim",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "É vedado"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.375,
+      "tokens": 2
+    },
+    {
+      "alias": "expressamente",
+      "concept_id": "polarity.affirmation",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "res de serviços essenciais e partes relacionadas, desde que expressamente autorizados pelo diretor responsável do prestador de serviç",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "expressamente"
+        },
+        {
+          "context": "Desde que expressamente previsto em seus regulamentos, as classes e subclasses de c",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "expressamente"
+        },
+        {
+          "context": "Por sua vez e desde que expressamente previsto em seus regulamentos, as classes e subclasses de c",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "expressamente"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 1.0,
       "tokens": 1
     },
     {
@@ -11927,6 +12308,35 @@
       "policy": "auto",
       "share_of_concept": 0.011,
       "tokens": 2
+    },
+    {
+      "alias": "exceto",
+      "concept_id": "polarity.exception",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "enção ou aplicação no País de recursos captados pelo fundo, exceto nos pontos previstos anteriormente.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "exceto"
+        },
+        {
+          "context": "to em cotas devem adquirir classes do mesmo tipo que a sua, exceto no caso de classes tipificadas como Multimercado, que podem",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "exceto"
+        },
+        {
+          "context": "ionais não possuem limites de exposição a risco de capital, exceto pelo que porventura dispuser o Regulamento.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "exceto"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "auto",
+      "share_of_concept": 0.429,
+      "tokens": 1
     },
     {
       "alias": "come-cotas",
@@ -12567,6 +12977,31 @@
       "tokens": 1
     },
     {
+      "alias": "Nem",
+      "concept_id": "polarity.negation",
+      "domains": [
+        "documentation",
+        "controlled_instruction",
+        "safety"
+      ],
+      "examples": [
+        {
+          "context": "Nem todos os títulos pagam cupom, alguns deles simplesmente têm",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Nem"
+        },
+        {
+          "context": "Nem todas as instituições possuem internamente os profissionais",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Nem"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.01,
+      "tokens": 1
+    },
+    {
       "alias": "Valor Presente",
       "concept_id": "technical.present_value",
       "domains": [
@@ -12611,8 +13046,32 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.029,
+      "share_of_concept": 0.03,
       "tokens": 1
+    },
+    {
+      "alias": "máximo de",
+      "concept_id": "quantity.at_most",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "máximo de"
+        },
+        {
+          "context": "a regulamentação, sendo admitido o estabelecimento de prazo máximo de conversão e pagamento.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "máximo de"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.667,
+      "tokens": 2
     },
     {
       "alias": "opção de Call",
@@ -13455,6 +13914,78 @@
       "tokens": 3
     },
     {
+      "alias": "salvo",
+      "concept_id": "polarity.exception",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " transferidas (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão univ",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "salvo"
+        },
+        {
+          "context": " colocada à disposição dos cotistas na mesma periodicidade, salvo exceções.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "salvo"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.286,
+      "tokens": 1
+    },
+    {
+      "alias": "ressalvadas",
+      "concept_id": "polarity.exception",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "itadas a atuar como integrantes do sistema de distribuição, ressalvadas as dispensas previstas em regulamentações específicas.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "ressalvadas"
+        },
+        {
+          "context": "ção de cotas deve ser realizada em moeda corrente nacional, ressalvadas as hipóteses especificamente aplicáveis a determinadas cate",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "ressalvadas"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.286,
+      "tokens": 1
+    },
+    {
+      "alias": "é vedada",
+      "concept_id": "polarity.prohibition",
+      "domains": [
+        "controlled_instruction",
+        "safety"
+      ],
+      "examples": [
+        {
+          "context": "aplicação em cotas de classes que nele invistam, assim como é vedada a aplicação de recursos de uma classe em cotas de outra cla",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "é vedada"
+        },
+        {
+          "context": "E, como regra geral, é vedada a manutenção ou aplicação no País de recursos captados pelo",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "é vedada"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 2
+    },
+    {
       "alias": "custodiante",
       "concept_id": "entity.custodian",
       "domains": [
@@ -13525,6 +14056,30 @@
       "policy": "unknown",
       "share_of_concept": 0.667,
       "tokens": 2
+    },
+    {
+      "alias": "até o final",
+      "concept_id": "temporal.until",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "vos permaneça desenquadrada por 10 dias úteis consecutivos, até o final do dia útil seguinte ao encerramento do prazo, bem como inf",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "até o final"
+        },
+        {
+          "context": "contratada só é garantida se o investidor mantiver o título até o final do prazo.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "até o final"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.333,
+      "tokens": 3
     },
     {
       "alias": "Dívida",
@@ -14173,6 +14728,30 @@
       "policy": "unknown",
       "share_of_concept": 1.0,
       "tokens": 2
+    },
+    {
+      "alias": "SEM",
+      "concept_id": "polarity.absence",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Entre um título COM cupom e outro SEM cupom com mesmo vencimento, o título COM cupom possui Durat",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "SEM"
+        },
+        {
+          "context": "o vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "SEM"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.065,
+      "tokens": 1
     },
     {
       "alias": "TÍTULO",
@@ -14896,6 +15475,25 @@
       "tokens": 3
     },
     {
+      "alias": "até o vencimento",
+      "concept_id": "temporal.until",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "o comprar um título com opção de compra embutida e mantê-lo até o vencimento ou resgate (exercício da opção de compra pelo emissor).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "até o vencimento"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 3
+    },
+    {
       "alias": "Spreads",
       "concept_id": "technical.spread",
       "domains": [
@@ -15273,6 +15871,25 @@
       "occurrences": 1,
       "policy": "unknown",
       "share_of_concept": 1.0,
+      "tokens": 2
+    },
+    {
+      "alias": "no máximo",
+      "concept_id": "quantity.at_most",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Desta forma, este é um fundo que no máximo poderá investir 33% em outras modalidades, como por exemplo",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "no máximo"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.333,
       "tokens": 2
     },
     {
@@ -16171,6 +16788,25 @@
       "tokens": 1
     },
     {
+      "alias": "até o encerramento",
+      "concept_id": "temporal.until",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "devem ser escriturados separadamente das demais aplicações, até o encerramento da distribuição.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "até o encerramento"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 3
+    },
+    {
       "alias": "agente",
       "concept_id": "actor.agent",
       "domains": [
@@ -16245,6 +16881,25 @@
       "policy": "auto",
       "share_of_concept": 1.0,
       "tokens": 1
+    },
+    {
+      "alias": "Desde que",
+      "concept_id": "condition.provided_that",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Desde que expressamente previsto em seus regulamentos, as classes e s",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "Desde que"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.1,
+      "tokens": 2
     },
     {
       "alias": "International Securities Identification Number",
@@ -16416,6 +17071,25 @@
       "policy": "auto",
       "share_of_concept": 1.0,
       "tokens": 1
+    },
+    {
+      "alias": "até o último dia",
+      "concept_id": "temporal.until",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "abilidade do investidor, com o recolhimento através de DARF até o último dia do mês subsequente.",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "até o último dia"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 4
     },
     {
       "alias": "Identificar",
@@ -17157,6 +17831,25 @@
       "policy": "unknown",
       "share_of_concept": 0.067,
       "tokens": 1
+    },
+    {
+      "alias": "até a data",
+      "concept_id": "temporal.until",
+      "domains": [
+        "documentation",
+        "controlled_instruction"
+      ],
+      "examples": [
+        {
+          "context": "o CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contrato.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "até a data"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.167,
+      "tokens": 3
     },
     {
       "alias": "Loss Given Default",
@@ -18604,26 +19297,26 @@
     }
   ],
   "registry": {
-    "concepts": 315,
-    "version": "2.15.1"
+    "concepts": 319,
+    "version": "2.16.2"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 405,
-    "events_from_bare_tokens": 5996,
-    "events_from_phrases": 704,
+    "bare_token_pairs": 416,
+    "events_from_bare_tokens": 6124,
+    "events_from_phrases": 735,
     "occurrences_per_pair": {
       "max": 200,
-      "mean": 10.97,
+      "mean": 10.8,
       "median": 3,
       "p90": 23,
-      "stdev": 24.61
+      "stdev": 24.28
     },
-    "phrase_pairs": 206
+    "phrase_pairs": 219
   },
   "totals": {
-    "concepts_with_matches": 246,
-    "distinct_pairs": 611,
-    "match_events": 6700
+    "concepts_with_matches": 254,
+    "distinct_pairs": 635,
+    "match_events": 6859
   }
 }

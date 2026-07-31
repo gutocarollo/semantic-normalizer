@@ -1,40 +1,40 @@
 {
-  "events_total": 6700,
+  "events_total": 6859,
   "occurrences_per_pair": {
     "max": 200,
-    "mean": 10.97,
+    "mean": 10.8,
     "median": 3,
-    "stdev": 24.61
+    "stdev": 24.28
   },
   "registry": {
-    "concepts": 315,
-    "version": "2.15.1"
+    "concepts": 319,
+    "version": "2.16.2"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 704,
-      "share": 0.1051
+      "events": 735,
+      "share": 0.1072
     },
     "B_domain_exclusive": {
-      "events": 601,
-      "share": 0.0897
+      "events": 608,
+      "share": 0.0886
     },
     "C_narrow": {
-      "events": 1312,
-      "share": 0.1958
+      "events": 1402,
+      "share": 0.2044
     },
     "D_risk_surface": {
-      "events": 4083,
-      "share": 0.6094
+      "events": 4114,
+      "share": 0.5998
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 4083,
-    "floor_if_sweep_all_wrong": 0.3906,
-    "pairs": 240,
-    "share_of_all_events": 0.6094
+    "events": 4114,
+    "floor_if_sweep_all_wrong": 0.4002,
+    "pairs": 243,
+    "share_of_all_events": 0.5998
   },
   "sweep_queue": [
     {
@@ -2028,6 +2028,39 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 23,
+      "quotes": [
+        "Ela também é considerada a taxa de juro sem risco do euro.",
+        "o, onde as ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+        "onferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
+        "Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
+        "ciar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
+        "- Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
+        "etorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
+        " parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer receita gerada pelo at",
+        "almente investidores institucionais que buscam melhores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais ",
+        "ista, os cotistas respondem por eventual patrimônio líquido negativo, sem prejuízo da responsabilidade do prestador de serviço pelos ",
+        "Tal proibição não se aplica a subscrições de novas cotas, sem prejuízo da incidência das regras que dispõem sobre a divul",
+        " serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação de assembleia de cotistas pa",
+        "Nas operações sem garantia de liquidação por entidade operadora de infraestru",
+        "eve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico.",
+        "Nos fundos sem carência (ou com carência superior a 90 dias), ele ocorre n",
+        "E, sem dúvida, essa taxa de recuperação precisa ser levada em cons",
+        "TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos de caixa externos.",
+        "Como são dois semestres por ano, ele receberá o cupom duas vezes, sem ser considerado o valor do dinheiro no tempo.",
+        "A duration de um título ZERO-CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de ",
+        "ncluir sobre convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos com",
+        "- Eficiente fiscalmente (sem muitas transações).",
+        "nsável pela gestão de risco da carteira dos veículos de investimento, sem prejuízo do disposto na regulação em vigor aplicável a cada",
+        "rsos, conselho consultivo ou comitê para os veículos de investimento, sem prejuízo do disposto na regulação vigente."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.sector",
       "form": "setores",
       "general_senses": 3,
@@ -3769,6 +3802,22 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "Sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 6,
+      "quotes": [
+        "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
+        "Sem prejuízo da portabilidade das cotas pelos seus titulares, a",
+        "Sem prejuízo de eventuais sanções, a Superintendência competent",
+        "Sem prejuízo das responsabilidades dos prestadores de serviços,",
+        "Sem prejuízo da responsabilidade do gestor, o administrador dev",
+        " | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.document",
       "form": "documento",
       "general_senses": 3,
@@ -4654,6 +4703,18 @@
       "quotes": [
         " principais tipos de benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em",
         "k: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retorn"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "polarity.absence",
+      "form": "SEM",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Entre um título COM cupom e outro SEM cupom com mesmo vencimento, o título COM cupom possui Durat",
+        "m com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!"
       ],
       "stratum": "D_risk_surface"
     },

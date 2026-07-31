@@ -215,9 +215,15 @@ def main() -> int:
             record["lexical_forms"][language].append(
                 {"form": operation["form"], "features": {}, "policy": operation.get("policy", "auto")}
             )
+            # The registry contract requires lexical forms and label surfaces to agree, so a
+            # form has to land in the right label bucket: `alt` advertises a surface a generator
+            # may emit, `observed` records one the matcher recognises but will not produce.
+            # Adding a review form without touching `observed` left the two out of sync and the
+            # registry refused to load — correctly.
             labels = record["labels"][language]
-            if operation.get("policy", "auto") == "auto" and operation["form"] not in labels["alt"]:
-                labels["alt"].append(operation["form"])
+            bucket = "alt" if operation.get("policy", "auto") == "auto" else "observed"
+            if operation["form"] not in labels[bucket] and operation["form"] != labels["pref"]:
+                labels[bucket].append(operation["form"])
             applied["forms_added"].append(f"{operation['concept']}.{language}:{operation['form']}")
 
         elif kind == "forbid":

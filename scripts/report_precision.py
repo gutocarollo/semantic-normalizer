@@ -64,6 +64,13 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v216.json", "seed": 770231, "registry": "2.16.2",
+        "errors": 0,
+        "found": [],
+        "state": "first draw with the normative operator vocabulary active; `até` had already "
+                 "been caught at 22/27 wrong by its own exhaustive sweep and removed",
+    },
+    {
         "report": "reports/unread-residual-v2141.json", "seed": 41077, "registry": "2.14.1",
         "errors": 2, "superseded_by": "the same seed redrawn against 2.15.0, which found none",
         "found": ["índices in `índices P/L` (plural form unregistered)",

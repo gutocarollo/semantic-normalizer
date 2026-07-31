@@ -22,16 +22,16 @@
     "usable": true,
     "youden_j": 0.599
   },
-  "bare_automatic_forms": 542,
-  "bare_forms": 733,
+  "bare_automatic_forms": 556,
+  "bare_forms": 748,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 4.33,
+    "mean": 4.24,
     "median": 3.0,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.64,
-    "zero_sense_forms": 157
+    "stdev": 5.6,
+    "zero_sense_forms": 164
   },
   "forms": [
     {
@@ -2402,6 +2402,18 @@
       "language": "en",
       "lemma_used": "calculate",
       "policy": "auto"
+    },
+    {
+      "concept_id": "condition.if",
+      "form": "caso",
+      "general_senses": 6,
+      "glosses": [
+        "uma preocupação vagamente especificada",
+        "o estado real das coisas"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "caso",
+      "policy": "review"
     },
     {
       "concept_id": "action.buy",
@@ -4882,6 +4894,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "sem",
+      "general_senses": 3,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "sem",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.sector",
       "form": "setor",
       "general_senses": 3,
@@ -5311,6 +5332,27 @@
       "policy": "auto"
     },
     {
+      "concept_id": "polarity.exception",
+      "form": "except",
+      "general_senses": 2,
+      "glosses": [
+        "prevent from being included or considered or accepted; \"The bad result",
+        "take exception to; \"he demurred at my suggestion to work on Saturday\""
+      ],
+      "language": "en",
+      "lemma_used": "except",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.affirmation",
+      "form": "expressamente",
+      "general_senses": 2,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "expressamente",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.governance",
       "form": "governance",
       "general_senses": 2,
@@ -5469,6 +5511,17 @@
       ],
       "language": "en",
       "lemma_used": "percentage",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "condition.when",
+      "form": "quando",
+      "general_senses": 2,
+      "glosses": [
+        "Um período de duração indeterminada (geralmente curto) marcado por alg"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "quando",
       "policy": "auto"
     },
     {
@@ -6002,6 +6055,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "polarity.negation",
+      "form": "nem",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "nem",
+      "policy": "auto"
+    },
+    {
       "concept_id": "quantity.none",
       "form": "nenhum",
       "general_senses": 1,
@@ -6159,6 +6221,24 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "variância",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.prohibition",
+      "form": "vedada",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "vedado",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.prohibition",
+      "form": "vedado",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "vedado",
       "policy": "auto"
     },
     {
@@ -7597,6 +7677,15 @@
       "policy": "review"
     },
     {
+      "concept_id": "polarity.exception",
+      "form": "exceto",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "exceto",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.delete",
       "form": "exclua",
       "general_senses": 0,
@@ -8083,6 +8172,42 @@
       "policy": "review"
     },
     {
+      "concept_id": "polarity.exception",
+      "form": "ressalvada",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ressalvada",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.exception",
+      "form": "ressalvadas",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ressalvadas",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.exception",
+      "form": "ressalvado",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ressalvado",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "polarity.exception",
+      "form": "ressalvados",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ressalvados",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.restart",
       "form": "restarted",
       "general_senses": 0,
@@ -8126,6 +8251,15 @@
       "language": "pt-BR",
       "lemma_used": "retirou",
       "policy": "review"
+    },
+    {
+      "concept_id": "polarity.exception",
+      "form": "salvo",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "salvo",
+      "policy": "auto"
     },
     {
       "concept_id": "condition.if",
@@ -8290,6 +8424,15 @@
       "policy": "review"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "without",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "without",
+      "policy": "auto"
+    },
+    {
       "concept_id": "entity.workflow",
       "form": "workflow",
       "general_senses": 0,
@@ -8318,8 +8461,8 @@
     }
   ],
   "registry": {
-    "concepts": 315,
-    "version": "2.15.1"
+    "concepts": 319,
+    "version": "2.16.2"
   },
   "schema_version": "form-polysemy-v1"
 }

@@ -1,0 +1,21 @@
+{
+  "id": "precision-sweep-amendment-13",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; attestation sweep of every operator concept",
+  "method": "counted every automatic Portuguese form of every polarity/modality/condition/temporal/quantity marker against the corpus; ten concepts had zero attestation on every form",
+  "reason": "The controlled language's normative operators were registered as paraphrases nobody writes. The corpus's own words are added; the genuinely ambiguous ones are left for the collision demoter rather than forced automatic.",
+  "operations": [
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "pt-BR", "form": "é vedada",
+     "why": "Regulatory Portuguese marks prohibition with `vedar`, not `proibir`. `é proibido` occurs zero times; `vedado`/`vedada` occur 18. `É vedada a vinculação, a qualquer título, de parcela do patrimônio` is exactly the normative sentence this ontology exists to capture and it produced no prohibition marker at all."},
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "pt-BR", "form": "é vedado"},
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "pt-BR", "form": "fica vedada"},
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "pt-BR", "form": "vedada"},
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "pt-BR", "form": "vedado"},
+    {"op": "add_form", "concept": "polarity.prohibition", "language": "en", "form": "is forbidden"},
+    {"op": "add_form", "concept": "polarity.negation", "language": "pt-BR", "form": "nem",
+     "why": "`Nem todos os títulos pagam cupom` inverts the proposition, and without the marker the normalised output asserts the opposite of the source. Nine occurrences. This is the review's G11 and it turned out to be a registry change, not the normalizer-contract change I had scoped it as."},
+    {"op": "add_form", "concept": "condition.if", "language": "pt-BR", "form": "caso",
+     "policy": "review",
+     "why": "181 occurrences and genuinely ambiguous: `Caso o administrador não efetue` is the conditional, `em alguns casos` is the noun. Entered at review, which is what an ambiguous operator should be — not suppressed and not forced."}
+  ]
+}

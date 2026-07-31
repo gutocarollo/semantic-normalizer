@@ -145,6 +145,32 @@ CASES = [
     # A safety-manual concept from the seed vocabulary claiming ordinary Portuguese prose.
     ("Sem dúvida são pontos de atenção quando se utiliza relatórios de terceiros.",
      "risk.caution", False),
+    # The normative operators. Ten of them had every Portuguese automatic form absent from the
+    # corpus — registered as paraphrases (`é proibido`, `é necessariamente o caso`) while the
+    # material writes `é vedado` and `deve`. A regulatory ontology that cannot mark a
+    # prohibition is missing the part the anchor calls `os termos essenciais`.
+    ("É vedada a vinculação, a qualquer título, de parcela do patrimônio.",
+     "polarity.prohibition", True),
+    ("Fica vedada a utilização dos termos referidos anteriormente.", "polarity.prohibition", True),
+    ("Nem todos os títulos pagam cupom, alguns têm desconto.", "polarity.negation", True),
+    ("A duration de um título ZERO-CUPOM, sem pagamentos de juros, é igual ao prazo.",
+     "polarity.absence", True),
+    ("Desde que expressamente previsto em seus regulamentos, as classes podem.",
+     "condition.provided_that", True),
+    ("Ressalvadas as hipóteses especificamente aplicáveis a determinadas categorias.",
+     "polarity.exception", True),
+    ("Salvo disposição em contrário, aplica-se a regra geral.", "polarity.exception", True),
+    # A true positive deliberately given up, asserted as such so nobody "fixes" it back.
+    # `até 5 principais fatores` really is the at-most sense, but bare `até` was wrong in 22 of
+    # its 27 corpus occurrences — `until` in 10, `even` in 5, directional `to` in 3, `so far` in
+    # 4 — and the at-most reading only holds when a number follows immediately, which no lexical
+    # form expresses. `no máximo` and `máximo de` carry the concept instead.
+    ("Deve conter identificação de até 5 principais fatores de risco.", "quantity.at_most", False),
+    ("O fundo no máximo poderá investir 33% em outras modalidades.", "quantity.at_most", True),
+    ("Fica estabelecido um prazo máximo de conversão de cotas.", "quantity.at_most", True),
+    ("Comprar um título e mantê-lo até o vencimento ou resgate.", "temporal.until", True),
+    ("A distância de cada ponto até a média será maior.", "quantity.at_most", False),
+    ("Permite ao gestor até mesmo alavancar posições.", "quantity.at_most", False),
 ]
 
 

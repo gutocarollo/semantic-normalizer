@@ -1,36 +1,36 @@
 {
-  "events_total": 6703,
+  "events_total": 6859,
   "occurrences_per_pair": {
     "max": 200,
-    "mean": 11.01,
+    "mean": 10.8,
     "median": 3,
-    "stdev": 24.65
+    "stdev": 24.28
   },
   "registry": {
-    "concepts": 314,
-    "version": "2.14.1"
+    "concepts": 319,
+    "version": "2.16.2"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 701,
-      "share": 0.1046
+      "events": 735,
+      "share": 0.1072
     },
     "B_domain_exclusive": {
-      "events": 602,
-      "share": 0.0898
+      "events": 608,
+      "share": 0.0886
     },
     "D_risk_surface": {
-      "events": 5400,
-      "share": 0.8056
+      "events": 5516,
+      "share": 0.8042
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 5400,
-    "floor_if_sweep_all_wrong": 0.1944,
-    "pairs": 303,
-    "share_of_all_events": 0.8056
+    "events": 5516,
+    "floor_if_sweep_all_wrong": 0.1958,
+    "pairs": 311,
+    "share_of_all_events": 0.8042
   },
   "sweep_queue": [
     {
@@ -1328,6 +1328,58 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "condition.when",
+      "form": "quando",
+      "general_senses": 2,
+      "glosses": [
+        "Um período de duração indeterminada (geralmente curto) marcado por alg"
+      ],
+      "occurrences": 60,
+      "quotes": [
+        "O processo começa quando um exportador apresenta uma fatura a uma empresa importador",
+        "a forma títulos com Call Embutida não possuem valorização “infinita”, quando as taxas de juros do mercado (ou título) diminuem, conforme",
+        "a com cláusula de PUT Embutida não possuem desvalorização “infinita”, quando as taxas de juros do mercado (ou título) sobem, conforme gr",
+        "ia, pois se acredita em uma baixa probabilidade de calote de empresas quando houvesse uma crise mundial.",
+        "r inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entreteni",
+        " engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+        "io tendem a ter desempenho mais fraco durante uma recessão econômica, quando as pessoas têm menos dinheiro disponível para gastar em ben",
+        " (hedge) contra oscilações ou para alavancagem no mercado financeiro, quando se trata de renda variável; - Por ser um contrato futuro, n",
+        "ivo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa ",
+        "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR",
+        "presa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, é embutido uma ",
+        "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valor",
+        "LONG) um ativo, o seu lucro ocorre com a valorização do seu preço; já quando você vende (SHORT), o seu lucro vem da desvalorização.",
+        "Porém, esse ponto justamente revela algumas fraquezas dessa teoria quando aplicada na prática, tais como: - Custos de transação: a fó",
+        ", a técnica aponta sinais de compra e venda que podem ser antecipados quando houver mudança na inclinação do histograma: uma inclinação ",
+        "Quando as bandas se contraem, indica baixa volatilidade, e quando se expandem, indica alta volatilidade.",
+        "dicador apresenta se assemelha a uma parábola) fica abaixo dos preços quando o ativo está em tendência de alta e acima dos preços quando",
+        "os preços quando o ativo está em tendência de alta e acima dos preços quando o ativo está em tendência de queda.",
+        "Sem dúvida são pontos de atenção quando se utiliza relatórios de terceiros.",
+        "as investindo mais; - O cotista pode resgatar suas quotas ou liquidar quando desejar; - Não permite a venda (cessão) de cotas a outro co",
+        "a responsabilidade do prestador de serviço pelos prejuízos que causar quando proceder com dolo ou má-fé.",
+        "Todos os pedidos de resgate que estejam pendentes de conversão quando do fechamento para resgates devem ser cancelados.",
+        "l do fundo de investimento deve ser encerrado a cada 12 (doze) meses, quando devem ser levantadas as demonstrações contábeis do fundo e,",
+        "Compete ao gestor negociar os ativos da carteira, bem como firmar, quando for o caso, todo e qualquer contrato ou documento relativo ",
+        "M pode pedir a declaração judicial de insolvência da classe de cotas, quando identificar situação na qual seu patrimônio líquido negativ",
+        "É vedada a cobrança de taxa de performance quando o valor da cota for inferior ao valor da cota base.",
+        " suas cotas a qualquer momento, os fundos fechados possuem tributação quando ocorrer um dos itens abaixo: - Resgates: ao término do praz",
+        "omo vimos anteriormente, o cotista de um fundo fechado será tributado quando ocorrer resgate, amortização, distribuição de dividendos ou",
+        "que representa a probabilidade de inadimplência do emissor do título, quando comparado com o Ativo Livre de Risco.",
+        "Portanto, caracteriza-se quando há poucos compradores, ou seja, uma dificuldade de encontra",
+        "Um investidor pode criar este risco propriamente, quando ele possui uma fatia (percentual) considerável de um ativo ",
+        "❑ EXEMPLOS: gestor tecla um zero a mais quando envia uma ordem para a corretora (é o famoso “dedo-gordo”);",
+        "Um tema muito relevante quando se fala em gestão de risco é o Backtesting.",
+        "É um risco muito relevante quando se trata de investimentos no exterior ou em moeda diferente",
+        "minal obtido em moeda estrangeira pode ser significativamente afetado quando da conversão das moedas envolvidas.",
+        "uantia de dinheiro que um banco ou outra instituição financeira perde quando um devedor deixa de pagar um empréstimo.",
+        "O risco de base ocorre quando o hedge é imperfeito, de modo que as perdas em um investime",
+        "o e intuitivo; - É considerado um benchmark válido; e - Bastante útil quando estão disponíveis apenas as informações de retorno da carte",
+        "nos para se obter um padrão estatístico confiável; - Não funciona bem quando o gestor muda de estilo.",
+        "o ajustada ao risco de simples cálculo e entendimento; - Serve também quando os retornos do ativo são negativos (o que não ocorre com o "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.investor",
       "form": "investidores",
       "general_senses": 1,
@@ -1580,58 +1632,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "temporal.maturity",
-      "form": "vencimento",
-      "general_senses": 2,
-      "glosses": [
-        "o vencimento da licença de motorista dele"
-      ],
-      "occurrences": 43,
-      "quotes": [
-        "compra, onde o governo americano pode recomprar a dívida antes do seu vencimento.",
-        "estidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a v",
-        "guida, promete pagar a quantia indicada no aceite bancário na data de vencimento.",
-        "aceite bancário tem a garantia de que receberá o pagamento na data de vencimento.",
-        "Eles normalmente têm vencimento, o que significa que precisam ser resgatados geralmente em ",
-        " caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
-        "rá ao comprar um título com opção de compra embutida e mantê-lo até o vencimento ou resgate (exercício da opção de compra pelo emissor).",
-        "ções para diferentes prazos, a SOFR é específica para empréstimos com vencimento no dia seguinte (overnight).",
-        "m contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual ambas as partes possuem obrigações, ",
-        "de , que é a diferença entre o preço futuro de uma mercadoria para um vencimento qualquer e o seu preço a vista.",
-        "O contrato futuro de DI com vencimento em 504 dias úteis está sendo negociado a uma taxa de 10% ao",
-        "O valor inicial e a(s) data(s) de vencimento são livremente pactuados entre as partes, portanto, no iníc",
-        "ro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao tota",
-        "ais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
-        " retornos mais baixos; ou - Os títulos de renda fixa possuem prazo de vencimento e muitas vezes a rentabilidade contratada só é garantida se",
-        "S) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contrato.",
-        "ntos de juros que teriam sido pagos se o título atingisse sua data de vencimento.",
-        "spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
-        " caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
-        "Um título com face igual a R$ 1.000,00, vencimento em 5 anos, cupom 6%aa.",
-        "O Banco Central decide fazer um leilão de uma LTN com vencimento em 55 dias úteis e 73 dias corridos.",
-        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
-        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
-        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
-        "i dois ativos prefixados com rentabilidade de 10% ao ano: (1) LTN com vencimento em 10 anos; (2) LTN com vencimento em 20 anos.",
-        "ilidade de 10% ao ano: (1) LTN com vencimento em 10 anos; (2) LTN com vencimento em 20 anos.",
-        "que fazer a média ponderada de uma carteira de renda fixa, baseado no vencimento dos seus títulos.",
-        "CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de vencimento.",
-        "Entre um título COM cupom e outro SEM cupom com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, p",
-        "o na flutuação da Selic no Brasil, sendo que, quanto maior o prazo de vencimento (Duration) uma carteira de investimentos, maior o seu risco",
-        "ais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
-        " de referência (geralmente título público livre de risco para o mesmo vencimento).",
-        "a carteira Bullet, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
-        "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no m",
-        "da de forma que se tenha quantidades aproximadamente iguais para cada vencimento.",
-        "prazo seja 10 anos, ele investiria então R$ 10.000 em dez títulos com vencimento de 1 a 10 anos.",
-        " em títulos porque pelo menos um título está relativamente próximo do vencimento.",
-        " a estratégia prevê a compra de múltiplos ativos zero cupom para cada vencimento.",
-        "taxas de juros futuras são mais incertas, por conta do longo prazo de vencimento e, portanto, devem prever rendimentos maiores.",
-        "efende que os investidores têm preferência por dívidas de determinado vencimento."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.resource",
       "form": "recursos",
       "general_senses": 10,
@@ -1730,6 +1730,58 @@
         "Porém, quanto maior o pagamento do cupom, maior o risco de Reinvestimento.",
         "Isso porque basta comprar títulos de cupom zero e que vencem no mesmo prazo do passivo.",
         "ir sobre convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos com cupon"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "temporal.maturity",
+      "form": "vencimento",
+      "general_senses": 2,
+      "glosses": [
+        "o vencimento da licença de motorista dele"
+      ],
+      "occurrences": 42,
+      "quotes": [
+        "compra, onde o governo americano pode recomprar a dívida antes do seu vencimento.",
+        "estidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a v",
+        "guida, promete pagar a quantia indicada no aceite bancário na data de vencimento.",
+        "aceite bancário tem a garantia de que receberá o pagamento na data de vencimento.",
+        "Eles normalmente têm vencimento, o que significa que precisam ser resgatados geralmente em ",
+        " caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
+        "ções para diferentes prazos, a SOFR é específica para empréstimos com vencimento no dia seguinte (overnight).",
+        "m contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual ambas as partes possuem obrigações, ",
+        "de , que é a diferença entre o preço futuro de uma mercadoria para um vencimento qualquer e o seu preço a vista.",
+        "O contrato futuro de DI com vencimento em 504 dias úteis está sendo negociado a uma taxa de 10% ao",
+        "O valor inicial e a(s) data(s) de vencimento são livremente pactuados entre as partes, portanto, no iníc",
+        "ro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao tota",
+        "ais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        " retornos mais baixos; ou - Os títulos de renda fixa possuem prazo de vencimento e muitas vezes a rentabilidade contratada só é garantida se",
+        "S) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contrato.",
+        "ntos de juros que teriam sido pagos se o título atingisse sua data de vencimento.",
+        "spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
+        " caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado do título negociado.",
+        "Um título com face igual a R$ 1.000,00, vencimento em 5 anos, cupom 6%aa.",
+        "O Banco Central decide fazer um leilão de uma LTN com vencimento em 55 dias úteis e 73 dias corridos.",
+        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
+        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
+        "Uma debênture com vencimento em 10 anos, está sendo negociada no mercado por R$ 1.040,00",
+        "i dois ativos prefixados com rentabilidade de 10% ao ano: (1) LTN com vencimento em 10 anos; (2) LTN com vencimento em 20 anos.",
+        "ilidade de 10% ao ano: (1) LTN com vencimento em 10 anos; (2) LTN com vencimento em 20 anos.",
+        "que fazer a média ponderada de uma carteira de renda fixa, baseado no vencimento dos seus títulos.",
+        "CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de vencimento.",
+        "Entre um título COM cupom e outro SEM cupom com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, p",
+        "o na flutuação da Selic no Brasil, sendo que, quanto maior o prazo de vencimento (Duration) uma carteira de investimentos, maior o seu risco",
+        "ais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento, venda ou pagamento de juros).",
+        " de referência (geralmente título público livre de risco para o mesmo vencimento).",
+        "a carteira Bullet, o gestor concentra a compra de títulos próximas ao vencimento do passivo.",
+        "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que vencem no m",
+        "da de forma que se tenha quantidades aproximadamente iguais para cada vencimento.",
+        "prazo seja 10 anos, ele investiria então R$ 10.000 em dez títulos com vencimento de 1 a 10 anos.",
+        " em títulos porque pelo menos um título está relativamente próximo do vencimento.",
+        " a estratégia prevê a compra de múltiplos ativos zero cupom para cada vencimento.",
+        "taxas de juros futuras são mais incertas, por conta do longo prazo de vencimento e, portanto, devem prever rendimentos maiores.",
+        "efende que os investidores têm preferência por dívidas de determinado vencimento.",
+        " de juros é tão somente a oferta e demanda por títulos de determinado vencimento."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2592,6 +2644,39 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 23,
+      "quotes": [
+        "Ela também é considerada a taxa de juro sem risco do euro.",
+        "o, onde as ações são negociadas diretamente entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+        "onferir o desempenho de fundos existentes no mercado como uma amostra sem considerar aqueles que saíram do mercado por terem tido des",
+        "Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, o",
+        "ciar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a compra de cada ação que compõe est",
+        "- Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de mo",
+        "etorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
+        " parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer receita gerada pelo at",
+        "almente investidores institucionais que buscam melhores retornos, mas sem necessariamente correrem tantos riscos como em fundos mais ",
+        "ista, os cotistas respondem por eventual patrimônio líquido negativo, sem prejuízo da responsabilidade do prestador de serviço pelos ",
+        "Tal proibição não se aplica a subscrições de novas cotas, sem prejuízo da incidência das regras que dispõem sobre a divul",
+        " serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação de assembleia de cotistas pa",
+        "Nas operações sem garantia de liquidação por entidade operadora de infraestru",
+        "eve ter política de investimento que envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico.",
+        "Nos fundos sem carência (ou com carência superior a 90 dias), ele ocorre n",
+        "E, sem dúvida, essa taxa de recuperação precisa ser levada em cons",
+        "TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos de caixa externos.",
+        "Como são dois semestres por ano, ele receberá o cupom duas vezes, sem ser considerado o valor do dinheiro no tempo.",
+        "A duration de um título ZERO-CUPOM (sem pagamentos de juros, como uma LTN) é IGUAL ao seu prazo de ",
+        "ncluir sobre convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos com",
+        "- Eficiente fiscalmente (sem muitas transações).",
+        "nsável pela gestão de risco da carteira dos veículos de investimento, sem prejuízo do disposto na regulação em vigor aplicável a cada",
+        "rsos, conselho consultivo ou comitê para os veículos de investimento, sem prejuízo do disposto na regulação vigente."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.sector",
       "form": "setores",
       "general_senses": 3,
@@ -2901,40 +2986,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.distribution",
-      "form": "distribuição",
-      "general_senses": 2,
-      "glosses": [
-        "o ato de distribuir ou difundir ou dividir"
-      ],
-      "occurrences": 22,
-      "quotes": [
-        " amortização e resgate; e - taxas de administração, gestão, máxima de distribuição, ingresso e saída.",
-        "A distribuição de cotas deve ser realizada por instituições habilitadas a ",
-        "a por instituições habilitadas a atuar como integrantes do sistema de distribuição, ressalvadas as dispensas previstas em regulamentações espe",
-        "A distribuição pode ser realizada exclusivamente por meios eletrônicos.",
-        "A distribuição de cotas de classe aberta independe de prévio registro na C",
-        "A distribuição de cotas de classe fechada deve observar a regulamentação e",
-        "a deve observar a regulamentação específica sobre ofertas públicas de distribuição de valores mobiliários.",
-        " sobre a quantidade mínima de cotas que deve ser subscrita para que a distribuição seja efetivada, e o tratamento a ser dado no caso de a quan",
-        "Não é admitida nova distribuição de cotas de classe fechada antes de encerrada a distribuiçã",
-        "ida nova distribuição de cotas de classe fechada antes de encerrada a distribuição anterior de cotas da mesma classe ou subclasse.",
-        "o de classe de cotas já em funcionamento, os valores relativos à nova distribuição de cotas devem ser escriturados separadamente das demais ap",
-        "criturados separadamente das demais aplicações, até o encerramento da distribuição.",
-        "Assim que subscrito o valor mínimo previsto para a distribuição de cotas, os recursos podem ser investidos na forma previst",
-        "ibilidade de aplicação em renda variável e derivativos, o material de distribuição deve dar destaque a essa informação para ciência dos invest",
-        "uando do ingresso do cotista no fundo, o agente que tiver realizado a distribuição de cotas deve disponibilizar a versão vigente do regulament",
-        " a Superintendência competente pode suspender a emissão, subscrição e distribuição de cotas realizada em desacordo com a Resolução CVM 175, ob",
-        "servada, ainda, a regulamentação específica sobre ofertas públicas de distribuição de valores mobiliários.",
-        "ue dispõem sobre a divulgação de informações no contexto da emissão e distribuição de cotas.",
-        "ase na taxa de administração, performance ou gestão; - taxa máxima de distribuição; - despesas relacionadas ao serviço de formação de mercado.",
-        "zação de cotas, para as classes abertas, e da data de encerramento da distribuição, para as classes fechadas.",
-        "- Dividendos: por serem empresas, os fundos fechados podem fazer distribuição de dividendos.",
-        " um fundo fechado será tributado quando ocorrer resgate, amortização, distribuição de dividendos ou a alienação da cota."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "actor.issuer",
       "form": "emissor",
       "general_senses": 1,
@@ -2962,6 +3013,39 @@
         "Se as taxas de juros subirem, o emissor do título não irá exercer sua opção de compra, afinal, é me",
         "prador desse título pode exercer sua opção de venda e “devolvê-lo” ao emissor.",
         "rio, é provável que o investidor exerça sua opção de venda, devendo o emissor recomprar o título nas condições acordadas na opção."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "condition.when",
+      "form": "Quando",
+      "general_senses": 2,
+      "glosses": [
+        "Um período de duração indeterminada (geralmente curto) marcado por alg"
+      ],
+      "occurrences": 21,
+      "quotes": [
+        "Quando esses títulos são negociados EM MAIS DE UM PAÍS, eles são c",
+        "Quando falamos em estratégias passivas de Renda Variável, podemos ",
+        "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR,",
+        "Quando não se possui a ação, é necessário alugá-la e, assim, vende",
+        "Quando as bandas se contraem, indica baixa volatilidade, e quando ",
+        "Quando do ingresso do cotista no fundo, o agente que tiver realiza",
+        "Quando da realização de operações em nome da classe de cotas, o ge",
+        "- Quando constituídos por iniciativa de prestador de serviço essenci",
+        "- Quando constituído com o objetivo de fiscalizar ou supervisionar a",
+        "Quando uma empresa tem sua nota de crédito piorada (por exemplo A ",
+        "Quando maior for a diferença de taxas, maior o risco de inadimplên",
+        "Quando a inflação esperada aumenta, as taxas nominais também sobem",
+        "Quando vamos medir o desempenho de um gestor, os eventuais fluxos ",
+        "Quando um retorno de valor agregado pelo gestor fica fora do inter",
+        "SOLUÇÃO: Quando os títulos são híbridos (remuneração fixa MAIS uma taxa), c",
+        "Quando utilizamos a duration modificada, a variação calculada por ",
+        "Quando os juros sobem 2 pontos percentuais (de 5% para 7%), já cal",
+        "Quando falamos em imunização, é fundamental pontuar que esse risco",
+        "Quando temos uma carteira com apenas um passivo, a imunização tend",
+        "Quando falamos de imunização de múltiplos passivos, a estratégia C",
+        "Quando há expectativa de alta dos juros, o gestor deveria reduzir "
       ],
       "stratum": "D_risk_surface"
     },
@@ -3353,6 +3437,38 @@
         "dos de entrada dos modelos de alocação, porém, são desvantagens desse modelo.",
         "O modelo é então executado e um resultado é fornecido.",
         "tativas de retornos esperados, o que pode influenciar negativamente o modelo, por conta da incerteza de tais retornos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.distribution",
+      "form": "distribuição",
+      "general_senses": 2,
+      "glosses": [
+        "o ato de distribuir ou difundir ou dividir"
+      ],
+      "occurrences": 20,
+      "quotes": [
+        " amortização e resgate; e - taxas de administração, gestão, máxima de distribuição, ingresso e saída.",
+        "A distribuição de cotas deve ser realizada por instituições habilitadas a ",
+        "a por instituições habilitadas a atuar como integrantes do sistema de distribuição, ressalvadas as dispensas previstas em regulamentações espe",
+        "A distribuição pode ser realizada exclusivamente por meios eletrônicos.",
+        "A distribuição de cotas de classe aberta independe de prévio registro na C",
+        "A distribuição de cotas de classe fechada deve observar a regulamentação e",
+        "a deve observar a regulamentação específica sobre ofertas públicas de distribuição de valores mobiliários.",
+        " sobre a quantidade mínima de cotas que deve ser subscrita para que a distribuição seja efetivada, e o tratamento a ser dado no caso de a quan",
+        "Não é admitida nova distribuição de cotas de classe fechada antes de encerrada a distribuiçã",
+        "ida nova distribuição de cotas de classe fechada antes de encerrada a distribuição anterior de cotas da mesma classe ou subclasse.",
+        "o de classe de cotas já em funcionamento, os valores relativos à nova distribuição de cotas devem ser escriturados separadamente das demais ap",
+        "criturados separadamente das demais aplicações, até o encerramento da distribuição.",
+        "Assim que subscrito o valor mínimo previsto para a distribuição de cotas, os recursos podem ser investidos na forma previst",
+        "ibilidade de aplicação em renda variável e derivativos, o material de distribuição deve dar destaque a essa informação para ciência dos invest",
+        "uando do ingresso do cotista no fundo, o agente que tiver realizado a distribuição de cotas deve disponibilizar a versão vigente do regulament",
+        " a Superintendência competente pode suspender a emissão, subscrição e distribuição de cotas realizada em desacordo com a Resolução CVM 175, ob",
+        "servada, ainda, a regulamentação específica sobre ofertas públicas de distribuição de valores mobiliários.",
+        "ue dispõem sobre a divulgação de informações no contexto da emissão e distribuição de cotas.",
+        "ase na taxa de administração, performance ou gestão; - taxa máxima de distribuição; - despesas relacionadas ao serviço de formação de mercado.",
+        "zação de cotas, para as classes abertas, e da data de encerramento da distribuição, para as classes fechadas."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3831,30 +3947,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.index",
-      "form": "índices",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 14,
-      "quotes": [
-        "Seus índices são considerados a referência para o setor de tecnologia, s",
-        "estão sendo considerados para a carteira, preferindo ativos com altos índices P/L.",
-        "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500.",
-        "os e volatilidade, para com isso obter retornos capazes de superar os índices de mercado.",
-        "tre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commodities, moedas e algumas ações ",
-        "tas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referênci",
-        "s, pois seu valor deriva do valor de um ativo subjacente, como ações, índices, commodities, taxas de juros ou moedas.",
-        "Por sua vez, os índices amplos de mercado são bastante utilizados como benchmark.",
-        "Portanto, índices de estilos representam uma parte específica de uma categori",
-        "Como vantagens, podemos citar: - Disponibilidade: os índices de estilos de mercado são conhecidos, facilmente entendidos",
-        "ante períodos específicos e os correspondentes retornos de diferentes índices de estilos pelos mesmos períodos.",
-        "o submetidas a um algoritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos d",
-        "- Os índices de estilo podem não refletir fielmente o estilo do gestor; ",
-        " número individual de títulos de Renda Fixa, divididos entre diversos índices (e também diferentes níveis de liquidez), torna a replicaçã"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.net_assets",
       "form": "patrimônio",
       "general_senses": 4,
@@ -3901,6 +3993,29 @@
         "É a estratégia mais simples de imunização Através dessa estratégia, constrói-se uma carteira que fina",
         "ando a duration de cada passivo com o respectivo ativo adquirido para imunização.",
         "Quando falamos de imunização de múltiplos passivos, a estratégia Cash Flow Matching pode"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índices",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 13,
+      "quotes": [
+        "Seus índices são considerados a referência para o setor de tecnologia, s",
+        "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500.",
+        "os e volatilidade, para com isso obter retornos capazes de superar os índices de mercado.",
+        "tre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commodities, moedas e algumas ações ",
+        "tas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referênci",
+        "s, pois seu valor deriva do valor de um ativo subjacente, como ações, índices, commodities, taxas de juros ou moedas.",
+        "Por sua vez, os índices amplos de mercado são bastante utilizados como benchmark.",
+        "Portanto, índices de estilos representam uma parte específica de uma categori",
+        "Como vantagens, podemos citar: - Disponibilidade: os índices de estilos de mercado são conhecidos, facilmente entendidos",
+        "ante períodos específicos e os correspondentes retornos de diferentes índices de estilos pelos mesmos períodos.",
+        "o submetidas a um algoritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos d",
+        "- Os índices de estilo podem não refletir fielmente o estilo do gestor; ",
+        " número individual de títulos de Renda Fixa, divididos entre diversos índices (e também diferentes níveis de liquidez), torna a replicaçã"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4649,23 +4764,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.dividend",
-      "form": "dividendos",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 7,
-      "quotes": [
-        "ar que, por retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital",
-        "o desses investidores, buscando empresas sólidas que distribuem altos dividendos.",
-        "fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
-        "s: por serem empresas, os fundos fechados podem fazer distribuição de dividendos.",
-        "igem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos).",
-        "o será tributado quando ocorrer resgate, amortização, distribuição de dividendos ou a alienação da cota.",
-        "de uma conta, em oposição aos fluxos de caixa internos, como juros ou dividendos."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.operation",
       "form": "operação",
       "general_senses": 8,
@@ -4811,6 +4909,22 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.absence",
+      "form": "Sem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 6,
+      "quotes": [
+        "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
+        "Sem prejuízo da portabilidade das cotas pelos seus titulares, a",
+        "Sem prejuízo de eventuais sanções, a Superintendência competent",
+        "Sem prejuízo das responsabilidades dos prestadores de serviços,",
+        "Sem prejuízo da responsabilidade do gestor, o administrador dev",
+        " | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.document",
       "form": "documento",
       "general_senses": 3,
@@ -4863,6 +4977,21 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.negation",
+      "form": "nem",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 5,
+      "quotes": [
+        "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deság",
+        "ntemão: esse tipo de benchmark infelizmente não pode ser identificado nem especificado de antemão.",
+        "- As informações e a modelagem nem sempre estão disponíveis e ainda podem ser caras para imple",
+        "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deság",
+        "Todos nós temos acesso a investimentos em ações, mas nem todos tem acesso a comprar ações de uma companhia fechada."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.buyer",
       "form": "compradores",
       "general_senses": 4,
@@ -4904,6 +5033,21 @@
         "ceiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinve",
         "Juros (yield) dos vencimentos de longo prazo aumentam com mais in",
         "Juros (yield) dos vencimentos de longo prazo diminuem com mais in"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.dividend",
+      "form": "dividendos",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 5,
+      "quotes": [
+        "ar que, por retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital",
+        "o desses investidores, buscando empresas sólidas que distribuem altos dividendos.",
+        "fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
+        "igem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos).",
+        "de uma conta, em oposição aos fluxos de caixa internos, como juros ou dividendos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -5467,6 +5611,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "polarity.affirmation",
+      "form": "expressamente",
+      "general_senses": 2,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "s prestadores de serviços essenciais e partes relacionadas, desde que expressamente autorizados pelo diretor responsável do prestador de serviç",
+        "Desde que expressamente previsto em seus regulamentos, as classes e subclasses de c",
+        "Por sua vez e desde que expressamente previsto em seus regulamentos, as classes e subclasses de c"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.regulation",
       "form": "regulamentos",
       "general_senses": 3,
@@ -5594,6 +5751,18 @@
         "- Impacto na Rentabilidade: O hedge pode limitar o potencial rentabil",
         "- Impacto positivo: buscam contribuir para um impacto positivo na soc",
         "- Impacto positivo: contribui para um impacto positivo na sociedade e"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "polarity.negation",
+      "form": "Nem",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Nem todos os títulos pagam cupom, alguns deles simplesmente têm",
+        "Nem todas as instituições possuem internamente os profissionais"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5941,6 +6110,18 @@
       "quotes": [
         " principais tipos de benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em",
         "k: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retorn"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "polarity.absence",
+      "form": "SEM",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Entre um título COM cupom e outro SEM cupom com mesmo vencimento, o título COM cupom possui Durat",
+        "m com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!"
       ],
       "stratum": "D_risk_surface"
     },

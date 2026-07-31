@@ -1,0 +1,21 @@
+{
+  "id": "precision-sweep-amendment-15",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; exhaustive sweep of every `até` occurrence",
+  "method": "all 27 occurrences read one by one immediately after the operator batch introduced the form",
+  "reason": "`até` was registered as an at-most marker in batch 13 and is wrong in 22 of its 27 occurrences. Caught by the same exhaustive sweep the campaign uses, before shipping — a bare common function word needs the sweep exactly as much as a bare common noun does.",
+  "operations": [
+    {
+      "op": "remove_form", "concept": "quantity.at_most", "language": "pt-BR", "form": "até",
+      "why": "22 of 27 wrong (81%). Portuguese `até` is `until` in 10 (`até o vencimento`, `até o último dia`), `even` in 5 (`até mesmo alavancar`), directional `to` in 3 (`a distância de cada ponto até a média`) and `so far` in 4 (`até agora`). It is the at-most sense only when a number follows immediately, which no lexical form can express. Removed rather than demoted: a review claim would still suppress temporal.until on the same surface."
+    },
+    {"op": "add_form", "concept": "quantity.at_most", "language": "pt-BR", "form": "máximo de",
+     "why": "Six occurrences, all the ceiling sense — `prazo máximo de conversão`, `limite máximo de`."},
+    {"op": "add_form", "concept": "temporal.until", "language": "pt-BR", "form": "até o vencimento",
+     "why": "The registered `até que` occurs zero times. These four collocations carry the until sense unambiguously and leave the `even`/`so far`/directional readings alone."},
+    {"op": "add_form", "concept": "temporal.until", "language": "pt-BR", "form": "até a data"},
+    {"op": "add_form", "concept": "temporal.until", "language": "pt-BR", "form": "até o final"},
+    {"op": "add_form", "concept": "temporal.until", "language": "pt-BR", "form": "até o último dia"},
+    {"op": "add_form", "concept": "temporal.until", "language": "pt-BR", "form": "até o encerramento"}
+  ]
+}

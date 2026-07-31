@@ -1,0 +1,15 @@
+{
+  "id": "precision-sweep-amendment-14",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; operator attestation sweep, remainder",
+  "method": "counted the candidate Portuguese wordings for each still-unattested operator",
+  "reason": "Two of the four remaining operators do have a corpus word; the other two genuinely do not, and saying so is the honest outcome rather than inventing one.",
+  "operations": [
+    {"op": "add_form", "concept": "condition.when", "language": "pt-BR", "form": "quando",
+     "why": "The registered form was the paraphrase `quando a condição ocorrer`, which occurs zero times. `quando` occurs 121 times and is exactly this concept — `quando ocorrer resgate`, `quando a inflação esperada aumenta` — a governed condition without a calendar time."},
+    {"op": "add_form", "concept": "condition.when", "language": "pt-BR", "form": "sempre que",
+     "why": "Ten occurrences of the same function."},
+    {"op": "add_form", "concept": "polarity.affirmation", "language": "pt-BR", "form": "expressamente",
+     "why": "`desde que expressamente previsto em seus regulamentos` is the explicit assertion this concept defines. `afirmativamente`, the registered label, occurs zero times."}
+  ]
+}

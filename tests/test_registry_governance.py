@@ -173,6 +173,59 @@ class RegistryGovernanceTests(unittest.TestCase):
             "Run scripts/fix_authority_anchors.py to derive them from where the terms occur.",
         )
 
+    def test_operator_concepts_are_attested_in_the_corpus(self):
+        """A controlled language whose operators match nothing is a vocabulary, not a language.
+
+        Ten polarity, modality, conditional and quantity concepts shipped with every Portuguese
+        automatic form absent from the corpus: `é proibido` where the material writes `é
+        vedado`, `quando a condição ocorrer` where it writes `caso`. They passed every existing
+        test because nothing checked that a label is a word anyone uses. This is the same defect
+        as the fabricated anchors — a string asserted rather than a fact verified — on the layer
+        the original request calls `os termos essenciais`.
+
+        Genuinely ambiguous operators are excluded: `deve` is both obligation and logical
+        necessity and belongs at review, so a concept is only required to have SOME attested
+        form, automatic or not.
+
+        Scope is concepts that claim the `cga` domain. `condition.only_if` and
+        `condition.unless` carry `domains: [documentation, controlled_instruction]` and have no
+        Portuguese wording in this corpus — `somente se` and `a menos que` occur zero times, and
+        the functions they serve are carried here by `condition.provided_that` (`desde que`, 46
+        occurrences) and `polarity.exception` (`salvo`/`ressalvado`, 26). Requiring a
+        technical-instruction concept to appear in a finance textbook would be a false gate, and
+        inventing a Portuguese form so it passes would be the fabrication this test exists to
+        prevent.
+        """
+        import re
+        import unicodedata
+
+        corpus = DATA.parents[3] / "cga-2026-markdown"
+        if not corpus.is_dir():
+            self.skipTest("corpus directory is not present in this checkout")
+        text = unicodedata.normalize("NFC", " ".join(
+            path.read_text(encoding="utf-8", errors="replace") for path in corpus.glob("*.md")
+        )).casefold()
+
+        operator_classes = {"polarity", "modality", "condition_marker", "quantity_marker"}
+        dead = []
+        for record in self.records:
+            if record["semantic_class"] not in operator_classes:
+                continue
+            if "cga" not in record["domains"]:
+                continue
+            forms = [entry["form"] for entry in record["lexical_forms"]["pt-BR"]]
+            if not any(
+                re.search(rf"(?<![a-zà-ÿ0-9]){re.escape(unicodedata.normalize('NFC', form).casefold())}"
+                          rf"(?![a-zà-ÿ0-9])", text)
+                for form in forms
+            ):
+                dead.append((record["concept_id"], forms))
+        self.assertEqual(
+            [], dead,
+            "these operator concepts match nothing in the corpus. Register the word the "
+            "material actually uses rather than a paraphrase of the English label.",
+        )
+
     def test_every_domain_concept_is_bilingual_with_content(self):
         """The anchor asks for an EN/PT dictionary; a blank English side would satisfy the
         schema's `minItems` while delivering half the objective."""

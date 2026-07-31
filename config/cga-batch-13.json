@@ -1,0 +1,23 @@
+{
+  "batch": 13,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Ten operator concepts — the modal, conditional and polarity backbone of the controlled language — had every Portuguese automatic form absent from the corpus. They were registered as paraphrases (`é necessariamente o caso`, `quando a condição ocorrer`, `é proibido`) while the material writes `deve`, `caso`, `é vedado`. The normative vocabulary is the part of a regulatory ontology that matters most, and it was matching nothing: `É vedada a vinculação de parcela do patrimônio` produced no prohibition marker at all. Same defect as `ativo` and as the Portuguese compound labels — the registered word is not the corpus's word — but on the layer the anchor calls `os termos essenciais`. Ambiguous operators are deliberately NOT forced automatic: `deve` really is both obligation and logical necessity, `até` really is both a temporal bound and a quantity ceiling, and the collision demoter making them review is the correct outcome, not a failure.",
+  "concepts": [
+    {"id": "quantity.at_most", "en": "at most", "pt": "no máximo", "class": "quantity_marker", "pos": "phrase",
+     "def": "Bounds a quantity from above; the value may equal the bound but not exceed it.",
+     "alt_pt": ["até"], "alt_en": ["up to"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"},
+    {"id": "polarity.absence", "en": "without", "pt": "sem", "class": "polarity", "pos": "preposition",
+     "def": "Marks the absence of the element that follows, as a property of the governed thing.",
+     "alt_en": ["with no"],
+     "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"},
+    {"id": "condition.provided_that", "en": "provided that", "pt": "desde que", "class": "condition_marker", "pos": "phrase",
+     "def": "Introduces a condition that must hold for the permission or obligation to apply.",
+     "alt_en": ["so long as"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"},
+    {"id": "polarity.exception", "en": "except", "pt": "exceto", "class": "polarity", "pos": "preposition",
+     "def": "Excludes the element that follows from the scope of the governed rule.",
+     "alt_en": ["save for"], "alt_pt": ["salvo", "ressalvado", "ressalvadas", "ressalvados", "ressalvada"],
+     "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"}
+  ]
+}

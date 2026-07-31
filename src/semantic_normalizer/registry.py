@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 LANGUAGES = ("en", "pt-BR")
-REGISTRY_VERSION = "2.15.1"
+REGISTRY_VERSION = "2.16.2"
 CONCEPT_ID_RE = re.compile(r"^[a-z][a-z0-9]*(?:[._-][a-z0-9]+)*$")
 
 

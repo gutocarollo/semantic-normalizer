@@ -1,8 +1,8 @@
 {
   "baseline_ref": "eb622bf",
-  "concepts_that_gained_events": 61,
-  "concepts_that_lost_events": 47,
-  "events_after": 6700,
+  "concepts_that_gained_events": 70,
+  "concepts_that_lost_events": 48,
+  "events_after": 6859,
   "events_before": 6522,
   "gained": [
     {
@@ -10,6 +10,18 @@
       "before": 6,
       "concept_id": "entity.asset",
       "delta": 255
+    },
+    {
+      "after": 85,
+      "before": 0,
+      "concept_id": "condition.when",
+      "delta": 85
+    },
+    {
+      "after": 31,
+      "before": 0,
+      "concept_id": "polarity.absence",
+      "delta": 31
     },
     {
       "after": 26,
@@ -32,6 +44,12 @@
     {
       "after": 10,
       "before": 0,
+      "concept_id": "condition.provided_that",
+      "delta": 10
+    },
+    {
+      "after": 10,
+      "before": 0,
       "concept_id": "technical.long_and_short",
       "delta": 10
     },
@@ -46,6 +64,12 @@
       "before": 0,
       "concept_id": "technical.libor",
       "delta": 9
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "polarity.prohibition",
+      "delta": 8
     },
     {
       "after": 8,
@@ -82,6 +106,18 @@
       "before": 0,
       "concept_id": "technical.total_return_equity_swap",
       "delta": 8
+    },
+    {
+      "after": 7,
+      "before": 0,
+      "concept_id": "polarity.exception",
+      "delta": 7
+    },
+    {
+      "after": 206,
+      "before": 199,
+      "concept_id": "polarity.negation",
+      "delta": 7
     },
     {
       "after": 7,
@@ -123,6 +159,12 @@
       "after": 6,
       "before": 0,
       "concept_id": "technical.expected_default_probability",
+      "delta": 6
+    },
+    {
+      "after": 6,
+      "before": 0,
+      "concept_id": "temporal.until",
       "delta": 6
     },
     {
@@ -200,49 +242,7 @@
     {
       "after": 3,
       "before": 0,
-      "concept_id": "technical.active_risk",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.asset_liability_management",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.enterprise_risk_management",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.isin",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.key_rate_duration",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.macd",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.short_bias",
-      "delta": 3
-    },
-    {
-      "after": 3,
-      "before": 0,
-      "concept_id": "technical.twrr",
+      "concept_id": "polarity.affirmation",
       "delta": 3
     }
   ],
@@ -714,11 +714,21 @@
         "ão, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os",
         "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamenta"
       ]
+    },
+    {
+      "after": 67,
+      "before": 68,
+      "concept_id": "temporal.maturity",
+      "delta": -1,
+      "examples": [
+        "(T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A DEZ ANOS.",
+        "(T-BONDS) tem como principal característica que possui VENCIMENTOS COM MAIS DE DEZ ANOS."
+      ]
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 304,
-  "spans_after": 6700,
+  "spans_absorbed_by_a_longer_match": 305,
+  "spans_after": 6859,
   "spans_before": 6522,
   "spans_suppressed_with_no_replacement": 117
 }
