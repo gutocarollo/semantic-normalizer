@@ -59,8 +59,13 @@ from semantic_normalizer.registry import automatic_surfaces, load_lexicon, load_
 CASES = [
     ("Os títulos dos EUA são uma das opções mais seguras.", "technical.option", False),
     ("Entre duas opções, devemos escolher aquela que possui o maior valor.", "technical.option", False),
-    ("Ao embutir opções de compra a títulos, esperamos o seguinte.", "technical.option", True),
-    ("O título possui uma opção de venda ao emissor.", "technical.option", True),
+    # `opção de compra`/`opção de venda` moved to the call and put concepts that already existed:
+    # one concept holding both sides of an option meant the canonical rewrite turned puts into
+    # calls. The generic technical.option keeps bare `opção`/`opções`.
+    ("Ao embutir opções de compra a títulos, esperamos o seguinte.", "technical.option", False),
+    ("Ao embutir opções de compra a títulos, esperamos o seguinte.", "technical.call_option", True),
+    ("O título possui uma opção de venda ao emissor.", "technical.option", False),
+    ("O título possui uma opção de venda ao emissor.", "technical.put_option", True),
     ("Expectativas sobre os comportamentos dos juros para períodos futuros.", "technical.futures", False),
     ("Garantia de resultados futuros ou isenção de risco para o investidor.", "technical.futures", False),
     ("Rafael comprou 10 contratos futuros de Ibovespa a 60.000.", "technical.futures", True),
@@ -184,7 +189,8 @@ CASES = [
     # A generic and a specific concept claiming one phrase is not ambiguity: the specific wins.
     ("São Bonds com opção de Call embutida no contrato.", "technical.call_option", True),
     ("São Bonds com opção de Call embutida no contrato.", "technical.option", False),
-    ("O título possui uma opção de venda ao emissor.", "technical.option", True),
+    ("O título possui uma opção de venda ao emissor.", "technical.option", False),
+    ("O título possui uma opção de venda ao emissor.", "technical.put_option", True),
     ("O título tem um desconto sobre o valor de face na emissão.", "technical.discount", True),
     ("Futuros de Ações são negociados na B3.", "technical.futures", True),
     # A safety-manual concept from the seed vocabulary claiming ordinary Portuguese prose.
@@ -279,7 +285,12 @@ CASES = [
     ("O contrato de prestação de serviços ao fundo celebrado com o cogestor.", "entity.service", True),
     ("A duration de um título zero-cupom, sem pagamentos de juros, é igual ao prazo.", "polarity.absence", True),
     ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "entity.asset", False),
-    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_leg", True),
+    # The swap sides were split: technical.swap_leg held both `ativo em X` and `passivo em X`,
+    # opposite legs under one concept, so the canonical rewrite could turn a paying leg into a
+    # receiving one. The assertion moves to the concept that owns each side.
+    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_leg", False),
+    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_liability_leg", True),
+    ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_asset_leg", True),
     ("O valor presente deste ativo acaba sendo valorizado.", "entity.asset", True),
     ("O Stress Test testa a cauda da curva de sino (Distribuição Normal).", "technical.yield_curve", False),
     ("A curva de juros pode apresentar outros movimentos.", "technical.yield_curve", True),

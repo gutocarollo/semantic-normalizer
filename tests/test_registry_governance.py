@@ -301,5 +301,54 @@ class RegistryGovernanceTests(unittest.TestCase):
                         self.assertIn(target, live)
 
 
+    def test_no_concept_gathers_two_opposite_senses(self):
+        """A concept may hold many spellings of one sense, never two that are opposites.
+
+        The canonical rewrite substitutes any of a concept's automatic forms for its preferred one,
+        so a concept holding both sides of an opposition rewrites one into the other.
+        `technical.option` held `opção de venda` (put) and `opção de compra` (call) with the call
+        preferred, and every put in the corpus came out a call — the instrument inverted, in the
+        field the README calls a primary deliverable, across thirteen occurrences.
+
+        The engine now refuses that substitution outright, but a guard catching a modelling error
+        is not a reason to keep the modelling error. This asserts the model: the forms of one
+        concept never straddle a declared opposition. Proven by canary — restoring the put forms to
+        `technical.option` fails it.
+        """
+        import sys
+        sys.path.insert(0, str(DATA.parents[2]))
+        from semantic_normalizer.normalizer import CANONICAL_ANTONYMS
+        from semantic_normalizer.registry import automatic_surfaces, nfc_casefold
+        offenders = []
+        for record in self.records:
+            for language in ("en", "pt-BR"):
+                tokens = [set(nfc_casefold(form).split())
+                          for form in automatic_surfaces(record, language)]
+                for left, right in CANONICAL_ANTONYMS:
+                    if any(left in group for group in tokens) and any(
+                        right in group for group in tokens
+                    ):
+                        offenders.append(f"{record['concept_id']}.{language}: {left}/{right}")
+        self.assertEqual(
+            [], sorted(set(offenders)),
+            "these concepts gather both sides of an opposition, so the canonical rewrite would "
+            "substitute one sense for its opposite. Split them the way technical.put_option and "
+            "technical.call_option were split out of technical.option.",
+        )
+
+    def test_the_rewrite_guard_refuses_the_two_shapes_it_exists_for(self):
+        """The safety net itself, exercised on both defects that motivated it."""
+        import sys
+        sys.path.insert(0, str(DATA.parents[2]))
+        from semantic_normalizer.normalizer import _rewrite_is_safe
+        self.assertFalse(_rewrite_is_safe("opção de venda", "opção de compra"),
+                         "a put must never be rewritten into a call")
+        self.assertFalse(_rewrite_is_safe("é vedada", "vedado"),
+                         "dropping the copula removes the sentence's only verb")
+        self.assertTrue(_rewrite_is_safe("cotas", "cota"), "inflection is what the field is for")
+        self.assertTrue(_rewrite_is_safe("classificação de risco", "rating"),
+                        "a shorter synonym of the same sense is a legitimate canonicalisation")
+
+
 if __name__ == "__main__":
     unittest.main()

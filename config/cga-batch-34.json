@@ -1,0 +1,29 @@
+{
+  "batch": 34,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The antonym guard added with the put/call split caught a second concept immediately: `technical.swap_leg` gathered `ativo em dólar` and `passivo em dólar`, `ativo em prefixado` and `passivo em prefixado` — the two OPPOSITE sides of a swap under one concept, so the canonical rewrite could substitute either for the other. The corpus teaches the instrument exactly as that opposition: `o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros)`. Two sides, two concepts.",
+  "concepts": [
+    {
+      "id": "technical.swap_asset_leg",
+      "en": "asset leg",
+      "pt": "ativo em",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The side of a swap whose holder receives the indexed flow — the party is `ativo` in that index.",
+      "alt_en": [],
+      "alt_pt": ["ativo em dólar","ativo em prefixado","ativo em pós-fixado","ativo em taxa de juros","ativa em pós-fixada","ativo em prefixada"],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.swap_liability_leg",
+      "en": "liability leg",
+      "pt": "passivo em",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The side of a swap whose holder pays the indexed flow — the party is `passivo` in that index.",
+      "alt_en": [],
+      "alt_pt": ["passivo em dólar","passivo em prefixado","passivo em pós-fixado","passivo em taxa de juros","passivo em pós-fixada","passiva em prefixada"],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "precision-sweep-amendment-46",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review of the automatic_surfaces ordering fix",
+  "method": "every occurrence of each moved form read; the receiving concepts confirmed to exist and to be correctly scoped",
+  "reason": "A concept may gather many spellings of one sense; it may not gather two senses that are opposites, because the canonical rewrite substitutes any of its forms for the preferred one. `technical.option` held `opção de venda` (put) AND `opção de compra` (call) with the call preferred, so every put in the corpus was rewritten into a call — the financial instrument inverted. `technical.put_option` and `technical.call_option` already existed, correctly scoped; the specific forms belong to them and the generic `opção` stays with the general concept. A rewrite-safety guard now refuses this class of substitution outright, but a guard that catches a modelling error is not a reason to keep it.",
+  "operations": [
+    {
+      "op": "rename_pref",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "to": "opção",
+      "why": "The general concept's preferred label was `opção de compra`, which is a CALL — the specific instrument standing as the label of the family that contains its opposite. `opção` is what the corpus writes for the general instrument and what the family is."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opção de venda",
+      "wrong": 13,
+      "total": 13,
+      "why": "A put, not the general option. `technical.put_option` owns it."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opções de venda",
+      "why": "Plural of the same."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.put_option",
+      "language": "pt-BR",
+      "form": "opção de venda",
+      "why": "13 occurrences of the put, moved to the concept that is the put."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.put_option",
+      "language": "pt-BR",
+      "form": "opções de venda",
+      "why": "Plural of the same."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opções de compra",
+      "why": "Plural of the same."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.call_option",
+      "language": "pt-BR",
+      "form": "opção de compra",
+      "why": "The call, moved to the concept that is the call."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.call_option",
+      "language": "pt-BR",
+      "form": "opções de compra",
+      "why": "Plural of the same."
+    },
+    {
+      "op": "remove_form",
+      "concept": "polarity.affirmation",
+      "language": "pt-BR",
+      "form": "expressamente",
+      "wrong": 12,
+      "total": 12,
+      "why": "`expressamente previsto` is a manner adverb about how a provision is written, not a polarity marker. Batch 33 registers it as modality.explicitly."
+    }
+  ]
+}

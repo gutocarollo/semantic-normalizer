@@ -439,6 +439,64 @@ def local_span(absolute_start: int, absolute_end: int, segment_start: int) -> di
             "local_end": absolute_end - segment_start}
 
 
+COPULA = frozenset({"é", "são", "fica", "ficam", "está", "estão", "seja", "sejam", "was", "is", "are"})
+
+# Pairs that must never be substituted for each other. A concept may legitimately gather many
+# spellings of one sense; it may not gather two senses that are opposites, because the canonical
+# rewrite substitutes any of its forms for the preferred one. `technical.option` held both
+# `opção de venda` (put) and `opção de compra` (call) with the call as preferred, so every put in
+# the corpus was rewritten into a call — the instrument inverted, silently, in the field the
+# README calls a primary deliverable.
+CANONICAL_ANTONYMS = (
+    ("compra", "venda"), ("comprada", "vendida"), ("comprado", "vendido"),
+    ("comprar", "vender"), ("call", "put"), ("ativo", "passivo"), ("ativa", "passiva"),
+    ("alta", "baixa"), ("longo", "curto"), ("longa", "curta"), ("credor", "devedor"),
+    ("aberto", "fechado"), ("aberta", "fechada"), ("positivo", "negativo"),
+    ("positiva", "negativa"), ("ganho", "perda"), ("entrada", "saída"),
+)
+
+
+def _rewrite_is_safe(alias: str, replacement: str) -> bool:
+    """Whether substituting `replacement` for `alias` preserves the sentence.
+
+    `_canonical_projection` rewrites every matched span to its concept's preferred surface, which
+    is only sound while a concept's forms are spellings of ONE sense. Two ways that broke, both
+    found in real corpus output:
+
+      meaning inversion — `opção de venda` (put) rewritten to `opção de compra` (call), because
+      one concept held both and the call was preferred. 13 occurrences.
+
+      verb deletion — `É vedada a cessão de cotas` rewritten to `vedado a cessão de cotas`. The
+      matched form is copula plus adjective and the preferred surface is the bare adjective, so
+      replacing two tokens with one removes the sentence's only verb. 17 occurrences.
+
+    The data defects are repaired separately; this is the guard that stops the class. It refuses
+    rather than guesses: an unsafe rewrite leaves the original text, which is always grammatical
+    and always means what it said.
+    """
+    alias_tokens = nfc_casefold(alias).split()
+    replacement_tokens = nfc_casefold(replacement).split()
+    # Truncation: the replacement is the alias with its tail cut off. `passivo em dólar` rewritten
+    # to `passivo em` leaves a dangling preposition and drops the index the leg is denominated in —
+    # the same shape as the copula case, generalised. A replacement that is a strict prefix of what
+    # it replaces never adds information and always removes some.
+    if replacement_tokens == alias_tokens[:len(replacement_tokens)] and len(
+        replacement_tokens
+    ) < len(alias_tokens):
+        return False
+    if alias_tokens and alias_tokens[0] in COPULA and (
+        not replacement_tokens or replacement_tokens[0] not in COPULA
+    ):
+        return False
+    for left, right in CANONICAL_ANTONYMS:
+        crossed = (left in alias_tokens and right in replacement_tokens) or (
+            right in alias_tokens and left in replacement_tokens
+        )
+        if crossed:
+            return False
+    return True
+
+
 def _replacement_for(event: dict, segment_language: str, lexicon: dict) -> str:
     """The text a match rewrites to. One definition, because two of them drifted.
 
@@ -665,6 +723,8 @@ def _canonical_projection(
         pieces.append(unchanged)
         canonical_cursor += len(unchanged)
         replacement = _replacement_for(event, language, lexicon)
+        if not _rewrite_is_safe(event["alias"], replacement):
+            replacement = original[local_start:local_end]
         canonical_start = canonical_cursor
         pieces.append(replacement)
         canonical_cursor += len(replacement)

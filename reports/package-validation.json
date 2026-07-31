@@ -33,13 +33,13 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "e76fe0ae85c8178043c3b3988e471ad61d1480614d09cfeff88c7711e5230b10",
+    "installed_package_sha256": "afdff6f5e591f641ba1fb8b690a3af7099112ac259268836aa56fba4345e4810",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
       "identifier_protected": true,
-      "provenance_events": 80,
-      "registry_records": 483,
+      "provenance_events": 86,
+      "registry_records": 486,
       "registry_version": "2.28.0",
       "release_governs_registry": true,
       "schemas": [
@@ -69,10 +69,10 @@
     "site_packages_snapshot": "complete-tree SHA-256 compared before and after runtime commands",
     "site_packages_unchanged": true,
     "validate_registry": {
-      "automatic_keys": 1339,
-      "records": 483,
+      "automatic_keys": 1344,
+      "records": 486,
       "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-      "registry_sha256": "9358794fa69ad355da92cd9f5fe10e3426fa0daaa888b7fea10d54282a77c584",
+      "registry_sha256": "848678760db4670d39e6b4c9cc69623d081b6ef1cb9271d09aa049c011a046ec",
       "registry_version": "2.28.0",
       "review_keys": 160,
       "valid": true
@@ -86,8 +86,8 @@
     "double_build_byte_identical": true,
     "hash_location": "checksums.sha256 (external)",
     "heldout_members": 0,
-    "manifest_entries_verified": 179,
-    "members": 180,
+    "manifest_entries_verified": 180,
+    "members": 181,
     "mode": "0644",
     "path": "dist/semantic-normalizer-skill-0.4.0.zip",
     "prefix": "semantic-normalizer-0.4.0",
@@ -113,9 +113,9 @@
       "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
       "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
       "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-      "registry.jsonl": "9358794fa69ad355da92cd9f5fe10e3426fa0daaa888b7fea10d54282a77c584",
-      "registry.provenance.jsonl": "52aa24e215948925883a8bffd7809aa8b797cdcae2a4245c3ecfd55c1c249e3a",
-      "registry.release.json": "4f33eb10462834f52e5167ba1920513c26c8c38e59510b4e86680bf47bbcca78",
+      "registry.jsonl": "848678760db4670d39e6b4c9cc69623d081b6ef1cb9271d09aa049c011a046ec",
+      "registry.provenance.jsonl": "c701fc71f8ff31813dc34a31645e88000dc821acbc91ced5cfaa49fb3e93c125",
+      "registry.release.json": "b41e1bbbd62bc07e319cc3ee08404d856941d134fb720e01b4653b88bc7d6345",
       "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
       "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
     },
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "05e6bd1ed2d2fce1df8b804b686db7b899b232222919d294bfac21a47643e6ea",
-    "size": 958750,
+    "sha256": "711c5c319435a4388341b5b2975f75cd66d58542e114bd48603891a5a096224e",
+    "size": 973763,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }

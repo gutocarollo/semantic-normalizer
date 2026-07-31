@@ -332,6 +332,21 @@
       "read_depth": 4
     },
     {
+      "concept_id": "entity.asset",
+      "distance_max": 0.9629,
+      "distance_mean": 0.7738,
+      "distance_spread": 0.1536,
+      "form": "ativo",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 84,
+      "priority": 4.5185,
+      "read_depth": 4
+    },
+    {
       "concept_id": "entity.credit",
       "distance_max": 0.915,
       "distance_mean": 0.7286,
@@ -343,21 +358,6 @@
       ],
       "occurrences": 32,
       "priority": 4.4839,
-      "read_depth": 4
-    },
-    {
-      "concept_id": "entity.asset",
-      "distance_max": 0.9638,
-      "distance_mean": 0.7755,
-      "distance_spread": 0.1484,
-      "form": "ativo",
-      "general_senses": 4,
-      "glosses": [
-        "caracteriza-se por actividade enérgica",
-        "qualquer coisa de valor material ou utilidade que é de propriedade de "
-      ],
-      "occurrences": 87,
-      "priority": 4.4756,
       "read_depth": 4
     },
     {
@@ -3624,9 +3624,9 @@
   "occurrences_to_read": 611,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0429,
+    "mean": 2.0431,
     "median": 1.7659,
-    "stdev": 1.5683
+    "stdev": 1.5685
   },
   "reading_list": [
     {
@@ -4309,6 +4309,34 @@
       "quote": "isco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor."
     },
     {
+      "concept_id": "entity.asset",
+      "distance": 0.9629,
+      "form": "ativo",
+      "general_senses": 4,
+      "quote": "reendem os ETF-Internacional, que são entendidos como sendo uma modalidade de ativo à parte."
+    },
+    {
+      "concept_id": "entity.asset",
+      "distance": 0.9506,
+      "form": "ativo",
+      "general_senses": 4,
+      "quote": " dias para atingir os limites de concentração por emissor e por modalidade de ativo estabelecidos em seus regulamentos."
+    },
+    {
+      "concept_id": "entity.asset",
+      "distance": 0.9423,
+      "form": "ativo",
+      "general_senses": 4,
+      "quote": "rro de Rastreamento, é a divergência entre o comportamento dos retornos de um ativo e o do benchmark."
+    },
+    {
+      "concept_id": "entity.asset",
+      "distance": 0.9391,
+      "form": "ativo",
+      "general_senses": 4,
+      "quote": " correta, da precificação dos instrumentos utilizados e da correlação entre o ativo protegido e o instrumento de hedge."
+    },
+    {
       "concept_id": "entity.credit",
       "distance": 0.915,
       "form": "crédito",
@@ -4335,34 +4363,6 @@
       "form": "crédito",
       "general_senses": 7,
       "quote": "(tais como reorganizações, reestruturações, fusões e aquisições) e eventos de crédito (como falência, ou default), podem ser protegidos ou mesmo mi"
-    },
-    {
-      "concept_id": "entity.asset",
-      "distance": 0.9638,
-      "form": "ativo",
-      "general_senses": 4,
-      "quote": "reendem os ETF-Internacional, que são entendidos como sendo uma modalidade de ativo à parte."
-    },
-    {
-      "concept_id": "entity.asset",
-      "distance": 0.9517,
-      "form": "ativo",
-      "general_senses": 4,
-      "quote": " dias para atingir os limites de concentração por emissor e por modalidade de ativo estabelecidos em seus regulamentos."
-    },
-    {
-      "concept_id": "entity.asset",
-      "distance": 0.9437,
-      "form": "ativo",
-      "general_senses": 4,
-      "quote": "rro de Rastreamento, é a divergência entre o comportamento dos retornos de um ativo e o do benchmark."
-    },
-    {
-      "concept_id": "entity.asset",
-      "distance": 0.9405,
-      "form": "ativo",
-      "general_senses": 4,
-      "quote": " correta, da precificação dos instrumentos utilizados e da correlação entre o ativo protegido e o instrumento de hedge."
     },
     {
       "concept_id": "risk.financial",
@@ -7474,7 +7474,7 @@
     }
   ],
   "registry": {
-    "concepts": 483,
+    "concepts": 486,
     "version": "2.28.0"
   },
   "risk_surface_events": 4395,

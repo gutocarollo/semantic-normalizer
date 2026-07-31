@@ -1,0 +1,18 @@
+{
+  "batch": 33,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "`expressamente` was an automatic form of polarity.affirmation, whose preferred label is `afirmativamente`. They are not synonyms: `expressamente previsto no regulamento` means the regulation states it EXPLICITLY, a manner adverb about how something is written; `afirmativamente` is a polarity adverb about answering yes. The canonical rewrite substituted one for the other in 12 occurrences of Brazilian fund regulation. Same shape as `ISR` under technical.esg and `distribuição normal` under the general distribution — a distinct sense living as a form of its near-neighbour because the near-neighbour was the only entry.",
+  "concepts": [
+    {
+      "id": "modality.explicitly",
+      "en": "expressly",
+      "pt": "expressamente",
+      "class": "modality",
+      "pos": "adverb",
+      "def": "Marks that the governing document states the provision in so many words, rather than leaving it to be inferred.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    }
+  ]
+}

@@ -97,8 +97,8 @@
       "raw_bytes": 6407
     },
     "C": {
-      "bytes": 12819,
-      "delta_bytes": 6412,
+      "bytes": 12830,
+      "delta_bytes": 6423,
       "raw_bytes": 6407
     },
     "D": {
@@ -107,8 +107,8 @@
       "raw_bytes": 6407
     },
     "E": {
-      "bytes": 6412,
-      "delta_bytes": 5,
+      "bytes": 6423,
+      "delta_bytes": 16,
       "raw_bytes": 6407
     }
   },
@@ -454,15 +454,15 @@
     }
   },
   "queries": 16,
-  "registry_sha256": "9358794fa69ad355da92cd9f5fe10e3426fa0daaa888b7fea10d54282a77c584",
+  "registry_sha256": "848678760db4670d39e6b4c9cc69623d081b6ef1cb9271d09aa049c011a046ec",
   "registry_version": "2.28.0",
   "reproducibility": {
     "dataset_canonical_sha256": "27c4e9eca0d19d5217c1102aba71d6656196af35c15b789be5c46d3e27f16b89",
     "dataset_file_sha256": "ed677a53cbd98d152bef445be218461f487762f8c8e16eaf06aeee2199e63d58",
     "evaluator_sha256": "0d9ff81065b9f3ce1a0e8b5e4790d75536fb6fdb6f6d332fe21ea7354a4b70af",
-    "normalizer_sha256": "624fef4f44f4c00e1b9caf0db28354f42d92359826b2150c346b3e51db681ff0",
+    "normalizer_sha256": "6525fbe6311edb9286cad0b2dd8980584c8658c8b9a3a809f6c4070edfa8a66a",
     "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-    "registry_sha256": "9358794fa69ad355da92cd9f5fe10e3426fa0daaa888b7fea10d54282a77c584",
+    "registry_sha256": "848678760db4670d39e6b4c9cc69623d081b6ef1cb9271d09aa049c011a046ec",
     "sidecar_schema_sha256": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "rows": [
@@ -642,8 +642,8 @@
           "nonzero_scores": 3,
           "ranking": [
             "dev-pt-wiki",
-            "dev-pt-futures",
-            "dev-pt-gameplay"
+            "dev-pt-gameplay",
+            "dev-pt-futures"
           ],
           "relevant_rank_delta_vs_A": 0
         },

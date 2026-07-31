@@ -1,0 +1,177 @@
+{
+  "id": "precision-sweep-amendment-49",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa",
+  "method": "forms enumerated from the registry after batch 34, not typed out",
+  "reason": "Batch 34 split the swap sides and the collision demoter did its job: every side form went to review on BOTH claimants, so the antonym guard passed for the wrong reason — the forms had been switched off, not disentangled, costing the matches instead of fixing them. This removes the generic concept's claim and restores the sides on the concepts that own them.",
+  "operations": [
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativo em taxa de juros",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativo em pós-fixado",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativo em prefixado",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativo em prefixada",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativo em dólar",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "ativa em pós-fixada",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passivo em pós-fixado",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passivo em prefixado",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passivo em pós-fixada",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passivo em dólar",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passiva em prefixada",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.swap_leg",
+      "language": "pt-BR",
+      "form": "passivo em taxa de juros",
+      "why": "One SIDE of the swap. The generic concept keeps `perna do swap`; the sides belong to the two concepts batch 34 registered."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativo em dólar",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativo em prefixado",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativo em pós-fixado",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativo em taxa de juros",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativa em pós-fixada",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "form": "ativo em prefixada",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passivo em dólar",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passivo em prefixado",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passivo em pós-fixado",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passivo em taxa de juros",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passivo em pós-fixada",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "form": "passiva em prefixada",
+      "why": "Uncontested once the generic concept's claim is gone — the same two-step `liquidez` and `distribuição normal` each needed."
+    }
+  ]
+}
