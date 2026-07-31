@@ -29,25 +29,32 @@ and one round of execution review.
 | | 0.3.0 | 0.4.0 |
 |---|---:|---:|
 | concepts | 86 | **232** |
-| sentences resolving ≥1 concept | 64 / 300 (21.3 %) | **280 / 300 (93.3 %)** |
-| concepts per sentence | 0.24 | **3.10** |
-| `accepted` | 12 | 54 |
-| `partial` | 54 | **3** |
+| sentences resolving ≥1 concept | 64 / 300 (21.3 %) | **274 / 300 (91.3 %)** |
+| concepts per sentence | 0.24 | **2.92** |
+| `accepted` | 12 | 51 |
+| `partial` | 54 | **8** |
 
 ### The acceptance gate, and where it failed
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | OOV occurrences resolved vs the **frozen** baseline | 5900 / 15116 = **39.03 %** against a 41.51 % target — **FAIL** |
+| 1 | OOV occurrences resolved vs the **frozen** baseline | 7012 / 18877 = **37.15 %** against a 41.51 % target — **FAIL** |
 | 2 | `auto_match_precision`, blind adjudication | batch 1 **0.983**, batch 2 **1.00**, batch 3 **0.95** — PASS |
 | 3 | Wrong concept accepted in the sample | 0 after correction — PASS |
 | 4 | Concepts with an EN label lacking evidence | 0 — PASS |
 | 5 | `validate-registry` | valid — PASS |
 
-Line 1 misses by 2.5 points and is reported as a miss. It is measured against the denominator
-frozen in `coverage-baseline.json`, not against the live queue — the live queue shrinks every
-time a concept is added, so measuring against it compares a moving population to itself and
-always looks fine. The execution review caught exactly that and the comparison was rebuilt.
+Line 1 misses by 4.4 points and is reported as a miss. Getting that number honest took three
+attempts, and the two discarded ones are worth naming because each looked fine:
+
+1. Measuring against the **live** queue. Meaningless: the queue shrinks every time a concept
+   is added, so it compares a moving population to itself.
+2. Measuring against the queue frozen before the corpus cleanup. Inflated: it credited the
+   extended stopword list and the removed image paths as if they were concepts.
+3. **What ships:** `reports/baseline-queue-86-concepts.json`, built by the same pipeline, on
+   the same corpus, with the same cleanup and the same sentence rule, against a registry
+   holding only the 86 pre-CGA concepts. Cleanup appears on both sides and nets out, so
+   37.15 % is concept contribution alone.
 
 ### Added — pipeline
 
@@ -86,13 +93,18 @@ context), `proteção` → `technical.hedge` (it matched regulatory protection).
 
 ### Known gaps
 
-- **Line 1 of the gate fails at 39.03 % against 41.51 %.** Part of the resolved share comes
-  from corpus cleanup rather than concepts, and that is disclosed rather than netted out.
+- **Line 1 of the gate fails at 37.15 % against 41.51 %.** The baseline nets out cleanup, so
+  this is concept contribution with nothing flattering left in it. For scale: the 146 CGA
+  concepts match 4474 occurrences across the corpus; the 86 pre-existing ones match 281, being
+  procedural-writing vocabulary with almost no overlap with finance.
 - Batch 4 was not authored. The remaining queue head is general Portuguese (`longo`,
   `relação`, `ano`, `alta`, `total`), which D2 excludes on purpose — a concept for `total`
   would match everywhere and the precision gate punishes exactly that. The review noted the
   justification overstates the case: `exposição`, `valores` and `long` are still domain terms.
-- 2.5 % of extracted sentences glue a markdown header into the middle of the text.
+- A markdown heading is now a hard sentence boundary. Splitting only on `.!?` glued headings
+  into 2.5 % of sentences, because a line ending in a colon has no terminator. Fixing it
+  changed how much text the corpus yields (1298 → 1682 sentences), which is why the baseline
+  had to be rebuilt with the same rule on both sides.
 - Still no qrels and no held-out queries. Gap G4 remains open: coverage on the OOV queue is
   not evidence of better retrieval.
 - The registry covers one apostila. Nothing here transfers to other Brazilian financial text

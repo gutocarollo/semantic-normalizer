@@ -22,12 +22,12 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "cc227ab6656956bb996a1b1f920cd9e0e701a7c59444eaa698f087052585ffca",
+  "package_validation_sha256": "03de1b1cd9839bc987a7bfc9e1b84263d177bcb489472577683415a70e7fbd93",
   "payload": [
     {
       "path": "CHANGELOG.md",
-      "sha256": "18dc7396195a2e6cba0efe95c97326977cdbc675506298717224571201361184",
-      "size": 23118
+      "sha256": "c40b7d36f4b786c706a8cbb784c6e7cc4451bd937e43e0616544da8f19a402a8",
+      "size": 28719
     },
     {
       "path": "LICENSE",
@@ -130,6 +130,11 @@
       "size": 24895
     },
     {
+      "path": "reports/baseline-queue-86-concepts.json",
+      "sha256": "996ea361272f62e503925d8642c507bf644480395ff6b7877542e8adf4172442",
+      "size": 2082278
+    },
+    {
       "path": "reports/bm25-smoke-test.json",
       "sha256": "501ff37b7986b2681909cd22ed9219ae3ea93627d15c6a22ed0ddcbf81bf763c",
       "size": 17934
@@ -151,8 +156,8 @@
     },
     {
       "path": "reports/coverage-final.json",
-      "sha256": "99d85c61b983b51cd3da7ec521287fcff8e236ef8b131757d600b62e1243753c",
-      "size": 1672
+      "sha256": "82040935c7b5984296675046271260dc5d8b6f0027af26d9885def36184cf8b7",
+      "size": 2021
     },
     {
       "path": "reports/dev-auto-match-correction-manifest.json",
@@ -206,13 +211,13 @@
     },
     {
       "path": "reports/oov-queue.json",
-      "sha256": "28c34dbfafea9d5d9ea33389bf2db26818d89e86e88278a6956f65ef574778e9",
-      "size": 1709574
+      "sha256": "42a6e1835fa4c7dec884ed00def658f2df1a186c893f15eda834474a7cb79101",
+      "size": 1949568
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "cc227ab6656956bb996a1b1f920cd9e0e701a7c59444eaa698f087052585ffca",
-      "size": 7397
+      "sha256": "03de1b1cd9839bc987a7bfc9e1b84263d177bcb489472577683415a70e7fbd93",
+      "size": 7398
     },
     {
       "path": "reports/registry-migration.json",
@@ -246,8 +251,8 @@
     },
     {
       "path": "scripts/build_oov_queue.py",
-      "sha256": "e28c616a3655ec5a5c276e92eb4d737f0f37571072f48c6c2c00daa226b56c31",
-      "size": 12142
+      "sha256": "ac024e827aaf3c2039cc5e92a9273e76e69d5f8d3152fcab9dbecb18533f59ee",
+      "size": 12671
     },
     {
       "path": "scripts/build_release.py",
@@ -520,7 +525,7 @@
       "size": 11930
     }
   ],
-  "payload_files": 99,
+  "payload_files": 100,
   "release_version": "0.4.0",
   "wheel_sha256": "fc9de53eb5840f62f59de040c9b97def4a05da2d96ae5f861f9c22362b746c0f"
 }

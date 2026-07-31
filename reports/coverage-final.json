@@ -1,50 +1,56 @@
 {
   "against_frozen_baseline": {
+    "baseline_queue": "reports/baseline-queue-86-concepts.json",
+    "baseline_registry": {
+      "concepts": 86,
+      "version": "2.1.0"
+    },
     "baseline_target_share": 0.4151,
-    "baseline_unknown_occurrences": 15116,
-    "current_unknown_occurrences": 9216,
+    "baseline_unknown_occurrences": 18877,
+    "current_unknown_occurrences": 11865,
     "meets_target": false,
-    "resolved_occurrences": 5900,
-    "resolved_share": 0.3903
+    "method": "same corpus, same sentence rule, same cleanup on both sides; the baseline registry holds only the 86 pre-CGA concepts, so cleanup nets out and the share is concept contribution alone",
+    "resolved_occurrences": 7012,
+    "resolved_share": 0.3715
   },
   "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
   "curve": [
     {
       "concepts": 25,
-      "occurrences": 611,
-      "share_of_unknown": 0.0663
+      "occurrences": 784,
+      "share_of_unknown": 0.0661
     },
     {
       "concepts": 50,
-      "occurrences": 1006,
-      "share_of_unknown": 0.1092
+      "occurrences": 1305,
+      "share_of_unknown": 0.11
     },
     {
       "concepts": 100,
-      "occurrences": 1607,
-      "share_of_unknown": 0.1744
+      "occurrences": 2089,
+      "share_of_unknown": 0.1761
     },
     {
       "concepts": 150,
-      "occurrences": 2080,
-      "share_of_unknown": 0.2257
+      "occurrences": 2696,
+      "share_of_unknown": 0.2272
     },
     {
       "concepts": 200,
-      "occurrences": 2502,
-      "share_of_unknown": 0.2715
+      "occurrences": 3212,
+      "share_of_unknown": 0.2707
     },
     {
       "concepts": 300,
-      "occurrences": 3193,
-      "share_of_unknown": 0.3465
+      "occurrences": 4095,
+      "share_of_unknown": 0.3451
     }
   ],
   "label": "final",
   "queue": {
     "queue_registry_version": "2.4.0",
-    "unknown_occurrences": 9216,
-    "unknown_terms": 3519
+    "unknown_occurrences": 11865,
+    "unknown_terms": 3926
   },
   "registry": {
     "concepts": 232,
@@ -52,22 +58,22 @@
     "version": "2.4.0"
   },
   "sample": {
-    "concepts_per_sentence": 3.1,
+    "concepts_per_sentence": 2.9233,
     "seed": 7,
     "size": 300,
     "status": {
-      "accepted": 54,
-      "partial": 3,
-      "review": 243
+      "accepted": 51,
+      "partial": 8,
+      "review": 241
     },
-    "unresolved_items": 2161,
-    "with_concept": 280,
-    "with_concept_share": 0.9333
+    "unresolved_items": 2066,
+    "with_concept": 274,
+    "with_concept_share": 0.9133
   },
   "schema_version": "coverage-v1",
   "target": {
     "concepts": 200,
     "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
-    "resolved_share_of_unknown": 0.2715
+    "resolved_share_of_unknown": 0.2707
   }
 }

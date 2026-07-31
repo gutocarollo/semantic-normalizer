@@ -132,11 +132,19 @@ def verify_cleanup(before: str, after: str) -> dict:
 
 
 def sentences_of(text: str) -> list[str]:
+    """Split into sentences, treating a markdown heading as a hard boundary.
+
+    Splitting only on `.!?` glued a heading into the middle of 2.5 % of sentences: a line
+    ending in a colon has no terminator, so `"...seria de: ## Taxas de juros A taxa Libor..."`
+    came out as one unit and put heading words into the frequency queue as if they were prose
+    from the preceding paragraph. A heading is a boundary regardless of punctuation.
+    """
     found = []
-    for sentence in re.split(r"(?<=[.!?])\s+", text):
-        sentence = " ".join(sentence.split())
-        if MIN_SENTENCE < len(sentence) < MAX_SENTENCE and not sentence.startswith(("#", "|")):
-            found.append(sentence)
+    for block in re.split(r"^#{1,6}\s.*$", text, flags=re.M):
+        for sentence in re.split(r"(?<=[.!?])\s+", block):
+            sentence = " ".join(sentence.split())
+            if MIN_SENTENCE < len(sentence) < MAX_SENTENCE and not sentence.startswith(("#", "|")):
+                found.append(sentence)
     return found
 
 
