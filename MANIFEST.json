@@ -5,7 +5,7 @@
   "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
   "validation": {
     "unit_tests_passed": 19,
-    "registry_concepts": 252,
+    "registry_concepts": 257,
     "registry_errors": 0,
     "registry_warnings": 4,
     "schema_validation": "passed",
@@ -20,8 +20,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 28817,
-      "sha256": "bedb4c25552021aa178edc3894caabfd6ec7d53fe3bc41b9308c9f47e8a35c6f"
+      "size_bytes": 29482,
+      "sha256": "670260f7e00307df42b6531224a3b5d37a465e4116138b2aef4feecd96b74c62"
     },
     {
       "path": "LICENSE",
@@ -46,7 +46,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 2964,
-      "sha256": "5b697257dbfe4c1d4d8e3640452068cac5628f718bf21df4ee527593f45aac05"
+      "sha256": "0d24161a43861e44d2dd80028a63f78f29a042ba12c10b2cfc0f3aee5b1bed5f"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -67,6 +67,11 @@
       "path": "config/cga-batch-04.json",
       "size_bytes": 6904,
       "sha256": "57349117cd3a0c77c9387cea6a31db50b2282e1945ac1989d122bafbec17d184"
+    },
+    {
+      "path": "config/cga-batch-05.json",
+      "size_bytes": 2279,
+      "sha256": "7944e4600dd6d7be82d38793ee3d04e65c237b1908a191aab9b299b2b4e33110"
     },
     {
       "path": "docs/architecture.md",
@@ -180,8 +185,8 @@
     },
     {
       "path": "reports/coverage-final.json",
-      "size_bytes": 2020,
-      "sha256": "8917bf985b3ee41c4169db45305da93e229074166c36bc50a14db35efa7fad59"
+      "size_bytes": 2021,
+      "sha256": "96758b17d804b317139394da5b122ffb7d4fcc948edbf148672ec7a7566f719c"
     },
     {
       "path": "reports/dev-auto-match-adjudication-blind.jsonl",
@@ -256,7 +261,7 @@
     {
       "path": "reports/dev-retrieval-ablations-final.json",
       "size_bytes": 88205,
-      "sha256": "ec2e0ccd56a44837e02301e1897d2255ca62f26a75944655891911f4b9348f15"
+      "sha256": "fb26963f071413e99c813ac68d5fd5af4a307ec64e38a3846df3271275139288"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -266,17 +271,17 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "f92b932d0b17e93dfb803f230185fd80b5b564be2b4da7c4e3390453fa6dc352"
+      "sha256": "6725f3ab465b0d3083d2f0469d054c4f99bff60cfc2a2f5981042ee268d48456"
     },
     {
       "path": "reports/oov-queue.json",
-      "size_bytes": 1932223,
-      "sha256": "1f9a3a102abaf32c6396a3388d7c1b579507a64fa94e369eaa9d6e2d4ea106a0"
+      "size_bytes": 1931330,
+      "sha256": "c4ca97d5f356a6a010739d77b1345dfccd7d9657ede4690abe3f1e3cfb50f40d"
     },
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7398,
-      "sha256": "360da85e8c734b617158adc7cc62cd26ad42b36ff37f085788dbedb1df95c536"
+      "sha256": "42fcff858447e7c8ea6b2489f1a2cb0716e0226cf3edc8f278d95fc3a1ba25ec"
     },
     {
       "path": "reports/registry-migration.json",
@@ -291,7 +296,7 @@
     {
       "path": "reports/release-manifest.json",
       "size_bytes": 18257,
-      "sha256": "91ca78696321415160ef8fe189a31eef24a42c48d47d008318e9e82831c66e5b"
+      "sha256": "4a2fb2b456bb038ab85625c52d38466038c2a89d9ae6b17579196987ba28af50"
     },
     {
       "path": "reports/sample-output.json",
@@ -460,18 +465,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 320878,
-      "sha256": "c10227981d46855a80348401ba9629ad6cb102231b3b1b9e762b19a25f47b8bc"
+      "size_bytes": 327016,
+      "sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "size_bytes": 8926,
-      "sha256": "6fa5ac70be575222b230636769c76aa2176798d19c34f5c02c313966988d2dfb"
+      "size_bytes": 9633,
+      "sha256": "9884c7f72b2a9779c97e8bbc2c1f520375267ad9931c83362b0fe4ddc8e1c9e5"
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 9203,
-      "sha256": "8e60d9d051de8687f27b3f4daa21a65b06a483e653b42f2f9a187f61e9b9877e"
+      "size_bytes": 8674,
+      "sha256": "4d9a1ade81a4cf6062e99d0f7f7bc04351ec678ea03196e38be6964f08f5aa21"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -506,7 +511,7 @@
     {
       "path": "src/semantic_normalizer/registry.py",
       "size_bytes": 15253,
-      "sha256": "7ed9e5cbb13afb8ce2e2d6db3d3b6cd0e0fb2015b4da44180e199d89f160a06c"
+      "sha256": "0138948978de8f9bb20178c0483f298b5b9912fd7d4a123ad4312d43ef7ccad7"
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -546,7 +551,7 @@
     {
       "path": "tests/test_controlled_language.py",
       "size_bytes": 30705,
-      "sha256": "6ae65bdf9bb3345400f47a0c782dc80b92a579c1eeae0d219238b01b2c30f733"
+      "sha256": "399485e02f5450f65969bd2da016c9efe3bcab1f2867671bee1717abfe989bf9"
     },
     {
       "path": "tests/test_documented_commands.py",

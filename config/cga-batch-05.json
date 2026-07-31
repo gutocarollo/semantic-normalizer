@@ -1,0 +1,27 @@
+{
+  "batch": 5,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Round 2 of the execution review found `IR` tagged as Information Ratio in tax context: 3 of the 7 isolated `IR` occurrences in the corpus mean Imposto de Renda (DARF, 'IR Come-Cotas', 'tributação do IR'). The fix is not to suppress the form — it is to model the sense that was missing. Adding income tax as a concept that also claims `IR` lets the importer's collision demoter make BOTH ambiguous, which is what the corpus actually is. Same technique that fixed entity.class; the difference is that here one side of the collision did not exist yet, which is exactly why the demoter could not help before.",
+  "concepts": [
+    {"id": "entity.income_tax", "en": "income tax", "pt": "imposto de renda", "class": "entity", "pos": "noun",
+     "def": "The tax levied on investment income and capital gains.",
+     "alt_pt": ["IR"], "alt_en": ["IR"],
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"},
+    {"id": "technical.darf", "en": "DARF", "pt": "DARF", "class": "technical_term", "pos": "proper_noun",
+     "def": "The Brazilian federal revenue collection form used to pay tax due.",
+     "technical": true,
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"},
+    {"id": "technical.withholding", "en": "withholding at source", "pt": "retenção na fonte", "class": "technical_term", "pos": "noun",
+     "def": "Tax collected by the paying entity before the investor receives the amount.",
+     "alt_pt": ["tributação na fonte"], "technical": true,
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"},
+    {"id": "technical.capital_gain", "en": "capital gain", "pt": "ganho de capital", "class": "technical_term", "pos": "noun",
+     "def": "The profit realised when an asset is sold above its acquisition cost.",
+     "technical": true,
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"},
+    {"id": "technical.iof", "en": "IOF", "pt": "IOF", "class": "technical_term", "pos": "proper_noun",
+     "def": "The Brazilian tax on financial operations, levied on short-horizon redemptions.",
+     "technical": true,
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"}
+  ]
+}

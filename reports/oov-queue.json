@@ -72,8 +72,8 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "c10227981d46855a80348401ba9629ad6cb102231b3b1b9e762b19a25f47b8bc",
-    "version": "2.5.0"
+    "sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba",
+    "version": "2.6.0"
   },
   "schema_version": "oov-queue-v1",
   "strata": {
@@ -11011,15 +11011,6 @@
       },
       {
         "contexts": [
-          "Os rendimentos desses títulos são isentos de impostos federais e, em muitos casos, estaduais e locais, o que os torna atraentes para investidores que procuram renda isenta de impostos.",
-          "Retorno equivalente = EXEMPLO: Um investidor obteve 10% de retorno em um título isento de imposto de renda.",
-          "O “Come-cotas” é a ANTECIPAÇÃO do Imposto de Renda devido nos FUNDOS DE RENDA FIXA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%."
-        ],
-        "occurrences": 3,
-        "term": "renda"
-      },
-      {
-        "contexts": [
           "O CERTIFICATE OF DEPOSIT (CD) é semelhante ao CDB no Brasil.",
           "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
           "- Retorno financeiro: Os investimentos em ISR podem ter um retorno financeiro semelhante aos investimentos tradicionais."
@@ -17448,14 +17439,6 @@
       },
       {
         "contexts": [
-          "- IOF: Sua cobrança funciona exatamente igual aos ativos de renda fixa: tabela regressiva, zerando no 30º dia.",
-          "Importante salientar que os fundos de ações NÃO possuem IOF."
-        ],
-        "occurrences": 2,
-        "term": "iof"
-      },
-      {
-        "contexts": [
           "<div style=\"text-align: center;\">Gestão de Riscos</div>",
           "<div style=\"text-align: center;\">Histograma de Retornos (frequência relativa)</div> ☐ RESPOSTA: Os 5% menos retornos foram: −3,5% (1% de frequência), −3% (2% de frequência), −2,5% (1% de frequência), totalizando 4% dos menores retornos."
         ],
@@ -19950,6 +19933,13 @@
         ],
         "occurrences": 1,
         "term": "estaduais"
+      },
+      {
+        "contexts": [
+          "Os rendimentos desses títulos são isentos de impostos federais e, em muitos casos, estaduais e locais, o que os torna atraentes para investidores que procuram renda isenta de impostos."
+        ],
+        "occurrences": 1,
+        "term": "renda"
       },
       {
         "contexts": [
@@ -26687,13 +26677,6 @@
       },
       {
         "contexts": [
-          "Neste momento, o IR será de responsabilidade do investidor, com o recolhimento através de DARF até o último dia do mês subsequente."
-        ],
-        "occurrences": 1,
-        "term": "darf"
-      },
-      {
-        "contexts": [
           "- Base de cálculo: dependerá da operação que deu origem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos)."
         ],
         "occurrences": 1,
@@ -33025,8 +33008,8 @@
       "terms": 240
     },
     "unknown": {
-      "occurrences": 11485,
-      "terms": 3898
+      "occurrences": 11480,
+      "terms": 3896
     }
   }
 }

@@ -18,7 +18,7 @@ in [Verification log](#verification-log), and the machine-checkable manifest is
 
 ## [0.4.0] — 2026-07-31
 
-**The registry finally speaks the domain.** 86 → 252 concepts; 166 of them CGA/ANBIMA
+**The registry finally speaks the domain.** 86 → 257 concepts; 171 of them CGA/ANBIMA
 vocabulary, which every previous release listed as its largest open gap.
 
 Executed from `docs/plan-cga-domain-lexicon-0.4.0.md` after three rounds of planning review
@@ -28,7 +28,7 @@ and one round of execution review.
 
 | | 0.3.0 | 0.4.0 |
 |---|---:|---:|
-| concepts | 86 | **252** |
+| concepts | 86 | **257** |
 | sentences resolving ≥1 concept | 64 / 300 (21.3 %) | **279 / 300 (93 %)** |
 | concepts per sentence | 0.24 | **3.10** |
 | `accepted` | 12 | 55 |
@@ -38,7 +38,7 @@ and one round of execution review.
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | OOV occurrences resolved vs the **frozen** baseline | 7392 / 18877 = **39.16 %** against a 41.51 % target — **FAIL** |
+| 1 | OOV occurrences resolved vs the **frozen** baseline | 7397 / 18877 = **39.19 %** against a 41.51 % target — **FAIL** |
 | 2 | `auto_match_precision`, blind adjudication | batch 1 **0.983**, 2 **1.00**, 3 **0.95**, 4 **0.967** — PASS |
 | 3 | Wrong concept accepted in the sample | 0 after correction — PASS |
 | 4 | Concepts with an EN label lacking evidence | 0 — PASS |
@@ -54,7 +54,7 @@ attempts, and the two discarded ones are worth naming because each looked fine:
 3. **What ships:** `reports/baseline-queue-86-concepts.json`, built by the same pipeline, on
    the same corpus, with the same cleanup and the same sentence rule, against a registry
    holding only the 86 pre-CGA concepts. Cleanup appears on both sides and nets out, so
-   39.16 % is concept contribution alone.
+   39.19 % is concept contribution alone.
 
 ### Added — pipeline
 
@@ -85,15 +85,24 @@ attempts, and the two discarded ones are worth naming because each looked fine:
 
 ### Fixed — false positives found by adjudication, not by intention
 
-Six over-broad labels were removed after blind adjudication scored them wrong on real corpus
-sentences: `crédito` → `risk.credit`, `valores` → `quantity.value` (it matched *Bolsa de
-Valores*), `funds` → `entity.resource` (it matched *Hedge Funds*), `exposição`/`exposure` →
-`risk.financial` (exposure is a quantity), `classes` → `entity.class` (it matched asset-class
-context), `proteção` → `technical.hedge` (it matched regulatory protection).
+Nine over-broad labels were removed or demoted after adjudication scored them wrong on real
+corpus sentences: `crédito` → `risk.credit`; `valores` → `quantity.value` (matched *Bolsa de
+Valores*); `funds` → `entity.resource` (matched *Hedge Funds*); `exposição`/`exposure` →
+`risk.financial` (exposure is a quantity); `classes` → `entity.class` (matched asset-class
+context); `proteção` → `technical.hedge` (matched regulatory protection); `Banco Central` →
+`technical.bacen` (matched the *European* Central Bank); `ajustes` → `artifact.configuration`
+(matched daily futures margin).
+
+**One was fixed by modelling instead of suppressing.** `IR` resolved to
+`technical.information_ratio` in tax context — 3 of the 7 isolated `IR` occurrences in the
+corpus mean *Imposto de Renda* (`DARF`, *IR Come-Cotas*, *tributação do IR*). The collision
+demoter could not help, because only one side of the collision existed. Adding
+`entity.income_tax` — which also claims `IR` — let the demoter make both ambiguous, which is
+what the corpus actually is. `DARF`, `IOF`, withholding and capital gain came with it.
 
 ### Known gaps
 
-- **Line 1 of the gate fails at 39.16 % against 41.51 %.** The baseline nets out cleanup, so
+- **Line 1 of the gate fails at 39.19 % against 41.51 %.** The baseline nets out cleanup, so
   this is concept contribution with nothing flattering left in it. For scale: the 166 CGA
   concepts match ~4500 occurrences across the corpus; the 86 pre-existing ones match 281, being
   procedural-writing vocabulary with almost no overlap with finance.
