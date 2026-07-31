@@ -19,7 +19,7 @@ divisão que faz o número final significar alguma coisa.
 
 ---
 
-## Por que a adjudicação não pode ser automatizada
+## O que a máquina resolve, e o que ela não resolve
 
 Rode o extrator num corpus novo e veja o que ele devolve. Este é o resultado real sobre
 `REASONING_SKILLS_CONSOLIDATED.md`, um livro sobre raciocínio e vieses cognitivos:
@@ -46,12 +46,26 @@ python scripts/build_oov_queue.py --corpus /caminho/do/corpus --output reports/o
    54  viés           ← vocabulário de domínio
 ```
 
-A lista vem ordenada por frequência e **mistura os dois**. Nenhuma estatística separa `viés` (54
-ocorrências, conceito central do livro) de `tempo` (57 ocorrências, palavra comum). A frequência não
-sabe a diferença; o significado sabe.
+A lista vem ordenada por frequência e **mistura os dois** — a frequência BRUTA não sabe a diferença
+entre `viés` (54) e `tempo` (57).
 
-Este repositório tentou automatizar essa separação **três vezes** e as três falharam, cada uma
-documentada no cabeçalho de `scripts/score_term_specificity.py`:
+> **Correção.** Uma versão anterior deste documento dizia que *nenhuma estatística* separa os dois e
+> concluía que toda adjudicação é manual. **Isso é falso.** A frequência CONTRASTIVA separa, e é a
+> técnica fundacional de Automatic Term Extraction — `weirdness` em Ahmad et al., `keyness` em
+> linguística de corpus, embarcada no Termostat e no Sketch Engine desde os anos 90. Medido sobre os
+> dois corpora deste repo: `pensamento` 4356x, `argumento` 3689x, `falácia` 3111x, `raciocínio` 172x,
+> `premissa` 24x, **`viés` 18,7x** — contra `pessoas` 7,1x, `simples` 5,9x, `três` 4,9x, `duas` 3,3x,
+> **`tempo` 2,5x**. Uma ordem de grandeza separa exatamente os dois casos que eu usei para dizer que
+> era impossível.
+>
+> Use **`scripts/rank_term_candidates.py`** ANTES de adjudicar. Ele ranqueia por G2 de Dunning
+> (significância) com piso de weirdness (tamanho de efeito) e C-value de Frantzi & Ananiadou para
+> multi-palavra. Adjudicar continua sendo humano; o que muda é começar de uma lista ranqueada com o
+> vocabulário comum empurrado para baixo, em vez de uma pilha onde `viés` e `tempo` parecem iguais.
+
+O que continua verdadeiro: a máquina RANQUEIA, ela não DECIDE. Três tentativas de fazer a máquina
+decidir falharam neste repositório, cada uma documentada no cabeçalho de
+`scripts/score_term_specificity.py`:
 
 1. **Contar sentidos no OpenWordnet-PT.** Verbo flexionado não está em índice de lemas, então
    `vamos`, `permitem`, `devemos` e `negociadas` voltaram com zero sentidos e foram classificados
@@ -72,7 +86,7 @@ A terceira ainda é a melhor ferramenta de TRIAGEM disponível, e é isso que el
 ```mermaid
 flowchart TD
     C["corpus .md"] --> Q["1. EXTRAIR CANDIDATOS<br/>build_oov_queue.py<br/><i>automático</i>"]
-    Q --> T["2. TRIAR<br/>score_term_specificity.py<br/><i>automático, e declara<br/>quando não sabe</i>"]
+    Q --> T["2. RANQUEAR<br/>rank_term_candidates.py<br/>keyness G2 + C-value<br/><i>automático</i>"]
     T --> A["3. ADJUDICAR<br/>ler o termo no corpus<br/><b>humano ou agente</b>"]
     A --> B["4. DECLARAR<br/>config/batch-NN.json<br/><b>escrito à mão</b>"]
     B --> I["5. APLICAR<br/>import_cga_batch.py<br/><i>automático</i>"]
@@ -98,15 +112,25 @@ python scripts/build_oov_queue.py --corpus ../meu-corpus --output reports/oov-qu
 Devolve três estratos: `unknown` (candidatos reais), `function` (palavras funcionais, ignorar) e
 `ambiguous` (superfícies que já colidem com o registry — atenção redobrada).
 
-### 2. Triar
+### 2. Ranquear — termhood e unithood, método padrão de ATE
 
 ```bash
-python scripts/score_term_specificity.py --queue reports/oov-queue.json
+python scripts/rank_term_candidates.py \
+  --corpus <dir-alvo> --reference <dir-referencia> --output reports/ranked.json
 ```
 
-Calcula a entropia de contexto de cada termo e **backtesta contra termos que você já sabe** serem de
-domínio e comuns. Se o índice de Youden ficar abaixo de 0,5, o script diz que não sabe separar e
-recusa dar veredito. Isso é uma resposta legítima e melhor do que um palpite com cara de medida.
+`keyness` por log-likelihood G2 (Dunning 1993) para termhood; `C-value` (Frantzi & Ananiadou) para
+unithood de multi-palavra, descontando o candidato pelo quanto ele aparece aninhado em candidatos
+maiores. Duas coisas que a literatura já resolveu e o script trata:
+
+- **G2 sozinho promove palavra funcional** — ele mede significância e premia frequência bruta
+  (`não` saiu com G2=152 acima de `lógica` com G2=144). Exige-se um piso de weirdness junto, porque
+  as duas estatísticas respondem perguntas diferentes.
+- **O corpus de referência é uma decisão** — o ideal é geral e balanceado; usar outro domínio
+  responde "o que distingue estes dois", que é outra pergunta. O script declara qual usou.
+
+`scripts/score_term_specificity.py` segue disponível como triagem alternativa por entropia de
+contexto, e recusa dar veredito se o Youden ficar abaixo de 0,5.
 
 ### 3. Adjudicar — o trabalho de verdade
 
@@ -267,7 +291,7 @@ de 12 conceitos bem adjudicados — ler as ocorrências, contar as erradas, escr
 | etapa | automático? |
 |---|---|
 | extrair candidatos | **sim** — `build_oov_queue.py` |
-| triar por especificidade | **sim**, com backtest — e declara quando não sabe |
+| ranquear por termhood/unithood | **sim** — `rank_term_candidates.py`, ATE portado |
 | decidir se um termo é conceito | **não** |
 | decidir se a superfície é ambígua | **não** |
 | contar quantas ocorrências estão erradas | **não** — ler é o método |
