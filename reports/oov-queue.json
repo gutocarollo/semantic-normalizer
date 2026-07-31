@@ -72,8 +72,8 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "f6661444c7f1934ac31b366a04a4b3f3bde20056a0ed156b44886bf7103ba103",
-    "version": "2.4.0"
+    "sha256": "c10227981d46855a80348401ba9629ad6cb102231b3b1b9e762b19a25f47b8bc",
+    "version": "2.5.0"
   },
   "schema_version": "oov-queue-v1",
   "strata": {
@@ -107,21 +107,21 @@
       },
       {
         "contexts": [
-          "Vamos detalhar melhor cada uma dessas formas de implementação de gestão passiva de Renda Variável.",
-          "Veremos mais adiante formas mais detalhadas de replicação da carteira visando a uma gestão passiva.",
-          "Dessa forma, o tracking error é praticamente zero, indicando uma excelente gestão passiva; contudo, os custos de transação podem ser um grande desafio, principalmente se o índice possuir muitos ativos e com baixa liquidez."
-        ],
-        "occurrences": 98,
-        "term": "gestão"
-      },
-      {
-        "contexts": [
           "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento direto em outros ativos.",
           "Normalmente, os FoFs atraem pequenos investidores que desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
           "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia de investimento que busca combinar princípios dos estilos Value e Growth para selecionar ações."
         ],
         "occurrences": 87,
         "term": "investimento"
+      },
+      {
+        "contexts": [
+          "[511201] A estratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimização, mas com menor tracking error.",
+          "De forma genérica, uma estratégia Long Only refere-se à gestão de carteiras pautada pela busca de retornos exclusivamente através da compra (long) de ativos.",
+          "Tais eventos podem ser classificados como: - Activist: estilo próximo ao adotado por empresas de Private Equity, consiste na aquisição de um número substancial de ações, capaz de permitir um assento no conselho de administração ou mesmo uma influência direta na gestão da empresa."
+        ],
+        "occurrences": 77,
+        "term": "gestão"
       },
       {
         "contexts": [
@@ -365,6 +365,15 @@
         ],
         "occurrences": 4,
         "term": "management"
+      },
+      {
+        "contexts": [
+          "É calculada e publicada diariamente pelo Banco da Inglaterra, o banco central britânico.",
+          "A taxa ESTR é calculada diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado.",
+          "O Banco Central decide fazer um leilão de uma LTN com vencimento em 55 dias úteis e 73 dias corridos."
+        ],
+        "occurrences": 3,
+        "term": "banco"
       },
       {
         "contexts": [
@@ -2646,15 +2655,6 @@
       },
       {
         "contexts": [
-          "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro.",
-          "Os Municipal Bonds são negociados no mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras.",
-          "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\")."
-        ],
-        "occurrences": 33,
-        "term": "valores"
-      },
-      {
-        "contexts": [
           "Começamos a nossa história com o curso preparatório para a certificação CFP®, a certificação mais avançada para planejadores financeiros e private bankers no Brasil.",
           "Por serem ativos financeiros, essas dívidas poderão ter cláusulas de proteção, tanto para o investidor, quanto para a empresa emissora.",
           "Referência para o mercado: a SOFR está sendo adotada como a nova taxa de referência para substituir a Libor em diversos produtos financeiros."
@@ -2682,30 +2682,12 @@
       },
       {
         "contexts": [
-          "Treasury Bills As tem como principal característica que o seu .",
-          "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A DEZ ANOS.",
-          "As TREASURY BONDS (T-BONDS) tem como principal característica que possui VENCIMENTOS COM MAIS DE DEZ ANOS."
-        ],
-        "occurrences": 28,
-        "term": "principal"
-      },
-      {
-        "contexts": [
           "Desta forma, os Eurobonds tem como objetivo a captação de volumes elevados, sendo feitos através de bancos, podendo ter taxas de juros fixas ou flutuantes.",
           "Por conta da liberdade do gestor em operar praticamente livremente ativos e empregar estratégias, associada ao objetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implicam muitas vezes elevados aportes iniciais.",
           "Market Neutral, por sua vez, são carteiras cujo objetivo é neutralizar a exposição ao risco de mercado através de suas exposições long and short."
         ],
         "occurrences": 28,
         "term": "objetivo"
-      },
-      {
-        "contexts": [
-          "Normalmente, os FoFs atraem pequenos investidores que desejam obter melhor exposição com menos riscos em comparação com o investimento direto em ativos ou mesmo em fundos individuais.",
-          "Embora os FoFs proporcionem diversificação e menor exposição à volatilidade do mercado, esses retornos podem ser impactados negativamente pelo acúmulo de taxas de administração com que o cotista do fundo investidor terá que arcar.",
-          "Com isso, o TRES permite que a parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo."
-        ],
-        "occurrences": 28,
-        "term": "exposição"
       },
       {
         "contexts": [
@@ -2754,15 +2736,6 @@
       },
       {
         "contexts": [
-          "Realizar uma operação LONG & SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long).",
-          "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do seu preço; já quando você vende (SHORT), o seu lucro vem da desvalorização.",
-          "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e líquida (net)."
-        ],
-        "occurrences": 25,
-        "term": "long"
-      },
-      {
-        "contexts": [
           "O Estilo GROWTH tem como base a escolha de ativos em função da perspectiva de alta dos lucros da empresa.",
           "Alguns pontos importantes desse estilo: - Múltiplos: investidores growth costumam focar no denominador do índice P/L dos ativos que estão sendo considerados para a carteira, preferindo ativos com altos índices P/L.",
           "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de uma empresa, seus ativos podem estar subavaliados, surgindo oportunidades de ganhos."
@@ -2808,30 +2781,12 @@
       },
       {
         "contexts": [
-          "- Principais fatores de risco: risco de mercado e liquidez.",
-          "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
-          "A estratégia Top-Down é uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tributação, taxas de juros, antes de examinar questões específicas do ativo, como setores ou dados de determinadas companhias."
-        ],
-        "occurrences": 24,
-        "term": "fatores"
-      },
-      {
-        "contexts": [
           "- On Balance Volume (OBV): indicador técnico que se baseia no volume para prever mudanças no preço das ações.",
           "O intuito é tentar antecipar grandes movimentos nos mercados a partir de mudanças de volume.",
           "Os fundos de investimentos poderão mudar de classificação tributária (alíquota), da mesma forma que poderiam ter mudanças na sua nomenclatura perante a CVM."
         ],
         "occurrences": 24,
         "term": "mudanças"
-      },
-      {
-        "contexts": [
-          "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares.",
-          "Mesmo possuindo a proteção do FDIC (Federal Deposit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00.",
-          "Por serem ativos financeiros, essas dívidas poderão ter cláusulas de proteção, tanto para o investidor, quanto para a empresa emissora."
-        ],
-        "occurrences": 23,
-        "term": "proteção"
       },
       {
         "contexts": [
@@ -2844,21 +2799,21 @@
       },
       {
         "contexts": [
-          "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
-          "Isso ocorre, pois quanto menor for a taxa de juros, mais alto fica o valor presente de um título fazendo com que ele se valorize!",
-          "Isso ocorre, pois quanto maior for a taxa de juros, menor será o valor presente de um título!"
-        ],
-        "occurrences": 22,
-        "term": "presente"
-      },
-      {
-        "contexts": [
           "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro.",
           "Os Municipal Bonds são negociados no mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras.",
           "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares."
         ],
         "occurrences": 22,
         "term": "meio"
+      },
+      {
+        "contexts": [
+          "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares.",
+          "Mesmo possuindo a proteção do FDIC (Federal Deposit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00.",
+          "Por serem ativos financeiros, essas dívidas poderão ter cláusulas de proteção, tanto para o investidor, quanto para a empresa emissora."
+        ],
+        "occurrences": 22,
+        "term": "proteção"
       },
       {
         "contexts": [
@@ -2904,15 +2859,6 @@
         ],
         "occurrences": 21,
         "term": "zero"
-      },
-      {
-        "contexts": [
-          "Variância e Desvio Padrão: Exemplo Gráfico",
-          "A Variância e o Desvio Padrão são medidas estatísticas que medem o grau de dispersão de um conjunto de dados em relação a sua média, ou seja, o risco dos dados não darem a média do grupo.",
-          "Quanto maior a Variância ou Desvio Padrão, maior será o risco, já que a distância entre cada ponto até a média será maior."
-        ],
-        "occurrences": 21,
-        "term": "variância"
       },
       {
         "contexts": [
@@ -2970,39 +2916,12 @@
       },
       {
         "contexts": [
-          "Os EUROBONDS são títulos de dívida emitidos por empresas nacionais, com reconhecimento internacional, lançados em uma moeda diferente daquela do país ou mercado em que são emitidos normalmente.",
-          "- Os contratos podem ser registrado na B3 (podendo ser com ou sem garantias), da mesma forma como os contratos a termos de moeda (assim, contratos a termos e swaps possuem características semelhantes).",
-          "- Podem ser realizados diversos tipos de contratos de swap: - Swap de Juros (CDI, pré-fixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap de Índice de Preços (IPCA e IGP-M)."
-        ],
-        "occurrences": 19,
-        "term": "moeda"
-      },
-      {
-        "contexts": [
           "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT",
           "Desta forma títulos com Call Embutida não possuem valorização “infinita”, quando as taxas de juros do mercado (ou título) diminuem, conforme gráfico abaixo.",
           "E títulos de renda fixa com cláusula de PUT Embutida não possuem desvalorização “infinita”, quando as taxas de juros do mercado (ou título) sobem, conforme gráfico abaixo."
         ],
         "occurrences": 19,
         "term": "gráfico"
-      },
-      {
-        "contexts": [
-          "Vamos detalhar melhor cada uma dessas formas de implementação de gestão passiva de Renda Variável.",
-          "Veremos mais adiante formas mais detalhadas de replicação da carteira visando a uma gestão passiva.",
-          "Swap O Swap é um contrato que estabelece a troca de fluxo de caixa e risco entre empresas/investidores, sendo um contrato de obrigações recíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora)."
-        ],
-        "occurrences": 19,
-        "term": "passiva"
-      },
-      {
-        "contexts": [
-          "No entanto, conforme o erro de rastreamento diminui à medida que o tamanho da amostra aumenta, a estratégia se parece muito mais com a replicação completa.",
-          "O objetivo, então, é neutralizar o risco de mercado na medida em que o gestor acredita não conseguir gerar valor agregado à carteira a partir de suas previsão.",
-          "A utilização de relatórios de terceiros pelo gestor para melhor embasar suas decisões pode ser de grande valia, à medida em que ele pode ter acesso a diversas opiniões a respeito da avaliação de determinados ativos."
-        ],
-        "occurrences": 19,
-        "term": "medida"
       },
       {
         "contexts": [
@@ -3060,15 +2979,6 @@
       },
       {
         "contexts": [
-          "Realizar uma operação LONG & SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long).",
-          "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do seu preço; já quando você vende (SHORT), o seu lucro vem da desvalorização.",
-          "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e líquida (net)."
-        ],
-        "occurrences": 18,
-        "term": "short"
-      },
-      {
-        "contexts": [
           "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - Análise Técnica; - Análise Bottom-up; - Análise Top-Down; e - Relatórios de Terceiros.",
           "A utilização de relatórios de terceiros pelo gestor para melhor embasar suas decisões pode ser de grande valia, à medida em que ele pode ter acesso a diversas opiniões a respeito da avaliação de determinados ativos.",
           "Sem dúvida são pontos de atenção quando se utiliza relatórios de terceiros."
@@ -3084,15 +2994,6 @@
         ],
         "occurrences": 18,
         "term": "limites"
-      },
-      {
-        "contexts": [
-          "Autor: Academia de Finanças Rafael Toro Porto Alegre, Rio Grande do Sul, Brasil.",
-          "Começamos a nossa história com o curso preparatório para a certificação CFP®, a certificação mais avançada para planejadores financeiros e private bankers no Brasil.",
-          "Escolha e estude com a melhor escola preparatória para certificações financeiras do Brasil."
-        ],
-        "occurrences": 17,
-        "term": "brasil"
       },
       {
         "contexts": [
@@ -3240,6 +3141,15 @@
       },
       {
         "contexts": [
+          "Autor: Academia de Finanças Rafael Toro Porto Alegre, Rio Grande do Sul, Brasil.",
+          "Começamos a nossa história com o curso preparatório para a certificação CFP®, a certificação mais avançada para planejadores financeiros e private bankers no Brasil.",
+          "Escolha e estude com a melhor escola preparatória para certificações financeiras do Brasil."
+        ],
+        "occurrences": 15,
+        "term": "brasil"
+      },
+      {
+        "contexts": [
           "Com o tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, para as outras certificações do mundo financeiro, como CPA-20, CEA, Ancord, CNPI, CFG, CGA, e outras, bem como nossos cursos livres, MBA, e outros produtos educacionais.",
           "Referência para o mercado: a SOFR está sendo adotada como a nova taxa de referência para substituir a Libor em diversos produtos financeiros.",
           "A taxa ESTR é utilizada como referência para diversos produtos financeiros, como contratos de derivativos, linhas de crédito e empréstimos."
@@ -3321,15 +3231,6 @@
       },
       {
         "contexts": [
-          "Swap O Swap é um contrato que estabelece a troca de fluxo de caixa e risco entre empresas/investidores, sendo um contrato de obrigações recíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
-          "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "Entre a gestão passiva, de um lado, e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada."
-        ],
-        "occurrences": 15,
-        "term": "ativa"
-      },
-      {
-        "contexts": [
           "O objetivo, então, é neutralizar o risco de mercado na medida em que o gestor acredita não conseguir gerar valor agregado à carteira a partir de suas previsão.",
           "O agregado foi de 1,20%, equivalente a R$ 1.250,00; - Gestão Ativa: as decisões do gestor levaram a um incremento de 2,23% ou R$ 2.350,00; - Efeito Alocação: reflete a diferença entre o valor final e o valor inicial, um “plug”.",
           "Começando pela Alocação Setorial Pura, o retorno agregado pode ser obtido a partir dessa equação: Em que: - = Peso no portfólio do setor i; - = Peso no benchmark do setor i; - = Retorno no benchmark do setor i; - $R_B$ = Retorno do benchmark; - $N$ = Número de setores."
@@ -3390,15 +3291,6 @@
         ],
         "occurrences": 14,
         "term": "têm"
-      },
-      {
-        "contexts": [
-          "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
-          "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
-          "➢ A taxa de desconto não é a mesma coisa que a taxa de retorno (yield)."
-        ],
-        "occurrences": 14,
-        "term": "desconto"
       },
       {
         "contexts": [
@@ -3597,15 +3489,6 @@
         ],
         "occurrences": 12,
         "term": "recebe"
-      },
-      {
-        "contexts": [
-          "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
-          "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
-          "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos)."
-        ],
-        "occurrences": 12,
-        "term": "face"
       },
       {
         "contexts": [
@@ -4560,15 +4443,6 @@
         ],
         "occurrences": 9,
         "term": "tesouro"
-      },
-      {
-        "contexts": [
-          "Os STRIPS podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de títulos do Tesouro.",
-          "Os Municipal Bonds são negociados no mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras.",
-          "Exemplos de empresas nesse setor incluem Apple, Microsoft, Amazon, Facebook e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e corretoras de valores mobiliários."
-        ],
-        "occurrences": 9,
-        "term": "mobiliários"
       },
       {
         "contexts": [
@@ -5634,15 +5508,6 @@
       },
       {
         "contexts": [
-          "A classe tipificada como deve ter como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos.",
-          "A classe tipificada como Renda Fixa deve possuir, no mínimo, 80% da carteira em ativos relacionados diretamente, ou sintetizados via derivativos, ao fator de risco que dá nome ao tipo.",
-          "A classe de cotas do fundo tipificado como AÇÕES deve ter como principal fator de risco a variação de preços de ações admitidas à negociação em mercado organizado."
-        ],
-        "occurrences": 8,
-        "term": "fator"
-      },
-      {
-        "contexts": [
           "E, como há uma relação inversa entre taxas de juros e o preço dos títulos prefixados, logo o valor presente desses títulos cai.",
           "O ajuste da Convexidade ao cálculo da Duraton Modificada é feito através da seguinte fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai; V+ = Valor do ativo quando a taxa de juros sobe V₀ = Valor inicial do ativo; e = Variação da taxa de juros.",
           "Relembrando a fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Variação da taxa de juros = 0.02$."
@@ -5823,15 +5688,6 @@
       },
       {
         "contexts": [
-          "Estes títulos podem possuir remuneração prefixa ou pós-fixada, e quanto maior a probabilidade de inadimplência do banco, maior será a remuneração, pois maior será o seu risco.",
-          "A empresa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao total por essa dívida), mas ela já possui vendas realizadas, recebendo os devidos valores em um ano (vendas através de cartão de crédito).",
-          "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, é embutido uma taxa de juros prefixada)."
-        ],
-        "occurrences": 7,
-        "term": "pós-fixada"
-      },
-      {
-        "contexts": [
           "Banker's acceptance (ou \"aceite bancário\", em português) é um instrumento financeiro que é emitido por um banco, em nome de um cliente, como uma promessa de pagamento em uma data futura.",
           "Os 6 níveis são: - Contribuição líquida: é o resultado da diferença entre fluxos de caixa externos adicionados e retirados pelo cliente à carteira.",
           "Ela ocorre exatamente nesta Etapa 4 – Desenvolvimento de Recomendações e Apresentação ao Cliente."
@@ -5856,15 +5712,6 @@
         ],
         "occurrences": 7,
         "term": "serem"
-      },
-      {
-        "contexts": [
-          "Desta forma, quem está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser emitido a uma taxa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.).",
-          "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do que se não houvesse esta cláusula.",
-          "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores novos exigirão um maior prêmio para investir nos títulos de dívida desta companhia."
-        ],
-        "occurrences": 7,
-        "term": "prêmio"
       },
       {
         "contexts": [
@@ -6030,15 +5877,6 @@
       },
       {
         "contexts": [
-          "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberdade para investir em diversos ativos, tais como ações, derivativos, terrenos, imóveis, moedas, entre outros.",
-          "Nesse sentido, carteiras Bottom-up geralmente possuem grande parcela distribuída entre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commodities, moedas e algumas ações individuais.",
-          "Isso porque o retorno nominal obtido em moeda estrangeira pode ser significativamente afetado quando da conversão das moedas envolvidas."
-        ],
-        "occurrences": 7,
-        "term": "moedas"
-      },
-      {
-        "contexts": [
           "Muitas vezes, essas informações não estão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
           "Isso significa, por exemplo, que o comprador pode não ter os recursos financeiros disponíveis para pagar pelo ativo adquirido ou que o vendedor pode não entregar os títulos, ações ou contratos vendidos.",
           "Como vantagens, podemos citar: - Disponibilidade: os índices de estilos de mercado são conhecidos, facilmente entendidos e amplamente disponíveis para investimento; - Apropriado: se refletir o estilo do gestor, será um benchmark apropriado."
@@ -6135,15 +5973,6 @@
         ],
         "occurrences": 7,
         "term": "várias"
-      },
-      {
-        "contexts": [
-          "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros.",
-          "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, é embutido uma taxa de juros prefixada).",
-          "A Duration de Macaulay (D_Mac), chamada simplesmente de “Duration”, surgiu para estimar sensibilidade do preço de um título prefixado a mudanças nas taxas de juros."
-        ],
-        "occurrences": 7,
-        "term": "prefixado"
       },
       {
         "contexts": [
@@ -6588,15 +6417,6 @@
       },
       {
         "contexts": [
-          "Os investidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a vida útil do título.",
-          "Isso porque o retorno nominal obtido em moeda estrangeira pode ser significativamente afetado quando da conversão das moedas envolvidas.",
-          "Portanto: Preço de mercado maior que o valor nominal; YTM menor que a taxa do cupom do título; ▶ Principais motivos: (1) A taxa livre de risco está MENOR atualmente em relação a data de emissão do título; e/ou (2) o Rating da empresa melhorou."
-        ],
-        "occurrences": 6,
-        "term": "nominal"
-      },
-      {
-        "contexts": [
           "Como resultado, os STRIPS são mais adequados para investidores que desejam garantir um pagamento futuro específico, mas não têm necessidade de fluxos de caixa intermediários.",
           "Estes fundos possuem dificuldades de replicação dos seus benchmarks por questões custos, impostos, dinâmica de cálculo da rentabilidade do fundo, regras de contabilização a mercado e necessidade de liquidez para resgates.",
           "Estes contratos se encerram por Liquidação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais comum, ou pela Liquidação Física (entrega do ativo negociado)."
@@ -6729,6 +6549,15 @@
         ],
         "occurrences": 6,
         "term": "definir"
+      },
+      {
+        "contexts": [
+          "É calculada e publicada diariamente pelo Banco da Inglaterra, o banco central britânico.",
+          "A taxa ESTR é calculada diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado.",
+          "O ponto central é que existem os títulos já emitidos pela empresa negociados no mercado secundário (com uma taxa já definida) e existe também a possibilidade da empresa emitir novas dívidas."
+        ],
+        "occurrences": 6,
+        "term": "central"
       },
       {
         "contexts": [
@@ -7200,15 +7029,6 @@
       },
       {
         "contexts": [
-          "Caso o administrador não adote uma dessas medidas, a Superintendência competente pode cancelar o registro de funcionamento da classe de cotas.",
-          "Tão logo tenha ciência da declaração judicial de insolvência de classe de cotas, o administrador deve adotar as seguintes medidas: - divulgar fato relevante; e - efetuar o cancelamento do registro de funcionamento da classe na CVM.",
-          "A Variância e o Desvio Padrão são medidas estatísticas que medem o grau de dispersão de um conjunto de dados em relação a sua média, ou seja, o risco dos dados não darem a média do grupo."
-        ],
-        "occurrences": 6,
-        "term": "medidas"
-      },
-      {
-        "contexts": [
           "Na emissão de cotas de classe aberta deve ser utilizado o valor da cota do dia ou do dia seguinte ao da data da integralização, segundo o disposto no regulamento.",
           "Compete ao gestor exercer o direito de voto decorrente de ativos detidos pela classe, realizando todas as ações necessárias para tal exercício, observado o disposto na política de voto da classe.",
           "Já a classe de cotas do FI-Infra possui o prazo disposto na legislação específica para atingir o limite percentual de enquadramento de suas aplicações em ativos financeiros."
@@ -7560,15 +7380,6 @@
       },
       {
         "contexts": [
-          "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos).",
-          "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
-          "DESÁGIO (desconto): O título está “mais barato” em relação a sua emissão."
-        ],
-        "occurrences": 5,
-        "term": "deságio"
-      },
-      {
-        "contexts": [
           "Desta forma, o valor de face será ajustado para o semestre a 3% (6% dividido por 2), passando a ser U$ 103 mil.",
           "O primeiro cupom semestral será 2% (já que ao ano eram 4%, o semestre será a metade) do novo valor de face (U$ 103 mil), ou seja U$ 2.060,00.",
           "para semestre e multiplicar pelos mesmos R$ 1.000,00."
@@ -7710,15 +7521,6 @@
         ],
         "occurrences": 5,
         "term": "soma"
-      },
-      {
-        "contexts": [
-          "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
-          "Com isso, Rafael deveria comprar o contrato para ter um ágio.",
-          "ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido."
-        ],
-        "occurrences": 5,
-        "term": "ágio"
       },
       {
         "contexts": [
@@ -7944,15 +7746,6 @@
         ],
         "occurrences": 5,
         "term": "pós"
-      },
-      {
-        "contexts": [
-          "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com preço fixo, é embutido uma taxa de juros prefixada).",
-          "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
-          "a) prefixada pela variação do preço de uma ação."
-        ],
-        "occurrences": 5,
-        "term": "prefixada"
       },
       {
         "contexts": [
@@ -9593,15 +9386,6 @@
       },
       {
         "contexts": [
-          "Por isso, dizemos que o investidor pode ganhar 2 alfas, um na posição comprada e outro, na posição vendida.",
-          "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
-          "Já a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short)."
-        ],
-        "occurrences": 4,
-        "term": "vendida"
-      },
-      {
-        "contexts": [
           "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
           "São 7 os principais tipos de benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retornos; e - Customizados.",
           "O tipo de benchmark Absoluto refere-se basicamente a um objetivo de retorno."
@@ -11102,15 +10886,6 @@
       },
       {
         "contexts": [
-          "O termo STRIPS significa \"Separate Trading of Registered Interest and Principal Securities\".",
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "Todo ativo financeiro integrante da carteira deve ser identificado por um código ISIN - International Securities Identification Number."
-        ],
-        "occurrences": 3,
-        "term": "securities"
-      },
-      {
-        "contexts": [
           "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separados, que são negociados independentemente no mercado secundário.",
           "Assim, análises de investimento Bottom-up podem levar a estilos mais táticos e mais ativos de gestão, ao passo que a análise Top-Down costuma levar à criação de carteiras mais estratégicas e com visão de longo prazo, favorecendo gestões mais passivas.",
           "Com a sua criação, podemos comparar duas carteiras de investimentos e analisar qual delas é mais eficiente em relação a volatilidade gerada."
@@ -12195,15 +11970,6 @@
         ],
         "occurrences": 3,
         "term": "destes"
-      },
-      {
-        "contexts": [
-          "Por isso, dizemos que o investidor pode ganhar 2 alfas, um na posição comprada e outro, na posição vendida.",
-          "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
-          "Já a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short)."
-        ],
-        "occurrences": 3,
-        "term": "comprada"
       },
       {
         "contexts": [
@@ -13551,15 +13317,6 @@
         ],
         "occurrences": 3,
         "term": "histórica"
-      },
-      {
-        "contexts": [
-          "O ponto central é que existem os títulos já emitidos pela empresa negociados no mercado secundário (com uma taxa já definida) e existe também a possibilidade da empresa emitir novas dívidas.",
-          "No Brasil, a B3 faz esse papel, operando como contraparte central garantidora para a maior parte das operações realizadas em seus mercados.",
-          "Como contraparte central, a B3 se interpõe entre operações e contratos e, assim, torna-se a compradora para todos os vendedores e a vendedora para todos os compradores."
-        ],
-        "occurrences": 3,
-        "term": "central"
       },
       {
         "contexts": [
@@ -15435,6 +15192,14 @@
       {
         "contexts": [
           "Somente da margem de garantia e dos possíveis ajustes diários; - Baixo custo de transação, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa de juros brasil (SELIC).",
+          "- Necessidade de Monitoramento: as posições de hedge precisam ser monitoradas constantemente para avaliar sua efetividade e realizar ajustes quando necessário."
+        ],
+        "occurrences": 2,
+        "term": "ajustes"
+      },
+      {
+        "contexts": [
+          "Somente da margem de garantia e dos possíveis ajustes diários; - Baixo custo de transação, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os devidos preços não condizerem com o seu valor mais taxa de juros brasil (SELIC).",
           "- **Consistência:** a instituição responsável pelo apreçamento dos ativos não pode adotar preços ou procedimentos de mensuração que sejam diversos quando se tratar de um mesmo ativo."
         ],
         "occurrences": 2,
@@ -15502,13 +15267,6 @@
         ],
         "occurrences": 2,
         "term": "garantias"
-      },
-      {
-        "contexts": [
-          "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da taxa de juros."
-        ],
-        "occurrences": 2,
-        "term": "pós-fixado"
       },
       {
         "contexts": [
@@ -15708,22 +15466,6 @@
         ],
         "occurrences": 2,
         "term": "beneficiar"
-      },
-      {
-        "contexts": [
-          "Market Neutral, por sua vez, são carteiras cujo objetivo é neutralizar a exposição ao risco de mercado através de suas exposições long and short.",
-          "Essa estratégia semiativa casa todas as exposições primárias de risco do índice, mas não de todos os ativos."
-        ],
-        "occurrences": 2,
-        "term": "exposições"
-      },
-      {
-        "contexts": [
-          "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2.",
-          "Ainda temos a estratégia Short Bias ou Viés Vendido."
-        ],
-        "occurrences": 2,
-        "term": "vendido"
       },
       {
         "contexts": [
@@ -18477,6 +18219,14 @@
       },
       {
         "contexts": [
+          "O Risco de Contraparte refere-se à possibilidade de um dos envolvidos em uma transação não cumprir sua obrigação contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um todo.",
+          "Esse risco está presente em todas as instituições financeiras, mas pode ser especialmente significativo para aquelas que operam com derivativos, pois esses instrumentos financeiros complexos exigem um alto grau de precisão, confiabilidade e controle de risco."
+        ],
+        "occurrences": 2,
+        "term": "presente"
+      },
+      {
+        "contexts": [
           "Para ajudar a mitigar esse risco, as negociações de derivativos devem envolver as chamadas Contrapartes Centrais, sempre que possível.",
           "Os CDS mudam de valor ao longo de suas vidas conforme a qualidade de crédito da entidade de referência muda, o que leva a ganhos e perdas para as contrapartes, mesmo que a inadimplência não tenha ocorrido ou possa nunca ocorrer."
         ],
@@ -20221,13 +19971,6 @@
         ],
         "occurrences": 1,
         "term": "mantém"
-      },
-      {
-        "contexts": [
-          "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares."
-        ],
-        "occurrences": 1,
-        "term": "comprado"
       },
       {
         "contexts": [
@@ -22356,6 +22099,13 @@
         ],
         "occurrences": 1,
         "term": "restrição"
+      },
+      {
+        "contexts": [
+          "É indicado para investidores que desejam ter 100% de exposição líquida ao mercado, mas também permitir ao gestor assumir algum tipo de estratégia vendida (short) para se beneficiar de perspectivas negativas para determinado ativo ou setor."
+        ],
+        "occurrences": 1,
+        "term": "vendida"
       },
       {
         "contexts": [
@@ -28218,13 +27968,6 @@
       },
       {
         "contexts": [
-          "Determine o VaR analítico (ou paramétrico) de uma carteira de investimentos de R$ 100.000,00, para um Intervalo de Confiança de 95% (a = 1,65), horizonte de 1 mês e desvio padrão dos retornos para este período da carteira sendo de 5%."
-        ],
-        "occurrences": 1,
-        "term": "horizonte"
-      },
-      {
-        "contexts": [
           "- É fácil de calcular e de ser interpretado como uma medida única de risco; - Leva em consideração a correlação entre os ativos, o que proporciona um resultado prático mais confiável."
         ],
         "occurrences": 1,
@@ -28712,6 +28455,13 @@
         ],
         "occurrences": 1,
         "term": "estrangeiro"
+      },
+      {
+        "contexts": [
+          "Isso porque o retorno nominal obtido em moeda estrangeira pode ser significativamente afetado quando da conversão das moedas envolvidas."
+        ],
+        "occurrences": 1,
+        "term": "nominal"
       },
       {
         "contexts": [
@@ -30945,6 +30695,13 @@
         ],
         "occurrences": 1,
         "term": "encontrando"
+      },
+      {
+        "contexts": [
+          "Um título com face igual a R$ 1.000,00, vencimento em 5 anos, cupom 6%aa."
+        ],
+        "occurrences": 1,
+        "term": "face"
       },
       {
         "contexts": [
@@ -33260,16 +33017,16 @@
   },
   "totals": {
     "ambiguous": {
-      "occurrences": 1220,
-      "terms": 44
+      "occurrences": 1202,
+      "terms": 45
     },
     "function": {
       "occurrences": 8053,
       "terms": 240
     },
     "unknown": {
-      "occurrences": 11865,
-      "terms": 3926
+      "occurrences": 11485,
+      "terms": 3898
     }
   }
 }

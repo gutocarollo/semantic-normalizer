@@ -18,7 +18,7 @@ in [Verification log](#verification-log), and the machine-checkable manifest is
 
 ## [0.4.0] — 2026-07-31
 
-**The registry finally speaks the domain.** 86 → 232 concepts; 146 of them CGA/ANBIMA
+**The registry finally speaks the domain.** 86 → 252 concepts; 166 of them CGA/ANBIMA
 vocabulary, which every previous release listed as its largest open gap.
 
 Executed from `docs/plan-cga-domain-lexicon-0.4.0.md` after three rounds of planning review
@@ -28,23 +28,23 @@ and one round of execution review.
 
 | | 0.3.0 | 0.4.0 |
 |---|---:|---:|
-| concepts | 86 | **232** |
-| sentences resolving ≥1 concept | 64 / 300 (21.3 %) | **274 / 300 (91.3 %)** |
-| concepts per sentence | 0.24 | **2.92** |
-| `accepted` | 12 | 51 |
-| `partial` | 54 | **8** |
+| concepts | 86 | **252** |
+| sentences resolving ≥1 concept | 64 / 300 (21.3 %) | **279 / 300 (93 %)** |
+| concepts per sentence | 0.24 | **3.10** |
+| `accepted` | 12 | 55 |
+| `partial` | 54 | **6** |
 
 ### The acceptance gate, and where it failed
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | OOV occurrences resolved vs the **frozen** baseline | 7012 / 18877 = **37.15 %** against a 41.51 % target — **FAIL** |
-| 2 | `auto_match_precision`, blind adjudication | batch 1 **0.983**, batch 2 **1.00**, batch 3 **0.95** — PASS |
+| 1 | OOV occurrences resolved vs the **frozen** baseline | 7392 / 18877 = **39.16 %** against a 41.51 % target — **FAIL** |
+| 2 | `auto_match_precision`, blind adjudication | batch 1 **0.983**, 2 **1.00**, 3 **0.95**, 4 **0.967** — PASS |
 | 3 | Wrong concept accepted in the sample | 0 after correction — PASS |
 | 4 | Concepts with an EN label lacking evidence | 0 — PASS |
 | 5 | `validate-registry` | valid — PASS |
 
-Line 1 misses by 4.4 points and is reported as a miss. Getting that number honest took three
+Line 1 misses by 2.4 points and is reported as a miss. Getting that number honest took three
 attempts, and the two discarded ones are worth naming because each looked fine:
 
 1. Measuring against the **live** queue. Meaningless: the queue shrinks every time a concept
@@ -54,7 +54,7 @@ attempts, and the two discarded ones are worth naming because each looked fine:
 3. **What ships:** `reports/baseline-queue-86-concepts.json`, built by the same pipeline, on
    the same corpus, with the same cleanup and the same sentence rule, against a registry
    holding only the 86 pre-CGA concepts. Cleanup appears on both sides and nets out, so
-   37.15 % is concept contribution alone.
+   39.16 % is concept contribution alone.
 
 ### Added — pipeline
 
@@ -93,14 +93,15 @@ context), `proteção` → `technical.hedge` (it matched regulatory protection).
 
 ### Known gaps
 
-- **Line 1 of the gate fails at 37.15 % against 41.51 %.** The baseline nets out cleanup, so
-  this is concept contribution with nothing flattering left in it. For scale: the 146 CGA
-  concepts match 4474 occurrences across the corpus; the 86 pre-existing ones match 281, being
+- **Line 1 of the gate fails at 39.16 % against 41.51 %.** The baseline nets out cleanup, so
+  this is concept contribution with nothing flattering left in it. For scale: the 166 CGA
+  concepts match ~4500 occurrences across the corpus; the 86 pre-existing ones match 281, being
   procedural-writing vocabulary with almost no overlap with finance.
-- Batch 4 was not authored. The remaining queue head is general Portuguese (`longo`,
-  `relação`, `ano`, `alta`, `total`), which D2 excludes on purpose — a concept for `total`
-  would match everywhere and the precision gate punishes exactly that. The review noted the
-  justification overstates the case: `exposição`, `valores` and `long` are still domain terms.
+- Batch 4 was authored after the review showed the reason for skipping it was wrong.
+  `exposição`, `valores`, `long` and `proteção` are domain terms, and three of them had been
+  *removed* from other concepts during adjudication precisely because they were attached to
+  the wrong one — an argument for giving them their own concept, not for dropping them. What
+  stayed out is genuinely general: `relação`, `longo`, `ano`, `total`, `alta`, `nome`, `final`.
 - A markdown heading is now a hard sentence boundary. Splitting only on `.!?` glued headings
   into 2.5 % of sentences, because a line ending in a colon has no terminator. Fixing it
   changed how much text the corpus yields (1298 → 1682 sentences), which is why the baseline
