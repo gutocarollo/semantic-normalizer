@@ -33,14 +33,14 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "b31516a24ca511b43d939e73bc240cdcf220f299b820111de9b418fa31f4f7bc",
+    "installed_package_sha256": "a51f744582269866c042000fd62b497f2e115109c4efe4f997900996ee80c0ce",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
       "identifier_protected": true,
-      "provenance_events": 103,
-      "registry_records": 561,
-      "registry_version": "2.28.0",
+      "provenance_events": 105,
+      "registry_records": 572,
+      "registry_version": "2.29.0",
       "release_governs_registry": true,
       "schemas": [
         "registry.schema.json",
@@ -69,11 +69,11 @@
     "site_packages_snapshot": "complete-tree SHA-256 compared before and after runtime commands",
     "site_packages_unchanged": true,
     "validate_registry": {
-      "automatic_keys": 1505,
-      "records": 561,
+      "automatic_keys": 1546,
+      "records": 572,
       "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-      "registry_sha256": "66e45df95e6a706dcadd14a49d6951d1e9b24271edb55c0101bf93ec95dae605",
-      "registry_version": "2.28.0",
+      "registry_sha256": "9a1c4c1d68ba17fa1c68b89afbde087b6b2b6a61836882fa1f80ae21b86676f5",
+      "registry_version": "2.29.0",
       "review_keys": 165,
       "valid": true
     }
@@ -113,9 +113,9 @@
       "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
       "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
       "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-      "registry.jsonl": "66e45df95e6a706dcadd14a49d6951d1e9b24271edb55c0101bf93ec95dae605",
-      "registry.provenance.jsonl": "1fae9563c29be8cf21d6cc7995bc913f270fff0d7084e46a87cad09871f7babf",
-      "registry.release.json": "bd30994f23a20835f68bfc00771672665d2f7baffc06b441056844b6454acf34",
+      "registry.jsonl": "9a1c4c1d68ba17fa1c68b89afbde087b6b2b6a61836882fa1f80ae21b86676f5",
+      "registry.provenance.jsonl": "9d32acfef0dc09b86c070939a0326453d90ddd9469f112b4da50b7d8c354d736",
+      "registry.release.json": "f8f82f8bdd058f7a49475888b5e8d109dd0ad9692886fd2689a905e3d13f26e4",
       "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
       "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
     },
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "ac0993a3005f6d23157137d970c6b14d8c1bf60402f928e6793ccf33bd9c8bd4",
-    "size": 1091821,
+    "sha256": "679f1f76a166f5b640be2985bd9385197161a4570f4447595e3740effb655a47",
+    "size": 1111959,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }

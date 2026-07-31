@@ -1,0 +1,30 @@
+{
+  "id": "precision-sweep-amendment-60",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "each surface counted in the corpus with word boundaries and read in context before it was added",
+  "reason": "Surfaces that belong on concepts the registry ALREADY holds. Registering a second concept for any of these would have bought a duplicate and paid for it with the incumbent's automatic form — which is precisely what the collision demoter caught in the first attempt at batch 42, where `technical.reprisk_index` cost `technical.rep_risk_index` its `RepRisk` surface. So the rule for this pass: find the incumbent first, add the surface to it, and only mint a concept when no incumbent exists.\n\nThe two `Gestão de Carteiras RF …` phrases are section banners repeated once per slide, which is why one of them carries nine occurrences. They are admitted not because they are headings but because the corpus attests the concept independently: `## Asset Liability Management` appears as its own heading with a prose definition — `os ativos precisam estar disponíveis e líquidos no momento do pagamento dos passivos` — and the section the banner heads runs Imunização, Key Rate Duration, Dollar Duration, Spread Duration. That is liability-driven management under its Portuguese name, and `technical.asset_liability_management` was already in the registry holding only the English side of it.\n\nBare `RF` was refused. It has 22 corpus occurrences and every single one sits inside a heading — `Desenquadramento: RF Longo Prazo`, `Gestão de Carteiras RF …` — with none in a sentence. An abbreviation that never appears in prose is not vocabulary this corpus uses; it is a typographic contraction in slide titles. Registering it would have raised the coverage number by teaching the dictionary the shape of the instrument measuring it.",
+  "operations": [
+    {"op":"add_form","concept":"technical.asset_liability_management","language":"pt-BR",
+     "form":"Gestão de Carteiras RF em relação a passivos","policy":"auto","right":9,"total":9,
+     "why":"Section banner for the immunisation/duration block. The concept is attested independently by the `## Asset Liability Management` heading and its prose definition."},
+    {"op":"add_form","concept":"technical.asset_liability_management","language":"pt-BR",
+     "form":"Gestão de Carteiras de Renda Fixa em Relação a Passivos","policy":"auto","right":1,"total":1,
+     "why":"The unabbreviated spelling of the same banner, printed at the top of the section before the running header takes over."},
+    {"op":"add_form","concept":"actor.administrator","language":"pt-BR",
+     "form":"administrador fiduciário","policy":"auto","right":13,"total":13,
+     "why":"CVM 175's formal name for the role the registry already holds as `administrador`. Read all 13: every one is the fund's administrator."},
+    {"op":"add_form","concept":"actor.administrator","language":"pt-BR",
+     "form":"administradores fiduciários","policy":"auto","right":1,"total":1,
+     "why":"Plural of the same."},
+    {"op":"add_form","concept":"entity.fund_of_funds","language":"pt-BR",
+     "form":"fundos de fundos","policy":"auto","right":1,"total":1,
+     "why":"Plural of the registered `fundo de fundos`."},
+    {"op":"add_form","concept":"technical.rep_risk_index","language":"en",
+     "form":"RepRisk Index","policy":"auto","right":4,"total":4,
+     "why":"The full name, on the incumbent concept rather than on the duplicate the first import attempt would have created."},
+    {"op":"add_form","concept":"technical.fixed_income_pricing","language":"pt-BR",
+     "form":"Precificação dos Títulos de Renda Fixa","policy":"auto","right":1,"total":1,
+     "why":"`dos` where the registered form has `de`; same phrase, same concept."}
+  ]
+}

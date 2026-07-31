@@ -1,0 +1,175 @@
+{
+  "batch": 42,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The 50 partial headings clustered into two classes, and only one of them is a dictionary gap. Class one is genuine vocabulary the registry never had: FIF, títulos de renda fixa, títulos públicos, desvio padrão amostral/populacional, valor futuro. Class two is heading furniture — serial numerals (`Gestão de Carteiras de Renda Fixa I / 2 / II`), chapter citations (`(Cap. V)`), and ordinary modifiers (`Principais`, `Fundamentos`, `Outras`). Widening the furniture list to absorb class two is how a coverage number gets gamed, and this campaign already had that caught once, so class two is left partial and counts against the score.\n\nAdmission rule applied to class one, because the metric reads headings and the temptation is to register headings as terms until the metric agrees with itself: a phrase is admitted only when the concept is independently attested — already in the registry, or defined in the corpus prose — never when it merely appears as a heading. Two candidates were REFUSED under it. Bare `RF` has 22 corpus occurrences and every one is inside a heading, never in a sentence, so registering it as an abbreviation of `renda fixa` would be inventing vocabulary to satisfy the instrument; the full section phrases are registered instead, in amendment 60. `títulos híbridos` appears exactly once, as the heading `Títulos Híbridos: Exemplo de Cálculo`, with no prose defining it — a real financial concept, but not one this corpus attests, so its heading stays partial.\n\nA thirteenth concept was drafted and withdrawn before it shipped. `technical.reprisk_index` collided with `technical.rep_risk_index`, which the registry already held: the first import printed `demoted_to_review: [technical.rep_risk_index.en:RepRisk, technical.reprisk_index.en:RepRisk]`, the collision demoter doing exactly its job — two concepts claiming one surface, so both lose it. Shipping it would have cost the incumbent its automatic `RepRisk` form to buy a duplicate. The `RepRisk Index` surface is added to the incumbent in amendment 60 instead. Reading the demoter's output rather than the exit code is what caught it.",
+  "concepts": [
+    {
+      "id": "entity.financial_investment_fund",
+      "en": "financial investment fund",
+      "pt": "Fundo de Investimento Financeiro",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The CVM 175 category covering funds whose portfolio is financial assets, as opposed to the receivables and real-estate categories in the other annexes.",
+      "alt_en": [],
+      "alt_pt": [
+        "FIF",
+        "fundos de investimento financeiro"
+      ],
+      "authority": "apostila-cga-2026#04-industria-de-fundos"
+    },
+    {
+      "id": "entity.fixed_income_security",
+      "en": "fixed income security",
+      "pt": "Título de Renda Fixa",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A debt instrument paying interest on a defined schedule, whose return is known at issue up to credit and reinvestment risk.",
+      "alt_en": [
+        "fixed income securities"
+      ],
+      "alt_pt": [
+        "títulos de renda fixa"
+      ],
+      "authority": "apostila-cga-2026#08-precificacao-de-ativos"
+    },
+    {
+      "id": "entity.government_security",
+      "en": "government security",
+      "pt": "Título Público",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Debt issued by the federal government, carrying the sovereign's credit rather than a company's.",
+      "alt_en": [
+        "government securities"
+      ],
+      "alt_pt": [
+        "títulos públicos"
+      ],
+      "authority": "apostila-cga-2026#08-precificacao-de-ativos"
+    },
+    {
+      "id": "technical.sample_standard_deviation",
+      "en": "sample standard deviation",
+      "pt": "Desvio Padrão Amostral",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The square root of the sample variance, dividing by n minus one to correct the bias of estimating a population from a draw.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.population_standard_deviation",
+      "en": "population standard deviation",
+      "pt": "Desvio Padrão Populacional",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The square root of the population variance, dividing by n because every member of the set is observed.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "quantity.future_value",
+      "en": "future value",
+      "pt": "Valor Futuro",
+      "class": "quantity_marker",
+      "pos": "noun",
+      "def": "What a sum becomes after compounding forward at a given rate for a given term.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-precificacao-de-ativos"
+    },
+    {
+      "id": "entity.mutual_fund",
+      "en": "mutual fund",
+      "pt": "Fundo Mútuo",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The pooled, publicly offered, daily-priced vehicle the material contrasts with hedge funds when comparing mandates and liquidity.",
+      "alt_en": [
+        "mutual funds"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-fundos-estruturados"
+    },
+    {
+      "id": "technical.material_information",
+      "en": "material information",
+      "pt": "Informações Relevantes",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Facts not yet disclosed that could move an informed investor's decision, and which those with access may not trade on.",
+      "alt_en": [],
+      "alt_pt": [
+        "informação relevante"
+      ],
+      "authority": "apostila-cga-2026#03-codigo-de-etica"
+    },
+    {
+      "id": "technical.general_provisions",
+      "en": "general provisions",
+      "pt": "Disposições Gerais",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The clauses of a normative instrument that apply across it rather than to one of its chapters. A structural term of the regulation rather than a financial concept, admitted because the corpus uses it as a referent in prose and not only as a section banner.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-industria-de-fundos"
+    },
+    {
+      "id": "entity.exclusive_class",
+      "en": "exclusive class",
+      "pt": "Classe Exclusiva",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A share class with a single holder, whose rules are written for that investor alone.",
+      "alt_en": [
+        "exclusive classes"
+      ],
+      "alt_pt": [
+        "classes exclusivas"
+      ],
+      "authority": "apostila-cga-2026#04-industria-de-fundos"
+    },
+    {
+      "id": "technical.benchmark_relative_management",
+      "en": "benchmark relative management",
+      "pt": "Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Running a bond portfolio against a market index, spanning pure indexing, enhanced indexing and active management by how far the tracking error is allowed to widen.",
+      "alt_en": [],
+      "alt_pt": [
+        "Gestão de Carteiras RF em relação a um benchmark",
+        "Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)"
+      ],
+      "authority": "apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2"
+    }
+  ],
+  "attestation_audit": {
+    "why": "The admission rule is only worth stating if it is applied after the fact as well as before. Every admitted phrase was re-checked against where it actually occurs, because a rule tested only on the candidates you already meant to reject is not a rule. Two entries turned out to sit close to the line and are recorded here rather than left for a reviewer to find.",
+    "prose_attested": {
+      "títulos de renda fixa": "21 match events, all in sentences; read every one",
+      "FIF": "prose with its expansion inline — `classes de cotas de FIF (Fundo de Investimento Financeiro)`",
+      "administrador fiduciário": "3 events in sentences of the conduct chapter",
+      "títulos públicos / título público": "4 events in sentences",
+      "Mutual Funds": "2 events contrasting them with hedge funds",
+      "informação relevante": "`É vedada a utilização de informação relevante ainda não divulgada`",
+      "classe exclusiva": "`A classe exclusiva é considerada um investidor profissional`",
+      "disposições gerais": "`observar as disposições gerais sobre divulgação de informações`",
+      "desvio padrão amostral": "`Para calcularmos a Variância e o Desvio Padrão Amostral, ao invés de calcular a média…`"
+    },
+    "attested_by_worked_example_not_by_sentence": {
+      "desvio padrão populacional": "The phrase itself is a section title and a figure caption. The CONCEPT is defined under it by full worked example: mean 3%, squared deviations summing to 8, `Variância = 1,6`, `DP = √1,6 = ±1,26`. Dividing by n (8/5 = 1,6) is exactly what makes it populacional, and the sibling amostral section computes 2,00 from the same numbers by dividing by n−1. The corpus distinguishes the two numerically, so the concept is attested even though no sentence contains the phrase. Admitted.",
+      "valor futuro": "Weakest admission in this batch, and flagged as such. The phrase appears once as a section title and once as a table column header — `FLUXO (Valor Futuro)` set against `VALOR PRESENTE`, over the cash flows 60/60/60/60/1.060 that the example discounts at 4 %, 6 % and 8 %. That is the concept in use inside a worked calculation rather than a definition of it, and no sentence defines future value anywhere in the corpus. Kept because a table cell is content and not slide furniture, and because registering the present-value side while refusing its counterpart leaves the dictionary asymmetric on the corpus's own table header. A reviewer who reads `attested only as a column label` and disagrees should remove it — the evidence is here to make that judgement, not to survive it."
+    },
+    "refused": {
+      "RF": "22 occurrences, every one inside a heading, none in a sentence",
+      "títulos híbridos": "one occurrence, a heading, no prose defining it"
+    },
+    "known_specificity_loss": {
+      "título público americano": "matches the generic `entity.government_security` where `entity.us_government_security` exists. Not a wrong match — a US Treasury IS a government security — but less specific than the registry can express. Left alone: narrowing it needs a longest-match form for the American variant, which is a separate change with its own measurement."
+    }
+  }
+}

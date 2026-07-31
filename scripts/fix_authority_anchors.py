@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import collections
 import glob
+import hashlib
 import json
 import re
 import unicodedata
@@ -30,7 +31,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_CORPUS = ROOT.parent / "cga-2026-markdown"
-REGISTRY = ROOT / "src" / "semantic_normalizer" / "data" / "registry.jsonl"
+DATA = ROOT / "src" / "semantic_normalizer" / "data"
+REGISTRY = DATA / "registry.jsonl"
 
 
 def fold(text: str) -> str:
@@ -115,6 +117,34 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"\nwritten: {REGISTRY.relative_to(ROOT)}")
+
+    # Reseal. This script rewrites a file whose hash the release record declares, and until now it
+    # stopped at the write — so every `--apply` left the tree failing four governance tests with a
+    # seal pointing at the previous bytes, and the only way back was to run an unrelated amendment
+    # for its reseal side effect. Same reasoning as the reseal in `amend_registry.py`: reseal EVERY
+    # declared file rather than the one this script touched, because a seal that covers only what
+    # the sealer edited lets a file changed by another path keep a stale hash indefinitely.
+    release_path = DATA / "registry.release.json"
+    release = json.loads(release_path.read_text(encoding="utf-8"))
+    resealed, missing = {}, []
+    for name in release.get("hashes", {}):
+        for base in (DATA, ROOT, ROOT / "src" / "semantic_normalizer"):
+            candidate = base / name
+            if candidate.is_file():
+                resealed[name] = hashlib.sha256(candidate.read_bytes()).hexdigest()
+                break
+        else:
+            missing.append(name)
+    if missing:
+        raise SystemExit(
+            f"release declares hashes for files that do not exist: {missing}. "
+            "A seal naming an absent file is worse than no seal."
+        )
+    release["hashes"] = resealed
+    release_path.write_text(
+        json.dumps(release, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(f"resealed: {release_path.relative_to(ROOT)} ({len(resealed)} files)")
     return 0
 
 
