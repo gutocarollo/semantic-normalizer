@@ -5,7 +5,7 @@
   "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
   "validation": {
     "unit_tests_passed": 19,
-    "registry_concepts": 545,
+    "registry_concepts": 561,
     "registry_errors": 0,
     "registry_warnings": 4,
     "schema_validation": "passed",
@@ -46,7 +46,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 9281,
-      "sha256": "d5225e31e229748591dab1140aaf98199c9ebe6159472a850321aa95e314f1c9"
+      "sha256": "d13baa1de0c21e992199cc507b324412e40fabc3f7ca83fd4f5d3d56cef11e9b"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -247,6 +247,11 @@
       "path": "config/cga-batch-40.json",
       "size_bytes": 7817,
       "sha256": "c01ec82e2f3ebe02cc74bf143065e1eb0a8dbe5a0a7d7682d6c769c00b83700c"
+    },
+    {
+      "path": "config/cga-batch-41.json",
+      "size_bytes": 6513,
+      "sha256": "a08ea91fc1c928c54dec806226256c18c6e94dc1225e7ac75ee6b19a650b2a83"
     },
     {
       "path": "config/precision-amendment-01.json",
@@ -736,7 +741,7 @@
     {
       "path": "reports/dev-retrieval-ablations-final.json",
       "size_bytes": 88187,
-      "sha256": "ef236101f05c5a10428d0912ffead6764a271e8c56db0ac3ed78161b7685fd72"
+      "sha256": "53af0cf53ef5cbc86064ab1d74084b34eba0467b432ebc1333791e1134bf7ba5"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -746,7 +751,7 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "4682efdaf1426c61e3baa5582a9bdfbcb2e6c9b2564bfd84dd5c07f42f798fa9"
+      "sha256": "42ab18c0ff7e918492888101a19bffd87c0e78da0f5860658710ae58aa922734"
     },
     {
       "path": "reports/form-polysemy.json",
@@ -755,8 +760,8 @@
     },
     {
       "path": "reports/heading-coverage.json",
-      "size_bytes": 103150,
-      "sha256": "b757d8b9b17bec399fbbd4cd06240e7afd67f8671ea5c2f6ec3a5dc944ecc375"
+      "size_bytes": 103412,
+      "sha256": "e32ddbe4e01c45de0ff5255247fd31890262e33145055da6de32df1fc5afdb63"
     },
     {
       "path": "reports/oov-queue.json",
@@ -771,7 +776,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7404,
-      "sha256": "4cc7c037c0c390276fa41934f8de2dde48ba558efd0ec9835ce355a994dbfb4f"
+      "sha256": "f6673e731011a3b6710e3e7e61be9f33ffadca535d7e3475fa59706c2911697a"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -826,7 +831,7 @@
     {
       "path": "reports/release-manifest.json",
       "size_bytes": 32405,
-      "sha256": "4a771df1ccccfbae7fa17bebf658a9dcd5b269981f6555bb4ed40d815fb4bc9f"
+      "sha256": "7c6b86e7c63ba9666d382179da61e033c08633bdaea3b83d78d64ef0cc038b81"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1340,18 +1345,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 722593,
-      "sha256": "747842891f82a1642c8246c6c6a4e8d5a8120c5b3a10a63cb40bbe0227d7ef4d"
+      "size_bytes": 742972,
+      "sha256": "925293ffb7d723651a3057eb6af1e66a4ed41eff84935f17ebf8c418ee8a495a"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "size_bytes": 106940,
-      "sha256": "b7e1368ec9602c9bae8cf4477849becce156856e9957103d48d23febde0ff0f5"
+      "size_bytes": 107583,
+      "sha256": "d23e7a1dd9d7c0beecae724e6b88e022dc069cd957f85022e3bc5eefb33ec286"
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 18357,
-      "sha256": "c4f1249bb99861ee066d5fe8e115214a6914733077129ad2ac5170c0cfecac2a"
+      "size_bytes": 18873,
+      "sha256": "a6bd5c82221dfef5c31b27fabae1411c16f999724f10b364be7a3b5a7c39827d"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -1426,7 +1431,7 @@
     {
       "path": "tests/test_controlled_language.py",
       "size_bytes": 30707,
-      "sha256": "59c231c12daaf79b960e864c2f0783554836dcf073b49ab75fea80295dcf630a"
+      "sha256": "ba272bde9e3383c126b3791338709775f8a6dd98aae77d5858038d7d0d79d3e7"
     },
     {
       "path": "tests/test_documented_commands.py",

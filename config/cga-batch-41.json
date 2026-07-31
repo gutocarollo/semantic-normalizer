@@ -1,0 +1,183 @@
+{
+  "batch": 41,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "All 81 remaining partial headings read individually rather than characterised from a sample — the third time this session the bucket was audited and the second time my sample-based description of it was too broad. About a sixth are genuine terms. The rest is slide furniture (ETAPA n, Gráfico:, Exemplo:, Material de Divulgação:), chapter citations, and descriptive predicates about registered concepts.",
+  "concepts": [
+    {
+      "id": "technical.population_variance",
+      "en": "population variance",
+      "pt": "Variância Populacional",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The variance computed over every member of the set, dividing by n.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.sample_variance",
+      "en": "sample variance",
+      "pt": "Variância Amostral",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The variance computed from a sample, dividing by n-1 to correct the bias.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.premium_or_discount",
+      "en": "premium or discount",
+      "pt": "Títulos com Ágio ou Deságio",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A bond trading above or below par, and what that says about its coupon against the market rate.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.loss_provision",
+      "en": "loss provision",
+      "pt": "Provisão de Perdas",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The amount set aside against credit losses expected on a portfolio.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.wealth_management",
+      "en": "wealth management",
+      "pt": "Gestão de Patrimônio",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Managing a client's whole estate rather than a single mandate.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "action.allocate_orders",
+      "en": "order allocation",
+      "pt": "Rateio de Ordens",
+      "class": "action",
+      "pos": "noun",
+      "def": "Dividing a block execution among the vehicles it was placed for, without privileging any.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.fund_classification",
+      "en": "fund classification",
+      "pt": "Classificação dos Fundos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The regulated categories a fund is assigned to by its principal risk factor.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.fund_taxation",
+      "en": "fund taxation",
+      "pt": "Tributação de Fundos de Investimentos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The tax regime applying to a fund and its shareholders, come-cotas included.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.benchmark_quality_test",
+      "en": "benchmark quality tests",
+      "pt": "Testes de Qualidade do Benchmark",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The checks a benchmark must pass to be a valid yardstick for a mandate.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.valid_benchmark",
+      "en": "valid benchmark",
+      "pt": "Benchmark válido",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A benchmark that is unambiguous, investable, measurable and known in advance.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.returns_based_model",
+      "en": "returns-based model",
+      "pt": "Modelo baseado em retornos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A benchmark built by regressing a portfolio's returns on style indices.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.market_risk_measure",
+      "en": "market risk measures",
+      "pt": "Medidas de Risco de Mercado",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The family of statistics that quantify exposure to price movement.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.credit_risk_measure",
+      "en": "credit risk measures",
+      "pt": "Gestão e Medidas de Risco de Crédito",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The measures and controls applied to default exposure — LGD, EDF, expected loss.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.derivative_use",
+      "en": "use of derivatives",
+      "pt": "Utilização de Derivativos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Employing derivatives in a portfolio for protection, leverage or cash management.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "action.cancel_registration",
+      "en": "cancellation by the CVM",
+      "pt": "Cancelamento pela CVM",
+      "class": "action",
+      "pos": "noun",
+      "def": "The regulator striking a class's operating registration.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.rating_change_impact",
+      "en": "rating change impact",
+      "pt": "Impactos na Mudança de Rating",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "What a downgrade or upgrade does to the price and the yield an issuer must pay.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    }
+  ]
+}

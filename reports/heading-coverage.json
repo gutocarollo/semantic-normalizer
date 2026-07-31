@@ -1,11 +1,11 @@
 {
   "by_status": {
-    "covered": 271,
-    "partial": 81
+    "covered": 287,
+    "partial": 65
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.7699,
-  "covered_share_of_mass": 0.8846,
+  "covered_share_of_distinct": 0.8153,
+  "covered_share_of_mass": 0.9038,
   "distinct_headings": 352,
   "heading_occurrences": 832,
   "headings": [
@@ -290,17 +290,6 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Cancelamento pela CVM",
-      "occurrences": 1,
-      "partial_matches": [
-        "CVM"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Material de Divulgação: Rentabilidade (I)",
       "occurrences": 1,
       "partial_matches": [
@@ -413,17 +402,6 @@
     {
       "covered_by": null,
       "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Tributação de Fundos de Investimentos",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundos de Investimentos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Informações Relevantes",
       "occurrences": 1,
       "partial_matches": [
@@ -446,35 +424,12 @@
     {
       "covered_by": null,
       "file": "06-gestao-de-riscos",
-      "heading": "Impactos na Mudança de Rating",
-      "occurrences": 1,
-      "partial_matches": [
-        "Impactos",
-        "Rating"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
       "heading": "Relação entre Títulos Públicos e Privados",
       "occurrences": 1,
       "partial_matches": [
         "Títulos"
       ],
       "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Medidas de Risco de Mercado",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco de Mercado"
-      ],
-      "resolved_by": "quantity.measure",
       "status": "partial"
     },
     {
@@ -528,28 +483,6 @@
     {
       "covered_by": null,
       "file": "06-gestao-de-riscos",
-      "heading": "VARIÂNCIA POPULACIONAL",
-      "occurrences": 1,
-      "partial_matches": [
-        "VARIÂNCIA"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "VARIÂNCIA AMOSTRAL",
-      "occurrences": 1,
-      "partial_matches": [
-        "VARIÂNCIA"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
       "heading": "Riscos associados a títulos de Renda Fixa",
       "occurrences": 1,
       "partial_matches": [
@@ -574,56 +507,11 @@
     {
       "covered_by": null,
       "file": "06-gestao-de-riscos",
-      "heading": "Gestão e Medidas de Risco de Crédito",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco de Crédito"
-      ],
-      "resolved_by": "action.manage_portfolio",
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
       "heading": "Riscos de Derivativos e Risco Operacional",
       "occurrences": 1,
       "partial_matches": [
         "Riscos de Derivativos",
         "Risco Operacional"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Benchmark válido",
-      "occurrences": 1,
-      "partial_matches": [
-        "Benchmark"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Modelo baseado em retornos",
-      "occurrences": 1,
-      "partial_matches": [
-        "Modelo",
-        "retornos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Testes de Qualidade do Benchmark",
-      "occurrences": 1,
-      "partial_matches": [
-        "Benchmark"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -672,19 +560,6 @@
         "Valor Presente",
         "Valor",
         "YTM"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Títulos com Ágio ou Deságio",
-      "occurrences": 1,
-      "partial_matches": [
-        "Títulos",
-        "Ágio",
-        "Deságio"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -857,17 +732,6 @@
     },
     {
       "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Utilização de Derivativos",
-      "occurrences": 1,
-      "partial_matches": [
-        "Derivativos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "Macro e Micro-Alocação",
       "occurrences": 1,
@@ -895,50 +759,6 @@
       "occurrences": 1,
       "partial_matches": [
         "Gestão de Recursos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Rateio de Ordens e Crédito Privado (Cap. V)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Crédito Privado"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Gestão de Patrimônio (Cap. VI)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Patrimônio"
-      ],
-      "resolved_by": "action.manage_portfolio",
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Provisão de Perdas (Cap. XI)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Perdas"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "11-codigo-anbima-administracao-e-gestao",
-      "heading": "Classificação dos Fundos (Cap. XVIII)",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundos"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -2366,6 +2186,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "action.cancel_registration",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Cancelamento pela CVM",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "action.cancel_registration",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.distribution",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Distribuição",
@@ -2582,6 +2411,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.fund_taxation",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Tributação de Fundos de Investimentos",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.fund_taxation",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.come_cotas",
       "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Come-Cotas: Exemplo",
@@ -2645,6 +2483,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.rating_change_impact",
+      "file": "06-gestao-de-riscos",
+      "heading": "Impactos na Mudança de Rating",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.rating_change_impact",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.credit_spread",
       "file": "06-gestao-de-riscos",
       "heading": "Spread de Crédito",
@@ -2672,6 +2519,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.market_risk_measure",
+      "file": "06-gestao-de-riscos",
+      "heading": "Medidas de Risco de Mercado",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.market_risk_measure",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.variance+quantity.volatility",
       "file": "06-gestao-de-riscos",
       "heading": "Variância e Desvio Padrão",
@@ -2696,6 +2552,24 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.variance+quantity.volatility",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.population_variance",
+      "file": "06-gestao-de-riscos",
+      "heading": "VARIÂNCIA POPULACIONAL",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.population_variance",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.sample_variance",
+      "file": "06-gestao-de-riscos",
+      "heading": "VARIÂNCIA AMOSTRAL",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.sample_variance",
       "status": "covered"
     },
     {
@@ -2780,6 +2654,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.credit_risk_measure",
+      "file": "06-gestao-de-riscos",
+      "heading": "Gestão e Medidas de Risco de Crédito",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.credit_risk_measure",
+      "status": "covered"
+    },
+    {
       "covered_by": "risk.counterparty",
       "file": "06-gestao-de-riscos",
       "heading": "Risco de Contraparte",
@@ -2807,6 +2690,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.valid_benchmark",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Benchmark válido",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.valid_benchmark",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.manager_universe",
       "file": "07-avaliacao-de-desempenho",
       "heading": "Universo de Gestores",
@@ -2831,6 +2723,24 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "entity.style_index",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.returns_based_model",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Modelo baseado em retornos",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.returns_based_model",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.benchmark_quality_test",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Testes de Qualidade do Benchmark",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.benchmark_quality_test",
       "status": "covered"
     },
     {
@@ -2894,6 +2804,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.fixed_income_portfolio_management",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.premium_or_discount",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Títulos com Ágio ou Deságio",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.premium_or_discount",
       "status": "covered"
     },
     {
@@ -3056,6 +2975,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.leverage",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.derivative_use",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Utilização de Derivativos",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.derivative_use",
       "status": "covered"
     },
     {
@@ -3311,6 +3239,24 @@
       "status": "covered"
     },
     {
+      "covered_by": "action.allocate_orders+technical.private_credit",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Rateio de Ordens e Crédito Privado (Cap. V)",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "action.allocate_orders+technical.private_credit",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.wealth_management",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Gestão de Patrimônio (Cap. VI)",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.wealth_management",
+      "status": "covered"
+    },
+    {
       "covered_by": "action.contract_third_parties",
       "file": "11-codigo-anbima-administracao-e-gestao",
       "heading": "Contratação de Terceiros (Cap. VII)",
@@ -3347,6 +3293,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.loss_provision",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Provisão de Perdas (Cap. XI)",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.loss_provision",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.capital_risk_exposure",
       "file": "11-codigo-anbima-administracao-e-gestao",
       "heading": "Exposição a Risco de Capital (Cap. XII)",
@@ -3362,6 +3317,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "entity.advisory_board",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.fund_classification",
+      "file": "11-codigo-anbima-administracao-e-gestao",
+      "heading": "Classificação dos Fundos (Cap. XVIII)",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.fund_classification",
       "status": "covered"
     },
     {
@@ -3384,15 +3348,15 @@
     }
   ],
   "mass_by_status": {
-    "covered": 736,
-    "partial": 96
+    "covered": 752,
+    "partial": 80
   },
   "registry": {
-    "concepts": 545,
+    "concepts": 561,
     "version": "2.28.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
-  "resolved_share_of_mass": 0.8954,
+  "resolved_share_of_mass": 0.9111,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }
