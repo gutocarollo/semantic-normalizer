@@ -1,0 +1,11 @@
+{
+  "batch": 9,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The third residual draw (seed 55501, 220 events) found exactly one error: `Long` matching inside `Long and Short`, which the material names 15 times as a strategy. Last member of the compound-fragment class, registered rather than forbidden for the same reason as the others.",
+  "concepts": [
+    {"id": "technical.long_and_short", "en": "long and short", "pt": "long and short", "class": "technical_term", "pos": "noun",
+     "def": "A strategy holding long positions in assets expected to rise and short positions in assets expected to fall, without requiring net neutrality.",
+     "alt_en": ["long & short"], "alt_pt": ["long & short"], "technical": true,
+     "authority": "apostila-cga-2026#11-fundos-estruturados-e-alternativos"}
+  ]
+}

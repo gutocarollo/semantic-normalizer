@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-06",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; scripts/find_compound_fragments.py",
+  "method": "surface-neighbourhood measurement of every bare English automatic form",
+  "reason": "Plural and hyphen variants the compound cluster needs, on concepts that already exist.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.hedge_fund", "language": "en", "form": "hedge funds",
+     "why": "All 7 occurrences of bare `Hedge` are inside `Hedge Funds`. The concept existed and only lacked its plural, so longest-match had nothing longer to prefer."},
+    {"op": "add_form", "concept": "technical.hedge_fund", "language": "pt-BR", "form": "hedge funds"}
+  ]
+}

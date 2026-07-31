@@ -7,23 +7,23 @@
     },
     "baseline_target_share": 0.4151,
     "baseline_unknown_occurrences": 18877,
-    "current_unknown_occurrences": 11466,
+    "current_unknown_occurrences": 11464,
     "meets_target": false,
     "method": "same corpus, same sentence rule, same cleanup on both sides; the baseline registry holds only the 86 pre-CGA concepts, so cleanup nets out and the share is concept contribution alone",
-    "resolved_occurrences": 7411,
-    "resolved_share": 0.3926
+    "resolved_occurrences": 7413,
+    "resolved_share": 0.3927
   },
   "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
   "curve": [
     {
       "concepts": 25,
       "occurrences": 763,
-      "share_of_unknown": 0.0665
+      "share_of_unknown": 0.0666
     },
     {
       "concepts": 50,
       "occurrences": 1241,
-      "share_of_unknown": 0.1082
+      "share_of_unknown": 0.1083
     },
     {
       "concepts": 100,
@@ -38,7 +38,7 @@
     {
       "concepts": 200,
       "occurrences": 3042,
-      "share_of_unknown": 0.2653
+      "share_of_unknown": 0.2654
     },
     {
       "concepts": 300,
@@ -49,16 +49,16 @@
   "label": "final",
   "queue": {
     "queue_registry_version": "2.6.0",
-    "unknown_occurrences": 11466,
+    "unknown_occurrences": 11464,
     "unknown_terms": 3896
   },
   "registry": {
     "concepts": 257,
-    "sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
+    "sha256": "9be0c5e48947f4289d8e11951c343c2ea23347bae7c8806d9b5703e254e400a0",
     "version": "2.6.0"
   },
   "sample": {
-    "concepts_per_sentence": 3.1,
+    "concepts_per_sentence": 3.08,
     "seed": 7,
     "size": 300,
     "status": {
@@ -66,7 +66,7 @@
       "partial": 6,
       "review": 240
     },
-    "unresolved_items": 2127,
+    "unresolved_items": 2125,
     "with_concept": 279,
     "with_concept_share": 0.93
   },
@@ -74,6 +74,6 @@
   "target": {
     "concepts": 200,
     "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
-    "resolved_share_of_unknown": 0.2653
+    "resolved_share_of_unknown": 0.2654
   }
 }

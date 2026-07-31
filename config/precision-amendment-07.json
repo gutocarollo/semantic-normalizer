@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-07",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; scripts/find_compound_fragments.py after batch 7",
+  "method": "surface-neighbourhood measurement",
+  "reason": "Plural form on an existing concept, which longest-match needs in order to prefer it.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.cds", "language": "en", "form": "credit default swaps",
+     "why": "`Default` matched inside `Credit Default Swaps` because only the singular was registered."},
+    {"op": "add_form", "concept": "technical.cds", "language": "pt-BR", "form": "credit default swaps"}
+  ]
+}

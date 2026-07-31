@@ -1,0 +1,13 @@
+{
+  "batch": 8,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "An independent residual draw (seed 913377, 200 events) found `ativo` matching as a noun inside `retorno ativo` and `risco ativo`, which are the adjective. Same shape as `gestor ativo` in amendment 5, and the same answer: active return and active risk are CGA concepts in their own right, so registering them lets longest-match take the phrase instead of forbidding it. Tracking error IS active risk, which is why the two share a definition boundary worth stating explicitly.",
+  "concepts": [
+    {"id": "technical.active_return", "en": "active return", "pt": "retorno ativo", "class": "technical_term", "pos": "noun",
+     "def": "The portion of a portfolio's return that differs from its benchmark's return.",
+     "technical": true, "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"},
+    {"id": "technical.active_risk", "en": "active risk", "pt": "risco ativo", "class": "technical_term", "pos": "noun",
+     "def": "The dispersion of active return, measured as tracking error.",
+     "technical": true, "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"}
+  ]
+}

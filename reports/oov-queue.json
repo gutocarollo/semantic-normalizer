@@ -72,7 +72,7 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
+    "sha256": "9be0c5e48947f4289d8e11951c343c2ea23347bae7c8806d9b5703e254e400a0",
     "version": "2.6.0"
   },
   "schema_version": "oov-queue-v1",
@@ -161,15 +161,6 @@
       },
       {
         "contexts": [
-          "Desta forma, é um contrato onde o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para o portador do título (a pessoa que compra e recebe os juros).",
-          "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos).",
-          "➢ Algumas possuem cláusula de opção de compra, onde o governo americano pode recomprar a dívida antes do seu vencimento."
-        ],
-        "occurrences": 40,
-        "term": "compra"
-      },
-      {
-        "contexts": [
           "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobre o ganho bruto.",
           "No entanto, a Libor foi descontinuada devido a questões relacionadas à sua metodologia de cálculo.",
           "Garantia do Tesouro dos EUA: considerados no cálculo da SOFR são garantidos por títulos do governo americano, tornando a taxa mais segura e livre de risco de crédito."
@@ -215,12 +206,12 @@
       },
       {
         "contexts": [
-          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
-          "Desta forma, percebemos que esta venda com recompra, nada mais é que um empréstimo em que o comprador do título atua como credor (emprestando o dinheiro) e o vendedor atua como devedor (pagando mais caro do que vendeu inicialmente).",
-          "☐ Yield to Put (YTP): É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que ele exerce o direito de vender de volta o título ao emissor, uma vez que possui uma opção de venda."
+          "Desta forma, é um contrato onde o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para o portador do título (a pessoa que compra e recebe os juros).",
+          "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos).",
+          "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revender estes títulos futuramente por R$ 11 mil para este mesmo banco."
         ],
-        "occurrences": 29,
-        "term": "venda"
+        "occurrences": 27,
+        "term": "compra"
       },
       {
         "contexts": [
@@ -260,6 +251,15 @@
       },
       {
         "contexts": [
+          "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na venda de títulos juntamente com um acordo de recompra-los por um valor mais alto em uma data futura.",
+          "Desta forma, percebemos que esta venda com recompra, nada mais é que um empréstimo em que o comprador do título atua como credor (emprestando o dinheiro) e o vendedor atua como devedor (pagando mais caro do que vendeu inicialmente).",
+          "Exemplo: Compra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
+        ],
+        "occurrences": 18,
+        "term": "venda"
+      },
+      {
+        "contexts": [
           "Valor principal indexado à variação do CPI (Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação.",
           "Uma Treasury STRIPS é um tipo de título criado através da separação dos fluxos de pagamentos de juros e principal de um título do Tesouro existente.",
           "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título original são divididos em títulos separados, que são negociados independentemente no mercado secundário."
@@ -287,12 +287,30 @@
       },
       {
         "contexts": [
+          "As Callable Bonds (Bonds com opção de Call) são títulos com proteção a Companhia Emissora e as Putable Bonds (Bonds com opção de put) protegem o investidor.",
+          "A opção por um dos critérios será exercida em relação a todos os cotistas do fundo e somente poderá ser alterada no 1º (primeiro) dia útil de janeiro de cada ano-calendário.",
+          "Ela é obtida por meio de modelos de avaliação de preço do derivativo Opção."
+        ],
+        "occurrences": 12,
+        "term": "opção"
+      },
+      {
+        "contexts": [
           "Muitas vezes, essas informações não estão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
           "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empresas a adotarem as melhores práticas de sustentabilidade empresarial.",
           "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode contribuir, por exemplo, para diminuição do risco da carteira por conta da correlação."
         ],
         "occurrences": 12,
         "term": "decisão"
+      },
+      {
+        "contexts": [
+          "Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra embutida e mantê-lo até o vencimento ou resgate (exercício da opção de compra pelo emissor).",
+          "Assim, o Yield Spread é calculado deduzindo o rendimento de um instrumento do outro.",
+          "Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de spread de crédito."
+        ],
+        "occurrences": 11,
+        "term": "rendimento"
       },
       {
         "contexts": [
@@ -311,6 +329,33 @@
         ],
         "occurrences": 9,
         "term": "ajuste"
+      },
+      {
+        "contexts": [
+          "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
+          "Essa taxa servia de base para vários tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+          "Por conta da liberdade do gestor em operar praticamente livremente ativos e empregar estratégias, associada ao objetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco, geralmente possuem baixa liquidez e implicam muitas vezes elevados aportes iniciais."
+        ],
+        "occurrences": 8,
+        "term": "opções"
+      },
+      {
+        "contexts": [
+          "Essa taxa servia de base para vários tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+          "Quando falamos em estratégias passivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
+          "O DI FUTURO é a principal referência para o mercado financeiro em relação às expectativas sobre os comportamentos dos juros para períodos futuros do Brasil."
+        ],
+        "occurrences": 8,
+        "term": "futuros"
+      },
+      {
+        "contexts": [
+          "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
+          "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
+          "O aceite bancário é negociável, o que significa que o exportador pode vender o aceite a um terceiro, geralmente um banco, em troca de um desconto."
+        ],
+        "occurrences": 6,
+        "term": "desconto"
       },
       {
         "contexts": [
@@ -11215,15 +11260,6 @@
       {
         "contexts": [
           "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme visto no capítulo de derivativos.",
-          "- Pode incorporar qualquer formato de distribuição de retornos desejado pelo analista, assim como premissas sobre correlações, opções embutidas aos ativos, entre outras.",
-          "A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas."
-        ],
-        "occurrences": 3,
-        "term": "embutidas"
-      },
-      {
-        "contexts": [
-          "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme visto no capítulo de derivativos.",
           "Este impacto negativo é visto diretamente na marcação a mercado do ativo.",
           "É muito comum de ser visto em carteira de ações de corretoras (exemplo: Carteira Recomendada Mensal de Ações)."
         ],
@@ -20335,6 +20371,13 @@
         ],
         "occurrences": 1,
         "term": "cláusulas"
+      },
+      {
+        "contexts": [
+          "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme visto no capítulo de derivativos."
+        ],
+        "occurrences": 1,
+        "term": "embutidas"
       },
       {
         "contexts": [
@@ -33024,15 +33067,15 @@
   },
   "totals": {
     "ambiguous": {
-      "occurrences": 1215,
-      "terms": 48
+      "occurrences": 1236,
+      "terms": 53
     },
     "function": {
       "occurrences": 8053,
       "terms": 240
     },
     "unknown": {
-      "occurrences": 11466,
+      "occurrences": 11464,
       "terms": 3896
     }
   }

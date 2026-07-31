@@ -1,0 +1,20 @@
+{
+  "id": "precision-sweep-amendment-04",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; re-verification of amendment 03",
+  "method": "amendment 03 promoted `ativo` to automatic and it still did not match; normalizer.py line 257 gives the reason",
+  "reason": "A review entry dominates an automatic mapping by design, so demoting the competing claim was not enough — the wrong claim has to be withdrawn.",
+  "operations": [
+    {
+      "op": "remove_form", "concept": "state.enabled", "language": "pt-BR", "form": "ativo",
+      "why": "`ativado`/`ativada`, the forms that actually carry the enabled sense, occur zero times in this corpus; `ativo` occurs 180 times and is the noun `asset` in every one. Keeping it as a review claim suppressed entity.asset on all 180."
+    },
+    {"op": "remove_form", "concept": "state.enabled", "language": "pt-BR", "form": "ativos",
+     "why": "364 occurrences, all the noun."},
+    {"op": "remove_form", "concept": "state.enabled", "language": "pt-BR", "form": "ativas",
+     "why": "7 occurrences, none of them a system state."},
+    {"op": "remove_form", "concept": "state.enabled", "language": "pt-BR", "form": "habilitado",
+     "why": "Its 2 occurrences mean licensed by the CVM. `ativado` remains as the Portuguese anchor."},
+    {"op": "remove_form", "concept": "state.enabled", "language": "pt-BR", "form": "habilitada"}
+  ]
+}

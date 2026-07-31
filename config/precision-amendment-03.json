@@ -1,0 +1,111 @@
+{
+  "id": "precision-sweep-amendment-03",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; second sweep round over strata C and D after amendments 01 and 02",
+  "method": "scripts/build_sweep_queue.py over reports/precision-strata-wide.json, 665 occurrences read; every occurrence of each suspect form then read exhaustively",
+  "reason": "Round two found twelve wrong events, a conflated definition, and the domain's most central concept left with no automatic form at all.",
+  "operations": [
+    {
+      "op": "demote", "concept": "entity.asset", "language": "en", "form": "asset",
+      "wrong": 6, "total": 6,
+      "why": "Every occurrence is a fragment of an English compound the material quotes verbatim — `Net Asset Value`, `Asset Allocation`, `Asset-Liability Management`, `asset management`. None of them names an item of economic value."
+    },
+    {
+      "op": "add_form", "concept": "entity.asset", "language": "en", "form": "financial asset",
+      "why": "Restores an automatic English anchor once the bare form is demoted."
+    },
+    {
+      "op": "demote", "concept": "state.enabled", "language": "pt-BR", "form": "ativo",
+      "wrong": 544, "total": 544,
+      "why": "`ativado` and `ativada`, the forms that actually mean enabled, occur zero times in this corpus, while `ativo` and `ativos` occur 544 times and every one of them is the noun `asset`. A generic system-state concept inherited from the controlled-language core was holding the domain's central term hostage: because both concepts claimed the surface, the collision demoter — correctly, given what it was told — sent BOTH to review, so `entity.asset` matched nothing automatically in Portuguese."
+    },
+    {
+      "op": "demote", "concept": "state.enabled", "language": "pt-BR", "form": "ativos"
+    },
+    {
+      "op": "demote", "concept": "state.enabled", "language": "pt-BR", "form": "ativas"
+    },
+    {
+      "op": "demote", "concept": "state.enabled", "language": "pt-BR", "form": "habilitado",
+      "wrong": 1, "total": 1,
+      "why": "`devidamente habilitado pela CVM` means licensed by the regulator, not that a function is available for operation."
+    },
+    {
+      "op": "demote", "concept": "state.enabled", "language": "pt-BR", "form": "habilitada"
+    },
+    {
+      "op": "promote", "concept": "entity.asset", "language": "pt-BR", "form": "ativo",
+      "right": 180, "total": 180,
+      "why": "Held at review only by the collision withdrawn above. Every corpus occurrence is the noun."
+    },
+    {
+      "op": "add_form", "concept": "entity.asset", "language": "pt-BR", "form": "ativos",
+      "why": "364 occurrences, all the noun in the plural."
+    },
+    {
+      "op": "add_form", "concept": "entity.asset", "language": "pt-BR", "form": "ativo financeiro"
+    },
+    {
+      "op": "add_form", "concept": "entity.asset", "language": "pt-BR", "form": "ativos financeiros"
+    },
+    {
+      "op": "demote", "concept": "action.configure", "language": "pt-BR", "form": "configurar",
+      "wrong": 1, "total": 1,
+      "why": "`a Butterfly pode se configurar de duas formas` means it takes two shapes, not that a system is being set up."
+    },
+    {
+      "op": "redefine", "concept": "entity.distribution",
+      "definition": "The placement of fund shares with investors, including the public offering and its settlement.",
+      "why": "The definition read `the statistical spread of outcomes, OR the placement of fund shares with investors`. Under that wording nothing could ever be a false positive, which is why the sweep reported none — but normalising both senses onto one identifier destroys exactly the distinction the registry exists to preserve. Splitting is the repair; the second sense becomes its own concept below."
+    },
+    {
+      "op": "forbid", "concept": "entity.distribution", "language": "pt-BR",
+      "variants": ["distribuição inicial", "distribuição dos ativos", "distribuição de responsabilidades", "distribuição do retorno"],
+      "why": "Allocation across maturities, across managers or across obligations is not the placement of shares with investors."
+    },
+    {
+      "op": "add_concept",
+      "record": {
+        "concept_id": "technical.probability_distribution",
+        "definition": "The statistical spread of possible outcomes over their probabilities.",
+        "semantic_class": "technical_term",
+        "domains": ["finance", "cga"],
+        "pos": "noun",
+        "labels": {
+          "en": {"pref": "probability distribution", "alt": ["normal distribution", "distribution of returns"], "hidden": [], "observed": []},
+          "pt-BR": {"pref": "distribuição de probabilidades", "alt": ["distribuição normal", "distribuição de retornos", "distribuição dos retornos"], "hidden": [], "observed": []}
+        },
+        "lexical_forms": {
+          "en": [
+            {"form": "probability distribution", "features": {}, "policy": "auto"},
+            {"form": "normal distribution", "features": {}, "policy": "auto"},
+            {"form": "distribution of returns", "features": {}, "policy": "auto"}
+          ],
+          "pt-BR": [
+            {"form": "distribuição de probabilidades", "features": {}, "policy": "auto"},
+            {"form": "distribuição normal", "features": {}, "policy": "auto"},
+            {"form": "distribuição de retornos", "features": {}, "policy": "auto"},
+            {"form": "distribuição dos retornos", "features": {}, "policy": "auto"}
+          ]
+        },
+        "relations": {"broader": [], "narrower": [], "related": []},
+        "forbidden_variants": {"en": [], "pt-BR": []},
+        "contexts": ["finance", "cga"],
+        "authority": "apostila-cga-2026",
+        "source": "CGA 2026 course material, adjudicated against corpus contexts",
+        "positive_examples": {
+          "en": ["The VaR uses the normal distribution as its descriptive parameter."],
+          "pt-BR": ["O VaR utiliza a distribuição normal como parâmetro descritivo."]
+        },
+        "negative_examples": {
+          "en": ["Do not use probability distribution for the placement of fund shares."],
+          "pt-BR": ["Não use distribuição de probabilidades para a distribuição de cotas."]
+        },
+        "status": "approved",
+        "governed_technical_term": true,
+        "registry_version": "2.8.0"
+      },
+      "why": "The seven statistical occurrences the conflated definition was absorbing. Its labels are all collocations, so it takes the statistical sense without contesting bare `distribuição`, which keeps anchoring the placement sense fourteen times as `distribuição de cotas`."
+    }
+  ]
+}

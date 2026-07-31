@@ -1,0 +1,163 @@
+{
+  "id": "precision-sweep-amendment-01",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; exhaustive sweep of every corpus occurrence of each form",
+  "method": "scripts/score_form_polysemy.py + stratify_precision.py + build_sweep_queue.py; 467 farthest-from-centroid occurrences read, then every occurrence of each suspect form read exhaustively",
+  "reason": "Exhaustive sweep found 58 wrong match events across nine forms. Three were missing senses, not broad labels.",
+  "operations": [
+    {
+      "op": "demote", "concept": "technical.principal", "language": "pt-BR", "form": "principal",
+      "wrong": 18, "total": 28,
+      "why": "`principal` is the commonest Portuguese adjective for `main`. 18 of its 28 occurrences are `principal característica`, `principal fator de risco`, `a principal desvantagem`. The financial sense always names an amount."
+    },
+    {
+      "op": "add_form", "concept": "technical.principal", "language": "pt-BR", "form": "valor principal",
+      "why": "The collocation the corpus uses for the financial sense, twice, both correct."
+    },
+    {
+      "op": "forbid", "concept": "quantity.measure", "language": "pt-BR",
+      "variants": ["à medida que", "na medida em que", "à medida em que"],
+      "why": "`à medida que` means `as` and merely contains `medida`. All six wrong occurrences are this conjunction; the other thirteen are genuine measures."
+    },
+    {
+      "op": "demote", "concept": "quantity.measure", "language": "pt-BR", "form": "medidas",
+      "wrong": 3, "total": 6,
+      "why": "Plural `medidas` splits evenly between statistical measures and `adotar medidas` meaning steps a regulator takes."
+    },
+    {
+      "op": "add_form", "concept": "quantity.measure", "language": "pt-BR", "form": "medidas de dispersão",
+      "why": "Nine occurrences, all statistical."
+    },
+    {
+      "op": "add_form", "concept": "quantity.measure", "language": "pt-BR", "form": "medidas estatísticas"
+    },
+    {
+      "op": "add_form", "concept": "quantity.measure", "language": "pt-BR", "form": "medidas de sensibilidade"
+    },
+    {
+      "op": "demote", "concept": "technical.forward", "language": "pt-BR", "form": "termo",
+      "wrong": 5, "total": 5,
+      "why": "Every occurrence is `o termo X significa` (the word) or `termo de cessão` (a deed). The forward sense is always marked by the preposition."
+    },
+    {
+      "op": "add_form", "concept": "technical.forward", "language": "pt-BR", "form": "a termo",
+      "why": "Seven occurrences — `operações a termo`, `venda a termo`, `contratos a termos` — all the forward sense."
+    },
+    {
+      "op": "demote", "concept": "technical.active_management", "language": "pt-BR", "form": "ativa",
+      "wrong": 2, "total": 4,
+      "why": "`posição Ativa (Credora)` is the asset side of a contract and `swap ATIVA em pós-fixada` is a swap leg; neither is active management."
+    },
+    {
+      "op": "add_form", "concept": "technical.active_management", "language": "pt-BR", "form": "alocação ativa",
+      "why": "`gestão ativa` already anchors the concept 17 times; this adds the allocation phrasing."
+    },
+    {
+      "op": "demote", "concept": "technical.duration", "language": "pt-BR", "form": "duração",
+      "wrong": 1, "total": 1,
+      "why": "`prazo de duração do fundo` is the fund's lifetime, not interest-rate duration. `duration` stays automatic in both languages and is what the material actually uses."
+    },
+    {
+      "op": "demote", "concept": "action.check", "language": "pt-BR", "form": "conferir",
+      "wrong": 1, "total": 1,
+      "why": "Its single occurrence means `to regard as`, not `to check`. `verificar` carries the checking sense and belongs to action.verify."
+    },
+    {
+      "op": "forbid", "concept": "entity.cash_flow", "language": "pt-BR",
+      "variants": ["fluxo de capitais"],
+      "why": "Cross-border capital flows are a balance-of-payments notion, not a security's cash flow."
+    },
+    {
+      "op": "demote", "concept": "quantity.value", "language": "en", "form": "value",
+      "wrong": 11, "total": 12,
+      "why": "In this corpus bare `Value` is the investment style eleven times out of twelve. `valor` carries the quantity sense in Portuguese and stays automatic."
+    },
+    {
+      "op": "add_concept",
+      "record": {
+        "concept_id": "technical.value_investing",
+        "definition": "The management style that selects assets trading below their fundamental worth, contrasted with Growth.",
+        "semantic_class": "technical_term",
+        "domains": ["finance", "cga"],
+        "pos": "noun",
+        "labels": {
+          "en": {"pref": "value investing", "alt": ["value style"], "hidden": [], "observed": ["value"]},
+          "pt-BR": {"pref": "value investing", "alt": ["estilo value"], "hidden": [], "observed": ["value"]}
+        },
+        "lexical_forms": {
+          "en": [
+            {"form": "value investing", "features": {}, "policy": "auto"},
+            {"form": "value style", "features": {}, "policy": "auto"},
+            {"form": "value", "features": {}, "policy": "review"}
+          ],
+          "pt-BR": [
+            {"form": "value investing", "features": {}, "policy": "auto"},
+            {"form": "estilo value", "features": {}, "policy": "auto"},
+            {"form": "value", "features": {}, "policy": "review"}
+          ]
+        },
+        "relations": {"broader": [], "narrower": [], "related": []},
+        "forbidden_variants": {"en": [], "pt-BR": ["net asset value"]},
+        "contexts": ["finance", "cga"],
+        "authority": "apostila-cga-2026",
+        "source": "CGA 2026 course material, adjudicated against corpus contexts",
+        "positive_examples": {
+          "en": ["The value investing style assumes shares are mispriced."],
+          "pt-BR": ["O estilo Value assume que as ações estão incorretamente precificadas."]
+        },
+        "negative_examples": {
+          "en": ["Do not use value investing for the numeric value of an asset."],
+          "pt-BR": ["Não use value investing para o valor numérico de um ativo."]
+        },
+        "status": "approved",
+        "governed_technical_term": true,
+        "registry_version": "2.7.0"
+      },
+      "why": "The sweep kept reporting `Value` as wrong for quantity.value. The label was not too broad — the style sense was simply absent from the registry."
+    },
+    {
+      "op": "add_concept",
+      "record": {
+        "concept_id": "entity.registration",
+        "definition": "The regulatory act by which a fund, class or manager is entered with the supervisor and authorised to operate.",
+        "semantic_class": "entity",
+        "domains": ["finance", "cga"],
+        "pos": "noun",
+        "labels": {
+          "en": {"pref": "regulatory registration", "alt": ["registration with the supervisor"], "hidden": [], "observed": ["registration"]},
+          "pt-BR": {"pref": "registro regulatório", "alt": ["registro na CVM", "registro de funcionamento"], "hidden": [], "observed": ["registro"]}
+        },
+        "lexical_forms": {
+          "en": [
+            {"form": "regulatory registration", "features": {}, "policy": "auto"},
+            {"form": "registration with the supervisor", "features": {}, "policy": "auto"},
+            {"form": "registration", "features": {}, "policy": "review"}
+          ],
+          "pt-BR": [
+            {"form": "registro regulatório", "features": {}, "policy": "auto"},
+            {"form": "registro na CVM", "features": {}, "policy": "auto"},
+            {"form": "registro de funcionamento", "features": {}, "policy": "auto"},
+            {"form": "registro", "features": {}, "policy": "auto"}
+          ]
+        },
+        "relations": {"broader": [], "narrower": [], "related": []},
+        "forbidden_variants": {"en": [], "pt-BR": []},
+        "contexts": ["finance", "cga"],
+        "authority": "apostila-cga-2026",
+        "source": "CGA 2026 course material, adjudicated against corpus contexts",
+        "positive_examples": {
+          "en": ["The class must obtain its own regulatory registration."],
+          "pt-BR": ["O funcionamento do fundo depende do seu prévio registro na CVM."]
+        },
+        "negative_examples": {
+          "en": ["Do not use regulatory registration for a database record."],
+          "pt-BR": ["Não use registro regulatório para um registro de banco de dados."]
+        },
+        "status": "approved",
+        "governed_technical_term": true,
+        "registry_version": "2.7.0"
+      },
+      "why": "Ten of the twelve occurrences of `registro` are registration with the CVM, not a stored record. Registering the missing sense as automatic makes the collision demoter fire, which is the correct outcome: bare `registro` is genuinely ambiguous and both sides drop to review, while `registro na CVM` and `registro de banco de dados` keep each concept anchored."
+    }
+  ]
+}

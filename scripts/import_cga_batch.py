@@ -34,21 +34,39 @@ AUTHORITY_PREFIXES = ("apostila-cga-2026", "openwordnet-pt:", "project-authored:
 
 
 def forms(automatic: list[str], observed: list[str]) -> list[dict]:
-    """Preferred and alternative labels are `auto`; observed inflections are `review`."""
+    """Preferred and alternative labels are `auto`; observed inflections are `review`.
+
+    Deduplication is case-insensitive because matching is: `Libor` and `LIBOR` are one form to
+    the normaliser and two rows here, which the registry contract rejects. Three batches in a
+    row tripped on that (`LIBOR`, `STRIPS`, `duration modificada`), so it is enforced at the
+    point where forms are built rather than fixed per batch.
+    """
     out: list[dict] = []
     seen: set[str] = set()
     for policy, group in (("auto", automatic), ("review", observed)):
         for form in group:
-            if form and form not in seen:
-                seen.add(form)
+            key = form.casefold() if form else ""
+            if form and key not in seen:
+                seen.add(key)
                 out.append({"form": form, "features": {}, "policy": policy})
+    return out
+
+
+def distinct_alts(preferred: str, alternatives: list[str]) -> list[str]:
+    """SKOS S13: a preferred label may not also appear as an alternative label."""
+    out: list[str] = []
+    seen = {preferred.casefold()}
+    for alternative in alternatives:
+        if alternative.casefold() not in seen:
+            seen.add(alternative.casefold())
+            out.append(alternative)
     return out
 
 
 def build(entry: dict, version: str) -> dict:
     en, pt = entry["en"], entry["pt"]
-    alt_en = entry.get("alt_en", [])
-    alt_pt = entry.get("alt_pt", [])
+    alt_en = distinct_alts(en, entry.get("alt_en", []))
+    alt_pt = distinct_alts(pt, entry.get("alt_pt", []))
     obs_en = entry.get("obs_en", [])
     obs_pt = entry.get("obs_pt", [])
     domains = ["finance", "cga"]

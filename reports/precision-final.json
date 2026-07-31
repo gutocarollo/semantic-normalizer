@@ -1,0 +1,84 @@
+{
+  "campaign": [
+    {
+      "error_rate": 0.025,
+      "errors": 4,
+      "found": [
+        "Market in `Market Neutral`",
+        "Price in `Growth at a Reasonable Price`",
+        "Hedge in `Hedge Funds`",
+        "Yield in `High Yield Bonds`"
+      ],
+      "registry": "2.8.2",
+      "report": "reports/unread-residual-sample.json",
+      "sample_size": 160,
+      "seed": 20260731,
+      "state": "before the compound-term batches; all four repaired by batches 6 and 7",
+      "wilson_95": [
+        0.0098,
+        0.0625
+      ]
+    },
+    {
+      "error_rate": 0.01,
+      "errors": 2,
+      "found": [
+        "ativo in `retorno ativo`",
+        "VaR inside a `\\[...\\]` LaTeX block"
+      ],
+      "registry": "2.10.0",
+      "report": "reports/unread-residual-round2.json",
+      "sample_size": 200,
+      "seed": 913377,
+      "state": "after batches 6 and 7; repaired by batch 8 and by the LaTeX delimiters in build_oov_queue",
+      "wilson_95": [
+        0.0027,
+        0.0357
+      ]
+    },
+    {
+      "error_rate": 0.0045,
+      "errors": 1,
+      "found": [
+        "Long in `Long and Short`"
+      ],
+      "registry": "2.11.0",
+      "report": "reports/unread-residual-round3.json",
+      "sample_size": 220,
+      "seed": 55501,
+      "state": "after batch 8; repaired by batch 9",
+      "wilson_95": [
+        0.0008,
+        0.0253
+      ]
+    }
+  ],
+  "concepts": 306,
+  "errors_repaired_total": 7,
+  "events_total": 6695,
+  "precision": {
+    "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
+    "lower_bound_95": 0.9797,
+    "point": 0.9964,
+    "upper_bound_95": 0.9994
+  },
+  "registry_version": "2.12.0",
+  "residual": {
+    "error_rate_point": 0.0042,
+    "error_rate_wilson_95": [
+      0.0007,
+      0.0232
+    ],
+    "errors_adjudicated": 1,
+    "events": 5842,
+    "sample_size": 240,
+    "share": 0.8726
+  },
+  "schema_version": "precision-final-v1",
+  "swept": {
+    "basis": "ranked reading of the farthest occurrences of every risk-surface form, plus exhaustive adjudication of every occurrence of each form where an error appeared",
+    "events": 853,
+    "known_errors_remaining": 0,
+    "share": 0.1274
+  }
+}

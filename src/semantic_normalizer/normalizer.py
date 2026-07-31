@@ -281,6 +281,9 @@ def lexical_matches(segment: str, segment_start: int, protected: list[tuple[int,
         else:
             cid, lang, term, source = value
             record = lexicon["by_id"][cid]
+            if _forbidden_here(record, lang, segment, start, end):
+                index += size
+                continue
             events.append({
                 "start": segment_start + start, "end": segment_start + end, "alias": alias,
                 "alias_language": lang, "concept_id": cid, "sense": record["sense"],
@@ -289,6 +292,41 @@ def lexical_matches(segment: str, segment_start: int, protected: list[tuple[int,
             })
         index += size
     return events, ambiguous
+
+
+def _forbidden_here(record: dict, language: str, segment: str, start: int, end: int) -> bool:
+    """Suppress a match that falls inside one of the concept's forbidden variants.
+
+    `forbidden_variants` has been in the schema and validated by the registry since 2.0.0, and
+    the normalizer never read it — a declared mechanism that did nothing. It is the right tool
+    for a fixed expression that merely contains a concept's label: `a qualquer título` is
+    Portuguese for "on any grounds", and its `título` is not a security. Demoting the bare
+    `título` instead would have cost 125 correct matches to remove one wrong one.
+
+    The window extends a few words either side so the phrase is recognised wherever the match
+    lands inside it.
+    """
+    declared = record.get("forbidden_variants", {}) or {}
+    if language in declared:
+        variants = declared[language] or []
+    else:
+        # A surface spelled identically in both languages is tagged `shared`, so there is no
+        # single language to look up. `performance` is the case that found this: a phrase
+        # forbidden in any declared language must block a shared-surface match too.
+        variants = [variant for group in declared.values() for variant in (group or [])]
+    if not variants:
+        return False
+    window = nfc_casefold(segment[max(0, start - 40):min(len(segment), end + 40)])
+    for variant in variants:
+        needle = nfc_casefold(variant)
+        position = window.find(needle)
+        while position != -1:
+            # The match must sit inside the forbidden phrase, not merely near it.
+            phrase_start = max(0, start - 40) + position
+            if phrase_start <= start and end <= phrase_start + len(needle):
+                return True
+            position = window.find(needle, position + 1)
+    return False
 
 
 def detect_language(text: str, events: list[dict]) -> str:

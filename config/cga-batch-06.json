@@ -1,0 +1,420 @@
+{
+  "batch": 6,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "A uniform draw from the occurrences the risk queue had dismissed found four errors and all four were the same shape: the Portuguese material quotes English terms verbatim, and a bare English label matches a fragment of one. `Hedge Funds` is not a hedge; `Money Weighted Rate of Return` is not money; `Dow Jones Industrial Average` is not an average. scripts/find_compound_fragments.py then mapped the whole cluster — 31 forms, 155 events — by measuring what surrounds each match instead of what context it sits in, which is why the centroid ranking was blind to it. The repair is not to forbid the fragments. Every one of these compounds is CGA exam content that the dictionary should contain, and once the compound is registered the longest-match rule consumes it and the fragment stops appearing. Suppression would have shrunk the registry to fix a problem whose correct answer was to grow it. `hedge funds` is not in this batch: the concept already exists and only lacked its plural, so it is an amendment rather than a new concept — adding one would have split a sense in two.",
+  "concepts": [
+    {
+      "id": "entity.private_equity",
+      "en": "private equity",
+      "pt": "private equity",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Equity investment in companies that are not listed on a public exchange.",
+      "alt_pt": [
+        "participação privada"
+      ],
+      "authority": "apostila-cga-2026#11-fundos-estruturados-e-alternativos"
+    },
+    {
+      "id": "technical.consumer_price_index",
+      "en": "consumer price index",
+      "pt": "índice de preços ao consumidor",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The United States inflation index used to correct the principal of inflation-linked Treasury securities.",
+      "alt_en": [
+        "CPI"
+      ],
+      "alt_pt": [
+        "CPI"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "entity.dow_jones",
+      "en": "dow jones industrial average",
+      "pt": "dow jones industrial average",
+      "class": "entity",
+      "pos": "proper_noun",
+      "def": "The price-weighted index of thirty large US companies.",
+      "alt_en": [
+        "Dow Jones"
+      ],
+      "alt_pt": [
+        "Dow Jones"
+      ],
+      "authority": "apostila-cga-2026#12-indices-de-mercado"
+    },
+    {
+      "id": "technical.asset_liability_management",
+      "en": "asset liability management",
+      "pt": "gestão de ativos e passivos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Managing a portfolio so that asset cash flows meet liability cash flows as they fall due.",
+      "alt_en": [
+        "ALM",
+        "asset-liability management"
+      ],
+      "alt_pt": [
+        "ALM"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.isin",
+      "en": "international securities identification number",
+      "pt": "código isin",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The standard code that identifies a financial asset individually.",
+      "alt_en": [
+        "ISIN"
+      ],
+      "alt_pt": [
+        "ISIN"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#06-operacoes-e-liquidacao"
+    },
+    {
+      "id": "technical.money_weighted_return",
+      "en": "money weighted rate of return",
+      "pt": "retorno ponderado pelo dinheiro",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The internal rate of return of a portfolio, which external cash flows affect.",
+      "alt_en": [
+        "MWRR"
+      ],
+      "alt_pt": [
+        "MWRR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.loss_given_default",
+      "en": "loss given default",
+      "pt": "perda dada a inadimplência",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The share of exposure not recovered when a counterparty defaults.",
+      "alt_en": [
+        "LGD"
+      ],
+      "alt_pt": [
+        "LGD"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#14-risco-de-credito"
+    },
+    {
+      "id": "technical.market_neutral",
+      "en": "market neutral",
+      "pt": "market neutral",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A strategy holding offsetting long and short positions so market risk is neutralised.",
+      "alt_pt": [
+        "neutra ao mercado"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#11-fundos-estruturados-e-alternativos"
+    },
+    {
+      "id": "technical.garp",
+      "en": "growth at a reasonable price",
+      "pt": "growth at a reasonable price",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The style combining Growth and Value, seeking growing companies that are not overvalued.",
+      "alt_en": [
+        "GARP"
+      ],
+      "alt_pt": [
+        "GARP"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#12-estilos-de-gestao"
+    },
+    {
+      "id": "entity.high_yield_bond",
+      "en": "high yield bonds",
+      "pt": "títulos de alto rendimento",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Bonds rated below investment grade, paying a higher coupon for higher credit risk.",
+      "alt_en": [
+        "high yield",
+        "high yield bond"
+      ],
+      "alt_pt": [
+        "high yield"
+      ],
+      "authority": "apostila-cga-2026#14-risco-de-credito"
+    },
+    {
+      "id": "technical.current_yield",
+      "en": "current yield",
+      "pt": "current yield",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The annual coupon divided by the current market price of the security.",
+      "alt_pt": [
+        "rendimento corrente"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#08-matematica-financeira"
+    },
+    {
+      "id": "technical.yield_to_call",
+      "en": "yield to call",
+      "pt": "yield to call",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The return of a callable security assuming the issuer calls it at the first opportunity.",
+      "alt_en": [
+        "YTC"
+      ],
+      "alt_pt": [
+        "YTC"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#08-matematica-financeira"
+    },
+    {
+      "id": "technical.yield_to_worst",
+      "en": "yield to worst",
+      "pt": "yield to worst",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The lower of yield to maturity and yield to call, the return in the worst scenario.",
+      "alt_en": [
+        "YTW"
+      ],
+      "alt_pt": [
+        "YTW"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#08-matematica-financeira"
+    },
+    {
+      "id": "technical.total_return_equity_swap",
+      "en": "total return equity swap",
+      "pt": "total return equity swap",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A swap exchanging the total return of an equity index for a defined rate, giving exposure without ownership.",
+      "alt_en": [
+        "TRES"
+      ],
+      "alt_pt": [
+        "TRES"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#07-derivativos"
+    },
+    {
+      "id": "technical.long_only",
+      "en": "long only",
+      "pt": "long only",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Portfolio management that seeks return exclusively through buying assets.",
+      "alt_pt": [
+        "somente comprado"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#12-estilos-de-gestao"
+    },
+    {
+      "id": "technical.long_extension",
+      "en": "long extension",
+      "pt": "long extension",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A portfolio that extends long exposure beyond capital by adding a constrained short sleeve.",
+      "technical": true,
+      "authority": "apostila-cga-2026#12-estilos-de-gestao"
+    },
+    {
+      "id": "technical.key_rate_duration",
+      "en": "key rate duration",
+      "pt": "key rate duration",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Duration measured against a movement in one point of the yield curve rather than a parallel shift.",
+      "alt_pt": [
+        "duration da taxa principal"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.effective_duration",
+      "en": "effective duration",
+      "pt": "duration efetiva",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Duration computed for securities whose cash flows change when rates change, such as callable bonds.",
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.enterprise_risk_management",
+      "en": "enterprise risk management",
+      "pt": "gestão de riscos corporativos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The firm-wide framework that allocates risk capital across desks and managers.",
+      "alt_en": [
+        "ERM"
+      ],
+      "alt_pt": [
+        "ERM"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#15-governanca-e-controles"
+    },
+    {
+      "id": "technical.risk_budgeting",
+      "en": "risk budgeting",
+      "pt": "orçamento de risco",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Allocating a total risk allowance across sectors and managers instead of allocating capital.",
+      "technical": true,
+      "authority": "apostila-cga-2026#15-governanca-e-controles"
+    },
+    {
+      "id": "technical.performance_attribution",
+      "en": "performance attribution",
+      "pt": "atribuição de desempenho",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Decomposing a portfolio's return into the decisions that produced it.",
+      "alt_pt": [
+        "atribuição de performance"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.expected_loss",
+      "en": "expected loss",
+      "pt": "perda esperada",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Exposure multiplied by default probability and by loss given default.",
+      "alt_en": [
+        "EL"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#14-risco-de-credito"
+    },
+    {
+      "id": "technical.merger_arbitrage",
+      "en": "merger arbitrage",
+      "pt": "merger arbitrage",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A strategy taking positions in the securities of companies involved in an announced deal.",
+      "alt_pt": [
+        "arbitragem de fusões"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#11-fundos-estruturados-e-alternativos"
+    },
+    {
+      "id": "technical.libor",
+      "en": "london interbank offered rate",
+      "pt": "london interbank offered rate",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The former reference rate for short-term interbank lending, discontinued and replaced by SOFR.",
+      "alt_en": [
+        "Libor"
+      ],
+      "alt_pt": [
+        "Libor"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "technical.sofr",
+      "en": "secured overnight financing rate",
+      "pt": "secured overnight financing rate",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The overnight rate secured by Treasury collateral that replaced Libor in dollars.",
+      "alt_en": [
+        "SOFR"
+      ],
+      "alt_pt": [
+        "SOFR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "technical.short_bias",
+      "en": "short bias",
+      "pt": "short bias",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A strategy whose net exposure is short, profiting from falling prices.",
+      "alt_pt": [
+        "viés vendido"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#11-fundos-estruturados-e-alternativos"
+    },
+    {
+      "id": "technical.duration_matching",
+      "en": "duration matching",
+      "pt": "duration matching",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Immunising by setting the duration of assets equal to the duration of liabilities.",
+      "alt_pt": [
+        "casamento de duration"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.misfit_return",
+      "en": "misfit return",
+      "pt": "misfit return",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The part of active return caused by a manager's benchmark differing from the investor's benchmark.",
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.performance_measurement",
+      "en": "performance measurement",
+      "pt": "medição de desempenho",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Computing what return a portfolio produced over a period.",
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.performance_appraisal",
+      "en": "performance appraisal",
+      "pt": "avaliação de desempenho",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Judging whether a portfolio's return reflects skill rather than luck or risk taken.",
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    }
+  ]
+}

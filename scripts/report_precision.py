@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+"""Combine the exhaustive sweep and the residual draws into one precision figure with a bound.
+
+Two kinds of evidence exist and they answer different questions, so neither one alone produces
+an honest total.
+
+The **sweep** reads the occurrences a prior×spread ranking puts at the top, and every form where
+an error appeared then had all of its occurrences adjudicated one by one. That part is exact:
+the counts are of the whole population of those forms, not of a sample of it.
+
+The **residual draws** are uniform samples of the occurrences the ranking dismissed. They cannot
+say where errors are — ranking does that better — but they are the only thing that can say how
+often the ranking was wrong to dismiss something, which is a rate over a defined population and
+exactly what a uniform draw measures.
+
+The total is the weighted combination, and the interval is the Wilson bound on the residual
+rate carried through the unread share. Reporting the point estimate alone would repeat the
+mistake this project already made once, when sampling reported 95-100 % on batches an
+exhaustive sweep scored at 84 %: a number without its uncertainty invites more confidence than
+the evidence supports. The lower bound is what a claim should be made against.
+
+Adjudications are declared here, in code, with the seed and sample they came from, because a
+count typed into prose is unverifiable. Re-running the samplers with these seeds reproduces the
+exact occurrences these numbers describe.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import math
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_OUTPUT = ROOT / "reports" / "precision-final.json"
+
+# Every residual draw run in this campaign, with the number of wrong events adjudicated in each.
+# Each sample was read in full, occurrence by occurrence, against the sentence it came from.
+DRAWS = [
+    {
+        "report": "reports/unread-residual-sample.json", "seed": 20260731, "registry": "2.8.2",
+        "errors": 4,
+        "found": ["Market in `Market Neutral`", "Price in `Growth at a Reasonable Price`",
+                  "Hedge in `Hedge Funds`", "Yield in `High Yield Bonds`"],
+        "state": "before the compound-term batches; all four repaired by batches 6 and 7",
+    },
+    {
+        "report": "reports/unread-residual-round2.json", "seed": 913377, "registry": "2.10.0",
+        "errors": 2,
+        "found": ["ativo in `retorno ativo`", "VaR inside a `\\[...\\]` LaTeX block"],
+        "state": "after batches 6 and 7; repaired by batch 8 and by the LaTeX delimiters in build_oov_queue",
+    },
+    {
+        "report": "reports/unread-residual-round3.json", "seed": 55501, "registry": "2.11.0",
+        "errors": 1,
+        "found": ["Long in `Long and Short`"],
+        "state": "after batch 8; repaired by batch 9",
+    },
+]
+
+
+def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
+    if total == 0:
+        return (0.0, 1.0)
+    phat = successes / total
+    denominator = 1 + z * z / total
+    centre = (phat + z * z / (2 * total)) / denominator
+    margin = z * math.sqrt(phat * (1 - phat) / total + z * z / (4 * total * total)) / denominator
+    return (max(0.0, centre - margin), min(1.0, centre + margin))
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
+    parser.add_argument("--current-draw", default="reports/unread-residual-final.json",
+                        help="the draw taken against the current registry")
+    args = parser.parse_args()
+
+    draws = []
+    for entry in DRAWS:
+        path = ROOT / entry["report"]
+        if not path.exists():
+            continue
+        report = json.loads(path.read_text(encoding="utf-8"))
+        low, high = wilson(entry["errors"], report["sample_size"])
+        draws.append({
+            **entry,
+            "sample_size": report["sample_size"],
+            "error_rate": round(entry["errors"] / report["sample_size"], 4),
+            "wilson_95": [round(low, 4), round(high, 4)],
+        })
+
+    current_path = ROOT / args.current_draw
+    if not current_path.exists():
+        raise SystemExit(f"{args.current_draw} is missing; the final figure needs a draw "
+                         "taken against the CURRENT registry, not an earlier one")
+    current = json.loads(current_path.read_text(encoding="utf-8"))
+    current_errors = current.get("adjudicated_errors")
+    if current_errors is None:
+        raise SystemExit(f"{args.current_draw} has no `adjudicated_errors`; it has been drawn "
+                         "but not read. A figure computed from an unread draw would be fiction.")
+
+    total_events = current["events_total"]
+    read_events = current["events_read_by_sweep"]
+    unread_events = current["events_unread"]
+    sample_size = current["sample_size"]
+    unread_share = unread_events / total_events
+
+    low, high = wilson(current_errors, sample_size)
+    point = current_errors / sample_size
+
+    # The swept part carries no known errors: every one found was repaired and re-verified. That
+    # is a statement about what was looked at, not a claim of perfection, so it is named as such.
+    report = {
+        "schema_version": "precision-final-v1",
+        "registry_version": current["registry"]["version"],
+        "concepts": current["registry"]["concepts"],
+        "events_total": total_events,
+        "swept": {
+            "events": read_events,
+            "share": round(read_events / total_events, 4),
+            "known_errors_remaining": 0,
+            "basis": "ranked reading of the farthest occurrences of every risk-surface form, "
+                     "plus exhaustive adjudication of every occurrence of each form where an "
+                     "error appeared",
+        },
+        "residual": {
+            "events": unread_events,
+            "share": round(unread_share, 4),
+            "sample_size": sample_size,
+            "errors_adjudicated": current_errors,
+            "error_rate_point": round(point, 4),
+            "error_rate_wilson_95": [round(low, 4), round(high, 4)],
+        },
+        "precision": {
+            "point": round(1 - point * unread_share, 4),
+            "lower_bound_95": round(1 - high * unread_share, 4),
+            "upper_bound_95": round(1 - low * unread_share, 4),
+            "interpretation": "The lower bound is what a claim should be made against: it "
+                              "assumes the residual error rate sits at the top of what a sample "
+                              "of this size can rule out.",
+        },
+        "campaign": draws,
+        "errors_repaired_total": sum(entry["errors"] for entry in DRAWS) if DRAWS else 0,
+    }
+    Path(args.output).write_text(
+        json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    print(json.dumps({k: report[k] for k in ("registry_version", "concepts", "events_total",
+                                             "swept", "residual", "precision")},
+                     ensure_ascii=False, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

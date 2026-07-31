@@ -1,0 +1,1379 @@
+{
+  "all": [
+    {
+      "alias": "vendedores",
+      "concept_id": "actor.seller",
+      "context_similarity": 0.0155,
+      "drift": 0.9845,
+      "examples": [
+        "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores ",
+        "res, que atuam como intermediários entre compradores e vendedores.",
+        "álculo é um número que varia entre 0 (grande força dos vendedores) e 100 (grande força dos compradores).",
+        "ontratos e, assim, torna-se a compradora para todos os vendedores e a vendedora para todos os compradores."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 4,
+      "policy": "auto",
+      "preferred": "vendedor",
+      "preferred_occurrences": 10,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "compradores",
+      "concept_id": "actor.buyer",
+      "context_similarity": 0.0652,
+      "drift": 0.9348,
+      "examples": [
+        "Os compradores e vendedores se reúnem em um local físico (como a Bols",
+        "es e revendedores, que atuam como intermediários entre compradores e vendedores.",
+        " (grande força dos vendedores) e 100 (grande força dos compradores).",
+        "Portanto, caracteriza-se quando há poucos compradores, ou seja, uma dificuldade de encontrar um comprador pe"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "comprador",
+      "preferred_occurrences": 15,
+      "shared_prefix": 9,
+      "tokens": 1
+    },
+    {
+      "alias": "operações",
+      "concept_id": "entity.operation",
+      "context_similarity": 0.0768,
+      "drift": 0.9232,
+      "examples": [
+        "ntando a média de juros pagos por bancos britânicos em operações overnight (de um dia) com libras esterlinas (GBP).",
+        "As principais características do Swap são: - São operações ocorrem no mercado de balcão.",
+        "Quando da realização de operações em nome da classe de cotas, o gestor deve avaliar seus",
+        "omitês não exime o gestor da responsabilidade sobre as operações da carteira de ativos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 21,
+      "policy": "auto",
+      "preferred": "operação",
+      "preferred_occurrences": 7,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "processos",
+      "concept_id": "entity.process",
+      "context_similarity": 0.1299,
+      "drift": 0.8701,
+      "examples": [
+        "acionados à estruturação dessas áreas no que tange aos processos de análise dos ativos: - Análise Fundamentalista; - An",
+        "Ao otimizar seus processos internos, a instituição pode reduzir custos, melhorar ",
+        "perdas devido a falhas, deficiências ou inadequação de processos internos, pessoas, sistemas ou eventos externos inespe",
+        "tros, falhas em sistemas de informação, erros humanos, processos inadequados."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "processo",
+      "preferred_occurrences": 23,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "instituições",
+      "concept_id": "actor.institution",
+      "context_similarity": 0.1311,
+      "drift": 0.8689,
+      "examples": [
+        "o cargos mais elevados e de maior prestígio dentro das instituições financeiras e demais empresas em que trabalham.",
+        "sury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
+        "por meio de corretoras de valores mobiliários e outras instituições financeiras que operam no mercado secundário de título",
+        "por meio de corretoras de valores mobiliários e outras instituições financeiras."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 20,
+      "policy": "auto",
+      "preferred": "instituição",
+      "preferred_occurrences": 11,
+      "shared_prefix": 9,
+      "tokens": 1
+    },
+    {
+      "alias": "custos",
+      "concept_id": "entity.cost",
+      "context_similarity": 0.1357,
+      "drift": 0.8643,
+      "examples": [
+        "Com relação à estrutura de custos, os Hedge Funds normalmente empregam um sistema chamad",
+        "cação da carteira, que é possível através dos FoFs com custos significativamente menores.",
+        "uldades de replicação dos seus benchmarks por questões custos, impostos, dinâmica de cálculo da rentabilidade do fun",
+        "o, indicando uma excelente gestão passiva; contudo, os custos de transação podem ser um grande desafio, principalmen"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 20,
+      "policy": "auto",
+      "preferred": "custo",
+      "preferred_occurrences": 8,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "curva",
+      "concept_id": "technical.yield_curve",
+      "context_similarity": 0.1447,
+      "drift": 0.8553,
+      "examples": [
+        "O Stress Test testa a “cauda” da curva de sino (Distribuição Normal), ou seja, os prejuízos p",
+        "s de crédito são geralmente expressos em termos de uma curva de crédito, que demonstra a relação entre os spreads d",
+        "Ao formato da curva que expressa graficamente essa relação, damos o nome g",
+        "aso do gráfico de preço com relação a taxa de juros, a curva tem uma convexidade positiva."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 15,
+      "policy": "auto",
+      "preferred": "curva de juros",
+      "preferred_occurrences": 9,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "fluxo",
+      "concept_id": "entity.cash_flow",
+      "context_similarity": 0.153,
+      "drift": 0.847,
+      "examples": [
+        "mente regras ou restrições cambiais que dificultarem o fluxo de capitais entrando e saindo do país.",
+        "e caixa são distintos, necessitamos calcular inserindo fluxo por fluxo na HP-12C.",
+        "o distintos, necessitamos calcular inserindo fluxo por fluxo na HP-12C.",
+        "ulos, levando em consideração somente os pesos de cada fluxo."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 4,
+      "policy": "auto",
+      "preferred": "fluxo de caixa",
+      "preferred_occurrences": 14,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "médias",
+      "concept_id": "quantity.mean",
+      "context_similarity": 0.1556,
+      "drift": 0.8444,
+      "examples": [
+        "Seu cálculo envolve o deslocamento das médias dos preços dos ativos ao longo do tempo; - Oscilador d",
+        "Ele é construído com base nas médias móveis e pode fornecer informações valiosas sobre os m",
+        "Existem diferentes tipos de osciladores de médias móveis, mas um dos mais comuns é o Oscilador de Conver",
+        "Convergence Divergence): foca no comportamento de duas médias móveis, uma em relação a outra."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "média",
+      "preferred_occurrences": 30,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "contratos futuros",
+      "concept_id": "technical.futures",
+      "context_similarity": 0.1571,
+      "drift": 0.8429,
+      "examples": [
+        "Os contratos futuros mais relevantes são: - Ibovespa Futuro (foco do nosso ",
+        "Rafael COMPROU 10 contratos futuros de Ibovespa a 60.000.",
+        "Rafael VENDEU 10 contratos futuros de Ibovespa a 60.000.",
+        "tégias: - Contratos futuros: para abrir uma posição em contratos futuros, deposita-se uma margem, que corresponde a uma fração "
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 6,
+      "policy": "auto",
+      "preferred": "contrato futuro",
+      "preferred_occurrences": 4,
+      "shared_prefix": 8,
+      "tokens": 2
+    },
+    {
+      "alias": "cenários",
+      "concept_id": "entity.scenario",
+      "context_similarity": 0.1601,
+      "drift": 0.8399,
+      "examples": [
+        "os o contrato firmado, vamos simular exatamente alguns cenários e saber o que irá ocorrer no contrato de swap!",
+        "Em cenários de grande crescimento da demanda a estratégia Growth p",
+        "les internos de liquidez, inclusive, se for o caso, em cenários de estresse, devem ser consistentes e passíveis de ver",
+        "arteira de ativos a testes de estresse periódicos, com cenários que levem em consideração, no mínimo, as movimentações"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 10,
+      "policy": "auto",
+      "preferred": "cenário",
+      "preferred_occurrences": 20,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "informações",
+      "concept_id": "entity.information",
+      "context_similarity": 0.1633,
+      "drift": 0.8367,
+      "examples": [
+        "Muitas vezes, essas informações não estão amplamente disponíveis e há ainda o risco de",
+        "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar",
+        "Abrange também informações sobre comitês, sobre o relacionamento com a empresa de",
+        "análise se vale de múltiplos (indicadores extraídos de informações financeiras) para identificar a ação relativamente mai"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 22,
+      "policy": "auto",
+      "preferred": "informação",
+      "preferred_occurrences": 5,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "bancos",
+      "concept_id": "actor.bank",
+      "context_similarity": 0.1789,
+      "drift": 0.8211,
+      "examples": [
+        "s empresas importadoras obtenham financiamento de seus bancos para pagar a seus fornecedores internacionais.",
+        "empresas, mas também há commercial papers emitidos por bancos e governos.",
+        "mercado, a um custo inferior às taxas praticadas pelos bancos.",
+        " captação de volumes elevados, sendo feitos através de bancos, podendo ter taxas de juros fixas ou flutuantes."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 10,
+      "policy": "auto",
+      "preferred": "banco",
+      "preferred_occurrences": 25,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "passiva",
+      "concept_id": "technical.passive_management",
+      "context_similarity": 0.1802,
+      "drift": 0.8198,
+      "examples": [
+        "és deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência:",
+        " retornos superiores àqueles proporcionados pela parte passiva do portfólio (núcleo).",
+        "ark: isso faz com que o benchmark seja uma alternativa passiva válida para o gestor ativo.",
+        "ctos da alocação ativa com características da alocação passiva."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "gestão passiva",
+      "preferred_occurrences": 10,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "mercados",
+      "concept_id": "entity.market",
+      "context_similarity": 0.1832,
+      "drift": 0.8168,
+      "examples": [
+        "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Me",
+        "Ambos os mercados têm vantagens e desvantagens.",
+        "fazerem apostas algumas vezes em sentido oposto ao dos mercados.",
+        "ue os preços tendem a fechar perto dos seus máximos em mercados em alta e perto dos seus mínimos em mercados em baixa."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 11,
+      "policy": "auto",
+      "preferred": "mercado",
+      "preferred_occurrences": 139,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "prazos",
+      "concept_id": "temporal.term",
+      "context_similarity": 0.1837,
+      "drift": 0.8163,
+      "examples": [
+        "Emitidos normalmente com prazos de 5, 10 e 30 anos.",
+        "ário da Libor, que podia ter variações para diferentes prazos, a SOFR é específica para empréstimos com vencimento n",
+        "er diferenciadas exclusivamente por: - público-alvo; - prazos e condições de aplicação, amortização e resgate; e - t",
+        "acordo com chamadas realizadas pelo gestor, observados prazos e demais condições estabelecidas no referido documento"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 6,
+      "policy": "auto",
+      "preferred": "prazo",
+      "preferred_occurrences": 91,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "impactos",
+      "concept_id": "quantity.impact",
+      "context_similarity": 0.1848,
+      "drift": 0.8152,
+      "examples": [
+        "Para minimizar estes impactos, eles utilizam como estratégias derivativos para prote",
+        "a isso, criamos uma tabela para você compreender esses impactos!",
+        "O Risco Operacional resume as incertezas e possíveis impactos negativos que uma empresa enfrenta resultante de ativi",
+        "xos de caixa externos são necessárias para calcular os impactos da tomada de decisões da política de investimento do p"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 8,
+      "policy": "auto",
+      "preferred": "impacto",
+      "preferred_occurrences": 20,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "bolsa de valores",
+      "concept_id": "entity.securities",
+      "context_similarity": 0.1897,
+      "drift": 0.8103,
+      "examples": [
+        "As empresas que listam suas ações em uma bolsa de valores devem cumprir certos requisitos de divulgação e confor",
+        "nte entre as partes (ou seja, sem intermediação de uma bolsa de valores).",
+        "O mercado de balcão é menos regulamentado do que a bolsa de valores, o que significa que as empresas que listam suas ações",
+        "ue ocorre no Brasil, muitos países possuem mais de uma bolsa de valores, como por exemplo os Estados Unidos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 9,
+      "policy": "auto",
+      "preferred": "valores mobiliários",
+      "preferred_occurrences": 9,
+      "shared_prefix": 1,
+      "tokens": 3
+    },
+    {
+      "alias": "valor de face",
+      "concept_id": "technical.principal",
+      "context_similarity": 0.2161,
+      "drift": 0.7839,
+      "examples": [
+        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.0",
+        " ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma",
+        "uma LTN) Os preços são cotados como uma percentagem do valor de face.",
+        " sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos)."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 11,
+      "policy": "auto",
+      "preferred": "principal",
+      "preferred_occurrences": 25,
+      "shared_prefix": 0,
+      "tokens": 3
+    },
+    {
+      "alias": "classificação de risco",
+      "concept_id": "technical.rating",
+      "context_similarity": 0.2179,
+      "drift": 0.7821,
+      "examples": [
+        "A rescisão do contrato firmado com agência de classificação de risco de crédito somente é admitida mediante a observância d",
+        " apresentação, ao final desse período, de relatório de classificação de risco elaborado pela mesma agência.",
+        "Caso a rescisão do contrato firmado com agência de classificação de risco de crédito ocorra por deliberação da assembleia de cot",
+        "O rating (nota que as agências de classificação de risco de crédito atribuem a um emissor de acordo com sua cap"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 4,
+      "policy": "auto",
+      "preferred": "rating",
+      "preferred_occurrences": 4,
+      "shared_prefix": 0,
+      "tokens": 3
+    },
+    {
+      "alias": "performance",
+      "concept_id": "quantity.performance",
+      "context_similarity": 0.2248,
+      "drift": 0.7752,
+      "examples": [
+        ", expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, para as ",
+        "com 20, ou seja, taxa de administração de 2% e taxa de performance de 20%.",
+        "Já a taxa de performance incide sobre os ganhos do fundo, uma vez que dificilme",
+        "- Permitida a cobrança de taxa performance."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 25,
+      "policy": "auto",
+      "preferred": "desempenho",
+      "preferred_occurrences": 33,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "emissores",
+      "concept_id": "actor.issuer",
+      "context_similarity": 0.2262,
+      "drift": 0.7738,
+      "examples": [
+        "Os emissores podem personalizar os termos dos MTNs para atender às ",
+        "com diferentes vencimentos, classificações de crédito, emissores ou níveis de risco.",
+        "ações compromissadas, os limites estabelecidos para os emissores devem ser observados:",
+        " risco de concentração em ativos financeiros de poucos emissores."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 8,
+      "policy": "auto",
+      "preferred": "emissor",
+      "preferred_occurrences": 21,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "contratos",
+      "concept_id": "entity.contract",
+      "context_similarity": 0.232,
+      "drift": 0.768,
+      "examples": [
+        "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme visto no capítulo de d",
+        "base para vários tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "mo referência para diversos produtos financeiros, como contratos de derivativos, linhas de crédito e empréstimos.",
+        "Estes contratos se encerram por Liquidação Financeira (pagamento ou re"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 16,
+      "policy": "auto",
+      "preferred": "contrato",
+      "preferred_occurrences": 32,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "ISR",
+      "concept_id": "technical.esg",
+      "context_similarity": 0.2349,
+      "drift": 0.7651,
+      "examples": [
+        "Os investimentos socialmente responsáveis (ISR) são aqueles que buscam conciliar o retorno financeiro",
+        "Em outras palavras, ao investir em ISR, o investidor busca não apenas ter lucro, mas também c",
+        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investime",
+        "Vantagens de investir em ISR: - Diversificação: Os investimentos em ISR podem ser u"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 9,
+      "policy": "auto",
+      "preferred": "ASG",
+      "preferred_occurrences": 15,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "posições",
+      "concept_id": "entity.position",
+      "context_similarity": 0.2352,
+      "drift": 0.7648,
+      "examples": [
+        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross)",
+        "O gestor investe R$ 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vend",
+        ") em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
+        "O gestor investe R$ 13 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vend"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 18,
+      "policy": "auto",
+      "preferred": "posição",
+      "preferred_occurrences": 11,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "moedas",
+      "concept_id": "entity.currency",
+      "context_similarity": 0.249,
+      "drift": 0.751,
+      "examples": [
+        "ivos, tais como ações, derivativos, terrenos, imóveis, moedas, entre outros.",
+        "m replicar índices mais amplos, incluindo commodities, moedas e algumas ações individuais.",
+        "ser significativamente afetado quando da conversão das moedas envolvidas.",
+        "e, como ações, índices, commodities, taxas de juros ou moedas."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 7,
+      "policy": "auto",
+      "preferred": "moeda",
+      "preferred_occurrences": 18,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "medidas",
+      "concept_id": "quantity.measure",
+      "context_similarity": 0.2507,
+      "drift": 0.7493,
+      "examples": [
+        "Caso o administrador não adote uma dessas medidas, a Superintendência competente pode cancelar o registr",
+        "sse de cotas, o administrador deve adotar as seguintes medidas: - divulgar fato relevante; e - efetuar o cancelamento",
+        "A Variância e o Desvio Padrão são medidas estatísticas que medem o grau de dispersão de um conju",
+        "utilizado para compensar a deficiência do VaR e outras medidas de dispersão (desvio-padrão e variância)."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 6,
+      "policy": "auto",
+      "preferred": "medida",
+      "preferred_occurrences": 17,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "investidores",
+      "concept_id": "actor.investor",
+      "context_similarity": 0.2515,
+      "drift": 0.7485,
+      "examples": [
+        "Os investidores em STRIPS recebem o pagamento do valor nominal do títu",
+        "Como resultado, os STRIPS são mais adequados para investidores que desejam garantir um pagamento futuro específico, m",
+        "Municipal Bonds são uma forma de empréstimo, em que os investidores compram esses títulos e emprestam dinheiro para o gove",
+        "sos, estaduais e locais, o que os torna atraentes para investidores que procuram renda isenta de impostos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 56,
+      "policy": "auto",
+      "preferred": "investidor",
+      "preferred_occurrences": 79,
+      "shared_prefix": 10,
+      "tokens": 1
+    },
+    {
+      "alias": "empresas",
+      "concept_id": "actor.company",
+      "context_similarity": 0.2665,
+      "drift": 0.7335,
+      "examples": [
+        "prestígio dentro das instituições financeiras e demais empresas em que trabalham.",
+        "e títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou s",
+        "nciamento do comércio internacional, permitindo que as empresas importadoras obtenham financiamento de seus bancos par",
+        "azo, são essencialmente títulos de dívida emitidos por empresas ou governos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 69,
+      "policy": "auto",
+      "preferred": "empresa",
+      "preferred_occurrences": 46,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "dívidas",
+      "concept_id": "entity.debt",
+      "context_similarity": 0.2707,
+      "drift": 0.7293,
+      "examples": [
+        "mais instituições privadas, ou seja, são os títulos de dívidas.",
+        "Por serem ativos financeiros, essas dívidas poderão ter cláusulas de proteção, tanto para o invest",
+        "Desta forma, são dívidas de empresas com elevado risco de crédito, normalmente ",
+        "Assim, são dívidas de empresas com baixíssimo risco de crédito, sendo cla"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 8,
+      "policy": "auto",
+      "preferred": "dívida",
+      "preferred_occurrences": 33,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "períodos",
+      "concept_id": "temporal.period",
+      "context_similarity": 0.2747,
+      "drift": 0.7253,
+      "examples": [
+        "ue significa que precisam ser resgatados geralmente em períodos entre 5 a 10 anos.",
+        "às expectativas sobre os comportamentos dos juros para períodos futuros do Brasil.",
+        "esultante da divisão entre as médias das variações dos períodos que registraram alta pela média das variações dos perí",
+        "odos que registraram alta pela média das variações dos períodos que registraram quedas."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 14,
+      "policy": "auto",
+      "preferred": "período",
+      "preferred_occurrences": 40,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "modelos",
+      "concept_id": "entity.model",
+      "context_similarity": 0.3052,
+      "drift": 0.6948,
+      "examples": [
+        "Dentre os principais modelos de Análise Técnica, destacamos:",
+        "Dentre os principais modelos de Análise Técnica, destacamos:",
+        "Ela é obtida por meio de modelos de avaliação de preço do derivativo Opção.",
+        "Dentre destes modelos, o mais conhecida é o Black & Scholes."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 12,
+      "policy": "auto",
+      "preferred": "modelo",
+      "preferred_occurrences": 20,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "valor nominal",
+      "concept_id": "technical.principal",
+      "context_similarity": 0.3086,
+      "drift": 0.6914,
+      "examples": [
+        "Os investidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de",
+        "Portanto: Preço de mercado maior que o valor nominal; YTM menor que a taxa do cupom do título; ▶ Principais",
+        "Assim: Preço de mercado menor que o valor nominal YTM maior que a taxa do cupom do título ➢ Principais m",
+        "Preço de mercado igual ao valor nominal YTM igual a taxa do cupom do título Principais motivos"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "principal",
+      "preferred_occurrences": 25,
+      "shared_prefix": 0,
+      "tokens": 2
+    },
+    {
+      "alias": "juro",
+      "concept_id": "instrument.interest",
+      "context_similarity": 0.3294,
+      "drift": 0.6706,
+      "examples": [
+        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para o portador",
+        "Ela também é considerada a taxa de juro sem risco do euro.",
+        "sobe, os cupons recebidos serão reinvestidos a taxa de juro mais elevada porém com desvalorização dos títulos.",
+        "No Bull Steepening (gráfico ao lado), o juro de curto prazo cai mais rápido que o de longo prazo."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 7,
+      "policy": "auto",
+      "preferred": "juros",
+      "preferred_occurrences": 187,
+      "shared_prefix": 4,
+      "tokens": 1
+    },
+    {
+      "alias": "passivos",
+      "concept_id": "entity.liability",
+      "context_similarity": 0.3312,
+      "drift": 0.6688,
+      "examples": [
+        "ais complicado quando gerimos a carteira com relação a passivos como, por exemplo, em Planos de Previdência de Benefíc",
+        "Porém, em se tratando de passivos, o risco se torna elevado pois, dadas variações nas ta",
+        "não possuir recursos suficientes para fazer frente aos passivos da carteira (como as aposentadorias, em se tratando de",
+        "urar manter a duration dos ativos igual à duration dos passivos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 21,
+      "policy": "auto",
+      "preferred": "passivo",
+      "preferred_occurrences": 12,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "gestor de recursos",
+      "concept_id": "actor.portfolio_manager",
+      "context_similarity": 0.341,
+      "drift": 0.659,
+      "examples": [
+        "A área de análise é de grande importância para o gestor de recursos.",
+        "O registro na categoria gestor de recursos autoriza a gestão de uma carteira de valores mobiliári",
+        " a micro atribuição de performance é feita no nível do gestor de recursos.",
+        "rrência de sua condição como administrador fiduciário, gestor de recursos e/ou gestor de patrimônio, observada as eventuais exce"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 11,
+      "policy": "auto",
+      "preferred": "gestor",
+      "preferred_occurrences": 127,
+      "shared_prefix": 6,
+      "tokens": 3
+    },
+    {
+      "alias": "rentabilidade",
+      "concept_id": "quantity.return",
+      "context_similarity": 0.3439,
+      "drift": 0.6561,
+      "examples": [
+        "Por exemplo, se um investidor obteve rentabilidade de 10% em um período, devendo pagar 20% sobre ganhos d",
+        " por questões custos, impostos, dinâmica de cálculo da rentabilidade do fundo, regras de contabilização a mercado e necessi",
+        "- Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patrimonial.",
+        "ações, que cobre determinado período, para verificar a rentabilidade que seria produzida por determinada estratégia se foss"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 17,
+      "policy": "auto",
+      "preferred": "retorno",
+      "preferred_occurrences": 115,
+      "shared_prefix": 2,
+      "tokens": 1
+    },
+    {
+      "alias": "estratégias",
+      "concept_id": "entity.strategy",
+      "context_similarity": 0.3501,
+      "drift": 0.6499,
+      "examples": [
+        "or em operar praticamente livremente ativos e empregar estratégias, associada ao objetivo de se obter elevados retornos, ",
+        "Quando falamos em estratégias passivas de Renda Variável, podemos implementá-las da ",
+        "Para minimizar estes impactos, eles utilizam como estratégias derivativos para proteção de carteiras (em inglês, hed",
+        "Temos, em linhas gerais, dois tipos específicos de estratégias long and short: Long Extension (Posições Compradas) e "
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 31,
+      "policy": "auto",
+      "preferred": "estratégia",
+      "preferred_occurrences": 76,
+      "shared_prefix": 10,
+      "tokens": 1
+    },
+    {
+      "alias": "spreads",
+      "concept_id": "technical.spread",
+      "context_similarity": 0.3526,
+      "drift": 0.6474,
+      "examples": [
+        "preços dos CDS são frequentemente cotados em termos de spreads de crédito, o número implícito de pontos-base que o ve",
+        "Tais spreads de crédito são geralmente expressos em termos de uma c",
+        "uma curva de crédito, que demonstra a relação entre os spreads de crédito de títulos de diferentes vencimentos para o",
+        "Os spreads de CDS aproximam-se de zero à medida que o CDS se apro"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "spread",
+      "preferred_occurrences": 6,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "prefixada",
+      "concept_id": "technical.prefixed",
+      "context_similarity": 0.3575,
+      "drift": 0.6425,
+      "examples": [
+        "inanciada com preço fixo, é embutido uma taxa de juros prefixada).",
+        "on S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e ",
+        "em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada.",
+        "a) prefixada pela variação do preço de uma ação."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "prefixado",
+      "preferred_occurrences": 7,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "cotas",
+      "concept_id": "entity.fund_share",
+      "context_similarity": 0.3582,
+      "drift": 0.6418,
+      "examples": [
+        "m um período de carência de um ano antes que quaisquer cotas possam ser resgatadas.",
+        "m base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se ",
+        "Além disso, caso o fundo tenha mais de uma classe de cotas, cada classe deve obter seu próprio registro de funcio",
+        "ento pode prever a existência de diferentes classes de cotas, com direitos e obrigações distintos, devendo o admini"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 116,
+      "policy": "auto",
+      "preferred": "cota",
+      "preferred_occurrences": 16,
+      "shared_prefix": 4,
+      "tokens": 1
+    },
+    {
+      "alias": "fatores",
+      "concept_id": "entity.factor",
+      "context_similarity": 0.389,
+      "drift": 0.611,
+      "examples": [
+        "- Principais fatores de risco: risco de mercado e liquidez.",
+        "Falaremos de seis fatores relacionados à estruturação dessas áreas no que tange ",
+        " uma abordagem de análise de investimento que parte de fatores macroeconômicos, como PIB, emprego, tributação, taxas ",
+        "égia Bottom-up é oposta à Top-Down, uma vez que ignora fatores macroeconômicos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 24,
+      "policy": "auto",
+      "preferred": "fator",
+      "preferred_occurrences": 8,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "fluxos de caixa",
+      "concept_id": "entity.cash_flow",
+      "context_similarity": 0.3903,
+      "drift": 0.6097,
+      "examples": [
+        "agamento futuro específico, mas não têm necessidade de fluxos de caixa intermediários.",
+        "TM): É a taxa interna de retorno (TIR) dada ao ano dos fluxos de caixa do título, incluindo o valor da compra, os cupons e o ",
+        "O Swap Pode ocorrer trocas de dois fluxos de caixa com taxa pós (exemplo: CDI x IPCA) ou pré com pós (exe",
+        " e - Risco de reinvestimento: Investidores que recebem fluxos de caixa de derivativos podem ter que reinvesti-los em outros a"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 30,
+      "policy": "auto",
+      "preferred": "fluxo de caixa",
+      "preferred_occurrences": 14,
+      "shared_prefix": 5,
+      "tokens": 3
+    },
+    {
+      "alias": "perdas",
+      "concept_id": "quantity.loss",
+      "context_similarity": 0.3995,
+      "drift": 0.6005,
+      "examples": [
+        "égia de investimento que proteja a classe de riscos de perdas e volatilidade.",
+        "- Redução de perdas: a principal vantagem da gestão de riscos é a redução ",
+        "antagem da gestão de riscos é a redução das chances de perdas financeiras, operacionais ou reputacionais.",
+        "rante um período de tempo, gerando possíveis ganhos ou perdas ao investidor."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 26,
+      "policy": "auto",
+      "preferred": "perda",
+      "preferred_occurrences": 18,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "patrimônio",
+      "concept_id": "entity.net_assets",
+      "context_similarity": 0.4028,
+      "drift": 0.5972,
+      "examples": [
+        "Ele ainda tem 10% do patrimônio para aplicar em outros ativos.",
+        "ações distintos, devendo o administrador constituir um patrimônio segregado para cada classe de cotas.",
+        "- Cada patrimônio segregado responde somente por obrigações referentes à",
+        "ação ou a vinculação, a qualquer título, de parcela do patrimônio de uma classe de cotas a qualquer subclasse."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 14,
+      "policy": "auto",
+      "preferred": "patrimônio líquido",
+      "preferred_occurrences": 16,
+      "shared_prefix": 10,
+      "tokens": 1
+    },
+    {
+      "alias": "índices",
+      "concept_id": "entity.index",
+      "context_similarity": 0.4053,
+      "drift": 0.5947,
+      "examples": [
+        "Seus índices são considerados a referência para o setor de tecnolog",
+        "siderados para a carteira, preferindo ativos com altos índices P/L.",
+        "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500.",
+        "de, para com isso obter retornos capazes de superar os índices de mercado."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 14,
+      "policy": "auto",
+      "preferred": "índice",
+      "preferred_occurrences": 61,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "fundos",
+      "concept_id": "entity.fund",
+      "context_similarity": 0.4066,
+      "drift": 0.5934,
+      "examples": [
+        "úblicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+        "obrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem considerar ",
+        "Assim, ao analisar as informações somente dos fundos sobreviventes, podemos superestimar o desempenho histó",
+        "m fundo de investimento que investe em outros tipos de fundos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 67,
+      "policy": "auto",
+      "preferred": "fundo",
+      "preferred_occurrences": 66,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "derivativos",
+      "concept_id": "technical.derivative",
+      "context_similarity": 0.4115,
+      "drift": 0.5885,
+      "examples": [
+        "s de proteção embutidas, conforme visto no capítulo de derivativos.",
+        " para diversos produtos financeiros, como contratos de derivativos, linhas de crédito e empréstimos.",
+        "ade para investir em diversos ativos, tais como ações, derivativos, terrenos, imóveis, moedas, entre outros.",
+        "nimizar estes impactos, eles utilizam como estratégias derivativos para proteção de carteiras (em inglês, hedge)."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 29,
+      "policy": "auto",
+      "preferred": "derivativo",
+      "preferred_occurrences": 6,
+      "shared_prefix": 10,
+      "tokens": 1
+    },
+    {
+      "alias": "ações",
+      "concept_id": "entity.share",
+      "context_similarity": 0.419,
+      "drift": 0.581,
+      "examples": [
+        "de Valores é um mercado organizado e regulado, onde as ações são negociadas publicamente.",
+        "As empresas que listam suas ações em uma bolsa de valores devem cumprir certos requisito",
+        "ercado de Balcão é um mercado descentralizado, onde as ações são negociadas diretamente entre as partes (ou seja, s",
+        "lores, o que significa que as empresas que listam suas ações no mercado de balcão geralmente têm menos requisitos d"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 76,
+      "policy": "auto",
+      "preferred": "ação",
+      "preferred_occurrences": 20,
+      "shared_prefix": 2,
+      "tokens": 1
+    },
+    {
+      "alias": "vencimentos",
+      "concept_id": "temporal.maturity",
+      "context_similarity": 0.4195,
+      "drift": 0.5805,
+      "examples": [
+        "Os aceites bancários geralmente têm vencimentos que variam de 30 a 180 dias, dependendo do prazo de pa",
+        "os de diferentes instrumentos de dívida com diferentes vencimentos, classificações de crédito, emissores ou níveis de ris",
+        "s livre de risco (i) é constante e igual para todos os vencimentos (t), temos: Um conceito importante é o de , que é a di",
+        "ando da seguinte forma: ele é um contrato com diversos vencimentos, mas com valor final sempre de R$ 100.000,00."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 22,
+      "policy": "auto",
+      "preferred": "vencimento",
+      "preferred_occurrences": 43,
+      "shared_prefix": 10,
+      "tokens": 1
+    },
+    {
+      "alias": "cotistas",
+      "concept_id": "actor.quotaholder",
+      "context_similarity": 0.4376,
+      "drift": 0.5624,
+      "examples": [
+        "te os fundos nos quais investirá dinheiro dos próprios cotistas.",
+        "regulamento admite que as cotas sejam resgatadas pelos cotistas a qualquer momento.",
+        "lamento não admite que as cotas sejam resgatadas pelos cotistas.",
+        " classe de cotas, conferindo direitos e obrigações aos cotistas, conforme previstos no regulamento."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 29,
+      "policy": "auto",
+      "preferred": "cotista",
+      "preferred_occurrences": 19,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "fundo de investimento",
+      "concept_id": "entity.fund",
+      "context_similarity": 0.4792,
+      "drift": 0.5208,
+      "examples": [
+        "Trata-se de um fundo de investimento que investe em outros tipos de fundos.",
+        "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gestor aloca os recursos em outros fundos.",
+        "O fundo de investimento é uma comunhão de recursos, constituído sob a forma de",
+        "O regulamento do fundo de investimento pode prever a existência de diferentes classes de cota"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 18,
+      "policy": "auto",
+      "preferred": "fundo",
+      "preferred_occurrences": 66,
+      "shared_prefix": 5,
+      "tokens": 3
+    },
+    {
+      "alias": "gestores",
+      "concept_id": "actor.portfolio_manager",
+      "context_similarity": 0.4813,
+      "drift": 0.5187,
+      "examples": [
+        "os, seu trabalho é muito focado no conhecimento desses gestores em que ele está avaliando investir.",
+        "ssim, enquanto a estratégia long and short permite aos gestores lucrar com as tendências de mercado e até mesmo alavan",
+        "esse estilo se aproxima da gestão ativa ao permitir ao gestores certos desvios do índice de referência, com o objetivo",
+        "o, pois é possível aproveitar diferentes expertises de gestores e, de preferência, que possuam retornos negativamente "
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 27,
+      "policy": "auto",
+      "preferred": "gestor",
+      "preferred_occurrences": 127,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "retornos",
+      "concept_id": "quantity.return",
+      "context_similarity": 0.4924,
+      "drift": 0.5076,
+      "examples": [
+        "stratégias, associada ao objetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco",
+        "alisar antes de investir em Hedge Funds é verificar os retornos médios do mercado como um todo.",
+        "ção e menor exposição à volatilidade do mercado, esses retornos podem ser impactados negativamente pelo acúmulo de tax",
+        "usada para diversificação ao invés de busca de maiores retornos."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 63,
+      "policy": "auto",
+      "preferred": "retorno",
+      "preferred_occurrences": 115,
+      "shared_prefix": 7,
+      "tokens": 1
+    },
+    {
+      "alias": "desvio padrão",
+      "concept_id": "quantity.volatility",
+      "context_similarity": 0.5005,
+      "drift": 0.4995,
+      "examples": [
+        "Neste caso, é utilizado o cálculo de desvio padrão dos retornos do investimento; ou - Volatilidade IMPLÍC",
+        "latilidade ou oscilação) de um ativo; - Quanto maior o desvio padrão/variância, maior será o risco do investimento (mais el",
+        "o de Confiança de 95% (a = 1,65), horizonte de 1 mês e desvio padrão dos retornos para este período da carteira sendo de 5%",
+        "tatísticas históricas através do risco total do ativo (desvio padrão)."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 8,
+      "policy": "auto",
+      "preferred": "volatilidade",
+      "preferred_occurrences": 28,
+      "shared_prefix": 0,
+      "tokens": 2
+    },
+    {
+      "alias": "variações",
+      "concept_id": "quantity.variation",
+      "context_similarity": 0.5261,
+      "drift": 0.4739,
+      "examples": [
+        "Prazo overnight: ao contrário da Libor, que podia ter variações para diferentes prazos, a SOFR é específica para empré",
+        "a no cálculo resultante da divisão entre as médias das variações dos períodos que registraram alta pela média das varia",
+        "ações dos períodos que registraram alta pela média das variações dos períodos que registraram quedas.",
+        "ser adequada às características da classe de cotas, às variações históricas dos cenários eleitos para o teste e às cond"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 15,
+      "policy": "auto",
+      "preferred": "variação",
+      "preferred_occurrences": 22,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "carteiras",
+      "concept_id": "entity.portfolio",
+      "context_similarity": 0.5308,
+      "drift": 0.4692,
+      "examples": [
+        "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo qualquer investimento d",
+        "utilizam como estratégias derivativos para proteção de carteiras (em inglês, hedge).",
+        "de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking er",
+        "Long Extension são carteiras que tipicamente tem a restrição de uma exposição."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 32,
+      "policy": "auto",
+      "preferred": "carteira",
+      "preferred_occurrences": 175,
+      "shared_prefix": 8,
+      "tokens": 1
+    },
+    {
+      "alias": "preços",
+      "concept_id": "quantity.price",
+      "context_similarity": 0.5309,
+      "drift": 0.4691,
+      "examples": [
+        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face.",
+        "Esta diferença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
+        "Este índice é ponderado por preços e não por capitalização.",
+        "o Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a "
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 50,
+      "policy": "auto",
+      "preferred": "preço",
+      "preferred_occurrences": 96,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "opção de venda",
+      "concept_id": "technical.option",
+      "context_similarity": 0.5687,
+      "drift": 0.4313,
+      "examples": [
+        "r de volta o título ao emissor, uma vez que possui uma opção de venda.",
+        "alitário no caso de alienação de controle, por meio de opção de venda da totalidade das ações emitidas pela companhia ao adq",
+        ": por sua vez, o lançador pode vender o título com uma opção de venda embutida, favorecendo agora o investidor.",
+        "Isso porque o comprador desse título pode exercer sua opção de venda e “devolvê-lo” ao emissor."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 7,
+      "policy": "auto",
+      "preferred": "opção de compra",
+      "preferred_occurrences": 9,
+      "shared_prefix": 9,
+      "tokens": 3
+    },
+    {
+      "alias": "títulos",
+      "concept_id": "entity.security",
+      "context_similarity": 0.5911,
+      "drift": 0.4089,
+      "examples": [
+        "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas ",
+        "bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
+        "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto",
+        "Os títulos dos EUA ainda são uma das opções mais seguras, pois te"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 115,
+      "policy": "auto",
+      "preferred": "título",
+      "preferred_occurrences": 126,
+      "shared_prefix": 6,
+      "tokens": 1
+    },
+    {
+      "alias": "cupons",
+      "concept_id": "entity.coupon",
+      "context_similarity": 0.6996,
+      "drift": 0.3004,
+      "examples": [
+        "Os outros cupons serão calculados da mesma forma, sobre o valor de face",
+        "os de caixa do título, incluindo o valor da compra, os cupons e o valor no vencimento, considerada a taxa de mercado",
+        "Porém, havendo cupons e quanto maior o pagamento do cupom for, maior o risco",
+        " movimento inverso é que os títulos muitas vezes pagam cupons fixos e a alta da inflação diminui o número de bens e "
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 11,
+      "policy": "auto",
+      "preferred": "cupom",
+      "preferred_occurrences": 43,
+      "shared_prefix": 4,
+      "tokens": 1
+    },
+    {
+      "alias": "setores",
+      "concept_id": "entity.sector",
+      "context_similarity": 0.7173,
+      "drift": 0.2827,
+      "examples": [
+        "no mercado norte-americano são classificadas em vários setores.",
+        "Além desses setores, existem muitos outros setores importantes no mercado ",
+        "Além desses setores, existem muitos outros setores importantes no mercado de ações dos EUA, incluindo o s",
+        " receitas e lucros mais estáveis do que as empresas de setores mais voláteis, como o setor de tecnologia."
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 23,
+      "policy": "auto",
+      "preferred": "setor",
+      "preferred_occurrences": 45,
+      "shared_prefix": 5,
+      "tokens": 1
+    },
+    {
+      "alias": "taxas",
+      "concept_id": "quantity.rate",
+      "context_similarity": 0.7891,
+      "drift": 0.2109,
+      "examples": [
+        "às suas necessidades específicas, incluindo itens como taxas de juros e estruturas de reembolso.",
+        "btenção de recursos no mercado, a um custo inferior às taxas praticadas pelos bancos.",
+        " elevados, sendo feitos através de bancos, podendo ter taxas de juros fixas ou flutuantes.",
+        "A DE PUT EMBUTIDA beneficia O INVESTIDOR, pois caso as taxas de juros subam, ele poderá vender o título de volta pa"
+      ],
+      "language": "pt-BR",
+      "likely_variant": true,
+      "occurrences": 102,
+      "policy": "auto",
+      "preferred": "taxa",
+      "preferred_occurrences": 174,
+      "shared_prefix": 4,
+      "tokens": 1
+    }
+  ],
+  "drift_distribution": {
+    "mean": 0.6809,
+    "median": 0.6948,
+    "p75": 0.8163,
+    "p90": 0.8553,
+    "stdev": 0.1627
+  },
+  "pairs_compared": 63,
+  "registry": {
+    "concepts": 257,
+    "version": "2.6.0"
+  },
+  "schema_version": "sense-drift-v1",
+  "suspects": [
+    {
+      "alias": "passiva",
+      "concept_id": "technical.passive_management",
+      "context_similarity": 0.1802,
+      "drift": 0.8198,
+      "examples": [
+        "és deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência:",
+        " retornos superiores àqueles proporcionados pela parte passiva do portfólio (núcleo).",
+        "ark: isso faz com que o benchmark seja uma alternativa passiva válida para o gestor ativo.",
+        "ctos da alocação ativa com características da alocação passiva."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 5,
+      "policy": "auto",
+      "preferred": "gestão passiva",
+      "preferred_occurrences": 10,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "performance",
+      "concept_id": "quantity.performance",
+      "context_similarity": 0.2248,
+      "drift": 0.7752,
+      "examples": [
+        ", expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, para as ",
+        "com 20, ou seja, taxa de administração de 2% e taxa de performance de 20%.",
+        "Já a taxa de performance incide sobre os ganhos do fundo, uma vez que dificilme",
+        "- Permitida a cobrança de taxa performance."
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 25,
+      "policy": "auto",
+      "preferred": "desempenho",
+      "preferred_occurrences": 33,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "ISR",
+      "concept_id": "technical.esg",
+      "context_similarity": 0.2349,
+      "drift": 0.7651,
+      "examples": [
+        "Os investimentos socialmente responsáveis (ISR) são aqueles que buscam conciliar o retorno financeiro",
+        "Em outras palavras, ao investir em ISR, o investidor busca não apenas ter lucro, mas também c",
+        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investime",
+        "Vantagens de investir em ISR: - Diversificação: Os investimentos em ISR podem ser u"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 9,
+      "policy": "auto",
+      "preferred": "ASG",
+      "preferred_occurrences": 15,
+      "shared_prefix": 1,
+      "tokens": 1
+    },
+    {
+      "alias": "rentabilidade",
+      "concept_id": "quantity.return",
+      "context_similarity": 0.3439,
+      "drift": 0.6561,
+      "examples": [
+        "Por exemplo, se um investidor obteve rentabilidade de 10% em um período, devendo pagar 20% sobre ganhos d",
+        " por questões custos, impostos, dinâmica de cálculo da rentabilidade do fundo, regras de contabilização a mercado e necessi",
+        "- Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patrimonial.",
+        "ações, que cobre determinado período, para verificar a rentabilidade que seria produzida por determinada estratégia se foss"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 17,
+      "policy": "auto",
+      "preferred": "retorno",
+      "preferred_occurrences": 115,
+      "shared_prefix": 2,
+      "tokens": 1
+    },
+    {
+      "alias": "ações",
+      "concept_id": "entity.share",
+      "context_similarity": 0.419,
+      "drift": 0.581,
+      "examples": [
+        "de Valores é um mercado organizado e regulado, onde as ações são negociadas publicamente.",
+        "As empresas que listam suas ações em uma bolsa de valores devem cumprir certos requisito",
+        "ercado de Balcão é um mercado descentralizado, onde as ações são negociadas diretamente entre as partes (ou seja, s",
+        "lores, o que significa que as empresas que listam suas ações no mercado de balcão geralmente têm menos requisitos d"
+      ],
+      "language": "pt-BR",
+      "likely_variant": false,
+      "occurrences": 76,
+      "policy": "auto",
+      "preferred": "ação",
+      "preferred_occurrences": 20,
+      "shared_prefix": 2,
+      "tokens": 1
+    }
+  ]
+}

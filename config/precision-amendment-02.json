@@ -1,0 +1,18 @@
+{
+  "id": "precision-sweep-amendment-02",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; residual verified after amendment 01",
+  "method": "re-verification of amendment 01 against the same corpus sentences; `principal` still matched through its English twin",
+  "reason": "A demotion is a statement about a surface, not about a language slot. Amendment 01 demoted `principal` in pt-BR only, so the identical English form kept matching Portuguese text.",
+  "operations": [
+    {
+      "op": "demote", "concept": "technical.principal", "language": "en", "form": "principal",
+      "wrong": 18, "total": 28,
+      "why": "The same 18 wrong occurrences amendment 01 measured. `principal` is spelled identically in both languages, so the matcher tags it `shared` and the English entry alone was enough to keep every false positive alive."
+    },
+    {
+      "op": "add_form", "concept": "technical.principal", "language": "en", "form": "principal amount",
+      "why": "Restores an automatic English anchor for the concept after the bare form is demoted."
+    }
+  ]
+}

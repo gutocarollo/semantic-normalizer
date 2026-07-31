@@ -1,0 +1,201 @@
+{
+  "batch": 7,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Batch 6 cut the compound-fragment cluster from 155 events to 69, and re-running scripts/find_compound_fragments.py showed the remainder is the same shape: more English compounds the material uses that the dictionary did not contain. `Sterling Overnight Index Average` is SONIA, `Internal Rate of Return` is the IRR, `Moving Average Convergence Divergence` is the MACD indicator. Each is CGA exam content in its own right, so registering them serves the objective directly and removes the fragment match as a by-product rather than as the goal.",
+  "concepts": [
+    {
+      "id": "technical.estr",
+      "en": "euro short-term rate",
+      "pt": "euro short-term rate",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The euro area overnight reference rate published by the European Central Bank from real transactions.",
+      "alt_en": [
+        "ESTR",
+        "€STR"
+      ],
+      "alt_pt": [
+        "ESTR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "technical.irr",
+      "en": "internal rate of return",
+      "pt": "taxa interna de retorno",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The discount rate at which the present value of a cash flow stream equals zero.",
+      "alt_en": [
+        "IRR"
+      ],
+      "alt_pt": [
+        "TIR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#08-matematica-financeira"
+    },
+    {
+      "id": "technical.twrr",
+      "en": "time weighted rate of return",
+      "pt": "retorno ponderado pelo tempo",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The return that removes the effect of external cash flows, measuring the manager rather than the investor.",
+      "alt_en": [
+        "TWRR"
+      ],
+      "alt_pt": [
+        "TWRR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#13-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.sonia",
+      "en": "sterling overnight index average",
+      "pt": "sterling overnight index average",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The sterling overnight reference rate that replaced Libor in the United Kingdom.",
+      "alt_en": [
+        "SONIA"
+      ],
+      "alt_pt": [
+        "SONIA"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "technical.eonia",
+      "en": "euro overnight index average",
+      "pt": "euro overnight index average",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The former euro overnight reference rate, discontinued in favour of ESTR.",
+      "alt_en": [
+        "EONIA"
+      ],
+      "alt_pt": [
+        "EONIA"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    },
+    {
+      "id": "technical.macd",
+      "en": "moving average convergence divergence",
+      "pt": "moving average convergence divergence",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The technical indicator built from moving averages that signals trend changes.",
+      "alt_en": [
+        "MACD"
+      ],
+      "alt_pt": [
+        "MACD"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#12-analise-tecnica"
+    },
+    {
+      "id": "technical.yield_spread",
+      "en": "yield spread",
+      "pt": "yield spread",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The difference in yield between two securities, usually of different credit quality or maturity.",
+      "alt_pt": [
+        "spread de rendimento"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#14-risco-de-credito"
+    },
+    {
+      "id": "technical.yield_to_put",
+      "en": "yield to put",
+      "pt": "yield to put",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The return of a putable security assuming the holder exercises the put at the first opportunity.",
+      "alt_en": [
+        "YTP"
+      ],
+      "alt_pt": [
+        "YTP"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#08-matematica-financeira"
+    },
+    {
+      "id": "technical.spread_duration",
+      "en": "spread duration",
+      "pt": "spread duration",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The sensitivity of a security's price to a change in its credit spread.",
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.expected_default_probability",
+      "en": "expected default probability",
+      "pt": "probabilidade esperada de inadimplência",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The likelihood that a counterparty fails to meet its obligation within a horizon.",
+      "alt_en": [
+        "EDF"
+      ],
+      "alt_pt": [
+        "EDF"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#14-risco-de-credito"
+    },
+    {
+      "id": "technical.modified_duration",
+      "en": "modified duration",
+      "pt": "duration modificada",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Macaulay duration divided by one plus the yield, giving the percentage price change per unit of yield.",
+      "technical": true,
+      "authority": "apostila-cga-2026#10-gestao-de-carteiras"
+    },
+    {
+      "id": "technical.benchmark_var",
+      "en": "benchmark var",
+      "pt": "benchmark var",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Value at Risk measured against a benchmark rather than against zero.",
+      "alt_en": [
+        "B-VaR"
+      ],
+      "alt_pt": [
+        "B-VaR"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#14-gestao-de-riscos"
+    },
+    {
+      "id": "technical.strips",
+      "en": "separate trading of registered interest and principal securities",
+      "pt": "strips",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A security created by splitting the coupon and principal payments of an existing Treasury bond.",
+      "alt_en": [
+        "STRIPS"
+      ],
+      "alt_pt": [
+        "STRIPS"
+      ],
+      "technical": true,
+      "authority": "apostila-cga-2026#09-titulos-internacionais"
+    }
+  ]
+}

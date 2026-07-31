@@ -1,0 +1,1512 @@
+{
+  "clusters": [
+    {
+      "alias": "dívida",
+      "concept_id": "entity.debt",
+      "distance_mean": 0.7442,
+      "distance_stdev": 0.0816,
+      "occurrences": 33,
+      "outlier_z": 2.5,
+      "outliers": [
+        {
+          "distance": 0.9479,
+          "quote": "Com isso, o dívida passará a estar valendo U$ 100.940,00."
+        },
+        {
+          "distance": 0.8467,
+          "quote": "ia do devedor, o vendedor do CDS paga ao comprador o valor da dívida."
+        },
+        {
+          "distance": 0.8352,
+          "quote": "a entraram em moratória, ou seja, nunca deixou de pagar a sua dívida."
+        },
+        {
+          "distance": 0.8189,
+          "quote": "s novos exigirão um maior prêmio para investir nos títulos de dívida desta companhia."
+        },
+        {
+          "distance": 0.8022,
+          "quote": "Por exemplo, ele pode emitir um título de dívida prefixado em 10% com uma call embutida."
+        }
+      ]
+    },
+    {
+      "alias": "empresa",
+      "concept_id": "actor.company",
+      "distance_mean": 0.8072,
+      "distance_stdev": 0.0668,
+      "occurrences": 46,
+      "outlier_z": 2.14,
+      "outliers": [
+        {
+          "distance": 0.9499,
+          "quote": "Após alguns dias, a empresa valoriza 100%."
+        },
+        {
+          "distance": 0.9292,
+          "quote": "Geralmente está associada a momentos em que as finanças da empresa estão deterioradas."
+        },
+        {
+          "distance": 0.9292,
+          "quote": "nte com os “fundamentos econômicos”, ou seja, os múltiplos da empresa."
+        },
+        {
+          "distance": 0.8844,
+          "quote": "No entanto, no caso de falência de uma empresa, estes acionistas são o último a receber um possíve"
+        },
+        {
+          "distance": 0.8844,
+          "quote": "Por exemplo, ter 20% de uma empresa, já que se ele desejar vender sua posição, precisar"
+        }
+      ]
+    },
+    {
+      "alias": "estratégia",
+      "concept_id": "entity.strategy",
+      "distance_mean": 0.8163,
+      "distance_stdev": 0.0794,
+      "occurrences": 76,
+      "outlier_z": 2.0,
+      "outliers": [
+        {
+          "distance": 0.9753,
+          "quote": "Não há um consenso sobre se uma estratégia é melhor do que a outra."
+        },
+        {
+          "distance": 0.9572,
+          "quote": "Para isso, essa estratégia implica rebalanceamentos constantes."
+        },
+        {
+          "distance": 0.9346,
+          "quote": "Essa estratégia poderia ser implementada, por exemplo, vendendo LFT"
+        },
+        {
+          "distance": 0.9293,
+          "quote": "Vamos primeiro pensar em uma estratégia geral e, na sequência, falamos de estratégias mais "
+        },
+        {
+          "distance": 0.9193,
+          "quote": " se faz é testar diferentes valores para os parâmetros de uma estratégia entre um período (Ex."
+        }
+      ]
+    },
+    {
+      "alias": "juros",
+      "concept_id": "instrument.interest",
+      "distance_mean": 0.6936,
+      "distance_stdev": 0.1513,
+      "occurrences": 187,
+      "outlier_z": 1.93,
+      "outliers": [
+        {
+          "distance": 0.9857,
+          "quote": "Porém, já vimos que este MAIS significa vezes por ser de juros compostos."
+        },
+        {
+          "distance": 0.9856,
+          "quote": "i um empréstimo que Rafael fez no qual recebeu R$ 1.000,00 de juros."
+        },
+        {
+          "distance": 0.9586,
+          "quote": "ro emprestado de investidores e concorda em reembolsá-los com juros durante um determinado período."
+        },
+        {
+          "distance": 0.9547,
+          "quote": " de uma conta, em oposição aos fluxos de caixa internos, como juros ou dividendos."
+        },
+        {
+          "distance": 0.9535,
+          "quote": "mbém seriam beneficiadas (por uma queda, ainda que menor, dos juros curtos)."
+        }
+      ]
+    },
+    {
+      "alias": "estratégias",
+      "concept_id": "entity.strategy",
+      "distance_mean": 0.7538,
+      "distance_stdev": 0.09,
+      "occurrences": 31,
+      "outlier_z": 1.91,
+      "outliers": [
+        {
+          "distance": 0.9257,
+          "quote": "R$ 50 milhões com cada um deles, que irão gerir sua parte com estratégias diferentes."
+        },
+        {
+          "distance": 0.8713,
+          "quote": "lização de backtesting representa um poderoso meio de avaliar estratégias e selecionar as melhores."
+        },
+        {
+          "distance": 0.8598,
+          "quote": "forma, um gestor pode administrar a carteira combinando ambas estratégias."
+        },
+        {
+          "distance": 0.857,
+          "quote": "Ao contrário, ele implementa estratégias com base em suas premissas visando justamente a sup"
+        },
+        {
+          "distance": 0.857,
+          "quote": "Dentro dos rebalanceamento, veremos as três estratégias cobradas no Exame: - Buy-and-Hold; - Constant Mix; "
+        }
+      ]
+    },
+    {
+      "alias": "carteira",
+      "concept_id": "entity.portfolio",
+      "distance_mean": 0.8161,
+      "distance_stdev": 0.0867,
+      "occurrences": 175,
+      "outlier_z": 1.89,
+      "outliers": [
+        {
+          "distance": 0.98,
+          "quote": "Então, como fazemos para imunizar a carteira?"
+        },
+        {
+          "distance": 0.962,
+          "quote": "Quando temos uma carteira com apenas um passivo, a imunização tende a ser mai"
+        },
+        {
+          "distance": 0.9615,
+          "quote": "Seria como decompor a carteira em várias imunizações de carteiras com um único pas"
+        },
+        {
+          "distance": 0.9572,
+          "quote": "Porém, como a carteira bullet está concentrada em um único vencimento no m"
+        },
+        {
+          "distance": 0.9536,
+          "quote": "Porém, quando temos uma carteira com múltiplos vencimentos, a imunização já se torna"
+        }
+      ]
+    },
+    {
+      "alias": "títulos",
+      "concept_id": "entity.security",
+      "distance_mean": 0.7893,
+      "distance_stdev": 0.0964,
+      "occurrences": 115,
+      "outlier_z": 1.85,
+      "outliers": [
+        {
+          "distance": 0.9676,
+          "quote": "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as"
+        },
+        {
+          "distance": 0.9676,
+          "quote": "Além disso, tais títulos devem ser custodiados em entidades habilitadas a pr"
+        },
+        {
+          "distance": 0.9515,
+          "quote": "SOLUÇÃO: Primeiramente, devemos saber que as debêntures são títulos que são emitidas por R$ 1.000,00."
+        },
+        {
+          "distance": 0.9468,
+          "quote": "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos."
+        },
+        {
+          "distance": 0.9415,
+          "quote": " repassados para o vendedor repo, já que o comprador detém os títulos como colateral (garantia)."
+        }
+      ]
+    },
+    {
+      "alias": "preços",
+      "concept_id": "quantity.price",
+      "distance_mean": 0.7766,
+      "distance_stdev": 0.0873,
+      "occurrences": 50,
+      "outlier_z": 1.82,
+      "outliers": [
+        {
+          "distance": 0.9355,
+          "quote": "Este índice é ponderado por preços e não por capitalização."
+        },
+        {
+          "distance": 0.9087,
+          "quote": " afetado negativamente devido a uma elevação generalizada dos preços."
+        },
+        {
+          "distance": 0.9012,
+          "quote": "Os preços dos CDS são frequentemente cotados em termos de spr"
+        },
+        {
+          "distance": 0.8973,
+          "quote": "É uma operação que visa lucrar em virtude da distorção destes preços."
+        },
+        {
+          "distance": 0.8944,
+          "quote": "ecompra e sobrevenda e, assim, prever potenciais reversões de preços."
+        }
+      ]
+    },
+    {
+      "alias": "administrador",
+      "concept_id": "actor.administrator",
+      "distance_mean": 0.7296,
+      "distance_stdev": 0.0919,
+      "occurrences": 35,
+      "outlier_z": 1.8,
+      "outliers": [
+        {
+          "distance": 0.8955,
+          "quote": "esmo prazo, de modo isolado ou conjuntamente ao expediente do administrador."
+        },
+        {
+          "distance": 0.8696,
+          "quote": "O administrador deve manter o regulamento disponível ao cotista, o "
+        },
+        {
+          "distance": 0.8686,
+          "quote": " potencial deve se basear em modelo de cálculo de garantia do administrador, consistente e passível de verificação, e não pode "
+        },
+        {
+          "distance": 0.8522,
+          "quote": "do cotista), sendo que o responsável por seu recolhimento é o administrador, tendo que recolher até o 3º dia útil subsequente a"
+        },
+        {
+          "distance": 0.8403,
+          "quote": "- Os membros dos conselhos ou comitês devem informar ao administrador, e este aos cotistas, qualquer situação que os colo"
+        }
+      ]
+    },
+    {
+      "alias": "título",
+      "concept_id": "entity.security",
+      "distance_mean": 0.7073,
+      "distance_stdev": 0.151,
+      "occurrences": 125,
+      "outlier_z": 1.77,
+      "outliers": [
+        {
+          "distance": 0.9751,
+          "quote": "Porém, suponha que ele aplicou seus recursos em um título isento de imposto."
+        },
+        {
+          "distance": 0.9642,
+          "quote": "ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido."
+        },
+        {
+          "distance": 0.9642,
+          "quote": "s do pagamento dos cupons e amortizações intermediárias de um título."
+        },
+        {
+          "distance": 0.9602,
+          "quote": "É desta forma, que avaliamos o quanto devemos pagar em um título que já foi emitido."
+        },
+        {
+          "distance": 0.9518,
+          "quote": "iáveis definidas acima (1) e (2), basta utilizamos o prazo do título e clicar em PV."
+        }
+      ]
+    },
+    {
+      "alias": "cotas",
+      "concept_id": "entity.fund_share",
+      "distance_mean": 0.7211,
+      "distance_stdev": 0.1386,
+      "occurrences": 116,
+      "outlier_z": 1.77,
+      "outliers": [
+        {
+          "distance": 0.966,
+          "quote": " Amortização: pagamento em dinheiro e diminuição do número de cotas."
+        },
+        {
+          "distance": 0.9557,
+          "quote": "e impõem um período de carência de um ano antes que quaisquer cotas possam ser resgatadas."
+        },
+        {
+          "distance": 0.9557,
+          "quote": "A integralização de cotas deve ser realizada em moeda corrente nacional, ress"
+        },
+        {
+          "distance": 0.9478,
+          "quote": "No entanto, suas cotas não podem ser transferidas (não podem ser vendidas,"
+        },
+        {
+          "distance": 0.9462,
+          "quote": "erir vantagem, para si ou para outrem, mediante negociação de cotas em mercados organizados."
+        }
+      ]
+    },
+    {
+      "alias": "retorno",
+      "concept_id": "quantity.return",
+      "distance_mean": 0.771,
+      "distance_stdev": 0.1168,
+      "occurrences": 115,
+      "outlier_z": 1.76,
+      "outliers": [
+        {
+          "distance": 0.9765,
+          "quote": "c) pré ou pós fixada pelo retorno de uma ação."
+        },
+        {
+          "distance": 0.9589,
+          "quote": "Supondo alíquota de imposto de 20%, o retorno equivalente seria de:"
+        },
+        {
+          "distance": 0.958,
+          "quote": "Os gestores devem assumir os riscos necessários para gerar retorno."
+        },
+        {
+          "distance": 0.9575,
+          "quote": "tenha seu rating melhorado, os investidores novos exigirão um retorno menor para investir nos mesmos tipos de dívidas."
+        },
+        {
+          "distance": 0.9472,
+          "quote": " e a precificação dos instrumentos utilizados podem reduzir o retorno final."
+        }
+      ]
+    },
+    {
+      "alias": "recursos",
+      "concept_id": "entity.resource",
+      "distance_mean": 0.7776,
+      "distance_stdev": 0.0859,
+      "occurrences": 43,
+      "outlier_z": 1.76,
+      "outliers": [
+        {
+          "distance": 0.9291,
+          "quote": "Porém, suponha que ele aplicou seus recursos em um título isento de imposto."
+        },
+        {
+          "distance": 0.915,
+          "quote": "Isso significa que o emissor pode captar recursos sempre que necessário dentro dos parâmetros do prog"
+        },
+        {
+          "distance": 0.9094,
+          "quote": "ida do capital próprio do banco, não será o mesmo que gere os recursos dos clientes."
+        },
+        {
+          "distance": 0.888,
+          "quote": "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor para outro."
+        },
+        {
+          "distance": 0.888,
+          "quote": "Logo, administradores de recursos podem manipular o resultado ao eventualmente escolh"
+        }
+      ]
+    },
+    {
+      "alias": "contrato",
+      "concept_id": "entity.contract",
+      "distance_mean": 0.7211,
+      "distance_stdev": 0.1081,
+      "occurrences": 32,
+      "outlier_z": 1.74,
+      "outliers": [
+        {
+          "distance": 0.9088,
+          "quote": "olicitar o depósito de mais margem para garantir a posição no contrato."
+        },
+        {
+          "distance": 0.8659,
+          "quote": ", assim como aquelas previstas no regulamento e no respectivo contrato de prestação de serviços."
+        },
+        {
+          "distance": 0.8648,
+          "quote": " devendo o prestador de serviços essencial, ainda, figurar no contrato como interveniente anuente."
+        },
+        {
+          "distance": 0.8612,
+          "quote": "Com isso, Rafael deveria comprar o contrato para ter um ágio."
+        },
+        {
+          "distance": 0.8506,
+          "quote": "Este contrato consiste em negociar a cesta de ações composta do í"
+        }
+      ]
+    },
+    {
+      "alias": "vencimento",
+      "concept_id": "temporal.maturity",
+      "distance_mean": 0.7383,
+      "distance_stdev": 0.1047,
+      "occurrences": 43,
+      "outlier_z": 1.73,
+      "outliers": [
+        {
+          "distance": 0.9198,
+          "quote": "a diferentes prazos, a SOFR é específica para empréstimos com vencimento no dia seguinte (overnight)."
+        },
+        {
+          "distance": 0.915,
+          "quote": "rma que se tenha quantidades aproximadamente iguais para cada vencimento."
+        },
+        {
+          "distance": 0.8961,
+          "quote": " é a diferença entre o preço futuro de uma mercadoria para um vencimento qualquer e o seu preço a vista."
+        },
+        {
+          "distance": 0.8677,
+          "quote": "de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento."
+        },
+        {
+          "distance": 0.8547,
+          "quote": "Chama-se bullet (bala), pois foca-se justamente no vencimento em que ocorre o passivo e procura-se ativos que ven"
+        }
+      ]
+    },
+    {
+      "alias": "gestor",
+      "concept_id": "actor.portfolio_manager",
+      "distance_mean": 0.8181,
+      "distance_stdev": 0.0806,
+      "occurrences": 127,
+      "outlier_z": 1.72,
+      "outliers": [
+        {
+          "distance": 0.9568,
+          "quote": "Por exemplo, o gestor que cuida do capital próprio do banco, não será o m"
+        },
+        {
+          "distance": 0.9506,
+          "quote": "Desta forma, se o gestor acredita que o cenário para os próximos meses não s"
+        },
+        {
+          "distance": 0.9493,
+          "quote": "❑ EXEMPLOS: gestor tecla um zero a mais quando envia uma ordem para a "
+        },
+        {
+          "distance": 0.9442,
+          "quote": "Para isso, a referência utilizada é o gestor mediano desse universo."
+        },
+        {
+          "distance": 0.9437,
+          "quote": "Assim, o gestor precisa confiar nos profissionais que fazem esse le"
+        }
+      ]
+    },
+    {
+      "alias": "renda fixa",
+      "concept_id": "entity.fixed_income",
+      "distance_mean": 0.7364,
+      "distance_stdev": 0.0974,
+      "occurrences": 46,
+      "outlier_z": 1.71,
+      "outliers": [
+        {
+          "distance": 0.9032,
+          "quote": ", a imunização das carteiras é um grande desafio ao gestor de renda fixa."
+        },
+        {
+          "distance": 0.8715,
+          "quote": "tar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa."
+        },
+        {
+          "distance": 0.8706,
+          "quote": "ora falar de quatro tipos muito importantes de estratégias de renda fixa que servem para imunizar carteiras: Barbell, Bullet"
+        },
+        {
+          "distance": 0.8701,
+          "quote": "derá investir 33% em outras modalidades, como por exemplo, em renda fixa."
+        },
+        {
+          "distance": 0.8698,
+          "quote": "- IOF: Sua cobrança funciona exatamente igual aos ativos de renda fixa: tabela regressiva, zerando no 30º dia."
+        }
+      ]
+    },
+    {
+      "alias": "índice",
+      "concept_id": "entity.index",
+      "distance_mean": 0.7743,
+      "distance_stdev": 0.1019,
+      "occurrences": 61,
+      "outlier_z": 1.69,
+      "outliers": [
+        {
+          "distance": 0.9462,
+          "quote": "Este índice é ponderado por preços e não por capitalização."
+        },
+        {
+          "distance": 0.9375,
+          "quote": "Esse índice varia de 0 a 100, e é considerado o seu maior valor"
+        },
+        {
+          "distance": 0.9193,
+          "quote": "res fundamentalistas, como por exemplo, um baixo numerador do índice P/L ou do EV / EBITDA, ou um alto numerador do divi"
+        },
+        {
+          "distance": 0.9068,
+          "quote": "Algumas vezes, usa-se benchmarks de índice como, por exemplo, o Ibovespa ou o CDI."
+        },
+        {
+          "distance": 0.8929,
+          "quote": "Nasdaq 100: índice composto pelas 100 maiores empresas não financeiras"
+        }
+      ]
+    },
+    {
+      "alias": "taxas",
+      "concept_id": "quantity.rate",
+      "distance_mean": 0.6918,
+      "distance_stdev": 0.1633,
+      "occurrences": 102,
+      "outlier_z": 1.66,
+      "outliers": [
+        {
+          "distance": 0.9622,
+          "quote": "Nas classes abertas, as taxas devidas aos prestadores de serviços devem ser provi"
+        },
+        {
+          "distance": 0.96,
+          "quote": " livremente pactuados entre as partes, portanto, no início as taxas são estabelecidas por equilíbrio financeiro (equiva"
+        },
+        {
+          "distance": 0.9484,
+          "quote": "Com o aumento das taxas em todos os vencimentos, os valores presentes serão"
+        },
+        {
+          "distance": 0.9481,
+          "quote": "sificação por investir em várias empresas; e - Geralmente têm taxas de administração baixas"
+        },
+        {
+          "distance": 0.9416,
+          "quote": "- Custos: taxas de administração e outras despesas podem ser mais e"
+        }
+      ]
+    },
+    {
+      "alias": "CVM",
+      "concept_id": "actor.cvm",
+      "distance_mean": 0.7567,
+      "distance_stdev": 0.1,
+      "occurrences": 43,
+      "outlier_z": 1.66,
+      "outliers": [
+        {
+          "distance": 0.9229,
+          "quote": "forma que poderiam ter mudanças na sua nomenclatura perante a CVM."
+        },
+        {
+          "distance": 0.9126,
+          "quote": "Ocorrendo o reenquadramento, deve-se informar a CVM."
+        },
+        {
+          "distance": 0.9049,
+          "quote": "uas alterações), definiu regras diferentes das definidas pela CVM."
+        },
+        {
+          "distance": 0.9009,
+          "quote": "de recursos de terceiros que seja devidamente habilitado pela CVM para esta atividade."
+        },
+        {
+          "distance": 0.8958,
+          "quote": " que não seja autorizado pelo Banco Central do Brasil ou pela CVM."
+        }
+      ]
+    },
+    {
+      "alias": "ações",
+      "concept_id": "entity.share",
+      "distance_mean": 0.7867,
+      "distance_stdev": 0.1085,
+      "occurrences": 74,
+      "outlier_z": 1.62,
+      "outliers": [
+        {
+          "distance": 0.9623,
+          "quote": "e memorizar as da seguinte forma: commON shares, ou seja, com ações ON."
+        },
+        {
+          "distance": 0.9539,
+          "quote": "São criados subconjuntos entre as ações constituintes que são mutuamente exclusivas e exaus"
+        },
+        {
+          "distance": 0.9359,
+          "quote": "ombinar princípios dos estilos Value e Growth para selecionar ações."
+        },
+        {
+          "distance": 0.9326,
+          "quote": "Estas ações possuem maior volatilidade e maior potencial de gan"
+        },
+        {
+          "distance": 0.9326,
+          "quote": "b) O estilo Value assume que as ações estão corretamente precificadas."
+        }
+      ]
+    },
+    {
+      "alias": "derivativos",
+      "concept_id": "technical.derivative",
+      "distance_mean": 0.7129,
+      "distance_stdev": 0.1228,
+      "occurrences": 29,
+      "outlier_z": 1.62,
+      "outliers": [
+        {
+          "distance": 0.9119,
+          "quote": " que terão impactos negativos menores, através por exemplo de derivativos."
+        },
+        {
+          "distance": 0.9046,
+          "quote": " um conceito mais usualmente aplicado a carteiras que possuem derivativos."
+        },
+        {
+          "distance": 0.891,
+          "quote": ", podem ser protegidos ou mesmo mitigados com o uso de certos derivativos."
+        },
+        {
+          "distance": 0.8754,
+          "quote": "Ao negociar derivativos, geralmente é necessário depositar uma margem de ga"
+        },
+        {
+          "distance": 0.8348,
+          "quote": " e, em caso de possibilidade de aplicação em renda variável e derivativos, o material de distribuição deve dar destaque a ess"
+        }
+      ]
+    },
+    {
+      "alias": "duration",
+      "concept_id": "technical.duration",
+      "distance_mean": 0.6865,
+      "distance_stdev": 0.1352,
+      "occurrences": 33,
+      "outlier_z": 1.6,
+      "outliers": [
+        {
+          "distance": 0.9031,
+          "quote": "Quando utilizamos a duration modificada, a variação calculada por esse método fo"
+        },
+        {
+          "distance": 0.8931,
+          "quote": "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respectivo ativo adquirido pa"
+        },
+        {
+          "distance": 0.8853,
+          "quote": "Flattening Considerando carteiras com mesma duration, mas diferentes estratégias, temos:"
+        },
+        {
+          "distance": 0.8682,
+          "quote": "Considerando três carteiras com a mesma duration, mas com estruturas diferentes (bullet, ladder e ba"
+        },
+        {
+          "distance": 0.8557,
+          "quote": "A parte curta sofrerá menos, pois o aumento será menor e a duration também é inferior."
+        }
+      ]
+    },
+    {
+      "alias": "não",
+      "concept_id": "polarity.negation",
+      "distance_mean": 0.8444,
+      "distance_stdev": 0.0763,
+      "occurrences": 181,
+      "outlier_z": 1.58,
+      "outliers": [
+        {
+          "distance": 0.9652,
+          "quote": "Se for esse o caso, não haverá tendência para serem positivos ou negativos."
+        },
+        {
+          "distance": 0.9637,
+          "quote": "ada, e o tratamento a ser dado no caso de a quantidade mínima não ser alcançada."
+        },
+        {
+          "distance": 0.9611,
+          "quote": "Assim, a rentabilidade paga pode não ser exatamente aquela que foi contratada."
+        },
+        {
+          "distance": 0.9602,
+          "quote": "Mas não se preocupe, a HP-12c fará esse cálculo para nós at"
+        },
+        {
+          "distance": 0.9567,
+          "quote": " têm menos dinheiro disponível para gastar em bens e serviços não essenciais."
+        }
+      ]
+    },
+    {
+      "alias": "carteiras",
+      "concept_id": "entity.portfolio",
+      "distance_mean": 0.7434,
+      "distance_stdev": 0.1013,
+      "occurrences": 32,
+      "outlier_z": 1.57,
+      "outliers": [
+        {
+          "distance": 0.9021,
+          "quote": "É um conceito mais usualmente aplicado a carteiras que possuem derivativos."
+        },
+        {
+          "distance": 0.8881,
+          "quote": "Nesse sentido, carteiras Bottom-up geralmente possuem grande parcela distrib"
+        },
+        {
+          "distance": 0.8881,
+          "quote": "Seria como decompor a carteira em várias imunizações de carteiras com um único passivo."
+        },
+        {
+          "distance": 0.8754,
+          "quote": "Atribuição de desempenho micro analisa carteiras individuais relativas ao benchmark designado."
+        },
+        {
+          "distance": 0.8583,
+          "quote": "nativa de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking"
+        }
+      ]
+    },
+    {
+      "alias": "risco",
+      "concept_id": "risk.financial",
+      "distance_mean": 0.8108,
+      "distance_stdev": 0.1056,
+      "occurrences": 201,
+      "outlier_z": 1.55,
+      "outliers": [
+        {
+          "distance": 0.9746,
+          "quote": "Desta forma, devemos sempre analisar qual tipo de risco que desejamos correr."
+        },
+        {
+          "distance": 0.968,
+          "quote": "rt aproximadamente igual, pois isso contribui para diminuir o risco."
+        },
+        {
+          "distance": 0.9654,
+          "quote": "- Eficácia Limitada: o hedge não elimina completamente o risco, apenas o reduz."
+        },
+        {
+          "distance": 0.9633,
+          "quote": "em ser efetivos e consistentes com a natureza, complexidade e risco das operações por ela realizadas."
+        },
+        {
+          "distance": 0.9583,
+          "quote": "Esse risco está presente em todas as instituições financeiras,"
+        }
+      ]
+    },
+    {
+      "alias": "retornos",
+      "concept_id": "quantity.return",
+      "distance_mean": 0.7951,
+      "distance_stdev": 0.0677,
+      "occurrences": 63,
+      "outlier_z": 1.55,
+      "outliers": [
+        {
+          "distance": 0.9004,
+          "quote": "Além de buscar retornos financeiros, esses fundos visam contribuir para um "
+        },
+        {
+          "distance": 0.8976,
+          "quote": "ar tais ganhos, a Market Neutral está sempre estabilizando os retornos e aumentando o tamanho da posição oposta."
+        },
+        {
+          "distance": 0.8886,
+          "quote": "é mais usada para diversificação ao invés de busca de maiores retornos."
+        },
+        {
+          "distance": 0.8886,
+          "quote": "Assim, um IR alto pode ser alcançado com elevados retornos e baixos tracking errors!"
+        },
+        {
+          "distance": 0.8819,
+          "quote": "resultados aleatórios baseados no formato de distribuição dos retornos definido pelo analista."
+        }
+      ]
+    },
+    {
+      "alias": "cupom",
+      "concept_id": "entity.coupon",
+      "distance_mean": 0.637,
+      "distance_stdev": 0.1538,
+      "occurrences": 43,
+      "outlier_z": 1.55,
+      "outliers": [
+        {
+          "distance": 0.876,
+          "quote": "SOLUÇÃO: Desta vez, o cupom é pago semestralmente."
+        },
+        {
+          "distance": 0.876,
+          "quote": "SOLUÇÃO: Desta vez, o cupom é pago semestralmente."
+        },
+        {
+          "distance": 0.8642,
+          "quote": "o de carteira a variação de preços de moeda estrangeira ou do cupom cambial."
+        },
+        {
+          "distance": 0.864,
+          "quote": "assivos, a estratégia prevê a compra de múltiplos ativos zero cupom para cada vencimento."
+        },
+        {
+          "distance": 0.8446,
+          "quote": " convexidade, essa sensibilidade é mais alta para títulos sem cupom, por conta da maior duraton, e menor para títulos c"
+        }
+      ]
+    },
+    {
+      "alias": "fundos",
+      "concept_id": "entity.fund",
+      "distance_mean": 0.7783,
+      "distance_stdev": 0.109,
+      "occurrences": 67,
+      "outlier_z": 1.54,
+      "outliers": [
+        {
+          "distance": 0.9466,
+          "quote": "Estes fundos possuem dificuldades de replicação dos seus benchma"
+        },
+        {
+          "distance": 0.9176,
+          "quote": "Com isso, esses fundos devem registrar menos volatilidade que as estratégi"
+        },
+        {
+          "distance": 0.9152,
+          "quote": "Os fundos funcionam sob a autorização da CVM, órgão responsáv"
+        },
+        {
+          "distance": 0.9122,
+          "quote": "É bastante usado por instituições financeiras e por fundos de pensão."
+        },
+        {
+          "distance": 0.9103,
+          "quote": "és de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado como uma amostra sem consider"
+        }
+      ]
+    },
+    {
+      "alias": "Duration",
+      "concept_id": "technical.duration",
+      "distance_mean": 0.6892,
+      "distance_stdev": 0.1444,
+      "occurrences": 38,
+      "outlier_z": 1.52,
+      "outliers": [
+        {
+          "distance": 0.9084,
+          "quote": "Portanto, a Effective Duration leva em consideração o fato de que os fluxos de cai"
+        },
+        {
+          "distance": 0.899,
+          "quote": "Uma forma de contornar esse problema é através da Duration Matching, que tem uma abordagem mais flexível e ger"
+        },
+        {
+          "distance": 0.8541,
+          "quote": "Mas o ponto principal da Duration Matching é que as durations dos ativos e passivos d"
+        },
+        {
+          "distance": 0.8525,
+          "quote": "ulos com pagamento de cupom, pois com isso há a diminuição da Duration."
+        },
+        {
+          "distance": 0.8525,
+          "quote": "A Key Rate Duration é uma das poucas que pode também ser usada para mud"
+        }
+      ]
+    },
+    {
+      "alias": "taxa",
+      "concept_id": "quantity.rate",
+      "distance_mean": 0.7195,
+      "distance_stdev": 0.1786,
+      "occurrences": 174,
+      "outlier_z": 1.49,
+      "outliers": [
+        {
+          "distance": 0.9858,
+          "quote": "Para a prova, poderá ser informado na questão através de uma taxa."
+        },
+        {
+          "distance": 0.9735,
+          "quote": "E, sem dúvida, essa taxa de recuperação precisa ser levada em consideração n"
+        },
+        {
+          "distance": 0.973,
+          "quote": "O prestador de serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação"
+        },
+        {
+          "distance": 0.9716,
+          "quote": "Assim, devemos encontrar esta taxa semestral, para multiplicarmos por R$ 1.000,00."
+        },
+        {
+          "distance": 0.9698,
+          "quote": "Assim, devemos encontrar esta taxa semestral, para multiplicarmos por R$ 1.000,00 e ac"
+        }
+      ]
+    },
+    {
+      "alias": "período",
+      "concept_id": "temporal.period",
+      "distance_mean": 0.7784,
+      "distance_stdev": 0.0911,
+      "occurrences": 40,
+      "outlier_z": 1.48,
+      "outliers": [
+        {
+          "distance": 0.9133,
+          "quote": " opção para proteger contra grandes flutuações cambiais em um período específico."
+        },
+        {
+          "distance": 0.9115,
+          "quote": "Nesse mesmo período, o Ibovespa registrou variação positiva de 15%."
+        },
+        {
+          "distance": 0.9063,
+          "quote": "e deve permanecer fechada para aplicações enquanto perdurar o período de suspensão de resgates."
+        },
+        {
+          "distance": 0.8999,
+          "quote": " que ocorre o passivo e procura-se ativos que vencem no mesmo período ou em períodos muito próximos."
+        },
+        {
+          "distance": 0.8892,
+          "quote": " ocorrem por desenquadramento das devidas regras por um certo período."
+        }
+      ]
+    },
+    {
+      "alias": "empresas",
+      "concept_id": "actor.company",
+      "distance_mean": 0.7901,
+      "distance_stdev": 0.1022,
+      "occurrences": 69,
+      "outlier_z": 1.47,
+      "outliers": [
+        {
+          "distance": 0.9402,
+          "quote": "São as empresas predominantes nos índices Dow Jones Industrial Aver"
+        },
+        {
+          "distance": 0.9335,
+          "quote": "mia, pois se acredita em uma baixa probabilidade de calote de empresas quando houvesse uma crise mundial."
+        },
+        {
+          "distance": 0.9233,
+          "quote": "up observam primeiro os fatores microeconômicos que afetam as empresas específicas que estão avaliando."
+        },
+        {
+          "distance": 0.921,
+          "quote": " maior prestígio dentro das instituições financeiras e demais empresas em que trabalham."
+        },
+        {
+          "distance": 0.921,
+          "quote": "- Maior competitividade: as empresas que implementam a gestão de riscos de forma eficaz "
+        }
+      ]
+    },
+    {
+      "alias": "preço",
+      "concept_id": "quantity.price",
+      "distance_mean": 0.7239,
+      "distance_stdev": 0.1796,
+      "occurrences": 96,
+      "outlier_z": 1.46,
+      "outliers": [
+        {
+          "distance": 0.9854,
+          "quote": "Calcule o preço para cada R$ 1.000,00 de resgate."
+        },
+        {
+          "distance": 0.9571,
+          "quote": "como ela é uma estimativa linear de alteração de alteração de preço, não possibilita estimativas adequadas por não mode"
+        },
+        {
+          "distance": 0.9537,
+          "quote": "Ela é obtida por meio de modelos de avaliação de preço do derivativo Opção."
+        },
+        {
+          "distance": 0.9475,
+          "quote": "rês linhas: a banda do meio, que é uma média móvel simples do preço, e duas bandas externas, uma acima e outra abaixo d"
+        },
+        {
+          "distance": 0.9453,
+          "quote": "ores, ou seja, uma dificuldade de encontrar um comprador pelo preço justo de mercado."
+        }
+      ]
+    },
+    {
+      "alias": "valor",
+      "concept_id": "quantity.value",
+      "distance_mean": 0.7865,
+      "distance_stdev": 0.1323,
+      "occurrences": 127,
+      "outlier_z": 1.45,
+      "outliers": [
+        {
+          "distance": 0.9781,
+          "quote": "O YTW considera o menor valor entre o YTM e o YTC."
+        },
+        {
+          "distance": 0.9707,
+          "quote": "m melhor relacionamento com os stakeholders e a um aumento do valor da instituição."
+        },
+        {
+          "distance": 0.9688,
+          "quote": "ras palavras, a técnica elege uma variável e atribui a ela um valor aleatório."
+        },
+        {
+          "distance": 0.9654,
+          "quote": "surance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00."
+        },
+        {
+          "distance": 0.9652,
+          "quote": "ta de uma fórmula simples, mas que não leva em consideração o valor de uma eventual garantia do empréstimo."
+        }
+      ]
+    },
+    {
+      "alias": "fundo",
+      "concept_id": "entity.fund",
+      "distance_mean": 0.7931,
+      "distance_stdev": 0.0964,
+      "occurrences": 66,
+      "outlier_z": 1.44,
+      "outliers": [
+        {
+          "distance": 0.9321,
+          "quote": " ou de investimentos, os quais não podem ser remunerados pelo fundo."
+        },
+        {
+          "distance": 0.9281,
+          "quote": "Vamos simular dois períodos: no primeiro, o fundo registrou rentabilidade positiva de 10% e, no segun"
+        },
+        {
+          "distance": 0.9248,
+          "quote": "teses especificamente aplicáveis a determinadas categorias de fundo."
+        },
+        {
+          "distance": 0.9128,
+          "quote": "Com isso, desconsiderando as movimentações o retorno do fundo é a composição das rentabilidades de cada período: "
+        },
+        {
+          "distance": 0.9101,
+          "quote": "s itens abaixo: - Resgates: ao término do prazo de duração do fundo."
+        }
+      ]
+    },
+    {
+      "alias": "crédito",
+      "concept_id": "entity.credit",
+      "distance_mean": 0.7375,
+      "distance_stdev": 0.1246,
+      "occurrences": 36,
+      "outlier_z": 1.39,
+      "outliers": [
+        {
+          "distance": 0.9103,
+          "quote": "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores no"
+        },
+        {
+          "distance": 0.9062,
+          "quote": "está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações c"
+        },
+        {
+          "distance": 0.8991,
+          "quote": "Eles também são garantidos pelo crédito do banco emissor, o que significa que o beneficiári"
+        },
+        {
+          "distance": 0.8972,
+          "quote": "anizações, reestruturações, fusões e aquisições) e eventos de crédito (como falência, ou default), podem ser protegidos o"
+        },
+        {
+          "distance": 0.8968,
+          "quote": "ndo os devidos valores em um ano (vendas através de cartão de crédito)."
+        }
+      ]
+    },
+    {
+      "alias": "fluxos de caixa",
+      "concept_id": "entity.cash_flow",
+      "distance_mean": 0.7377,
+      "distance_stdev": 0.1052,
+      "occurrences": 30,
+      "outlier_z": 1.39,
+      "outliers": [
+        {
+          "distance": 0.8843,
+          "quote": " exemplo com 3 cenários para entender melhor o impacto desses fluxos de caixa, sempre com um aporte inicial de R$ 1.000.000,00."
+        },
+        {
+          "distance": 0.8647,
+          "quote": "ir um pagamento futuro específico, mas não têm necessidade de fluxos de caixa intermediários."
+        },
+        {
+          "distance": 0.8647,
+          "quote": "Assim, casamos os fluxos de caixa igualando a duration de cada passivo com o respecti"
+        },
+        {
+          "distance": 0.8554,
+          "quote": "bility Management se preocupa com o tempo em que ocorrerão os fluxos de caixa."
+        },
+        {
+          "distance": 0.8269,
+          "quote": "o, a Effective Duration leva em consideração o fato de que os fluxos de caixa esperados flutuarão à medida que as taxas de juros "
+        }
+      ]
+    },
+    {
+      "alias": "prazo",
+      "concept_id": "temporal.term",
+      "distance_mean": 0.6853,
+      "distance_stdev": 0.2123,
+      "occurrences": 91,
+      "outlier_z": 1.34,
+      "outliers": [
+        {
+          "distance": 0.9691,
+          "quote": " das partes não consiga cumprir com suas obrigações dentro do prazo e nas condições estabelecidas para a liquidação."
+        },
+        {
+          "distance": 0.9658,
+          "quote": "Observação: Caso haja Cupons durante o prazo da repo, geralmente são repassados para o vendedor "
+        },
+        {
+          "distance": 0.9621,
+          "quote": "de VINTE VEZES, sendo muito mais prejudicial por causa do seu prazo."
+        },
+        {
+          "distance": 0.9541,
+          "quote": "quando ocorrer um dos itens abaixo: - Resgates: ao término do prazo de duração do fundo."
+        },
+        {
+          "distance": 0.9531,
+          "quote": "Caso o cotista não queira respeitar este prazo de carência, ele poderá solicitar o resgate, mas nã"
+        }
+      ]
+    },
+    {
+      "alias": "média",
+      "concept_id": "quantity.mean",
+      "distance_mean": 0.7428,
+      "distance_stdev": 0.0973,
+      "occurrences": 30,
+      "outlier_z": 1.33,
+      "outliers": [
+        {
+          "distance": 0.8719,
+          "quote": "Calcular a média desses números que foram elevados ao quadrado."
+        },
+        {
+          "distance": 0.8698,
+          "quote": " estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado."
+        },
+        {
+          "distance": 0.8553,
+          "quote": "Calcular a distância de cada ponto até a média; 3."
+        },
+        {
+          "distance": 0.8415,
+          "quote": "s médias das variações dos períodos que registraram alta pela média das variações dos períodos que registraram quedas."
+        },
+        {
+          "distance": 0.8329,
+          "quote": "Já a média ponderada é uma boa aproximação da Duration de Maca"
+        }
+      ]
+    },
+    {
+      "alias": "setor",
+      "concept_id": "entity.sector",
+      "distance_mean": 0.6006,
+      "distance_stdev": 0.2762,
+      "occurrences": 45,
+      "outlier_z": 1.3,
+      "outliers": [
+        {
+          "distance": 0.9597,
+          "quote": "eneficiar de perspectivas negativas para determinado ativo ou setor."
+        },
+        {
+          "distance": 0.9597,
+          "quote": "mo exemplo, temos: - Escolher entre LFT ou LTN; - Investir no setor elétrico; - Comprar o imóvel A ou o B."
+        },
+        {
+          "distance": 0.9452,
+          "quote": "ado aos gestores de carteiras, com base na desejada para cada setor e para cada gestor (em se tratando, por exemplo, de"
+        },
+        {
+          "distance": 0.9252,
+          "quote": "VEL ou próprio): Este é o risco individual do ativo ou do seu setor."
+        },
+        {
+          "distance": 0.9244,
+          "quote": "Seus índices são considerados a referência para o setor de tecnologia, sendo eles: Nasdaq Composite: Índice"
+        }
+      ]
+    },
+    {
+      "alias": "mercado",
+      "concept_id": "entity.market",
+      "distance_mean": 0.8199,
+      "distance_stdev": 0.1069,
+      "occurrences": 139,
+      "outlier_z": 1.29,
+      "outliers": [
+        {
+          "distance": 0.9575,
+          "quote": "e Alto Dividend Yield, que pagam dividendos acima da média de mercado."
+        },
+        {
+          "distance": 0.9515,
+          "quote": "o Banco Central Europeu (BCE) com base em transações reais de mercado."
+        },
+        {
+          "distance": 0.9501,
+          "quote": "rnacional, lançados em uma moeda diferente daquela do país ou mercado em que são emitidos normalmente."
+        },
+        {
+          "distance": 0.9496,
+          "quote": "- Beta MAIOR que 1: oscilará com mais intensidade que o mercado."
+        },
+        {
+          "distance": 0.9496,
+          "quote": "- Beta MENOR que 1: oscilará com menos intensidade que o mercado."
+        }
+      ]
+    },
+    {
+      "alias": "desempenho",
+      "concept_id": "quantity.performance",
+      "distance_mean": 0.7157,
+      "distance_stdev": 0.1518,
+      "occurrences": 33,
+      "outlier_z": 1.27,
+      "outliers": [
+        {
+          "distance": 0.9081,
+          "quote": "enderem a estar consistentemente acima ou abaixo da linha, um desempenho superior ou inferior poderá ser indicado."
+        },
+        {
+          "distance": 0.9071,
+          "quote": "Uma forma de avaliar os resultados de desempenho é por meio de gráficos de controle de qualidade."
+        },
+        {
+          "distance": 0.8939,
+          "quote": "ão ocorre com o Sharpe); e - Permite fácil comparação entre o desempenho de dois ou mais ativos."
+        },
+        {
+          "distance": 0.8824,
+          "quote": "Temos duas formas genéricas de avaliar esse desempenho: - MWRR (Money Weighted Rate of Return): nada mais "
+        },
+        {
+          "distance": 0.8784,
+          "quote": "da Resolução CVM 175; e - de disponibilizar a demonstração de desempenho a seus cotistas, sempre que solicitado."
+        }
+      ]
+    },
+    {
+      "alias": "benchmark",
+      "concept_id": "technical.benchmark",
+      "distance_mean": 0.7151,
+      "distance_stdev": 0.2029,
+      "occurrences": 66,
+      "outlier_z": 1.26,
+      "outliers": [
+        {
+          "distance": 0.9714,
+          "quote": "Além disso, não é um benchmark investível."
+        },
+        {
+          "distance": 0.9649,
+          "quote": "hos do fundo, uma vez que dificilmente Hedge Funds possuem um benchmark específico."
+        },
+        {
+          "distance": 0.9616,
+          "quote": "Porém, esse benchmark precisa ser minimamente coerente para ser possível "
+        },
+        {
+          "distance": 0.9587,
+          "quote": "Como vantagem, podemos citar que esse tipo de benchmark é mensurável."
+        },
+        {
+          "distance": 0.9443,
+          "quote": "s com base em suas premissas visando justamente a superar tal benchmark."
+        }
+      ]
+    },
+    {
+      "alias": "regulamento",
+      "concept_id": "entity.regulation",
+      "distance_mean": 0.7232,
+      "distance_stdev": 0.114,
+      "occurrences": 39,
+      "outlier_z": 1.26,
+      "outliers": [
+        {
+          "distance": 0.8672,
+          "quote": "O regulamento pode estabelecer método para o cálculo do valor de "
+        },
+        {
+          "distance": 0.8672,
+          "quote": "O regulamento pode estabelecer a cobrança de taxa de performance "
+        },
+        {
+          "distance": 0.8666,
+          "quote": "iberação dos conselhos e comitês devem estar estabelecidos no regulamento."
+        },
+        {
+          "distance": 0.8614,
+          "quote": " seguinte ao da data da integralização, segundo o disposto no regulamento."
+        },
+        {
+          "distance": 0.8614,
+          "quote": "Em acréscimo a tais encargos, o regulamento do FIF pode prever como encargos as seguintes despe"
+        }
+      ]
+    },
+    {
+      "alias": "Risco",
+      "concept_id": "risk.financial",
+      "distance_mean": 0.6456,
+      "distance_stdev": 0.244,
+      "occurrences": 29,
+      "outlier_z": 1.19,
+      "outliers": [
+        {
+          "distance": 0.9372,
+          "quote": "O Risco Soberano é a chance de um governo não honrar com o "
+        },
+        {
+          "distance": 0.9372,
+          "quote": "O Risco de Contraparte refere-se à possibilidade de um dos "
+        },
+        {
+          "distance": 0.9002,
+          "quote": "Risco de Inflação genericamente se refere a situações em "
+        },
+        {
+          "distance": 0.8821,
+          "quote": "sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total)."
+        },
+        {
+          "distance": 0.8803,
+          "quote": "Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco."
+        }
+      ]
+    },
+    {
+      "alias": "investidores",
+      "concept_id": "actor.investor",
+      "distance_mean": 0.8025,
+      "distance_stdev": 0.0934,
+      "occurrences": 56,
+      "outlier_z": 1.18,
+      "outliers": [
+        {
+          "distance": 0.9127,
+          "quote": "ribuição deve dar destaque a essa informação para ciência dos investidores."
+        },
+        {
+          "distance": 0.9033,
+          "quote": "rodar os setores” é a tentativa de antecipação, por parte dos investidores, do próximo estágio do ciclo econômico e, assim, mo"
+        },
+        {
+          "distance": 0.8901,
+          "quote": "Os investidores em STRIPS recebem o pagamento do valor nominal do t"
+        },
+        {
+          "distance": 0.8888,
+          "quote": "ição de responsabilidades e alocação de garantias que envolve investidores, corretoras, agentes de compensação e a própria B3."
+        },
+        {
+          "distance": 0.8871,
+          "quote": "eta entre o contratado e os demais prestadores de serviços ou investidores, na hipótese de potenciais conflitos de interesse."
+        }
+      ]
+    },
+    {
+      "alias": "distribuição",
+      "concept_id": "entity.distribution",
+      "distance_mean": 0.7052,
+      "distance_stdev": 0.1627,
+      "occurrences": 30,
+      "outlier_z": 1.17,
+      "outliers": [
+        {
+          "distance": 0.8962,
+          "quote": "Em outras palavras, a distribuição do retorno de valor agregado em relação a sua média"
+        },
+        {
+          "distance": 0.8907,
+          "quote": "Assim, devemos apenas calcular a distribuição inicial e aplicar a rentabilidade dos ativos nas re"
+        },
+        {
+          "distance": 0.8798,
+          "quote": "A distribuição pode ser realizada exclusivamente por meios eletrôn"
+        },
+        {
+          "distance": 0.8741,
+          "quote": "ividendos: por serem empresas, os fundos fechados podem fazer distribuição de dividendos."
+        },
+        {
+          "distance": 0.8711,
+          "quote": "ovimento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimentos."
+        }
+      ]
+    },
+    {
+      "alias": "investidor",
+      "concept_id": "actor.investor",
+      "distance_mean": 0.7776,
+      "distance_stdev": 0.1479,
+      "occurrences": 79,
+      "outlier_z": 1.15,
+      "outliers": [
+        {
+          "distance": 0.9472,
+          "quote": "Isso demanda tempo e conhecimento do investidor."
+        },
+        {
+          "distance": 0.9472,
+          "quote": "Portanto, o investidor seria indiferente com relação aos vencimentos."
+        },
+        {
+          "distance": 0.9451,
+          "quote": "Por isso, dizemos que o investidor pode ganhar 2 alfas, um na posição comprada e outro"
+        },
+        {
+          "distance": 0.9447,
+          "quote": "contas em seu nome no mesmo banco, não cada CD ou conta que o investidor tem no banco."
+        },
+        {
+          "distance": 0.9402,
+          "quote": "ntais, o que pode impor restrições e obrigações adicionais ao investidor."
+        }
+      ]
+    },
+    {
+      "alias": "VaR",
+      "concept_id": "technical.var",
+      "distance_mean": 0.6359,
+      "distance_stdev": 0.3145,
+      "occurrences": 40,
+      "outlier_z": 0.94,
+      "outliers": [
+        {
+          "distance": 0.932,
+          "quote": "O VaR utiliza a distribuição normal como parâmetro descri"
+        },
+        {
+          "distance": 0.9279,
+          "quote": "- Stress Test NÃO SUBSTITUI O VaR, mas sim, o complementa."
+        },
+        {
+          "distance": 0.9279,
+          "quote": "A alta administração aprova um risco total de 17% e um VaR de R$ 5.000.000."
+        },
+        {
+          "distance": 0.9162,
+          "quote": "ntido, a alta administração determina o montante de capital e VaR associado alocado aos gestores de carteiras, com ba"
+        },
+        {
+          "distance": 0.9147,
+          "quote": "Por exemplo, um fundo de investimentos informa que possui um VaR de R$ 1 milhão para 1 dia, com grau de confiança em"
+        }
+      ]
+    }
+  ],
+  "events_covered": 3677,
+  "forms_clustered": 50,
+  "registry": {
+    "concepts": 257,
+    "version": "2.6.0"
+  },
+  "review_burden": 250,
+  "schema_version": "outlier-matches-v1"
+}

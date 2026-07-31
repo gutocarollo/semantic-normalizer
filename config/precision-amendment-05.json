@@ -1,0 +1,14 @@
+{
+  "id": "precision-sweep-amendment-05",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; third sweep round",
+  "method": "scripts/build_sweep_queue.py round three; only two forms were new to the queue and one wrong occurrence remained",
+  "reason": "`ativo` is a noun 180 times and an adjective in exactly one collocation.",
+  "operations": [
+    {
+      "op": "forbid", "concept": "entity.asset", "language": "pt-BR",
+      "variants": ["gestor ativo", "gestores ativos"],
+      "why": "`um bom gestor ativo` is an active manager. Three occurrences, the only adjectival use of `ativo` in the corpus — `fundo ativo`, `investidor ativo` and `mercado ativo` occur zero times."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "batch": 10,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The final residual draw (seed 88123, 240 events) found one error: `Cupom` matching inside `Cupom Cambial`, which is the onshore dollar interest rate rather than a bond coupon. Registered after the measurement was recorded, so the reported figure describes the state actually adjudicated and this repair only improves on it.",
+  "concepts": [
+    {"id": "technical.cupom_cambial", "en": "onshore dollar interest rate", "pt": "cupom cambial", "class": "technical_term", "pos": "noun",
+     "def": "The interest rate on dollars held in Brazil, the domestic rate deflated by the expected exchange-rate variation.",
+     "technical": true, "authority": "apostila-cga-2026#07-derivativos"}
+  ]
+}

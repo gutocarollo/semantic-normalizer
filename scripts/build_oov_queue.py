@@ -55,8 +55,15 @@ INLINE_MATH = re.compile(r"(?<![A-Za-z])\$([^\$\n]{1,120}?)\$")
 # line, and a span that does is the `($$)` header pairing with a distant delimiter — measured
 # swallowing two tables and 17 currency values.
 NOT_FORMULA = re.compile(r"\n\s*\n|\|")
-TEXISH = re.compile(r"\\[a-zA-Z]|_\{|\^\{|_[0-9]|\^[0-9]")
+TEXISH = re.compile(r"\\[a-zA-Z]|\\[ \\\\]|_\{|\^\{|_[0-9]|\^[0-9]")
 TEX_COMMAND = re.compile(r"\\[a-zA-Z]+")
+# The other LaTeX delimiters. `TEX_COMMAND` requires a letter after the backslash, so `\[` and
+# `\(` survive it and so does everything between them: a residual sample found `VaR` matching
+# inside `\[ {VaR}(X+Y)=25.11 \]`, which is a formula, not a sentence. There are 22 bracket
+# blocks and 10 paren blocks in the corpus. The `TEXISH` guard is kept for the same reason it
+# exists on `$`: remove a delimited span only when it really contains TeX.
+LATEX_BRACKET = re.compile(r"\\\[(.*?)\\\]", re.S)
+LATEX_PAREN = re.compile(r"\\\((.*?)\\\)", re.S)
 CURRENCY = re.compile(r"(?:R|US)\$")
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
 # Markdown image destinations are filesystem paths, not prose. The corpus has 49 of them and
@@ -114,6 +121,8 @@ def strip_math(text: str) -> str:
         return " "
 
     text = IMAGE.sub(lambda m: " " + m.group(1) + " ", text)
+    text = LATEX_BRACKET.sub(drop_block, text)
+    text = LATEX_PAREN.sub(drop_block, text)
     text = BLOCK_MATH.sub(drop_block, text)
     text = INLINE_MATH.sub(
         lambda m: " " if TEXISH.search(m.group(1)) else m.group(0), text

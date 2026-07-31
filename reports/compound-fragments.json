@@ -1,0 +1,346 @@
+{
+  "bare_english_automatic_forms": 237,
+  "findings": [
+    {
+      "compounds": [
+        [
+          "Os Yield Spreads",
+          1
+        ],
+        [
+          "Alto Dividend Yield",
+          1
+        ],
+        [
+          "Yield Prazo Taxas",
+          1
+        ]
+      ],
+      "concept_id": "technical.yield",
+      "examples": [
+        "Os Yield Spreads são comumente cotados em termos de um ren",
+        "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
+        "Yield Prazo Taxas das extremidades sobem e da intermedi"
+      ],
+      "form": "Yield",
+      "fragment_share": 1.0,
+      "inside_a_compound": 3,
+      "occurrences": 3
+    },
+    {
+      "compounds": [
+        [
+          "EDF EDF",
+          2
+        ]
+      ],
+      "concept_id": "technical.expected_default_probability",
+      "examples": [
+        "Esperada (Expected Loss) como sendo: Perda Esperada = LGD x EDF EDF, Expected Default Probability, ou Probabilida",
+        "rada (Expected Loss) como sendo: Perda Esperada = LGD x EDF EDF, Expected Default Probability, ou Probabilidade E"
+      ],
+      "form": "EDF",
+      "fragment_share": 0.5,
+      "inside_a_compound": 2,
+      "occurrences": 4
+    },
+    {
+      "compounds": [
+        [
+          "IR Come-Cotas",
+          1
+        ]
+      ],
+      "concept_id": "technical.come_cotas",
+      "examples": [
+        "**IR Come-Cotas** = (R$ 15,00) ÷ (R$ 1,10) = **13,64 cotas** Dest"
+      ],
+      "form": "Come-Cotas",
+      "fragment_share": 0.5,
+      "inside_a_compound": 1,
+      "occurrences": 2
+    },
+    {
+      "compounds": [
+        [
+          "Beta MAIOR",
+          1
+        ],
+        [
+          "Beta MENOR",
+          1
+        ]
+      ],
+      "concept_id": "technical.beta",
+      "examples": [
+        "- Beta MAIOR que 1: oscilará com mais intensidade que o ",
+        "- Beta MENOR que 1: oscilará com menos intensidade que o"
+      ],
+      "form": "Beta",
+      "fragment_share": 0.4,
+      "inside_a_compound": 2,
+      "occurrences": 5
+    },
+    {
+      "compounds": [
+        [
+          "DO CDI TROCA DE FLUXOS INSTITUI",
+          1
+        ],
+        [
+          "DO CDI Swap",
+          1
+        ],
+        [
+          "CDI Desta",
+          1
+        ]
+      ],
+      "concept_id": "technical.cdi",
+      "examples": [
+        "STITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO ",
+        "ÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI Swap",
+        "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ficará no swap"
+      ],
+      "form": "CDI",
+      "fragment_share": 0.333,
+      "inside_a_compound": 3,
+      "occurrences": 9
+    },
+    {
+      "compounds": [
+        [
+          "Duration Curta",
+          1
+        ],
+        [
+          "Qual a Duration",
+          1
+        ],
+        [
+          "Duration a",
+          1
+        ],
+        [
+          "Duration MENOR",
+          1
+        ],
+        [
+          "Duration Maior",
+          1
+        ],
+        [
+          "Sendo a Duration",
+          1
+        ]
+      ],
+      "concept_id": "technical.duration",
+      "examples": [
+        "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno",
+        "Qual a Duration da carteira abaixo de duplicatas no valor total d",
+        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encon",
+        "o SEM cupom com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!"
+      ],
+      "form": "Duration",
+      "fragment_share": 0.292,
+      "inside_a_compound": 7,
+      "occurrences": 24
+    },
+    {
+      "compounds": [
+        [
+          "Uma Treasury STRIPS",
+          1
+        ],
+        [
+          "Os STRIPS",
+          1
+        ]
+      ],
+      "concept_id": "technical.strips",
+      "examples": [
+        "Uma Treasury STRIPS é um tipo de título criado através da separação d",
+        "Os STRIPS podem ser comprados e vendidos por meio de corret"
+      ],
+      "form": "STRIPS",
+      "fragment_share": 0.286,
+      "inside_a_compound": 2,
+      "occurrences": 7
+    },
+    {
+      "compounds": [
+        [
+          "VaR a",
+          3
+        ],
+        [
+          "VaR Hist",
+          3
+        ],
+        [
+          "VaR Anal",
+          2
+        ],
+        [
+          "VaR Monte Carlo",
+          1
+        ],
+        [
+          "Se VaR",
+          1
+        ]
+      ],
+      "concept_id": "technical.var",
+      "examples": [
+        "Determine o VaR analítico (ou paramétrico) de uma carteira de inv",
+        "O VaR Histórico, também chamado de Método de Simulação ",
+        "étodo de Simulação Histórica, é ainda mais simples do que o VaR Analítico ou Paramétrico.",
+        "Para calcular o VaR Histórico, basta relacionar os retornos passados,"
+      ],
+      "form": "VaR",
+      "fragment_share": 0.263,
+      "inside_a_compound": 10,
+      "occurrences": 38
+    },
+    {
+      "compounds": [
+        [
+          "TRES of",
+          1
+        ]
+      ],
+      "concept_id": "technical.total_return_equity_swap",
+      "examples": [
+        "Em outras palavras, o TRES oferece o benefício de uma grande exposição a um "
+      ],
+      "form": "TRES",
+      "fragment_share": 0.25,
+      "inside_a_compound": 1,
+      "occurrences": 4
+    },
+    {
+      "compounds": [
+        [
+          "Swap Pode",
+          1
+        ],
+        [
+          "DO CDI Swap",
+          1
+        ]
+      ],
+      "concept_id": "technical.swap",
+      "examples": [
+        "O Swap Pode ocorrer trocas de dois fluxos de caixa com t",
+        "DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI Swap"
+      ],
+      "form": "Swap",
+      "fragment_share": 0.2,
+      "inside_a_compound": 2,
+      "occurrences": 10
+    },
+    {
+      "compounds": [
+        [
+          "Selic Projetada",
+          1
+        ]
+      ],
+      "concept_id": "technical.selic",
+      "examples": [
+        "ulo; (2) calcular qual seria o valor final da LFT pela taxa Selic Projetada; (3) trazer a valor presente este valor"
+      ],
+      "form": "Selic",
+      "fragment_share": 0.2,
+      "inside_a_compound": 1,
+      "occurrences": 5
+    },
+    {
+      "compounds": [
+        [
+          "Ibovespa a",
+          2
+        ],
+        [
+          "Ibovespa Futuro",
+          1
+        ]
+      ],
+      "concept_id": "technical.ibovespa",
+      "examples": [
+        "Os contratos futuros mais relevantes são: - Ibovespa Futuro (foco do nosso exame); - DI Futuro (foco d",
+        "Rafael COMPROU 10 contratos futuros de Ibovespa a 60.000.",
+        "Rafael VENDEU 10 contratos futuros de Ibovespa a 60.000."
+      ],
+      "form": "Ibovespa",
+      "fragment_share": 0.15,
+      "inside_a_compound": 3,
+      "occurrences": 20
+    },
+    {
+      "compounds": [
+        [
+          "Os CDS",
+          1
+        ],
+        [
+          "CDS a",
+          1
+        ]
+      ],
+      "concept_id": "technical.cds",
+      "examples": [
+        "Os CDS mudam de valor ao longo de suas vidas conforme a ",
+        "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxi"
+      ],
+      "form": "CDS",
+      "fragment_share": 0.143,
+      "inside_a_compound": 2,
+      "occurrences": 14
+    },
+    {
+      "compounds": [
+        [
+          "LTN a",
+          1
+        ],
+        [
+          "Como a LTN",
+          1
+        ]
+      ],
+      "concept_id": "technical.ltn",
+      "examples": [
+        "SOLUÇÃO: Para resolvermos este problema, devemos trazer a LTN a valor presente.",
+        "Desta forma, na HP 12C: Como a LTN não possui cupom (PMT), podemos escolher se trans"
+      ],
+      "form": "LTN",
+      "fragment_share": 0.125,
+      "inside_a_compound": 2,
+      "occurrences": 16
+    },
+    {
+      "compounds": [
+        [
+          "CVM a",
+          1
+        ]
+      ],
+      "concept_id": "actor.cvm",
+      "examples": [
+        "or o caso, suas subclasses devem indicar em seu cadastro na CVM a condição de “Previdenciárias” e a categoria de "
+      ],
+      "form": "CVM",
+      "fragment_share": 0.024,
+      "inside_a_compound": 1,
+      "occurrences": 41
+    }
+  ],
+  "forms_with_fragment_matches": 15,
+  "registry": {
+    "concepts": 307,
+    "version": "2.13.0"
+  },
+  "schema_version": "compound-fragments-v1",
+  "total_fragment_events": 42
+}

@@ -1,0 +1,8 @@
+{
+  "id": "precision-sweep-amendment-08",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; reseal after batches 6 and 7",
+  "method": "case-insensitive form dedupe and SKOS S13 alt/pref dedupe, now enforced in scripts/import_cga_batch.py",
+  "reason": "Batches 6 and 7 declared `LIBOR`/`Libor` and `STRIPS`/`strips` as separate forms and repeated a preferred label as its own alternative. The registry contract rejects both, the records were normalised, and this rebinds the release record to the corrected files. `forms()` and `distinct_alts()` now prevent it at the point of construction.",
+  "operations": []
+}
