@@ -1,0 +1,238 @@
+{
+  "batch": 40,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "I claimed the 101 partial headings were all descriptive titles after sampling twelve, and a review found a counter-example in that sample. Auditing all 101 rather than asserting: about a fifth are genuine CGA terms, including six named risk types that are core exam content. The claim was too broad and this is the work it was hiding.",
+  "concepts": [
+    {
+      "id": "risk.inflation",
+      "en": "inflation risk",
+      "pt": "Risco de Inflação",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure of a nominal return to a rise in the general price level.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.volatility",
+      "en": "volatility risk",
+      "pt": "Risco de Volatilidade",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure of a derivative's value to a change in the underlying's volatility.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.event",
+      "en": "event risk",
+      "pt": "Risco de Evento",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure to an unforeseen corporate or political event repricing an asset.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.sovereign",
+      "en": "sovereign risk",
+      "pt": "Risco Soberano",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The chance a government fails to honour its own debt.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.counterparty",
+      "en": "counterparty risk",
+      "pt": "Risco de Contraparte",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The chance the other side of a trade fails to deliver.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.early_redemption",
+      "en": "early redemption risk",
+      "pt": "Risco de Resgate Antecipado",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure to an issuer calling a bond before maturity when rates fall.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "entity.currency_fund",
+      "en": "currency fund",
+      "pt": "Fundos Cambiais",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A fund whose principal risk factor is the price of a foreign currency.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "entity.multimarket_fund",
+      "en": "multimarket fund",
+      "pt": "Fundos Multimercado",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A fund with no single mandated risk factor, free to combine several.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.dollar_duration",
+      "en": "dollar duration",
+      "pt": "Dollar Duration",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The money change in a bond's price for a given move in rates.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.pure_indexing",
+      "en": "pure indexing",
+      "pt": "Indexação Pura",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Replicating an index by holding every constituent at its index weight.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.portfolio_duration",
+      "en": "portfolio duration",
+      "pt": "Duration de Carteiras",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The weighted average duration of the bonds a portfolio holds.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "artifact.key_information_sheet",
+      "en": "key information sheet",
+      "pt": "Lâmina de Informações Básicas",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The short disclosure document an open class must publish.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "actor.rating_agency",
+      "en": "rating agency",
+      "pt": "Agência de rating",
+      "class": "actor",
+      "pos": "noun",
+      "def": "The firm that assigns a credit classification to an issuer or instrument.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.tax_reclassification",
+      "en": "tax reclassification",
+      "pt": "Desenquadramento Tributário",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A fund losing the portfolio composition that earned its tax treatment.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.manager_universe",
+      "en": "manager universe",
+      "pt": "Universo de Gestores",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A benchmark built from the returns of a peer group of managers.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "entity.broad_market_index",
+      "en": "broad market index",
+      "pt": "Índices Amplos de Mercado",
+      "class": "entity",
+      "pos": "noun",
+      "def": "An index spanning a whole market rather than a style or sector.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "entity.style_index",
+      "en": "style index",
+      "pt": "Índices de Estilo",
+      "class": "entity",
+      "pos": "noun",
+      "def": "An index tracking a defined investment style rather than a whole market.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.integrated_risk_management",
+      "en": "integrated risk management",
+      "pt": "Gestão Integrada de Risco",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Risk managed across the whole institution rather than desk by desk.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "quantity.recovery_rate",
+      "en": "recovery rate",
+      "pt": "Taxa de Recuperação",
+      "class": "quantity_marker",
+      "pos": "noun",
+      "def": "The share of an exposure recovered after default, the complement of LGD.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "entity.share_class",
+      "en": "share class",
+      "pt": "Classes de Cotas",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A division of a fund carrying its own rights, fees and shareholders.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.esg_private_credit",
+      "en": "ESG private credit",
+      "pt": "Crédito Privado ASG",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Corporate debt selected against environmental, social and governance criteria.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    }
+  ]
+}

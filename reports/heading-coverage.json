@@ -1,11 +1,11 @@
 {
   "by_status": {
-    "covered": 251,
-    "partial": 101
+    "covered": 271,
+    "partial": 81
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.7131,
-  "covered_share_of_mass": 0.8606,
+  "covered_share_of_distinct": 0.7699,
+  "covered_share_of_mass": 0.8846,
   "distinct_headings": 352,
   "heading_occurrences": 832,
   "headings": [
@@ -301,17 +301,6 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Lâmina de Informações Básicas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Informações"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Material de Divulgação: Rentabilidade (I)",
       "occurrences": 1,
       "partial_matches": [
@@ -378,17 +367,6 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Agência de rating",
-      "occurrences": 1,
-      "partial_matches": [
-        "rating"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Classes Restritas & Exclusivas",
       "occurrences": 1,
       "partial_matches": [
@@ -423,29 +401,6 @@
     {
       "covered_by": null,
       "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Fundos Cambiais",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Fundos Multimercado",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundos",
-        "Multimercado"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Investimento em cotas de outros FIF",
       "occurrences": 1,
       "partial_matches": [
@@ -462,17 +417,6 @@
       "occurrences": 1,
       "partial_matches": [
         "Fundos de Investimentos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "05-legislacao-regulacao-e-tributacao",
-      "heading": "Desenquadramento Tributário",
-      "occurrences": 1,
-      "partial_matches": [
-        "Desenquadramento"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -497,17 +441,6 @@
         "Gestão de Risco"
       ],
       "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Gestão Integrada de Risco",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco"
-      ],
-      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -641,94 +574,12 @@
     {
       "covered_by": null,
       "file": "06-gestao-de-riscos",
-      "heading": "Risco de Resgate Antecipado",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco",
-        "Resgate"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Risco de Inflação",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco",
-        "Inflação"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Risco de Volatilidade",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco",
-        "Volatilidade"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Risco de Evento",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Risco Soberano",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
       "heading": "Gestão e Medidas de Risco de Crédito",
       "occurrences": 1,
       "partial_matches": [
         "Risco de Crédito"
       ],
       "resolved_by": "action.manage_portfolio",
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Risco de Contraparte",
-      "occurrences": 1,
-      "partial_matches": [
-        "Risco",
-        "Contraparte"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "LGD = 1 - Taxa de Recuperação",
-      "occurrences": 1,
-      "partial_matches": [
-        "LGD",
-        "Taxa"
-      ],
-      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -750,40 +601,6 @@
       "occurrences": 1,
       "partial_matches": [
         "Benchmark"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Universo de Gestores",
-      "occurrences": 1,
-      "partial_matches": [
-        "Gestores"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Índices Amplos de Mercado",
-      "occurrences": 1,
-      "partial_matches": [
-        "Índices",
-        "Mercado"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Índices de Estilo",
-      "occurrences": 1,
-      "partial_matches": [
-        "Índices"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -982,18 +799,6 @@
     {
       "covered_by": null,
       "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Duration de Carteiras",
-      "occurrences": 1,
-      "partial_matches": [
-        "Duration",
-        "Carteiras"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Gráfico Preço x Taxa de Juros",
       "occurrences": 1,
       "partial_matches": [
@@ -1029,33 +834,11 @@
     {
       "covered_by": null,
       "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Indexação Pura",
-      "occurrences": 1,
-      "partial_matches": [
-        "Indexação"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
       "heading": "Gestão de Carteiras de Renda Fixa em Relação a Passivos",
       "occurrences": 1,
       "partial_matches": [
         "Gestão de Carteiras de Renda Fixa",
         "Passivos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Dollar Duration",
-      "occurrences": 1,
-      "partial_matches": [
-        "Duration"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -1079,18 +862,6 @@
       "occurrences": 1,
       "partial_matches": [
         "Derivativos"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Crédito Privado ASG",
-      "occurrences": 1,
-      "partial_matches": [
-        "Crédito Privado",
-        "ASG"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -2622,6 +2393,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "artifact.key_information_sheet",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Lâmina de Informações Básicas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "artifact.key_information_sheet",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.fund",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Material de Divulgação: Fundo",
@@ -2703,6 +2483,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "actor.rating_agency",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Agência de rating",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "actor.rating_agency",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.advisory_board",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Conselhos Consultivos e Comitês",
@@ -2775,12 +2564,39 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.currency_fund",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Fundos Cambiais",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.currency_fund",
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.multimarket_fund",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Fundos Multimercado",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.multimarket_fund",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.come_cotas",
       "file": "05-legislacao-regulacao-e-tributacao",
       "heading": "Come-Cotas: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.come_cotas",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.tax_reclassification",
+      "file": "05-legislacao-regulacao-e-tributacao",
+      "heading": "Desenquadramento Tributário",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.tax_reclassification",
       "status": "covered"
     },
     {
@@ -2808,6 +2624,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.risk_management",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.integrated_risk_management",
+      "file": "06-gestao-de-riscos",
+      "heading": "Gestão Integrada de Risco",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.integrated_risk_management",
       "status": "covered"
     },
     {
@@ -2910,12 +2735,102 @@
       "status": "covered"
     },
     {
+      "covered_by": "risk.early_redemption",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco de Resgate Antecipado",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.early_redemption",
+      "status": "covered"
+    },
+    {
+      "covered_by": "risk.inflation",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco de Inflação",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.inflation",
+      "status": "covered"
+    },
+    {
+      "covered_by": "risk.volatility",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco de Volatilidade",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.volatility",
+      "status": "covered"
+    },
+    {
+      "covered_by": "risk.event",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco de Evento",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.event",
+      "status": "covered"
+    },
+    {
+      "covered_by": "risk.sovereign",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco Soberano",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.sovereign",
+      "status": "covered"
+    },
+    {
+      "covered_by": "risk.counterparty",
+      "file": "06-gestao-de-riscos",
+      "heading": "Risco de Contraparte",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "risk.counterparty",
+      "status": "covered"
+    },
+    {
+      "covered_by": "quantity.recovery_rate",
+      "file": "06-gestao-de-riscos",
+      "heading": "LGD = 1 - Taxa de Recuperação",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "quantity.recovery_rate",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.performance_measurement",
       "file": "07-avaliacao-de-desempenho",
       "heading": "Medição de Desempenho (Performance Measurement)",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.performance_measurement",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.manager_universe",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Universo de Gestores",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.manager_universe",
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.broad_market_index",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Índices Amplos de Mercado",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.broad_market_index",
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.style_index",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Índices de Estilo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.style_index",
       "status": "covered"
     },
     {
@@ -3036,6 +2951,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.portfolio_duration",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Duration de Carteiras",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.portfolio_duration",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.call_option",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Gráfico com opção de compra (call) embutida",
@@ -3072,6 +2996,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.pure_indexing",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Indexação Pura",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.pure_indexing",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.enhanced_indexing",
       "file": "09-gestao-de-carteiras-de-renda-fixa-2",
       "heading": "Enhanced Indexing",
@@ -3096,6 +3029,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.key_rate_duration",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.dollar_duration",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Dollar Duration",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.dollar_duration",
       "status": "covered"
     },
     {
@@ -3150,6 +3092,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "risk.credit",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.esg_private_credit",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Crédito Privado ASG",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.esg_private_credit",
       "status": "covered"
     },
     {
@@ -3433,15 +3384,15 @@
     }
   ],
   "mass_by_status": {
-    "covered": 716,
-    "partial": 116
+    "covered": 736,
+    "partial": 96
   },
   "registry": {
-    "concepts": 525,
+    "concepts": 545,
     "version": "2.28.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
-  "resolved_share_of_mass": 0.8726,
+  "resolved_share_of_mass": 0.8954,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }

@@ -5,7 +5,7 @@
   "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
   "validation": {
     "unit_tests_passed": 19,
-    "registry_concepts": 525,
+    "registry_concepts": 545,
     "registry_errors": 0,
     "registry_warnings": 4,
     "schema_validation": "passed",
@@ -46,7 +46,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 9177,
-      "sha256": "7cf0410bc3255fbcbb177ff783c3b0a8d5307034ccce0b7a8df8a89ea05badde"
+      "sha256": "7c1b612da97a1b06232aabb29aca0494f0f782975f7816be131af92f563b0e91"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -242,6 +242,11 @@
       "path": "config/cga-batch-39.json",
       "size_bytes": 1074,
       "sha256": "ef12de0f105c477efeea9b3ebc774dbbf99aa80d70141ec11a20ca41e6d11901"
+    },
+    {
+      "path": "config/cga-batch-40.json",
+      "size_bytes": 7817,
+      "sha256": "c01ec82e2f3ebe02cc74bf143065e1eb0a8dbe5a0a7d7682d6c769c00b83700c"
     },
     {
       "path": "config/precision-amendment-01.json",
@@ -730,8 +735,8 @@
     },
     {
       "path": "reports/dev-retrieval-ablations-final.json",
-      "size_bytes": 88128,
-      "sha256": "778da6c2817a68afc66a00fe99a2f17d1565f2e872d74ab20f0f7a135bb510c1"
+      "size_bytes": 88187,
+      "sha256": "ef236101f05c5a10428d0912ffead6764a271e8c56db0ac3ed78161b7685fd72"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -741,7 +746,7 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "7a70d6b3a5f9119ac1b171a3cd2abaa80e0d146b038d49c7b5ab38eafed1bcbb"
+      "sha256": "4682efdaf1426c61e3baa5582a9bdfbcb2e6c9b2564bfd84dd5c07f42f798fa9"
     },
     {
       "path": "reports/form-polysemy.json",
@@ -750,8 +755,8 @@
     },
     {
       "path": "reports/heading-coverage.json",
-      "size_bytes": 103060,
-      "sha256": "58a43816d18f6eaa69060d429d5e84b240c0eaad77b3f2c346d4d25ee295a346"
+      "size_bytes": 103150,
+      "sha256": "b757d8b9b17bec399fbbd4cd06240e7afd67f8671ea5c2f6ec3a5dc944ecc375"
     },
     {
       "path": "reports/oov-queue.json",
@@ -765,8 +770,8 @@
     },
     {
       "path": "reports/package-validation.json",
-      "size_bytes": 7403,
-      "sha256": "a541bbc756ca12ed9b9bea5d696f52f4382ce46be9223bfefce95af83bf18049"
+      "size_bytes": 7404,
+      "sha256": "70a5add99ab632bb9b4092960970162151993ed264d6a8a1b779bd673271eded"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -821,7 +826,7 @@
     {
       "path": "reports/release-manifest.json",
       "size_bytes": 32233,
-      "sha256": "771cc5b3db62c78c5cf6401bfcceab89c59765df86689b72fe6a582c2b2dbc14"
+      "sha256": "c6d6717437bb856ba3bba5e571c007d7c7d1db52c57d219471c478359d186687"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1330,18 +1335,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 698008,
-      "sha256": "a5a500154b350303c931bef9bc5756848138df19fa5f4ae7c77dabc56a1e44ac"
+      "size_bytes": 722593,
+      "sha256": "747842891f82a1642c8246c6c6a4e8d5a8120c5b3a10a63cb40bbe0227d7ef4d"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "size_bytes": 106239,
-      "sha256": "f6d8735b2504b61b081c27a45880282e6c2b2412e8eb79af882ff875795bb2d5"
+      "size_bytes": 106940,
+      "sha256": "b7e1368ec9602c9bae8cf4477849becce156856e9957103d48d23febde0ff0f5"
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 17743,
-      "sha256": "5c061a71fd8f864db3cdc24049673cf8521023ce8d7e986fe3a3ba9cd3f0f6df"
+      "size_bytes": 18357,
+      "sha256": "c4f1249bb99861ee066d5fe8e115214a6914733077129ad2ac5170c0cfecac2a"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -1416,7 +1421,7 @@
     {
       "path": "tests/test_controlled_language.py",
       "size_bytes": 30707,
-      "sha256": "8d6312cf00a3d40a290ef0c64c8ca335cfe6d5191e6aedd8efe0cde896a5de3a"
+      "sha256": "59c231c12daaf79b960e864c2f0783554836dcf073b49ab75fea80295dcf630a"
     },
     {
       "path": "tests/test_documented_commands.py",
