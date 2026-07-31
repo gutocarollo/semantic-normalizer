@@ -7,11 +7,11 @@
     },
     "baseline_target_share": 0.4151,
     "baseline_unknown_occurrences": 18877,
-    "current_unknown_occurrences": 11480,
+    "current_unknown_occurrences": 11466,
     "meets_target": false,
     "method": "same corpus, same sentence rule, same cleanup on both sides; the baseline registry holds only the 86 pre-CGA concepts, so cleanup nets out and the share is concept contribution alone",
-    "resolved_occurrences": 7397,
-    "resolved_share": 0.3919
+    "resolved_occurrences": 7411,
+    "resolved_share": 0.3926
   },
   "corpus_sha256": "95098bbbfe1c9fd82c370bdef309ce7f050a0bdf442cf51df5e469c84d20785b",
   "curve": [
@@ -22,43 +22,43 @@
     },
     {
       "concepts": 50,
-      "occurrences": 1242,
+      "occurrences": 1241,
       "share_of_unknown": 0.1082
     },
     {
       "concepts": 100,
-      "occurrences": 1971,
-      "share_of_unknown": 0.1717
+      "occurrences": 1965,
+      "share_of_unknown": 0.1714
     },
     {
       "concepts": 150,
-      "occurrences": 2550,
-      "share_of_unknown": 0.2221
+      "occurrences": 2543,
+      "share_of_unknown": 0.2218
     },
     {
       "concepts": 200,
-      "occurrences": 3051,
-      "share_of_unknown": 0.2658
+      "occurrences": 3042,
+      "share_of_unknown": 0.2653
     },
     {
       "concepts": 300,
-      "occurrences": 3906,
-      "share_of_unknown": 0.3402
+      "occurrences": 3896,
+      "share_of_unknown": 0.3398
     }
   ],
   "label": "final",
   "queue": {
     "queue_registry_version": "2.6.0",
-    "unknown_occurrences": 11480,
+    "unknown_occurrences": 11466,
     "unknown_terms": 3896
   },
   "registry": {
     "concepts": 257,
-    "sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba",
+    "sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
     "version": "2.6.0"
   },
   "sample": {
-    "concepts_per_sentence": 3.1033,
+    "concepts_per_sentence": 3.1,
     "seed": 7,
     "size": 300,
     "status": {
@@ -66,7 +66,7 @@
       "partial": 6,
       "review": 240
     },
-    "unresolved_items": 2126,
+    "unresolved_items": 2127,
     "with_concept": 279,
     "with_concept_share": 0.93
   },
@@ -74,6 +74,6 @@
   "target": {
     "concepts": 200,
     "derivation": "cumulative occurrences of the top 200 unknown terms / unknown total",
-    "resolved_share_of_unknown": 0.2658
+    "resolved_share_of_unknown": 0.2653
   }
 }

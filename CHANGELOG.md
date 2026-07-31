@@ -38,7 +38,7 @@ and one round of execution review.
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | OOV occurrences resolved vs the **frozen** baseline | 7397 / 18877 = **39.19 %** against a 41.51 % target — **FAIL** |
+| 1 | OOV occurrences resolved vs the **frozen** baseline | 7411 / 18877 = **39.26 %** against a 41.51 % target — **FAIL** |
 | 2 | `auto_match_precision`, blind adjudication | batch 1 **0.983**, 2 **1.00**, 3 **0.95**, 4 **0.967** — PASS |
 | 3 | Wrong concept accepted in the sample | 0 after correction — PASS |
 | 4 | Concepts with an EN label lacking evidence | 0 — PASS |
@@ -54,7 +54,7 @@ attempts, and the two discarded ones are worth naming because each looked fine:
 3. **What ships:** `reports/baseline-queue-86-concepts.json`, built by the same pipeline, on
    the same corpus, with the same cleanup and the same sentence rule, against a registry
    holding only the 86 pre-CGA concepts. Cleanup appears on both sides and nets out, so
-   39.19 % is concept contribution alone.
+   39.26 % is concept contribution alone.
 
 ### Added — pipeline
 
@@ -93,6 +93,11 @@ context); `proteção` → `technical.hedge` (matched regulatory protection); `B
 `technical.bacen` (matched the *European* Central Bank); `ajustes` → `artifact.configuration`
 (matched daily futures margin).
 
+Two more fell to round 3's exhaustive sweep: bare `valores` on `entity.securities` (wrong in
+10 of 10 occurrences outside `bolsa de valores`, which is now a registered phrase of its own so
+the ~20 correct hits survive) and bare `comprado`/`vendido` on the position concepts (a
+purchased CD is not a trading long).
+
 **One was fixed by modelling instead of suppressing.** `IR` resolved to
 `technical.information_ratio` in tax context — 3 of the 7 isolated `IR` occurrences in the
 corpus mean *Imposto de Renda* (`DARF`, *IR Come-Cotas*, *tributação do IR*). The collision
@@ -100,9 +105,31 @@ demoter could not help, because only one side of the collision existed. Adding
 `entity.income_tax` — which also claims `IR` — let the demoter make both ambiguous, which is
 what the corpus actually is. `DARF`, `IOF`, withholding and capital gain came with it.
 
+### The review method changed, and that is the most transferable result
+
+Round 3 stopped sampling and swept every corpus sentence touching the batch-4/5 concepts.
+Random sampling had reported 8 % and 3.3 % false positives; the exhaustive sweep of one batch
+reported **16 %** — double the worst random figure. The author's own adjudications (1.7 %, 0 %,
+5 %, 3.3 %) carry the same structural blind spot, and the 0 % was already refuted by a real
+false positive found in round 1.
+
+The reason is mechanical: 60 sampled occurrences out of ~1682 sentences cannot reach an error
+concentrated in a rare syntactic sub-pattern of a form that is mostly right. `valores` matched
+its compounds correctly ~20 times and was wrong 10 out of 10 times outside them — a random
+sample sees mostly the correct ones.
+
+**Rule adopted: a bare single-word form of a common word gets an exhaustive sweep of every
+occurrence before `policy: auto`, never a sample of N.**
+
+`tests/test_registry_governance.py` now carries the form/concept pairs adjudication rejected.
+The key is the pair, not the form, and that distinction is the lesson: `crédito` is wrong on
+`risk.credit` and right as the preferred label of `entity.credit`; `exposição` is wrong on
+`risk.financial` and right on `quantity.exposure`. A rejected form usually means a missing
+concept, not a bad word.
+
 ### Known gaps
 
-- **Line 1 of the gate fails at 39.19 % against 41.51 %.** The baseline nets out cleanup, so
+- **Line 1 of the gate fails at 39.26 % against 41.51 %.** The baseline nets out cleanup, so
   this is concept contribution with nothing flattering left in it. For scale: the 166 CGA
   concepts match ~4500 occurrences across the corpus; the 86 pre-existing ones match 281, being
   procedural-writing vocabulary with almost no overlap with finance.
@@ -218,6 +245,28 @@ Portuguese label is authored here regardless; no third-party dictionary text is 
 `examples/` (the 9×9 fixture whose queries shared no content token with their targets, so its
 raw-BM25 baseline of 0.000 was construction rather than measurement), `config/concepts.json`,
 `schemas/concept-registry.schema.json`, `scripts/run_smoke_test.sh`.
+
+### The review method changed, and that is the most transferable result
+
+Round 3 stopped sampling and swept every corpus sentence touching the batch-4/5 concepts.
+Random sampling had reported 8 % and 3.3 % false positives; the exhaustive sweep of one batch
+reported **16 %** — double the worst random figure. The author's own adjudications (1.7 %, 0 %,
+5 %, 3.3 %) carry the same structural blind spot, and the 0 % was already refuted by a real
+false positive found in round 1.
+
+The reason is mechanical: 60 sampled occurrences out of ~1682 sentences cannot reach an error
+concentrated in a rare syntactic sub-pattern of a form that is mostly right. `valores` matched
+its compounds correctly ~20 times and was wrong 10 out of 10 times outside them — a random
+sample sees mostly the correct ones.
+
+**Rule adopted: a bare single-word form of a common word gets an exhaustive sweep of every
+occurrence before `policy: auto`, never a sample of N.**
+
+`tests/test_registry_governance.py` now carries the form/concept pairs adjudication rejected.
+The key is the pair, not the form, and that distinction is the lesson: `crédito` is wrong on
+`risk.credit` and right as the preferred label of `entity.credit`; `exposição` is wrong on
+`risk.financial` and right on `quantity.exposure`. A rejected form usually means a missing
+concept, not a bad word.
 
 ### Known gaps
 

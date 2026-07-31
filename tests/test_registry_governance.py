@@ -138,6 +138,49 @@ class RegistryGovernanceTests(unittest.TestCase):
                     self.assertTrue(record["lexical_forms"][language])
                     self.assertTrue(record["positive_examples"][language])
 
+    # Form/concept pairs an exhaustive corpus sweep proved wrong. The key is the PAIR, not the
+    # form: `crédito` is wrong on `risk.credit` and right as the preferred label of
+    # `entity.credit`, and `exposição` is wrong on `risk.financial` and right on
+    # `quantity.exposure`. That distinction is the whole lesson — a rejected form usually means
+    # a missing concept, not a bad word.
+    ADJUDICATED_NOT_AUTOMATIC = {
+        ("entity.securities", "pt-BR", "valores"): "matched scores, notional amounts and accounting sums; 10 of 10 real occurrences wrong outside 'bolsa de valores'",
+        ("quantity.value", "pt-BR", "valores"): "matched 'Bolsa de Valores'",
+        ("risk.credit", "pt-BR", "crédito"): "matched 'curva de crédito', which is credit, not credit risk",
+        ("risk.financial", "pt-BR", "exposição"): "gross exposure is a quantity, not a risk",
+        ("risk.financial", "en", "exposure"): "same, in English",
+        ("technical.hedge", "pt-BR", "proteção"): "matched regulatory investor protection",
+        ("entity.class", "pt-BR", "classes"): "matched asset-class context as fund-share class",
+        ("artifact.configuration", "pt-BR", "ajustes"): "matched daily futures margin",
+        ("technical.long_position", "pt-BR", "comprado"): "matched a purchased CD, not a trading long",
+        ("technical.short_position", "pt-BR", "vendido"): "same shape as `comprado`",
+        ("technical.information_ratio", "pt-BR", "IR"): "shares the acronym with Imposto de Renda",
+        ("entity.income_tax", "pt-BR", "IR"): "shares the acronym with Information Ratio",
+        ("entity.resource", "en", "funds"): "matched 'Hedge Funds'",
+        ("technical.bacen", "pt-BR", "Banco Central"): "matched the European Central Bank",
+    }
+
+    def test_forms_adjudication_rejected_never_return_as_automatic(self):
+        """A form rejected on a concept must not come back automatic on that concept.
+
+        This guards the one defect that recurred across batches: `valores` was removed from
+        `quantity.value` in batch 3 for matching *Bolsa de Valores*, then reintroduced in
+        batch 4 on `entity.securities` with the same bare shape and the same failure — 10 of
+        10 real occurrences wrong. Three review rounds found it. A list makes a fourth
+        unnecessary, and memory is not a guard.
+        """
+        for record in self.records:
+            for language, entries in record["lexical_forms"].items():
+                for entry in entries:
+                    key = (record["concept_id"], language, entry["form"])
+                    if key in self.ADJUDICATED_NOT_AUTOMATIC and entry["policy"] == "auto":
+                        self.fail(
+                            f"{record['concept_id']}.{language}: '{entry['form']}' is back as "
+                            f"policy=auto. Adjudication rejected it because it "
+                            f"{self.ADJUDICATED_NOT_AUTOMATIC[key]}. Use a multi-word form, or "
+                            f"keep it as `review`."
+                        )
+
     def test_retired_ids_are_not_referenced_as_concepts(self):
         """A renamed id is history, not a concept: it must not appear in any relation."""
         live = {record["concept_id"] for record in self.records}

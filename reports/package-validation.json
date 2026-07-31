@@ -33,7 +33,7 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "e578b2bd98b4bf61658750c5275e55b8460fadd1902fd3219d822c034a9478e8",
+    "installed_package_sha256": "863ec693e7aa7c959756d3de1c105d056774eba5a4821daae642835e48deb05a",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
@@ -72,9 +72,9 @@
       "automatic_keys": 638,
       "records": 257,
       "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-      "registry_sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba",
+      "registry_sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
       "registry_version": "2.6.0",
-      "review_keys": 163,
+      "review_keys": 166,
       "valid": true
     }
   },
@@ -113,9 +113,9 @@
       "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
       "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
       "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-      "registry.jsonl": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba",
+      "registry.jsonl": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
       "registry.provenance.jsonl": "9884c7f72b2a9779c97e8bbc2c1f520375267ad9931c83362b0fe4ddc8e1c9e5",
-      "registry.release.json": "4d9a1ade81a4cf6062e99d0f7f7bc04351ec678ea03196e38be6964f08f5aa21",
+      "registry.release.json": "9866f887552592d0cc88cc79807f663ca38ef5621d6bdb223b24da849c6dd22a",
       "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
       "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
     },
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "fc40d1e3be2eb611bde9a66e27797aa80e3bb7d826e51c50dc272a4aade87506",
-    "size": 544057,
+    "sha256": "b93977c176b2466b5df8660045774808b495c963d31231e4d25b50d85650a9d3",
+    "size": 544570,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }

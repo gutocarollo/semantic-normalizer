@@ -20,8 +20,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 29482,
-      "sha256": "670260f7e00307df42b6531224a3b5d37a465e4116138b2aef4feecd96b74c62"
+      "size_bytes": 32493,
+      "sha256": "4c56965237b011cfc171d5e510d9cc8ec6bc906a946a1cefcafd6c1f8bfb93e6"
     },
     {
       "path": "LICENSE",
@@ -46,7 +46,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 2964,
-      "sha256": "0d24161a43861e44d2dd80028a63f78f29a042ba12c10b2cfc0f3aee5b1bed5f"
+      "sha256": "bc109afca360e76cc52db9c6ddfc1cffb250b445a32dc8e4df6f701227c475cd"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -185,8 +185,8 @@
     },
     {
       "path": "reports/coverage-final.json",
-      "size_bytes": 2021,
-      "sha256": "96758b17d804b317139394da5b122ffb7d4fcc948edbf148672ec7a7566f719c"
+      "size_bytes": 2018,
+      "sha256": "c117381345caa2919b632d7fde9728a47733a8c8da11a1676d0055004bf22355"
     },
     {
       "path": "reports/dev-auto-match-adjudication-blind.jsonl",
@@ -261,7 +261,7 @@
     {
       "path": "reports/dev-retrieval-ablations-final.json",
       "size_bytes": 88205,
-      "sha256": "fb26963f071413e99c813ac68d5fd5af4a307ec64e38a3846df3271275139288"
+      "sha256": "3228fa6842475f36e6d601014276a29dd048c13bee6f19bf340171e9629d6a54"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -271,17 +271,17 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "6725f3ab465b0d3083d2f0469d054c4f99bff60cfc2a2f5981042ee268d48456"
+      "sha256": "048da09d83b8f5f81bd493bfec36892b93ba1d0308d25fa09f3bf390bb57a0bb"
     },
     {
       "path": "reports/oov-queue.json",
-      "size_bytes": 1931330,
-      "sha256": "c4ca97d5f356a6a010739d77b1345dfccd7d9657ede4690abe3f1e3cfb50f40d"
+      "size_bytes": 1932933,
+      "sha256": "bc2582209015ecaad3017d3489019cdca87775468c86f3575ffa552d8c595059"
     },
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7398,
-      "sha256": "42fcff858447e7c8ea6b2489f1a2cb0716e0226cf3edc8f278d95fc3a1ba25ec"
+      "sha256": "e0ba5c2ef69e1ec87bf301d7470a0807c4f223f2fa57ef12bc95d7a85848743f"
     },
     {
       "path": "reports/registry-migration.json",
@@ -296,7 +296,7 @@
     {
       "path": "reports/release-manifest.json",
       "size_bytes": 18257,
-      "sha256": "4a2fb2b456bb038ab85625c52d38466038c2a89d9ae6b17579196987ba28af50"
+      "sha256": "a4256c29d33b430020dbbb4c2de1f337e4503a3d32af442816dbdc10462fc79c"
     },
     {
       "path": "reports/sample-output.json",
@@ -465,8 +465,8 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 327016,
-      "sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba"
+      "size_bytes": 327264,
+      "sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
@@ -475,8 +475,8 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 8674,
-      "sha256": "4d9a1ade81a4cf6062e99d0f7f7bc04351ec678ea03196e38be6964f08f5aa21"
+      "size_bytes": 8939,
+      "sha256": "9866f887552592d0cc88cc79807f663ca38ef5621d6bdb223b24da849c6dd22a"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -575,8 +575,8 @@
     },
     {
       "path": "tests/test_registry_governance.py",
-      "size_bytes": 6816,
-      "sha256": "873b208d43ea9ec5b22d8e19e6c28908f20ada46e4a82477f25f08fbd81a7100"
+      "size_bytes": 9881,
+      "sha256": "522f4b8c8b6a11596779d5125c6260f0c06d23c823779c924878387012d94b66"
     },
     {
       "path": "tests/test_runtime_contracts.py",

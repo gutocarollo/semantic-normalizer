@@ -72,7 +72,7 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "bb25abf5358c631417c9cf0056cf46ff05b6107863a49387791269cc538d2aba",
+    "sha256": "591c6c722aaea622a3e50428e95132ec8961a4d40404ca467b35a76c5bb2f95d",
     "version": "2.6.0"
   },
   "schema_version": "oov-queue-v1",
@@ -296,6 +296,15 @@
       },
       {
         "contexts": [
+          "A empresa RToro Education S/A possui uma dívida de R$ 1.000.000,00 pós-fixada, com vencimento em um ano (ou seja, ela não sabe o quanto irá pagar ao total por essa dívida), mas ela já possui vendas realizadas, recebendo os devidos valores em um ano (vendas através de cartão de crédito).",
+          "As atualizações dos valores referentes aos critérios Score CDP-Climate Change e RepRisk Index – Peak RRI serão consideradas a cada rebalanceamento quadrimestral, podendo resultar na inclusão de ativos que passem a atendê-los.",
+          "O Oscilador Estocástico gera valores entre 0 e 100 e é frequentemente plotado em um gráfico na forma de duas linhas, uma acima da outra, acompanhadas por uma linha de referência em 80 (indicando sobrecompra) e uma em 20 (indicando sobrevenda)."
+        ],
+        "occurrences": 10,
+        "term": "valores"
+      },
+      {
+        "contexts": [
           "Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing B3 e todo comprador compra da clearing B3.",
           "É permitida a cobrança de ajuste sobre a performance individual do cotista que aplicar recursos na classe ou subclasse posteriormente à data da última cobrança por método distinto do método do ajuste, desde que causando os mesmos efeitos.",
           "Esse ajuste é chamado Convexidade e que visa justamente a incorporar esse formato mais curvilíneo à reta da duration modificada."
@@ -402,6 +411,14 @@
       },
       {
         "contexts": [
+          "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2.",
+          "Ainda temos a estratégia Short Bias ou Viés Vendido."
+        ],
+        "occurrences": 2,
+        "term": "vendido"
+      },
+      {
+        "contexts": [
           "Assim, o mais importante desse tema são os seis estilos de Long Only: - Growth; - Value Investing; - Blend; - Capitalização; - GARP (Growth at a Reasonable Price); e - Dividendos.",
           "Já o Estilo VALUE INVESTING assume que, a partir da análise de dados econômico financeiros e também fundamentalistas de uma empresa, seus ativos podem estar subavaliados, surgindo oportunidades de ganhos."
         ],
@@ -415,6 +432,13 @@
         ],
         "occurrences": 2,
         "term": "allocation"
+      },
+      {
+        "contexts": [
+          "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares."
+        ],
+        "occurrences": 1,
+        "term": "comprado"
       },
       {
         "contexts": [
@@ -2958,15 +2982,6 @@
         ],
         "occurrences": 18,
         "term": "momento"
-      },
-      {
-        "contexts": [
-          "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-          "A Bolsa de Valores é um mercado organizado e regulado, onde as ações são negociadas publicamente.",
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC)."
-        ],
-        "occurrences": 18,
-        "term": "bolsa"
       },
       {
         "contexts": [
@@ -8987,6 +9002,15 @@
         ],
         "occurrences": 4,
         "term": "transparência"
+      },
+      {
+        "contexts": [
+          "Da mesma forma que no Brasil, as empresas americanas negociadas na bolsa possuem dois tipos classificação de ações.",
+          "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
+          "- Alienação da cota: as cotas podem ser transferidas por cessão ou negociadas em bolsa/balcão organizado, ou seja, podem ser vendidas a um terceiro."
+        ],
+        "occurrences": 4,
+        "term": "bolsa"
       },
       {
         "contexts": [
@@ -33000,15 +33024,15 @@
   },
   "totals": {
     "ambiguous": {
-      "occurrences": 1202,
-      "terms": 45
+      "occurrences": 1215,
+      "terms": 48
     },
     "function": {
       "occurrences": 8053,
       "terms": 240
     },
     "unknown": {
-      "occurrences": 11480,
+      "occurrences": 11466,
       "terms": 3896
     }
   }
