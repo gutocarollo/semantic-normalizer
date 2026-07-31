@@ -1,12 +1,12 @@
 {
   "by_status": {
-    "covered": 239,
+    "covered": 240,
     "partial": 110,
-    "uncovered": 3
+    "uncovered": 2
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.679,
-  "covered_share_of_mass": 0.8462,
+  "covered_share_of_distinct": 0.6818,
+  "covered_share_of_mass": 0.8474,
   "distinct_headings": 352,
   "heading_occurrences": 832,
   "headings": [
@@ -19,6 +19,7 @@
         "Gestão de Carteiras",
         "passivos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -29,6 +30,7 @@
       "partial_matches": [
         "Fatos Relevantes"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -39,6 +41,7 @@
       "partial_matches": [
         "Mercados Organizados"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -50,6 +53,7 @@
         "Gestão de Carteiras",
         "benchmark"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -61,6 +65,7 @@
         "Performance",
         "Estratégias"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -71,6 +76,7 @@
       "partial_matches": [
         "Percentual"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -81,6 +87,7 @@
       "partial_matches": [
         "Gestor"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -92,6 +99,7 @@
         "Títulos",
         "Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -104,6 +112,7 @@
         "Call",
         "Put"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -115,6 +124,7 @@
         "Renda Fixa",
         "Call"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -126,6 +136,7 @@
         "Renda Fixa",
         "PUT"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -136,6 +147,7 @@
       "partial_matches": [
         "Global Bonds"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -146,6 +158,7 @@
       "partial_matches": [
         "Estratégias"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -156,6 +169,7 @@
       "partial_matches": [
         "Hedge Funds"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -167,6 +181,7 @@
         "Compra",
         "Contrato Futuro"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -178,6 +193,7 @@
         "Venda",
         "Contrato Futuro"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -188,6 +204,7 @@
       "partial_matches": [
         "Estratégias Ativas"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -198,6 +215,7 @@
       "partial_matches": [
         "RepRisk"
       ],
+      "resolved_by": "action.index",
       "status": "partial"
     },
     {
@@ -210,6 +228,7 @@
         "Fundos",
         "Renda Variável"
       ],
+      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -221,6 +240,7 @@
         "análise",
         "Renda Variável"
       ],
+      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -231,6 +251,7 @@
       "partial_matches": [
         "análise"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -241,6 +262,7 @@
       "partial_matches": [
         "Resolução CVM 175"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -251,15 +273,8 @@
       "partial_matches": [
         "Cotas"
       ],
+      "resolved_by": "entity.asset_class",
       "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Classes Aberta e Fechada",
-      "occurrences": 1,
-      "partial_matches": [],
-      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -270,6 +285,7 @@
         "Subclasses",
         "Cotas"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -280,6 +296,7 @@
       "partial_matches": [
         "CVM"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -290,6 +307,7 @@
       "partial_matches": [
         "Informações"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -300,6 +318,7 @@
       "partial_matches": [
         "Fundo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -310,6 +329,7 @@
       "partial_matches": [
         "Rentabilidade"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -320,6 +340,7 @@
       "partial_matches": [
         "Rentabilidade"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -330,6 +351,7 @@
       "partial_matches": [
         "Divulgação de Informações"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -340,6 +362,7 @@
       "partial_matches": [
         "Demonstrações Contábeis"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -350,6 +373,7 @@
       "partial_matches": [
         "Administrador"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -360,6 +384,7 @@
       "partial_matches": [
         "Administrador"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -370,6 +395,7 @@
       "partial_matches": [
         "rating"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -380,6 +406,7 @@
       "partial_matches": [
         "Classes Restritas"
       ],
+      "resolved_by": "entity.asset_class",
       "status": "partial"
     },
     {
@@ -391,6 +418,7 @@
         "Resolução CVM 175",
         "Fundos de Investimento"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -401,6 +429,7 @@
       "partial_matches": [
         "contraparte"
       ],
+      "resolved_by": "entity.asset_class",
       "status": "partial"
     },
     {
@@ -411,6 +440,7 @@
       "partial_matches": [
         "Fundos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -422,6 +452,7 @@
         "Fundos",
         "Multimercado"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -433,6 +464,7 @@
         "Investimento",
         "cotas"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -443,6 +475,7 @@
       "partial_matches": [
         "Fundos de Investimentos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -453,6 +486,7 @@
       "partial_matches": [
         "Desenquadramento"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -463,6 +497,7 @@
       "partial_matches": [
         "Informações"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -473,6 +508,7 @@
       "partial_matches": [
         "Gestão de Risco"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -483,6 +519,7 @@
       "partial_matches": [
         "Risco"
       ],
+      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -494,6 +531,7 @@
         "Impactos",
         "Rating"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -504,6 +542,7 @@
       "partial_matches": [
         "Títulos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -515,6 +554,7 @@
         "Spread",
         "Crédito"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -525,6 +565,7 @@
       "partial_matches": [
         "Risco de Mercado"
       ],
+      "resolved_by": "quantity.measure",
       "status": "partial"
     },
     {
@@ -536,6 +577,7 @@
         "Variância",
         "Desvio Padrão"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -547,6 +589,7 @@
         "Variância",
         "Desvio Padrão"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -558,6 +601,7 @@
         "Variância",
         "Desvio Padrão"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -569,6 +613,7 @@
         "Variância",
         "Desvio Padrão"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -580,6 +625,7 @@
         "Variância",
         "Desvio Padrão"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -590,6 +636,7 @@
       "partial_matches": [
         "VARIÂNCIA"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -600,6 +647,7 @@
       "partial_matches": [
         "VARIÂNCIA"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -612,6 +660,7 @@
         "títulos",
         "Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -622,6 +671,7 @@
       "partial_matches": [
         "Riscos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -633,6 +683,7 @@
         "Risco",
         "Resgate"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -644,6 +695,7 @@
         "Risco",
         "Inflação"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -655,6 +707,7 @@
         "Risco",
         "Volatilidade"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -665,6 +718,7 @@
       "partial_matches": [
         "Risco"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -675,6 +729,7 @@
       "partial_matches": [
         "Risco"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -685,6 +740,7 @@
       "partial_matches": [
         "Risco de Crédito"
       ],
+      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -696,6 +752,7 @@
         "Risco",
         "Contraparte"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -707,6 +764,19 @@
         "LGD",
         "Taxa"
       ],
+      "resolved_by": null,
+      "status": "partial"
+    },
+    {
+      "covered_by": null,
+      "file": "06-gestao-de-riscos",
+      "heading": "Riscos de Derivativos e Risco Operacional",
+      "occurrences": 1,
+      "partial_matches": [
+        "Riscos de Derivativos",
+        "Risco Operacional"
+      ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -717,6 +787,7 @@
       "partial_matches": [
         "Benchmark"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -727,6 +798,7 @@
       "partial_matches": [
         "Gestores"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -738,6 +810,7 @@
         "Índices",
         "Mercado"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -748,6 +821,7 @@
       "partial_matches": [
         "Índices"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -759,6 +833,7 @@
         "Modelo",
         "retornos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -769,16 +844,7 @@
       "partial_matches": [
         "Benchmark"
       ],
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "07-avaliacao-de-desempenho",
-      "heading": "Atribuição Macro x Micro",
-      "occurrences": 1,
-      "partial_matches": [
-        "Atribuição Macro"
-      ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -789,6 +855,7 @@
       "partial_matches": [
         "Gestão de Carteiras de Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -801,6 +868,7 @@
         "Títulos",
         "Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -811,6 +879,7 @@
       "partial_matches": [
         "Medidas de Retorno"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -823,6 +892,7 @@
         "Valor",
         "YTM"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -835,6 +905,7 @@
         "Ágio",
         "Deságio"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -846,6 +917,7 @@
         "LTN",
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -857,6 +929,7 @@
         "LFT",
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -868,6 +941,7 @@
         "YTM",
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -879,6 +953,7 @@
         "YTM",
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -889,6 +964,7 @@
       "partial_matches": [
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -899,6 +975,7 @@
       "partial_matches": [
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -910,6 +987,7 @@
         "Títulos",
         "Cálculo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -921,6 +999,7 @@
         "Riscos",
         "Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -932,6 +1011,7 @@
         "Riscos",
         "Investidor"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -944,6 +1024,7 @@
         "valor presente",
         "títulos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -955,6 +1036,7 @@
         "valor presente",
         "prazo"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -965,6 +1047,7 @@
       "partial_matches": [
         "todos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -977,6 +1060,7 @@
         "Valor Presente",
         "Carteira"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -987,6 +1071,7 @@
       "partial_matches": [
         "Duration"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -998,6 +1083,7 @@
         "Duration",
         "Carteiras"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1008,6 +1094,7 @@
       "partial_matches": [
         "Duration"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1020,6 +1107,7 @@
         "Taxa",
         "Juros"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1030,6 +1118,7 @@
       "partial_matches": [
         "Gestão de Carteiras de Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1040,6 +1129,7 @@
       "partial_matches": [
         "Gestão de Carteiras de Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1050,6 +1140,7 @@
       "partial_matches": [
         "Indexação"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1061,6 +1152,7 @@
         "Gestão de Carteiras de Renda Fixa",
         "Passivos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1071,6 +1163,7 @@
       "partial_matches": [
         "Duration"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1082,6 +1175,7 @@
         "Estratégias",
         "Gestão de Carteiras de Renda Fixa"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1092,6 +1186,7 @@
       "partial_matches": [
         "Derivativos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1103,6 +1198,7 @@
         "Crédito Privado",
         "ASG"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1113,6 +1209,7 @@
       "partial_matches": [
         "Micro-Alocação"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1121,6 +1218,7 @@
       "heading": "Estratégica x Tática",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.strategic_allocation",
       "status": "uncovered"
     },
     {
@@ -1129,6 +1227,7 @@
       "heading": "Dinâmica x Estática",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.dynamic_allocation",
       "status": "uncovered"
     },
     {
@@ -1139,6 +1238,7 @@
       "partial_matches": [
         "Alocação Estratégica"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1149,6 +1249,7 @@
       "partial_matches": [
         "Gestão de Recursos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1159,6 +1260,7 @@
       "partial_matches": [
         "Crédito Privado"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1169,6 +1271,7 @@
       "partial_matches": [
         "Patrimônio"
       ],
+      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -1179,6 +1282,7 @@
       "partial_matches": [
         "Perdas"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1189,6 +1293,7 @@
       "partial_matches": [
         "Fundos"
       ],
+      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -1197,6 +1302,7 @@
       "heading": "Resolução CVM 175",
       "occurrences": 65,
       "partial_matches": [],
+      "resolved_by": "artifact.cvm_resolution_175",
       "status": "covered"
     },
     {
@@ -1205,6 +1311,7 @@
       "heading": "Risco de Taxa de Juros",
       "occurrences": 23,
       "partial_matches": [],
+      "resolved_by": "technical.interest_rate_risk",
       "status": "covered"
     },
     {
@@ -1213,6 +1320,7 @@
       "heading": "Código: Administração de Recursos de Terceiros",
       "occurrences": 22,
       "partial_matches": [],
+      "resolved_by": "artifact.anbima_third_party_code",
       "status": "covered"
     },
     {
@@ -1221,6 +1329,7 @@
       "heading": "Prestação de Serviços",
       "occurrences": 19,
       "partial_matches": [],
+      "resolved_by": "entity.service",
       "status": "covered"
     },
     {
@@ -1229,6 +1338,7 @@
       "heading": "Fundos de Investimentos",
       "occurrences": 13,
       "partial_matches": [],
+      "resolved_by": "entity.fund",
       "status": "covered"
     },
     {
@@ -1237,6 +1347,7 @@
       "heading": "Ativos Financeiros no Exterior",
       "occurrences": 13,
       "partial_matches": [],
+      "resolved_by": "entity.foreign_financial_asset",
       "status": "covered"
     },
     {
@@ -1245,6 +1356,7 @@
       "heading": "Medidas de Performance",
       "occurrences": 13,
       "partial_matches": [],
+      "resolved_by": "technical.performance_measure",
       "status": "covered"
     },
     {
@@ -1253,6 +1365,7 @@
       "heading": "Imunização",
       "occurrences": 11,
       "partial_matches": [],
+      "resolved_by": "technical.immunisation",
       "status": "covered"
     },
     {
@@ -1261,6 +1374,7 @@
       "heading": "Análise Técnica",
       "occurrences": 10,
       "partial_matches": [],
+      "resolved_by": "technical.technical_analysis",
       "status": "covered"
     },
     {
@@ -1269,6 +1383,7 @@
       "heading": "Estratégias de Gestão de Carteiras de RF",
       "occurrences": 10,
       "partial_matches": [],
+      "resolved_by": "technical.fixed_income_portfolio_management",
       "status": "covered"
     },
     {
@@ -1277,6 +1392,7 @@
       "heading": "Títulos Privados",
       "occurrences": 9,
       "partial_matches": [],
+      "resolved_by": "entity.private_security",
       "status": "covered"
     },
     {
@@ -1285,6 +1401,7 @@
       "heading": "Fundos de Renda Fixa",
       "occurrences": 9,
       "partial_matches": [],
+      "resolved_by": "entity.fixed_income_fund",
       "status": "covered"
     },
     {
@@ -1293,6 +1410,7 @@
       "heading": "Taxa de Performance",
       "occurrences": 8,
       "partial_matches": [],
+      "resolved_by": "technical.performance_fee",
       "status": "covered"
     },
     {
@@ -1301,6 +1419,7 @@
       "heading": "Fundamentos da Gestão de Riscos",
       "occurrences": 8,
       "partial_matches": [],
+      "resolved_by": "technical.risk_management_fundamentals",
       "status": "covered"
     },
     {
@@ -1309,6 +1428,7 @@
       "heading": "Medidas de Dispersão",
       "occurrences": 8,
       "partial_matches": [],
+      "resolved_by": "quantity.measure",
       "status": "covered"
     },
     {
@@ -1317,6 +1437,7 @@
       "heading": "Convexidade",
       "occurrences": 8,
       "partial_matches": [],
+      "resolved_by": "technical.convexity",
       "status": "covered"
     },
     {
@@ -1325,6 +1446,7 @@
       "heading": "Estratégias Dinâmicas de Rebalanceamento",
       "occurrences": 8,
       "partial_matches": [],
+      "resolved_by": "technical.dynamic_allocation",
       "status": "covered"
     },
     {
@@ -1333,6 +1455,7 @@
       "heading": "Contrato Futuro",
       "occurrences": 7,
       "partial_matches": [],
+      "resolved_by": "technical.futures",
       "status": "covered"
     },
     {
@@ -1341,6 +1464,7 @@
       "heading": "Cotas",
       "occurrences": 7,
       "partial_matches": [],
+      "resolved_by": "entity.fund_share",
       "status": "covered"
     },
     {
@@ -1349,6 +1473,7 @@
       "heading": "Tipos de Benchmarks",
       "occurrences": 7,
       "partial_matches": [],
+      "resolved_by": "technical.benchmark_type",
       "status": "covered"
     },
     {
@@ -1357,6 +1482,7 @@
       "heading": "Precificação de Ativos",
       "occurrences": 7,
       "partial_matches": [],
+      "resolved_by": "technical.asset_pricing",
       "status": "covered"
     },
     {
@@ -1365,6 +1491,7 @@
       "heading": "Investimentos Socialmente Responsáveis",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "technical.socially_responsible_investment",
       "status": "covered"
     },
     {
@@ -1373,6 +1500,7 @@
       "heading": "Outras Estratégias Ativas e Agnósticas",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "technical.agnostic_strategy",
       "status": "covered"
     },
     {
@@ -1381,6 +1509,7 @@
       "heading": "Documentos & Informações",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "artifact.fund_documents+entity.information",
       "status": "covered"
     },
     {
@@ -1389,6 +1518,7 @@
       "heading": "Divulgação de Informações",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "action.disclose_information",
       "status": "covered"
     },
     {
@@ -1397,6 +1527,7 @@
       "heading": "Patrimônio Líquido Negativo",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "state.negative_net_assets",
       "status": "covered"
     },
     {
@@ -1405,6 +1536,7 @@
       "heading": "Limites por Emissor",
       "occurrences": 6,
       "partial_matches": [],
+      "resolved_by": "technical.concentration_limit",
       "status": "covered"
     },
     {
@@ -1413,6 +1545,7 @@
       "heading": "Títulos do Governo Americano",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "entity.us_government_security",
       "status": "covered"
     },
     {
@@ -1421,6 +1554,7 @@
       "heading": "Classes Restritas",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "entity.restricted_class",
       "status": "covered"
     },
     {
@@ -1429,6 +1563,7 @@
       "heading": "Limites por Modalidade de Ativo",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "technical.concentration_limit",
       "status": "covered"
     },
     {
@@ -1437,6 +1572,7 @@
       "heading": "Fundos de Ações",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "entity.equity_fund",
       "status": "covered"
     },
     {
@@ -1445,6 +1581,7 @@
       "heading": "Risco Operacional",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "risk.operational",
       "status": "covered"
     },
     {
@@ -1453,6 +1590,7 @@
       "heading": "Atribuição Micro",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "technical.micro_attribution",
       "status": "covered"
     },
     {
@@ -1461,6 +1599,7 @@
       "heading": "Estratégias de curvas de juros",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "technical.yield_curve_strategy",
       "status": "covered"
     },
     {
@@ -1469,6 +1608,7 @@
       "heading": "Métodos de Alocação de Ativos",
       "occurrences": 5,
       "partial_matches": [],
+      "resolved_by": "technical.asset_allocation",
       "status": "covered"
     },
     {
@@ -1477,6 +1617,7 @@
       "heading": "Títulos Americanos de Renda Fixa",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "entity.us_fixed_income_security",
       "status": "covered"
     },
     {
@@ -1485,6 +1626,7 @@
       "heading": "Hedge Funds",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.hedge_fund",
       "status": "covered"
     },
     {
@@ -1493,6 +1635,7 @@
       "heading": "Long and Short",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.long_and_short",
       "status": "covered"
     },
     {
@@ -1501,6 +1644,7 @@
       "heading": "Long only",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.long_only",
       "status": "covered"
     },
     {
@@ -1509,6 +1653,7 @@
       "heading": "Estilos",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.investment_style",
       "status": "covered"
     },
     {
@@ -1517,6 +1662,7 @@
       "heading": "Seleção e Contratação de Gestores",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "action.select_manager",
       "status": "covered"
     },
     {
@@ -1525,6 +1671,7 @@
       "heading": "Informação Privilegiada",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.privileged_information",
       "status": "covered"
     },
     {
@@ -1533,6 +1680,7 @@
       "heading": "Negociação com Uso Indevido",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.misuse_of_information",
       "status": "covered"
     },
     {
@@ -1541,6 +1689,7 @@
       "heading": "Encargos",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "entity.fund_charges",
       "status": "covered"
     },
     {
@@ -1549,6 +1698,7 @@
       "heading": "Limites de Concentração - Deveres",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.concentration_limit",
       "status": "covered"
     },
     {
@@ -1557,6 +1707,7 @@
       "heading": "Gestão de Risco",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.risk_management",
       "status": "covered"
     },
     {
@@ -1565,6 +1716,7 @@
       "heading": "Gerenciamento de Riscos",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.risk_management",
       "status": "covered"
     },
     {
@@ -1573,6 +1725,7 @@
       "heading": "Riscos de Derivativos",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.derivative_risk",
       "status": "covered"
     },
     {
@@ -1581,6 +1734,7 @@
       "heading": "Time-Weighted x Money Weighted Rate of Return",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.twrr+technical.money_weighted_return",
       "status": "covered"
     },
     {
@@ -1589,6 +1743,7 @@
       "heading": "Atribuição Macro",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.macro_attribution",
       "status": "covered"
     },
     {
@@ -1597,6 +1752,7 @@
       "heading": "Controle de Qualidade",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.quality_control_chart",
       "status": "covered"
     },
     {
@@ -1605,6 +1761,7 @@
       "heading": "Alocação de Ativos (Asset Allocation)",
       "occurrences": 4,
       "partial_matches": [],
+      "resolved_by": "technical.asset_allocation",
       "status": "covered"
     },
     {
@@ -1613,6 +1770,7 @@
       "heading": "Taxas de juros de referência",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.reference_rate",
       "status": "covered"
     },
     {
@@ -1621,6 +1779,7 @@
       "heading": "Bolsa de Valores Internacionais",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "entity.international_exchange",
       "status": "covered"
     },
     {
@@ -1629,6 +1788,7 @@
       "heading": "Total Return Equity Swap",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.total_return_equity_swap",
       "status": "covered"
     },
     {
@@ -1637,6 +1797,7 @@
       "heading": "Métodos Alternativos de Indexação",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.alternative_indexing",
       "status": "covered"
     },
     {
@@ -1645,6 +1806,7 @@
       "heading": "Fechamento do Fundo para Resgates",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "action.close_for_redemption",
       "status": "covered"
     },
     {
@@ -1653,6 +1815,7 @@
       "heading": "Limitação de Responsabilidade",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.limited_liability",
       "status": "covered"
     },
     {
@@ -1661,6 +1824,7 @@
       "heading": "Gestão de Risco em Instituições",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.institutional_risk_management",
       "status": "covered"
     },
     {
@@ -1669,6 +1833,7 @@
       "heading": "Risco de Crédito",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "risk.credit",
       "status": "covered"
     },
     {
@@ -1677,6 +1842,7 @@
       "heading": "Resolução CMN 2.554",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "artifact.cmn_resolution_2554",
       "status": "covered"
     },
     {
@@ -1685,6 +1851,7 @@
       "heading": "Value-at-Risk (VaR) Analítico ou Paramétrico",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.var",
       "status": "covered"
     },
     {
@@ -1693,6 +1860,7 @@
       "heading": "Value-at-Risk (VaR) de carteiras com dois ativos",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.var",
       "status": "covered"
     },
     {
@@ -1701,6 +1869,7 @@
       "heading": "Credit Default Swap",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.cds",
       "status": "covered"
     },
     {
@@ -1709,6 +1878,7 @@
       "heading": "Riscos ASG e Risco de Crédito",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.esg_risk+risk.credit",
       "status": "covered"
     },
     {
@@ -1717,6 +1887,7 @@
       "heading": "Avaliação de Desempenho",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.performance_appraisal",
       "status": "covered"
     },
     {
@@ -1725,6 +1896,7 @@
       "heading": "TIR – Taxa Interna de Retorno",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.irr",
       "status": "covered"
     },
     {
@@ -1733,6 +1905,7 @@
       "heading": "Precificação de títulos de Renda Fixa",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.fixed_income_pricing",
       "status": "covered"
     },
     {
@@ -1741,6 +1914,7 @@
       "heading": "Comportamento esperado da curva de juros",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.expected_curve_behaviour",
       "status": "covered"
     },
     {
@@ -1749,6 +1923,7 @@
       "heading": "Administração de Recursos de Terceiros",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "artifact.anbima_third_party_code",
       "status": "covered"
     },
     {
@@ -1757,6 +1932,7 @@
       "heading": "Princípios Gerais de Conduta (Cap. III)",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.conduct_principles",
       "status": "covered"
     },
     {
@@ -1765,6 +1941,7 @@
       "heading": "Apreçamento (Cap. XI)",
       "occurrences": 3,
       "partial_matches": [],
+      "resolved_by": "technical.pricing_policy",
       "status": "covered"
     },
     {
@@ -1773,6 +1950,7 @@
       "heading": "Títulos Americanos",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.us_government_security",
       "status": "covered"
     },
     {
@@ -1781,6 +1959,7 @@
       "heading": "Medidas de Retorno",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.return_measure",
       "status": "covered"
     },
     {
@@ -1789,6 +1968,7 @@
       "heading": "Bolsa e Mercado de Balcão",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.stock_exchange+technical.otc_market",
       "status": "covered"
     },
     {
@@ -1797,6 +1977,7 @@
       "heading": "Gestão de Carteiras Renda Variável",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.equity_portfolio_management",
       "status": "covered"
     },
     {
@@ -1805,6 +1986,7 @@
       "heading": "Estratégias Passivas",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.passive_strategy",
       "status": "covered"
     },
     {
@@ -1813,6 +1995,7 @@
       "heading": "Swap",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.swap",
       "status": "covered"
     },
     {
@@ -1821,6 +2004,7 @@
       "heading": "ISE - Metodologia",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.corporate_sustainability_index",
       "status": "covered"
     },
     {
@@ -1829,6 +2013,7 @@
       "heading": "Fundamental Law of Active Management",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.fundamental_law_active_management",
       "status": "covered"
     },
     {
@@ -1837,6 +2022,7 @@
       "heading": "1) Indicadores de Tendência (continuação)",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.trend_indicator",
       "status": "covered"
     },
     {
@@ -1845,6 +2031,7 @@
       "heading": "2) Indicadores de Reversão",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.reversal_indicator",
       "status": "covered"
     },
     {
@@ -1853,6 +2040,7 @@
       "heading": "Top-Down & Bottom-Up",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.top_down+technical.bottom_up",
       "status": "covered"
     },
     {
@@ -1861,6 +2049,7 @@
       "heading": "Distribuição – Regime Fechado",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.distribution",
       "status": "covered"
     },
     {
@@ -1869,6 +2058,7 @@
       "heading": "Subscrição e Integralização",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "action.subscribe_and_pay_in",
       "status": "covered"
     },
     {
@@ -1877,6 +2067,7 @@
       "heading": "Termo de Adesão e Ciência de Risco",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "artifact.adhesion_term",
       "status": "covered"
     },
     {
@@ -1885,6 +2076,7 @@
       "heading": "Barreiras aos resgates",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.redemption_gate",
       "status": "covered"
     },
     {
@@ -1893,6 +2085,7 @@
       "heading": "Fundos Socioambientais",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.social_environmental_fund",
       "status": "covered"
     },
     {
@@ -1901,6 +2094,7 @@
       "heading": "Assembleia de Cotistas",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.shareholders_meeting",
       "status": "covered"
     },
     {
@@ -1909,6 +2103,7 @@
       "heading": "Limites e Concentração",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.concentration_and_limits",
       "status": "covered"
     },
     {
@@ -1917,6 +2112,7 @@
       "heading": "Gestão de Liquidez",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.liquidity_management",
       "status": "covered"
     },
     {
@@ -1925,6 +2121,7 @@
       "heading": "Insolvência",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "state.insolvency",
       "status": "covered"
     },
     {
@@ -1933,6 +2130,7 @@
       "heading": "Legislação, Regulação e Tributação",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.law_regulation_taxation",
       "status": "covered"
     },
     {
@@ -1941,6 +2139,7 @@
       "heading": "Ativos Financeiros no Brasil",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.domestic_financial_asset",
       "status": "covered"
     },
     {
@@ -1949,6 +2148,7 @@
       "heading": "Exposição a Risco de Capital",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.capital_risk_exposure",
       "status": "covered"
     },
     {
@@ -1957,6 +2157,7 @@
       "heading": "Fundos Fechados",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "entity.closed_fund",
       "status": "covered"
     },
     {
@@ -1965,6 +2166,7 @@
       "heading": "Risco Total",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "risk.total",
       "status": "covered"
     },
     {
@@ -1973,6 +2175,7 @@
       "heading": "Risco Sistêmico e Risco Não Sistêmico",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "risk.systematic+risk.unsystematic",
       "status": "covered"
     },
     {
@@ -1981,6 +2184,7 @@
       "heading": "Value-at-Risk (VaR)",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.var",
       "status": "covered"
     },
     {
@@ -1989,6 +2193,7 @@
       "heading": "Value-at-Risk (VaR) Histórico",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.historical_var",
       "status": "covered"
     },
     {
@@ -1997,6 +2202,7 @@
       "heading": "Risk Budgeting",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.risk_budgeting",
       "status": "covered"
     },
     {
@@ -2005,6 +2211,7 @@
       "heading": "Tipos de Risco",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.risk_type",
       "status": "covered"
     },
     {
@@ -2013,6 +2220,7 @@
       "heading": "Risco de Reinvestimento",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "risk.reinvestment",
       "status": "covered"
     },
     {
@@ -2021,6 +2229,7 @@
       "heading": "Loss Given Default (LGD)",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.loss_given_default",
       "status": "covered"
     },
     {
@@ -2029,6 +2238,7 @@
       "heading": "Fluxos Externos",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.external_flow",
       "status": "covered"
     },
     {
@@ -2037,6 +2247,7 @@
       "heading": "Time-Weighted: Cálculo",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.twrr",
       "status": "covered"
     },
     {
@@ -2045,6 +2256,7 @@
       "heading": "Modelo baseado em fatores",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.factor_model",
       "status": "covered"
     },
     {
@@ -2053,6 +2265,7 @@
       "heading": "Avaliação de Desempenho ajustada ao risco",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.risk_adjusted_appraisal",
       "status": "covered"
     },
     {
@@ -2061,6 +2274,7 @@
       "heading": "Alfa de Jensen",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.jensen_alpha",
       "status": "covered"
     },
     {
@@ -2069,6 +2283,7 @@
       "heading": "Índice de Sharpe",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.sharpe_ratio",
       "status": "covered"
     },
     {
@@ -2077,6 +2292,7 @@
       "heading": "Índice de Treynor",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.treynor",
       "status": "covered"
     },
     {
@@ -2085,6 +2301,7 @@
       "heading": "Duration de Macaulay",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.macaulay_duration",
       "status": "covered"
     },
     {
@@ -2093,6 +2310,7 @@
       "heading": "Duration de Macaulay - Passo a Passo",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.macaulay_duration",
       "status": "covered"
     },
     {
@@ -2101,6 +2319,7 @@
       "heading": "Duration Modificada",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.modified_duration",
       "status": "covered"
     },
     {
@@ -2109,6 +2328,7 @@
       "heading": "Effective Duration",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.effective_duration",
       "status": "covered"
     },
     {
@@ -2117,6 +2337,7 @@
       "heading": "Duration: Gráfico",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.duration",
       "status": "covered"
     },
     {
@@ -2125,6 +2346,7 @@
       "heading": "Fontes de Retorno",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.return_source",
       "status": "covered"
     },
     {
@@ -2133,6 +2355,7 @@
       "heading": "Rebalanceamento de Carteiras",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "action.rebalance_portfolio",
       "status": "covered"
     },
     {
@@ -2141,6 +2364,7 @@
       "heading": "Objetivo e Abrangência (Cap. I)",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.scope_and_purpose",
       "status": "covered"
     },
     {
@@ -2149,6 +2373,7 @@
       "heading": "Administração Fiduciária (Cap. IV)",
       "occurrences": 2,
       "partial_matches": [],
+      "resolved_by": "technical.fiduciary_administration",
       "status": "covered"
     },
     {
@@ -2157,6 +2382,7 @@
       "heading": "Investimentos no Exterior",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.foreign_investment",
       "status": "covered"
     },
     {
@@ -2165,6 +2391,7 @@
       "heading": "T-Bills: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.treasury_bill",
       "status": "covered"
     },
     {
@@ -2173,6 +2400,7 @@
       "heading": "Treasury Notes",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.treasury_note",
       "status": "covered"
     },
     {
@@ -2181,6 +2409,7 @@
       "heading": "Treasury Bonds",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.treasury_bond",
       "status": "covered"
     },
     {
@@ -2189,6 +2418,7 @@
       "heading": "TIPS (Inflação)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.inflation",
       "status": "covered"
     },
     {
@@ -2197,6 +2427,7 @@
       "heading": "Municipal Bonds",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.municipal_bond",
       "status": "covered"
     },
     {
@@ -2205,6 +2436,7 @@
       "heading": "CDs – Certificate of Deposits",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.certificate_of_deposit",
       "status": "covered"
     },
     {
@@ -2213,6 +2445,7 @@
       "heading": "Banker's Acceptance",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.bankers_acceptance",
       "status": "covered"
     },
     {
@@ -2221,6 +2454,7 @@
       "heading": "Medium Term Notes",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.medium_term_note",
       "status": "covered"
     },
     {
@@ -2229,6 +2463,7 @@
       "heading": "Commercial Papers",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.commercial_paper",
       "status": "covered"
     },
     {
@@ -2237,6 +2472,7 @@
       "heading": "Eurobonds",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.eurobond",
       "status": "covered"
     },
     {
@@ -2245,6 +2481,7 @@
       "heading": "REPOS: Repurchase Agreement",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.repo",
       "status": "covered"
     },
     {
@@ -2253,6 +2490,7 @@
       "heading": "Yield Spreads",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.yield_spread",
       "status": "covered"
     },
     {
@@ -2261,6 +2499,7 @@
       "heading": "Retorno Líquido de Imposto",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "quantity.after_tax_return",
       "status": "covered"
     },
     {
@@ -2269,6 +2508,7 @@
       "heading": "SOFR",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.sofr",
       "status": "covered"
     },
     {
@@ -2277,6 +2517,7 @@
       "heading": "SONIA e ESTR",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.sonia+technical.estr",
       "status": "covered"
     },
     {
@@ -2285,6 +2526,7 @@
       "heading": "Mercado de Ações Internacional",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.international_equity_market",
       "status": "covered"
     },
     {
@@ -2293,6 +2535,7 @@
       "heading": "Índices Internacionais",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.international_equity_market",
       "status": "covered"
     },
     {
@@ -2301,6 +2544,7 @@
       "heading": "Survivorship Bias",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.survivorship_bias",
       "status": "covered"
     },
     {
@@ -2309,6 +2553,7 @@
       "heading": "Fund of Funds",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.fund_of_funds",
       "status": "covered"
     },
     {
@@ -2317,6 +2562,7 @@
       "heading": "Gestão de Carteiras - Renda Variável",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.equity_portfolio_management",
       "status": "covered"
     },
     {
@@ -2325,6 +2571,7 @@
       "heading": "Fundo de Ações - Passivo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.equity_fund",
       "status": "covered"
     },
     {
@@ -2333,6 +2580,7 @@
       "heading": "Fundo de Ações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.equity_fund",
       "status": "covered"
     },
     {
@@ -2341,6 +2589,7 @@
       "heading": "Formação de Preço",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.price_formation",
       "status": "covered"
     },
     {
@@ -2349,6 +2598,7 @@
       "heading": "Ibovespa Futuro",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.ibovespa_future",
       "status": "covered"
     },
     {
@@ -2357,6 +2607,7 @@
       "heading": "DI Futuro",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.di_future",
       "status": "covered"
     },
     {
@@ -2365,6 +2616,7 @@
       "heading": "DI Futuro: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.di_future",
       "status": "covered"
     },
     {
@@ -2373,6 +2625,7 @@
       "heading": "ETF – Fundos de Índice de Mercado",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.etf",
       "status": "covered"
     },
     {
@@ -2381,6 +2634,7 @@
       "heading": "ETF – ASG",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.etf",
       "status": "covered"
     },
     {
@@ -2389,6 +2643,7 @@
       "heading": "Gestão de Carteiras - Renda Variável 2",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "action.manage_portfolio",
       "status": "covered"
     },
     {
@@ -2397,6 +2652,7 @@
       "heading": "ISE",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.corporate_sustainability_index",
       "status": "covered"
     },
     {
@@ -2405,6 +2661,7 @@
       "heading": "Suporte e Resistência",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.support_and_resistance",
       "status": "covered"
     },
     {
@@ -2413,6 +2670,7 @@
       "heading": "1) Indicadores de Tendência",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.trend_indicator",
       "status": "covered"
     },
     {
@@ -2421,6 +2679,7 @@
       "heading": "3) Indicadores de Volume",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.volume_indicator",
       "status": "covered"
     },
     {
@@ -2429,6 +2688,7 @@
       "heading": "Relatório de Terceiros",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.third_party_report",
       "status": "covered"
     },
     {
@@ -2437,6 +2697,7 @@
       "heading": "Resolução CVM 175 - Fundos de Investimento",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.cvm_resolution_175",
       "status": "covered"
     },
     {
@@ -2445,6 +2706,16 @@
       "heading": "Resolução CVM 175 (parte geral) Fundos de Investimentos",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.cvm_resolution_175",
+      "status": "covered"
+    },
+    {
+      "covered_by": "entity.open_class+entity.closed_class",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Classes Aberta e Fechada",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.open_class+entity.closed_class",
       "status": "covered"
     },
     {
@@ -2453,6 +2724,7 @@
       "heading": "Distribuição",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.distribution",
       "status": "covered"
     },
     {
@@ -2461,6 +2733,7 @@
       "heading": "Distribuição – Regime Aberto",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.distribution",
       "status": "covered"
     },
     {
@@ -2469,6 +2742,7 @@
       "heading": "Side Pocket",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.side_pocket",
       "status": "covered"
     },
     {
@@ -2477,6 +2751,7 @@
       "heading": "Regulamento: Geral",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.regulation",
       "status": "covered"
     },
     {
@@ -2485,6 +2760,7 @@
       "heading": "Regulamento: Anexos",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.regulation",
       "status": "covered"
     },
     {
@@ -2493,6 +2769,7 @@
       "heading": "Convocação e Deliberações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "action.convene_meeting",
       "status": "covered"
     },
     {
@@ -2501,6 +2778,7 @@
       "heading": "Gestor de Recursos: Conceito",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.portfolio_manager",
       "status": "covered"
     },
     {
@@ -2509,6 +2787,7 @@
       "heading": "Gestor de Recursos: Obrigações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.portfolio_manager",
       "status": "covered"
     },
     {
@@ -2517,6 +2796,7 @@
       "heading": "Prestadores de Serviços Essenciais",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.essential_service_provider",
       "status": "covered"
     },
     {
@@ -2525,6 +2805,7 @@
       "heading": "Gestor de Recursos: Desenquadramento",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.portfolio_manager",
       "status": "covered"
     },
     {
@@ -2533,6 +2814,7 @@
       "heading": "Direito de Voto",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.voting_right",
       "status": "covered"
     },
     {
@@ -2541,6 +2823,7 @@
       "heading": "Conselhos Consultivos e Comitês",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.advisory_board",
       "status": "covered"
     },
     {
@@ -2549,6 +2832,7 @@
       "heading": "Prestadores de Serviços Essenciais: Vedações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.essential_service_provider",
       "status": "covered"
     },
     {
@@ -2557,6 +2841,7 @@
       "heading": "Administrador e Gestor",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "actor.administrator+actor.portfolio_manager",
       "status": "covered"
     },
     {
@@ -2565,6 +2850,7 @@
       "heading": "Normas de Conduta",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.conduct_rules",
       "status": "covered"
     },
     {
@@ -2573,6 +2859,7 @@
       "heading": "Classes Previdenciárias",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.pension_class",
       "status": "covered"
     },
     {
@@ -2581,6 +2868,7 @@
       "heading": "Assembleia",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.shareholders_meeting",
       "status": "covered"
     },
     {
@@ -2589,6 +2877,7 @@
       "heading": "Vedações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.prohibition_list",
       "status": "covered"
     },
     {
@@ -2597,6 +2886,7 @@
       "heading": "Carteira",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.portfolio",
       "status": "covered"
     },
     {
@@ -2605,6 +2895,7 @@
       "heading": "Come-Cotas: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.come_cotas",
       "status": "covered"
     },
     {
@@ -2613,6 +2904,7 @@
       "heading": "Desenquadramento: RF Longo Prazo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.mandate_breach",
       "status": "covered"
     },
     {
@@ -2621,6 +2913,7 @@
       "heading": "Desenquadramento: Ações",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.mandate_breach",
       "status": "covered"
     },
     {
@@ -2629,6 +2922,7 @@
       "heading": "Gestão de Riscos",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.risk_management",
       "status": "covered"
     },
     {
@@ -2637,6 +2931,7 @@
       "heading": "Risco de Mercado",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "risk.market",
       "status": "covered"
     },
     {
@@ -2645,6 +2940,7 @@
       "heading": "Risco de Liquidez",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "risk.liquidity",
       "status": "covered"
     },
     {
@@ -2653,6 +2949,7 @@
       "heading": "Resolução CMN 4.557",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.cmn_resolution_4557",
       "status": "covered"
     },
     {
@@ -2661,6 +2958,7 @@
       "heading": "Variância e Desvio Padrão",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.variance+quantity.volatility",
       "status": "covered"
     },
     {
@@ -2669,6 +2967,7 @@
       "heading": "Variância e Desvio Padrão: Resumo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.variance+quantity.volatility",
       "status": "covered"
     },
     {
@@ -2677,6 +2976,7 @@
       "heading": "Value-at-Risk (VaR) Monte Carlo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.var",
       "status": "covered"
     },
     {
@@ -2685,6 +2985,7 @@
       "heading": "Stress Test",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.stress_test",
       "status": "covered"
     },
     {
@@ -2693,6 +2994,7 @@
       "heading": "Benchmark VaR",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.benchmark_var",
       "status": "covered"
     },
     {
@@ -2701,14 +3003,7 @@
       "heading": "Risco de Câmbio",
       "occurrences": 1,
       "partial_matches": [],
-      "status": "covered"
-    },
-    {
-      "covered_by": "technical.derivative_risk+risk.operational",
-      "file": "06-gestao-de-riscos",
-      "heading": "Riscos de Derivativos e Risco Operacional",
-      "occurrences": 1,
-      "partial_matches": [],
+      "resolved_by": "technical.exchange_rate_risk",
       "status": "covered"
     },
     {
@@ -2717,6 +3012,16 @@
       "heading": "Medição de Desempenho (Performance Measurement)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.performance_measurement",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.macro_attribution+technical.micro_attribution",
+      "file": "07-avaliacao-de-desempenho",
+      "heading": "Atribuição Macro x Micro",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.macro_attribution+technical.micro_attribution",
       "status": "covered"
     },
     {
@@ -2725,6 +3030,7 @@
       "heading": "Avaliação de Desempenho (Performance Appraisal)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.performance_appraisal",
       "status": "covered"
     },
     {
@@ -2733,6 +3039,7 @@
       "heading": "ÍNDICE DE SHARPE",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.sharpe_ratio",
       "status": "covered"
     },
     {
@@ -2741,6 +3048,7 @@
       "heading": "Tracking Error",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.tracking_error",
       "status": "covered"
     },
     {
@@ -2749,6 +3057,7 @@
       "heading": "Information Ratio",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.information_ratio",
       "status": "covered"
     },
     {
@@ -2757,6 +3066,7 @@
       "heading": "Índice M2",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.m2_measure",
       "status": "covered"
     },
     {
@@ -2765,6 +3075,7 @@
       "heading": "Gestão de Carteiras de Renda Fixa",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.fixed_income_portfolio_management",
       "status": "covered"
     },
     {
@@ -2773,6 +3084,7 @@
       "heading": "Duration: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.duration",
       "status": "covered"
     },
     {
@@ -2781,6 +3093,7 @@
       "heading": "Gráfico com opção de compra (call) embutida",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.call_option",
       "status": "covered"
     },
     {
@@ -2789,6 +3102,7 @@
       "heading": "Gráfico com opção de venda (put) embutida",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.put_option",
       "status": "covered"
     },
     {
@@ -2797,6 +3111,7 @@
       "heading": "Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.benchmark",
       "status": "covered"
     },
     {
@@ -2805,6 +3120,7 @@
       "heading": "Enhanced Indexing",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.enhanced_indexing",
       "status": "covered"
     },
     {
@@ -2813,6 +3129,7 @@
       "heading": "Gestão Ativa",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.active_management",
       "status": "covered"
     },
     {
@@ -2821,6 +3138,7 @@
       "heading": "Key Rate Duration",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.key_rate_duration",
       "status": "covered"
     },
     {
@@ -2829,6 +3147,7 @@
       "heading": "Spread Duration",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.spread_duration",
       "status": "covered"
     },
     {
@@ -2837,6 +3156,7 @@
       "heading": "Alavancagem",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.leverage",
       "status": "covered"
     },
     {
@@ -2845,6 +3165,7 @@
       "heading": "Hedge",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.hedge",
       "status": "covered"
     },
     {
@@ -2853,6 +3174,7 @@
       "heading": "Risco cambial",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.exchange_rate_risk",
       "status": "covered"
     },
     {
@@ -2861,6 +3183,7 @@
       "heading": "Risco de taxa de juros",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.interest_rate_risk",
       "status": "covered"
     },
     {
@@ -2869,6 +3192,7 @@
       "heading": "Risco de crédito",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "risk.credit",
       "status": "covered"
     },
     {
@@ -2877,6 +3201,7 @@
       "heading": "Steepening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.steepening",
       "status": "covered"
     },
     {
@@ -2885,6 +3210,7 @@
       "heading": "Flattening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.flattening",
       "status": "covered"
     },
     {
@@ -2893,6 +3219,7 @@
       "heading": "Butterfly Positiva",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.positive_butterfly",
       "status": "covered"
     },
     {
@@ -2901,6 +3228,7 @@
       "heading": "Bull Steepening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.steepening",
       "status": "covered"
     },
     {
@@ -2909,6 +3237,7 @@
       "heading": "Bull Flattening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.flattening",
       "status": "covered"
     },
     {
@@ -2917,6 +3246,7 @@
       "heading": "Bear Steepening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.steepening",
       "status": "covered"
     },
     {
@@ -2925,6 +3255,7 @@
       "heading": "Bear Flattening",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.flattening",
       "status": "covered"
     },
     {
@@ -2933,6 +3264,7 @@
       "heading": "Alocação de Ativos e Rebalanceamento de Carteiras",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.asset_allocation+action.rebalance_portfolio",
       "status": "covered"
     },
     {
@@ -2941,6 +3273,7 @@
       "heading": "Fronteira Eficiente (Média-Variância)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.efficient_frontier",
       "status": "covered"
     },
     {
@@ -2949,6 +3282,7 @@
       "heading": "Black Litterman",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.black_litterman",
       "status": "covered"
     },
     {
@@ -2957,6 +3291,7 @@
       "heading": "Simulação de Monte Carlo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.monte_carlo",
       "status": "covered"
     },
     {
@@ -2965,6 +3300,7 @@
       "heading": "Asset Liability Management",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.asset_liability_management",
       "status": "covered"
     },
     {
@@ -2973,6 +3309,7 @@
       "heading": "Buy-and-Hold",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.buy_and_hold",
       "status": "covered"
     },
     {
@@ -2981,6 +3318,7 @@
       "heading": "Buy-and-Hold: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.buy_and_hold",
       "status": "covered"
     },
     {
@@ -2989,6 +3327,7 @@
       "heading": "Constant Mix",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.constant_mix",
       "status": "covered"
     },
     {
@@ -2997,6 +3336,7 @@
       "heading": "Constant Mix: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.constant_mix",
       "status": "covered"
     },
     {
@@ -3005,6 +3345,7 @@
       "heading": "CPPI",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.cppi",
       "status": "covered"
     },
     {
@@ -3013,6 +3354,7 @@
       "heading": "CPPI: Exemplo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.cppi",
       "status": "covered"
     },
     {
@@ -3021,6 +3363,7 @@
       "heading": "CPPI: Resumo",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.cppi",
       "status": "covered"
     },
     {
@@ -3029,6 +3372,7 @@
       "heading": "Código ANBIMA - Administração e Gestão de Recursos de Terceiros",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.anbima_third_party_code",
       "status": "covered"
     },
     {
@@ -3037,6 +3381,7 @@
       "heading": "Código ANBIMA: Administração e Gestão de Recursos de Terceiros",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "artifact.anbima_third_party_code",
       "status": "covered"
     },
     {
@@ -3045,6 +3390,7 @@
       "heading": "Contratação de Terceiros (Cap. VII)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "action.contract_third_parties",
       "status": "covered"
     },
     {
@@ -3053,6 +3399,7 @@
       "heading": "Gerenciamento de Riscos (Cap. VIII)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.risk_management",
       "status": "covered"
     },
     {
@@ -3061,6 +3408,7 @@
       "heading": "Gestão de Liquidez (Cap. IX)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.liquidity_management",
       "status": "covered"
     },
     {
@@ -3069,6 +3417,7 @@
       "heading": "Limites de Composição e Concentração (Cap. X)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.concentration_limit",
       "status": "covered"
     },
     {
@@ -3077,6 +3426,7 @@
       "heading": "Exposição a Risco de Capital (Cap. XII)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.capital_risk_exposure",
       "status": "covered"
     },
     {
@@ -3085,6 +3435,7 @@
       "heading": "Conselho Consultivo ou Comitê (Cap. XV)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.advisory_board",
       "status": "covered"
     },
     {
@@ -3093,6 +3444,7 @@
       "heading": "Direito de Voto (Cap. XXII)",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "technical.voting_right",
       "status": "covered"
     },
     {
@@ -3101,18 +3453,21 @@
       "heading": "Índice",
       "occurrences": 1,
       "partial_matches": [],
+      "resolved_by": "entity.index",
       "status": "covered"
     }
   ],
   "mass_by_status": {
-    "covered": 704,
+    "covered": 705,
     "partial": 125,
-    "uncovered": 3
+    "uncovered": 2
   },
   "registry": {
     "concepts": 524,
     "version": "2.28.0"
   },
+  "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
+  "resolved_share_of_mass": 0.8618,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }

@@ -134,7 +134,23 @@ def conjuncts(title: str) -> list[str]:
     conjunctive and nothing changes.
     """
     parts = [part.strip(" -–—") for part in CONJUNCTION.split(title)]
-    return [part for part in parts if part] if len(parts) > 1 else []
+    parts = [part for part in parts if part]
+    if len(parts) < 2:
+        return []
+    # `Classes Aberta e Fechada` states the head ONCE and distributes it: the second conjunct is
+    # `Fechada`, not `Classes Fechada`. When the first conjunct is longer than the ones after it,
+    # its leading words are the shared head, and the corpus writes them singular in the compound
+    # (`classe aberta`, `classe fechada`). Redistributing is reading the heading as written; not
+    # redistributing scores the ellipsis rather than the dictionary.
+    head = parts[0].split()
+    if len(head) > 1 and all(len(part.split()) < len(head) for part in parts[1:]):
+        shared = head[:len(head) - len(parts[1].split())]
+        singular = [word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
+                    for word in shared]
+        parts = [" ".join(singular + parts[0].split()[len(shared):])] + [
+            " ".join(singular + part.split()) for part in parts[1:]
+        ]
+    return parts
 
 
 def main() -> int:
@@ -192,6 +208,21 @@ def main() -> int:
                 if all(each):
                     covered_by = "+".join(each)
 
+        # Whether the DICTIONARY resolves the heading, separately from whether the matcher fires
+        # automatically on it. A form held at `review` is an entry the registry has and declines to
+        # emit unattended — `Estratégica` resolves to technical.strategic_allocation and always
+        # did. Reporting only the automatic figure answers "what does the tagger cover"; the anchor
+        # asked for a dictionary. Both are published; neither is allowed to stand in for the other.
+        resolved_by = covered_by
+        if not resolved_by:
+            for candidate in variants(title) + conjuncts(title):
+                for record in normalize_text(candidate, source="h", kind="text", lexicon=registry):
+                    for event in record.get("ambiguous_candidates", []):
+                        if nfc_casefold(event.get("text", candidate)) == nfc_casefold(candidate) or \
+                           nfc_casefold(candidate) in nfc_casefold(title):
+                            for choice in event.get("candidates", []):
+                                resolved_by = resolved_by or choice["concept_id"]
+
         partial = []
         if not covered_by:
             partial = [
@@ -202,7 +233,7 @@ def main() -> int:
         rows.append({
             "heading": title, "occurrences": occurrences, "file": origin[title],
             "status": "covered" if covered_by else ("partial" if partial else "uncovered"),
-            "covered_by": covered_by, "partial_matches": partial,
+            "covered_by": covered_by, "resolved_by": resolved_by, "partial_matches": partial,
         })
 
     total = sum(row["occurrences"] for row in rows)
@@ -229,6 +260,11 @@ def main() -> int:
         "by_status": dict(collections.Counter(row["status"] for row in rows)),
         "mass_by_status": dict(mass),
         "covered_share_of_mass": round(mass["covered"] / max(1, total), 4),
+        "resolved_share_of_mass": round(
+            sum(row["occurrences"] for row in rows if row["resolved_by"]) / max(1, total), 4),
+        "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at "
+                          "`review` — an entry the registry declines to emit unattended is still an "
+                          "entry. Reported beside the automatic figure, never instead of it.",
         "covered_share_of_distinct": round(
             sum(1 for row in rows if row["status"] == "covered") / max(1, len(rows)), 4),
         "headings": rows,
