@@ -10,7 +10,7 @@
       "glosses": [],
       "occurrences": 96,
       "priority": 6.8962,
-      "read_depth": 5
+      "read_depth": 6
     },
     {
       "concept_id": "entity.security",
@@ -30,27 +30,27 @@
     {
       "concept_id": "quantity.rate",
       "distance_max": 0.9839,
-      "distance_mean": 0.712,
-      "distance_spread": 0.1878,
+      "distance_mean": 0.7068,
+      "distance_spread": 0.1869,
       "form": "taxa",
       "general_senses": 5,
       "glosses": [],
-      "occurrences": 149,
-      "priority": 6.3128,
+      "occurrences": 146,
+      "priority": 6.2699,
       "read_depth": 5
     },
     {
       "concept_id": "entity.market",
-      "distance_max": 0.9534,
-      "distance_mean": 0.8149,
-      "distance_spread": 0.1191,
+      "distance_max": 0.9583,
+      "distance_mean": 0.8129,
+      "distance_spread": 0.1207,
       "form": "mercado",
       "general_senses": 9,
       "glosses": [
         "o universo da atividade comercial onde bens e serviços são comprados e"
       ],
-      "occurrences": 123,
-      "priority": 6.2158,
+      "occurrences": 121,
+      "priority": 6.2334,
       "read_depth": 5
     },
     {
@@ -86,17 +86,17 @@
     },
     {
       "concept_id": "risk.financial",
-      "distance_max": 0.9668,
-      "distance_mean": 0.8119,
-      "distance_spread": 0.1007,
+      "distance_max": 0.9657,
+      "distance_mean": 0.808,
+      "distance_spread": 0.1046,
       "form": "risco",
       "general_senses": 7,
       "glosses": [
         "um risco empreendido sem levar em conta possíveis perdas ou danos",
         "A qualidade de ser algo que não te deixa avançar"
       ],
-      "occurrences": 158,
-      "priority": 5.5006,
+      "occurrences": 149,
+      "priority": 5.5217,
       "read_depth": 4
     },
     {
@@ -333,21 +333,6 @@
       "read_depth": 4
     },
     {
-      "concept_id": "risk.financial",
-      "distance_max": 0.8844,
-      "distance_mean": 0.6383,
-      "distance_spread": 0.2173,
-      "form": "Risco",
-      "general_senses": 7,
-      "glosses": [
-        "um risco empreendido sem levar em conta possíveis perdas ou danos",
-        "A qualidade de ser algo que não te deixa avançar"
-      ],
-      "occurrences": 15,
-      "priority": 4.4076,
-      "read_depth": 4
-    },
-    {
       "concept_id": "action.sell",
       "distance_max": 0.8952,
       "distance_mean": 0.6305,
@@ -472,6 +457,18 @@
       "read_depth": 3
     },
     {
+      "concept_id": "action.redeem",
+      "distance_max": 0.942,
+      "distance_mean": 0.5857,
+      "distance_spread": 0.2907,
+      "form": "resgate",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 20,
+      "priority": 3.8713,
+      "read_depth": 3
+    },
+    {
       "concept_id": "entity.process",
       "distance_max": 0.9174,
       "distance_mean": 0.6296,
@@ -500,18 +497,6 @@
       ],
       "occurrences": 142,
       "priority": 3.8669,
-      "read_depth": 3
-    },
-    {
-      "concept_id": "action.redeem",
-      "distance_max": 0.9428,
-      "distance_mean": 0.6006,
-      "distance_spread": 0.2831,
-      "form": "resgate",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 21,
-      "priority": 3.863,
       "read_depth": 3
     },
     {
@@ -873,7 +858,7 @@
       "glosses": [],
       "occurrences": 15,
       "priority": 3.1257,
-      "read_depth": 2
+      "read_depth": 3
     },
     {
       "concept_id": "action.calculate",
@@ -918,6 +903,21 @@
       "read_depth": 2
     },
     {
+      "concept_id": "risk.financial",
+      "distance_max": 0.7522,
+      "distance_mean": 0.5185,
+      "distance_spread": 0.1819,
+      "form": "Risco",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 7,
+      "priority": 2.9868,
+      "read_depth": 2
+    },
+    {
       "concept_id": "entity.operation",
       "distance_max": 0.8391,
       "distance_mean": 0.7328,
@@ -931,20 +931,6 @@
       ],
       "occurrences": 21,
       "priority": 2.9395,
-      "read_depth": 2
-    },
-    {
-      "concept_id": "entity.information",
-      "distance_max": 0.8299,
-      "distance_mean": 0.732,
-      "distance_spread": 0.0906,
-      "form": "informações",
-      "general_senses": 6,
-      "glosses": [
-        "uma coleção de fatos a partir da qual podem ser extraídas conclusões"
-      ],
-      "occurrences": 19,
-      "priority": 2.9197,
       "read_depth": 2
     },
     {
@@ -986,6 +972,20 @@
       ],
       "occurrences": 35,
       "priority": 2.9044,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "entity.information",
+      "distance_max": 0.8267,
+      "distance_mean": 0.7227,
+      "distance_spread": 0.0931,
+      "form": "informações",
+      "general_senses": 6,
+      "glosses": [
+        "uma coleção de fatos a partir da qual podem ser extraídas conclusões"
+      ],
+      "occurrences": 18,
+      "priority": 2.8987,
       "read_depth": 2
     },
     {
@@ -1307,18 +1307,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "quantity.rate",
-      "distance_max": 0.8064,
-      "distance_mean": 0.6114,
-      "distance_spread": 0.138,
-      "form": "Taxa",
-      "general_senses": 5,
-      "glosses": [],
-      "occurrences": 8,
-      "priority": 2.3601,
-      "read_depth": 2
-    },
-    {
       "concept_id": "entity.factor",
       "distance_max": 0.8652,
       "distance_mean": 0.7095,
@@ -1579,6 +1567,18 @@
       "read_depth": 2
     },
     {
+      "concept_id": "quantity.rate",
+      "distance_max": 0.6998,
+      "distance_mean": 0.5373,
+      "distance_spread": 0.116,
+      "form": "Taxa",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 6,
+      "priority": 1.9301,
+      "read_depth": 2
+    },
+    {
       "concept_id": "entity.cost",
       "distance_max": 0.5412,
       "distance_mean": 0.3264,
@@ -1682,18 +1682,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.index",
-      "distance_max": 0.8281,
-      "distance_mean": 0.6713,
-      "distance_spread": 0.0874,
-      "form": "índices",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 13,
-      "priority": 1.808,
-      "read_depth": 2
-    },
-    {
       "concept_id": "entity.stock_exchange",
       "distance_max": 0.5624,
       "distance_mean": 0.4218,
@@ -1782,6 +1770,18 @@
       ],
       "occurrences": 4,
       "priority": 1.7569,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "entity.index",
+      "distance_max": 0.7993,
+      "distance_mean": 0.6425,
+      "distance_spread": 0.1018,
+      "form": "índices",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 10,
+      "priority": 1.742,
       "read_depth": 2
     },
     {
@@ -2224,21 +2224,6 @@
       ],
       "occurrences": 4,
       "priority": 1.1702,
-      "read_depth": 2
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance_max": 0.3876,
-      "distance_mean": 0.2985,
-      "distance_spread": 0.0891,
-      "form": "RISCO",
-      "general_senses": 7,
-      "glosses": [
-        "um risco empreendido sem levar em conta possíveis perdas ou danos",
-        "A qualidade de ser algo que não te deixa avançar"
-      ],
-      "occurrences": 2,
-      "priority": 1.1369,
       "read_depth": 2
     },
     {
@@ -2949,18 +2934,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.index",
-      "distance_max": 0.0,
-      "distance_mean": 0.0,
-      "distance_spread": 0.0,
-      "form": "Índices",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 2,
-      "priority": 0.4755,
-      "read_depth": 2
-    },
-    {
       "concept_id": "polarity.absence",
       "distance_max": 0.0168,
       "distance_mean": 0.0168,
@@ -3026,6 +2999,21 @@
         "a troca de bens por um valor acordado de dinheiro",
         "a atividade de convencer alguém a comprar; \"foi uma venda difícil\"",
         "a atividade geral de vender; \"eles tentaram impulsionar as vendas\"; \"l"
+      ],
+      "occurrences": 1,
+      "priority": 0.45,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "risk.financial",
+      "distance_max": -0.0,
+      "distance_mean": 0.0,
+      "distance_spread": 0.0,
+      "form": "RISCO",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
       ],
       "occurrences": 1,
       "priority": 0.45,
@@ -3543,18 +3531,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "action.redeem",
-      "distance_max": -0.0,
-      "distance_mean": 0.0,
-      "distance_spread": 0.0,
-      "form": "Resgate",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 1,
-      "priority": 0.3,
-      "read_depth": 2
-    },
-    {
       "concept_id": "technical.bullet_portfolio",
       "distance_max": 0.0,
       "distance_mean": 0.0,
@@ -3593,13 +3569,13 @@
       "read_depth": 2
     }
   ],
-  "forms_in_queue": 258,
-  "occurrences_to_read": 607,
+  "forms_in_queue": 256,
+  "occurrences_to_read": 603,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0436,
-    "median": 1.7427,
-    "stdev": 1.5593
+    "mean": 2.0463,
+    "median": 1.7494,
+    "stdev": 1.5546
   },
   "reading_list": [
     {
@@ -3636,6 +3612,13 @@
       "form": "preço",
       "general_senses": 8,
       "quote": "á poucos compradores, ou seja, uma dificuldade de encontrar um comprador pelo preço justo de mercado."
+    },
+    {
+      "concept_id": "quantity.price",
+      "distance": 0.9344,
+      "form": "preço",
+      "general_senses": 8,
+      "quote": "lidade das ações emitidas pela companhia ao adquirente do controle pelo mesmo preço pago ao controlador."
     },
     {
       "concept_id": "entity.security",
@@ -3681,21 +3664,14 @@
     },
     {
       "concept_id": "quantity.rate",
-      "distance": 0.9721,
-      "form": "taxa",
-      "general_senses": 5,
-      "quote": "E, sem dúvida, essa taxa de recuperação precisa ser levada em consideração na perda es"
-    },
-    {
-      "concept_id": "quantity.rate",
-      "distance": 0.9715,
+      "distance": 0.9714,
       "form": "taxa",
       "general_senses": 5,
       "quote": "O prestador de serviço essencial pode reduzir unilateralmente taxa que lhe compete, sem que seja requerida deliberação de assemb"
     },
     {
       "concept_id": "quantity.rate",
-      "distance": 0.9711,
+      "distance": 0.971,
       "form": "taxa",
       "general_senses": 5,
       "quote": "Após 6 meses de sua emissão, a taxa anual de inflação americana (CPI) foi de 6%."
@@ -3708,36 +3684,43 @@
       "quote": "A metodologia de cálculo da taxa ESTR é transparente e robusta, o que aumenta sua confiabilida"
     },
     {
+      "concept_id": "quantity.rate",
+      "distance": 0.9677,
+      "form": "taxa",
+      "general_senses": 5,
+      "quote": "Assim, devemos encontrar esta taxa semestral, para multiplicarmos por R$ 1.000,00."
+    },
+    {
       "concept_id": "entity.market",
-      "distance": 0.9534,
+      "distance": 0.9583,
       "form": "mercado",
       "general_senses": 9,
       "quote": "s com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.9486,
+      "distance": 0.9482,
       "form": "mercado",
       "general_senses": 9,
       "quote": "m majorados para até 40%, preservado o requisito de existência de formador de mercado para as cotas que excederem ao limite ordinário."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.9467,
+      "distance": 0.9464,
       "form": "mercado",
       "general_senses": 9,
       "quote": " diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.9452,
+      "distance": 0.9448,
       "form": "mercado",
       "general_senses": 9,
       "quote": "onhecimento internacional, lançados em uma moeda diferente daquela do país ou mercado em que são emitidos normalmente."
     },
     {
       "concept_id": "entity.market",
-      "distance": 0.9446,
+      "distance": 0.9442,
       "form": "mercado",
       "general_senses": 9,
       "quote": "- Beta MAIOR que 1: oscilará com mais intensidade que o mercado."
@@ -3814,28 +3797,28 @@
     },
     {
       "concept_id": "risk.financial",
-      "distance": 0.9668,
+      "distance": 0.9657,
       "form": "risco",
       "general_senses": 7,
       "quote": "Desta forma, devemos sempre analisar qual tipo de risco que desejamos correr."
     },
     {
       "concept_id": "risk.financial",
-      "distance": 0.9631,
+      "distance": 0.9619,
       "form": "risco",
       "general_senses": 7,
       "quote": "instituição, devem ser efetivos e consistentes com a natureza, complexidade e risco das operações por ela realizadas."
     },
     {
       "concept_id": "risk.financial",
-      "distance": 0.9594,
+      "distance": 0.958,
       "form": "risco",
       "general_senses": 7,
       "quote": "- Eficácia Limitada: o hedge não elimina completamente o risco, apenas o reduz."
     },
     {
       "concept_id": "risk.financial",
-      "distance": 0.9582,
+      "distance": 0.9568,
       "form": "risco",
       "general_senses": 7,
       "quote": "ões long and short aproximadamente igual, pois isso contribui para diminuir o risco."
@@ -4289,34 +4272,6 @@
       "quote": " correta, da precificação dos instrumentos utilizados e da correlação entre o ativo protegido e o instrumento de hedge."
     },
     {
-      "concept_id": "risk.financial",
-      "distance": 0.8844,
-      "form": "Risco",
-      "general_senses": 7,
-      "quote": "O Risco Soberano é a chance de um governo não honrar com o pagamento "
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance": 0.8844,
-      "form": "Risco",
-      "general_senses": 7,
-      "quote": "O Risco de Contraparte refere-se à possibilidade de um dos envolvidos"
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance": 0.8395,
-      "form": "Risco",
-      "general_senses": 7,
-      "quote": "O Risco de Volatilidade está associado a uma mudança de preço de uma "
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance": 0.8165,
-      "form": "Risco",
-      "general_senses": 7,
-      "quote": "Risco de Inflação genericamente se refere a situações em que os pre"
-    },
-    {
       "concept_id": "action.sell",
       "distance": 0.8952,
       "form": "vender",
@@ -4506,6 +4461,27 @@
       "quote": "arket Neutral está sempre estabilizando os retornos e aumentando o tamanho da posição oposta."
     },
     {
+      "concept_id": "action.redeem",
+      "distance": 0.942,
+      "form": "resgate",
+      "general_senses": 3,
+      "quote": "Calcule o preço para cada R$ 1.000,00 de resgate."
+    },
+    {
+      "concept_id": "action.redeem",
+      "distance": 0.9083,
+      "form": "resgate",
+      "general_senses": 3,
+      "quote": "- Liquidez mais limitada: resgate dos investimentos pode ser mais difícil e demorado."
+    },
+    {
+      "concept_id": "action.redeem",
+      "distance": 0.89,
+      "form": "resgate",
+      "general_senses": 3,
+      "quote": "Todos os pedidos de resgate que estejam pendentes de conversão quando do fechamento para "
+    },
+    {
       "concept_id": "entity.process",
       "distance": 0.9174,
       "form": "processo",
@@ -4546,27 +4522,6 @@
       "form": "ativos",
       "general_senses": 4,
       "quote": "Serão selecionados para compor o ISE B3 os ativos que atendam cumulativamente aos critérios abaixo."
-    },
-    {
-      "concept_id": "action.redeem",
-      "distance": 0.9428,
-      "form": "resgate",
-      "general_senses": 3,
-      "quote": "Calcule o preço para cada R$ 1.000,00 de resgate."
-    },
-    {
-      "concept_id": "action.redeem",
-      "distance": 0.9096,
-      "form": "resgate",
-      "general_senses": 3,
-      "quote": "- Liquidez mais limitada: resgate dos investimentos pode ser mais difícil e demorado."
-    },
-    {
-      "concept_id": "action.redeem",
-      "distance": 0.8915,
-      "form": "resgate",
-      "general_senses": 3,
-      "quote": "Todos os pedidos de resgate que estejam pendentes de conversão quando do fechamento para "
     },
     {
       "concept_id": "entity.fund",
@@ -5108,6 +5063,13 @@
       "quote": "iza-se quando há poucos compradores, ou seja, uma dificuldade de encontrar um comprador pelo preço justo de mercado."
     },
     {
+      "concept_id": "actor.buyer",
+      "distance": 0.8395,
+      "form": "comprador",
+      "general_senses": 4,
+      "quote": "Isso significa, por exemplo, que o comprador pode não ter os recursos financeiros disponíveis para pagar p"
+    },
+    {
       "concept_id": "action.calculate",
       "distance": 0.8739,
       "form": "cálculo",
@@ -5150,6 +5112,20 @@
       "quote": "Uma forma de avaliar os resultados de desempenho é por meio de gráficos de controle de qualidade."
     },
     {
+      "concept_id": "risk.financial",
+      "distance": 0.7522,
+      "form": "Risco",
+      "general_senses": 7,
+      "quote": "eracional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco."
+    },
+    {
+      "concept_id": "risk.financial",
+      "distance": 0.7311,
+      "form": "Risco",
+      "general_senses": 7,
+      "quote": "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e implem"
+    },
+    {
       "concept_id": "entity.operation",
       "distance": 0.8391,
       "form": "operações",
@@ -5162,20 +5138,6 @@
       "form": "operações",
       "general_senses": 8,
       "quote": "Nas operações compromissadas, os limites estabelecidos para os emissores de"
-    },
-    {
-      "concept_id": "entity.information",
-      "distance": 0.8299,
-      "form": "informações",
-      "general_senses": 6,
-      "quote": "Abrange também informações sobre comitês, sobre o relacionamento com a empresa de gestão"
-    },
-    {
-      "concept_id": "entity.information",
-      "distance": 0.8182,
-      "form": "informações",
-      "general_senses": 6,
-      "quote": "Normalmente, não envolve pesquisa própria, mas sim o uso de informações de outras fontes confiáveis."
     },
     {
       "concept_id": "entity.index",
@@ -5218,6 +5180,20 @@
       "form": "administrador",
       "general_senses": 4,
       "quote": "O administrador deve manter o regulamento disponível ao cotista, o que inclui"
+    },
+    {
+      "concept_id": "entity.information",
+      "distance": 0.8267,
+      "form": "informações",
+      "general_senses": 6,
+      "quote": "Abrange também informações sobre comitês, sobre o relacionamento com a empresa de gestão"
+    },
+    {
+      "concept_id": "entity.information",
+      "distance": 0.8147,
+      "form": "informações",
+      "general_senses": 6,
+      "quote": "Normalmente, não envolve pesquisa própria, mas sim o uso de informações de outras fontes confiáveis."
     },
     {
       "concept_id": "action.sell",
@@ -5542,20 +5518,6 @@
       "quote": "com rigor, a realização de backtesting representa um poderoso meio de avaliar estratégias e selecionar as melhores."
     },
     {
-      "concept_id": "quantity.rate",
-      "distance": 0.8064,
-      "form": "Taxa",
-      "general_senses": 5,
-      "quote": "A Taxa de Recuperação seria, portanto, de 80% (1 – LGD)."
-    },
-    {
-      "concept_id": "quantity.rate",
-      "distance": 0.7551,
-      "form": "Taxa",
-      "general_senses": 5,
-      "quote": "A Taxa de Recuperação, por sua vez, refere-se à possibilidade de se "
-    },
-    {
       "concept_id": "entity.factor",
       "distance": 0.8652,
       "form": "fatores",
@@ -5822,6 +5784,20 @@
       "quote": " fluxos de caixa ocorram quando e no tamanho necessário para fazer frente aos pagamentos dos passivos."
     },
     {
+      "concept_id": "quantity.rate",
+      "distance": 0.6998,
+      "form": "Taxa",
+      "general_senses": 5,
+      "quote": "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A fi"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "distance": 0.589,
+      "form": "Taxa",
+      "general_senses": 5,
+      "quote": "Podemos elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liqui"
+    },
+    {
       "concept_id": "entity.cost",
       "distance": 0.5412,
       "form": "Custos",
@@ -5934,20 +5910,6 @@
       "quote": "O regulamento da classe restrita pode estabelecer prazos para conversão de cota e para pagamento dos resgates diferent"
     },
     {
-      "concept_id": "entity.index",
-      "distance": 0.8281,
-      "form": "índices",
-      "general_senses": 3,
-      "quote": "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500."
-    },
-    {
-      "concept_id": "entity.index",
-      "distance": 0.7994,
-      "form": "índices",
-      "general_senses": 3,
-      "quote": "Seus índices são considerados a referência para o setor de tecnologia, sen"
-    },
-    {
       "concept_id": "entity.stock_exchange",
       "distance": 0.5624,
       "form": "bolsa",
@@ -6044,6 +6006,20 @@
       "form": "Títulos",
       "general_senses": 8,
       "quote": "Investimentos no Exterior Títulos de Renda Fixa"
+    },
+    {
+      "concept_id": "entity.index",
+      "distance": 0.7993,
+      "form": "índices",
+      "general_senses": 3,
+      "quote": "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500."
+    },
+    {
+      "concept_id": "entity.index",
+      "distance": 0.7659,
+      "form": "índices",
+      "general_senses": 3,
+      "quote": "Seus índices são considerados a referência para o setor de tecnologia, sen"
     },
     {
       "concept_id": "action.start",
@@ -6492,20 +6468,6 @@
       "form": "passiva",
       "general_senses": 6,
       "quote": "amente para obtenção de retornos superiores àqueles proporcionados pela parte passiva do portfólio (núcleo)."
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance": 0.3876,
-      "form": "RISCO",
-      "general_senses": 7,
-      "quote": "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS)."
-    },
-    {
-      "concept_id": "risk.financial",
-      "distance": 0.2094,
-      "form": "RISCO",
-      "general_senses": 7,
-      "quote": "Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing B3"
     },
     {
       "concept_id": "entity.tax",
@@ -7089,20 +7051,6 @@
       "quote": "dito (CDS – Credit Default Swap: “seguro contra calote”); - Swap de Índice de Preços (IPCA e IGP-M)."
     },
     {
-      "concept_id": "entity.index",
-      "distance": 0.0,
-      "form": "Índices",
-      "general_senses": 3,
-      "quote": "São 7 os principais tipos de benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em f"
-    },
-    {
-      "concept_id": "entity.index",
-      "distance": 0.0,
-      "form": "Índices",
-      "general_senses": 3,
-      "quote": "benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retornos"
-    },
-    {
       "concept_id": "polarity.absence",
       "distance": 0.0168,
       "form": "SEM",
@@ -7150,6 +7098,13 @@
       "form": "VENDA",
       "general_senses": 7,
       "quote": "O DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
+    },
+    {
+      "concept_id": "risk.financial",
+      "distance": -0.0,
+      "form": "RISCO",
+      "general_senses": 7,
+      "quote": "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS)."
     },
     {
       "concept_id": "risk.financial",
@@ -7404,13 +7359,6 @@
       "quote": "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL É SEU CURRENT YIELD?"
     },
     {
-      "concept_id": "action.redeem",
-      "distance": -0.0,
-      "form": "Resgate",
-      "general_senses": 3,
-      "quote": "sco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado"
-    },
-    {
       "concept_id": "technical.bullet_portfolio",
       "distance": 0.0,
       "form": "bala",
@@ -7433,10 +7381,10 @@
     }
   ],
   "registry": {
-    "concepts": 525,
+    "concepts": 545,
     "version": "2.28.0"
   },
   "risk_surface_events": 4395,
   "schema_version": "sweep-queue-v1",
-  "share_of_risk_surface_read": 0.1381
+  "share_of_risk_surface_read": 0.1372
 }

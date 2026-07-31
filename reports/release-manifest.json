@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "70a5add99ab632bb9b4092960970162151993ed264d6a8a1b779bd673271eded",
+  "package_validation_sha256": "4cc7c037c0c390276fa41934f8de2dde48ba558efd0ec9835ce355a994dbfb4f",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -251,7 +251,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "70a5add99ab632bb9b4092960970162151993ed264d6a8a1b779bd673271eded",
+      "sha256": "4cc7c037c0c390276fa41934f8de2dde48ba558efd0ec9835ce355a994dbfb4f",
       "size": 7404
     },
     {
@@ -266,8 +266,8 @@
     },
     {
       "path": "reports/precision-final.json",
-      "sha256": "a77a67ccf13f2a4b128f531a0544bc845db47aa3ee1afd55f1076d39a0879ee2",
-      "size": 15507
+      "sha256": "5672b069dba0c855dd21f324f55466791301014a513d0d8f22b1bb4b226de226",
+      "size": 15876
     },
     {
       "path": "reports/precision-risk.json",
@@ -411,8 +411,8 @@
     },
     {
       "path": "reports/sweep-queue.json",
-      "sha256": "07973d9db14ec809cdb3bbf85c57067354c7c782062c7537629cf5824e4affc2",
-      "size": 233966
+      "sha256": "1c19c309c24bd1677034013e9dd4024912373f3e192f786149b8810df29877db",
+      "size": 232498
     },
     {
       "path": "reports/term-specificity.json",
@@ -548,6 +548,11 @@
       "path": "reports/unread-residual-v2280-r6.json",
       "sha256": "442d42f807830f10545e91b258487bfda2a2ba1008be4f0092c721f94bb94dea",
       "size": 61410
+    },
+    {
+      "path": "reports/unread-residual-v2280-r7.json",
+      "sha256": "6aeb98d757f45323f78efece99b05277b8637919ed2410ee150e344fe7b235cb",
+      "size": 60619
     },
     {
       "path": "reports/unread-residual-v2280.json",
@@ -686,8 +691,8 @@
     },
     {
       "path": "scripts/report_precision.py",
-      "sha256": "3b57087b5159a49c2792f67e956dff12431615f1ae91f7c59d9bb95c2713d942",
-      "size": 24274
+      "sha256": "882cb9ee6f0415bedaa510f61d8b5d34e9b6c4253d181e3f9e1ecac780c62a2a",
+      "size": 24538
     },
     {
       "path": "scripts/report_recall.py",
@@ -950,7 +955,7 @@
       "size": 36693
     }
   ],
-  "payload_files": 185,
+  "payload_files": 186,
   "release_version": "0.4.0",
   "wheel_sha256": "c3cc37f49e960a9596e77b21f105505dcf0dc12cd8e833a2d584f4195ab62f43"
 }

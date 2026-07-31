@@ -70,6 +70,13 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-r7.json", "seed": 31622777,
+        "registry": "2.28.0",
+        "errors": 0,
+        "found": [],
+        "state": "after batch 40 registered the 20 real terms the partial-heading bucket was hiding",
+    },
+    {
         "report": "reports/unread-residual-v2280-r6.json", "seed": 26457514,
         "registry": "2.28.0",
         "errors": 0,
@@ -283,7 +290,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r6.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r7.json",
                         help="the draw taken against the current registry")
     parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "
