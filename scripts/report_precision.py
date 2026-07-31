@@ -70,6 +70,12 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2270.json", "seed": 73205080, "registry": "2.27.0",
+        "errors": 0,
+        "found": [],
+        "state": "after the matcher was corrected to resolve overlaps by length",
+    },
+    {
         "report": "reports/unread-residual-v2260.json", "seed": 22360679, "registry": "2.26.0",
         "errors": 0,
         "found": [],
@@ -159,7 +165,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2260.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2270.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 

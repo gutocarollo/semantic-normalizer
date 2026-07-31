@@ -2,7 +2,7 @@
   "baseline_ref": "eb622bf",
   "concepts_that_gained_events": 167,
   "concepts_that_lost_events": 62,
-  "events_after": 7758,
+  "events_after": 7757,
   "events_before": 6522,
   "gained": [
     {
@@ -628,6 +628,16 @@
       ]
     },
     {
+      "after": 159,
+      "before": 163,
+      "concept_id": "quantity.price",
+      "delta": -4,
+      "examples": [
+        "ireito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
+        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de"
+      ]
+    },
+    {
       "after": 22,
       "before": 25,
       "concept_id": "entity.money",
@@ -645,16 +655,6 @@
       "examples": [
         "s recíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora)",
         "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bru"
-      ]
-    },
-    {
-      "after": 160,
-      "before": 163,
-      "concept_id": "quantity.price",
-      "delta": -3,
-      "examples": [
-        "ireito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
-        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de"
       ]
     },
     {
@@ -867,8 +867,8 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 482,
-  "spans_after": 7758,
+  "spans_absorbed_by_a_longer_match": 486,
+  "spans_after": 7757,
   "spans_before": 6522,
   "spans_suppressed_with_no_replacement": 114,
   "suppressed_spans": [

@@ -1,0 +1,14 @@
+{
+  "id": "precision-sweep-amendment-32",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review, gap X1",
+  "method": "the engine fix exposed a genuine tie: `classificação de risco` and `risco de crédito` are both three tokens, so the leftmost tie-break is legitimate and what was missing is the five-token form",
+  "reason": "A missing form, not a matching-order defect, and a relation the corpus glosses that the registry did not record.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.rating", "language": "pt-BR", "form": "classificação de risco de crédito",
+     "why": "Eight occurrences. With the greedy scan replaced by global longest-match, `classificação de risco` and `risco de crédito` tie at three tokens and leftmost wins — correctly, since the tie-break has to be deterministic. The right parse is the five-token phrase, which was simply not registered."},
+    {"op": "add_form", "concept": "technical.rating", "language": "pt-BR", "form": "agência de classificação de risco",
+     "why": "The agency that issues the rating; its plural occurs in the same sentence that exposed the tie."},
+    {"op": "add_form", "concept": "technical.rating", "language": "pt-BR", "form": "agências de classificação de risco"}
+  ]
+}

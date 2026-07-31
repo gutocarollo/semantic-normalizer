@@ -399,7 +399,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "`CDs` and `CDS` are one surface to the matcher and were two keys in the importer's collision demoter, which was case-sensitive while the contract it exists to satisfy is not.",
+  "change_reason": "Reseal after recording the PMT/coupon relation. `PMT = 0` appears four times in the duplicata worked example, where there is no coupon at all — which is what settles that the calculator slot and the coupon are different referents, and also why the relation belongs in `related` rather than as a merge.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -415,13 +415,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "90e8b199e76460a42c198f72414b5278fd2b0f2298a9615831041fe8d43534c9",
-    "registry.provenance.jsonl": "f48d514963afb5e23e0c85858b91286ef51ce268f09c688055cdda298a8eed5a",
+    "registry.jsonl": "62125408f286bc1bf4937815e5df172bf33ba6b7d27ed4f8ce54754d2edcc88a",
+    "registry.provenance.jsonl": "02d12cdc827a3414f0393bcae3583174410b49b219e6a0d5f13d2dd1eb1026a9",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.26.0",
+  "rollback_version": "2.27.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.26.0"
+  "version": "2.27.0"
 }

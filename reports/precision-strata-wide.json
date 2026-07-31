@@ -1,36 +1,36 @@
 {
-  "events_total": 7758,
+  "events_total": 7757,
   "occurrences_per_pair": {
     "max": 181,
-    "mean": 8.8,
-    "median": 2.0,
-    "stdev": 20.68
+    "mean": 8.78,
+    "median": 2,
+    "stdev": 20.67
   },
   "registry": {
     "concepts": 395,
-    "version": "2.26.0"
+    "version": "2.27.0"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
       "events": 1029,
-      "share": 0.1326
+      "share": 0.1327
     },
     "B_domain_exclusive": {
       "events": 775,
       "share": 0.0999
     },
     "D_risk_surface": {
-      "events": 5954,
-      "share": 0.7675
+      "events": 5953,
+      "share": 0.7674
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 5954,
-    "floor_if_sweep_all_wrong": 0.2325,
-    "pairs": 366,
-    "share_of_all_events": 0.7675
+    "events": 5953,
+    "floor_if_sweep_all_wrong": 0.2326,
+    "pairs": 365,
+    "share_of_all_events": 0.7674
   },
   "sweep_queue": [
     {
@@ -7521,24 +7521,6 @@
       "occurrences": 1,
       "quotes": [
         " fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "quantity.price",
-      "form": "Price",
-      "general_senses": 9,
-      "glosses": [
-        "United States operatic soprano (born 1927)",
-        "the high value or worth of something; \"her price is far above rubies\"",
-        "the property of having material worth (often indicated by the amount o",
-        "value measured by what must be given or done or undergone to obtain so",
-        "a monetary reward for helping to catch a criminal; \"the cattle thief h",
-        "the amount of money needed to purchase something; \"the price of gasoli"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia "
       ],
       "stratum": "D_risk_surface"
     },

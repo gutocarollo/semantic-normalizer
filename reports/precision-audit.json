@@ -662,7 +662,7 @@
       ],
       "occurrences": 96,
       "policy": "auto",
-      "share_of_concept": 0.6,
+      "share_of_concept": 0.604,
       "tokens": 1
     },
     {
@@ -1366,7 +1366,7 @@
       ],
       "occurrences": 50,
       "policy": "auto",
-      "share_of_concept": 0.312,
+      "share_of_concept": 0.314,
       "tokens": 1
     },
     {
@@ -13108,7 +13108,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.667,
+      "share_of_concept": 0.571,
       "tokens": 1
     },
     {
@@ -13619,40 +13619,6 @@
       "occurrences": 4,
       "policy": "auto",
       "share_of_concept": 0.8,
-      "tokens": 3
-    },
-    {
-      "alias": "classificação de risco",
-      "concept_id": "technical.rating",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "A rescisão do contrato firmado com agência de classificação de risco de crédito somente é admitida mediante a observância de per",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "classificação de risco"
-        },
-        {
-          "context": "ria a apresentação, ao final desse período, de relatório de classificação de risco elaborado pela mesma agência.",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "classificação de risco"
-        },
-        {
-          "context": "Caso a rescisão do contrato firmado com agência de classificação de risco de crédito ocorra por deliberação da assembleia de cotistas",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "classificação de risco"
-        },
-        {
-          "context": "O rating (nota que as agências de classificação de risco de crédito atribuem a um emissor de acordo com sua capacida",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "classificação de risco"
-        }
-      ],
-      "occurrences": 4,
-      "policy": "auto",
-      "share_of_concept": 0.364,
       "tokens": 3
     },
     {
@@ -15265,35 +15231,6 @@
           "context": "b) O estilo Value assume que as ações estão corretamente precificadas.",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
           "surface": "estilo Value"
-        }
-      ],
-      "occurrences": 3,
-      "policy": "unknown",
-      "share_of_concept": 0.6,
-      "tokens": 2
-    },
-    {
-      "alias": "estilo Growth",
-      "concept_id": "technical.growth_investing",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Raz",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "estilo Growth"
-        },
-        {
-          "context": "ros acima dos níveis gerais do mercado (mais em linha com o estilo Growth), excluindo as empresas que têm avaliações muito altas (car",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "estilo Growth"
-        },
-        {
-          "context": "m a teoria de Finanças Comportamentais darão preferência ao estilo Growth.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "estilo Growth"
         }
       ],
       "occurrences": 3,
@@ -17881,6 +17818,30 @@
       "tokens": 1
     },
     {
+      "alias": "Growth at a Reasonable Price",
+      "concept_id": "technical.garp",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "rowth; - Value Investing; - Blend; - Capitalização; - GARP (Growth at a Reasonable Price); e - Dividendos.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Growth at a Reasonable Price"
+        },
+        {
+          "context": "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Growth at a Reasonable Price"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.286,
+      "tokens": 5
+    },
+    {
       "alias": "Múltiplos",
       "concept_id": "technical.valuation_multiple",
       "domains": [
@@ -17903,6 +17864,30 @@
       "policy": "unknown",
       "share_of_concept": 0.154,
       "tokens": 1
+    },
+    {
+      "alias": "estilo Growth",
+      "concept_id": "technical.growth_investing",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ros acima dos níveis gerais do mercado (mais em linha com o estilo Growth), excluindo as empresas que têm avaliações muito altas (car",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "estilo Growth"
+        },
+        {
+          "context": "m a teoria de Finanças Comportamentais darão preferência ao estilo Growth.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "estilo Growth"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
       "alias": "Short Bias",
@@ -18239,6 +18224,30 @@
       "policy": "auto",
       "share_of_concept": 0.051,
       "tokens": 1
+    },
+    {
+      "alias": "agência de classificação de risco",
+      "concept_id": "technical.rating",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A rescisão do contrato firmado com agência de classificação de risco de crédito somente é admitida mediante a observância de per",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "agência de classificação de risco"
+        },
+        {
+          "context": "Caso a rescisão do contrato firmado com agência de classificação de risco de crédito ocorra por deliberação da assembleia de cotistas",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "agência de classificação de risco"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.182,
+      "tokens": 5
     },
     {
       "alias": "é vedada",
@@ -21939,25 +21948,6 @@
       "tokens": 2
     },
     {
-      "alias": "Growth at a Reasonable Price",
-      "concept_id": "technical.garp",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "rowth; - Value Investing; - Blend; - Capitalização; - GARP (Growth at a Reasonable Price); e - Dividendos.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Growth at a Reasonable Price"
-        }
-      ],
-      "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.167,
-      "tokens": 5
-    },
-    {
       "alias": "Estilo GROWTH",
       "concept_id": "technical.growth_investing",
       "domains": [
@@ -21973,7 +21963,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.2,
+      "share_of_concept": 0.25,
       "tokens": 2
     },
     {
@@ -22053,25 +22043,6 @@
       "tokens": 2
     },
     {
-      "alias": "Price",
-      "concept_id": "quantity.price",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Além desses, ainda temos o estilo Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável, uma estratégia ",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Price"
-        }
-      ],
-      "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.006,
-      "tokens": 1
-    },
-    {
       "alias": "Crescimento a um Preço Razoável",
       "concept_id": "technical.garp",
       "domains": [
@@ -22087,7 +22058,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.167,
+      "share_of_concept": 0.143,
       "tokens": 5
     },
     {
@@ -22678,7 +22649,7 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.2,
+      "share_of_concept": 0.25,
       "tokens": 2
     },
     {
@@ -22870,6 +22841,25 @@
       "policy": "unknown",
       "share_of_concept": 0.077,
       "tokens": 4
+    },
+    {
+      "alias": "classificação de risco",
+      "concept_id": "technical.rating",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ria a apresentação, ao final desse período, de relatório de classificação de risco elaborado pela mesma agência.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "classificação de risco"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.091,
+      "tokens": 3
     },
     {
       "alias": "subclasse de cotas",
@@ -23402,6 +23392,25 @@
       "policy": "unknown",
       "share_of_concept": 0.023,
       "tokens": 1
+    },
+    {
+      "alias": "agências de classificação de risco",
+      "concept_id": "technical.rating",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O rating (nota que as agências de classificação de risco de crédito atribuem a um emissor de acordo com sua capacida",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "agências de classificação de risco"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.091,
+      "tokens": 5
     },
     {
       "alias": "RISCO DE CRÉDITO",
@@ -26049,25 +26058,25 @@
   ],
   "registry": {
     "concepts": 395,
-    "version": "2.26.0"
+    "version": "2.27.0"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 528,
-    "events_from_bare_tokens": 6729,
+    "bare_token_pairs": 527,
+    "events_from_bare_tokens": 6728,
     "events_from_phrases": 1029,
     "occurrences_per_pair": {
       "max": 181,
-      "mean": 8.8,
-      "median": 2.0,
+      "mean": 8.78,
+      "median": 2,
       "p90": 20,
-      "stdev": 20.68
+      "stdev": 20.67
     },
-    "phrase_pairs": 354
+    "phrase_pairs": 356
   },
   "totals": {
     "concepts_with_matches": 330,
-    "distinct_pairs": 882,
-    "match_events": 7758
+    "distinct_pairs": 883,
+    "match_events": 7757
   }
 }

@@ -40,7 +40,7 @@ class ControlledLanguageTests(unittest.TestCase):
     def test_01_registry_is_valid_and_hashed(self):
         self.assertEqual(395, len(self.lexicon["records"]))
         self.assertEqual(64, len(self.lexicon["hash"]))
-        self.assertEqual("2.26.0", self.lexicon["version"])
+        self.assertEqual("2.27.0", self.lexicon["version"])
 
     def test_02_validate_registry_cli(self):
         result = self.cli(
@@ -595,7 +595,7 @@ class ControlledLanguageTests(unittest.TestCase):
                 check=False,
             )
         self.assertEqual(0, result.returncode, result.stderr)
-        self.assertEqual("395 2.26.0 64", result.stdout.strip())
+        self.assertEqual("395 2.27.0 64", result.stdout.strip())
 
     def test_42_canonical_mapping_has_local_and_absolute_offsets(self):
         records = self.normalize("First line.\nRetain the file.")

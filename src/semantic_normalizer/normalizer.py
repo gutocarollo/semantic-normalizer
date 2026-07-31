@@ -242,47 +242,67 @@ def lexical_matches(segment: str, segment_start: int, protected: list[tuple[int,
         if parts:
             review_by_tokens[parts].extend(values)
     max_len = max([len(k) for k in auto_by_tokens] + [len(k) for k in review_by_tokens] + [1])
-    events, ambiguous = [], []
-    index = 0
-    while index < len(tokens):
-        chosen = None
+
+    # Collect EVERY candidate, then resolve overlaps globally. The scan used to be greedy from
+    # the left: at each position it took the longest form starting THERE and jumped past it, so
+    # a longer form beginning one token later never got tried. An adversarial review proved it
+    # with two sentences over the same phrase —
+    #
+    #   "Growth at a Reasonable Price (GARP) é um estilo."   -> technical.garp        (correct)
+    #   "O estilo Growth at a Reasonable Price combina..."   -> `estilo Growth` wins,
+    #                                                           GARP lost, `Price` fires bare
+    #
+    # — one span producing a recall loss and a bare fragment at once. It matters far beyond two
+    # sentences: "register the compound and longest-match retires the fragment" was the stated
+    # justification for dozens of repairs across five review rounds, and under a leftmost scan
+    # that guarantee holds only when the competing forms start at the same token. The review
+    # enumerated 397 pairs where a proper suffix of one automatic form is the head of another —
+    # `alocação de capital` × `capital regulatório`, `active risk` × `risk management`,
+    # `achatamento da curva` × `curva de juros` — every one of them latent.
+    candidates: list[tuple[int, int, int, str, tuple, object]] = []
+    for index in range(len(tokens)):
         for size in range(min(max_len, len(tokens) - index), 0, -1):
             key = tuple(item[2] for item in tokens[index:index + size])
             start, end = tokens[index][0], tokens[index + size - 1][1]
-            absolute_start, absolute_end = segment_start + start, segment_start + end
-            if overlaps(absolute_start, absolute_end, protected):
+            if overlaps(segment_start + start, segment_start + end, protected):
                 continue
             if key in review_by_tokens:
-                candidates = sorted({item[0] for item in review_by_tokens[key]})
+                names = sorted({item[0] for item in review_by_tokens[key]})
                 # Any review ambiguity dominates an automatic mapping for safety.
-                if len(candidates) > 1 or key not in auto_by_tokens or auto_by_tokens[key][0] not in candidates:
-                    chosen = ("review", size, start, end, key, review_by_tokens[key])
-                    break
+                if len(names) > 1 or key not in auto_by_tokens or auto_by_tokens[key][0] not in names:
+                    candidates.append((size, index, start, "review", key, review_by_tokens[key]))
+                    continue
             if key in auto_by_tokens:
-                chosen = ("auto", size, start, end, key, auto_by_tokens[key])
-                break
-        if not chosen:
-            index += 1
+                candidates.append((size, index, start, "auto", key, auto_by_tokens[key]))
+
+    # Longest first; ties broken leftmost, so the result stays deterministic and independent of
+    # the order the registry happened to be written in.
+    candidates.sort(key=lambda item: (-item[0], item[1]))
+
+    events, ambiguous = [], []
+    taken: list[tuple[int, int]] = []
+    for size, index, start, kind, _key, value in candidates:
+        end = tokens[index + size - 1][1]
+        if any(start < other_end and end > other_start for other_start, other_end in taken):
             continue
-        kind, size, start, end, _, value = chosen
         alias = segment[start:end]
         if kind == "review":
-            candidates = []
+            resolved = []
             for cid, lang, term, source in sorted(value):
                 record = lexicon["by_id"][cid]
-                candidates.append({
+                resolved.append({
                     "concept_id": cid, "language": lang, "term": term, "sense": record["sense"],
                     "semantic_class": record["semantic_class"], "pos": record["pos"], "source": source,
                 })
             ambiguous.append({
                 "start": segment_start + start, "end": segment_start + end, "alias": alias,
-                "candidates": candidates, "reason": "review_alias_requires_disambiguation",
+                "candidates": resolved, "reason": "review_alias_requires_disambiguation",
             })
         else:
             cid, lang, term, source = value
             record = lexicon["by_id"][cid]
             if _forbidden_here(record, lang, segment, start, end):
-                index += size
+                # The span stays free: a forbidden variant blocks THIS concept, not the position.
                 continue
             events.append({
                 "start": segment_start + start, "end": segment_start + end, "alias": alias,
@@ -290,7 +310,11 @@ def lexical_matches(segment: str, segment_start: int, protected: list[tuple[int,
                 "semantic_class": record["semantic_class"], "pos": record["pos"],
                 "source": source, "basis": "approved_exact",
             })
-        index += size
+        taken.append((start, end))
+
+    # Emitted in reading order, which every downstream consumer and every golden fixture assumes.
+    events.sort(key=lambda item: item["start"])
+    ambiguous.sort(key=lambda item: item["start"])
     return events, ambiguous
 
 
