@@ -70,6 +70,21 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-pool1.json", "seed": 57721566,
+        "registry": "2.28.0",
+        "errors": 0,
+        "found": [],
+        "state": "after amendment 40 closed the elliptical-coordination collocations; pooled with "
+                 "the draw below, which shares its population exactly",
+    },
+    {
+        "report": "reports/unread-residual-v2280-pool2.json", "seed": 16180339,
+        "registry": "2.28.0",
+        "errors": 0,
+        "found": [],
+        "state": "after amendment 40; the second half of the pooled 480",
+    },
+    {
         "report": "reports/unread-residual-v2280-accounted.json", "seed": 27182818,
         "registry": "2.28.0",
         "errors": 0,
@@ -197,8 +212,12 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-confirm.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-pool1.json",
                         help="the draw taken against the current registry")
+    parser.add_argument("--pool-with", nargs="*", default=["reports/unread-residual-v2280-pool2.json"],
+                        help="further draws over the IDENTICAL population, pooled with the current "
+                             "one; pooling uses more of the evidence already collected, selecting "
+                             "between draws uses less of it and picks which number to report")
     args = parser.parse_args()
 
     draws = []
@@ -243,8 +262,39 @@ def main() -> int:
     total_events = current["events_total"]
     read_events = current["events_read_by_sweep"]
     unread_events = current["events_unread"]
-    sample_size = current["sample_size"]
     unread_share = unread_events / total_events
+
+    # Draws over the SAME population pool; they do not compete. A review pointed out that
+    # publishing one of several valid measurements is a choice about which number to report, and
+    # that refusing to publish the cleanest one is only half the correction — the other half is
+    # that pooling uses evidence already paid for. The population identity is checked rather than
+    # assumed: same registry version, same event total, same unread count. Draws taken before an
+    # amendment changed the registry are NOT eligible, however similar they look, and two earlier
+    # 2.28.0 draws are excluded here for exactly that reason even though pooling them would have
+    # produced a tighter bound.
+    pooled_paths, sample_size, pooled_errors = [], current["sample_size"], current_errors
+    for candidate in args.pool_with:
+        candidate_path = ROOT / candidate
+        if not candidate_path.exists():
+            raise SystemExit(f"{candidate} is missing; pooling names it explicitly")
+        other = json.loads(candidate_path.read_text(encoding="utf-8"))
+        if other.get("adjudicated_errors") is None:
+            raise SystemExit(f"{candidate} has not been read; an unread draw cannot be pooled")
+        same_population = (
+            other["registry"]["version"] == drawn
+            and other["events_total"] == total_events
+            and other["events_unread"] == unread_events
+        )
+        if not same_population:
+            raise SystemExit(
+                f"{candidate} describes a different population than {args.current_draw} "
+                f"(registry/events/unread differ); pooling across populations would be a "
+                f"different measurement wearing one number"
+            )
+        pooled_paths.append(candidate)
+        sample_size += other["sample_size"]
+        pooled_errors += other["adjudicated_errors"]
+    current_errors = pooled_errors
 
     low, high = wilson(current_errors, sample_size)
     point = current_errors / sample_size
@@ -270,6 +320,7 @@ def main() -> int:
         "registry_version": current["registry"]["version"],
         "concepts": current["registry"]["concepts"],
         "events_total": total_events,
+        "residual_draws_pooled": [args.current_draw, *pooled_paths],
         "swept": {
             "events": read_events,
             "share": round(read_events / total_events, 4),

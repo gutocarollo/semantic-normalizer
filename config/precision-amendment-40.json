@@ -1,0 +1,30 @@
+{
+  "id": "precision-sweep-amendment-40",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; elliptical-coordination sweep over all 28 compound families in the registry",
+  "method": "every `HEAD de X <conj> Y` in the corpus where `HEAD de Y` is also a registered form, enumerated and each resolution checked by execution",
+  "reason": "A review found `risco de mercado e liquidez` resolving `liquidez` to the property when the shared head makes it the RISK, called the residual 2-3 occurrences, and asked whether it deserves an engine mechanism for head propagation across coordination. Measured rather than argued: 28 compound families, 6 coordinations in the whole corpus, 5 with an unresolved second conjunct, 4 of them resolving to a confidently WRONG concept. Four occurrences in 7836 events does not justify teaching the matcher syntax it does not have — but confidently wrong is worse for a consumer than unmatched, and that part is fixable with no architecture at all. Each collocation below occurs exactly once, so blocking it costs no correct match; the span becomes unresolved, which is the honest state for something the engine cannot read.",
+  "operations": [
+    {
+      "op": "forbid",
+      "concept": "technical.liquidity",
+      "language": "pt-BR",
+      "variants": [
+        "mercado e liquidez",
+        "crédito ou de liquidez",
+        "operacional, de liquidez"
+      ],
+      "why": "`Principais fatores de risco: risco de mercado e liquidez` and `Exemplos: risco de crédito ou de liquidez de uma companhia` — the head `risco de` governs both conjuncts, so the second is liquidity RISK, not liquidity. Each string occurs once. A third: `Inclui risco de mercado, de crédito, operacional, de liquidez, entre outros` coordinates four members under one head and the last one is far enough from it that blocking the pair before it does not reach — also one occurrence."
+    },
+    {
+      "op": "forbid",
+      "concept": "entity.credit",
+      "language": "pt-BR",
+      "variants": [
+        "mercado ou de crédito",
+        "mercado, de crédito"
+      ],
+      "why": "`risco de mercado ou de crédito` and `risco de mercado, de crédito, operacional, de liquidez` — same shared head, and `crédito` alone reads as the entity. Each string occurs once."
+    }
+  ]
+}

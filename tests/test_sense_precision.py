@@ -50,8 +50,9 @@ assert _spec and _spec.loader
 _builder = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_builder)
 
-from semantic_normalizer.normalizer import normalize_text  # noqa: E402
-from semantic_normalizer.registry import load_lexicon  # noqa: E402
+from semantic_normalizer.normalizer import (  # noqa: E402
+    _canonical_projection, _mutates_protected, normalize_text)
+from semantic_normalizer.registry import automatic_surfaces, load_lexicon, load_registry  # noqa: E402
 
 # (sentence, concept, must the concept appear?) — every sentence is real corpus text or a
 # minimal paraphrase of one, and every False was a confirmed false positive.
@@ -362,6 +363,59 @@ class SensePrecisionTests(unittest.TestCase):
                     f"concept match at ({start}, {end}) already claims those characters.",
                 )
         self.assertIn("175", record["canonical_text"])
+
+    def test_the_two_paths_that_predict_a_rewrite_agree(self):
+        """The absorption guard and the canonical rewrite must pick the same replacement.
+
+        `_mutates_protected` refuses a match that would swallow a protected span its rewrite does
+        not preserve, so it has to predict what `_canonical_projection` will substitute. They
+        resolved the target language independently and drifted: for an event whose `alias_language`
+        is `shared`, one fell back to the segment language and the other unconditionally to English.
+
+        `technical.m2_measure` is the live case — `M2` is registered identically in both languages,
+        so it is `shared`, and its English surface is `modigliani risk adjusted performance` while
+        its Portuguese one is `índice M2`. The guard was asking whether the protected characters
+        survive a replacement that would never be applied. In today's registry that errs toward
+        refusing a safe absorption; a review checked all 125 shared-surface concepts for the
+        dangerous direction and found none. It was dormant, not absent, and it is the same defect
+        the fix it lives inside was written for: one value, two implementations.
+
+        Both now call `_replacement_for`. This asserts the property that made the drift possible —
+        the prediction and the rewrite agree — over every automatic surface in the registry rather
+        than over the one concept that happened to expose it.
+        """
+        shared = [
+            record for record in load_registry()["records"]
+            for form in record["lexical_forms"]["en"]
+            if form["policy"] == "auto"
+            and form["form"] in {other["form"] for other in record["lexical_forms"]["pt-BR"]}
+        ]
+        self.assertTrue(shared, "no shared-surface concepts; the invariant would be vacuous")
+        for record in shared:
+            surface = next(
+                form["form"] for form in record["lexical_forms"]["en"]
+                if form["policy"] == "auto"
+                and form["form"] in {o["form"] for o in record["lexical_forms"]["pt-BR"]}
+            )
+            for language in ("en", "pt-BR"):
+                event = {"concept_id": record["concept_id"], "alias": surface,
+                         "alias_language": "shared", "start": 0, "end": len(surface)}
+                # Pretend the whole surface is a protected span. The guard must refuse the
+                # absorption exactly when the rewrite it will actually receive fails to carry the
+                # characters through — so the two are compared through the FUNCTIONS that run in
+                # production, not through the helper they share. Asserting the helper against
+                # itself is what let the drift hide.
+                protected = [(0, len(surface), "identifier")]
+                refused = _mutates_protected(event, protected, surface, language, self.lexicon)
+                applied, _mappings = _canonical_projection(
+                    surface, 0, language, [event], self.lexicon)
+                with self.subTest(concept=record["concept_id"], language=language):
+                    self.assertEqual(
+                        refused, surface not in applied,
+                        f"for {surface!r} the guard says refused={refused} while the rewrite it "
+                        f"will receive is {applied!r}. The prediction and the rewrite must not be "
+                        f"computed twice.",
+                    )
 
     def test_the_income_tax_acronym_stays_ambiguous(self):
         """`IR` is Imposto de Renda and Information Ratio. Neither may win automatically."""

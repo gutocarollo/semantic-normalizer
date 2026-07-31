@@ -332,6 +332,20 @@
       "read_depth": 4
     },
     {
+      "concept_id": "entity.credit",
+      "distance_max": 0.915,
+      "distance_mean": 0.7286,
+      "distance_spread": 0.1463,
+      "form": "crédito",
+      "general_senses": 7,
+      "glosses": [
+        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
+      ],
+      "occurrences": 32,
+      "priority": 4.4839,
+      "read_depth": 4
+    },
+    {
       "concept_id": "entity.asset",
       "distance_max": 0.9638,
       "distance_mean": 0.7755,
@@ -344,20 +358,6 @@
       ],
       "occurrences": 87,
       "priority": 4.4756,
-      "read_depth": 4
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance_max": 0.9165,
-      "distance_mean": 0.7314,
-      "distance_spread": 0.1413,
-      "form": "crédito",
-      "general_senses": 7,
-      "glosses": [
-        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
-      ],
-      "occurrences": 33,
-      "priority": 4.4458,
       "read_depth": 4
     },
     {
@@ -3624,9 +3624,9 @@
   "occurrences_to_read": 611,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0428,
+    "mean": 2.0429,
     "median": 1.7659,
-    "stdev": 1.568
+    "stdev": 1.5683
   },
   "reading_list": [
     {
@@ -4309,6 +4309,34 @@
       "quote": "isco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor."
     },
     {
+      "concept_id": "entity.credit",
+      "distance": 0.915,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores novos exigir"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.9028,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "Eles também são garantidos pelo crédito do banco emissor, o que significa que o beneficiário do aceit"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.8984,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "ão contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um tod"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.8887,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "(tais como reorganizações, reestruturações, fusões e aquisições) e eventos de crédito (como falência, ou default), podem ser protegidos ou mesmo mi"
+    },
+    {
       "concept_id": "entity.asset",
       "distance": 0.9638,
       "form": "ativo",
@@ -4335,34 +4363,6 @@
       "form": "ativo",
       "general_senses": 4,
       "quote": " correta, da precificação dos instrumentos utilizados e da correlação entre o ativo protegido e o instrumento de hedge."
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.9165,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores novos exigir"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.9046,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "Eles também são garantidos pelo crédito do banco emissor, o que significa que o beneficiário do aceit"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.9002,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "ão contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um tod"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.8907,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "(tais como reorganizações, reestruturações, fusões e aquisições) e eventos de crédito (como falência, ou default), podem ser protegidos ou mesmo mi"
     },
     {
       "concept_id": "risk.financial",

@@ -395,8 +395,33 @@ def local_span(absolute_start: int, absolute_end: int, segment_start: int) -> di
             "local_end": absolute_end - segment_start}
 
 
+def _replacement_for(event: dict, segment_language: str, lexicon: dict) -> str:
+    """The text a match rewrites to. One definition, because two of them drifted.
+
+    `_canonical_projection` produces the canonical rewrite and `_mutates_protected` has to predict
+    it in order to refuse an absorption that would corrupt a protected span. They resolved the
+    target language separately, and for an event whose `alias_language` is `shared` — a surface
+    spelled the same in both languages — one fell back to the segment's language and the other
+    unconditionally to English. `technical.m2_measure` is the live case: `M2` is shared, its
+    English surface is `modigliani risk adjusted performance` and its Portuguese one is
+    `índice M2`, so the guard was asking whether the digits survive a replacement that is not the
+    one that would be applied.
+
+    In today's registry that errs toward refusing a safe absorption rather than allowing an unsafe
+    one, and a review checked all 125 shared-surface concepts for the dangerous direction and found
+    none. Dormant is not fixed: this is the same defect the round's headline finding was about —
+    two code paths computing one value — reproduced inside the fix for it.
+    """
+    record = lexicon["by_id"][event["concept_id"]]
+    target = event["alias_language"]
+    if target not in LANGUAGES:
+        target = segment_language if segment_language in LANGUAGES else "en"
+    surfaces = automatic_surfaces(record, target)
+    return surfaces[0] if surfaces else event["alias"]
+
+
 def _mutates_protected(event: dict, protected: list[tuple[int, int, str]],
-                       source_text: str, lexicon: dict) -> bool:
+                       source_text: str, segment_language: str, lexicon: dict) -> bool:
     """True when rewriting this match would alter a protected span it swallowed.
 
     Letting a candidate CONTAIN a protected span is what makes `Resolução CVM 175` matchable at
@@ -417,12 +442,7 @@ def _mutates_protected(event: dict, protected: list[tuple[int, int, str]],
     ]
     if not inside:
         return False
-    record = lexicon["by_id"][event["concept_id"]]
-    target = event["alias_language"]
-    if target not in LANGUAGES:
-        target = "en"
-    surfaces = automatic_surfaces(record, target)
-    replacement = surfaces[0] if surfaces else event["alias"]
+    replacement = _replacement_for(event, segment_language, lexicon)
     return any(fragment and fragment not in replacement for fragment in inside)
 
 
@@ -594,12 +614,7 @@ def _canonical_projection(
         unchanged = original[source_cursor:local_start]
         pieces.append(unchanged)
         canonical_cursor += len(unchanged)
-        record = lexicon["by_id"][event["concept_id"]]
-        target_language = event["alias_language"]
-        if target_language not in LANGUAGES:
-            target_language = language if language in LANGUAGES else "en"
-        surfaces = automatic_surfaces(record, target_language)
-        replacement = surfaces[0] if surfaces else event["alias"]
+        replacement = _replacement_for(event, language, lexicon)
         canonical_start = canonical_cursor
         pieces.append(replacement)
         canonical_cursor += len(replacement)
@@ -625,17 +640,21 @@ def normalize_segment(source: str, source_text: str, source_hash: str, kind: str
     original = source_text[start:end]
     local_protected = [(s, e, k) for s, e, k in protected if s < end and e > start]
     events, ambiguous = lexical_matches(original, start, local_protected, lexicon)
+    # The language is settled BEFORE the absorption check, because the check has to predict the
+    # canonical rewrite and that rewrite is language-dependent. Detecting it from the unfiltered
+    # events is deliberate: the events about to be dropped are the ones that would corrupt data,
+    # and letting them influence the detection that decides whether to drop them is circular.
+    language = detect_language(original, events)
     # A match may swallow a protected span only while its canonical rewrite preserves it.
     protected_span_mutations = [
         event for event in events
-        if _mutates_protected(event, local_protected, source_text, lexicon)
+        if _mutates_protected(event, local_protected, source_text, language, lexicon)
     ]
     if protected_span_mutations:
         events = [event for event in events if event not in protected_span_mutations]
     sequence, units, relations, semantic_warnings = build_semantics(
         original, start, events, ambiguous, local_protected, lexicon
     )
-    language = detect_language(original, events)
     concepts = list(dict.fromkeys(event["concept_id"] for event in events))
     preferred = {
         lang: list(dict.fromkeys(
