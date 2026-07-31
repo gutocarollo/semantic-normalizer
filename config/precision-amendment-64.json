@@ -1,0 +1,18 @@
+{
+  "id": "precision-sweep-amendment-64",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "the matcher traced with protection disabled and re-enabled, and the protected spans printed rather than assumed",
+  "reason": "Removal of the form amendment 63 ADDED, issued under a new id because re-running an already-applied amendment id is a no-op: 63 printed `forms_removed: 1` and changed nothing on disk, and I only caught it by grepping the registry instead of trusting the counter.\n\nRoot cause of `Resolução CVM 175/22`, found and then NOT worked around. Amendment 58 added this form, amendment 59 removed it saying it never fires, and both were operating on a symptom. The mechanism, traced with the layers instrumented rather than inferred:\n\n1. The four-token form is the only candidate over the span, 0-20. It wins overlap resolution and the three-token `Resolução CVM 175` at 0-17, which is a perfectly good match, is discarded as the loser.\n2. `_replacement_for` returns the concept's preferred label, `Resolução CVM 175` — which does not contain the `22`.\n3. `22` at 18-20 is a protected number, so the protection guard correctly refuses an absorption whose rewrite would delete it.\n4. The refused candidate is dropped, and the span is left with NOTHING, because the shorter candidate that would have covered 0-17 was already thrown away in step 1.\n\nSo the engine defect is general and has nothing to do with this heading: a candidate that wins resolution and is then refused downstream takes the span with it, suppressing the valid shorter match it beat. Any concept whose preferred label is a PREFIX of a registered longer form ending in a protected value reproduces it.\n\nThe form is therefore NOT reinstated — with it the heading matches nothing, without it the heading matches `Resolução CVM 175` and scores partial, which is strictly better. Fixing the fallback is an engine change to overlap resolution that this session cannot validate, so the defect is recorded with its reproduction rather than half-repaired. Amendment 59 reached the right action for the wrong reason; this records the right reason.",
+  "operations": [
+    {
+      "op": "remove_form",
+      "concept": "artifact.cvm_resolution_175",
+      "language": "pt-BR",
+      "form": "Resolução CVM 175/22",
+      "wrong": 1,
+      "total": 1,
+      "why": "With it registered the span matches NOTHING — it suppresses the valid three-token match. Without it the heading matches `Resolução CVM 175` and scores partial. Removal is the better of the two states available without an engine change."
+    }
+  ]
+}

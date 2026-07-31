@@ -447,16 +447,16 @@
       ]
     }
   ],
-  "concepts": 580,
+  "concepts": 582,
   "errors_repaired_total": 22,
-  "events_total": 7809,
+  "events_total": 7804,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
     "lower_bound_95": 0.9855,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.32.0",
+  "registry_version": "2.33.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
@@ -464,20 +464,20 @@
       0.0158
     ],
     "errors_adjudicated": 0,
-    "events": 7174,
+    "events": 7170,
     "sample_size": 240,
-    "share": 0.9187
+    "share": 0.9188
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2320-r11.json"
+    "reports/unread-residual-v2330-r12.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 635,
+    "events": 634,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.0813
+    "share": 0.0812
   },
   "what_this_sample_cannot_detect": {
     "error_rate_they_imply": 0.000279,
@@ -489,6 +489,6 @@
       "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the form's 7 occurrences, the other 6 being plain long positions",
       "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of risk types with the head `risco` elided — 1 of the form's occurrences"
     ],
-    "sample_size_for_even_odds_of_catching_one": 2101
+    "sample_size_for_even_odds_of_catching_one": 2100
   }
 }

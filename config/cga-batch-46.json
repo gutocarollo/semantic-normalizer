@@ -1,0 +1,29 @@
+{
+  "batch": 46,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Two compounds whose PARTS were registered while the whole was not, which is the failure mode this instrument was built to expose: `negociação` and `mercado organizado` both resolve, so nothing looked broken, and the specific legal mechanism the corpus names 11 times in prose had no entry. `Na hipótese de transferência por meio de negociação em mercado organizado, cabe ao intermediário…` is CVM 175 describing how cotas change hands, not a sentence about trading in general and markets in general. A dictionary that decomposes it into two atoms has lost the referent.\n\nBoth are prose-attested with heading lines excluded from the count: 11 and 1. `fundos de fundos de renda variável`, `aplicações de renda fixa` and `riscos associados a títulos de renda fixa` were checked at the same time and all return 0 prose — they stay refused, and their headings stay partial.",
+  "concepts": [
+    {
+      "id": "technical.organised_market_trading",
+      "en": "trading on an organised market",
+      "pt": "negociação em mercado organizado",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Transfer of shares effected through an organised venue rather than by private assignment, which CVM 175 treats as its own route with the intermediary responsible for the transfer.",
+      "alt_en": [],
+      "alt_pt": ["negociação em mercados organizados", "negociações em mercado organizado"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "action.invest_in_shares",
+      "en": "investment in fund shares",
+      "pt": "investimento em cotas",
+      "class": "action",
+      "pos": "noun",
+      "def": "Committing capital by acquiring shares of another fund rather than the underlying assets directly.",
+      "alt_en": [],
+      "alt_pt": ["investimentos em cotas"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    }
+  ]
+}

@@ -479,5 +479,36 @@ class SensePrecisionTests(unittest.TestCase):
                 self.assertIn("technical.information_ratio", candidates)
 
 
+    def test_a_refused_candidate_does_not_take_the_shorter_match_down_with_it(self):
+        """A candidate refused AFTER winning overlap resolution must not empty the span.
+
+        `Resolução CVM 175/22` was registered twice in this campaign and removed twice, and both
+        times the reasoning was about the form. The mechanism is about the ENGINE and reproduces
+        wherever a concept's preferred label is a prefix of a longer registered form that ends in
+        a protected value:
+
+          1. the long form is the only candidate over the span and wins resolution;
+          2. the shorter, valid candidate that loses to it is discarded;
+          3. `_replacement_for` returns the preferred label, which does not contain the protected
+             value, so the protection guard correctly refuses the absorption;
+          4. the refused candidate is dropped and the span is left with NOTHING — the match that
+             would have covered it was thrown away in step 2.
+
+        The registry currently avoids the shape rather than the engine avoiding the outcome, so
+        this pins the part that is actually true today: the span resolves to the shorter form.
+        If someone re-adds the long form without fixing the fallback, this fails and says why,
+        instead of the coverage report quietly losing a heading.
+        """
+        found = normalize_text("Resolução CVM 175/22", source="t", kind="text",
+                               lexicon=self.lexicon)[0]
+        aliases = [event["alias"] for event in found["match_events"]]
+        self.assertIn(
+            "Resolução CVM 175", aliases,
+            "the span went empty. A candidate refused after winning overlap resolution took the "
+            "valid shorter match down with it — re-registering a form whose rewrite drops a "
+            "protected value reproduces this, and the fix is the fallback in resolution, not the "
+            "form.",
+        )
+
 if __name__ == "__main__":
     unittest.main()

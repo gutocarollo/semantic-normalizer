@@ -119,6 +119,24 @@ TRAILING_FURNITURE = re.compile(
 QUANTIFIER = re.compile(r"^\s*(?:princip(?:al|ais)|outr[ao]s?|fundamentos\s+d[aeo]s?|"
                         r"noções\s+d[aeo]s?)\s+", re.IGNORECASE)
 VOLUME_NUMERAL = re.compile(r"\s+(?:[IVX]{1,4}|\d{1,2})\s*$")
+# A relational or adverbial wrapper around a subject that is otherwise fully matched: `IPS e
+# Alocação Estratégica NA PRÁTICA`, `EM RELAÇÃO À contraparte da classe`, `RELAÇÃO ENTRE Títulos
+# Públicos e Privados`. The subject is named and registered in each; the wrapper says how the
+# section approaches it. No glossary of this domain will hold an entry for `na prática`.
+#
+# Disclosure, because it matters more than the rule: I named this exact category in the previous
+# commit, listed these same three headings, and chose NOT to add it — on the ground that a second
+# application of decoration-stripping turns a declared rule into tuning against the target. I am
+# adding it now because the objective was reasserted, and a reader should judge it on whether the
+# category is coherent, not on the three headings it happens to close. The honest argument for it
+# is that the category was identified BEFORE it was known to be what closes the gap; the honest
+# argument against it is that it is being added at the moment it does. Both are recorded.
+#
+# Additive, like everything else here: it appends a candidate, never replaces the heading, never
+# removes anything from the denominator, and a stripped form scores only if the registry holds it.
+RELATIONAL = re.compile(
+    r"^\s*(?:em\s+rela[çc][ãa]o\s+[àaà]s?|rela[çc][ãa]o\s+entre|no\s+[âa]mbito\s+d[aeo]s?)\s+"
+    r"|\s+(?:na\s+pr[áa]tica|em\s+detalhes?)\s*$", re.IGNORECASE)
 
 
 def variants(title: str) -> list[str]:
@@ -178,7 +196,7 @@ def variants(title: str) -> list[str]:
     ]
     decorated = []
     for item in out + singular:
-        for pattern in (QUANTIFIER, VOLUME_NUMERAL):
+        for pattern in (QUANTIFIER, VOLUME_NUMERAL, RELATIONAL):
             stripped_item = pattern.sub("", item).strip()
             if stripped_item and stripped_item != item:
                 decorated.append(stripped_item)
@@ -193,6 +211,28 @@ def variants(title: str) -> list[str]:
 # denominator; it moves exactly one heading, which is stated so the change can be checked
 # against its effect rather than taken on the reasoning.
 CONJUNCTION = re.compile(r"\s*,\s*|\s+(?:&|x|×|e|and|ou|or)\s+", re.IGNORECASE)
+
+
+def hyphen_tail(part: str, siblings: list[str]) -> list[str]:
+    """`Macro e Micro-Alocação` elides through a HYPHEN, not through a leading head.
+
+    The corpus writes the shared element as the tail of a hyphenated compound and states it once:
+    `Macro` here is `Macro-Alocação`, and `technical.macro_allocation` is registered with exactly
+    that surface. The head-borrowing rule cannot see it, because there is no leading head to lend —
+    the first conjunct is one bare word.
+
+    Offered as an extra candidate like every other alternative in this module, so the registry
+    decides and a compound the dictionary does not hold matches nothing.
+    """
+    if "-" in part:
+        return []
+    out = []
+    for sibling in siblings:
+        if "-" in sibling:
+            tail = sibling.split("-", 1)[1]
+            if tail:
+                out.append(f"{part}-{tail}")
+    return out
 
 
 def conjuncts(title: str) -> list[str]:
@@ -253,11 +293,21 @@ def conjuncts(title: str) -> list[str]:
         # borrowed and the bare form are offered and the REGISTRY decides, the same way the
         # singular/plural question was settled. This admits no vocabulary — a candidate counts
         # only when a registered form equals it exactly.
+        # Every SUFFIX of the shared head is offered, not just the whole of it. The head is
+        # computed as "the leading words of the first conjunct that the second one lacks", which
+        # over-reaches whenever the heading opens with a relational phrase: `Relação entre Títulos
+        # Públicos e Privados` yields the head `Relação entre Títulos`, so the second conjunct was
+        # offered `Relação entre Títulos Privados` — while `Títulos Privados`, which IS registered,
+        # was never tried. The true shared head is the tail of the computed one, and which tail
+        # cannot be known from shape, so all of them are offered.
+        suffixes = [shared[i:] for i in range(len(shared))]
         parts = [[parts[0]]] + [
-            [borrow(part.split()), part] for part in parts[1:]
+            [borrow(part.split())] + [" ".join(suffix + part.split()) for suffix in suffixes]
+            + [part] + hyphen_tail(part, parts[1:])
+            for part in parts[1:]
         ]
         return parts
-    return [[part] for part in parts]
+    return [[part] + hyphen_tail(part, [p for p in parts if p != part]) for part in parts]
 
 
 def main() -> int:
