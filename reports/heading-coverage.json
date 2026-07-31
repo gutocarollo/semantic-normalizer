@@ -1,12 +1,11 @@
 {
   "by_status": {
-    "covered": 249,
-    "partial": 101,
-    "uncovered": 2
+    "covered": 251,
+    "partial": 101
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.7074,
-  "covered_share_of_mass": 0.8582,
+  "covered_share_of_distinct": 0.7131,
+  "covered_share_of_mass": 0.8606,
   "distinct_headings": 352,
   "heading_occurrences": 832,
   "headings": [
@@ -1106,24 +1105,6 @@
       ],
       "resolved_by": null,
       "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "10-alocacao-de-ativos-e-rebalanceamento",
-      "heading": "Estratégica x Tática",
-      "occurrences": 1,
-      "partial_matches": [],
-      "resolved_by": "technical.strategic_allocation",
-      "status": "uncovered"
-    },
-    {
-      "covered_by": null,
-      "file": "10-alocacao-de-ativos-e-rebalanceamento",
-      "heading": "Dinâmica x Estática",
-      "occurrences": 1,
-      "partial_matches": [],
-      "resolved_by": "technical.dynamic_allocation",
-      "status": "uncovered"
     },
     {
       "covered_by": null,
@@ -3244,6 +3225,24 @@
       "status": "covered"
     },
     {
+      "covered_by": "Alocação+inherited",
+      "file": "10-alocacao-de-ativos-e-rebalanceamento",
+      "heading": "Estratégica x Tática",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "Alocação+inherited",
+      "status": "covered"
+    },
+    {
+      "covered_by": "Alocação+inherited",
+      "file": "10-alocacao-de-ativos-e-rebalanceamento",
+      "heading": "Dinâmica x Estática",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "Alocação+inherited",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.efficient_frontier",
       "file": "10-alocacao-de-ativos-e-rebalanceamento",
       "heading": "Fronteira Eficiente (Média-Variância)",
@@ -3434,9 +3433,8 @@
     }
   ],
   "mass_by_status": {
-    "covered": 714,
-    "partial": 116,
-    "uncovered": 2
+    "covered": 716,
+    "partial": 116
   },
   "registry": {
     "concepts": 525,

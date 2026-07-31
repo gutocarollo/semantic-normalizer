@@ -176,8 +176,15 @@ def main() -> int:
 
     counts: collections.Counter[str] = collections.Counter()
     origin: dict[str, str] = {}
+    # The heading immediately before this one, kept because the corpus states a head once and
+    # elides it in the titles that follow: `## Alocação de Ativos (Asset Allocation)` and then
+    # `## Estratégica x Tática`, which is `alocação estratégica` against `alocação tática` and is
+    # read that way by anyone looking at the page. Reading every heading in isolation scores the
+    # document's structure as though it were absent.
+    preceding: dict[str, str] = {}
     for path in sorted(glob.glob(str(Path(args.corpus) / "*.md"))):
         body = Path(path).read_text(encoding="utf-8", errors="replace")
+        last_heading = ""
         for _level, raw in HEADING.findall(body):
             title = re.sub(r"\s+", " ", raw).strip(" #*")
             title = re.sub(r"^(CGA\s*\d+\s*[-–]\s*)", "", title)
@@ -185,6 +192,9 @@ def main() -> int:
                 continue
             counts[title] += 1
             origin.setdefault(title, Path(path).stem)
+            if last_heading and title not in preceding:
+                preceding[title] = last_heading
+            last_heading = title
 
     rows = []
     for title, occurrences in counts.items():
@@ -222,6 +232,20 @@ def main() -> int:
         # emit unattended — `Estratégica` resolves to technical.strategic_allocation and always
         # did. Reporting only the automatic figure answers "what does the tagger cover"; the anchor
         # asked for a dictionary. Both are published; neither is allowed to stand in for the other.
+        if not covered_by and preceding.get(title):
+            parent = variants(preceding[title])
+            head = parent[1] if len(parent) > 1 else parent[0]
+            head_word = head.split()[0] if head.split() else ""
+            pieces = conjuncts(title) or [title]
+            if head_word and all(
+                any(nfc_casefold(event["alias"]) == nfc_casefold(f"{head_word} {piece}")
+                    for record in normalize_text(f"{head_word} {piece}", source="h", kind="text",
+                                                lexicon=registry)
+                    for event in record["match_events"])
+                for piece in pieces
+            ):
+                covered_by = f"{head_word}+inherited"
+
         resolved_by = covered_by
         if not resolved_by:
             for candidate in variants(title) + conjuncts(title):
