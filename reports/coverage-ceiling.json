@@ -1,8 +1,9 @@
 {
-  "ceiling_under_the_rule": 0.9181,
-  "covered": 314,
-  "covered_share_of_distinct": 0.9181,
-  "covered_share_of_mass": 0.9623,
+  "ceiling_under_the_rule": 0.9357,
+  "covered": 320,
+  "covered_share_of_distinct": 0.9357,
+  "covered_share_of_mass": 0.9696,
+  "decoration_rule": "The user was shown the ceiling and the choice and answered `pode fazer o que achar melhor`, so the recommended option was taken: a CLOSED, declared list of non-subject decoration — quantifiers (`Principais`, `Outras`, `Fundamentos da`, `Noções de`) and volume numerals (`I`, `II`, `2`) — is stripped to produce an ADDITIONAL candidate. Additive is the whole safeguard: it appends a candidate, never replaces the heading and never removes anything from the denominator, so nothing that matched before can stop matching and a stripped form scores only if the registry actually holds it. `Resolução CVM 175` still matches as written while its stripped form `Resolução CVM 17` matches nothing. Moved 6 headings, zero regressions, every heading diffed.\n\nThe list was NOT extended a second time. Five headings still short of 95 % have decoration of the same kind — `IPS e Alocação Estratégica na prática` (both concepts matched, `na prática` trailing), `Em relação à contraparte da classe` (`contraparte da classe` matched, `Em relação à` leading) — and adding those clauses would reach the target. That is where a declared rule turns into tuning against the number, so it stops here and the shortfall is reported instead.",
   "distinct_headings": 342,
   "finding": "26 of the 29 headings still partial contain a phrase that occurs ZERO times in the corpus prose — prose measured with every heading line removed. They exist only as headings. This campaign's admission rule states that a phrase is registered only when the concept is independently attested (already in the registry, or defined in the prose) and never because it appears as a heading; the rule refused bare `RF`, `títulos híbridos`, `aplicações de renda fixa`, `riscos de derivativos`, `call/put` and `estruturação de áreas de análise` on exactly this ground. Registering the remaining 26 to move the number would abandon the rule at the point where it costs something, which is the only point where a rule is worth anything.",
   "headings": [
@@ -317,6 +318,7 @@
   "registry": {
     "version": "2.32.0"
   },
+  "remaining_after_decoration": "22 partial. The residue is prepositional compounds whose parts are all registered but whose whole is not (`Negociação em Mercados Organizados`), ellipsis the splitter cannot resolve (`Macro e Micro-Alocação`), one OCR typo in the corpus (`Medidas de Retorno de Renda Rixa` — `Rixa` for `Fixa`), and one genuine matcher defect (`Resolução CVM 175/22`, where a multi-token form spanning two protected numbers separated by a slash matches nothing at all).",
   "schema_version": "coverage-ceiling-v1",
   "target": 0.95,
   "what_would_be_needed_to_reach_95": "13 more headings. The only classes with that much mass left are `modifier` (a registered subject behind a quantifier: `Principais Riscos`, where `riscos` IS registered) and `serial` (a fully-matched concept followed by a volume numeral: `Gestão de Carteiras de Renda Fixa II`). Both could be closed by widening what the metric strips as non-subject decoration — `variants()` already strips enumerations and chapter citations on the same principle. That change is NOT made here. Widening the strip list at the moment it is what closes the gate is the exact move an adversarial review already caught once in this campaign, when an INSTRUCTION clause was deleting a real CVM concept from the denominator. Whether the metric SHOULD credit a heading whose subject is registered but whose modifier is not is a definition question, and it is not one to settle while it doubles as the difference between passing and failing."

@@ -98,6 +98,29 @@ TRAILING_FURNITURE = re.compile(
     r"\s*\((?:cont\.?|continuação|cap\.?\s*[IVXLC\d]+|parte\s*\d+)\)\s*$", re.IGNORECASE)
 
 
+# Non-subject decoration a heading wraps around its subject. `variants()` already strips two
+# kinds on this principle — enumerations (`1)`) and chapter citations (`(Cap. V)`, `(parte 2)`) —
+# and these are the same kind under a different punctuation: a QUANTIFIER in front of the subject
+# (`Principais Riscos`, where `riscos` has been registered for forty batches and no glossary of
+# this domain will ever have an entry for `principais`) and a VOLUME NUMERAL after it (`Gestão de
+# Carteiras de Renda Fixa II`, where the concept covers everything but the `II`). Leaving them out
+# was inconsistent rather than strict: `(parte 2)` in parentheses counted as furniture while a
+# bare `2` did not.
+#
+# The list is CLOSED and written here so it can be audited, because widening what a metric ignores
+# is how this number gets gamed — an adversarial review caught exactly that in this campaign, when
+# an INSTRUCTION clause was deleting `Material de Divulgação`, a real CVM concept with ten prose
+# occurrences, from the numerator AND the denominator.
+#
+# The decisive safeguard is that this is ADDITIVE. It appends a candidate; it never replaces the
+# heading and never removes anything from the denominator. So nothing that matches today can stop
+# matching, and a stripped form only scores if the registry actually holds it — `Resolução CVM 175`
+# still matches as written, while its stripped form `Resolução CVM 17` matches nothing at all.
+QUANTIFIER = re.compile(r"^\s*(?:princip(?:al|ais)|outr[ao]s?|fundamentos\s+d[aeo]s?|"
+                        r"noções\s+d[aeo]s?)\s+", re.IGNORECASE)
+VOLUME_NUMERAL = re.compile(r"\s+(?:[IVX]{1,4}|\d{1,2})\s*$")
+
+
 def variants(title: str) -> list[str]:
     """A heading and, when it glosses itself, each side of the gloss.
 
@@ -153,7 +176,13 @@ def variants(title: str) -> list[str]:
                  for word in item.split())
         for item in out
     ]
-    return [item for item in dict.fromkeys(out + singular) if item]
+    decorated = []
+    for item in out + singular:
+        for pattern in (QUANTIFIER, VOLUME_NUMERAL):
+            stripped_item = pattern.sub("", item).strip()
+            if stripped_item and stripped_item != item:
+                decorated.append(stripped_item)
+    return [item for item in dict.fromkeys(out + singular + decorated) if item]
 
 
 # A comma is a coordinator in a list exactly as `e` is, and the shipped contract already says a
