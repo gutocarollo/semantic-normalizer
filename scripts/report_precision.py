@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -55,6 +56,19 @@ DRAWS = [
         "errors": 1,
         "found": ["Long in `Long and Short`"],
         "state": "after batch 8; repaired by batch 9",
+    },
+    {
+        "report": "reports/unread-residual-final.json", "seed": 88123, "registry": "2.12.0",
+        "errors": 1,
+        "found": ["Cupom in `Cupom Cambial`"],
+        "state": "after batch 9; repaired by batch 10",
+    },
+    {
+        "report": "reports/unread-residual-v2141.json", "seed": 41077, "registry": "2.14.1",
+        "errors": 2, "superseded_by": "the same seed redrawn against 2.15.0, which found none",
+        "found": ["índices in `índices P/L` (plural form unregistered)",
+                  "distribuição in `distribuição de dividendos` (exposed by narrowing entity.distribution)"],
+        "state": "after adversarial review round 1 and its repairs; both repaired by batch 12",
     },
 ]
 
@@ -95,6 +109,21 @@ def main() -> int:
         raise SystemExit(f"{args.current_draw} is missing; the final figure needs a draw "
                          "taken against the CURRENT registry, not an earlier one")
     current = json.loads(current_path.read_text(encoding="utf-8"))
+    # The guard the review found missing: this promised to refuse a draw from an earlier
+    # registry and only ever checked that the file existed, so a figure measured at 2.12.0 was
+    # published under the 2.13.0 label. A stale draw is not merely imprecise — it describes a
+    # different artifact than the one it is attached to.
+    sys.path.insert(0, str(ROOT / "src"))
+    from semantic_normalizer.registry import load_registry
+
+    shipped = load_registry()["version"]
+    drawn = current.get("registry", {}).get("version")
+    if drawn != shipped:
+        raise SystemExit(
+            f"{args.current_draw} was drawn against registry {drawn}, but {shipped} ships. "
+            "Redraw it: a precision figure must describe the artifact it is published with."
+        )
+
     current_errors = current.get("adjudicated_errors")
     if current_errors is None:
         raise SystemExit(f"{args.current_draw} has no `adjudicated_errors`; it has been drawn "
@@ -109,8 +138,22 @@ def main() -> int:
     low, high = wilson(current_errors, sample_size)
     point = current_errors / sample_size
 
-    # The swept part carries no known errors: every one found was repaired and re-verified. That
-    # is a statement about what was looked at, not a claim of perfection, so it is named as such.
+    # The swept part's error count is READ, never asserted. An adversarial review found this
+    # field hard-coded to 0 while two errors sat inside the swept set — `índice P/L` had passed
+    # three separate readings and `atenção` five. A number a script writes about its own work is
+    # not evidence, so if the adjudication record is absent the field says `unmeasured` and the
+    # bound is computed as if the swept part were entirely unknown.
+    adjudication_path = ROOT / "reports" / "sweep-adjudication.json"
+    if adjudication_path.exists():
+        adjudication = json.loads(adjudication_path.read_text(encoding="utf-8"))
+        swept_open = adjudication["errors_open"]
+        swept_basis = adjudication["errors_open_basis"]
+        swept_repaired = len(adjudication["errors_found_and_repaired"])
+    else:
+        swept_open, swept_basis, swept_repaired = "unmeasured", (
+            "reports/sweep-adjudication.json is absent, so nothing is known about the swept "
+            "part. The bound below treats it as unknown rather than as clean."
+        ), None
     report = {
         "schema_version": "precision-final-v1",
         "registry_version": current["registry"]["version"],
@@ -119,10 +162,9 @@ def main() -> int:
         "swept": {
             "events": read_events,
             "share": round(read_events / total_events, 4),
-            "known_errors_remaining": 0,
-            "basis": "ranked reading of the farthest occurrences of every risk-surface form, "
-                     "plus exhaustive adjudication of every occurrence of each form where an "
-                     "error appeared",
+            "known_errors_open": swept_open,
+            "forms_with_errors_found_and_repaired": swept_repaired,
+            "basis": swept_basis,
         },
         "residual": {
             "events": unread_events,
@@ -133,9 +175,9 @@ def main() -> int:
             "error_rate_wilson_95": [round(low, 4), round(high, 4)],
         },
         "precision": {
-            "point": round(1 - point * unread_share, 4),
-            "lower_bound_95": round(1 - high * unread_share, 4),
-            "upper_bound_95": round(1 - low * unread_share, 4),
+            "point": round(1 - point * unread_share, 4) if swept_open == 0 else None,
+            "lower_bound_95": round(1 - high * unread_share, 4) if swept_open == 0 else None,
+            "upper_bound_95": round(1 - low * unread_share, 4) if swept_open == 0 else None,
             "interpretation": "The lower bound is what a claim should be made against: it "
                               "assumes the residual error rate sits at the top of what a sample "
                               "of this size can rule out.",

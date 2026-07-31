@@ -53,6 +53,25 @@ class RegistryGovernanceTests(unittest.TestCase):
                     f"{name}: release record declares a hash that does not match the file",
                 )
 
+    def test_every_declared_hash_in_the_release_matches_its_file(self):
+        """The seal must cover everything it names, not the three files the sealer edits.
+
+        `amend_registry.py` used to carry unchanged entries forward verbatim, so a file touched
+        by any other path kept its old hash forever. An adversarial review found
+        `heldout-downstream.schema.json` stale in a shipped release and no test failing, because
+        the check above only covers the same three files the sealer rewrote. A seal that is only
+        verified where it is written verifies nothing.
+        """
+        roots = (DATA, DATA.parents[2], DATA.parent)
+        for name, declared in sorted(self.release.get("hashes", {}).items()):
+            with self.subTest(file=name):
+                path = next((root / name for root in roots if (root / name).is_file()), None)
+                self.assertIsNotNone(path, f"{name}: release seals a file that does not exist")
+                self.assertEqual(
+                    sha256(path), declared,
+                    f"{name}: release record declares a hash that does not match the file",
+                )
+
     def test_release_version_matches_every_record(self):
         versions = {record["registry_version"] for record in self.records}
         self.assertEqual({self.release["version"]}, versions)
@@ -125,6 +144,34 @@ class RegistryGovernanceTests(unittest.TestCase):
             if "cga" in record["domains"] and not record["authority"].startswith(prefixes)
         ]
         self.assertEqual([], offenders)
+
+    def test_apostila_anchors_name_a_file_that_exists(self):
+        """A prefix check is not a citation check.
+
+        An adversarial review found all fifty concepts of the precision campaign citing chapter
+        slugs that do not exist — `08-matematica-financeira` where the corpus has
+        `08-gestao-de-carteiras-de-renda-fixa`. Every one passed the test above, because
+        `apostila-cga-2026#anything-at-all` starts with `apostila-cga-2026`. That is the exact
+        shape of a tautological gate: it asserts the string was written, not that it is true.
+
+        This resolves the fragment against the corpus directory. A citation that does not
+        resolve is worse than an absent one, because it reads as verified.
+        """
+        corpus = DATA.parents[3] / "cga-2026-markdown"
+        if not corpus.is_dir():
+            self.skipTest("corpus directory is not present in this checkout")
+        files = {path.stem for path in corpus.glob("*.md")}
+        unresolved = [
+            (record["concept_id"], record["authority"])
+            for record in self.records
+            if record["authority"].startswith("apostila-cga-2026#")
+            and record["authority"].split("#", 1)[1] not in files
+        ]
+        self.assertEqual(
+            [], unresolved,
+            "authority fragments must name a file in cga-2026-markdown/. "
+            "Run scripts/fix_authority_anchors.py to derive them from where the terms occur.",
+        )
 
     def test_every_domain_concept_is_bilingual_with_content(self):
         """The anchor asks for an EN/PT dictionary; a blank English side would satisfy the

@@ -1,0 +1,35 @@
+{
+  "schema_version": "sweep-adjudication-v1",
+  "what_this_is": "The verdict record for the swept part of the corpus. `report_precision.py` reads `errors_open` from here instead of asserting zero. An adversarial review made the point that stood: a campaign that publishes `known_errors_remaining: 0` while keeping no per-occurrence record is attesting to its own work, and two errors were in fact sitting inside the swept set at the time the claim was made — `índice P/L` had been read three times across three queues and passed, and `atenção` five times.",
+  "how_the_sweep_worked": [
+    "scripts/build_sweep_queue.py ranks each risk-surface form by general polysemy times context spread, then emits the farthest-from-centroid occurrences of each, deepest for the highest-priority forms.",
+    "Every occurrence in every reading list was read against its sentence.",
+    "When a form produced an error, ALL of its corpus occurrences were then read one by one, and the counts recorded in the amendment that repaired it. Those forms are exact, not sampled."
+  ],
+  "known_limitation": "Ranking by distance from a form's context centroid cannot see an error whose context is unremarkable. That is not a hypothetical: the whole compound-fragment class — `Hedge Funds`, `Money Weighted Rate of Return`, `Cupom Cambial` — sits in ordinary finance prose and was found by find_compound_fragments.py and by uniform residual draws, never by the ranking. The residual draw exists because of this, and its Wilson bound is what carries the uncertainty the ranking cannot.",
+  "errors_found_and_repaired": [
+    {"form": "principal", "concept_id": "technical.principal", "wrong": 18, "total": 28, "repaired_by": "precision-amendment-01/02"},
+    {"form": "medida", "concept_id": "quantity.measure", "wrong": 6, "total": 19, "repaired_by": "precision-amendment-01"},
+    {"form": "medidas", "concept_id": "quantity.measure", "wrong": 3, "total": 6, "repaired_by": "precision-amendment-01"},
+    {"form": "registro", "concept_id": "artifact.record", "wrong": 10, "total": 12, "repaired_by": "precision-amendment-01 (entity.registration added)"},
+    {"form": "Value", "concept_id": "quantity.value", "wrong": 11, "total": 12, "repaired_by": "precision-amendment-01 (technical.value_investing added)"},
+    {"form": "termo", "concept_id": "technical.forward", "wrong": 5, "total": 5, "repaired_by": "precision-amendment-01"},
+    {"form": "ativa", "concept_id": "technical.active_management", "wrong": 2, "total": 4, "repaired_by": "precision-amendment-01"},
+    {"form": "duração", "concept_id": "technical.duration", "wrong": 1, "total": 1, "repaired_by": "precision-amendment-01"},
+    {"form": "conferir", "concept_id": "action.check", "wrong": 1, "total": 1, "repaired_by": "precision-amendment-01"},
+    {"form": "fluxo", "concept_id": "entity.cash_flow", "wrong": 1, "total": 4, "repaired_by": "precision-amendment-01"},
+    {"form": "asset", "concept_id": "entity.asset", "wrong": 6, "total": 6, "repaired_by": "precision-amendment-03"},
+    {"form": "configurar", "concept_id": "action.configure", "wrong": 1, "total": 1, "repaired_by": "precision-amendment-03"},
+    {"form": "habilitado", "concept_id": "state.enabled", "wrong": 1, "total": 1, "repaired_by": "precision-amendment-03"},
+    {"form": "distribuição", "concept_id": "entity.distribution", "wrong": 4, "total": 31, "repaired_by": "precision-amendment-03 (definition narrowed, technical.probability_distribution added)"},
+    {"form": "ativo", "concept_id": "entity.asset", "wrong": 1, "total": 180, "repaired_by": "precision-amendment-05 (gestor ativo forbidden)"},
+    {"form": "índice", "concept_id": "entity.index", "wrong": 8, "total": 84, "repaired_by": "cga-batch-11 + precision-amendment-09", "found_by": "adversarial review round 1, gap G2 — read three times by the sweep and passed"},
+    {"form": "atenção", "concept_id": "risk.caution", "wrong": 1, "total": 1, "repaired_by": "precision-amendment-10 (label renamed to cuidado)", "found_by": "adversarial review round 1, gap G2 — read five times by the sweep and passed"},
+    {"form": "Preço", "concept_id": "quantity.price", "wrong": 1, "total": 3, "repaired_by": "precision-amendment-09 (Crescimento a um Preço Razoável registered)", "found_by": "adversarial review round 1, gap G3"},
+    {"form": "Mercado", "concept_id": "entity.market", "wrong": 1, "total": 12, "repaired_by": "precision-amendment-09 (Mercado Neutro registered)", "found_by": "adversarial review round 1, gap G10"},
+    {"form": "Títulos", "concept_id": "entity.security", "wrong": 2, "total": 115, "repaired_by": "precision-amendment-09 + cga-batch-11", "found_by": "casefold-corrected stratification, round 6"},
+    {"form": "Passivos", "concept_id": "entity.liability", "wrong": 1, "total": 47, "repaired_by": "cga-batch-11 (technical.passive_fund)", "found_by": "casefold-corrected stratification, round 6"}
+  ],
+  "errors_open": 0,
+  "errors_open_basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding — it does not mean the swept set is provably clean, which the known_limitation above rules out claiming."
+}

@@ -22,16 +22,16 @@
     "usable": true,
     "youden_j": 0.599
   },
-  "bare_automatic_forms": 532,
-  "bare_forms": 723,
+  "bare_automatic_forms": 542,
+  "bare_forms": 733,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 4.41,
+    "mean": 4.33,
     "median": 3.0,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.66,
-    "zero_sense_forms": 148
+    "stdev": 5.64,
+    "zero_sense_forms": 157
   },
   "forms": [
     {
@@ -3687,6 +3687,20 @@
       "policy": "auto"
     },
     {
+      "concept_id": "risk.caution",
+      "form": "cuidado",
+      "general_senses": 4,
+      "glosses": [
+        "o trabalho de fornecer tratamento a ou assitir algo ou alguém",
+        "atenção e gestão implicando responsabilidade pela segurança; \"ele está",
+        "aval e orientação compreensiva; \"o torneio foi realizado sob os auspíc",
+        "um motivo de preocupação"
+      ],
+      "language": "pt-BR",
+      "lemma_used": "cuidado",
+      "policy": "auto"
+    },
+    {
       "concept_id": "action.decide",
       "form": "decide",
       "general_senses": 4,
@@ -6179,6 +6193,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.adx",
+      "form": "ADX",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "adx",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.adx",
+      "form": "ADX",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "adx",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.asset_liability_management",
       "form": "ALM",
       "general_senses": 0,
@@ -6566,6 +6598,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.rsi",
+      "form": "IFR",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "ifr",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.iof",
       "form": "IOF",
       "general_senses": 0,
@@ -6773,6 +6814,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.m2_measure",
+      "form": "M2",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "m2",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.m2_measure",
+      "form": "M2",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "m2",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.macd",
       "form": "MACD",
       "general_senses": 0,
@@ -6827,6 +6886,15 @@
       "policy": "auto"
     },
     {
+      "concept_id": "technical.m2_measure",
+      "form": "Modigliani-Modigliani",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "modigliani-modigliani",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.nfc",
       "form": "NFC",
       "general_senses": 0,
@@ -6860,6 +6928,24 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "ntn-b",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.pe_ratio",
+      "form": "P/E",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "p/e",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.pe_ratio",
+      "form": "P/L",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "p/l",
       "policy": "auto"
     },
     {
@@ -6869,6 +6955,15 @@
       "glosses": [],
       "language": "en",
       "lemma_used": "pv",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "technical.rsi",
+      "form": "RSI",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "rsi",
       "policy": "auto"
     },
     {
@@ -8223,8 +8318,8 @@
     }
   ],
   "registry": {
-    "concepts": 306,
-    "version": "2.12.0"
+    "concepts": 315,
+    "version": "2.15.1"
   },
   "schema_version": "form-polysemy-v1"
 }

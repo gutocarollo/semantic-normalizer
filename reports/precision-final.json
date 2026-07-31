@@ -51,34 +51,69 @@
         0.0008,
         0.0253
       ]
+    },
+    {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
+        "Cupom in `Cupom Cambial`"
+      ],
+      "registry": "2.12.0",
+      "report": "reports/unread-residual-final.json",
+      "sample_size": 240,
+      "seed": 88123,
+      "state": "after batch 9; repaired by batch 10",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
+      "error_rate": 0.0083,
+      "errors": 2,
+      "found": [
+        "índices in `índices P/L` (plural form unregistered)",
+        "distribuição in `distribuição de dividendos` (exposed by narrowing entity.distribution)"
+      ],
+      "registry": "2.14.1",
+      "report": "reports/unread-residual-v2141.json",
+      "sample_size": 240,
+      "seed": 41077,
+      "state": "after adversarial review round 1 and its repairs; both repaired by batch 12",
+      "superseded_by": "the same seed redrawn against 2.15.0, which found none",
+      "wilson_95": [
+        0.0023,
+        0.0299
+      ]
     }
   ],
-  "concepts": 306,
-  "errors_repaired_total": 7,
-  "events_total": 6695,
+  "concepts": 315,
+  "errors_repaired_total": 10,
+  "events_total": 6700,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.9797,
-    "point": 0.9964,
-    "upper_bound_95": 0.9994
+    "lower_bound_95": 0.9869,
+    "point": 1.0,
+    "upper_bound_95": 1.0
   },
-  "registry_version": "2.12.0",
+  "registry_version": "2.15.1",
   "residual": {
-    "error_rate_point": 0.0042,
+    "error_rate_point": 0.0,
     "error_rate_wilson_95": [
-      0.0007,
-      0.0232
+      0.0,
+      0.0158
     ],
-    "errors_adjudicated": 1,
-    "events": 5842,
+    "errors_adjudicated": 0,
+    "events": 5575,
     "sample_size": 240,
-    "share": 0.8726
+    "share": 0.8321
   },
   "schema_version": "precision-final-v1",
   "swept": {
-    "basis": "ranked reading of the farthest occurrences of every risk-surface form, plus exhaustive adjudication of every occurrence of each form where an error appeared",
-    "events": 853,
-    "known_errors_remaining": 0,
-    "share": 0.1274
+    "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding — it does not mean the swept set is provably clean, which the known_limitation above rules out claiming.",
+    "events": 1125,
+    "forms_with_errors_found_and_repaired": 21,
+    "known_errors_open": 0,
+    "share": 0.1679
   }
 }

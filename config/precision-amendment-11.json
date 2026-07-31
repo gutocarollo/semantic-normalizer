@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-11",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; residual draw seed 41077 against registry 2.14.1",
+  "method": "240 drawn occurrences read against their sentences",
+  "reason": "Plural form of a concept registered in the singular only.",
+  "operations": [
+    {"op": "add_form", "concept": "technical.pe_ratio", "language": "pt-BR", "form": "índices P/L",
+     "why": "The corpus writes `altos índices P/L` once. Without the plural, `índices` escaped to entity.index while `P/L` correctly took technical.pe_ratio in the same sentence — a split match, which is worse than either outcome alone."},
+    {"op": "add_form", "concept": "technical.pe_ratio", "language": "pt-BR", "form": "índice de preço lucro"}
+  ]
+}

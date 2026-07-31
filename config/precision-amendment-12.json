@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-12",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026 + tests/fixtures/golden.jsonl:37",
+  "method": "golden fixture g37 regressed after amendment 10; both uses re-read",
+  "reason": "Renaming the label was too blunt: `atenção` is genuinely the caution marker in technical documentation and genuinely wrong in CGA finance prose. Only the collocation is wrong, so only the collocation is blocked.",
+  "operations": [
+    {"op": "rename_pref", "concept": "risk.caution", "language": "pt-BR", "to": "atenção",
+     "why": "Reverting amendment 10's rename. `ATENÇÃO: não excluir o arquivo` is a real caution notice and the golden fixture that asserts it is right. This concept serves both the documentation domain it came from and the finance domain the registry now targets, and the matcher does not filter by domain — so the fix has to be about the surface, not the label."},
+    {"op": "add_form", "concept": "risk.caution", "language": "pt-BR", "form": "cuidado",
+     "why": "The other Portuguese caution marker, kept as an alternative now that it is not carrying the concept alone."},
+    {"op": "forbid", "concept": "risk.caution", "language": "pt-BR",
+     "variants": ["pontos de atenção", "ponto de atenção"],
+     "why": "The single CGA occurrence is `são pontos de atenção quando se utiliza relatórios de terceiros` — ordinary Portuguese for `things to watch`, not a safety notice. Blocking the phrase keeps the heading marker working and stops the noun phrase, which renaming the label could not do without breaking the documentation use."}
+  ]
+}

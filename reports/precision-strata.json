@@ -1,40 +1,40 @@
 {
-  "events_total": 6713,
+  "events_total": 6700,
   "occurrences_per_pair": {
-    "max": 201,
-    "mean": 11.55,
+    "max": 200,
+    "mean": 10.97,
     "median": 3,
-    "stdev": 25.21
+    "stdev": 24.61
   },
   "registry": {
-    "concepts": 303,
-    "version": "2.10.0"
+    "concepts": 315,
+    "version": "2.15.1"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 656,
-      "share": 0.0977
+      "events": 704,
+      "share": 0.1051
     },
     "B_domain_exclusive": {
-      "events": 1021,
-      "share": 0.1521
+      "events": 601,
+      "share": 0.0897
     },
     "C_narrow": {
-      "events": 1213,
-      "share": 0.1807
+      "events": 1312,
+      "share": 0.1958
     },
     "D_risk_surface": {
-      "events": 3823,
-      "share": 0.5695
+      "events": 4083,
+      "share": 0.6094
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 3823,
-    "floor_if_sweep_all_wrong": 0.4305,
-    "pairs": 138,
-    "share_of_all_events": 0.5695
+    "events": 4083,
+    "floor_if_sweep_all_wrong": 0.3906,
+    "pairs": 240,
+    "share_of_all_events": 0.6094
   },
   "sweep_queue": [
     {
@@ -45,7 +45,7 @@
         "um risco empreendido sem levar em conta possíveis perdas ou danos",
         "A qualidade de ser algo que não te deixa avançar"
       ],
-      "occurrences": 201,
+      "occurrences": 200,
       "quotes": [
         "ulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
         "rado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo.",
@@ -95,7 +95,7 @@
       "form": "carteira",
       "general_senses": 7,
       "glosses": [],
-      "occurrences": 175,
+      "occurrences": 177,
       "quotes": [
         "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberdade para invest",
         "Em outras palavras, sua carteira contém diferentes carteiras de outros fundos, substituindo ",
@@ -198,7 +198,7 @@
         "caracteriza-se por actividade enérgica",
         "qualquer coisa de valor material ou utilidade que é de propriedade de "
       ],
-      "occurrences": 144,
+      "occurrences": 145,
       "quotes": [
         "presas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e corretoras de valores mobiliários.",
         "Por conta da liberdade do gestor em operar praticamente livremente ativos e empregar estratégias, associada ao objetivo de se obter e",
@@ -464,7 +464,7 @@
         "receber algo de volta de novo; \"depois que o livro foi retornado ao se",
         "o ato de voltar para um lugar anterior"
       ],
-      "occurrences": 110,
+      "occurrences": 106,
       "quotes": [
         "ns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo)",
         "➢ A taxa de desconto não é a mesma coisa que a taxa de retorno (yield).",
@@ -484,7 +484,6 @@
         "c) pré ou pós fixada pelo retorno de uma ação.",
         "tos socialmente responsáveis (ISR) são aqueles que buscam conciliar o retorno financeiro com o impacto positivo na sociedade e no meio am",
         "- Retorno financeiro: Os investimentos em ISR podem ter um retorno financeiro semelhante aos investimentos tradicionais.",
-        "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Informat",
         "a análise da qualidade da gestão ativa, é importante diferenciarmos o retorno “verdadeiro” do retorno causado por desajustes aleatórios.",
         "a gestão ativa, é importante diferenciarmos o retorno “verdadeiro” do retorno causado por desajustes aleatórios.",
         "Por exemplo, suponha que o retorno da carteira de ações gerida ativamente foi de 20% e o retor",
@@ -505,7 +504,8 @@
         "Se o fluxo de caixa externo ocorre no início do período de medição, o retorno do ativo ou da carteira deve ser calculado da seguinte form",
         " Se o fluxo de caixa externo ocorre no final do período de medição, o retorno do ativo ou da carteira deve ser calculado da seguinte form",
         "Se o aporte foi realizado no início do mês, o retorno da carteira seria de: Agora, se o aporte foi realizado no f",
-        "arteira seria de: Agora, se o aporte foi realizado no final do mês, o retorno da carteira seria de:"
+        "arteira seria de: Agora, se o aporte foi realizado no final do mês, o retorno da carteira seria de:",
+        " Presente Líquido (VPL) de um projeto seja igual a zero, ou seja, é o retorno do investimento."
       ],
       "stratum": "D_risk_surface"
     },
@@ -514,7 +514,7 @@
       "form": "taxas",
       "general_senses": 5,
       "glosses": [],
-      "occurrences": 102,
+      "occurrences": 101,
       "quotes": [
         "s para atender às suas necessidades específicas, incluindo itens como taxas de juros e estruturas de reembolso.",
         "mentos para a obtenção de recursos no mercado, a um custo inferior às taxas praticadas pelos bancos.",
@@ -610,59 +610,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.asset",
-      "form": "ativo",
-      "general_senses": 4,
-      "glosses": [
-        "caracteriza-se por actividade enérgica",
-        "qualquer coisa de valor material ou utilidade que é de propriedade de "
-      ],
-      "occurrences": 96,
-      "quotes": [
-        "mento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
-        "RO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual amb",
-        "partes possuem obrigações, tendo o vendedor a obrigação de entregar o ativo, e o comprador a obrigação de pagar na data futura.",
-        "idação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais com",
-        "ica), que é a forma mais comum, ou pela Liquidação Física (entrega do ativo negociado).",
-        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e pas",
-        "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da t",
-        "ssivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da t",
-        "capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
-        "Portanto, não é somente uma eventual variação positiva do preço do ativo.",
-        "parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
-        "ras palavras, o TRES oferece o benefício de uma grande exposição a um ativo com um desembolso mínimo de caixa.",
-        "Aparte que recebe o retorno total recebe qualquer receita gerada pelo ativo e se beneficia se o preço do ativo se valorizar ao longo da",
-        "ecebe qualquer receita gerada pelo ativo e se beneficia se o preço do ativo se valorizar ao longo da vida do swap.",
-        "Em troca, deve pagar ao proprietário do ativo a taxa definida ao longo da vida do swap.",
-        "- A parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer rece",
-        "ferência sem possuí-lo, recebendo também qualquer receita gerada pelo ativo; contudo em troca, deve pagar uma taxa fixa ao longo da vid",
-        "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do seu preço; já quan",
-        "(short) para se beneficiar de perspectivas negativas para determinado ativo ou setor.",
-        "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 mi",
-        " de lucros, o que se refletirá posteriormente na elevação do preço do ativo.",
-        "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ra",
-        "m isso, pode fazer uma venda a descoberto, por exemplo, e recomprar o ativo mais à frente, com um preço menor (caso sua expectativa de ",
-        "**CONCLUSÃO:** no suporte se COMPRA e na resistência se VENDE o ativo.",
-        "ode fornecer informações valiosas sobre os movimentos de preços de um ativo.",
-        " ajudar os traders a identificar faixas de preço potenciais em que um ativo pode se mover.",
-        "A largura das bandas externas é determinada pela volatilidade do ativo.",
-        "presenta se assemelha a uma parábola) fica abaixo dos preços quando o ativo está em tendência de alta e acima dos preços quando o ativo",
-        " quando o ativo está em tendência de alta e acima dos preços quando o ativo está em tendência de queda.",
-        "Ele compara o preço de fechamento atual de um ativo com uma faixa de preços recente.",
-        "tributação, taxas de juros, antes de examinar questões específicas do ativo, como setores ou dados de determinadas companhias.",
-        "os ETF-Internacional, que são entendidos como sendo uma modalidade de ativo à parte.",
-        "ra atingir os limites de concentração por emissor e por modalidade de ativo estabelecidos em seus regulamentos.",
-        "como RISCO SISTÊMICO, se caracteriza pela oscilação dos valores de um ativo durante um período de tempo, gerando possíveis ganhos ou pe",
-        "LIDADE, e quanto maior a volatilidade, maior o risco de mercado de um ativo.",
-        "ade HISTÓRICA: Medida estatística que se baseia nos preços do passado ativo.",
-        "u - Volatilidade IMPLÍCITA: Estimada através da variação futura de um ativo adotada pelo mercado financeiro.",
-        "Trata-se da DIFICULDADE DE VENDER um determinado ativo pelo preço e no momento desejado.",
-        "riamente, quando ele possui uma fatia (percentual) considerável de um ativo específico.",
-        "ra que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor do que o de valor de mercado, simplesmen"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "temporal.term",
       "form": "prazo",
       "general_senses": 5,
@@ -712,6 +659,59 @@
         " carteira, mas em geral é aberto e tributado como renda fixa de longo prazo.",
         "tulos com retornos mais baixos; ou - Os títulos de renda fixa possuem prazo de vencimento e muitas vezes a rentabilidade contratada só ",
         "atada só é garantida se o investidor mantiver o título até o final do prazo."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ativo",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 91,
+      "quotes": [
+        "mento final da dívida (desconsidera o ágio ou deságio da compra de um ativo).",
+        "RO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido), no qual amb",
+        "partes possuem obrigações, tendo o vendedor a obrigação de entregar o ativo, e o comprador a obrigação de pagar na data futura.",
+        "idação Financeira (pagamento ou recebimento da diferença de preços do ativo, sem necessidade de entrega física), que é a forma mais com",
+        "ica), que é a forma mais comum, ou pela Liquidação Física (entrega do ativo negociado).",
+        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e pas",
+        "Em swap de juros, quem está ativo em prefixado (passivo em pós-fixado) acredita na queda da t",
+        "ssivo em pós-fixado) acredita na queda da taxa de juros; já quem está ativo em pós-fixado (passivo em prefixado), acredita na alta da t",
+        "capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
+        "Portanto, não é somente uma eventual variação positiva do preço do ativo.",
+        "parte que recebe o retorno total ganhe exposição e se beneficie de um ativo de referência sem realmente possuí-lo.",
+        "ras palavras, o TRES oferece o benefício de uma grande exposição a um ativo com um desembolso mínimo de caixa.",
+        "Aparte que recebe o retorno total recebe qualquer receita gerada pelo ativo e se beneficia se o preço do ativo se valorizar ao longo da",
+        "ecebe qualquer receita gerada pelo ativo e se beneficia se o preço do ativo se valorizar ao longo da vida do swap.",
+        "Em troca, deve pagar ao proprietário do ativo a taxa definida ao longo da vida do swap.",
+        "- A parte que recebe o retorno total se beneficie do ativo de referência sem possuí-lo, recebendo também qualquer rece",
+        "ferência sem possuí-lo, recebendo também qualquer receita gerada pelo ativo; contudo em troca, deve pagar uma taxa fixa ao longo da vid",
+        "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do seu preço; já quan",
+        "(short) para se beneficiar de perspectivas negativas para determinado ativo ou setor.",
+        "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 mi",
+        " de lucros, o que se refletirá posteriormente na elevação do preço do ativo.",
+        "m isso, pode fazer uma venda a descoberto, por exemplo, e recomprar o ativo mais à frente, com um preço menor (caso sua expectativa de ",
+        "**CONCLUSÃO:** no suporte se COMPRA e na resistência se VENDE o ativo.",
+        "ode fornecer informações valiosas sobre os movimentos de preços de um ativo.",
+        " ajudar os traders a identificar faixas de preço potenciais em que um ativo pode se mover.",
+        "A largura das bandas externas é determinada pela volatilidade do ativo.",
+        "presenta se assemelha a uma parábola) fica abaixo dos preços quando o ativo está em tendência de alta e acima dos preços quando o ativo",
+        " quando o ativo está em tendência de alta e acima dos preços quando o ativo está em tendência de queda.",
+        "Ele compara o preço de fechamento atual de um ativo com uma faixa de preços recente.",
+        "tributação, taxas de juros, antes de examinar questões específicas do ativo, como setores ou dados de determinadas companhias.",
+        "os ETF-Internacional, que são entendidos como sendo uma modalidade de ativo à parte.",
+        "ra atingir os limites de concentração por emissor e por modalidade de ativo estabelecidos em seus regulamentos.",
+        "como RISCO SISTÊMICO, se caracteriza pela oscilação dos valores de um ativo durante um período de tempo, gerando possíveis ganhos ou pe",
+        "LIDADE, e quanto maior a volatilidade, maior o risco de mercado de um ativo.",
+        "ade HISTÓRICA: Medida estatística que se baseia nos preços do passado ativo.",
+        "u - Volatilidade IMPLÍCITA: Estimada através da variação futura de um ativo adotada pelo mercado financeiro.",
+        "Trata-se da DIFICULDADE DE VENDER um determinado ativo pelo preço e no momento desejado.",
+        "riamente, quando ele possui uma fatia (percentual) considerável de um ativo específico.",
+        "ra que, caso se necessite recursos, não seja necessária a venda de um ativo por um preço menor do que o de valor de mercado, simplesmen",
+        "nças, o Desvio Padrão e a Variância nos indicam o Risco de Mercado do ativo."
       ],
       "stratum": "D_risk_surface"
     },
@@ -976,56 +976,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.index",
-      "form": "índice",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 61,
-      "quotes": [
-        "nes Industrial Average (DJIA): Também conhecido como Dow 30, ele é um índice do mercado de ações que acompanha 30 grandes empresas de ca",
-        "Este índice é ponderado por preços e não por capitalização.",
-        "Nasdaq 100: índice composto pelas 100 maiores empresas não financeiras negocia",
-        "rico de concorrentes de mercado e dos atributos gerais de um fundo ou índice de mercado.",
-        "Estratégias passivas são aquelas que buscam acompanhar um índice de referência (benchmark).",
-        "Fundos Passivos: procuram acompanhar o benchmark (índice de referência).",
-        "Este contrato consiste em negociar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a c",
-        "ura, sem a necessidade realizar a compra de cada ação que compõe este índice.",
-        "Cada ponto do contrato vale R$ 1,00, portanto, se o índice futuro está 60.000 pontos, ele está valendo R$ 60 mil.",
-        "a de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
-        "Se o índice subir 2.000 pontos, ele estará ganhando 2.000 pontos (que e",
-        "Já caso o índice cair e vier para 58.000 pontos, ele perderá R$ 20 mil reais",
-        "Se o índice cair 2.000 pontos, ele estará ganhando 2.000 pontos (que eq",
-        "Já caso o índice subir e for para 62.000 pontos, ele perderá R$ 20 mil reais",
-        " swap convencional é que, no TRES, o ativo subjacente geralmente é um índice de ações, um título ou uma cesta de título.",
-        "s abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou ",
-        "ETFs ASG são fundos de índice que investem em empresas levando em conta critérios Ambient",
-        "Basicamente, ao invés de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de",
-        "de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de sustentabilidade.",
-        "Esse índice reúne empresas que possuem boas práticas ambientais, sociai",
-        "e implementar uma estratégia passiva visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICA",
-        "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprando todos os ativos do índice e na mes",
-        "plica totalmente o índice de referência, comprando todos os ativos do índice e na mesma proporção da carteira teórica.",
-        " custos de transação podem ser um grande desafio, principalmente se o índice possuir muitos ativos e com baixa liquidez.",
-        "ituída e rebalanceada para acompanhar fielmente a carteira teórica do índice de referência.",
-        "Na amostragem estratificada, o gestor define um subconjunto do índice, selecionando os ativos de forma a replicar as condições de",
-        "ando os ativos de forma a replicar as condições de retorno e risco do índice.",
-        "to de adicionar ações menos líquidas e de menor representatividade no índice.",
-        "stratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimiz",
-        "b) de um índice de ações pela variação do preço de uma ação.",
-        "lo: - Múltiplos: investidores growth costumam focar no denominador do índice P/L dos ativos que estão sendo considerados para a carteira",
-        "indicadores fundamentalistas, como por exemplo, um baixo numerador do índice P/L ou do EV / EBITDA, ou um alto numerador do dividend yie",
-        "Há inclusive um importante índice de sustentabilidade empresarial no mercado brasileiro: o IS",
-        "O Rep Risk Index é um índice de risco reputacional em aspectos ASG produzido pela empres",
-        "Esse índice varia de 0 a 100, e é considerado o seu maior valor nos 24 ",
-        " à gestão passiva porque normalmente não desvia significativamente do índice de referência (benchmark).",
-        "se aproxima da gestão ativa ao permitir ao gestores certos desvios do índice de referência, com o objetivo de aumentar retornos.",
-        "leo, é composta por ativos geridos passivamente como, por exemplo, um índice de referência de mercado (Ibovespa, S&P 500, entre outros).",
-        "vo seria aquele que proporcionasse um elevado Information Ratio (IR), índice de desempenho que relaciona o Retorno Ativo com o Risco Ati",
-        "amente a um benchmark que não é adequado, ou seja, que não reflete um índice de referência condizente com o estilo de gestão da carteira"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "quantity.return",
       "form": "retornos",
       "general_senses": 6,
@@ -1076,6 +1026,56 @@
         "ue seus pares, só seria considerado um melhor investimento caso esses retornos mais elevados não vierem com um excesso de risco adicional.",
         "umas importantes desvantagens que precisam ser consideradas: - Assume retornos normais: essa premissa, que torna o modelo relativamente si",
         "Isso porque os retornos nos mercados financeiros são desviados da média (skewed) po"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "índice",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 55,
+      "quotes": [
+        "nes Industrial Average (DJIA): Também conhecido como Dow 30, ele é um índice do mercado de ações que acompanha 30 grandes empresas de ca",
+        "Este índice é ponderado por preços e não por capitalização.",
+        "Nasdaq 100: índice composto pelas 100 maiores empresas não financeiras negocia",
+        "rico de concorrentes de mercado e dos atributos gerais de um fundo ou índice de mercado.",
+        "Estratégias passivas são aquelas que buscam acompanhar um índice de referência (benchmark).",
+        "Fundos Passivos: procuram acompanhar o benchmark (índice de referência).",
+        "Este contrato consiste em negociar a cesta de ações composta do índice Bovespa, em uma data futura, sem a necessidade realizar a c",
+        "ura, sem a necessidade realizar a compra de cada ação que compõe este índice.",
+        "Cada ponto do contrato vale R$ 1,00, portanto, se o índice futuro está 60.000 pontos, ele está valendo R$ 60 mil.",
+        "a de desembolso financeiro para replicar o comportamento do principal índice brasileiro, o Ibovespa.",
+        "Se o índice subir 2.000 pontos, ele estará ganhando 2.000 pontos (que e",
+        "Já caso o índice cair e vier para 58.000 pontos, ele perderá R$ 20 mil reais",
+        "Se o índice cair 2.000 pontos, ele estará ganhando 2.000 pontos (que eq",
+        "Já caso o índice subir e for para 62.000 pontos, ele perderá R$ 20 mil reais",
+        " swap convencional é que, no TRES, o ativo subjacente geralmente é um índice de ações, um título ou uma cesta de título.",
+        "s abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou ",
+        "ETFs ASG são fundos de índice que investem em empresas levando em conta critérios Ambient",
+        "Basicamente, ao invés de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de",
+        "de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de sustentabilidade.",
+        "Esse índice reúne empresas que possuem boas práticas ambientais, sociai",
+        "e implementar uma estratégia passiva visando a acompanhar determinado índice de referência: - Full Replication: - AMOSTRAGEM ESTRATIFICA",
+        "Na Full Replication, ou Replicação Total, gestor replica totalmente o índice de referência, comprando todos os ativos do índice e na mes",
+        "plica totalmente o índice de referência, comprando todos os ativos do índice e na mesma proporção da carteira teórica.",
+        " custos de transação podem ser um grande desafio, principalmente se o índice possuir muitos ativos e com baixa liquidez.",
+        "ituída e rebalanceada para acompanhar fielmente a carteira teórica do índice de referência.",
+        "Na amostragem estratificada, o gestor define um subconjunto do índice, selecionando os ativos de forma a replicar as condições de",
+        "ando os ativos de forma a replicar as condições de retorno e risco do índice.",
+        "to de adicionar ações menos líquidas e de menor representatividade no índice.",
+        "stratégia de gestão de carteira de Renda Variável de replicação de um índice (full replication) é geralmente a) mais barata que a otimiz",
+        "b) de um índice de ações pela variação do preço de uma ação.",
+        "Há inclusive um importante índice de sustentabilidade empresarial no mercado brasileiro: o IS",
+        "Esse índice varia de 0 a 100, e é considerado o seu maior valor nos 24 ",
+        " à gestão passiva porque normalmente não desvia significativamente do índice de referência (benchmark).",
+        "se aproxima da gestão ativa ao permitir ao gestores certos desvios do índice de referência, com o objetivo de aumentar retornos.",
+        "leo, é composta por ativos geridos passivamente como, por exemplo, um índice de referência de mercado (Ibovespa, S&P 500, entre outros).",
+        "amente a um benchmark que não é adequado, ou seja, que não reflete um índice de referência condizente com o estilo de gestão da carteira",
+        "rroneamente afirmar que seu Retorno Ativo Total foi de 5% acima desse índice de mercado.",
+        "do resultado deve ser comparado ao valor da cota base atualizado pelo índice de referência.",
+        "principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos.",
+        "ferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência (benchmark)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -1919,6 +1919,44 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "risk.financial",
+      "form": "Risco",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 25,
+      "quotes": [
+        "Desvantagens de investir em ISR: - Risco: Como qualquer investimento, os investimentos em ISR também",
+        "l sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco.",
+        "Outro ponto importante diz respeito à Governança de Risco que é adotada, que envolve o processo de desenvolver e impl",
+        "A Gestão Integrada de Risco se destaca como uma ferramenta crucial para o sucesso no pr",
+        "Na prática, a Gestão Integrada de Risco no contexto de investimentos se traduz em um sistema abrang",
+        "implência do emissor do título, quando comparado com o Ativo Livre de Risco.",
+        "- Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o r",
+        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ati",
+        "e pode ser considerado também como a soma do “Risco Sistêmico” com o “Risco não-sistêmico”.",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local d",
+        "Risco de Inflação genericamente se refere a situações em que os p",
+        "cionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compr",
+        "er de compra e, por isso, o Risco de Inflação também é conhecido como Risco de Poder de Compra.",
+        "O Risco de Volatilidade está associado a uma mudança de preço de um",
+        "O Risco Soberano é a chance de um governo não honrar com o pagament",
+        "O Risco de Contraparte refere-se à possibilidade de um dos envolvid",
+        "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidores que recebem fluxos de caixa",
+        "Um Sistema de Gestão de Risco no processo de investimento é uma ferramenta crucial para a",
+        "lidade (sendo a volatilidade calculada pelo Desvio Padrão, ou seja, o Risco Total).",
+        "s de riscos financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: ",
+        " - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "isco de Liquidez; - Risco de Crédito: - Risco de Reinvestimentos; e - Risco de Resgate Antecipado",
+        "e esse risco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
+        "udança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.factor",
       "form": "fatores",
       "general_senses": 3,
@@ -2685,6 +2723,38 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "action.calculate",
+      "form": "calcular",
+      "general_senses": 4,
+      "glosses": [
+        "fazer um calculo ou computação matemática",
+        "calcular o valor presente de um negócio ou uma renda"
+      ],
+      "occurrences": 19,
+      "quotes": [
+        "Para calcularmos a Variância e o Desvio Padrão Amostral, ao invés de calcular a média da ETAPA 3, dividindo por “N TERMOS”, devemos divid",
+        "Para podermos calcular através da população, devemos “enganar” a HP-12C, adicionan",
+        "Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte C",
+        "- É fácil de calcular e de ser interpretado como uma medida única de risco; - Lev",
+        "Para calcular o VaR Histórico, basta relacionar os retornos passados, org",
+        "Podemos também calcular a perda máxima (VaR) de uma carteira com dois ativos, por e",
+        "Embora existam várias maneiras de calcular a LGD, a mais preferida pelo mercado é o cálculo que envolv",
+        "Finalmente, podemos calcular a Perda Esperada (Expected Loss) como sendo: Perda Esperada",
+        "volver: - Medição de Desempenho (Performance Measurement): usada para calcular taxas de retorno com base nas mudanças nos fluxos de caixa ",
+        "Como os fluxos de caixa são distintos, necessitamos calcular inserindo fluxo por fluxo na HP-12C.",
+        "É simples e fácil de se calcular, mas um objetivo de retorno absoluto não é um benchmark inv",
+        "rmações de valuations e fluxos de caixa externos são necessárias para calcular os impactos da tomada de decisões da política de investimen",
+        "ixa (principalmente os negociados no mercado secundário) baseia-se em calcular o valor presente de todos os recebimentos e soma-los, ou se",
+        "Como já vimos na matemática financeira, para calcular o valor presente, necessitamos utilizar uma taxa de descont",
+        "Desta forma, o passo a passo para se calcular um título de renda fixa é: (1) Estimar o fluxo de caixa da ",
+        "blema, tratamos em 3 partes: (1) valor atual corrigido do título; (2) calcular qual seria o valor final da LFT pela taxa Selic Projetada; ",
+        "Podemos calcular essa variação no preço do título também através da Duration",
+        "Sendo a Duration de Macaulay de 4,55 anos, podemos calcular a Duration Modificada: VARIAÇÃO DO TÍTULO = -DM×(variação d",
+        "Assim, devemos apenas calcular a distribuição inicial e aplicar a rentabilidade dos ativos"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.currency",
       "form": "moeda",
       "general_senses": 6,
@@ -2746,70 +2816,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.position",
-      "form": "posições",
-      "general_senses": 25,
-      "glosses": [
-        "O ato de postular; uma suposição tomada como um axioma ou conjectura",
-        "o trabalho para o qual você está (ou espera ser) nomeado",
-        "um trabalho em uma organização",
-        "o cargo ou função propriamente ou habitualmente ocupada ou atendida po"
-      ],
-      "occurrences": 18,
-      "quotes": [
-        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e lí",
-        "O gestor investe R$ 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        " 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        "O gestor investe R$ 13 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        "3 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        "os gestores lucrar com as tendências de mercado e até mesmo alavancar posições para amplificar tais ganhos, a Market Neutral está sempre e",
-        " investidores, do próximo estágio do ciclo econômico e, assim, montar posições que venham a ser lucrativas.",
-        "o do valor de exposição, corrente e potencial, que acarretem sobre as posições detidas pela classe, apurado com base em metodologia consis",
-        "E, em alguns casos, a corretora pode liquidar antecipadamente as posições em derivativos se não forem atendidas as chamadas de margem",
-        "- Necessidade de Monitoramento: as posições de hedge precisam ser monitoradas constantemente para avali",
-        "is curta da curva resultaria em uma estratégia mais lucrativa, embora posições de longo prazo também seriam beneficiadas não somente pela ",
-        "is longa da curva resultaria em uma estratégia mais lucrativa, embora posições de curto prazo também seriam beneficiadas (por uma queda, a",
-        "Portanto, todas as posições seriam prejudicadas pelo aumento dos juros.",
-        "Novamente, todas as posições seriam prejudicadas pelo aumento dos juros.",
-        "omprar essas ações para quando se recuperar, já vender com lucro suas posições.",
-        "ICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das posições ao longo do tempo, mesmo que possa haver um desequilíbrio e",
-        "stribuição inicial e aplicar a rentabilidade dos ativos nas referidas posições.",
-        "nvestimento, além de dar maior transparência aos riscos embutidos nas posições."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "action.calculate",
-      "form": "calcular",
-      "general_senses": 4,
-      "glosses": [
-        "fazer um calculo ou computação matemática",
-        "calcular o valor presente de um negócio ou uma renda"
-      ],
-      "occurrences": 18,
-      "quotes": [
-        "Para calcularmos a Variância e o Desvio Padrão Amostral, ao invés de calcular a média da ETAPA 3, dividindo por “N TERMOS”, devemos divid",
-        "Para podermos calcular através da população, devemos “enganar” a HP-12C, adicionan",
-        "Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte C",
-        "- É fácil de calcular e de ser interpretado como uma medida única de risco; - Lev",
-        "Para calcular o VaR Histórico, basta relacionar os retornos passados, org",
-        "Embora existam várias maneiras de calcular a LGD, a mais preferida pelo mercado é o cálculo que envolv",
-        "Finalmente, podemos calcular a Perda Esperada (Expected Loss) como sendo: Perda Esperada",
-        "volver: - Medição de Desempenho (Performance Measurement): usada para calcular taxas de retorno com base nas mudanças nos fluxos de caixa ",
-        "Como os fluxos de caixa são distintos, necessitamos calcular inserindo fluxo por fluxo na HP-12C.",
-        "É simples e fácil de se calcular, mas um objetivo de retorno absoluto não é um benchmark inv",
-        "rmações de valuations e fluxos de caixa externos são necessárias para calcular os impactos da tomada de decisões da política de investimen",
-        "ixa (principalmente os negociados no mercado secundário) baseia-se em calcular o valor presente de todos os recebimentos e soma-los, ou se",
-        "Como já vimos na matemática financeira, para calcular o valor presente, necessitamos utilizar uma taxa de descont",
-        "Desta forma, o passo a passo para se calcular um título de renda fixa é: (1) Estimar o fluxo de caixa da ",
-        "blema, tratamos em 3 partes: (1) valor atual corrigido do título; (2) calcular qual seria o valor final da LFT pela taxa Selic Projetada; ",
-        "Podemos calcular essa variação no preço do título também através da Duration",
-        "Sendo a Duration de Macaulay de 4,55 anos, podemos calcular a Duration Modificada: VARIAÇÃO DO TÍTULO = -DM×(variação d",
-        "Assim, devemos apenas calcular a distribuição inicial e aplicar a rentabilidade dos ativos"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.contract",
       "form": "contratos",
       "general_senses": 4,
@@ -2832,6 +2838,121 @@
         "vido à necessidade de levantar capital para honrar suas obrigações em contratos derivativos.",
         "vo adquirido ou que o vendedor pode não entregar os títulos, ações ou contratos vendidos.",
         "iversas estratégias de hedge, como: - Credit Default Swaps (CDS): São contratos que protegem o comprador contra a inadimplência de um deved"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "Fundos",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 16,
+      "quotes": [
+        " Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
+        "ssivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - ",
+        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno seme",
+        "Existem diferentes tipos de ISR: - Fundos de investimento: Existem fundos de investimento que aplicam",
+        "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gest",
+        "sto extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como também nos ",
+        " de Fundos, no qual investiu inicialmente o dinheiro, como também nos Fundos que serão investidos pelo gestor do FoF.",
+        "aula, vamos abordar especificamente o Anexo Normativo I, que trata de Fundos de Investimento Financeiro.",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenh",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenh",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja compo",
+        "XA, sendo a sua alíquota sempre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+        "estimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "da setor e para cada gestor (em se tratando, por exemplo, de Fundo de Fundos).",
+        "para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemáticas de seguradoras."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.position",
+      "form": "posições",
+      "general_senses": 25,
+      "glosses": [
+        "O ato de postular; uma suposição tomada como um axioma ou conjectura",
+        "o trabalho para o qual você está (ou espera ser) nomeado",
+        "um trabalho em uma organização",
+        "o cargo ou função propriamente ou habitualmente ocupada ou atendida po"
+      ],
+      "occurrences": 16,
+      "quotes": [
+        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e lí",
+        " 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
+        "3 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
+        "os gestores lucrar com as tendências de mercado e até mesmo alavancar posições para amplificar tais ganhos, a Market Neutral está sempre e",
+        " investidores, do próximo estágio do ciclo econômico e, assim, montar posições que venham a ser lucrativas.",
+        "o do valor de exposição, corrente e potencial, que acarretem sobre as posições detidas pela classe, apurado com base em metodologia consis",
+        "E, em alguns casos, a corretora pode liquidar antecipadamente as posições em derivativos se não forem atendidas as chamadas de margem",
+        "- Necessidade de Monitoramento: as posições de hedge precisam ser monitoradas constantemente para avali",
+        "is curta da curva resultaria em uma estratégia mais lucrativa, embora posições de longo prazo também seriam beneficiadas não somente pela ",
+        "is longa da curva resultaria em uma estratégia mais lucrativa, embora posições de curto prazo também seriam beneficiadas (por uma queda, a",
+        "Portanto, todas as posições seriam prejudicadas pelo aumento dos juros.",
+        "Novamente, todas as posições seriam prejudicadas pelo aumento dos juros.",
+        "omprar essas ações para quando se recuperar, já vender com lucro suas posições.",
+        "ICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das posições ao longo do tempo, mesmo que possa haver um desequilíbrio e",
+        "stribuição inicial e aplicar a rentabilidade dos ativos nas referidas posições.",
+        "nvestimento, além de dar maior transparência aos riscos embutidos nas posições."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.loss",
+      "form": "perda",
+      "general_senses": 10,
+      "glosses": [
+        "o ato de perder alguém ou algo; \"todo mundo esperava que ele ganhasse,"
+      ],
+      "occurrences": 16,
+      "quotes": [
+        "os pontos aonde eram suporte (momento de comprar a ação) e após a sua perda (diminuição do preço do suporte), se transformou em resistê",
+        "gar os riscos, como diversificação, hedging e definição de limites de perda.",
+        "-RISK, ou simplesmente o VaR, é um indicador de risco para mensurar a perda financeira máxima possível de uma carteira de investimentos",
+        "Desta forma, compreendemos que este fundo poderá ter uma perda máxima de R$ 1 milhão de um dia para o outro, sendo que o g",
+        "Da mesma forma, fornece um valor numérico bem objetivo com relação à perda máxima de um ativo ou carteira.",
+        "k VaR, ou simplesmente B-VaR, calcula exatamente o mesmo que o VaR: a perda máxima de um ativo ou carteira.",
+        "A diferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência (",
+        "Isso significa que, em 5% das vezes, a carteira registrará uma perda de 10% a mais do que se desvalorizar o benchmark nesse perí",
+        "Podemos também calcular a perda máxima (VaR) de uma carteira com dois ativos, por exemplo, ",
+        "Em situações inflacionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também ",
+        "Determinar o valor da perda é um parâmetro importante e muito comum na maioria dos mode",
+        "O cálculo do LGD compara o valor em unidades monetárias da perda potencial ou real com o valor total da exposição no momento",
+        "O risco cambial é o risco de perda que surge da flutuação das taxas de câmbio entre diferentes",
+        "O risco de taxa de juros é o risco de perda que surge da flutuação das taxas de juros.",
+        "O risco de crédito é o risco de perda que surge da inadimplência de um devedor.",
+        " renda fixa de diferentes emissores, o que ajuda a reduzir o risco de perda no caso do inadimplemento de algum dos emissores."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "temporal.term",
+      "form": "Prazo",
+      "general_senses": 5,
+      "glosses": [
+        "um período de tempo durante o qual ocorre algo ou algo está previsto p",
+        "A duração completa de algo"
+      ],
+      "occurrences": 15,
+      "quotes": [
+        "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente títulos de dívida emitidos por empresas",
+        "Prazo overnight: ao contrário da Libor, que podia ter variações p",
+        "Estas modalidades são: - Fundos de Renda Fixa Curto Prazo: fundos de investimentos que tenham a composição da sua car",
+        "- Fundos de Renda Fixa Longo Prazo: fundos de investimentos que tenham a composição da sua car",
+        "mpre a menor da sua modalidade, ou seja: - Fundos de Renda Fixa Curto Prazo: Alíquota de 20%.",
+        "- Fundos de Renda Fixa Longo Prazo: Alíquota de 15%.",
+        "rtos, dependendo exclusivamente de sua composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações:",
+        " composição: - Renda Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%",
+        "ento para os fundos de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo P",
+        "os de investimentos que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Pra",
+        "Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "a Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encontraremos o ponto de equilíbrio do praz",
+        "Relação de Duration com: Prazo do título → Direta ▶ Taxas de juros → Inversa TIR (YTM) Inv",
+        "Yield Prazo Taxas das extremidades sobem e da intermediária, cai."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2882,33 +3003,6 @@
         "as estratégias de imunização que apresentaremos funcionam melhor para variações paralelas nas taxas de juros.",
         "Para variações não paralelas, conseguimos com essas estratégias mitigar um",
         "em determinados prazos de taxa de juros que podem representar maiores variações no preço dada uma mudança na taxa de juros."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "quantity.loss",
-      "form": "perda",
-      "general_senses": 10,
-      "glosses": [
-        "o ato de perder alguém ou algo; \"todo mundo esperava que ele ganhasse,"
-      ],
-      "occurrences": 15,
-      "quotes": [
-        "os pontos aonde eram suporte (momento de comprar a ação) e após a sua perda (diminuição do preço do suporte), se transformou em resistê",
-        "gar os riscos, como diversificação, hedging e definição de limites de perda.",
-        "-RISK, ou simplesmente o VaR, é um indicador de risco para mensurar a perda financeira máxima possível de uma carteira de investimentos",
-        "Desta forma, compreendemos que este fundo poderá ter uma perda máxima de R$ 1 milhão de um dia para o outro, sendo que o g",
-        "Da mesma forma, fornece um valor numérico bem objetivo com relação à perda máxima de um ativo ou carteira.",
-        "k VaR, ou simplesmente B-VaR, calcula exatamente o mesmo que o VaR: a perda máxima de um ativo ou carteira.",
-        "A diferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência (",
-        "Isso significa que, em 5% das vezes, a carteira registrará uma perda de 10% a mais do que se desvalorizar o benchmark nesse perí",
-        "Em situações inflacionárias, dizemos que há uma perda do poder de compra e, por isso, o Risco de Inflação também ",
-        "Determinar o valor da perda é um parâmetro importante e muito comum na maioria dos mode",
-        "O cálculo do LGD compara o valor em unidades monetárias da perda potencial ou real com o valor total da exposição no momento",
-        "O risco cambial é o risco de perda que surge da flutuação das taxas de câmbio entre diferentes",
-        "O risco de taxa de juros é o risco de perda que surge da flutuação das taxas de juros.",
-        "O risco de crédito é o risco de perda que surge da inadimplência de um devedor.",
-        " renda fixa de diferentes emissores, o que ajuda a reduzir o risco de perda no caso do inadimplemento de algum dos emissores."
       ],
       "stratum": "D_risk_surface"
     },
@@ -2964,30 +3058,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.index",
-      "form": "índices",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 14,
-      "quotes": [
-        "Seus índices são considerados a referência para o setor de tecnologia, s",
-        "estão sendo considerados para a carteira, preferindo ativos com altos índices P/L.",
-        "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500.",
-        "os e volatilidade, para com isso obter retornos capazes de superar os índices de mercado.",
-        "tre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commodities, moedas e algumas ações ",
-        "tas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referênci",
-        "s, pois seu valor deriva do valor de um ativo subjacente, como ações, índices, commodities, taxas de juros ou moedas.",
-        "Por sua vez, os índices amplos de mercado são bastante utilizados como benchmark.",
-        "Portanto, índices de estilos representam uma parte específica de uma categori",
-        "Como vantagens, podemos citar: - Disponibilidade: os índices de estilos de mercado são conhecidos, facilmente entendidos",
-        "ante períodos específicos e os correspondentes retornos de diferentes índices de estilos pelos mesmos períodos.",
-        "o submetidas a um algoritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos d",
-        "- Os índices de estilo podem não refletir fielmente o estilo do gestor; ",
-        " número individual de títulos de Renda Fixa, divididos entre diversos índices (e também diferentes níveis de liquidez), torna a replicaçã"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.net_assets",
       "form": "patrimônio",
       "general_senses": 4,
@@ -3014,32 +3084,73 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.long_position",
-      "form": "long",
-      "general_senses": 12,
-      "glosses": [
-        "having or being more than normal or necessary:\"long on brains\"; \"in lo",
-        "primarily spatial sense; of relatively great or greater than average s",
-        "primarily temporal sense; being or indicating a relatively great or gr",
-        "(of speech sounds or syllables) of relatively long duration; \"the Engl",
-        "holding securities or commodities in expectation of a rise in prices; ",
-        "planning prudently for the future; \"large goals that required farsight"
-      ],
+      "concept_id": "entity.index",
+      "form": "índices",
+      "general_senses": 3,
+      "glosses": [],
       "occurrences": 13,
       "quotes": [
-        "ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long).",
-        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e líquida",
-        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
-        " a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short).",
-        "O gestor investe R$ 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        "Temos, em linhas gerais, dois tipos específicos de estratégias long and short: Long Extension (Posições Compradas) e Market Neu",
-        "O gestor investe R$ 13 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
-        "eutralizar a exposição ao risco de mercado através de suas exposições long and short.",
-        "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valo",
-        "is a última tenta explorar as diferenças nos preços das ações ficando long and short em ações intimamente relacionadas e que possuem c",
-        "tégia Market Neutral tenta manter o valor total de suas participações long and short aproximadamente igual, pois isso contribui para d",
-        "Assim, enquanto a estratégia long and short permite aos gestores lucrar com as tendências de ",
-        "iras pautada pela busca de retornos exclusivamente através da compra (long) de ativos."
+        "Seus índices são considerados a referência para o setor de tecnologia, s",
+        "São as empresas predominantes nos índices Dow Jones Industrial Average e S&P 500.",
+        "os e volatilidade, para com isso obter retornos capazes de superar os índices de mercado.",
+        "tre ações individuais, enquanto portfolios Top-Down costumam replicar índices mais amplos, incluindo commodities, moedas e algumas ações ",
+        "tas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inflação como parâmetro de referênci",
+        "s, pois seu valor deriva do valor de um ativo subjacente, como ações, índices, commodities, taxas de juros ou moedas.",
+        "Por sua vez, os índices amplos de mercado são bastante utilizados como benchmark.",
+        "Portanto, índices de estilos representam uma parte específica de uma categori",
+        "Como vantagens, podemos citar: - Disponibilidade: os índices de estilos de mercado são conhecidos, facilmente entendidos",
+        "ante períodos específicos e os correspondentes retornos de diferentes índices de estilos pelos mesmos períodos.",
+        "o submetidas a um algoritmo de alocação que resolve as combinações de índices de estilo de investimento que mais acompanham os retornos d",
+        "- Os índices de estilo podem não refletir fielmente o estilo do gestor; ",
+        " número individual de títulos de Renda Fixa, divididos entre diversos índices (e também diferentes níveis de liquidez), torna a replicaçã"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "Preço",
+      "general_senses": 8,
+      "glosses": [],
+      "occurrences": 12,
+      "quotes": [
+        "O preço desses bonds podem ser definidos da seguinte forma: Preço do Callable Bond = preço do bond - preço da call Preço do P",
+        "eguinte forma: Preço do Callable Bond = preço do bond - preço da call Preço do Putable Bond = preço do bond + preço da put",
+        "O Preço Futuro (F) de qualquer é o seu preço à vista (S – spot) acr",
+        "**Principal Indicador:** - **Suporte:** Preço da ação não diminui mais que o valor do suporte.",
+        "- **Resistência:** Preço da ação não sobe mais que o valor da resistência.",
+        "Portanto: Preço de mercado maior que o valor nominal; YTM menor que a taxa ",
+        "Assim: Preço de mercado menor que o valor nominal YTM maior que a taxa d",
+        "Preço de mercado igual ao valor nominal YTM igual a taxa do cupom",
+        "sco de mudança de taxa de juros é decomposto em duas partes: Risco de Preço e Risco de Reinvestimento.",
+        "Preço correto do título com a mudança na taxa (YTM) Preço estimad",
+        "Preço correto do título com a mudança na taxa (YTM) Preço estimado baseado na Duration Erro de Precificação YTM Y* Pr",
+        " (YTM) Preço estimado baseado na Duration Erro de Precificação YTM Y* Preço 8% 9% 10% Δi = +1% Δi = -1% Δp 1.100 1.000 900"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "Ações",
+      "general_senses": 9,
+      "glosses": [
+        "alguma coisa que as pessoas fazem ou causam",
+        "alguma coisa feita (usualmente em oposição à alguma coisa dita); \"exis",
+        "a série de eventos que formam uma trama"
+      ],
+      "occurrences": 12,
+      "quotes": [
+        "São elas: Preferred Stocks (Ações Preferenciais): consideramos estas ações como do tipo prefe",
+        "Common Stocks (Ações Ordinárias): este tipo de ação possuem as mesmas caracterís",
+        "odemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; ",
+        "- Ações de empresas com boas práticas ASG: É possível investir dire",
+        "c) Ações blue chips estão entre as preferidas dos investidores Growt",
+        "A classe de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juro",
+        "A classe tipificada como “Ações – Mercado de Acesso” possui o prazo de 180 dias para atingi",
+        "- Fundos de Ações: fundos de investimentos que a carteira seja composta por n",
+        "Fixa Curto Prazo: 20% a 22,5% - Renda Fixa Longo Prazo: 15% a 22,5% - Ações: 15%",
+        " que serão de: - Renda Fixa Longo Prazo para Curto Prazo; - Fundos de Ações para Renda Fixa Longo Prazo ou Curto Prazo.",
+        "ara os próximos meses não seja favorável para o Ibovespa (Carteira de Ações), ele pode diminuir a exposição a ações e aumentando em ren",
+        "teira de ações de corretoras (exemplo: Carteira Recomendada Mensal de Ações)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3118,6 +3229,27 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.rate",
+      "form": "Taxa",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 11,
+      "quotes": [
+        "PO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
+        "A taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros ",
+        "Algumas características da SOFR: ➢ Taxa média de juros: assim como a Libor, a SOFR representa a tax",
+        "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na ",
+        "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ",
+        "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aul",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local do invest",
+        "A Taxa de Recuperação, por sua vez, refere-se à possibilidade de s",
+        "A Taxa de Recuperação seria, portanto, de 80% (1 – LGD).",
+        "elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liq",
+        "os financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.market",
       "form": "mercados",
       "general_senses": 9,
@@ -3137,6 +3269,54 @@
         "Esse risco é especialmente relevante para os mercados de derivativos, uma vez que os valores nocionais podem exce",
         "ntral garantidora para a maior parte das operações realizadas em seus mercados.",
         "Isso porque os retornos nos mercados financeiros são desviados da média (skewed) por conta de fr"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "Mercado",
+      "general_senses": 9,
+      "glosses": [
+        "o universo da atividade comercial onde bens e serviços são comprados e"
+      ],
+      "occurrences": 11,
+      "quotes": [
+        "tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
+        "Por outro lado, o Mercado de Balcão é um mercado descentralizado, onde as ações são n",
+        "O Mercado de Balcão é dividido em duas categorias: o mercado de balcã",
+        "A Bolsa de Valores oferece maior transparência e liquidez, enquanto o Mercado de Balcão oferece maior flexibilidade e acesso a um número ",
+        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são considerad",
+        "- Hipótese do Mercado Eficiente: as premissas do Mercado Eficiente são consideradas válidas por investidores growth.",
+        "A classe de cotas fechada tipificada como “Ações – Mercado de Acesso” pode utilizar índices atrelados a juros ou à inf",
+        "A classe tipificada como “Ações – Mercado de Acesso” possui o prazo de 180 dias para atingir os limit",
+        "o, o Alfa de Jensen não considera válidas as premissas da Hipótese do Mercado Eficiente (EMH).",
+        "- Expectativas Puras; - Preferência pela Liquidez; e - Segmentação de Mercado.",
+        "Por último, temos a Teoria de Segmentação de Mercado, que defende que os investidores têm preferência por dívida"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "Valor",
+      "general_senses": 6,
+      "glosses": [
+        "uma quantidade numérica, medida ou atribuída ou computada",
+        "um ideal aceito por algum indivíduo ou grupo",
+        "A quantidade (de dinheiro ou bens ou serviços) que é considerada um eq"
+      ],
+      "occurrences": 11,
+      "quotes": [
+        " Brasil, a taxa de administração é baseada no NAV (Net Asset Value ou Valor Patrimonial Líquido).",
+        "(1) Valor Atual do DI Futuro: - n = 504 ÷ 252 = 2 anos - i = 10 - FV ",
+        "= R$ 82.644,63 (2) Valor do DI Futuro a 8%: - n = 504 ÷ 252 = 2 anos - i = 8 - FV = ",
+        "Estrutura de capital (endividamento); - Potencial de rentabilidade; - Valor Patrimonial.",
+        "o de taxa de juros pode impactar os derivativos de diversas formas: - Valor de mercado: o valor de mercado de um derivativo pode ser si",
+        " Duraton Modificada é feito através da seguinte fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai; V+ = Valor do ativo qu",
+        "fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai; V+ = Valor do ativo quando a taxa de juros sobe V₀ = Valor inicial do ",
+        "xa de juros cai; V+ = Valor do ativo quando a taxa de juros sobe V₀ = Valor inicial do ativo; e = Variação da taxa de juros.",
+        "Relembrando a fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor ",
+        " que: V- = Valor do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inici",
+        " 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Variação da taxa de juros = 0.0"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3163,34 +3343,6 @@
         "Portanto, montar uma posição na parte mais curta da curva resultaria em uma estratégia m",
         "Portanto, montar uma posição na parte mais longa da curva resultaria em uma estratégia m",
         "Com isso, este ativo passa a ter uma posição muito mais expressiva do que o inicial (aproximadamente de "
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "technical.short_position",
-      "form": "short",
-      "general_senses": 23,
-      "glosses": [
-        "marked by rude or peremptory shortness; \"try to cultivate a less brusq",
-        "tending to crumble or break into flakes due to a large amount of short",
-        "(primarily spatial sense) having little length or lacking in length; \"",
-        "primarily temporal sense; indicating or being or seeming to be limited",
-        "of speech sounds or syllables of relatively short duration; \"the Engli",
-        "not holding securities or commodities that one sells in expectation of"
-      ],
-      "occurrences": 11,
-      "quotes": [
-        "operação LONG & SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar l",
-        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bruta (gross) e líquida (net).",
-        " da posição comprada (long) mais o valor absoluto da posição vendida (short).",
-        "erença entre o valor da posição comprada (long) e da posição vendida (short).",
-        "mos, em linhas gerais, dois tipos específicos de estratégias long and short: Long Extension (Posições Compradas) e Market Neutral (Merc",
-        "s também permitir ao gestor assumir algum tipo de estratégia vendida (short) para se beneficiar de perspectivas negativas para determin",
-        "r a exposição ao risco de mercado através de suas exposições long and short.",
-        "ssui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2.",
-        "ma tenta explorar as diferenças nos preços das ações ficando long and short em ações intimamente relacionadas e que possuem característ",
-        "ket Neutral tenta manter o valor total de suas participações long and short aproximadamente igual, pois isso contribui para diminuir o ",
-        "Assim, enquanto a estratégia long and short permite aos gestores lucrar com as tendências de mercado e "
       ],
       "stratum": "D_risk_surface"
     },
@@ -3288,6 +3440,30 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.return",
+      "form": "Retorno",
+      "general_senses": 6,
+      "glosses": [
+        "uma vinda ou regresso para casa, \"no seu regresso da Austrália, demos-",
+        "receber algo de volta de novo; \"depois que o livro foi retornado ao se",
+        "o ato de voltar para um lugar anterior"
+      ],
+      "occurrences": 10,
+      "quotes": [
+        "Retorno equivalente = EXEMPLO: Um investidor obteve 10% de retorno ",
+        "- Retorno financeiro: Os investimentos em ISR podem ter um retorno fi",
+        "nte foi de 20% e o retorno do benchmark apropriado (também chamado de Retorno da Carteira Normal) foi de 18%.",
+        "= Peso no portfólio do setor i; - = Peso no benchmark do setor i; - = Retorno no benchmark do setor i; - $R_B$ = Retorno do benchmark; - ",
+        " benchmark do setor i; - = Retorno no benchmark do setor i; - $R_B$ = Retorno do benchmark; - $N$ = Número de setores.",
+        "a partir dessa equação: Em que: - = Peso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor ",
+        "eso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor i; - $N$ = Número de setores.",
+        "= Peso no portfólio do setor i; - = Peso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor ",
+        "eso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor i; - $N$ = Número de setores.",
+        "Retorno do principal (FV) (2) Determinar a taxa de desconto mais ad"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.scenario",
       "form": "cenários",
       "general_senses": 4,
@@ -3328,6 +3504,27 @@
         "não previstas como encargos do fundo correm por conta do prestador de serviço essencial que a tiver contratado.",
         "ar ativos financeiros em empréstimo em operações cursadas por meio de serviço que não seja autorizado pelo Banco Central do Brasil ou pel",
         "títulos devem ser custodiados em entidades habilitadas a prestar esse serviço pelo supervisor local."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "Fundo",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 9,
+      "quotes": [
+        "estir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos.",
+        "O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento",
+        " há um custo extra para o cotista, que deverá pagar as taxas tanto do Fundo de Fundos, no qual investiu inicialmente o dinheiro, como t",
+        " de investimentos, é importante salientar alguns pontos relevantes: - Fundo Cambial: tributado como renda fixa.",
+        "- Fundo Multimercado: depende da constituição da carteira, mas em g",
+        "Agora calcularemos a Variância e o Desvio Padrão dos retornos do Fundo de “A” no qual teve retornos de (+3%, +1%, +3%, +3%, +5%).",
+        "o médio de 3% e que apresentem os retornos abaixo, deve-se escolher o Fundo A, pois possui menor oscilação e, consequentemente, menor D",
+        "possui menor oscilação e, consequentemente, menor Desvio Padrão que o Fundo B.",
+        "a para cada setor e para cada gestor (em se tratando, por exemplo, de Fundo de Fundos)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3404,30 +3601,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.strips",
-      "form": "STRIPS",
-      "general_senses": 19,
-      "glosses": [
-        "a form of erotic entertainment in which a dancer gradually undresses t",
-        "an airfield without normal airport facilities",
-        "artifact consisting of a narrow flat piece of material",
-        "thin piece of wood or metal",
-        "a sequence of drawings telling a story in a newspaper or comic book",
-        "a relatively long narrow piece of something; \"he felt a flat strip of "
-      ],
-      "occurrences": 7,
-      "quotes": [
-        "Uma Treasury STRIPS é um tipo de título criado através da separação dos fluxos ",
-        "O lastro de uma STRIPS são títulos do Tesouro dos Estados Unidos.",
-        "O termo STRIPS significa \"Separate Trading of Registered Interest and Prin",
-        "Com a criação de uma STRIPS, os fluxos de pagamentos de juros e principal do título ori",
-        "Os investidores em STRIPS recebem o pagamento do valor nominal do título no venciment",
-        "Como resultado, os STRIPS são mais adequados para investidores que desejam garantir u",
-        "Os STRIPS podem ser comprados e vendidos por meio de corretoras de va"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "technical.premium",
       "form": "prêmio",
       "general_senses": 4,
@@ -3483,23 +3656,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.dividend",
-      "form": "dividendos",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 7,
-      "quotes": [
-        "ar que, por retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital",
-        "o desses investidores, buscando empresas sólidas que distribuem altos dividendos.",
-        "fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
-        "s: por serem empresas, os fundos fechados podem fazer distribuição de dividendos.",
-        "igem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos).",
-        "o será tributado quando ocorrer resgate, amortização, distribuição de dividendos ou a alienação da cota.",
-        "de uma conta, em oposição aos fluxos de caixa internos, como juros ou dividendos."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.operation",
       "form": "operação",
       "general_senses": 8,
@@ -3518,6 +3674,30 @@
         "Isso pode afetar a lucratividade da operação para o investidor; e - Risco de reinvestimento: Investidore",
         "fetar o retorno obtido no reinvestimento, impactando o valor total da operação para o investidor.",
         "corridos são utilizados somente para definir a tributação do IR que a operação teve."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.long_position",
+      "form": "long",
+      "general_senses": 12,
+      "glosses": [
+        "having or being more than normal or necessary:\"long on brains\"; \"in lo",
+        "primarily spatial sense; of relatively great or greater than average s",
+        "primarily temporal sense; being or indicating a relatively great or gr",
+        "(of speech sounds or syllables) of relatively long duration; \"the Engl",
+        "holding securities or commodities in expectation of a rise in prices; ",
+        "planning prudently for the future; \"large goals that required farsight"
+      ],
+      "occurrences": 7,
+      "quotes": [
+        "ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long).",
+        "A exposição bruta é a soma do valor da posição comprada (long) mais o valor absoluto da posição vendida (short).",
+        " a exposição líquida é a diferença entre o valor da posição comprada (long) e da posição vendida (short).",
+        "O gestor investe R$ 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
+        "O gestor investe R$ 13 milhões (130%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas.",
+        "Por exemplo, um fundo possui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valo",
+        "iras pautada pela busca de retornos exclusivamente através da compra (long) de ativos."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3573,6 +3753,22 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.variation",
+      "form": "VARIAÇÃO",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 6,
+      "quotes": [
+        "PAGA A VARIAÇÃO DO DÓLAR INSTITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A ",
+        "PAGA A VARIAÇÃO DO DÓLAR INSTITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇ",
+        "A VARIAÇÃO DO DÓLAR INSTITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI",
+        "O DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI Swap",
+        "ion de Macaulay de 4,55 anos, podemos calcular a Duration Modificada: VARIAÇÃO DO TÍTULO = -DM×(variação da taxa de juros) VARIAÇÃO DO TÍT",
+        "tion Modificada: VARIAÇÃO DO TÍTULO = -DM×(variação da taxa de juros) VARIAÇÃO DO TÍTULO = -4,33×(2) = -8,66%"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.document",
       "form": "documento",
       "general_senses": 3,
@@ -3585,6 +3781,21 @@
         "ar os ativos da carteira, bem como firmar todo e qualquer contrato ou documento relativo à negociação de ativos, qualquer que seja a sua na",
         "eira, bem como firmar, quando for o caso, todo e qualquer contrato ou documento relativo à negociação de ativos, qualquer que seja a sua na",
         "or, nos 5 dias úteis subsequentes à sua assinatura, uma cópia de cada documento que firmar em nome da classe de cotas."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "TAXA",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 5,
+      "quotes": [
+        "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VA",
+        "Esta diferença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
+        "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO ",
+        "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO ",
+        "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3625,6 +3836,21 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.dividend",
+      "form": "dividendos",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 5,
+      "quotes": [
+        "ar que, por retorno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ganhos de capital",
+        "o desses investidores, buscando empresas sólidas que distribuem altos dividendos.",
+        "fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado.",
+        "igem ao rendimento para o cotista (alienação, amortização, resgate ou dividendos).",
+        "de uma conta, em oposição aos fluxos de caixa internos, como juros ou dividendos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.cash",
       "form": "caixa",
       "general_senses": 9,
@@ -3656,6 +3882,28 @@
         "nover do benchmark: isso faz com que o benchmark seja uma alternativa passiva válida para o gestor ativo.",
         "z, combina aspectos da alocação ativa com características da alocação passiva.",
         "ra ao longo do tempo por tratar-se de uma estratégia de investimentos passiva."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.short_position",
+      "form": "short",
+      "general_senses": 23,
+      "glosses": [
+        "marked by rude or peremptory shortness; \"try to cultivate a less brusq",
+        "tending to crumble or break into flakes due to a large amount of short",
+        "(primarily spatial sense) having little length or lacking in length; \"",
+        "primarily temporal sense; indicating or being or seeming to be limited",
+        "of speech sounds or syllables of relatively short duration; \"the Engli",
+        "not holding securities or commodities that one sells in expectation of"
+      ],
+      "occurrences": 5,
+      "quotes": [
+        "operação LONG & SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar l",
+        " da posição comprada (long) mais o valor absoluto da posição vendida (short).",
+        "erença entre o valor da posição comprada (long) e da posição vendida (short).",
+        "s também permitir ao gestor assumir algum tipo de estratégia vendida (short) para se beneficiar de perspectivas negativas para determin",
+        "ssui R$ 20 milhões (long) em um ativo com beta de 0,9 e está vendido (short) no valor de R$ 15 milhões em ativos com beta de 1,2."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3711,6 +3959,23 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.security",
+      "form": "Títulos",
+      "general_senses": 8,
+      "glosses": [
+        "um direito estabelecido ou reconhecido",
+        "direito concedido por lei ou contrato (especialmente o direito às pres"
+      ],
+      "occurrences": 4,
+      "quotes": [
+        "Investimentos no Exterior Títulos de Renda Fixa",
+        "- Títulos de renda fixa com baixa duration: são menos sensíveis às mu",
+        "- Títulos de renda fixa com rating alto: são títulos que são consider",
+        "- Títulos temáticos: investem em empresas que atuam em setores especí"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.seller",
       "form": "vendedores",
       "general_senses": 3,
@@ -3724,6 +3989,91 @@
         "res e revendedores, que atuam como intermediários entre compradores e vendedores.",
         "sultado desse cálculo é um número que varia entre 0 (grande força dos vendedores) e 100 (grande força dos compradores).",
         "e operações e contratos e, assim, torna-se a compradora para todos os vendedores e a vendedora para todos os compradores."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.dividend",
+      "form": "Dividendos",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        " - Blend; - Capitalização; - GARP (Growth at a Reasonable Price); e - Dividendos.",
+        "- Dividendos: são o foco desses investidores, buscando empresas sólidas ",
+        "sa, como também faz projeções destes indicadores, como por exemplo: - Dividendos; - Geração de caixa (\"EBITDA\" – LAJIDA); - Estrutura de cap",
+        "- Dividendos: por serem empresas, os fundos fechados podem fazer distrib"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "Carteira",
+      "general_senses": 7,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "20% e o retorno do benchmark apropriado (também chamado de Retorno da Carteira Normal) foi de 18%.",
+        " o cenário para os próximos meses não seja favorável para o Ibovespa (Carteira de Ações), ele pode diminuir a exposição a ações e aumentan",
+        "muito comum de ser visto em carteira de ações de corretoras (exemplo: Carteira Recomendada Mensal de Ações).",
+        "t Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de Proporção Constante”, possui como estratégia uma alocaçã"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.model",
+      "form": "Modelo",
+      "general_senses": 10,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "A LGD é um componente essencial do Modelo de Basileia, um conjunto de regulamentações bancárias inter",
+        "erso de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retornos; e - Customizados",
+        "tórias para atingir os resultados; Asset- Liability Management (ALM): Modelo que foca no gerenciamento de ativos e fluxos de caixa para ",
+        "Modelo que foca no gerenciamento de ativos e fluxos de caixa para "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ATIVOS",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 4,
+      "quotes": [
+        "Essa construção chamamos de ALOCAÇÃO DE ATIVOS, ou em inglês de Asset Allocation.",
+        "Primeiramente, a ALOCAÇÃO DE ATIVOS é dividida entre a classe dos ativos, chamado de MACRO-ALOC",
+        "Neste sentido, a ALOCAÇÃO DE ATIVOS é dividida em Estratégica x Tática e Dinâmica x Estática, q",
+        "Conforme citamos, a ALOCAÇÃO DE ATIVOS pode ser segmentada entre: > MACRO-ALOCAÇÃO: Esta é a parte"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "Taxas",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "Taxas alternativas, como a taxa SOFR, estão sendo adotadas pelo m",
+        "Relação de Duration com: Prazo do título → Direta ▶ Taxas de juros → Inversa TIR (YTM) Inversa Tamanho do Cupom ___ I",
+        "Yield Prazo Taxas das extremidades sobem e da intermediária, cai."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "Índice",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        " referência para o setor de tecnologia, sendo eles: Nasdaq Composite: Índice composto pelo desempenho de mais de 3.000 empresas listadas",
+        "rédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap de Índice de Preços (IPCA e IGP-M).",
+        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3759,6 +4109,102 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "risk.financial",
+      "form": "RISCO",
+      "general_senses": 7,
+      "glosses": [
+        "um risco empreendido sem levar em conta possíveis perdas ou danos",
+        "A qualidade de ser algo que não te deixa avançar"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE, já que todo vendedor vende para a clearing ",
+        "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS).",
+        "- RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco tota"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.mean",
+      "form": "Média",
+      "general_senses": 4,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na B3, fu",
+        ", mas um dos mais comuns é o Oscilador de Convergência-Divergência da Média Móvel (MACD); - MACD (Moving Average Convergence Divergence",
+        "boa aproximação da Duration de Macaulay, vide nosso exemplo no qual a Média ponderada resultou em 90 dias (3 meses) e a Duration em 89 "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.credit",
+      "form": "Crédito",
+      "general_senses": 7,
+      "glosses": [
+        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "ixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap",
+        "O Spread de Crédito é uma medida que representa a probabilidade de inadimplênci",
+        "es com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.liability",
+      "form": "PASSIVO",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATI",
+        "Desta forma, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz",
+        "VA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "ATIVO",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 3,
+      "quotes": [
+        " FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPORTADOR FICA ATIVO EM DÓLAR (e passivo em taxa de juros).",
+        "a, podemos afirmar que a empresa possui um PASSIVO em pós-fixada e um ATIVO em prefixado (já que quando se faz uma venda financiada com",
+        "em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em prefixada e PASSIVO em pós-fixada."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.passive_management",
+      "form": "PASSIVA",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "sta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o banco estará ao contrário: ATIVO em pref",
+        "ALOCAÇÃO ESTÁTICA (PASSIVA): A Alocação Estática se caracteriza pela manutenção das po",
+        "cordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer nada."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.resolve",
       "form": "resolver",
       "general_senses": 9,
@@ -3773,6 +4219,22 @@
         "de indexação que utiliza como base a teoria moderna de carteiras para resolver o problema de minimização do tracking error.",
         "ssária aplicação de métodos mais complexos de programação linear para resolver esse problema.",
         "ação começa a ficar muito grosseira e precisamos fazer um ajuste para resolver esse problema."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.all",
+      "form": "Todos",
+      "general_senses": 3,
+      "glosses": [
+        "quantificador;",
+        "um aglomerado de partes que é considerado uma entidade única; \"quão gr"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "Todos os fundos de investimentos devem ser constituídos por delib",
+        "Todos os pedidos de resgate que estejam pendentes de conversão qu",
+        "Todos nós temos acesso a investimentos em ações, mas nem todos te"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3803,6 +4265,22 @@
         "Desde que expressamente previsto em seus regulamentos, as classes e subclasses de cotas destinadas exclusivamente",
         "Por sua vez e desde que expressamente previsto em seus regulamentos, as classes e subclasses de cotas destinadas exclusivamente",
         "centração por emissor e por modalidade de ativo estabelecidos em seus regulamentos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.calculate",
+      "form": "Calcular",
+      "general_senses": 4,
+      "glosses": [
+        "fazer um calculo ou computação matemática",
+        "calcular o valor presente de um negócio ou uma renda"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "Calcular a distância de cada ponto até a média; 3.",
+        "Calcular a média desses números que foram elevados ao quadrado.",
+        "(3) Calcular o valor presente dos fluxos de caixa estimados, incluindo o"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3854,6 +4332,47 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.increase",
+      "form": "Aumento",
+      "general_senses": 13,
+      "glosses": [
+        "o ato de melhorar algo",
+        "aumento em preço ou valor"
+      ],
+      "occurrences": 3,
+      "quotes": [
+        "Portanto: Aumento da taxa de juros: é negativa para o preço do título, porém ",
+        "- Aumento da taxa de juros: os ganhos com reinvestimento devem ser ig",
+        "juros apresenta convexidade positiva, podemos dizer que o seguinte: - Aumento da taxa de juros: o preço do título cai mais lentamente; - "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.impact",
+      "form": "Impacto",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        "- Impacto na Rentabilidade: O hedge pode limitar o potencial rentabil",
+        "- Impacto positivo: buscam contribuir para um impacto positivo na soc",
+        "- Impacto positivo: contribui para um impacto positivo na sociedade e"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "Estratégias",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Estratégias passivas são aquelas que buscam acompanhar um índice de ref",
+        "Estratégias de hedge são ferramentas utilizadas para proteger um invest"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "technical.arbitrage",
       "form": "arbitragem",
       "general_senses": 3,
@@ -3862,6 +4381,46 @@
       "quotes": [
         "usto de transação, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os devidos preços",
         "Já a estratégia Quantitative Arbitrage refere-se à arbitragem entre ativos utilizando métodos quantitativos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.result",
+      "form": "RESULTADO",
+      "general_senses": 8,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Exemplo: Compra de Contrato Futuro RESULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Fut",
+        "ULTADO DA COMPRA DO CONTRATO FUTURO Exemplo: Venda de Contrato Futuro RESULTADO DA VENDA DO CONTRATO FUTURO"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.sell",
+      "form": "VENDER",
+      "general_senses": 7,
+      "glosses": [
+        "trocar ou entregar por dinheiro ou seu equivalente"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        " o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO (dizemos que ele está vendendo PU e",
+        "Trata-se da DIFICULDADE DE VENDER um determinado ativo pelo preço e no momento desejado."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.institution",
+      "form": "INSTITUIÇÃO",
+      "general_senses": 4,
+      "glosses": [
+        "uma associação organizada para promover a arte, ciência ou educação"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "PAGA A VARIAÇÃO DO DÓLAR INSTITUIÇÃO A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA",
+        "A RECEBE A VARIAÇÃO DO DÓLAR RECEBE A VARIAÇÃO DO CDI TROCA DE FLUXOS INSTITUIÇÃO B PAGA A VARIAÇÃO DO CDI Swap"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3894,6 +4453,130 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.arbitrage",
+      "form": "Arbitragem",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamentalista para esco",
+        "- Arbitragem Estatística: se vale de algoritmos e métodos quantitativos "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.cost",
+      "form": "Custos",
+      "general_senses": 9,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "gumas fraquezas dessa teoria quando aplicada na prática, tais como: - Custos de transação: a fórmula desconsidera custos de transação, o",
+        "- Custos: taxas de administração e outras despesas podem ser mais el"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.information",
+      "form": "Informações",
+      "general_senses": 6,
+      "glosses": [
+        "uma coleção de fatos a partir da qual podem ser extraídas conclusões"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "Está dividido em três seções: Informações sobre a Empresa, Declaração e Eventos Importantes.",
+        "- Informações Operacionais: o questionário aborda perguntas de cunho oper"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "Recursos",
+      "general_senses": 10,
+      "glosses": [
+        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "- Recursos Humanos: detalhes sobre as regras de remuneração e comissio",
+        " operacional sobre Análise Econômica e Pesquisa da empresa, Gestão de Recursos e Risco."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.mean",
+      "form": "Médias",
+      "general_senses": 4,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "- Médias Móveis: procura sinalizar, em função da direção apontada pe",
+        "to das médias dos preços dos ativos ao longo do tempo; - Oscilador de Médias Móveis: indicador técnico utilizado na análise técnica para"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.caution",
+      "form": "cuidado",
+      "general_senses": 4,
+      "glosses": [
+        "o trabalho de fornecer tratamento a ou assitir algo ou alguém",
+        "atenção e gestão implicando responsabilidade pela segurança; \"ele está",
+        "aval e orientação compreensiva; \"o torneio foi realizado sob os auspíc",
+        "um motivo de preocupação"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "Porém, um cuidado importante é sobre a qualidade desses relatórios e a idonei",
+        "Além disso, o modelo é e requer muito cuidado no processo de de risco e retorno das classes de ativos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.debt",
+      "form": "Dívida",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "ação fiscal vigente ou a classe de cotas tipificada como Renda Fixa – Dívida Externa não pode ter cota de abertura.",
+        " responsabilidade da União, deve incluir, à sua denominação, o sufixo Dívida Externa."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.share",
+      "form": "AÇÕES",
+      "general_senses": 9,
+      "glosses": [
+        "alguma coisa que as pessoas fazem ou causam",
+        "alguma coisa feita (usualmente em oposição à alguma coisa dita); \"exis",
+        "a série de eventos que formam uma trama"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "A classe de cotas do fundo tipificado como AÇÕES deve ter como principal fator de risco a variação de preços",
+        "IMPORTANTE SALIENTAR QUE AÇÕES NÃO POSSUEM RISCO DE CRÉDITO."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.measure",
+      "form": "Medida",
+      "general_senses": 6,
+      "glosses": [
+        "qualquer manobra feita como parte do progresso em direção a um objetiv",
+        "o ato ou processo de atribuição de números a fenômenos, de acordo com "
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "atemático, podemos mensurar de duas formas: - Volatilidade HISTÓRICA: Medida estatística que se baseia nos preços do passado ativo.",
+        "Dentre as vantagens do índice M2, podemos citar: - Medida de retorno ajustada ao risco de simples cálculo e entendime"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "risk.error",
       "form": "erro",
       "general_senses": 12,
@@ -3906,6 +4589,18 @@
       "quotes": [
         "de forma mais genérica, está relacionado com falhas decorrentes de um erro humano.",
         "Com isso, o erro gerado no cálculo é ainda menor: EXEMPLO: Uma carteira poss"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.mean",
+      "form": "MÉDIA",
+      "general_senses": 4,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "A Variância é calculada através da MÉDIA DO QUADRADO DA DISTÂNCIA DE CADA PONTO ATÉ A MÉDIA DO GRUPO",
+        "lculada através da MÉDIA DO QUADRADO DA DISTÂNCIA DE CADA PONTO ATÉ A MÉDIA DO GRUPO, e o Desvio Padrão será a raiz quadrada deste núme"
       ],
       "stratum": "D_risk_surface"
     },
@@ -3925,6 +4620,350 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.portfolio",
+      "form": "Carteiras",
+      "general_senses": 7,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "uros e de Curva de Juros, mas que serão tratados na aula de Gestão de Carteiras de Renda Fixa.",
+        "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.scenario",
+      "form": "Cenário",
+      "general_senses": 4,
+      "glosses": [
+        "uma situação tratada como um objeto observável"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "Resumindo os resultados dos três cenários: | Cenário | TIR (ao ano) | TIR (ao período) | TWRR | |---|---:|---:|-",
+        "4,50% | | 2 | 1,58% | 3,18% | 4,50% | | 3 | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "Índices",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        " principais tipos de benchmark: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em",
+        "k: - Absoluto; - Universo de gestores; - Índices amplos de mercado; - Índices de Estilo; - Modelo baseado em fatores; - Baseado em retorn"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "TÍTULO",
+      "general_senses": 8,
+      "glosses": [
+        "um direito estabelecido ou reconhecido",
+        "direito concedido por lei ou contrato (especialmente o direito às pres"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "lay de 4,55 anos, podemos calcular a Duration Modificada: VARIAÇÃO DO TÍTULO = -DM×(variação da taxa de juros) VARIAÇÃO DO TÍTULO = -4,3",
+        "ada: VARIAÇÃO DO TÍTULO = -DM×(variação da taxa de juros) VARIAÇÃO DO TÍTULO = -4,33×(2) = -8,66%"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.variation",
+      "form": "Variação",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "do ativo quando a taxa de juros sobe V₀ = Valor inicial do ativo; e = Variação da taxa de juros.",
+        "ndo a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Variação da taxa de juros = 0.02$."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.result",
+      "form": "Resultado",
+      "general_senses": 8,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "Resultado final = -8,66% (Duration Modificada) + 0,48% (Convexidade) ",
+        "- Resultado conciliado entre a camada textual nativa do PDF e PaddleOCR"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "Ativos",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "dade, deve ocorrer o seguinte: - Duration dos Passivos > Duration dos Ativos: há o risco de reinvestimento.",
+        "sses dos ativos resumidamente como: - Renda Fixa; - Renda variável; - Ativos Imobiliários; - Investimentos Internacionais; - Investiment"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.invest",
+      "form": "Investir",
+      "general_senses": 7,
+      "glosses": [
+        "queixar-se amargamente",
+        "fornecer com poder e autoridade"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "- Diversificação: - Investir em derivativos de diferentes classes de ativos: permite div",
+        "Como exemplo, temos: - Escolher entre LFT ou LTN; - Investir no setor elétrico; - Comprar o imóvel A ou o B."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "FUNDO",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "- **FUNDO DE INVESTIMENTO OU FUNDO:** comunhão de recursos, constituído sob a forma de condomí",
+        "- **FUNDO EXCLUSIVO:** fundo para investidores profissionais constitu"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.value",
+      "form": "VALOR",
+      "general_senses": 6,
+      "glosses": [
+        "uma quantidade numérica, medida ou atribuída ou computada",
+        "um ideal aceito por algum indivíduo ou grupo",
+        "A quantidade (de dinheiro ou bens ou serviços) que é considerada um eq"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VALOR do cupom irá MUDAR em função da mudança do principal (corre"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "temporal.term",
+      "form": "Term",
+      "general_senses": 8,
+      "glosses": [
+        "(architecture) a statue or a human bust or an animal carved out of the",
+        "any distinct quantity contained in a polynomial; \"the general term of ",
+        "a word or expression used for some particular thing; \"he learned many ",
+        "one of the substantive phrases in a logical proposition; \"the major te",
+        "(usually plural) a statement of what is required as part of an agreeme",
+        "a limited period of time; \"a prison term\"; \"he left school before the "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Medium Term Notes (MTNs), ou Notas de Médio Prazo, são essencialmente t"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.operation",
+      "form": "OPERAÇÃO",
+      "general_senses": 8,
+      "glosses": [
+        "uma atividade planejada, envolvendo muitas pessoas realizando várias a",
+        "um processo ou série de atos, especialmente de natureza prática ou mec",
+        "(matemática) cálculo por métodos matemáticos; \"os problemas no final d",
+        "ação de uma força militar ou naval (como uma manobra ou uma campanha);"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Esta diferença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "RETORNO",
+      "general_senses": 6,
+      "glosses": [
+        "uma vinda ou regresso para casa, \"no seu regresso da Austrália, demos-",
+        "receber algo de volta de novo; \"depois que o livro foi retornado ao se",
+        "o ato de voltar para um lugar anterior"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da al"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.tax",
+      "form": "IMPOSTOS",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto so"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.bank",
+      "form": "Banco",
+      "general_senses": 7,
+      "glosses": [
+        "um assento longo para mais de uma pessoa",
+        "uma instituição financeira que aceita depósitos e canaliza o dinheiro "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "É calculada e publicada diariamente pelo Banco da Inglaterra, o banco central britânico."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "Market",
+      "general_senses": 9,
+      "glosses": [
+        "the world of commercial activity where goods and services are bought a",
+        "a marketplace where groceries are sold; \"the grocery store included a ",
+        "an area in a town where a public mercantile establishment is set up",
+        "the securities markets in the aggregate; \"the market always frustrates",
+        "the customers for a particular product or service; \"before they publis",
+        "make commercial; \"Some Amish people have commercialized their way of l"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "os: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\")."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.bank",
+      "form": "Bank",
+      "general_senses": 18,
+      "glosses": [
+        "a flight maneuver; aircraft tips laterally about its longitudinal axis",
+        "a building in which the business of banking transacted; \"the bank is o",
+        "a container (usually with a slot in the top) for keeping money at home",
+        "a financial institution that accepts deposits and channels the money i",
+        "an arrangement of similar objects in a row or in tiers; \"he operated a",
+        "a long ridge or pile; \"a huge bank of earth\""
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consum"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.security",
+      "form": "Security",
+      "general_senses": 9,
+      "glosses": [
+        "measures taken as a precaution against theft or espionage or sabotage ",
+        "an electrical device that sets off an alarm when someone tries to brea",
+        "a guarantee that an obligation will be met",
+        "freedom from anxiety or fear; \"the watch dog gave her a feeling of sec",
+        "a department responsible for the security of the institution's propert",
+        "defense against financial failure; financial independence; \"his pensio"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "Fund",
+      "general_senses": 9,
+      "glosses": [
+        "a financial institution that sells shares to individuals and invests i",
+        "a reserve of money set aside for some purpose",
+        "a supply of something available for future use; \"he brought back a lar",
+        "furnish money for; \"The government funds basic research in many areas\"",
+        "accumulate a fund for the discharge of a recurrent liability; \"fund a ",
+        "invest money in government securities"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "É possível também investir nos Estados Unidos através dos chamados Fund of Funds (FoF), ou Fundo de Fundos."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.index",
+      "form": "ÍNDICE",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.buy",
+      "form": "COMPRAR",
+      "general_senses": 6,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "o o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO (dizemos que ele está comprando PU "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.passive_management",
+      "form": "Passiva",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        " que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.currency",
+      "form": "Moeda",
+      "general_senses": 6,
+      "glosses": [
+        "a moeda oficial emitida por um governo ou banco nacional"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "s de swap: - Swap de Juros (CDI, pré-fixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Defau"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.price",
+      "form": "Preços",
+      "general_senses": 8,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "S – Credit Default Swap: “seguro contra calote”); - Swap de Índice de Preços (IPCA e IGP-M)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "entity.resource",
       "form": "recurso",
       "general_senses": 10,
@@ -3934,6 +4973,42 @@
       "occurrences": 1,
       "quotes": [
         "SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outra ação (ficar long)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.long_position",
+      "form": "LONG",
+      "general_senses": 12,
+      "glosses": [
+        "having or being more than normal or necessary:\"long on brains\"; \"in lo",
+        "primarily spatial sense; of relatively great or greater than average s",
+        "primarily temporal sense; being or indicating a relatively great or gr",
+        "(of speech sounds or syllables) of relatively long duration; \"the Engl",
+        "holding securities or commodities in expectation of a rise in prices; ",
+        "planning prudently for the future; \"large goals that required farsight"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Lembre-se: quando você compra (LONG) um ativo, o seu lucro ocorre com a valorização do seu preç"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "technical.short_position",
+      "form": "SHORT",
+      "general_senses": 23,
+      "glosses": [
+        "marked by rude or peremptory shortness; \"try to cultivate a less brusq",
+        "tending to crumble or break into flakes due to a large amount of short",
+        "(primarily spatial sense) having little length or lacking in length; \"",
+        "primarily temporal sense; indicating or being or seeming to be limited",
+        "of speech sounds or syllables of relatively short duration; \"the Engli",
+        "not holding securities or commodities that one sells in expectation of"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "eu lucro ocorre com a valorização do seu preço; já quando você vende (SHORT), o seu lucro vem da desvalorização."
       ],
       "stratum": "D_risk_surface"
     },
@@ -3949,6 +5024,98 @@
       "occurrences": 1,
       "quotes": [
         "xo numerador do índice P/L ou do EV / EBITDA, ou um alto numerador do dividend yield."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.dividend",
+      "form": "Dividend",
+      "general_senses": 3,
+      "glosses": [
+        "a bonus; something extra (especially a share of a surplus)",
+        "that part of the earnings of a corporation that is distributed to its ",
+        "a number to be divided by another number"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Por fim, temos as empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.financial",
+      "form": "Risk",
+      "general_senses": 6,
+      "glosses": [
+        "a venture undertaken without regard to possible loss or injury; \"he sa",
+        "the probability of being exposed to an infectious agent",
+        "the probability of becoming infected given that exposure to an infecti",
+        "a source of danger; a possibility of incurring loss or misfortune; \"dr",
+        "take a risk in the hope of a favorable outcome; \"When you buy these st",
+        "expose to a chance of loss or damage; \"We risked losing a lot of money"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "O Rep Risk Index é um índice de risco reputacional em aspectos ASG pro"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.information",
+      "form": "Information",
+      "general_senses": 5,
+      "glosses": [
+        "(communication theory) a numerical measure of the uncertainty of an ou",
+        "knowledge acquired through study or experience or instruction",
+        "a message received and understood",
+        "formal accusation of a crime",
+        "a collection of facts from which conclusions may be drawn; \"statistica"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ng error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "Sector",
+      "general_senses": 6,
+      "glosses": [
+        "measuring instrument consisting of two graduated arms hinged at one en",
+        "a particular aspect of life or activity; \"he was helpless in an import",
+        "a social group that forms part of the society or the economy; \"the pub",
+        "a portion of a military position",
+        "the minimum track length that can be assigned to store information; un",
+        "a plane figure bounded by two radii and the included arc of a circle"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recurs"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.sector",
+      "form": "Setores",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "O Sector Rotation, ou Rotação entre Setores, é o movimento de recursos investidos em ações de um setor "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.company",
+      "form": "Empresa",
+      "general_senses": 4,
+      "glosses": [
+        "a atividade de fornecer bens e serviços que envolvam aspectos financei"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Está dividido em três seções: Informações sobre a Empresa, Declaração e Eventos Importantes."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4000,6 +5167,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "actor.company",
+      "form": "Empresas",
+      "general_senses": 4,
+      "glosses": [
+        "a atividade de fornecer bens e serviços que envolvam aspectos financei"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "d) Empresas do setor de tecnologia geralmente são exemplos de ações esc"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.approve",
       "form": "aprovar",
       "general_senses": 9,
@@ -4029,6 +5209,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "system.service",
+      "form": "Serviço",
+      "general_senses": 13,
+      "glosses": [
+        "uma parte específica do trabalho que requer ser feito como um dever ou"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "**OBSERVAÇÕES:** - Considerado como Prestador de Serviço Essencial; - Compete ao gestor negociar os ativos da cartei"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.run",
       "form": "executar",
       "general_senses": 11,
@@ -4039,6 +5232,95 @@
       "occurrences": 1,
       "quotes": [
         "us representantes legais ou mandatários, devidamente autorizados; e - executar somente as ordens que estejam diretamente vinculadas às ope"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.regulation",
+      "form": "Regulamento",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "e exposição a risco de capital, exceto pelo que porventura dispuser o Regulamento."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.fund",
+      "form": "FUNDOS",
+      "general_senses": 10,
+      "glosses": [
+        "o lado inferior de qualquer coisa"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "O “Come-cotas” é a ANTECIPAÇÃO do Imposto de Renda devido nos FUNDOS DE RENDA FIXA, sendo a sua alíquota sempre a menor da sua m"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.identify",
+      "form": "Identificar",
+      "general_senses": 6,
+      "glosses": [
+        "reconhecer como ser; estabelecer a identidade de alguém ou algo",
+        "identificar como em botânica ou biologia, por exemplo"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "O processo de gestão de risco demanda: - Identificar quais riscos são enfrentados e qual a tolerância a tais ris"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.process",
+      "form": "Processo",
+      "general_senses": 5,
+      "glosses": [
+        "um modo de condução de processos legais e parlamentares",
+        "um rumo particular de ação pretendendo alcançar um resultado; \"o proce",
+        "Um processo judicial movido por uma parte contra outra;"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        ": - Visão Holística dos Riscos; - Integração à Tomada de Decisão; e - Processo Contínuo e Adaptável."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.pay",
+      "form": "PAGAR",
+      "general_senses": 13,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.debt",
+      "form": "DÍVIDAS",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Em resumo, O RISCO DO DEVEDOR DAR UM CALOTE (NÃO PAGAR SUAS DÍVIDAS)."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.asset",
+      "form": "Ativo",
+      "general_senses": 4,
+      "glosses": [
+        "caracteriza-se por actividade enérgica",
+        "qualquer coisa de valor material ou utilidade que é de propriedade de "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ilidade de inadimplência do emissor do título, quando comparado com o Ativo Livre de Risco."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4068,6 +5350,32 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.return",
+      "form": "Retornos",
+      "general_senses": 6,
+      "glosses": [
+        "uma vinda ou regresso para casa, \"no seu regresso da Austrália, demos-",
+        "receber algo de volta de novo; \"depois que o livro foi retornado ao se",
+        "o ato de voltar para um lugar anterior"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "<div style=\"text-align: center;\">Histograma de Retornos (frequência relativa)</div> ☐ RESPOSTA: Os 5% menos retorno"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.model",
+      "form": "MODELO",
+      "general_senses": 10,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Portanto, VERIFICA A PRECISÃO DE UM MODELO DE MENSURAÇÃO DE RISCOS."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "risk.default",
       "form": "default",
       "general_senses": 5,
@@ -4085,6 +5393,31 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "actor.buyer",
+      "form": "COMPRADOR",
+      "general_senses": 4,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Durante o período do contrato, o COMPRADOR da proteção de crédito (comprador do CDS) faz pagamentos ao"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.seller",
+      "form": "VENDEDOR",
+      "general_senses": 3,
+      "glosses": [
+        "um vendedor homem",
+        "alguém que promove a troca de bens ou serviços por dinheiro"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "COMPRADOR da proteção de crédito (comprador do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contr"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.fail",
       "form": "falhar",
       "general_senses": 7,
@@ -4098,6 +5431,60 @@
       "occurrences": 1,
       "quotes": [
         "ivos se não forem atendidas as chamadas de margem ou se a contraparte falhar em cumprir suas obrigações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "Rate",
+      "general_senses": 7,
+      "glosses": [
+        "the relative speed of progress or change; \"he lived at a fast pace\"; \"",
+        "amount of a charge or payment relative to some basis; \"a 10-minute pho",
+        "a quantity or amount or measure considered as a proportion of another ",
+        "a magnitude or frequency relative to a time unit; \"they traveled at a ",
+        "assign a rank or rating to; \"how would you rank these students?\"; \"The",
+        "estimate the value of; \"How would you rate his chances to become Presi"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.return",
+      "form": "Return",
+      "general_senses": 29,
+      "glosses": [
+        "the act of someone appearing again; \"his reappearance as Hamlet has be",
+        "a coming to or returning home; \"on his return from Australia we gave h",
+        "getting something back again; \"upon the restitution of the book to its",
+        "the act of going back to a prior location; \"they set out on their retu",
+        "(American football) the act of running back the ball after a kickoff o",
+        "a tennis stroke that sends the ball back to the other player; \"he won "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "- TWRR (Time Weigthed Rate of Return): mede a rentabilidade da carteira sem considerar os fluxos"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "Capital",
+      "general_senses": 11,
+      "glosses": [
+        "uppercase; \"capital A\"; \"great A\"; \"many medieval manuscripts are in m",
+        "of primary importance; \"our capital concern was to avoid defeat\"",
+        "first-rate; \"a capital fellow\"; \"a capital idea\"",
+        "a book written by Karl Marx (1867) describing his economic theories",
+        "the upper part of a column that supports the entablature",
+        "the federal government of the United States"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ns exemplos são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International)."
       ],
       "stratum": "D_risk_surface"
     },
@@ -4120,6 +5507,17 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.sector",
+      "form": "Setor",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Qual o efeito da Seleção Dentro do Setor?"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "actor.administrator",
       "form": "administradores",
       "general_senses": 4,
@@ -4129,6 +5527,50 @@
       "occurrences": 1,
       "quotes": [
         "Logo, administradores de recursos podem manipular o resultado ao eventualmente es"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.market",
+      "form": "MERCADO",
+      "general_senses": 9,
+      "glosses": [
+        "o universo da atividade comercial onde bens e serviços são comprados e"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "UMA DEBÊNTURE COM VENCIMENTO EM 10 ANOS, ESTÁ SENDO NEGOCIADA NO MERCADO POR R$ 1.040,00."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.liability",
+      "form": "Passivos",
+      "general_senses": 6,
+      "glosses": [
+        "faltando energia ou vontade",
+        "Expressando que o sujeito da frase é o paciente da ação indicada pelo ",
+        "A qualidade de ser algo que não te deixa avançar",
+        "(Contabilidade) os rendimentos recebidos, mas ainda não ganhos (geralm"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "descasamento nessa igualdade, deve ocorrer o seguinte: - Duration dos Passivos > Duration dos Ativos: há o risco de reinvestimento."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "risk.error",
+      "form": "Erro",
+      "general_senses": 12,
+      "glosses": [
+        "um ato que falha; \"sua falha em passar o teste\"",
+        "uma ação errada atribuível ao mau julgamento ou ignorância ou desatenç",
+        "um erro resultante de falta de atenção"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "título com a mudança na taxa (YTM) Preço estimado baseado na Duration Erro de Precificação YTM Y* Preço 8% 9% 10% Δi = +1% Δi = -1% Δp"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4160,6 +5602,113 @@
       "occurrences": 1,
       "quotes": [
         "Para ficar mais claro, podemos classificar as classes dos ativos resumidamente como: - Renda Fixa; - R"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.buy",
+      "form": "Comprar",
+      "general_senses": 6,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        ", temos: - Escolher entre LFT ou LTN; - Investir no setor elétrico; - Comprar o imóvel A ou o B."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.institution",
+      "form": "Instituições",
+      "general_senses": 4,
+      "glosses": [
+        "uma associação organizada para promover a arte, ciência ou educação"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "É muito utilizado para gerir a carteira de empréstimos de Instituições Financeiras e de Fundos de Pensão, além das reservas matemá"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "CARTEIRA",
+      "general_senses": 7,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "Já o tipo PERCENTUAL DA CARTEIRA, também conhecido por CORREDOR, é uma forma de equilíbrio d"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.buy",
+      "form": "BUY",
+      "general_senses": 6,
+      "glosses": [
+        "an advantageous purchase; \"she got a bargain at the auction\"; \"the sto",
+        "accept as true; \"I can't buy this story\"",
+        "obtain by purchase; acquire by means of a financial transaction; \"The ",
+        "acquire by trade or sacrifice or exchange; \"She wanted to buy his love",
+        "make illegal payments to in exchange for favors or influence; \"This ju",
+        "be worth or be capable of buying; \"This sum will buy you a ride on the"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "ve rebalancear a carteira de acordo com alguma regra, a estratégia de BUY AND HOLD é uma estratégia PASSIVA em que não se deve fazer "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.strategy",
+      "form": "Estratégia",
+      "general_senses": 3,
+      "glosses": [],
+      "occurrences": 1,
+      "quotes": [
+        "- Estratégia linear; - Potencial de alta ilimitado."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.portfolio",
+      "form": "Portfolio",
+      "general_senses": 4,
+      "glosses": [
+        "the role of the head of a government department; \"he holds the portfol",
+        "a large, flat, thin case for carrying loose papers or drawings or maps",
+        "a list of the financial assets held by an individual or a bank or othe",
+        "a set of pieces of creative work collected to be shown to potential cu"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "A estratégia CPPI (Constant Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.administration",
+      "form": "ADMINISTRAÇÃO",
+      "general_senses": 6,
+      "glosses": [
+        "o ato de administrar alguma coisa; \"foi-lhe dada a gestão global do pr",
+        "um método de cuidar ou administrar os negócios de um grupo de algumas "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Neste capítulo, as principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou i"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.resource",
+      "form": "RECURSOS",
+      "general_senses": 10,
+      "glosses": [
+        "(Lei) um processo judicial em que os peticionários recorrem a um tribu"
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "- **GESTÃO DE RECURSOS DE TERCEIROS:** gestão profissional dos ativos integrantes "
       ],
       "stratum": "D_risk_surface"
     }

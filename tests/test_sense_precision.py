@@ -112,6 +112,39 @@ CASES = [
     ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "technical.probability_distribution", True),
     ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "entity.distribution", False),
     ("A distribuição de cotas deve ser realizada por instituições habilitadas.", "entity.distribution", True),
+    ("Será tributado quando ocorrer resgate, amortização ou distribuição de dividendos.",
+     "technical.dividend_distribution", True),
+    ("Será tributado quando ocorrer resgate, amortização ou distribuição de dividendos.",
+     "entity.distribution", False),
+    # Adversarial review round 1. The Portuguese half of every compound repair was authored by
+    # translating the English instead of reading the corpus, so each fragment error the English
+    # fix removed came straight back in Portuguese. These assert both halves.
+    ("Long Extension (Posições Compradas) e Market Neutral (Mercado Neutro).", "entity.market", False),
+    ("Long Extension (Posições Compradas) e Market Neutral (Mercado Neutro).", "technical.market_neutral", True),
+    ("O estilo GARP, ou Crescimento a um Preço Razoável, combina Growth e Value.", "quantity.price", False),
+    ("O estilo GARP, ou Crescimento a um Preço Razoável, combina Growth e Value.", "technical.garp", True),
+    ("High Yield Bonds: traduzindo, Títulos com Retornos Elevado.", "entity.security", False),
+    ("High Yield Bonds: traduzindo, Títulos com Retornos Elevado.", "entity.high_yield_bond", True),
+    ("Fundos Passivos procuram acompanhar o benchmark.", "entity.liability", False),
+    ("Fundos Passivos procuram acompanhar o benchmark.", "technical.passive_fund", True),
+    # entity.index is a series tracking a basket; a Sharpe or P/E is a scalar. The named
+    # indicators are concepts now, so longest-match takes them and the bare form stays honest.
+    ("Um baixo numerador do índice P/L indica ação barata.", "entity.index", False),
+    ("Um baixo numerador do índice P/L indica ação barata.", "technical.pe_ratio", True),
+    ("Preferindo ativos com altos índices P/L na seleção.", "entity.index", False),
+    ("Preferindo ativos com altos índices P/L na seleção.", "technical.pe_ratio", True),
+    ("O Índice M2 é usado como medida de retorno ajustado ao risco.", "entity.index", False),
+    ("O Índice M2 é usado como medida de retorno ajustado ao risco.", "technical.m2_measure", True),
+    ("O índice de Sharpe compara retorno excedente e desvio padrão.", "entity.index", False),
+    ("O Ibovespa é o principal índice do mercado brasileiro.", "entity.index", True),
+    # Recall the ungoverned demotions had destroyed: the corpus writes these and the registered
+    # `opção de compra`/`opção de venda` never covered them, so they had gone silent.
+    ("São Bonds com opção de Call embutida no contrato.", "technical.option", True),
+    ("O título tem um desconto sobre o valor de face na emissão.", "technical.discount", True),
+    ("Futuros de Ações são negociados na B3.", "technical.futures", True),
+    # A safety-manual concept from the seed vocabulary claiming ordinary Portuguese prose.
+    ("Sem dúvida são pontos de atenção quando se utiliza relatórios de terceiros.",
+     "risk.caution", False),
 ]
 
 

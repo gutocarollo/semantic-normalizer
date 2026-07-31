@@ -1,0 +1,331 @@
+{
+  "english_labels_examined": 152,
+  "findings": [
+    {
+      "concept_id": "technical.bacen",
+      "english": "Banco Central do Brasil",
+      "glosses": [
+        {
+          "portuguese": "pela CVM",
+          "quote": "de serviço que não seja autorizado pelo Banco Central do Brasil ou pela CVM.  ## Resolução CVM 175  ## Carteira  A classe de cotas deve manter o patrimônio aplicado em at",
+          "times": 3
+        },
+        {
+          "portuguese": "pela CVM para desempenhar as referidas atividades",
+          "quote": "stituições devidamente autorizadas pelo Banco Central do Brasil ou pela CVM para desempenhar as referidas atividades, nas suas respectivas áreas de competência, ou, ainda",
+          "times": 1
+        }
+      ],
+      "occurrences": 13
+    },
+    {
+      "concept_id": "technical.benchmark_var",
+      "english": "benchmark var",
+      "glosses": [
+        {
+          "portuguese": "simplesmente B-VaR",
+          "quote": "SCOS.  ## Benchmark VaR  ## Conceito  O Benchmark VaR, ou simplesmente B-VaR, calcula exatamente o mesmo que o VaR: a perda máxima de um ativo ou carteira. A diferença é ",
+          "times": 1
+        }
+      ],
+      "occurrences": 3
+    },
+    {
+      "concept_id": "technical.enterprise_risk_management",
+      "english": "enterprise risk management",
+      "glosses": [
+        {
+          "portuguese": "Sistema de Gerenciamento de Riscos Corporativos)",
+          "quote": "stores de carteira.  Através de um ERM (Enterprise Risk Management ou Sistema de Gerenciamento de Riscos Corporativos), a alta administração aloca diferentes quantias de ",
+          "times": 1
+        }
+      ],
+      "occurrences": 2
+    },
+    {
+      "concept_id": "technical.key_rate_duration",
+      "english": "key rate duration",
+      "glosses": [
+        {
+          "portuguese": "falaremos mais à frente sobre esse ponto",
+          "quote": "intes pontos:  - Duration Modificada; - Key Rate Duration (falaremos mais à frente sobre esse ponto); - Exposição aos diversos setores e qualidades de rating de crédito d",
+          "times": 1
+        }
+      ],
+      "occurrences": 4
+    },
+    {
+      "concept_id": "technical.long_extension",
+      "english": "long extension",
+      "glosses": [
+        {
+          "portuguese": "Posições Compradas",
+          "quote": "ecíficos de estratégias long and short: Long Extension (Posições Compradas) e Market Neutral (Mercado Neutro).  Long Extension são carteiras que tipicamente tem a restriç",
+          "times": 1
+        }
+      ],
+      "occurrences": 2
+    },
+    {
+      "concept_id": "technical.market_neutral",
+      "english": "market neutral",
+      "glosses": [
+        {
+          "portuguese": "Mercado Neutro",
+          "quote": ": Long Extension (Posições Compradas) e Market Neutral (Mercado Neutro).  Long Extension são carteiras que tipicamente tem a restrição de uma exposição. Por exemplo, um f",
+          "times": 1
+        }
+      ],
+      "occurrences": 10
+    }
+  ],
+  "labels_with_a_corpus_gloss": 6,
+  "schema_version": "portuguese-glosses-v1",
+  "unattested": [
+    {
+      "concept_id": "action.configure",
+      "form": "ajustar a configuração"
+    },
+    {
+      "concept_id": "action.preserve",
+      "form": "manter intacto"
+    },
+    {
+      "concept_id": "action.start",
+      "form": "dar início"
+    },
+    {
+      "concept_id": "actor.operator",
+      "form": "operador da máquina"
+    },
+    {
+      "concept_id": "actor.user",
+      "form": "usuário final"
+    },
+    {
+      "concept_id": "artifact.error_code",
+      "form": "código de erro"
+    },
+    {
+      "concept_id": "artifact.error_code",
+      "form": "código de falha"
+    },
+    {
+      "concept_id": "artifact.record",
+      "form": "registro de banco de dados"
+    },
+    {
+      "concept_id": "component.panel",
+      "form": "painel de acesso"
+    },
+    {
+      "concept_id": "condition.unless",
+      "form": "a menos que"
+    },
+    {
+      "concept_id": "condition.when",
+      "form": "quando a condição ocorrer"
+    },
+    {
+      "concept_id": "entity.environment_variable",
+      "form": "variável de ambiente"
+    },
+    {
+      "concept_id": "entity.environment_variable",
+      "form": "variável de ambiente do processo"
+    },
+    {
+      "concept_id": "entity.facility_base",
+      "form": "fundação da instalação"
+    },
+    {
+      "concept_id": "entity.file",
+      "form": "arquivo de dados"
+    },
+    {
+      "concept_id": "entity.high_yield_bond",
+      "form": "títulos de alto rendimento"
+    },
+    {
+      "concept_id": "entity.objective",
+      "form": "objetivo de investimento"
+    },
+    {
+      "concept_id": "entity.private_equity",
+      "form": "participação privada"
+    },
+    {
+      "concept_id": "entity.protection",
+      "form": "proteção ao investidor"
+    },
+    {
+      "concept_id": "entity.query",
+      "form": "consulta de busca"
+    },
+    {
+      "concept_id": "entity.registration",
+      "form": "registro regulatório"
+    },
+    {
+      "concept_id": "entity.sidecar",
+      "form": "arquivo sidecar"
+    },
+    {
+      "concept_id": "entity.step",
+      "form": "etapa de workflow"
+    },
+    {
+      "concept_id": "fastener.screw",
+      "form": "parafuso de fixação"
+    },
+    {
+      "concept_id": "modality.capability",
+      "form": "é capaz de"
+    },
+    {
+      "concept_id": "modality.logical_necessity",
+      "form": "é necessariamente o caso"
+    },
+    {
+      "concept_id": "modality.obligation",
+      "form": "é obrigatório"
+    },
+    {
+      "concept_id": "modality.possibility",
+      "form": "é possível que"
+    },
+    {
+      "concept_id": "polarity.prohibition",
+      "form": "é proibido"
+    },
+    {
+      "concept_id": "risk.failure",
+      "form": "mau funcionamento"
+    },
+    {
+      "concept_id": "system.database",
+      "form": "banco de dados"
+    },
+    {
+      "concept_id": "system.server",
+      "form": "servidor de aplicação"
+    },
+    {
+      "concept_id": "system.service",
+      "form": "serviço de software"
+    },
+    {
+      "concept_id": "technical.asset_liability_management",
+      "form": "gestão de ativos e passivos"
+    },
+    {
+      "concept_id": "technical.capital_gain",
+      "form": "ganho de capital"
+    },
+    {
+      "concept_id": "technical.casefold",
+      "form": "casefold Unicode"
+    },
+    {
+      "concept_id": "technical.consumer_price_index",
+      "form": "índice de preços ao consumidor"
+    },
+    {
+      "concept_id": "technical.current_yield",
+      "form": "rendimento corrente"
+    },
+    {
+      "concept_id": "technical.deadline_horizon",
+      "form": "horizonte de investimento"
+    },
+    {
+      "concept_id": "technical.duration_matching",
+      "form": "casamento de duration"
+    },
+    {
+      "concept_id": "technical.effective_duration",
+      "form": "duration efetiva"
+    },
+    {
+      "concept_id": "technical.enterprise_risk_management",
+      "form": "gestão de riscos corporativos"
+    },
+    {
+      "concept_id": "technical.information_ratio",
+      "form": "índice de informação"
+    },
+    {
+      "concept_id": "technical.jsonl",
+      "form": "JSON Lines"
+    },
+    {
+      "concept_id": "technical.long_only",
+      "form": "somente comprado"
+    },
+    {
+      "concept_id": "technical.long_position",
+      "form": "posição longa"
+    },
+    {
+      "concept_id": "technical.market_neutral",
+      "form": "neutra ao mercado"
+    },
+    {
+      "concept_id": "technical.merger_arbitrage",
+      "form": "arbitragem de fusões"
+    },
+    {
+      "concept_id": "technical.money_weighted_return",
+      "form": "retorno ponderado pelo dinheiro"
+    },
+    {
+      "concept_id": "technical.nfc",
+      "form": "NFC Unicode"
+    },
+    {
+      "concept_id": "technical.numeral_base",
+      "form": "base numérica"
+    },
+    {
+      "concept_id": "technical.python_docstring",
+      "form": "docstring Python"
+    },
+    {
+      "concept_id": "technical.semantic_sequence",
+      "form": "sequência semântica"
+    },
+    {
+      "concept_id": "technical.short_position",
+      "form": "posição curta"
+    },
+    {
+      "concept_id": "technical.tesouro_direto",
+      "form": "Tesouro Direto"
+    },
+    {
+      "concept_id": "technical.twrr",
+      "form": "retorno ponderado pelo tempo"
+    },
+    {
+      "concept_id": "technical.var",
+      "form": "valor em risco"
+    },
+    {
+      "concept_id": "technical.withholding",
+      "form": "retenção na fonte"
+    },
+    {
+      "concept_id": "technical.withholding",
+      "form": "tributação na fonte"
+    },
+    {
+      "concept_id": "technical.ytm",
+      "form": "taxa interna de retorno até o vencimento"
+    },
+    {
+      "concept_id": "temporal.until",
+      "form": "até que"
+    }
+  ],
+  "unattested_automatic_pt_labels": 61
+}

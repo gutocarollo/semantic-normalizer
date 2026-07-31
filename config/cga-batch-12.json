@@ -1,0 +1,11 @@
+{
+  "batch": 12,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The draw against 2.14.1 (seed 41077) found two errors and both are traceable to a repair rather than to an old defect: `índices P/L` because the P/E concept was registered in the singular only, and `distribuição de dividendos` because narrowing entity.distribution to the placement of fund shares — itself a correct fix — left the payout sense with nowhere to go. A correction that exposes the next gap is the loop working.",
+  "concepts": [
+    {"id": "technical.dividend_distribution", "en": "dividend distribution", "pt": "distribuição de dividendos", "class": "technical_term", "pos": "noun",
+     "def": "The payment of earnings to holders, a taxable event for a closed-end fund holder.",
+     "alt_pt": ["pagamento de dividendos"], "technical": true,
+     "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"}
+  ]
+}

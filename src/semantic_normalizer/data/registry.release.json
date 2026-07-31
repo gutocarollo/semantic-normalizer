@@ -1,7 +1,5 @@
 {
-  "added_concepts": [
-    "technical.cupom_cambial"
-  ],
+  "added_concepts": [],
   "affected_concepts": [
     "action.allocate",
     "action.analyse",
@@ -89,6 +87,7 @@
     "entity.fixed_income",
     "entity.fund",
     "entity.fund_share",
+    "entity.high_grade_bond",
     "entity.high_yield_bond",
     "entity.income_tax",
     "entity.index",
@@ -174,6 +173,7 @@
     "technical.active_management",
     "technical.active_return",
     "technical.active_risk",
+    "technical.adx",
     "technical.alpha",
     "technical.anbima",
     "technical.arbitrage",
@@ -206,6 +206,7 @@
     "technical.discount",
     "technical.discount_rate",
     "technical.diversification",
+    "technical.dividend_distribution",
     "technical.drawdown",
     "technical.due_diligence",
     "technical.duration",
@@ -243,6 +244,7 @@
     "technical.long_position",
     "technical.loss_given_default",
     "technical.ltn",
+    "technical.m2_measure",
     "technical.macd",
     "technical.markdown",
     "technical.market_neutral",
@@ -255,7 +257,10 @@
     "technical.ntnb",
     "technical.numeral_base",
     "technical.option",
+    "technical.option_premium",
+    "technical.passive_fund",
     "technical.passive_management",
+    "technical.pe_ratio",
     "technical.performance_appraisal",
     "technical.performance_attribution",
     "technical.performance_measurement",
@@ -271,6 +276,7 @@
     "technical.python_docstring",
     "technical.rating",
     "technical.risk_budgeting",
+    "technical.rsi",
     "technical.selic",
     "technical.semantic_sequence",
     "technical.sha256",
@@ -312,15 +318,15 @@
     "temporal.until"
   ],
   "approved_at": "2026-07-31T00:00:00Z",
-  "approved_by": "cga-game-delivery-council execution; batch adjudicated against corpus contexts",
-  "change_reason": "CGA domain batch 10: 1 concepts added.",
+  "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
+  "change_reason": "Renaming the label was too blunt: `atenção` is genuinely the caution marker in technical documentation and genuinely wrong in CGA finance prose. Only the collocation is wrong, so only the collocation is blocked.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
     "downstream-eval-config-v2.json": "918866786f4209d88aee52e77383b02d9a44ef8e815ed77b9496e9ed1106578e",
     "downstream-judge-output.schema.json": "4769dfc32efac7a9f211aba93004ecb2b566584f83d4837bf1850a8bdf82f0b5",
     "downstream-judge-packet.schema.json": "9e12c4f94855074cda8a1bc201bb31677a71cd6705be34cc633f1937783b6303",
-    "heldout-downstream.schema.json": "6c2f4dd186dd39aa03adbdc55a6b41ca39ba790d6c8df32afdd828a5874a69cd",
+    "heldout-downstream.schema.json": "ccaa4018b978aa7052a7f6f24168ce928a944dc0dc568efed3d05e180b8a4536",
     "heldout-manifest.schema.json": "183d558189e732545bba4bf723428b96258ac80ff3607e7ff4896807553b9dd2",
     "heldout-retrieval.schema.json": "ff3a072c435b3134a201a864cbba72b9f5f24c6bfead0231515087a16694edbd",
     "heldout-rg.schema.json": "941c47d82c7bf430382cda313a730339b8c6f4165b432d5a6749766fda842866",
@@ -329,13 +335,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "eac7282edb662350e5c3fee628ec469a425c7532e1d14da02fd9e5c857415794",
-    "registry.provenance.jsonl": "a092b64996be5b711381ab8e6402409f5dfa822ac7adaf8d17b730cbc1afccd3",
+    "registry.jsonl": "279bc40b370438e5fb12cbc0907b5cea86742e5a6f02dbcc30672d287b9fd55b",
+    "registry.provenance.jsonl": "efd6c915f759443fce237bd973fe2db3a725554116cef0e09a23572407a6723d",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.1.0",
+  "rollback_version": "2.15.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.13.0"
+  "version": "2.15.1"
 }

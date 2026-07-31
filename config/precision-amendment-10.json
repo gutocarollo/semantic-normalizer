@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-10",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review round 1, gaps G2 and G8",
+  "method": "exhaustive count of `atenção` in the corpus; full reseal of every declared release hash",
+  "reason": "A safety-manual concept inherited from the controlled-language seed was claiming ordinary Portuguese prose, and the release seal covered only the three files the sealer rewrote.",
+  "operations": [
+    {
+      "op": "rename_pref",
+      "concept": "risk.caution",
+      "language": "pt-BR",
+      "to": "cuidado",
+      "why": "risk.caution carries `domains: [documentation, safety]` and means a notice about equipment or process harm. Its Portuguese preferred label was `atenção`, whose single corpus occurrence is `são pontos de atenção quando se utiliza relatórios de terceiros` — ordinary Portuguese for `things to watch`. The technical-manual term is `cuidado`, which occurs zero times here, so the concept keeps a correct label and stops claiming common prose. Same shape as state.enabled claiming `ativo`: a seed-vocabulary concept whose label is an everyday word in the target domain."
+    }
+  ]
+}

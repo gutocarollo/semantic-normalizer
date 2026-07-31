@@ -60,12 +60,19 @@ def main() -> int:
     from semantic_normalizer.registry import load_lexicon, load_registry
 
     polysemy_report = json.loads(Path(args.polysemy).read_text(encoding="utf-8"))
+    # Keyed casefolded, because the polysemy report stores the registry's canonical form
+    # (lower case) while the normaliser emits the SURFACE it matched. Keying on the raw pair
+    # sent every capitalised occurrence to `senses is None`, and the `None` branch below files
+    # those under `B_domain_exclusive` — the stratum whose whole argument is "this token does
+    # not exist outside the domain". An adversarial review measured the damage: 450 events,
+    # 6.7 % of the corpus, including `Risco`, `Ações`, `Mercado`, `Fundos` and `Cupom`, all of
+    # them exactly the high-polysemy forms the sweep exists to look at.
     senses_of = {
-        (item["concept_id"], item["form"]): item["general_senses"]
+        (item["concept_id"], item["form"].casefold()): item["general_senses"]
         for item in polysemy_report["forms"]
     }
     glosses_of = {
-        (item["concept_id"], item["form"]): item["glosses"]
+        (item["concept_id"], item["form"].casefold()): item["glosses"]
         for item in polysemy_report["forms"]
     }
 
@@ -84,7 +91,7 @@ def main() -> int:
         for record in normalize_text(sentence, source=f"s{index}", kind="text", lexicon=lexicon):
             for event in record["match_events"]:
                 key = (event["concept_id"], event["alias"])
-                senses = senses_of.get(key)
+                senses = senses_of.get((event["concept_id"], event["alias"].casefold()))
                 if len(event["alias"].split()) > 1:
                     stratum = "A_phrase"
                 elif senses is None or senses == 0:
@@ -97,7 +104,8 @@ def main() -> int:
                 bucket = per_pair.setdefault(key, {
                     "concept_id": event["concept_id"], "form": event["alias"],
                     "stratum": stratum, "general_senses": senses or 0,
-                    "glosses": glosses_of.get(key, []), "occurrences": 0, "quotes": [],
+                    "glosses": glosses_of.get((event["concept_id"], event["alias"].casefold()), []),
+                    "occurrences": 0, "quotes": [],
                 })
                 bucket["occurrences"] += 1
                 if len(bucket["quotes"]) < 40:

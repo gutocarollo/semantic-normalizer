@@ -59,7 +59,7 @@ def main() -> int:
     previous_version = records[0]["registry_version"] if records else "0.0.0"
 
     applied: dict[str, list[str]] = {
-        "demoted": [], "promoted": [], "redefined": [], "forms_added": [], "forms_removed": [],
+        "demoted": [], "promoted": [], "renamed": [], "redefined": [], "forms_added": [], "forms_removed": [],
         "variants_forbidden": [], "concepts_added": [],
     }
     refused: list[str] = []
@@ -179,6 +179,28 @@ def main() -> int:
                 f"({operation.get('right', '?')}/{operation.get('total', '?')} right)"
             )
 
+        elif kind == "rename_pref":
+            # `remove_form` refuses to delete a preferred label, correctly — a concept with no
+            # preferred label is not a concept. But a seed-vocabulary concept can arrive with a
+            # preferred label that is an ordinary word in the target domain, and then the label
+            # itself is the defect. `risk.caution` came in as `atenção`, which in a CGA corpus
+            # means `things to watch`; the technical-manual sense is `cuidado`. Renaming keeps
+            # the concept and retires the surface, which removal could not do.
+            old = record["labels"][language]["pref"]
+            record["labels"][language]["pref"] = operation["to"]
+            record["lexical_forms"][language] = [
+                entry for entry in record["lexical_forms"][language] if entry["form"] != old
+            ]
+            if not any(entry["form"] == operation["to"]
+                       for entry in record["lexical_forms"][language]):
+                record["lexical_forms"][language].append(
+                    {"form": operation["to"], "features": {}, "policy": "auto"}
+                )
+            for group in ("alt", "hidden", "observed"):
+                labels = record["labels"][language]
+                labels[group] = [item for item in labels[group] if item != operation["to"]]
+            applied["renamed"].append(f"{operation['concept']}.{language}: {old!r} -> {operation['to']!r}")
+
         elif kind == "redefine":
             applied["redefined"].append(
                 f"{operation['concept']}: {record['definition']!r} -> {operation['definition']!r}"
@@ -288,12 +310,26 @@ def main() -> int:
         "reindex_required": True,
         "rollback_version": previous_version,
     })
-    release["hashes"] = {
-        **release.get("hashes", {}),
-        "registry.jsonl": sha(REGISTRY),
-        "registry.schema.json": sha(SCHEMA),
-        "registry.provenance.jsonl": sha(PROVENANCE),
-    }
+    # Reseal EVERY declared file, not the three this script happens to touch. Carrying the rest
+    # forward with `**release.get("hashes")` preserved whatever was there, so a file changed by
+    # another path kept a stale hash indefinitely — an adversarial review found exactly that in
+    # `heldout-downstream.schema.json`, and no test caught it because the governance test only
+    # checked the same three. A seal that only covers what the sealer edited is not a seal.
+    resealed, missing = {}, []
+    for name in release.get("hashes", {}):
+        for base in (DATA, ROOT, ROOT / "src" / "semantic_normalizer"):
+            candidate = base / name
+            if candidate.is_file():
+                resealed[name] = sha(candidate)
+                break
+        else:
+            missing.append(name)
+    if missing:
+        raise SystemExit(
+            f"release declares hashes for files that do not exist: {missing}. "
+            "A seal naming an absent file is worse than no seal."
+        )
+    release["hashes"] = resealed
     RELEASE.write_text(json.dumps(release, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
                        encoding="utf-8")
     return 0

@@ -1,0 +1,724 @@
+{
+  "baseline_ref": "eb622bf",
+  "concepts_that_gained_events": 61,
+  "concepts_that_lost_events": 47,
+  "events_after": 6700,
+  "events_before": 6522,
+  "gained": [
+    {
+      "after": 261,
+      "before": 6,
+      "concept_id": "entity.asset",
+      "delta": 255
+    },
+    {
+      "after": 26,
+      "before": 0,
+      "concept_id": "technical.irr",
+      "delta": 26
+    },
+    {
+      "after": 13,
+      "before": 0,
+      "concept_id": "technical.loss_given_default",
+      "delta": 13
+    },
+    {
+      "after": 11,
+      "before": 0,
+      "concept_id": "technical.sofr",
+      "delta": 11
+    },
+    {
+      "after": 10,
+      "before": 0,
+      "concept_id": "technical.long_and_short",
+      "delta": 10
+    },
+    {
+      "after": 10,
+      "before": 0,
+      "concept_id": "technical.market_neutral",
+      "delta": 10
+    },
+    {
+      "after": 9,
+      "before": 0,
+      "concept_id": "technical.libor",
+      "delta": 9
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "technical.active_return",
+      "delta": 8
+    },
+    {
+      "after": 12,
+      "before": 4,
+      "concept_id": "technical.hedge_fund",
+      "delta": 8
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "technical.modified_duration",
+      "delta": 8
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "technical.performance_attribution",
+      "delta": 8
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "technical.strips",
+      "delta": 8
+    },
+    {
+      "after": 8,
+      "before": 0,
+      "concept_id": "technical.total_return_equity_swap",
+      "delta": 8
+    },
+    {
+      "after": 7,
+      "before": 0,
+      "concept_id": "technical.current_yield",
+      "delta": 7
+    },
+    {
+      "after": 7,
+      "before": 0,
+      "concept_id": "technical.expected_loss",
+      "delta": 7
+    },
+    {
+      "after": 7,
+      "before": 0,
+      "concept_id": "technical.garp",
+      "delta": 7
+    },
+    {
+      "after": 7,
+      "before": 0,
+      "concept_id": "technical.money_weighted_return",
+      "delta": 7
+    },
+    {
+      "after": 6,
+      "before": 0,
+      "concept_id": "entity.registration",
+      "delta": 6
+    },
+    {
+      "after": 6,
+      "before": 0,
+      "concept_id": "technical.estr",
+      "delta": 6
+    },
+    {
+      "after": 6,
+      "before": 0,
+      "concept_id": "technical.expected_default_probability",
+      "delta": 6
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.consumer_price_index",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.long_extension",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.long_only",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.m2_measure",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.pe_ratio",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.probability_distribution",
+      "delta": 5
+    },
+    {
+      "after": 5,
+      "before": 0,
+      "concept_id": "technical.value_investing",
+      "delta": 5
+    },
+    {
+      "after": 4,
+      "before": 0,
+      "concept_id": "entity.high_grade_bond",
+      "delta": 4
+    },
+    {
+      "after": 4,
+      "before": 0,
+      "concept_id": "entity.high_yield_bond",
+      "delta": 4
+    },
+    {
+      "after": 4,
+      "before": 0,
+      "concept_id": "technical.benchmark_var",
+      "delta": 4
+    },
+    {
+      "after": 4,
+      "before": 0,
+      "concept_id": "technical.performance_appraisal",
+      "delta": 4
+    },
+    {
+      "after": 4,
+      "before": 0,
+      "concept_id": "technical.sonia",
+      "delta": 4
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.active_risk",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.asset_liability_management",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.enterprise_risk_management",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.isin",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.key_rate_duration",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.macd",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.short_bias",
+      "delta": 3
+    },
+    {
+      "after": 3,
+      "before": 0,
+      "concept_id": "technical.twrr",
+      "delta": 3
+    }
+  ],
+  "lost": [
+    {
+      "after": 201,
+      "before": 230,
+      "concept_id": "quantity.return",
+      "delta": -29,
+      "examples": [
+        "es (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ",
+        "➢ A taxa de desconto não é a mesma coisa que a taxa de retorno (yield)."
+      ]
+    },
+    {
+      "after": 7,
+      "before": 35,
+      "concept_id": "technical.yield",
+      "delta": -28,
+      "examples": [
+        "de desconto não é a mesma coisa que a taxa de retorno (yield).",
+        "High Yield Bonds: Poderíamos traduzir para o português "
+      ]
+    },
+    {
+      "after": 17,
+      "before": 44,
+      "concept_id": "technical.principal",
+      "delta": -27,
+      "examples": [
+        "pom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de r",
+        "Treasury Bills As tem como principal característica que o seu ."
+      ]
+    },
+    {
+      "after": 290,
+      "before": 309,
+      "concept_id": "quantity.rate",
+      "delta": -19,
+      "examples": [
+        " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
+        "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
+      ]
+    },
+    {
+      "after": 55,
+      "before": 72,
+      "concept_id": "technical.duration",
+      "delta": -17,
+      "examples": [
+        "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de re",
+        "m dos itens abaixo: - Resgates: ao término do prazo de duração do fundo."
+      ]
+    },
+    {
+      "after": 11,
+      "before": 28,
+      "concept_id": "technical.long_position",
+      "delta": -17,
+      "examples": [
+        "Realizar uma operação LONG & SHORT significa vender uma ação que não po",
+        " com o recurso da venda, comprar uma outra ação (ficar long)."
+      ]
+    },
+    {
+      "after": 29,
+      "before": 46,
+      "concept_id": "technical.option",
+      "delta": -17,
+      "examples": [
+        "Os títulos dos EUA ainda são uma das opções mais seguras, pois tem um baixo risco de ina",
+        "➢ Algumas possuem cláusula de opção de compra, onde o governo americano pode rec"
+      ]
+    },
+    {
+      "after": 50,
+      "before": 65,
+      "concept_id": "quantity.performance",
+      "delta": -15,
+      "examples": [
+        ", expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos",
+        "ia, sendo eles: Nasdaq Composite: Índice composto pelo desempenho de mais de 3.000 empresas listadas na Nasdaq"
+      ]
+    },
+    {
+      "after": 138,
+      "before": 152,
+      "concept_id": "quantity.value",
+      "delta": -14,
+      "examples": [
+        "Valor principal indexado à variação do CPI (Consum",
+        "Consumer Price Index) Pagamentos de juros semestrais = valor principal ajustado pela inflação."
+      ]
+    },
+    {
+      "after": 0,
+      "before": 12,
+      "concept_id": "artifact.record",
+      "delta": -12,
+      "examples": [
+        "ma classe de cotas, cada classe deve obter seu próprio registro de funcionamento, o qual pode ser requerido ",
+        "equerido à CVM concomitantemente ou após a obtenção do registro do fundo."
+      ]
+    },
+    {
+      "after": 9,
+      "before": 21,
+      "concept_id": "technical.short_position",
+      "delta": -12,
+      "examples": [
+        "Realizar uma operação LONG & SHORT significa vender uma ação que não possui (fi",
+        " SHORT significa vender uma ação que não possui (ficar short) e, com o recurso da venda, comprar uma outr"
+      ]
+    },
+    {
+      "after": 20,
+      "before": 31,
+      "concept_id": "entity.distribution",
+      "delta": -11,
+      "examples": [
+        "resgate; e - taxas de administração, gestão, máxima de distribuição, ingresso e saída.",
+        "A distribuição de cotas deve ser realizada por instituições"
+      ]
+    },
+    {
+      "after": 48,
+      "before": 58,
+      "concept_id": "entity.contract",
+      "delta": -10,
+      "examples": [
+        "Desta forma, é um contrato onde o emissor do título concorda em pagar u",
+        "Os títulos de renda fixa também podem ter contratos de proteção embutidas, conforme visto no cap"
+      ]
+    },
+    {
+      "after": 74,
+      "before": 84,
+      "concept_id": "entity.index",
+      "delta": -10,
+      "examples": [
+        "Average (DJIA): Também conhecido como Dow 30, ele é um índice do mercado de ações que acompanha 30 grandes",
+        "Este índice é ponderado por preços e não por capitalizaç"
+      ]
+    },
+    {
+      "after": 163,
+      "before": 173,
+      "concept_id": "entity.market",
+      "delta": -10,
+      "examples": [
+        "Atuamos desde 2017 ensinando profissionais do mercado financeiro os conteúdos necessários para que",
+        "los separados, que são negociados independentemente no mercado secundário."
+      ]
+    },
+    {
+      "after": 42,
+      "before": 52,
+      "concept_id": "quantity.loss",
+      "delta": -10,
+      "examples": [
+        " eram suporte (momento de comprar a ação) e após a sua perda (diminuição do preço do suporte), se transfo",
+        "égia de investimento que proteja a classe de riscos de perdas e volatilidade."
+      ]
+    },
+    {
+      "after": 16,
+      "before": 25,
+      "concept_id": "quantity.measure",
+      "delta": -9,
+      "examples": [
+        "No entanto, conforme o erro de rastreamento diminui à medida que o tamanho da amostra aumenta, a estratég",
+        "O objetivo, então, é neutralizar o risco de mercado na medida em que o gestor acredita não conseguir gerar"
+      ]
+    },
+    {
+      "after": 108,
+      "before": 116,
+      "concept_id": "entity.share",
+      "delta": -8,
+      "examples": [
+        "de Valores é um mercado organizado e regulado, onde as ações são negociadas publicamente.",
+        "As empresas que listam suas ações em uma bolsa de valores devem cumprir certos"
+      ]
+    },
+    {
+      "after": 21,
+      "before": 29,
+      "concept_id": "technical.hedge",
+      "delta": -8,
+      "examples": [
+        "ssociada ao objetivo de se obter elevados retornos, os Hedge Funds são considerados opções com alto risco",
+        "Com relação à estrutura de custos, os Hedge Funds normalmente empregam um sistema chamad"
+      ]
+    },
+    {
+      "after": 20,
+      "before": 26,
+      "concept_id": "risk.default",
+      "delta": -6,
+      "examples": [
+        "ma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
+        "efixa ou pós-fixada, e quanto maior a probabilidade de inadimplência do banco, maior será a remuneração, pois mai"
+      ]
+    },
+    {
+      "after": 229,
+      "before": 235,
+      "concept_id": "risk.financial",
+      "delta": -6,
+      "examples": [
+        "nda são uma das opções mais seguras, pois tem um baixo risco de inadimplência do mundo.",
+        "eguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
+      ]
+    },
+    {
+      "after": 21,
+      "before": 27,
+      "concept_id": "technical.futures",
+      "delta": -6,
+      "examples": [
+        "pos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ET"
+      ]
+    },
+    {
+      "after": 42,
+      "before": 47,
+      "concept_id": "quantity.mean",
+      "delta": -5,
+      "examples": [
+        "ferta Interbancária de Londres), era uma taxa de juros média diária calculada pelos principais bancos de ",
+        "Basicamente, a Libor indicava a quanto, em média, os bancos estavam dispostos a emprestar din"
+      ]
+    },
+    {
+      "after": 6,
+      "before": 11,
+      "concept_id": "technical.discount",
+      "delta": -5,
+      "examples": [
+        " títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dól",
+        " paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma L"
+      ]
+    },
+    {
+      "after": 0,
+      "before": 5,
+      "concept_id": "technical.forward",
+      "delta": -5,
+      "examples": [
+        "O termo STRIPS significa \"Separate Trading of Regist",
+        "Um termo importante ligado a esse tema é Cherry picki"
+      ]
+    },
+    {
+      "after": 13,
+      "before": 18,
+      "concept_id": "technical.spread",
+      "delta": -5,
+      "examples": [
+        "Isso porque se o spread de crédito deles em relação aos títulos livr",
+        "Caso o spread esteja alto, há uma turbulência na economia "
+      ]
+    },
+    {
+      "after": 28,
+      "before": 33,
+      "concept_id": "technical.swap",
+      "delta": -5,
+      "examples": [
+        "ios tipos de transações financeiras, como contratos de swap, futuros, e opções.",
+        "s Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds)."
+      ]
+    },
+    {
+      "after": 159,
+      "before": 163,
+      "concept_id": "quantity.price",
+      "delta": -4,
+      "examples": [
+        "ireito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
+        "nto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de"
+      ]
+    },
+    {
+      "after": 37,
+      "before": 40,
+      "concept_id": "entity.liability",
+      "delta": -3,
+      "examples": [
+        "Fundos Passivos: procuram acompanhar o benchmark (índice de ",
+        "Para se proteger o EXPORTADOR FICA PASSIVO EM DÓLAR (e ativo em taxa de juros) e o IMPO"
+      ]
+    },
+    {
+      "after": 22,
+      "before": 25,
+      "concept_id": "entity.money",
+      "delta": -3,
+      "examples": [
+        "Eles são usados para levantar dinheiro para financiar projetos de infraestrutura, c",
+        " que os investidores compram esses títulos e emprestam dinheiro para o governo local em troca de juros."
+      ]
+    },
+    {
+      "after": 27,
+      "before": 30,
+      "concept_id": "entity.position",
+      "delta": -3,
+      "examples": [
+        "s recíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora)",
+        "Existem várias maneiras diferentes de se montar posições long and short, definidas pela exposição bru"
+      ]
+    },
+    {
+      "after": 247,
+      "before": 250,
+      "concept_id": "entity.security",
+      "delta": -3,
+      "examples": [
+        "Investimentos no Exterior Títulos de Renda Fixa",
+        "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por"
+      ]
+    },
+    {
+      "after": 12,
+      "before": 15,
+      "concept_id": "technical.active_management",
+      "delta": -3,
+      "examples": [
+        "ocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
+        " CDI Desta forma, a RToro Education S/A ficará no swap ATIVA em pós-fixada e PASSIVA em prefixada, já o b"
+      ]
+    },
+    {
+      "after": 41,
+      "before": 43,
+      "concept_id": "actor.cvm",
+      "delta": -2,
+      "examples": [
+        "xa ou outros ativos de renda variável autorizados pela CVM.",
+        "A Resolução CVM 175/23 dispõe sobre a constituição, o funcio"
+      ]
+    },
+    {
+      "after": 61,
+      "before": 63,
+      "concept_id": "entity.coupon",
+      "delta": -2,
+      "examples": [
+        "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto s",
+        "tivas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um d"
+      ]
+    },
+    {
+      "after": 11,
+      "before": 13,
+      "concept_id": "entity.dividend",
+      "delta": -2,
+      "examples": [
+        "orno do ativo subjacente, entende-se a receita gerada (dividendos, juros sobre capital próprio) e quaisquer ga",
+        "italização; - GARP (Growth at a Reasonable Price); e - Dividendos."
+      ]
+    },
+    {
+      "after": 24,
+      "before": 26,
+      "concept_id": "entity.securities",
+      "delta": -2,
+      "examples": [
+        "\"Separate Trading of Registered Interest and Principal Securities\".",
+        "dem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam"
+      ]
+    },
+    {
+      "after": 201,
+      "before": 203,
+      "concept_id": "instrument.interest",
+      "delta": -2,
+      "examples": [
+        "or do título concorda em pagar uma determinada taxa de juro por um período de tempo predeterminado para ",
+        " o portador do título (a pessoa que compra e recebe os juros)."
+      ]
+    },
+    {
+      "after": 67,
+      "before": 69,
+      "concept_id": "technical.benchmark",
+      "delta": -2,
+      "examples": [
+        "fundo, uma vez que dificilmente Hedge Funds possuem um benchmark específico.",
+        "aquelas que buscam acompanhar um índice de referência (benchmark)."
+      ]
+    },
+    {
+      "after": 39,
+      "before": 41,
+      "concept_id": "technical.var",
+      "delta": -2,
+      "examples": [
+        "O VALUE-AT-RISK, ou simplesmente o VaR, é um indicador de risco para mensurar a per",
+        "emplo, um fundo de investimentos informa que possui um VaR de R$ 1 milhão para 1 dia, com grau de confi"
+      ]
+    },
+    {
+      "after": 0,
+      "before": 1,
+      "concept_id": "action.check",
+      "delta": -1,
+      "examples": [
+        "Esse Viés de Sobrevivência é a tendência de conferir o desempenho de fundos existentes no mercado"
+      ]
+    },
+    {
+      "after": 1,
+      "before": 2,
+      "concept_id": "action.configure",
+      "delta": -1,
+      "examples": [
+        ", com um preço menor (caso sua expectativa de queda se configure).",
+        "A Butterfly pode se configurar de duas formas: - Positiva, em que as taxas "
+      ]
+    },
+    {
+      "after": 52,
+      "before": 53,
+      "concept_id": "entity.cash_flow",
+      "delta": -1,
+      "examples": [
+        "agamento futuro específico, mas não têm necessidade de fluxos de caixa intermediários.",
+        "TM): É a taxa interna de retorno (TIR) dada ao ano dos fluxos de caixa do título, incluindo o valor da compra, os c"
+      ]
+    },
+    {
+      "after": 39,
+      "before": 40,
+      "concept_id": "entity.credit",
+      "delta": -1,
+      "examples": [
+        "Eles também são garantidos pelo crédito do banco emissor, o que significa que o bene",
+        "Isso porque se o spread de crédito deles em relação aos títulos livres de risco"
+      ]
+    },
+    {
+      "after": 181,
+      "before": 182,
+      "concept_id": "entity.fund",
+      "delta": -1,
+      "examples": [
+        "úblicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+        "Já a taxa de performance incide sobre os ganhos do fundo, uma vez que dificilmente Hedge Funds possue"
+      ]
+    },
+    {
+      "after": 0,
+      "before": 1,
+      "concept_id": "state.enabled",
+      "delta": -1,
+      "examples": [
+        "a gestão de recursos de terceiros que seja devidamente habilitado pela CVM para esta atividade."
+      ]
+    },
+    {
+      "after": 5,
+      "before": 6,
+      "concept_id": "technical.arbitrage",
+      "delta": -1,
+      "examples": [
+        "ão, por se tratar de um derivativo; - Possibilidade de arbitragem entre as ações no mercado à vista, quando os",
+        "Existem duas principais estratégias Market Neutral: - Arbitragem Fundamental: se baseia na análise fundamenta"
+      ]
+    }
+  ],
+  "schema_version": "recall-delta-v1",
+  "spans_absorbed_by_a_longer_match": 304,
+  "spans_after": 6700,
+  "spans_before": 6522,
+  "spans_suppressed_with_no_replacement": 117
+}

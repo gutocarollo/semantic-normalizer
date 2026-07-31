@@ -1,0 +1,124 @@
+{
+  "id": "precision-sweep-amendment-09",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review round 1, gaps G2/G3/G5/G9/G10",
+  "method": "casefold-corrected stratification re-swept 131 newly-entering capitalised forms; corpus-attested Portuguese names read from the material rather than translated",
+  "reason": "Portuguese names of registered English compounds, the four undocumented demotions recorded with their measured counts, and the two elastic definitions narrowed.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "technical.market_neutral",
+      "language": "pt-BR",
+      "form": "mercado neutro",
+      "why": "The name the corpus gives the strategy — `Market Neutral (Mercado Neutro)`. My translation `neutra ao mercado` occurs zero times, so `Mercado` kept matching the fragment in Portuguese after the English side was fixed."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.garp",
+      "language": "pt-BR",
+      "form": "crescimento a um preço razoável",
+      "why": "`Growth at a Reasonable Price (GARP), ou Crescimento a um Preço Razoável` — the Portuguese half was leaving `Preço` exposed."
+    },
+    {
+      "op": "add_form",
+      "concept": "entity.high_yield_bond",
+      "language": "pt-BR",
+      "form": "títulos com retornos elevado",
+      "why": "The corpus's own translation, verbatim including its number disagreement. `títulos de alto rendimento`, which I authored, occurs zero times."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.long_extension",
+      "language": "pt-BR",
+      "form": "posições compradas",
+      "why": "Seven occurrences; mined from `Long Extension (Posições Compradas)`."
+    },
+    {
+      "op": "forbid",
+      "concept": "entity.index",
+      "language": "pt-BR",
+      "variants": [
+        "índice de sharpe",
+        "índice de treynor",
+        "índice de desempenho",
+        "índice de risco"
+      ],
+      "why": "entity.index is defined as a series tracking a basket of assets. A Sharpe or Treynor ratio is a scalar, not a series. The four named indicators that are their own concepts now take their occurrences by longest match; these remain as guards for the ones that are ratios."
+    },
+    {
+      "op": "redefine",
+      "concept": "technical.premium",
+      "definition": "The amount paid above a reference value, such as a bond trading above par.",
+      "why": "The definition read `the amount paid above a reference, OR the price of an option`. Same elasticity as entity.distribution: under a disjunction covering two unrelated senses no occurrence can be a false positive, so the measurement could never see the conflation. The option sense is now technical.option_premium."
+    },
+    {
+      "op": "demote",
+      "concept": "technical.yield",
+      "language": "pt-BR",
+      "form": "rendimento",
+      "wrong": 5,
+      "total": 30,
+      "why": "RECORDING A DEMOTION MADE EARLIER IN THIS CAMPAIGN WITHOUT AN AMENDMENT FILE. An adversarial review found four policy changes present in the registry and absent from every governance artifact; this and the three below are those four, entered now with their counts so the ledger describes what actually happened. `rendimento` is also taxable income in the tax chapter."
+    },
+    {
+      "op": "demote",
+      "concept": "technical.discount",
+      "language": "pt-BR",
+      "form": "desconto",
+      "wrong": 1,
+      "total": 6,
+      "why": "Same ungoverned demotion, recorded. `desconto, abatimento ou redução de taxa` is a fee rebate; `deságio` carries the face-value sense."
+    },
+    {
+      "op": "demote",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opções",
+      "wrong": 2,
+      "total": 6,
+      "why": "Same ungoverned demotion, recorded."
+    },
+    {
+      "op": "demote",
+      "concept": "technical.futures",
+      "language": "pt-BR",
+      "form": "futuros",
+      "wrong": 2,
+      "total": 10,
+      "why": "Same ungoverned demotion, recorded. `resultados futuros` and `períodos futuros` are the adjective."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opção de call",
+      "why": "RESTORING RECALL THE UNGOVERNED DEMOTION DESTROYED. The corpus writes `Bonds com opção de Call` and `opção de put`, which the registered `opção de compra`/`opção de venda` never covered, so those occurrences went silent."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.option",
+      "language": "pt-BR",
+      "form": "opção de put"
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.discount",
+      "language": "pt-BR",
+      "form": "desconto sobre o valor de face",
+      "why": "The financial sense the demotion left without an anchor."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.futures",
+      "language": "pt-BR",
+      "form": "futuros de ações",
+      "why": "Same: a phrase the corpus uses that the bare-form demotion silenced."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.futures",
+      "language": "pt-BR",
+      "form": "futuros de taxas de juros"
+    }
+  ]
+}
