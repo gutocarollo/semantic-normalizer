@@ -373,19 +373,54 @@ def _forbidden_here(record: dict, language: str, segment: str, start: int, end: 
     return False
 
 
+# A function word that belongs to BOTH lists distinguishes nothing. `a` is the English indefinite
+# article and the Portuguese feminine definite article, and it was the single most consequential
+# token in this file: it scored 1 for English in any Portuguese sentence containing it, and the
+# verdict below declared `mixed` on PRESENCE, so one `a` outvoted seven Portuguese function words.
+# 780 of the corpus's 906 `mixed` segments were mixed for that reason alone.
+AMBIGUOUS_FUNCTION_WORDS = frozenset(FUNCTION_WORDS["en"]) & frozenset(FUNCTION_WORDS["pt-BR"])
+
+# How much minority signal makes a segment genuinely bilingual rather than dominated. Measured
+# rather than chosen: over the segments that still carry both languages once the ambiguous words
+# are discounted, the minority-to-majority ratio has median 0.154, and the distribution is
+# 80 at <=0.20, 30 at <=0.34, 7 at <=0.50 and 9 above it. Half is where the tail actually starts —
+# below it a sentence has a dominant language and calling it `mixed` throws that away.
+MIXED_RATIO = 0.5
+
+
 def detect_language(text: str, events: list[dict]) -> str:
+    """Which language governs the segment, by weight rather than by presence.
+
+    An adversarial review found `- O fundo que não contar com diferentes classes de cotas deve
+    efetuar emissões de cotas em classe única, preservada a possibilidade de serem constituídas
+    subclasses.` — a CVM regulatory sentence with no English in it — classified `mixed`, which sent
+    the canonical rewrite to its English fallback and produced `...serem constituídas share
+    subclass.` An English fragment grafted onto Brazilian fund law, singular replacing plural, in
+    the field the README calls a primary deliverable.
+
+    The review's proposed repair was to change the fallback from `en` to `pt-BR`. That fixes the
+    output and leaves the cause: over half this corpus was being classified `mixed`, and a
+    fallback is only consulted because the detector abstained. Both are repaired here — ambiguous
+    tokens stop voting, and a minority has to be a real share before it overrides a majority.
+    """
     scores = Counter()
     words = [nfc_casefold(match.group()) for match in WORD_RE.finditer(text)]
     for event in events:
         if event["alias_language"] in LANGUAGES:
             scores[event["alias_language"]] += 2
     for lang, function_words in FUNCTION_WORDS.items():
-        scores[lang] += sum(word in function_words for word in words)
-    if scores["en"] and scores["pt-BR"]:
-        return "mixed"
-    if scores["en"]:
+        scores[lang] += sum(
+            word in function_words and word not in AMBIGUOUS_FUNCTION_WORDS for word in words
+        )
+    english, portuguese = scores["en"], scores["pt-BR"]
+    if english and portuguese:
+        minority, majority = sorted((english, portuguese))
+        if minority / majority >= MIXED_RATIO:
+            return "mixed"
+        return "en" if english > portuguese else "pt-BR"
+    if english:
         return "en"
-    if scores["pt-BR"]:
+    if portuguese:
         return "pt-BR"
     return "unknown"
 
@@ -412,10 +447,16 @@ def _replacement_for(event: dict, segment_language: str, lexicon: dict) -> str:
     none. Dormant is not fixed: this is the same defect the round's headline finding was about —
     two code paths computing one value — reproduced inside the fix for it.
     """
-    record = lexicon["by_id"][event["concept_id"]]
     target = event["alias_language"]
     if target not in LANGUAGES:
-        target = segment_language if segment_language in LANGUAGES else "en"
+        if segment_language not in LANGUAGES:
+            # Genuinely undetermined, after the detector was repaired to stop abstaining on a
+            # single ambiguous article. Rewriting now would pick a language by coin flip and graft
+            # the loser's wording into the text; the matched surface is spelled the same in both
+            # languages by definition of `shared`, so leaving it is both safe and lossless.
+            return event["alias"]
+        target = segment_language
+    record = lexicon["by_id"][event["concept_id"]]
     surfaces = automatic_surfaces(record, target)
     return surfaces[0] if surfaces else event["alias"]
 

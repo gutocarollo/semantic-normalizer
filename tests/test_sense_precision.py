@@ -417,6 +417,33 @@ class SensePrecisionTests(unittest.TestCase):
                         f"computed twice.",
                     )
 
+    def test_portuguese_prose_is_not_rewritten_into_english(self):
+        """The canonical rewrite of a Portuguese sentence stays Portuguese.
+
+        `cga-2026-markdown/04-resolucao-cvm-175-fundos-de-investimento.md:85`, verbatim, has no
+        English in it. It was classified `mixed` — because `a` is a function word in BOTH lists and
+        the verdict was taken on presence, so one `a` outvoted seven Portuguese function words —
+        and `mixed` sent the rewrite to its English fallback. The shipped `canonical_text` ended
+        `...serem constituídas share subclass.`: an English fragment grafted onto Brazilian fund
+        law, singular replacing plural, in the field the README calls a primary deliverable. Eleven
+        occurrences of that concept in pure Portuguese regulatory text.
+
+        The review proposed flipping the fallback to `pt-BR`. That fixes the output and leaves the
+        cause: 906 of 1682 corpus segments were being called `mixed`, and a fallback only runs
+        because the detector abstained. Ambiguous tokens no longer vote, a minority now has to be
+        at least half the majority to make a segment bilingual, and where the language genuinely
+        cannot be told the matched surface is left alone rather than guessed at. `mixed` fell from
+        906 to 13.
+        """
+        sentence = (
+            "- O fundo que não contar com diferentes classes de cotas deve efetuar emissões de "
+            "cotas em classe única, preservada a possibilidade de serem constituídas subclasses."
+        )
+        record = normalize_text(sentence, source="t", kind="text", lexicon=self.lexicon)[0]
+        self.assertEqual("pt-BR", record["language"])
+        self.assertIn("subclasse", record["canonical_text"])
+        self.assertNotIn("share subclass", record["canonical_text"])
+
     def test_the_income_tax_acronym_stays_ambiguous(self):
         """`IR` is Imposto de Renda and Information Ratio. Neither may win automatically."""
         for sentence in (

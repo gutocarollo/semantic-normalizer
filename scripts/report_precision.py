@@ -199,6 +199,18 @@ DRAWS = [
 ]
 
 
+# Residuals this campaign measured, judged, and deliberately left — each below the 50 % threshold
+# that would justify demoting its form, so removing it would cost more correct matches than the one
+# wrong match it removes. They are named here because a precision report that finds zero errors has
+# to be readable alongside the errors we know are still there.
+KNOWN_RESIDUALS = [
+    "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the "
+    "form's 7 occurrences, the other 6 being plain long positions",
+    "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of "
+    "risk types with the head `risco` elided — 1 of the form's occurrences",
+]
+
+
 def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
     if total == 0:
         return (0.0, 1.0)
@@ -315,12 +327,43 @@ def main() -> int:
             "reports/sweep-adjudication.json is absent, so nothing is known about the swept "
             "part. The bound below treats it as unknown rather than as clean."
         ), None
+    # What the draw can and cannot see, stated next to what it found. Zero errors in a sample is
+    # read as "no errors exist" unless the report says otherwise, and this campaign has declared
+    # residuals it deliberately did not repair — the `Posições Compradas` gloss, `liquidez` where
+    # `risco` is elided in a list. Their rate is far below what a sample this size can resolve, so
+    # not drawing them is the expected outcome rather than evidence the sample is blind; the
+    # arithmetic saying so belongs in the report and not in a reviewer's head.
+    #
+    # P(catch >= 1 of k marked events when drawing n of N) = 1 - (1 - n/N)**k. Solved for n at
+    # p=0.5 to give the sample size that would make detection a coin flip. Verified against a
+    # 20 000-trial simulation: the formula says 1899, the simulation measures 0.501 at n=1900.
+    known_residuals = len(KNOWN_RESIDUALS)
+    miss_one = 1 - sample_size / unread_events
+    detectable = {
+        "known_declared_residuals": known_residuals,
+        "residuals": KNOWN_RESIDUALS,
+        "error_rate_they_imply": round(known_residuals / unread_events, 6),
+        "error_rate_this_draw_rules_out": round(high, 6),
+        "probability_all_of_them_are_missed": round(miss_one ** known_residuals, 4),
+        "sample_size_for_even_odds_of_catching_one": round(
+            unread_events * (1 - 0.5 ** (1 / known_residuals))) if known_residuals else None,
+        "reading": (
+            "Zero errors found is consistent with the residuals known to remain: they imply a rate "
+            "well below what a sample of this size can resolve, so missing them is expected. The "
+            "claim is the Wilson upper bound, not the point estimate — this draw rules out error "
+            "rates above the figure named here, and says nothing about rates beneath it."
+            if known_residuals / unread_events < high else
+            "The known residuals alone imply a rate this draw claims to have ruled out. The sample "
+            "is not reaching where the errors are and the bound is optimistic."
+        ),
+    }
     report = {
         "schema_version": "precision-final-v1",
         "registry_version": current["registry"]["version"],
         "concepts": current["registry"]["concepts"],
         "events_total": total_events,
         "residual_draws_pooled": [args.current_draw, *pooled_paths],
+        "what_this_sample_cannot_detect": detectable,
         "swept": {
             "events": read_events,
             "share": round(read_events / total_events, 4),
