@@ -1,0 +1,23 @@
+{
+  "id": "precision-sweep-amendment-62",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "every firing of both bare forms enumerated over the whole corpus and read",
+  "reason": "A false positive an adversarial review found by drawing its own sample, and the most useful single finding of the review: the form had never entered ANY sweep across 43 batches and 61 amendments, so no round of this campaign could have caught it, including the 240-event read I had just published as zero-error.\n\n`technical.swap_asset_leg` carried the bare `ativo em` at policy auto, meant for swap legs. Both of its corpus firings are the same construction and neither is a swap: `a volatilidade de determinado ativo em relação ao risco de mercado` and `a sensibilidade deste ativo em relação aos fatos sistêmicos` — sentences about Beta, where the noun `ativo` is simply followed by the unrelated preposition opening `em relação a`. Wrong in 2 of 2, which is 100 % and well past the 50 % rule.\n\nThe removal costs nothing, and that is the point: every qualified form the swap chapter actually writes is registered separately and keeps firing — `ativo em dólar`, `ativo em prefixado`, `ativo em pós-fixado`, `ativo em taxa de juros`. Only the unqualified case goes, and the unqualified case was the defect. `passivo em` is removed on the same grounds with a different reason: it fires zero times, so it is dead weight that would one day fire on `passivo em relação a`.\n\nThis also corrects the standing of the previous commit's precision claim. The 240-event read was honest for what it sampled and the Wilson bound was honest about what a sample that size can rule out — a lower bound of 0.9855 means error rates up to about 1.45 % in the unread population are consistent with a zero-error draw. This is one of them. The figure was not wrong; `zero false positives` as a statement about the population was.\n\nFirst attempt at this amendment used `remove_form` and was REFUSED by the guard: `ativo em` is the PREFERRED label, and a concept with no preferred label is not a concept. The refusal was right and it pointed at a better repair than the one I had written. The corpus names these legs properly — `Ponta Ativa` and `Ponta Passiva`, one occurrence each — and those are what the preferred labels should have been all along. Renaming installs the real name and retires the defective surface in the same operation, which removal could not do.",
+  "operations": [
+    {
+      "op": "rename_pref",
+      "concept": "technical.swap_asset_leg",
+      "language": "pt-BR",
+      "to": "Ponta Ativa",
+      "why": "The corpus's own name for this leg. Renaming retires the bare `ativo em` pref, which was wrong in 2 of 2 firings, and replaces it with an attested canonical form. The qualified `ativo em dólar / prefixado / pós-fixado / taxa de juros` stay and keep carrying the real cases."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.swap_liability_leg",
+      "language": "pt-BR",
+      "to": "Ponta Passiva",
+      "why": "Symmetric. Retires bare `passivo em`, which fires zero times today and would eventually fire on `passivo em relação a`, the same construction that broke its counterpart."
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "by_status": {
-    "covered": 309,
-    "partial": 33
+    "covered": 310,
+    "partial": 32
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.9035,
-  "covered_share_of_mass": 0.955,
+  "covered_share_of_distinct": 0.9064,
+  "covered_share_of_mass": 0.9562,
   "distinct_headings": 342,
   "heading_occurrences": 822,
   "headings": [
@@ -146,17 +146,6 @@
         "Demonstrações Contábeis"
       ],
       "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Classes Restritas & Exclusivas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Classes Restritas"
-      ],
-      "resolved_by": "entity.asset_class",
       "status": "partial"
     },
     {
@@ -2116,6 +2105,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.restricted_class+entity.exclusive_class",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Classes Restritas & Exclusivas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.restricted_class+entity.exclusive_class",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.pension_class",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Classes Previdenciárias",
@@ -3170,12 +3168,12 @@
     }
   ],
   "mass_by_status": {
-    "covered": 785,
-    "partial": 37
+    "covered": 786,
+    "partial": 36
   },
   "registry": {
-    "concepts": 573,
-    "version": "2.30.0"
+    "concepts": 574,
+    "version": "2.31.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
   "resolved_share_of_mass": 0.9599,

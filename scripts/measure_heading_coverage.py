@@ -187,9 +187,22 @@ def conjuncts(title: str) -> list[str]:
             # not the same as reading what it was written to produce.
             if words and singular and words[0].casefold() == singular[-1].casefold():
                 return " ".join(words)
-            return " ".join(singular + words)
+            # Lending a SINGULAR head to a conjunct left plural produces a phrase in neither
+            # number. `Classes Restritas & Exclusivas` came out `Classe Exclusivas`, matching
+            # neither the registered `Classe Exclusiva` nor `classes exclusivas`, so an already
+            # registered concept was denied credit by this function rather than by the dictionary.
+            # The head and what it governs have to agree, so the conjunct is singularised by the
+            # same rule that singularised the head — not a new rule, the existing one applied to
+            # the part it was skipping.
+            return " ".join(singular + [
+                word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
+                for word in words
+            ])
 
-        parts = [" ".join(singular + parts[0].split()[len(shared):])] + [
+        parts = [" ".join(singular + [
+            word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
+            for word in parts[0].split()[len(shared):]
+        ])] + [
             borrow(part.split()) for part in parts[1:]
         ]
     return parts
