@@ -1,0 +1,172 @@
+{
+  "batch": 27,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The fund-structure and governance vocabulary of Resolution 175, absent in full. `assembleia` occurs 41 times and matched nothing; `apreçamento` 18, `encargos` 14, `demonstrações contábeis` 12, `fato relevante` 11, `direito de voto` 9. All were read before being proposed: every occurrence of each is the fund sense, with no second reading in this corpus. `termo de adesão e ciência de risco` is the document a shareholder signs and heads its own section, and it is also why `termo` had to be demoted from technical.forward — the fragment was never a forward contract.",
+  "concepts": [
+    {
+      "id": "entity.shareholders_meeting",
+      "en": "shareholders meeting",
+      "pt": "assembleia",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The meeting at which shareholders of a class deliberate and vote on matters reserved to them.",
+      "alt_en": [],
+      "alt_pt": ["assembleia de cotistas", "assembleia geral"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.pricing_policy",
+      "en": "asset pricing policy",
+      "pt": "apreçamento",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The marking of portfolio assets to market under a stated methodology, so that no shareholder gains at another's expense.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "entity.fund_charges",
+      "en": "fund charges",
+      "pt": "encargos",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The expenses a fund may debit to a share class, listed exhaustively by rule.",
+      "alt_en": [],
+      "alt_pt": ["encargos do fundo"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.financial_statements",
+      "en": "financial statements",
+      "pt": "demonstrações contábeis",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The audited accounts a fund must produce and disclose for each period.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.material_fact",
+      "en": "material fact",
+      "pt": "fato relevante",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A disclosure the administrator must publish because it can affect a shareholder's decision.",
+      "alt_en": [],
+      "alt_pt": ["fatos relevantes"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.adhesion_term",
+      "en": "adhesion and risk acknowledgement term",
+      "pt": "termo de adesão e ciência de risco",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The document a shareholder signs on joining, acknowledging the risks of the class.",
+      "alt_en": [],
+      "alt_pt": ["termo de adesão"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.assignment_term",
+      "en": "assignment and transfer term",
+      "pt": "termo de cessão e transferência",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The instrument by which shares or subscription rights pass from one holder to another.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.voting_right",
+      "en": "voting right",
+      "pt": "direito de voto",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The shareholder's entitlement to vote at a meeting, and the manager's duty to exercise it for the fund.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.advisory_board",
+      "en": "advisory board",
+      "pt": "conselho consultivo",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A body constituted at the initiative of shareholders or service providers to advise on the vehicle.",
+      "alt_en": [],
+      "alt_pt": ["conselho consultivo ou comitê"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.restricted_class",
+      "en": "restricted class",
+      "pt": "classes restritas",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A share class open only to qualified or professional investors, with lighter disclosure duties.",
+      "alt_en": [],
+      "alt_pt": ["classe restrita"],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.side_pocket",
+      "en": "side pocket",
+      "pt": "side pocket",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The segregation of illiquid or defaulted assets into a separate class so the remainder stays tradable.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.privileged_information",
+      "en": "privileged information",
+      "pt": "informação privilegiada",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Material non-public information whose use in trading is prohibited.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "entity.prohibition_list",
+      "en": "prohibitions",
+      "pt": "vedações",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The enumerated acts a service provider or manager may not perform.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.corporate_sustainability_index",
+      "en": "Corporate Sustainability Index",
+      "pt": "ISE",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The B3 index selecting companies by sustainability criteria.",
+      "alt_en": [],
+      "alt_pt": ["ISE B3", "Índice de Sustentabilidade Empresarial"],
+      "authority": "apostila-cga-2026#02-gestao-de-carteiras-renda-variavel"
+    },
+    {
+      "id": "technical.socially_responsible_investment",
+      "en": "socially responsible investment",
+      "pt": "investimentos socialmente responsáveis",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Investment that screens or weights holdings by social and environmental criteria.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#02-gestao-de-carteiras-renda-variavel"
+    }
+  ]
+}

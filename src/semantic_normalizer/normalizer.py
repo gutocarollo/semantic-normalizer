@@ -225,6 +225,26 @@ def overlaps(start: int, end: int, spans: list[tuple[int, int, str]]) -> bool:
     return any(start < other_end and end > other_start for other_start, other_end, _ in spans)
 
 
+def splits_protected(start: int, end: int, spans: list[tuple[int, int, str]]) -> bool:
+    """True when a candidate CROSSES the boundary of a protected span rather than containing it.
+
+    Protection exists so that a lexical form cannot mangle a number, a URL, a code block or an
+    identifier by matching part of one. A candidate that fully CONTAINS a protected span mangles
+    nothing — the number survives intact inside the alias — and refusing it is what kept the most
+    important regulatory concept in this corpus unmatchable: `Resolução CVM 175` occurs 94 times
+    and heads 65 sections, and every one of them was skipped because `175` is a protected number
+    span. Same for `Resolução CMN 2.554` and `Resolução CMN 4.557`.
+
+    So the test is crossing, not touching. The existing escape hatch in `normalize_text` — a
+    protected span whose text IS an automatic surface is dropped from the list — already says the
+    intent is to protect structure from being split, not to make structure unmentionable.
+    """
+    for other_start, other_end, _kind in spans:
+        if start < other_end and end > other_start and not (start <= other_start and end >= other_end):
+            return True
+    return False
+
+
 def token_key(text: str) -> tuple[str, ...]:
     return tuple(nfc_casefold(match.group()) for match in WORD_RE.finditer(text))
 
@@ -264,7 +284,7 @@ def lexical_matches(segment: str, segment_start: int, protected: list[tuple[int,
         for size in range(min(max_len, len(tokens) - index), 0, -1):
             key = tuple(item[2] for item in tokens[index:index + size])
             start, end = tokens[index][0], tokens[index + size - 1][1]
-            if overlaps(segment_start + start, segment_start + end, protected):
+            if splits_protected(segment_start + start, segment_start + end, protected):
                 continue
             if key in review_by_tokens:
                 names = sorted({item[0] for item in review_by_tokens[key]})

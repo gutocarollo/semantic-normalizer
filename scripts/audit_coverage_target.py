@@ -174,6 +174,24 @@ def main() -> int:
     already_resolved = (unknown_total - current_unknown) / max(1, unknown_total)
 
     domain_mass = mass("domain_specific")
+    gap_occurrences = max(0.0, target - already_resolved) * unknown_total
+
+    # An adversarial review found this verdict behind `if True else`, so it could not have said
+    # anything but UNSETTLED even had the data changed — a conclusion asserted rather than derived,
+    # which is the defect this whole campaign exists to remove, sitting inside the audit that
+    # reports it. The predicate is now computed: a classifier cannot bound the MASS of a class when
+    # the class it confuses is the population majority, because every false positive lands in the
+    # bucket being measured. That is a statement about specificity against a base rate, and both
+    # numbers are right here.
+    general_share = mass("general_language") / max(1, top_mass)
+    mass_estimate_is_contaminated = backtest["specificity"] < 0.9 and general_share > 0.5
+    contamination_reason = (
+        f"specificity {backtest['specificity']} against a population that is "
+        f"{round(general_share, 2)} general by mass"
+        if mass_estimate_is_contaminated else
+        "specificity is high enough, or the majority class small enough, that the domain-mass "
+        "estimate is not dominated by false positives"
+    )
     report = {
         "schema_version": "coverage-target-audit-v1",
         "target_as_written": target,
@@ -184,7 +202,7 @@ def main() -> int:
         "current_unknown_occurrences": current_unknown,
         "already_resolved_share": round(already_resolved, 4),
         "gap_to_target_share": round(max(0.0, target - already_resolved), 4),
-        "gap_to_target_occurrences": round(max(0.0, target - already_resolved) * unknown_total),
+        "gap_to_target_occurrences": round(gap_occurrences),
         "top_terms_mass": top_mass,
         "top_terms_share_of_unknown": round(top_mass / max(1, unknown_total), 4),
         "backtest": backtest,
@@ -205,6 +223,7 @@ def main() -> int:
             "attempts, in a different place."
         ),
         "reachable_share_with_domain_terms_only": round(domain_mass / max(1, unknown_total), 4),
+        "cannot_estimate_mass_because": contamination_reason,
         "verdict": (
             "UNSETTLED. The instrument ranks terms well enough to find harvest candidates and "
             "not well enough to say whether the target is reachable: the domain-mass estimate is "
@@ -212,12 +231,18 @@ def main() -> int:
             "attempts have now failed to settle this — plural-only morphology, hand-written "
             "conjugation, and a validated stemmer used outside the regime its backtest covers. "
             "The target stands as a declared pendency, and the honest use of this report is its "
-            "ranked term list, not its totals."
-            if True else
+            "ranked term list, not its totals. Note that the question itself is answerable a "
+            "different way: scripts/measure_heading_coverage.py measures coverage against the "
+            "headings the corpus DECLARES as its subjects, a population that is enumerable and "
+            "domain-specific by construction and needs no morphology at all."
+            if mass_estimate_is_contaminated else
             "The target is NOT reachable by registering domain vocabulary. Most of the remaining "
             "unknown mass is ordinary Portuguese that a stopword list should have removed. "
             "Meeting the number as written would require registering general words as concepts, "
             "which grows the dictionary while destroying what it is for."
+            if domain_mass < gap_occurrences else
+            "The target IS reachable by registering domain vocabulary: the domain-specific mass "
+            "exceeds the gap."
         ),
         "terms": rows,
     }

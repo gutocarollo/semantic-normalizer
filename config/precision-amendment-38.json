@@ -1,0 +1,8 @@
+{
+  "id": "precision-sweep-amendment-38",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; confirming draw against 2.28.0 (seed 31415926, 240 events), all read",
+  "method": "the same seven occurrences recounted with casefolding, having been counted case-sensitively the first time",
+  "reason": "A correction to the RECORD of amendment 37, not to its decision. That amendment reassigned `posições compradas` from technical.long_extension to technical.long_position and justified it as `all 3 occurrences`. There are seven: the search that produced the three was case-sensitive, and the corpus writes `Posições compradas` capitalised in three rows of the hedge-fund strategy table and `Posições Compradas` in a parenthetical gloss. Read casefolded, six of seven are plain long positions — `Posições compradas ou vendidas em diversos mercados`, `investe R$ 9 milhões (90%) em posições compradas (long)` — and one is a gloss of the strategy: `Long Extension (Posições Compradas)`. The reassignment is therefore right, and by a wider margin than claimed, but the count in the ledger was false and a false count is what the round-3 review had just caught in amendment 32. Leaving it would repeat the defect while writing about it. In the one gloss occurrence `Long Extension` fires as technical.long_extension on its own name, so nothing is lost there either.",
+  "operations": []
+}

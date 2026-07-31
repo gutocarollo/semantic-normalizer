@@ -1,0 +1,146 @@
+{
+  "batch": 25,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Coverage measured against the apostila's OWN taxonomy instead of a word-frequency target. The 0.4.0 target is a fraction of an `unknown` stratum that is every content word minus a stopword list, so settling it means classifying ordinary Portuguese; three attempts failed and the audit ends at UNSETTLED. But this corpus DECLARES its concepts, in its headings: `## Resolução CVM 175` is the material stating that the regulation is one of its subjects. That population is enumerable, domain vocabulary by construction, and needs no lemmatiser. Measured: 20.17 % of heading mass has a concept covering it. This batch takes the regulatory backbone, which is the heaviest uncovered cluster — `Resolução CVM 175` heads 65 sections and occurs 94 times, and the dictionary matched only the `CVM` inside it.",
+  "concepts": [
+    {
+      "id": "artifact.cvm_resolution_175",
+      "en": "CVM Resolution 175",
+      "pt": "Resolução CVM 175",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The CVM rule that governs the constitution, operation and disclosure of Brazilian investment funds, organising them into classes and subclasses of shares.",
+      "alt_en": [
+        "CVM Resolution 175"
+      ],
+      "alt_pt": [
+        "CVM 175",
+        "Resolução 175"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.anbima_third_party_code",
+      "en": "Third-Party Resource Management Code",
+      "pt": "Administração de Recursos de Terceiros",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The ANBIMA self-regulation code binding the fiduciary administration and portfolio management of third-party resources.",
+      "alt_en": [
+        "Third Party Resource Management Code"
+      ],
+      "alt_pt": [
+        "Administração e Gestão de Recursos de Terceiros"
+      ],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "artifact.cmn_resolution_4557",
+      "en": "CMN Resolution 4.557",
+      "pt": "Resolução CMN 4.557",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The CMN rule requiring financial institutions to keep an integrated risk management and capital structure.",
+      "alt_en": [],
+      "alt_pt": [
+        "CMN 4.557"
+      ],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "artifact.cmn_resolution_2554",
+      "en": "CMN Resolution 2.554",
+      "pt": "Resolução CMN 2.554",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The CMN rule requiring financial institutions to keep an internal controls system.",
+      "alt_en": [],
+      "alt_pt": [
+        "CMN 2.554"
+      ],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.interest_rate_risk",
+      "en": "interest rate risk",
+      "pt": "risco de taxa de juros",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure of an instrument's price to changes in the level of interest rates.",
+      "alt_en": [
+        "interest-rate risk"
+      ],
+      "alt_pt": [
+        "riscos de taxa de juros"
+      ],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.derivative_risk",
+      "en": "derivatives risk",
+      "pt": "riscos de derivativos",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure created by derivative positions, including leverage and counterparty failure.",
+      "alt_en": [
+        "derivative risk"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.liquidity_management",
+      "en": "liquidity management",
+      "pt": "gestão de liquidez",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The practice of keeping a portfolio able to meet redemptions without forced sales.",
+      "alt_en": [],
+      "alt_pt": [
+        "gerenciamento de liquidez"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.concentration_limit",
+      "en": "concentration limits",
+      "pt": "limites de concentração",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The regulatory ceilings on how much of a portfolio may be exposed to one issuer, asset type or counterparty.",
+      "alt_en": [
+        "concentration limit"
+      ],
+      "alt_pt": [
+        "limite de concentração",
+        "limites por emissor",
+        "limites de composição e concentração"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "state.negative_net_assets",
+      "en": "negative net assets",
+      "pt": "patrimônio líquido negativo",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The condition in which a share class owes more than it holds, obliging the administrator to act.",
+      "alt_en": [],
+      "alt_pt": [
+        "PL negativo"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "state.insolvency",
+      "en": "insolvency",
+      "pt": "insolvência",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The judicial declaration that a share class cannot meet its obligations.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    }
+  ]
+}

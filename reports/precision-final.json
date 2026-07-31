@@ -69,6 +69,39 @@
       ]
     },
     {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
+        "`Posições Compradas` glossing the Long Extension strategy rather than naming a long position — 1 of the form's 7 occurrences, the residual the 50 % rule leaves by design"
+      ],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-confirm.json",
+      "sample_size": 240,
+      "seed": 31415926,
+      "state": "after amendments 37 and 38 repaired what the first 2.28.0 draw found",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
+      "error_rate": 0.0083,
+      "errors": 2,
+      "found": [
+        "`posições compradas` on technical.long_extension — the long LEG of a position read as the long-extension STRATEGY, all 3 occurrences",
+        "`ISR` on technical.esg — the broader family, where the corpus defines the acronym as socially responsible investment outright, all 9 occurrences"
+      ],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280.json",
+      "sample_size": 240,
+      "seed": 20260801,
+      "state": "after the heading-coverage batches took the dictionary from 395 to 482 concepts; both errors were pre-existing misassignments the new concepts made visible, and amendment 37 reassigned them",
+      "wilson_95": [
+        0.0023,
+        0.0299
+      ]
+    },
+    {
       "error_rate": 0.0,
       "errors": 0,
       "found": [],
@@ -238,33 +271,33 @@
       ]
     }
   ],
-  "concepts": 395,
-  "errors_repaired_total": 15,
-  "events_total": 7757,
+  "concepts": 482,
+  "errors_repaired_total": 18,
+  "events_total": 7836,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.9845,
-    "point": 1.0,
-    "upper_bound_95": 1.0
+    "lower_bound_95": 0.9787,
+    "point": 0.9962,
+    "upper_bound_95": 0.9993
   },
-  "registry_version": "2.27.0",
+  "registry_version": "2.28.0",
   "residual": {
-    "error_rate_point": 0.0,
+    "error_rate_point": 0.0042,
     "error_rate_wilson_95": [
-      0.0,
-      0.0188
+      0.0007,
+      0.0232
     ],
-    "errors_adjudicated": 0,
-    "events": 6399,
-    "sample_size": 200,
-    "share": 0.8249
+    "errors_adjudicated": 1,
+    "events": 7192,
+    "sample_size": 240,
+    "share": 0.9178
   },
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 1358,
+    "events": 644,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1751
+    "share": 0.0822
   }
 }

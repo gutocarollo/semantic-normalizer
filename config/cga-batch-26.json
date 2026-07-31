@@ -1,0 +1,185 @@
+{
+  "batch": 26,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Chapter 10 of the apostila is titled `Alocação de Ativos e Rebalanceamento de Carteiras` and its sections are `Alocação de Ativos (Asset Allocation)`, `Macro e Micro-Alocação`, `Estratégica x Tática`, `Dinâmica x Estática`. The dictionary had no entry for any of them: `Alocação de Ativos` decomposed into `alocação` (action.allocate) plus `ativos` (entity.asset), which is two adjacent words, not the discipline the chapter is about. Registering the compounds is also what the corrected matcher makes reliable — under the old leftmost scan a compound only pre-empted its fragments when they started on the same token.",
+  "concepts": [
+    {
+      "id": "technical.asset_allocation",
+      "en": "asset allocation",
+      "pt": "alocação de ativos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The discipline of dividing a portfolio across asset classes to meet a risk and return objective.",
+      "alt_en": [
+        "Asset Allocation"
+      ],
+      "alt_pt": [
+        "métodos de alocação de ativos"
+      ],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.strategic_allocation",
+      "en": "strategic allocation",
+      "pt": "alocação estratégica",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The long-horizon target weights of a portfolio, revised infrequently.",
+      "alt_en": [
+        "strategic asset allocation"
+      ],
+      "alt_pt": [
+        "alocação estratégica de ativos"
+      ],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.tactical_allocation",
+      "en": "tactical allocation",
+      "pt": "alocação tática",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Short-horizon deviations from the strategic weights to exploit expected market moves.",
+      "alt_en": [
+        "tactical asset allocation"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.macro_allocation",
+      "en": "macro allocation",
+      "pt": "macro-alocação",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The division of a portfolio between broad asset classes, before any security is chosen.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.micro_allocation",
+      "en": "micro allocation",
+      "pt": "micro-alocação",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The choice of individual securities inside an asset class already weighted.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.static_allocation",
+      "en": "static allocation",
+      "pt": "alocação estática",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Weights held fixed regardless of market movement, so the portfolio drifts with prices.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.dynamic_allocation",
+      "en": "dynamic allocation",
+      "pt": "alocação dinâmica",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Weights adjusted as prices move, following a stated rebalancing rule.",
+      "alt_en": [],
+      "alt_pt": [
+        "estratégias dinâmicas de rebalanceamento"
+      ],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.black_litterman",
+      "en": "Black-Litterman",
+      "pt": "Black-Litterman",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A model that blends market-implied equilibrium returns with the manager's stated views.",
+      "alt_en": [
+        "Black Litterman"
+      ],
+      "alt_pt": [
+        "Black Litterman"
+      ],
+      "authority": "apostila-cga-2026#10-alocacao-de-ativos-e-rebalanceamento"
+    },
+    {
+      "id": "technical.performance_measure",
+      "en": "performance measures",
+      "pt": "medidas de performance",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The family of ratios that judge a portfolio's return against the risk it took.",
+      "alt_en": [
+        "performance measure"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.return_measure",
+      "en": "return measures",
+      "pt": "medidas de retorno",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The family of rates that state what a bond or portfolio yields over a horizon.",
+      "alt_en": [
+        "return measure"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "technical.macro_attribution",
+      "en": "macro attribution",
+      "pt": "atribuição macro",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Performance attribution at the level of the sponsor's allocation decisions across managers.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.micro_attribution",
+      "en": "micro attribution",
+      "pt": "atribuição micro",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Performance attribution at the level of a single manager's security and sector choices.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.performance_fee",
+      "en": "performance fee",
+      "pt": "taxa de performance",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The share of return above a benchmark that the manager charges.",
+      "alt_en": [
+        "incentive fee"
+      ],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.survivorship_bias",
+      "en": "survivorship bias",
+      "pt": "survivorship bias",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The distortion from measuring only the funds that stayed open, dropping those that closed.",
+      "alt_en": [],
+      "alt_pt": [
+        "viés de sobrevivência"
+      ],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    }
+  ]
+}

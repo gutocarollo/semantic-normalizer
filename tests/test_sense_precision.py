@@ -92,9 +92,20 @@ CASES = [
     ("Há ajustes diários de margem nos contratos futuros.", "artifact.configuration", False),
     # Fixed expressions that merely contain a label, blocked by `forbidden_variants`.
     ("É vedada a vinculação, a qualquer título, de parcela do patrimônio.", "entity.security", False),
-    ("Dentre os títulos americanos, temos T-Bills e T-Notes.", "entity.security", True),
+    # `títulos americanos` is now a concept — the US government securities the chapter is
+    # about — so the compound claims the span and the generic entity.security stands down.
+    # Same shape as the taxa-de-performance case above: the assertion moves to the concept
+    # that should win, so the flip cannot pass by matching nothing.
+    ("Dentre os títulos americanos, temos T-Bills e T-Notes.", "entity.security", False),
+    ("Dentre os títulos americanos, temos T-Bills e T-Notes.", "entity.us_government_security", True),
     ("Expandimos nossa metodologia de ensino de alta performance.", "quantity.performance", False),
-    ("A taxa de performance incide sobre os ganhos do fundo.", "quantity.performance", True),
+    # `taxa de performance` is now a concept of its own, so the fee sense is claimed by the
+    # compound and quantity.performance correctly stands down — the same shape as the
+    # `atribuição de performance` case two lines below, which has read False since it was
+    # written. The pair is kept rather than deleted and the positive assertion moves to the
+    # concept that should win, so the flipped expectation cannot pass by matching nothing.
+    ("A taxa de performance incide sobre os ganhos do fundo.", "quantity.performance", False),
+    ("A taxa de performance incide sobre os ganhos do fundo.", "technical.performance_fee", True),
     # Same rule: the specific concept must win over the quantity it is built from.
     ("A macro atribuição de performance é feita no nível do patrocinador.", "technical.performance_attribution", True),
     ("A macro atribuição de performance é feita no nível do patrocinador.", "quantity.performance", False),
@@ -294,6 +305,35 @@ class SensePrecisionTests(unittest.TestCase):
                     f"A bare token that is also an ordinary word needs its collocation as the "
                     f"automatic anchor, with the bare form kept at policy=review.",
                 )
+
+    def test_the_credit_rating_agency_name_is_not_split(self):
+        """The literal corpus sentence a review used to falsify amendment 32's stated method.
+
+        `cga-2026-markdown/06-gestao-de-riscos.md:142`. Amendment 32 registered
+        `agência(s) de classificação de risco` at five tokens and asserted that the five-token
+        `classificação de risco de crédito` would beat it. Both are five tokens, so the agency form
+        took the leftmost tie-break, ended at `risco`, and left `de crédito` dangling — `crédito`
+        then fired bare as entity.credit. A fragment false positive produced by the amendment that
+        was repairing fragment false positives, and the provenance ledger recorded a reason that was
+        not merely incomplete but false.
+
+        The repair is the seven-token name the corpus actually writes, eight times. This asserts the
+        outcome rather than the mechanism: the whole name is one event and no bare `crédito`
+        survives beside it.
+
+        The review's own fix-request asked instead that `risk.credit` be asserted PRESENT here. It
+        should not be: in `agências de classificação de risco de crédito` the phrase names the
+        agency, and credit risk firing inside it is the fragment defect rather than the repair — the
+        same reading that retired `Asset` inside `Asset Allocation`.
+        """
+        sentence = (
+            "O rating (nota que as agências de classificação de risco de crédito atribuem a um "
+            "emissor de acordo com sua capacidade de pagar uma dívida) depende de vários fatores."
+        )
+        record = normalize_text(sentence, source="t", kind="text", lexicon=self.lexicon)[0]
+        aliases = [event["alias"] for event in record["match_events"]]
+        self.assertIn("agências de classificação de risco de crédito", aliases)
+        self.assertNotIn("crédito", [alias.casefold() for alias in aliases])
 
     def test_the_income_tax_acronym_stays_ambiguous(self):
         """`IR` is Imposto de Renda and Information Ratio. Neither may win automatically."""

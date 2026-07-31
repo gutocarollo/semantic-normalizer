@@ -1097,6 +1097,50 @@
       "reason": "contested"
     },
     {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [],
+      "corpus_occurrences": 2,
+      "form": "CD",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [
+        "technical.cds"
+      ],
+      "corpus_occurrences": 18,
+      "form": "CDs",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "contested"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [],
+      "corpus_occurrences": 2,
+      "form": "CD",
+      "language": "pt-BR",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [
+        "technical.cds"
+      ],
+      "corpus_occurrences": 18,
+      "form": "CDs",
+      "language": "pt-BR",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "contested"
+    },
+    {
       "concept_id": "entity.class",
       "contested_by": [
         "entity.asset_class"
@@ -1217,6 +1261,16 @@
       "measured_total": null,
       "measured_wrong": null,
       "reason": "contested"
+    },
+    {
+      "concept_id": "entity.stock_exchange",
+      "contested_by": [],
+      "corpus_occurrences": 5,
+      "form": "exchange",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
     },
     {
       "concept_id": "fastener.screw",
@@ -1534,13 +1588,15 @@
     },
     {
       "concept_id": "system.service",
-      "contested_by": [],
+      "contested_by": [
+        "entity.service"
+      ],
       "corpus_occurrences": 0,
       "form": "services",
       "language": "en",
       "measured_total": null,
       "measured_wrong": null,
-      "reason": "observed"
+      "reason": "contested"
     },
     {
       "concept_id": "technical.active_management",
@@ -1561,6 +1617,30 @@
       "measured_total": null,
       "measured_wrong": null,
       "reason": "observed"
+    },
+    {
+      "concept_id": "technical.cds",
+      "contested_by": [
+        "entity.certificate_of_deposit"
+      ],
+      "corpus_occurrences": 18,
+      "form": "CDS",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "contested"
+    },
+    {
+      "concept_id": "technical.cds",
+      "contested_by": [
+        "entity.certificate_of_deposit"
+      ],
+      "corpus_occurrences": 18,
+      "form": "CDS",
+      "language": "pt-BR",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "contested"
     },
     {
       "concept_id": "technical.duration",
@@ -1704,9 +1784,9 @@
     }
   ],
   "by_reason": {
-    "contested": 28,
+    "contested": 33,
     "measured": 9,
-    "observed": 123,
+    "observed": 125,
     "unexplained": 4
   },
   "note": "`recoverable` counts raw corpus occurrences of the surface, which is an upper bound: a longer form may already consume some of them, and each candidate still needs its own sweep before promotion. It sizes the gap; it does not authorise closing it blindly.",
@@ -1852,6 +1932,16 @@
       "reason": "unexplained"
     },
     {
+      "concept_id": "entity.stock_exchange",
+      "contested_by": [],
+      "corpus_occurrences": 5,
+      "form": "exchange",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
+    },
+    {
       "concept_id": "artifact.record",
       "contested_by": [],
       "corpus_occurrences": 3,
@@ -1876,6 +1966,26 @@
       "contested_by": [],
       "corpus_occurrences": 2,
       "form": "operadora",
+      "language": "pt-BR",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [],
+      "corpus_occurrences": 2,
+      "form": "CD",
+      "language": "en",
+      "measured_total": null,
+      "measured_wrong": null,
+      "reason": "observed"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "contested_by": [],
+      "corpus_occurrences": 2,
+      "form": "CD",
       "language": "pt-BR",
       "measured_total": null,
       "measured_wrong": null,
@@ -1922,12 +2032,12 @@
       "reason": "observed"
     }
   ],
-  "recoverable_forms": 21,
-  "recoverable_occurrences": 1704,
+  "recoverable_forms": 24,
+  "recoverable_occurrences": 1713,
   "registry": {
-    "concepts": 351,
-    "version": "2.21.1"
+    "concepts": 395,
+    "version": "2.27.0"
   },
-  "review_forms": 164,
+  "review_forms": 171,
   "schema_version": "review-backlog-v1"
 }

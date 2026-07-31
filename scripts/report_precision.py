@@ -70,6 +70,26 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-confirm.json", "seed": 31415926,
+        "registry": "2.28.0",
+        "errors": 1,
+        "found": ["`Posições Compradas` glossing the Long Extension strategy rather than naming a "
+                  "long position — 1 of the form's 7 occurrences, the residual the 50 % rule "
+                  "leaves by design"],
+        "state": "after amendments 37 and 38 repaired what the first 2.28.0 draw found",
+    },
+    {
+        "report": "reports/unread-residual-v2280.json", "seed": 20260801, "registry": "2.28.0",
+        "errors": 2,
+        "found": ["`posições compradas` on technical.long_extension — the long LEG of a position "
+                  "read as the long-extension STRATEGY, all 3 occurrences",
+                  "`ISR` on technical.esg — the broader family, where the corpus defines the "
+                  "acronym as socially responsible investment outright, all 9 occurrences"],
+        "state": "after the heading-coverage batches took the dictionary from 395 to 482 concepts; "
+                 "both errors were pre-existing misassignments the new concepts made visible, and "
+                 "amendment 37 reassigned them",
+    },
+    {
         "report": "reports/unread-residual-v2270.json", "seed": 73205080, "registry": "2.27.0",
         "errors": 0,
         "found": [],
@@ -165,7 +185,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2270.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-confirm.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 

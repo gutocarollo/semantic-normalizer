@@ -1,0 +1,41 @@
+{
+  "id": "precision-sweep-amendment-34",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; exhaustive sweep of all 59 corpus occurrences of `liquidez`",
+  "method": "every occurrence of `liquidez` read in context; every occurrence of `benchmarks` read in context",
+  "reason": "The single largest recall defect in the registry: `liquidez` occurs 59 times and matched NOTHING, because risk.liquidity and technical.liquidity both claimed it and the collision demoter sent both to review. Demotion was the wrong resolution — the two claims are not equally good. Read exhaustively, the risk sense NEVER appears on the bare surface: all ten risk occurrences carry `risco de`, which risk.liquidity already owns as an automatic form. So the claim to remove is risk.liquidity's, and this is exactly the case the campaign learned in round one — a review claim dominates an automatic mapping by design, so demoting the wrong claimant is not enough, it has to go.",
+  "operations": [
+    {
+      "op": "remove_form",
+      "concept": "risk.liquidity",
+      "language": "pt-BR",
+      "form": "liquidez",
+      "wrong": 49,
+      "total": 59,
+      "why": "Bare `liquidez` is the property, not the risk, in 49 of 59 occurrences — `com grande liquidez`, `baixa liquidez`, `a liquidez da carteira`. The other 10 all read `risco de liquidez` or `gestão do risco de liquidez`, which the concept keeps as automatic forms and which win by length. Removing rather than demoting because a review claim suppresses the automatic mapping that owns the surface."
+    },
+    {
+      "op": "promote",
+      "concept": "technical.liquidity",
+      "language": "pt-BR",
+      "form": "liquidez",
+      "right": 49,
+      "total": 59,
+      "why": "With risk.liquidity's claim gone the surface is uncontested. The 10 risk occurrences are consumed by the longer `risco de liquidez`, and `gestão de liquidez`, `prêmio pela liquidez` and `preferência pela liquidez` take theirs the same way — which is what global longest-match now guarantees and the old leftmost scan did not."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.benchmark",
+      "language": "pt-BR",
+      "form": "benchmarks",
+      "why": "20 occurrences of the plural against 104 of the singular, which is automatic. `Tipos de Benchmarks` heads a section and matched nothing at all."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.benchmark",
+      "language": "en",
+      "form": "benchmarks",
+      "why": "Same surface, same sense; the corpus is bilingual and the form is shared."
+    }
+  ]
+}

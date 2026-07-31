@@ -67,34 +67,60 @@ class MatchingInvariantTests(unittest.TestCase):
                 self.assertIn("technical.garp", found["concept_ids"])
                 self.assertNotIn("quantity.price", found["concept_ids"])
 
-    def test_a_longer_form_wins_wherever_a_shorter_one_could_preempt_it(self):
-        """Every pair where a shorter form could eat the head of a longer one.
+    def test_the_longer_form_wins_wherever_a_shorter_one_could_preempt_it(self):
+        """Every pair where one form could eat the head of another, resolved by the real rule.
 
-        The pre-emption condition, stated exactly: a proper suffix of form A is a prefix of form
-        B. Under a leftmost scan A is reached first, consumes the tokens B needs to start on, and
-        B is never tried. The probe puts A's head immediately before B so the two compete.
+        The pre-emption condition, stated exactly: a proper suffix of form A is a prefix of form B,
+        and B reaches PAST where A ends. The second half is what the first version of this test got
+        wrong — it required B to be longer than the whole of A, which is a stricter condition and a
+        different one. An adversarial review computed both against the live registry: 123 pairs the
+        narrow filter tests, 529 that actually qualify. Among the 406 it silently dropped was
+        `classificação de risco` × `risco de crédito`, the second of the two examples that motivated
+        the engine fix in the first place — so the guard read green while its own flagship case went
+        unexercised.
+
+        Widening the net is only half the repair, and the half that is wrong on its own: once B may
+        be SHORTER than A overall, asserting "B wins" asserts a falsehood, because the rule is
+        length and A is longer. So the assertion is the invariant itself rather than a proxy for it —
+        the longer form wins, and an exact tie goes to the leftmost, which is A by construction here.
+        A guard that tests a proxy passes for reasons unrelated to what it claims.
         """
         pairs = []
-        for _concept_a, _form_a, tokens_a in self.forms:
+        for _concept_a, form_a, tokens_a in self.forms:
             if len(tokens_a) < 2:
                 continue
             for cut in range(1, len(tokens_a)):
                 tail = tokens_a[cut:]
                 for _concept_b, form_b, tokens_b in self.forms:
-                    if len(tokens_b) <= len(tokens_a) or tokens_b[:len(tail)] != tail:
+                    if len(tokens_b) <= len(tail) or tokens_b[:len(tail)] != tail:
                         continue
-                    pairs.append((form_b, tokens_a[:cut]))
-        self.assertTrue(pairs, "no pre-emption pairs found; the invariant would be vacuous")
+                    pairs.append((form_a, form_b, tokens_a, tokens_b, tokens_a[:cut]))
+        self.assertGreater(
+            len(pairs), 400,
+            "the pre-emption enumeration collapsed; it covered 529 pairs when this was written, "
+            "and a sudden drop means the filter narrowed rather than the registry shrinking",
+        )
 
-        for long_form, prefix in pairs[:400]:
-            sentence = f"O {' '.join(prefix)} {long_form} é relevante."
-            with self.subTest(long_form=long_form[:44]):
+        for form_a, form_b, tokens_a, tokens_b, prefix in pairs:
+            sentence = f"O {' '.join(prefix)} {form_b} é relevante."
+            # Longer wins; an exact tie goes to whichever starts first, and that is A.
+            expected = form_b if len(tokens_b) > len(tokens_a) else form_a
+            wanted = len(expected.split())
+            with self.subTest(long_form=form_b[:36], against=form_a[:26]):
                 found = normalize_text(sentence, source="t", kind="text", lexicon=self.lexicon)[0]
-                spans = {(event["alias"].casefold()) for event in found["match_events"]}
-                self.assertIn(
-                    long_form.casefold(), spans,
-                    f"`{long_form}` lost to a shorter form starting earlier. The matcher must "
-                    f"resolve overlaps by length, not by which form begins first.",
+                spans = {event["alias"].casefold() for event in found["match_events"]}
+                # A third, still longer form may cover the whole probe — `classificação de risco`
+                # against `risco de crédito` builds a sentence that contains the five-token
+                # `classificação de risco de crédito`, and that form winning is the invariant
+                # holding, not failing. So the claim is the one that cannot be satisfied by
+                # anything shorter: nothing below the expected length may take this span.
+                self.assertTrue(
+                    expected.casefold() in spans
+                    or any(len(alias.split()) > wanted for alias in spans),
+                    f"`{form_a}` and `{form_b}` overlap in {sentence!r}. `{expected}` should have "
+                    f"won, or a longer form should have taken the whole span; instead the matcher "
+                    f"settled for {sorted(spans)}. Overlaps resolve by LENGTH, and by leftmost "
+                    f"only on an exact tie.",
                 )
 
 

@@ -1,0 +1,296 @@
+{
+  "batch": 31,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The tail of the heading measurement after batches 25-30, read rather than assumed. Before mining it the instrument was corrected: a heading contrasting two subjects (`Top-Down & Bottom-Up`, `Time-Weighted x Money Weighted Rate of Return`) names two concepts and not a third, and scoring it `partial` while both are registered would have sent batches chasing an artifact of the metric — the exact failure of the OOV target this instrument replaces. The correction moved coverage 1.4 points, so the metric was not materially inflated; checking cost one run and the answer could have gone either way. What remains here is real: `divulgação de informações` 16 occurrences, `risco total` 15, `estilos` 15, `gestão de carteiras de renda fixa` 13, `risco de reinvestimento` 11. Also `value-at-risk` hyphenated, 16 occurrences against 1 for the spaced spelling that was the only one registered.",
+  "concepts": [
+    {
+      "id": "action.disclose_information",
+      "en": "information disclosure",
+      "pt": "divulgação de informações",
+      "class": "action",
+      "pos": "noun",
+      "def": "The publication of the facts and documents a fund must make available to its shareholders and the market.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "risk.total",
+      "en": "total risk",
+      "pt": "risco total",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The whole dispersion of a portfolio's return, systematic and unsystematic together, measured by standard deviation.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.unsystematic",
+      "en": "unsystematic risk",
+      "pt": "risco não sistêmico",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The part of a portfolio's risk specific to its holdings, which diversification removes.",
+      "alt_en": [],
+      "alt_pt": [
+        "risco não-sistêmico"
+      ],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "risk.reinvestment",
+      "en": "reinvestment risk",
+      "pt": "risco de reinvestimento",
+      "class": "risk",
+      "pos": "noun",
+      "def": "The exposure to coupons or principal being reinvested at a rate lower than the original yield.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.investment_style",
+      "en": "investment styles",
+      "pt": "estilos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The families a long-only equity strategy is divided into — growth, value, blend and the rest.",
+      "alt_en": [],
+      "alt_pt": [
+        "estilos de investimento"
+      ],
+      "authority": "apostila-cga-2026#02-gestao-de-carteiras-renda-variavel"
+    },
+    {
+      "id": "technical.fixed_income_portfolio_management",
+      "en": "fixed income portfolio management",
+      "pt": "gestão de carteiras de renda fixa",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The management of a bond portfolio against a duration, curve and credit objective.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.quality_control_chart",
+      "en": "quality control chart",
+      "pt": "controle de qualidade",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The chart that tests whether a manager's value added is statistically different from zero.",
+      "alt_en": [],
+      "alt_pt": [
+        "gráfico de controle de qualidade"
+      ],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.external_flow",
+      "en": "external flows",
+      "pt": "fluxos externos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Contributions and withdrawals that enter or leave a portfolio and must be neutralised before a return is computed.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.active_strategy",
+      "en": "active strategies",
+      "pt": "estratégias ativas",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Strategies that seek return above the benchmark by deliberate deviation from it.",
+      "alt_en": [],
+      "alt_pt": [
+        "estratégia ativa"
+      ],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.passive_strategy",
+      "en": "passive strategies",
+      "pt": "estratégias passivas",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Strategies that reproduce a benchmark rather than try to beat it.",
+      "alt_en": [],
+      "alt_pt": [
+        "estratégia passiva"
+      ],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "entity.closed_fund",
+      "en": "closed-end funds",
+      "pt": "fundos fechados",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Funds whose shares cannot be redeemed on demand and are traded instead.",
+      "alt_en": [],
+      "alt_pt": [
+        "fundo fechado"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.open_fund",
+      "en": "open-end funds",
+      "pt": "fundos abertos",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Funds whose shares can be subscribed and redeemed on demand.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.us_government_security",
+      "en": "US government securities",
+      "pt": "títulos do governo americano",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Debt issued by the United States Treasury across the maturity spectrum.",
+      "alt_en": [],
+      "alt_pt": [
+        "títulos americanos"
+      ],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "technical.analytical_var",
+      "en": "analytical VaR",
+      "pt": "VaR Analítico",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Value-at-Risk computed from the assumed distribution's parameters rather than from observed returns.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.historical_var",
+      "en": "historical VaR",
+      "pt": "VaR Histórico",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Value-at-Risk read directly off the empirical distribution of past returns.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    },
+    {
+      "id": "technical.conduct_principles",
+      "en": "general conduct principles",
+      "pt": "Princípios Gerais de Conduta",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The duties of loyalty, diligence and good faith a participating institution owes its investors.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "technical.misuse_of_information",
+      "en": "trading on misused information",
+      "pt": "Negociação com Uso Indevido",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Trading that exploits information obtained or used against the duty owed to the investor.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "technical.factor_model",
+      "en": "factor model",
+      "pt": "modelo baseado em fatores",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "A model explaining return by exposure to a set of named systematic factors.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "action.select_manager",
+      "en": "manager selection",
+      "pt": "Seleção e Contratação de Gestores",
+      "class": "action",
+      "pos": "noun",
+      "def": "The process by which a sponsor chooses and contracts the managers of its mandates.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    },
+    {
+      "id": "technical.alternative_indexing",
+      "en": "alternative indexing",
+      "pt": "métodos alternativos de indexação",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Index construction weighted by something other than market capitalisation.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.reference_rate",
+      "en": "reference interest rates",
+      "pt": "taxas de juros de referência",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The rates a market prices against, such as the interbank rate or the policy rate.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.limited_liability",
+      "en": "limited liability",
+      "pt": "Limitação de Responsabilidade",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The provision capping a shareholder's exposure to the amount subscribed.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "action.subscribe_and_pay_in",
+      "en": "subscription and payment",
+      "pt": "Subscrição e Integralização",
+      "class": "action",
+      "pos": "noun",
+      "def": "The commitment to acquire shares and the transfer of the funds that settles it.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "entity.social_environmental_fund",
+      "en": "social and environmental funds",
+      "pt": "Fundos Socioambientais",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Funds whose mandate targets social or environmental outcomes alongside return.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#02-gestao-de-carteiras-renda-variavel"
+    },
+    {
+      "id": "technical.fundamental_law_active_management",
+      "en": "Fundamental Law of Active Management",
+      "pt": "Fundamental Law of Active Management",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The result relating a manager's information ratio to skill and the breadth of independent bets.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#07-avaliacao-de-desempenho"
+    }
+  ]
+}

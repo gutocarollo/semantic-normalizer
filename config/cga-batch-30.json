@@ -1,0 +1,84 @@
+{
+  "batch": 30,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Found by reading all 59 occurrences of `liquidez` before deciding whether to free that surface. The sweep was for one form and surfaced a cluster: the three theories the material gives for the shape of the yield curve — `Expectativas Puras`, `Preferência pela Liquidez`, `Segmentação de Mercado` — a standard exam topic, none of them registered. Reading an instrument's output is where the findings are; running it and reading only the count is how this campaign missed `Exchange` at fragment_share 0.80 for three rounds.",
+  "concepts": [
+    {
+      "id": "technical.pure_expectations_theory",
+      "en": "pure expectations theory",
+      "pt": "Expectativas Puras",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The theory that forward rates are the market's unbiased forecast of future short rates, so the curve's shape is expectation alone.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2"
+    },
+    {
+      "id": "technical.liquidity_preference_theory",
+      "en": "liquidity preference theory",
+      "pt": "Preferência pela Liquidez",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The theory that longer maturities must pay more because lenders require compensation for giving up liquidity.",
+      "alt_en": [],
+      "alt_pt": ["Preferência por Liquidez"],
+      "authority": "apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2"
+    },
+    {
+      "id": "technical.market_segmentation_theory",
+      "en": "market segmentation theory",
+      "pt": "Segmentação de Mercado",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The theory that each maturity has its own supply and demand, so rates are set segment by segment.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#09-gestao-de-carteiras-de-renda-fixa-2"
+    },
+    {
+      "id": "technical.redemption_gate",
+      "en": "redemption gates",
+      "pt": "barreiras aos resgates",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The mechanism limiting redemptions to a fraction of net assets when liquidity does not meet demand.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "artifact.code_of_ethics",
+      "en": "code of ethics",
+      "pt": "Código de Ética",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The conduct document a participating institution must keep and disclose.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "artifact.suitability_policy",
+      "en": "suitability policy",
+      "pt": "Política de Suitability",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The stated procedure for matching a product to an investor's profile.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    },
+    {
+      "id": "artifact.liquidity_manual",
+      "en": "liquidity management manual",
+      "pt": "Manual de Gestão de Liquidez",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The document stating how a manager measures and controls the liquidity of its vehicles.",
+      "alt_en": [],
+      "alt_pt": ["Manual de Liquidez"],
+      "authority": "apostila-cga-2026#11-codigo-anbima-administracao-e-gestao"
+    }
+  ]
+}

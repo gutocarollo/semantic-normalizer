@@ -410,7 +410,7 @@ Um commit por passo; o seguinte não começa sem `make deliver` verde.
 | 3b | `scripts/build_adjudication_fixture.py` — fixture de ocorrências reais do corpus CGA no shape especificado em D9, **mais** parametrizar `case_range` em `generate()` mantendo `(1, 40)` como default | `tests/fixtures/cga_adjudication.jsonl` | `generate()` retorna candidatos > 0 **e** `test_o3_evaluator.py` segue verde com o default |
 | 4 | Batch 1: 50 conceitos, estrato `unknown`, sentido adjudicado. Amostra medida por `generate_auto_match_candidates.py` + `evaluate_auto_matches` **já existentes** | registro 2.2.0 + adjudicação cega nova | `auto_match_precision` ≥95 % |
 | 5 | Batches 2-4, mesma disciplina | — | `auto_match_precision` ≥95 % por batch |
-| 6 | Re-medição + confronto com as 5 linhas | `reports/coverage-final.json` | passa ou falha declarada |
+| 6 | Re-medição + confronto com as 5 linhas | `reports/coverage-current.json` (o arquivo anterior foi renomeado para `reports/coverage-at-2.6.0.json`: o nome afirmava finalidade sobre conteúdo de 257 conceitos) | passa ou falha declarada |
 | 7 | Adversarial Verification Loop | veredito | — |
 
 **Gatilho objetivo de abortar** (a revisão 1 apontou que "roughly ~23 %" era racionalizável). O

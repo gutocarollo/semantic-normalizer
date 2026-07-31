@@ -1,0 +1,37 @@
+{
+  "id": "precision-sweep-amendment-35",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; heading-coverage tail after batches 25-31",
+  "method": "counted every corpus occurrence of each spelling before adding it",
+  "reason": "Spelling variants of concepts already registered, where the variant the corpus actually prefers was the one missing.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "technical.var",
+      "language": "pt-BR",
+      "form": "Value-at-Risk",
+      "why": "16 occurrences of the hyphenated spelling against 1 for the spaced `value at risk` that was the only one registered. The material writes `Value-at-Risk (VaR)` in every section heading of chapter 6."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.var",
+      "language": "en",
+      "form": "Value-at-Risk",
+      "why": "Same surface, same sense; the corpus is bilingual and the form is shared."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.concentration_limit",
+      "language": "pt-BR",
+      "form": "limites por modalidade de ativo",
+      "why": "5 occurrences. The rule states two ceilings side by side — by issuer and by asset type — and only the issuer one was registered."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.capital_risk_exposure",
+      "language": "pt-BR",
+      "form": "exposição a risco de capital",
+      "why": "10 occurrences of the full phrase against 13 of the bare `risco de capital` it already owns; registering it keeps the longer span whole."
+    }
+  ]
+}

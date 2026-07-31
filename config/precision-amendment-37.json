@@ -1,0 +1,41 @@
+{
+  "id": "precision-sweep-amendment-37",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; uniform residual draw against 2.28.0 (seed 20260801, 240 events), all read",
+  "method": "every occurrence of both forms read in context before the reassignment",
+  "reason": "Two forms sitting on a concept broader than the one the corpus defines. Neither was findable before this round: `ISR` had nowhere more precise to go until batch 27 registered the concept the material spells out, and `posições compradas` was an assignment nobody had re-read since the batch that made it.",
+  "operations": [
+    {
+      "op": "remove_form",
+      "concept": "technical.long_extension",
+      "language": "pt-BR",
+      "form": "posições compradas",
+      "wrong": 3,
+      "total": 3,
+      "why": "All three occurrences are plain long positions — `investe R$ 9 milhões (90%) em posições compradas (long) e R$ 3 milhões (30%) em posições vendidas`. The long-extension strategy is the WHOLE structure of long plus constrained short, not the long leg of it, and the concept's own definition says so. The plural of `posição comprada` belongs where the singular already is."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.long_position",
+      "language": "pt-BR",
+      "form": "posições compradas",
+      "why": "The plural of the form this concept already owns, 3 occurrences, all the long leg of a position."
+    },
+    {
+      "op": "remove_form",
+      "concept": "technical.esg",
+      "language": "pt-BR",
+      "form": "ISR",
+      "wrong": 9,
+      "total": 9,
+      "why": "The corpus defines the acronym outright: `Os investimentos socialmente responsáveis (ISR) são aqueles que buscam conciliar o retorno financeiro com impacto positivo`. All nine occurrences are that. ESG criteria are the broader family; mapping the acronym to the family when the material names the member is a sense error that only became visible once the member had a concept."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.socially_responsible_investment",
+      "language": "pt-BR",
+      "form": "ISR",
+      "why": "9 occurrences, the acronym the corpus glosses in its own definition sentence."
+    }
+  ]
+}

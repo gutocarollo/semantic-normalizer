@@ -1,0 +1,23 @@
+{
+  "id": "precision-sweep-amendment-36",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#06-gestao-de-riscos; adversarial review round 3, gap 1",
+  "method": "the reviewer's probe re-run verbatim on cga-2026-markdown/06-gestao-de-riscos.md, then every corpus spelling of the agency name counted",
+  "reason": "Amendment 32 registered `agência(s) de classificação de risco` at five tokens and claimed that the five-token `classificação de risco de crédito` would win. It does not: the two are the SAME length and the agency form starts one token earlier, so it takes the leftmost tie-break, ends at `risco`, and leaves `de crédito` dangling — `crédito` then fires bare as entity.credit. A fragment false positive, produced by the amendment that was repairing fragment false positives, and its stated method in the provenance ledger is wrong rather than merely incomplete. The corpus writes the full name 8 times (`agência de classificação de risco de crédito` ×7, plural ×1); registering it at seven tokens makes it win outright and consume the whole span.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "technical.rating",
+      "language": "pt-BR",
+      "form": "agência de classificação de risco de crédito",
+      "why": "7 corpus occurrences. Seven tokens beats the five-token `classificação de risco de crédito`, so the whole name is one event and nothing dangles."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.rating",
+      "language": "pt-BR",
+      "form": "agências de classificação de risco de crédito",
+      "why": "1 occurrence, the plural, and it is the one in the sentence the review probed."
+    }
+  ]
+}

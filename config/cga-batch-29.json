@@ -1,0 +1,38 @@
+{
+  "batch": 29,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Two normative operators, which is the layer the original request calls `os termos essenciais`. `sem prejuízo de` occurs 26 times and is not an absence marker at all — it is the clause that PRESERVES what follows (`sem prejuízo das penalidades cabíveis` = the penalties still apply), so polarity.absence firing on its `sem` was a sense error, and the campaign's answer was to forbid the collocation. Forbidding was the only tool available while the matcher was leftmost-then-longest; with global longest-match the compound pre-empts the fragment on its own, so registering the operator both captures it and retires the prohibition. Same for `à medida que`, which is proportionality, not measurement. The English label of the proportionality operator is `in proportion as` and not `as`: a preferred label becomes an automatic surface, and `as` is the Portuguese feminine plural article — the dry run fired it on `À medida que AS taxas de juros mudam`, which is thousands of occurrences of pure noise. A label in one language must not be a surface the other language spends on something else.",
+  "concepts": [
+    {
+      "id": "condition.without_prejudice",
+      "en": "without prejudice to",
+      "pt": "sem prejuízo de",
+      "class": "condition_marker",
+      "pos": "phrase",
+      "def": "Marks that what follows remains fully in force despite the provision just stated.",
+      "alt_en": [],
+      "alt_pt": [
+        "sem prejuízo da",
+        "sem prejuízo das",
+        "sem prejuízo do",
+        "sem prejuízo dos",
+        "sem prejuízo"
+      ],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "condition.in_proportion_as",
+      "en": "in proportion as",
+      "pt": "à medida que",
+      "class": "condition_marker",
+      "pos": "phrase",
+      "def": "Marks that the governed effect varies in step with the stated change.",
+      "alt_en": [],
+      "alt_pt": [
+        "na medida em que",
+        "à medida em que"
+      ],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    }
+  ]
+}

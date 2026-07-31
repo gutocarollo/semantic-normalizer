@@ -1,0 +1,161 @@
+{
+  "batch": 28,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The international fixed-income instruments the apostila heads sections with and the dictionary never had: `Municipal Bonds`, `Commercial Papers`, `Eurobonds`, `Global Bonds`, `Banker's Acceptance` (the concept existed only under a spelling without the apostrophe, which is not how the corpus writes it). Also the fund taxonomy (`fundos de renda fixa`, `fundos de ações`), which decomposed into `fundos` plus the asset class, and the technical-analysis section, which had a concept for the discipline and none for its three indicator families.",
+  "concepts": [
+    {
+      "id": "entity.municipal_bond",
+      "en": "Municipal Bonds",
+      "pt": "Municipal Bonds",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Debt issued by a US state or local government, typically exempt from federal income tax.",
+      "alt_en": ["Municipal Bond"],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "entity.commercial_paper",
+      "en": "Commercial Papers",
+      "pt": "Commercial Papers",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Short-term unsecured corporate debt issued at a discount to fund working capital.",
+      "alt_en": ["Commercial Paper"],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "entity.eurobond",
+      "en": "Eurobonds",
+      "pt": "Eurobonds",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A bond issued outside the jurisdiction of the currency it is denominated in.",
+      "alt_en": ["Eurobond"],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "entity.global_bond",
+      "en": "Global Bonds",
+      "pt": "Global Bonds",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A bond placed simultaneously in the eurobond market and in the domestic market of its currency.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "entity.fixed_income_fund",
+      "en": "fixed income fund",
+      "pt": "fundos de renda fixa",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A fund whose principal risk factor is the interest rate or a price index.",
+      "alt_en": [],
+      "alt_pt": ["fundo de renda fixa"],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "entity.equity_fund",
+      "en": "equity fund",
+      "pt": "fundos de ações",
+      "class": "entity",
+      "pos": "noun",
+      "def": "A fund holding at least the regulated minimum of its net assets in shares.",
+      "alt_en": [],
+      "alt_pt": ["fundo de ações"],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "entity.private_security",
+      "en": "private securities",
+      "pt": "títulos privados",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Debt issued by a company or bank rather than by a government.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "entity.foreign_financial_asset",
+      "en": "foreign financial assets",
+      "pt": "ativos financeiros no exterior",
+      "class": "entity",
+      "pos": "noun",
+      "def": "Assets held outside Brazil, subject to their own concentration limits by class.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#04-resolucao-cvm-175-fundos-de-investimento"
+    },
+    {
+      "id": "technical.asset_pricing",
+      "en": "asset pricing",
+      "pt": "precificação de ativos",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The derivation of an asset's fair value from its expected cash flows and risk.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.trend_indicator",
+      "en": "trend indicators",
+      "pt": "indicadores de tendência",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Technical indicators that identify the direction and persistence of a price move.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#03-gestao-de-carteiras-renda-variavel-2"
+    },
+    {
+      "id": "technical.reversal_indicator",
+      "en": "reversal indicators",
+      "pt": "indicadores de reversão",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Technical indicators that signal the exhaustion of a move and a turn in direction.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#03-gestao-de-carteiras-renda-variavel-2"
+    },
+    {
+      "id": "technical.volume_indicator",
+      "en": "volume indicators",
+      "pt": "indicadores de volume",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Technical indicators that read conviction from traded quantity rather than price.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#03-gestao-de-carteiras-renda-variavel-2"
+    },
+    {
+      "id": "technical.support_and_resistance",
+      "en": "support and resistance",
+      "pt": "suporte e resistência",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Price levels at which a move has repeatedly halted, read as floors and ceilings.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#03-gestao-de-carteiras-renda-variavel-2"
+    },
+    {
+      "id": "entity.di_future",
+      "en": "DI future",
+      "pt": "DI Futuro",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The interbank rate futures contract, the market's reference for expected interest rates.",
+      "alt_en": [],
+      "alt_pt": ["Futuro de DI"],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    }
+  ]
+}
