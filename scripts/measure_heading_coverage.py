@@ -156,8 +156,18 @@ def conjuncts(title: str) -> list[str]:
         shared = head[:len(head) - len(parts[1].split())]
         singular = [word[:-1] if len(word) > 3 and word.lower().endswith("s") else word
                     for word in shared]
+        def borrow(words: list[str]) -> str:
+            # Only lend the head to a conjunct that does not already have one. Without this,
+            # `Riscos de Derivativos e Risco Operacional` came out `Risco Risco Operacional` —
+            # the shared word prepended to a conjunct that already carried it. Found by reverting
+            # a failed experiment and reading what the existing rule actually produces, which is
+            # not the same as reading what it was written to produce.
+            if words and singular and words[0].casefold() == singular[-1].casefold():
+                return " ".join(words)
+            return " ".join(singular + words)
+
         parts = [" ".join(singular + parts[0].split()[len(shared):])] + [
-            " ".join(singular + part.split()) for part in parts[1:]
+            borrow(part.split()) for part in parts[1:]
         ]
     return parts
 
