@@ -212,5 +212,32 @@ class SemanticGateTests(unittest.TestCase):
         self.assertFalse(final["heldout_accessed"])
 
 
+    def test_the_ceiling_report_agrees_with_the_coverage_it_describes(self):
+        """`coverage-ceiling.json` must describe the CURRENT partial set, not a past one.
+
+        An adversarial reviewer found it listing 29 headings as still partial when 17 were: twelve
+        had been closed two commits earlier and the array was never regenerated, because the header
+        numbers were hand-bumped and the body left alone. The same file carried two narrative
+        fields that contradicted each other, each written in a different commit and neither
+        reconciled against the other.
+
+        That file is the evidence base for this campaign's central coverage claim, so drifting from
+        what it reports is not a documentation problem. It is now cut by
+        `scripts/cut_coverage_ceiling.py` and this asserts the two agree, so the next drift fails
+        here instead of waiting for someone to diff it by hand.
+        """
+        coverage = json.loads((ROOT / "reports" / "heading-coverage.json").read_text(encoding="utf-8"))
+        ceiling = json.loads((ROOT / "reports" / "coverage-ceiling.json").read_text(encoding="utf-8"))
+
+        partial = {row["heading"] for row in coverage["headings"] if row["status"] != "covered"}
+        listed = {row["heading"] for row in ceiling["headings"]}
+        self.assertEqual(
+            partial, listed,
+            "coverage-ceiling.json lists a different partial set than heading-coverage.json. "
+            "Re-cut it with scripts/cut_coverage_ceiling.py rather than editing the numbers.",
+        )
+        for field in ("covered_share_of_distinct", "covered_share_of_mass", "distinct_headings"):
+            self.assertEqual(coverage[field], ceiling[field], f"{field} disagrees between the two")
+
 if __name__ == "__main__":
     unittest.main()

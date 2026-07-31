@@ -5,7 +5,7 @@
   "purpose": "Reversible English-Portuguese concept canonicalization for lexical retrieval",
   "validation": {
     "unit_tests_passed": 19,
-    "registry_concepts": 582,
+    "registry_concepts": 584,
     "registry_errors": 0,
     "registry_warnings": 4,
     "schema_validation": "passed",
@@ -45,8 +45,8 @@
     },
     {
       "path": "checksums.sha256",
-      "size_bytes": 10110,
-      "sha256": "feed85e97d9ffb3dc7306f9bda63cae4e4386202dcef7e35bfb492c86fcf8f47"
+      "size_bytes": 10215,
+      "sha256": "dbed549664996fca9a80f33674e8dfe1e0f8718d75d038b4ba7ef70431b5e7d3"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -277,6 +277,11 @@
       "path": "config/cga-batch-46.json",
       "size_bytes": 2036,
       "sha256": "1527f4cfcf79cd332ff7e76cd88c6addccc70cbae5f16f1c27647043a732a830"
+    },
+    {
+      "path": "config/cga-batch-47.json",
+      "size_bytes": 2265,
+      "sha256": "ae196f38442da36a3e0cb5cb063eb1a0f6e7318b3709b07c97ee36f33fed3279"
     },
     {
       "path": "config/precision-amendment-01.json",
@@ -735,8 +740,8 @@
     },
     {
       "path": "reports/coverage-ceiling.json",
-      "size_bytes": 13529,
-      "sha256": "28f6f4f0d850ab3dafb94037bb185647cafff8c9e3e8062a2e35b51a603627ad"
+      "size_bytes": 6459,
+      "sha256": "822201899351e94f7bb53cea0ddb6562a8ca3ae9e10aa45c1c4bc5a6996f147b"
     },
     {
       "path": "reports/coverage-current.json",
@@ -821,7 +826,7 @@
     {
       "path": "reports/dev-retrieval-ablations-final.json",
       "size_bytes": 88187,
-      "sha256": "d828f3575d7bae97d852056fa20b1876e511d9a5f30321febc24547566e3f445"
+      "sha256": "78d62361163624857d3deaeac65867bb73769513bc9c1e5947f88850a45adb56"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -831,7 +836,7 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "749ebba74be0afa4988e559061bb834555594c52e1b863caa284e77a4ef3a675"
+      "sha256": "2081c52647b70b1365dc5ceb9909b401c42eea5a2fa62e0cbe3111cdb8aff665"
     },
     {
       "path": "reports/form-polysemy.json",
@@ -841,7 +846,7 @@
     {
       "path": "reports/heading-coverage.json",
       "size_bytes": 101422,
-      "sha256": "6c7cbe2faa6ae0e65f0503f02fe215149279cb7845bc4a5f0b45537a0abf6751"
+      "sha256": "56b17bfa0e98935a8092c661f578f90bad8b2647f6b0ee4718f149821c40fa38"
     },
     {
       "path": "reports/oov-queue.json",
@@ -856,7 +861,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7404,
-      "sha256": "2e48cee04e625b8198f0a39407b0b6d8d56d66ca68d5c17aea9054bd92bc3932"
+      "sha256": "b8804590f4b7f233b2c8e02b366151c09f0b2588d20d8e59fb5a2bfaac603010"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -910,8 +915,8 @@
     },
     {
       "path": "reports/release-manifest.json",
-      "size_bytes": 33779,
-      "sha256": "cd38c06a5e78f237b59dfeb77f69f0d4f422744fd4963d0c23c53f46373f4cd5"
+      "size_bytes": 34117,
+      "sha256": "255d40246fd22bd61d4fb4ecc05e17572d015d14a2e0322df95ec6ac2133421d"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1204,6 +1209,11 @@
       "sha256": "99ec4364552f8e867b1fd1a44f40289a5f58eef95a53d13bfb62544d6376b06b"
     },
     {
+      "path": "reports/unread-residual-v2360-r15.json",
+      "size_bytes": 60441,
+      "sha256": "0f0710627350d85a3a470edf51ba84aa95950386ff3877dcac80ef1fd09da249"
+    },
+    {
       "path": "reports/validation-summary.md",
       "size_bytes": 2517,
       "sha256": "9e327ac70d1ac5a1b0d7cd1deb92aa490f556c321418f07d0863452eefa3e0b8"
@@ -1267,6 +1277,11 @@
       "path": "scripts/controlled_language.py",
       "size_bytes": 470,
       "sha256": "885c4cbca5b7497e809a81124f60e51fc6c1f4669947afddaa0de0a8faf9d651"
+    },
+    {
+      "path": "scripts/cut_coverage_ceiling.py",
+      "size_bytes": 6569,
+      "sha256": "bd3d4c2d93bbd2e20ba6ec2316bdebeb35c412edee9c784c3c831812065aa390"
     },
     {
       "path": "scripts/cut_manifest.py",
@@ -1460,18 +1475,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 774682,
-      "sha256": "7bd060e692b824cea6eb5754c6ac047f488e4856b3652ede6be33f6faea6fad6"
+      "size_bytes": 777475,
+      "sha256": "5d2eaf8ab916c08b690574865d0256933b8a63a0fd6f821e0a7d1c00cc1ed195"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "size_bytes": 121699,
-      "sha256": "71b764da8120820f5a35aef4497d6e791183358dc868295e192313a8a3f0a3c7"
+      "size_bytes": 122340,
+      "sha256": "c3d727f2252e701376d7812b0740e63ef57c1de7a5cfb958c2bc4a4f034aacbd"
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "size_bytes": 20313,
-      "sha256": "3fb4f837192da16967c47470afdd1954059f7d085605f71e863d0feb0cb99020"
+      "size_bytes": 19173,
+      "sha256": "7af94680eb987cc1f0d7dd551a68085a5d76a2f1d8c8530729349431451c538f"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -1506,7 +1521,7 @@
     {
       "path": "src/semantic_normalizer/registry.py",
       "size_bytes": 16238,
-      "sha256": "0d7fc0a643127219af22716b5a341af2b1e882b6ee4cd82516b9811f667595b7"
+      "sha256": "a199b12feac20ea10f91851615b30db9fde41932297face2922c6a78521ad316"
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -1546,7 +1561,7 @@
     {
       "path": "tests/test_controlled_language.py",
       "size_bytes": 30707,
-      "sha256": "47a742157b908d084db27c662422b358a414fc04d2181f1ddef9e8d100380e55"
+      "sha256": "c11ad3d818eba373a780e92bc0d8786b62e2edd0e90ced88e28156c0bc01d333"
     },
     {
       "path": "tests/test_documented_commands.py",
@@ -1590,8 +1605,8 @@
     },
     {
       "path": "tests/test_semantic_gates.py",
-      "size_bytes": 8949,
-      "sha256": "e48c1a1ac08ddef2be1e3d7d56efff524fce51c684fda9c5c323d2b442a3c0fe"
+      "size_bytes": 10712,
+      "sha256": "6d7a12d69237548f03fe124e059fbad9148180bd4e73c77874ff88302cc00891"
     },
     {
       "path": "tests/test_semantic_regressions.py",

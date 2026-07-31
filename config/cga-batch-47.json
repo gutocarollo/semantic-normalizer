@@ -1,0 +1,29 @@
+{
+  "batch": 47,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The concept that had nowhere to land. A fresh adversarial reviewer found `technical.repo`'s automatic form `recompra` firing on a fund's own share BUYBACK — `o valor de recompra da cota`, `o volume de recompra das cotas do fundo` — and rewriting it to `operação compromissada`, a money-market repurchase agreement, which is a different instrument entirely. 5 wrong of about 12 bare occurrences, roughly 42 %.\n\nUnder this campaign's rule that is the FORBID case, not the demote case: below 50 % the form stays automatic and the wrong collocations are forbidden. But forbidding alone would leave the buyback with no concept at all, turning a wrong match into a silent gap. So the sense is registered here and the collocations are forbidden in amendment 68 — the two operations only work together.\n\nThe reviewer also found `Cambial` unregistered. That one stings: the amendment that fixed `Multimercado` named its three siblings in its own reasoning — `Renda Fixa`, `Ações`, `Cambial` — and I checked neither of the other two. `Renda Fixa` and `Ações` resolve; `Cambial` did not, in any of its 4 occurrences. Naming a taxonomy in a justification is not the same as checking it.",
+  "concepts": [
+    {
+      "id": "action.share_repurchase",
+      "en": "share repurchase",
+      "pt": "recompra de cotas",
+      "class": "action",
+      "pos": "noun",
+      "def": "A fund buying back its own shares from holders, which CVM 175 conditions on the buyback price relative to net asset value. Unrelated to a repurchase agreement, which is `technical.repo`.",
+      "alt_en": [],
+      "alt_pt": ["recompra da cota", "recompra das cotas"],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "entity.currency_class",
+      "en": "currency class",
+      "pt": "Cambial",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The CVM 175 fund category whose principal risk factor is foreign-exchange variation, the fourth of the four categories beside Renda Fixa, Ações and Multimercado.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    }
+  ]
+}

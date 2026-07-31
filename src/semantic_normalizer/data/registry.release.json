@@ -1,5 +1,8 @@
 {
-  "added_concepts": [],
+  "added_concepts": [
+    "action.share_repurchase",
+    "entity.currency_class"
+  ],
   "affected_concepts": [
     "action.allocate",
     "action.allocate_orders",
@@ -42,6 +45,7 @@
     "action.run",
     "action.select_manager",
     "action.sell",
+    "action.share_repurchase",
     "action.start",
     "action.stop",
     "action.subscribe",
@@ -129,6 +133,7 @@
     "entity.coupon",
     "entity.credit",
     "entity.currency",
+    "entity.currency_class",
     "entity.currency_fund",
     "entity.custodian",
     "entity.debt",
@@ -585,8 +590,8 @@
     "temporal.until"
   ],
   "approved_at": "2026-07-31T00:00:00Z",
-  "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "A form that matches with a TRUNCATED alias, mine, from batch 42.\n\n`technical.benchmark_relative_management` carried the heading spelling `Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)`. It matches — but the alias it reports is `…de Mercado (Benchmark`, without the closing parenthesis. The registered form and the reported span are not the same string, which silently violates the contract every downstream consumer assumes.\n\nIt surfaced because amendment 66 added `Estratégias de Gestão de Carteiras de Renda Fixa`, which put the two forms in the same probe sentence and made `test_the_longer_form_wins_wherever_a_shorter_one_could_preempt_it` compare them. The guard did exactly what it exists for: a form registered eight batches ago had been reporting a truncated span the whole time and nothing noticed until a new form happened to overlap it.\n\nRemoved rather than repaired here. The concept keeps its unparenthesised pref and the lowercase prose form added in amendment 61 — which is the wording that actually fires on the definition sentence — so removing the parenthesised heading spelling costs nothing measurable. Making a trailing `)` survive matching is a tokeniser change, and this session has no budget to re-sweep precision behind one.",
+  "approved_by": "cga-game-delivery-council execution; batch adjudicated against corpus contexts",
+  "change_reason": "CGA domain batch 47: 2 concepts added.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -602,13 +607,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "7bd060e692b824cea6eb5754c6ac047f488e4856b3652ede6be33f6faea6fad6",
-    "registry.provenance.jsonl": "71b764da8120820f5a35aef4497d6e791183358dc868295e192313a8a3f0a3c7",
+    "registry.jsonl": "5d2eaf8ab916c08b690574865d0256933b8a63a0fd6f821e0a7d1c00cc1ed195",
+    "registry.provenance.jsonl": "c3d727f2252e701376d7812b0740e63ef57c1de7a5cfb958c2bc4a4f034aacbd",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.35.0",
+  "rollback_version": "2.1.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.35.0"
+  "version": "2.36.0"
 }
