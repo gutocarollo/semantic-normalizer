@@ -97,6 +97,187 @@ downstream consumer can prove which registry produced a given annotation.
 
 ---
 
+## Como funciona: o que entra e o que sai
+
+```mermaid
+flowchart TD
+    A["ENTRADA<br/>texto cru + escopo de domínio<br/><i>'O gestor deve aplicar em cotas de FIF,<br/>exceto se a classe for restrita.'</i>"]
+
+    A --> B["1. PROTEGER<br/>código, IDs, paths, números, citações<br/>viram zonas intocáveis"]
+    B --> C["2. DETECTAR IDIOMA<br/>por proporção de palavras funcionais<br/>→ pt-BR"]
+    C --> D["3. CASAR SUPERFÍCIES<br/>colhe TODOS os candidatos<br/>gestor · aplicar · cotas · FIF · exceto · deve"]
+
+    D --> E{"4. RESOLVER SOBREPOSIÇÃO<br/>ganha a forma mais LONGA<br/>empate → a mais à esquerda"}
+    E --> F{"5. POLÍTICA DA FORMA"}
+
+    F -->|"policy: auto"| G["vira match_event<br/>(dispara sozinho)"]
+    F -->|"policy: review"| H["vira ambiguous_candidate<br/>needs_review = true"]
+
+    G --> I{"6. A REESCRITA É SEGURA?<br/>não cruza antônimo<br/>não trunca em preposição<br/>não apaga span protegido"}
+    I -->|sim| J["substitui pelo rótulo<br/>preferido (o lema)"]
+    I -->|não| K["preserva o texto original"]
+
+    J --> L["SAÍDA<br/>um registro por segmento"]
+    K --> L
+    H --> L
+
+    style A fill:#e8f0fe,stroke:#4285f4
+    style L fill:#e6f4ea,stroke:#34a853
+    style H fill:#fef7e0,stroke:#f9ab00
+```
+
+**Ponto central:** o passo 5 é o que separa esta ferramenta de um find-and-replace. `deve` pode ser
+obrigação (`modality.obligation`) ou necessidade lógica (`modality.logical_necessity`). O registry
+sabe que a superfície é ambígua, então ela **não dispara sozinha** — sai como candidata, com as duas
+leituras, e o registro inteiro é marcado `needs_review: true`. A ferramenta nunca chuta.
+
+### O que sai, campo por campo
+
+O registro tem ~40 campos. Eles se agrupam em cinco propósitos:
+
+```mermaid
+flowchart LR
+    R["registro<br/>de saída"] --> S1["O QUE FOI ENTENDIDO"]
+    R --> S2["ONDE, NO TEXTO"]
+    R --> S3["PARA BUSCA"]
+    R --> S4["O QUE FICOU EM DÚVIDA"]
+    R --> S5["PROVA DE ORIGEM"]
+
+    S1 --> A1["concept_ids<br/>match_events<br/>semantic_units<br/>preferred_terms"]
+    S2 --> A2["start / end<br/>byte_start / byte_end<br/>line / column<br/>canonical_mappings"]
+    S3 --> A3["canonical_text<br/>text_expanded<br/>search_fields<br/>concept_tokens"]
+    S4 --> A4["ambiguous_candidates<br/>needs_review<br/>unresolved<br/>warnings"]
+    S5 --> A5["registry_sha256<br/>registry_version<br/>source_sha256"]
+
+    style S1 fill:#e8f0fe
+    style S2 fill:#f3e8fd
+    style S3 fill:#e6f4ea
+    style S4 fill:#fef7e0
+    style S5 fill:#fce8e6
+```
+
+#### Glossário dos termos que aparecem na saída
+
+| termo | o que é, em uma frase | exemplo real da execução acima |
+|---|---|---|
+| **`concept_id`** | A identidade estável do conceito, independente de idioma. É a chave. | `actor.portfolio_manager` |
+| **`alias`** | A grafia que apareceu **no texto**. | `gestor`, `FIF`, `cotas` |
+| **`match_event`** | Um acerto: qual conceito, em que trecho, por qual grafia. | `{start: 14, end: 21, alias: "aplicar", concept_id: "action.subscribe"}` |
+| **`policy: auto`** | Grafia não-ambígua — o matcher pode disparar sozinho. | `FIF` → só significa uma coisa neste domínio |
+| **`policy: review`** | Grafia sabidamente ambígua — **nunca** dispara sozinha. | `deve` → obrigação ou necessidade lógica? |
+| **`pref`** (rótulo preferido) | A forma **canônica** do conceito. É o que a reescrita substitui, por isso tem de ser o lema. | `Fundo de Investimento Financeiro` |
+| **`canonical_text`** | A frase com toda grafia reconhecida trocada pelo `pref`. **Para indexar, não para exibir.** | `…aplicar em cota de Fundo de Investimento Financeiro…` |
+| **`canonical_mappings`** | A ponte de volta: cada troca com offset na origem **e** no canônico. | `{original: "cotas", canonical: "cota", original_start: 24…}` |
+| **`ambiguous_candidates`** | O que era ambíguo, com **todas** as leituras possíveis e a definição de cada uma. | `deve` → `modality.obligation` **ou** `modality.logical_necessity` |
+| **`needs_review`** | `true` se algum trecho ficou ambíguo. Seu gate de automação. | `true` neste exemplo, por causa do `deve` |
+| **`unresolved`** | Trechos que nenhum conceito cobriu. Onde procurar vocabulário faltando. | `"O "`, `"deve"`, `"se a "` |
+| **`protected`** | Zonas intocáveis: código, IDs, números, paths. Nunca reescritas. | `[]` aqui — a frase não tem nenhum |
+| **`text_expanded`** | Texto original **+** todos os sinônimos dos conceitos, colados. Alimento de BM25. | `…restrita. portfolio manager asset manager gestor…` |
+| **`search_fields`** | Cinco visões prontas para índice: `raw_exact`, `same_language_terms`, `cross_language_terms`, `concept_terms`, `ascii_fallback` | — |
+| **`semantic_units`** + **`semantic_relations`** | Os conceitos como nós, e as relações entre eles (`actor_of`, etc.). | `u1 = actor.portfolio_manager`, papel `actor` |
+| **`registry_sha256`** | Hash do dicionário que produziu esta anotação. Sem ele o resultado não é reprodutível. | `9f1f19ca…` |
+
+---
+
+## Como usar a saída: três receitas
+
+```mermaid
+flowchart TD
+    OUT["registro de saída"]
+
+    OUT --> U1["RECEITA 1 — indexar"]
+    OUT --> U2["RECEITA 2 — extrair regra"]
+    OUT --> U3["RECEITA 3 — revisão humana"]
+
+    U1 --> R1["use concept_ids como chave<br/>+ text_expanded no corpo<br/>→ 'FIF' acha 'Fundo de Investimento Financeiro'"]
+    U2 --> R2["filtre por polarity/modality<br/>+ o conceito do objeto<br/>→ 'toda regra que PROÍBE algo sobre cotas'"]
+    U3 --> R3["fila = needs_review == true<br/>mostre ambiguous_candidates<br/>→ humano decide, vira emenda"]
+
+    style U1 fill:#e6f4ea
+    style U2 fill:#e8f0fe
+    style U3 fill:#fef7e0
+```
+
+### Receita 1 — busca que sobrevive à paráfrase
+
+```python
+from semantic_normalizer import load_lexicon, normalize_text
+lex = load_lexicon(contexts=["core", "cga"])
+
+def index_entry(doc_id, text):
+    recs = normalize_text(text, source=doc_id, kind="text", lexicon=lex)
+    return {
+        "id": doc_id,
+        "concepts": sorted({c for r in recs for c in r["concept_ids"]}),  # a CHAVE
+        "body": " ".join(r["text_expanded"] for r in recs),               # para BM25
+    }
+
+# Documento diz "Fundo de Investimento Financeiro"; usuário busca "FIF".
+# Ambos produzem entity.financial_investment_fund → o mesmo bucket do índice.
+```
+
+### Receita 2 — extrair a regra, não a frase
+
+```python
+[r] = normalize_text("O gestor deve aplicar em cotas de FIF, exceto se a classe for restrita.",
+                     source="reg.md", kind="text", lexicon=lex)
+
+r["concept_ids"]
+# ['actor.portfolio_manager', 'action.subscribe', 'entity.fund_share',
+#  'entity.financial_investment_fund', 'polarity.exception']
+```
+
+Lido como estrutura: **quem** (`actor.portfolio_manager`) faz **o quê** (`action.subscribe`) sobre
+**o quê** (`entity.fund_share` de `entity.financial_investment_fund`), com uma **ressalva**
+(`polarity.exception`). Você consulta isso sem escrever um regex por redação possível — e
+`polarity.*` é `core`, então a mesma consulta funciona num pacote de medicina.
+
+### Receita 3 — a fila de revisão humana
+
+```python
+if r["needs_review"]:
+    for amb in r["ambiguous_candidates"]:
+        print(amb["alias"], "→", [(c["concept_id"], c["sense"]) for c in amb["candidates"]])
+
+# deve → [('modality.logical_necessity', 'A proposition follows necessarily…'),
+#         ('modality.obligation',        'A rule imposes a mandatory action…')]
+```
+
+É esta a diferença entre uma ferramenta que você pode automatizar e uma que você tem de conferir: o
+que ela **não sabe** sai explícito e enfileirado, com as leituras candidatas e a definição de cada
+uma, em vez de virar um palpite silencioso no meio do resultado.
+
+---
+
+## Pacotes de domínio, visualmente
+
+```mermaid
+flowchart TD
+    REG[("registry.jsonl<br/>584 conceitos")]
+
+    REG --> CORE["scheme: core — 51<br/>não · exceto · desde que<br/>vencimento · no máximo"]
+    REG --> CGA["scheme: cga — 498<br/>FIF · cota · duration<br/>come-cotas · CVM 175"]
+    REG --> SW["scheme: software — 57<br/>deploy · endpoint · commit"]
+    REG --> MED["scheme: medicina<br/><i>(ainda não existe)</i>"]
+
+    CORE -.->|"por referência,<br/>não cópia"| P1
+    CGA --> P1["load_lexicon(<br/>contexts=['core','cga'])<br/><b>519 conceitos</b>"]
+    CORE -.-> P2
+    SW --> P2["load_lexicon(<br/>contexts=['core','software'])<br/><b>108 conceitos</b>"]
+
+    style CORE fill:#e6f4ea,stroke:#34a853
+    style MED fill:#f1f3f4,stroke:#9aa0a6,stroke-dasharray: 5 5
+    style P1 fill:#e8f0fe
+    style P2 fill:#e8f0fe
+```
+
+O `core` entra em todo pacote **por referência**, nunca copiado. É por isso que schemes SKOS ganham
+de dividir o arquivo em `cga.jsonl` + `medicina.jsonl`: dividir obrigaria a duplicar
+`polarity.negation` em cada um, e conceito duplicado diverge — que é justamente o modo de falha dos
+metatesauros fundidos, não a cura dele.
+
+---
+
 ## Plug-and-play: domain packs
 
 The registry is **one file with scheme membership**, not one file per domain. Load it scoped:
