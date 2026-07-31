@@ -1,8 +1,8 @@
 {
   "baseline_ref": "eb622bf",
-  "concepts_that_gained_events": 158,
-  "concepts_that_lost_events": 61,
-  "events_after": 7763,
+  "concepts_that_gained_events": 167,
+  "concepts_that_lost_events": 62,
+  "events_after": 7758,
   "events_before": 6522,
   "gained": [
     {
@@ -36,10 +36,10 @@
       "delta": 37
     },
     {
-      "after": 41,
+      "after": 39,
       "before": 6,
       "concept_id": "action.decide",
-      "delta": 35
+      "delta": 33
     },
     {
       "after": 32,
@@ -70,18 +70,6 @@
       "before": 0,
       "concept_id": "technical.risk_management",
       "delta": 26
-    },
-    {
-      "after": 24,
-      "before": 0,
-      "concept_id": "entity.service",
-      "delta": 24
-    },
-    {
-      "after": 23,
-      "before": 0,
-      "concept_id": "entity.stock_exchange",
-      "delta": 23
     },
     {
       "after": 23,
@@ -120,27 +108,27 @@
       "delta": 20
     },
     {
-      "after": 16,
+      "after": 18,
       "before": 0,
-      "concept_id": "technical.otc_market",
-      "delta": 16
+      "concept_id": "entity.stock_exchange",
+      "delta": 18
+    },
+    {
+      "after": 17,
+      "before": 0,
+      "concept_id": "entity.service",
+      "delta": 17
     },
     {
       "after": 15,
       "before": 0,
-      "concept_id": "technical.indexing",
+      "concept_id": "technical.otc_market",
       "delta": 15
     },
     {
       "after": 15,
       "before": 0,
       "concept_id": "technical.pmt",
-      "delta": 15
-    },
-    {
-      "after": 15,
-      "before": 0,
-      "concept_id": "technical.repo",
       "delta": 15
     },
     {
@@ -158,7 +146,19 @@
     {
       "after": 13,
       "before": 0,
+      "concept_id": "actor.essential_service_provider",
+      "delta": 13
+    },
+    {
+      "after": 13,
+      "before": 0,
       "concept_id": "technical.loss_given_default",
+      "delta": 13
+    },
+    {
+      "after": 13,
+      "before": 0,
+      "concept_id": "technical.repo",
       "delta": 13
     },
     {
@@ -184,12 +184,6 @@
       "before": 0,
       "concept_id": "technical.settlement",
       "delta": 12
-    },
-    {
-      "after": 11,
-      "before": 0,
-      "concept_id": "actor.essential_service_provider",
-      "delta": 11
     },
     {
       "after": 11,
@@ -244,6 +238,12 @@
       "before": 0,
       "concept_id": "condition.provided_that",
       "delta": 10
+    },
+    {
+      "after": 10,
+      "before": 0,
+      "concept_id": "entity.closed_class",
+      "delta": 10
     }
   ],
   "lost": [
@@ -268,10 +268,10 @@
       ]
     },
     {
-      "after": 283,
+      "after": 281,
       "before": 309,
       "concept_id": "quantity.rate",
-      "delta": -26,
+      "delta": -28,
       "examples": [
         " o emissor do título concorda em pagar uma determinada taxa de juro por um período de tempo predetermina",
         "ado um porto seguro, desta forma, é considerado a TLR (taxa livre de risco) dos investimentos no mundo."
@@ -328,6 +328,16 @@
       ]
     },
     {
+      "after": 9,
+      "before": 26,
+      "concept_id": "entity.securities",
+      "delta": -17,
+      "examples": [
+        "\"Separate Trading of Registered Interest and Principal Securities\".",
+        "dem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam"
+      ]
+    },
+    {
       "after": 11,
       "before": 28,
       "concept_id": "technical.long_position",
@@ -338,16 +348,6 @@
       ]
     },
     {
-      "after": 10,
-      "before": 26,
-      "concept_id": "entity.securities",
-      "delta": -16,
-      "examples": [
-        "\"Separate Trading of Registered Interest and Principal Securities\".",
-        "dem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras que operam"
-      ]
-    },
-    {
       "after": 50,
       "before": 65,
       "concept_id": "quantity.performance",
@@ -355,6 +355,16 @@
       "examples": [
         ", expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos",
         "ia, sendo eles: Nasdaq Composite: Índice composto pelo desempenho de mais de 3.000 empresas listadas na Nasdaq"
+      ]
+    },
+    {
+      "after": 4,
+      "before": 18,
+      "concept_id": "technical.cds",
+      "delta": -14,
+      "examples": [
+        "Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo ",
+        "Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote"
       ]
     },
     {
@@ -498,6 +508,16 @@
       ]
     },
     {
+      "after": 243,
+      "before": 250,
+      "concept_id": "entity.security",
+      "delta": -7,
+      "examples": [
+        "Investimentos no Exterior Títulos de Renda Fixa",
+        "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por"
+      ]
+    },
+    {
       "after": 196,
       "before": 203,
       "concept_id": "instrument.interest",
@@ -515,16 +535,6 @@
       "examples": [
         " pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ",
         "Portanto, quem paga o prêmio é o investidor, recebendo uma taxa menor do "
-      ]
-    },
-    {
-      "after": 244,
-      "before": 250,
-      "concept_id": "entity.security",
-      "delta": -6,
-      "examples": [
-        "Investimentos no Exterior Títulos de Renda Fixa",
-        "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por"
       ]
     },
     {
@@ -857,10 +867,10 @@
     }
   ],
   "schema_version": "recall-delta-v1",
-  "spans_absorbed_by_a_longer_match": 478,
-  "spans_after": 7763,
+  "spans_absorbed_by_a_longer_match": 482,
+  "spans_after": 7758,
   "spans_before": 6522,
-  "spans_suppressed_with_no_replacement": 98,
+  "spans_suppressed_with_no_replacement": 114,
   "suppressed_spans": [
     {
       "quote": "tempo, expandimos nossa mesma metodologia de ensino de alta performance, extensivamente elogiada pelos nossos alunos, par",
@@ -885,6 +895,10 @@
     {
       "quote": "O termo STRIPS significa \"Separate Trading of Registered",
       "surface": "termo"
+    },
+    {
+      "quote": "o no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo gover",
+      "surface": "CDs"
     },
     {
       "quote": "está pagando o seguro é o próprio emissor da dívida e este prêmio é pago da seguinte forma: se o título fosse ser e",
@@ -933,6 +947,10 @@
     {
       "quote": "ecíprocas, sendo que cada uma das partes possui uma posição Ativa (Credora) e a outra Passiva (Devedora).",
       "surface": "Ativa"
+    },
+    {
+      "quote": "); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); -",
+      "surface": "CDS"
     },
     {
       "quote": "juros sobre capital próprio) e quaisquer ganhos de capital capital (apreciação do ativo).",
@@ -1107,20 +1125,60 @@
       "surface": "fluxo"
     },
     {
+      "quote": "Um governo pode decidir não pagar sua dívida, mesmo que tenha a capacidad",
+      "surface": "decidir"
+    },
+    {
       "quote": "desenvolveu um mecanismo de proteção do sistema, baseada em distribuição de responsabilidades e alocação de garantias que",
       "surface": "distribuição"
+    },
+    {
+      "quote": "Credit Default Swap (CDS) é um contrato de derivativo financeiro que trans",
+      "surface": "CDS"
     },
     {
       "quote": "fere o risco de crédito para uma contraparte em troca de um prêmio.",
       "surface": "prêmio"
     },
     {
+      "quote": "contrato, o COMPRADOR da proteção de crédito (comprador do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do",
+      "surface": "CDS"
+    },
+    {
+      "quote": "dor do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contrato.",
+      "surface": "CDS"
+    },
+    {
+      "quote": "Os preços dos CDS são frequentemente cotados em termos de spreads d",
+      "surface": "CDS"
+    },
+    {
       "quote": "preads de crédito são geralmente expressos em termos de uma curva de crédito, que demonstra a relação entre os spre",
       "surface": "curva"
     },
     {
+      "quote": "Os CDS mudam de valor ao longo de suas vidas conforme a",
+      "surface": "CDS"
+    },
+    {
+      "quote": "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxi",
+      "surface": "CDS"
+    },
+    {
       "quote": "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
       "surface": "medida"
+    },
+    {
+      "quote": "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxima do vencimento.",
+      "surface": "CDS"
+    },
+    {
+      "quote": "Por conta disso, há muita especulação no mercado de CDS, em que os investidores podem negociar as obrigaç",
+      "surface": "CDS"
+    },
+    {
+      "quote": "CDS, em que os investidores podem negociar as obrigações do CDS se acreditarem que podem obter lucro.",
+      "surface": "CDS"
     },
     {
       "quote": "à possibilidade de perdas devido à necessidade de levantar capital para honrar suas obrigações em contratos derivati",
@@ -1195,6 +1253,10 @@
       "surface": "capital"
     },
     {
+      "quote": "Um seguro muito utilizado no mercado financeiro é o CDS (Credit Default Swap), que protege contra a inadi",
+      "surface": "CDS"
+    },
+    {
       "quote": "um preço pré-determinado em uma data futura; - São uma boa opção para proteger contra grandes flutuações cambiais",
       "surface": "opção"
     },
@@ -1211,8 +1273,20 @@
       "surface": "opção"
     },
     {
+      "quote": "iversas estratégias de hedge, como: - Credit Default Swaps (CDS): São contratos que protegem o comprador contra a",
+      "surface": "CDS"
+    },
+    {
       "quote": "O comprador paga um prêmio ao vendedor do CDS, e em caso de inadimplência do",
       "surface": "prêmio"
+    },
+    {
+      "quote": "O comprador paga um prêmio ao vendedor do CDS, e em caso de inadimplência do devedor, o vendedo",
+      "surface": "CDS"
+    },
+    {
+      "quote": "o CDS, e em caso de inadimplência do devedor, o vendedor do CDS paga ao comprador o valor da dívida.",
+      "surface": "CDS"
     },
     {
       "quote": "imento positivo é “diluído” ao longo da curva, em função da distribuição dos ativos ao longo dos vencimentos.",

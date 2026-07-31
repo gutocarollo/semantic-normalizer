@@ -22,16 +22,16 @@
     "usable": true,
     "youden_j": 0.602
   },
-  "bare_automatic_forms": 682,
-  "bare_forms": 840,
+  "bare_automatic_forms": 696,
+  "bare_forms": 861,
   "distribution_over_automatic": {
     "max": 57,
-    "mean": 3.9,
+    "mean": 3.81,
     "median": 2.0,
     "p75": 6,
     "p90": 10,
-    "stdev": 5.49,
-    "zero_sense_forms": 217
+    "stdev": 5.43,
+    "zero_sense_forms": 226
   },
   "forms": [
     {
@@ -463,7 +463,7 @@
       ],
       "language": "en",
       "lemma_used": "exchange",
-      "policy": "auto"
+      "policy": "review"
     },
     {
       "concept_id": "entity.job",
@@ -3602,6 +3602,20 @@
       "policy": "review"
     },
     {
+      "concept_id": "actor.sec",
+      "form": "SEC",
+      "general_senses": 4,
+      "glosses": [
+        "(of champagne) moderately dry",
+        "an independent federal agency that oversees the exchange of securities",
+        "ratio of the hypotenuse to the adjacent side of a right-angled triangl",
+        "1/60 of a minute; the basic unit of time adopted under the Systeme Int"
+      ],
+      "language": "en",
+      "lemma_used": "sec",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.suitability",
       "form": "adequação",
       "general_senses": 4,
@@ -5985,6 +5999,28 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.etf",
+      "form": "ETF",
+      "general_senses": 1,
+      "glosses": [
+        "a mutual fund that is traded on a stock exchange"
+      ],
+      "language": "en",
+      "lemma_used": "etf",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.etf",
+      "form": "ETFs",
+      "general_senses": 1,
+      "glosses": [
+        "a mutual fund that is traded on a stock exchange"
+      ],
+      "language": "en",
+      "lemma_used": "etf",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.otc_market",
       "form": "OTC",
       "general_senses": 1,
@@ -5993,6 +6029,37 @@
       ],
       "language": "en",
       "lemma_used": "otc",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "actor.sec",
+      "form": "SEC",
+      "general_senses": 1,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "sec",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bill",
+      "form": "T-Bill",
+      "general_senses": 1,
+      "glosses": [
+        "a short-term obligation that is not interest-bearing (it is purchased "
+      ],
+      "language": "en",
+      "lemma_used": "t-bill",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bill",
+      "form": "T-Bills",
+      "general_senses": 1,
+      "glosses": [
+        "a short-term obligation that is not interest-bearing (it is purchased "
+      ],
+      "language": "en",
+      "lemma_used": "t-bill",
       "policy": "auto"
     },
     {
@@ -7023,6 +7090,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.certificate_of_deposit",
+      "form": "CD",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "cd",
+      "policy": "review"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "form": "CD",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "cd",
+      "policy": "review"
+    },
+    {
       "concept_id": "technical.cdi",
       "form": "CDI",
       "general_senses": 0,
@@ -7047,7 +7132,7 @@
       "glosses": [],
       "language": "en",
       "lemma_used": "cds",
-      "policy": "auto"
+      "policy": "review"
     },
     {
       "concept_id": "technical.cds",
@@ -7056,7 +7141,25 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "cds",
-      "policy": "auto"
+      "policy": "review"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "form": "CDs",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "cds",
+      "policy": "review"
+    },
+    {
+      "concept_id": "entity.certificate_of_deposit",
+      "form": "CDs",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "cds",
+      "policy": "review"
     },
     {
       "concept_id": "technical.consumer_price_index",
@@ -7254,6 +7357,24 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "estr",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.etf",
+      "form": "ETF",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "etf",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.etf",
+      "form": "ETFs",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "etfs",
       "policy": "auto"
     },
     {
@@ -7680,6 +7801,24 @@
       "policy": "auto"
     },
     {
+      "concept_id": "entity.otc_bulletin_board",
+      "form": "OTCBB",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "otcbb",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.otc_bulletin_board",
+      "form": "OTCBB",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "otcbb",
+      "policy": "auto"
+    },
+    {
       "concept_id": "technical.pe_ratio",
       "form": "P/E",
       "general_senses": 0,
@@ -7812,6 +7951,69 @@
       "glosses": [],
       "language": "pt-BR",
       "lemma_used": "selic",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bill",
+      "form": "T-Bills",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "t-bills",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bond",
+      "form": "T-Bond",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "t-bond",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bond",
+      "form": "T-Bonds",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "t-bonds",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_bond",
+      "form": "T-Bonds",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "t-bonds",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_note",
+      "form": "T-Note",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "t-note",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_note",
+      "form": "T-Notes",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "en",
+      "lemma_used": "t-notes",
+      "policy": "auto"
+    },
+    {
+      "concept_id": "entity.treasury_note",
+      "form": "T-Notes",
+      "general_senses": 0,
+      "glosses": [],
+      "language": "pt-BR",
+      "lemma_used": "t-notes",
       "policy": "auto"
     },
     {
@@ -9409,8 +9611,8 @@
     }
   ],
   "registry": {
-    "concepts": 385,
-    "version": "2.24.0"
+    "concepts": 395,
+    "version": "2.26.0"
   },
   "schema_version": "form-polysemy-v1"
 }

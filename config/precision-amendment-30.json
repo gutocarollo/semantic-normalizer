@@ -1,0 +1,39 @@
+{
+  "id": "precision-sweep-amendment-30",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; adversarial review of the phase-two repairs",
+  "method": "all 5 occurrences of `exchange`, all 24 of `serviços`, all 5 of `decisão`, and the provider forms read one by one",
+  "reason": "A repair that introduced an 80 %-wrong form, a definition written elastic in the very amendment that fixed an elastic one, a plural mismatch, and an internal inconsistency in my own anti-splitting argument.",
+  "operations": [
+    {
+      "op": "demote", "concept": "entity.stock_exchange", "language": "en", "form": "exchange",
+      "wrong": 4, "total": 5,
+      "why": "Four of five are `Securities and Exchange Commission` and `Exchange Traded Funds` — the fifth repetition of the Hedge Funds class. `find_compound_fragments.py` listed it at 0.80 and I did not read the output after registering the concept. `bolsa de valores` keeps the concept anchored and the two compounds are now their own concepts."
+    },
+    {
+      "op": "add_form", "concept": "actor.essential_service_provider", "language": "pt-BR",
+      "form": "prestador de serviços essencial",
+      "why": "The concept registered `prestador de serviço essencial` (singular `serviço`) and the corpus also writes `prestador de SERVIÇOS essencial`. Longest-match then loses on number and the generic concept wins — the same singular/plural mismatch as `desconto sobre o valor de face` and `Yield Spreads`."
+    },
+    {
+      "op": "redefine", "concept": "entity.service",
+      "definition": "Work performed for a fund or an investor under contract.",
+      "why": "The definition I wrote in amendment 26 read `work performed under contract, OR a good's counterpart in consumption` — a disjunction covering two unrelated senses, which makes a false positive impossible by construction. That is exactly the mechanism I diagnosed in entity.distribution and split, created fresh in the amendment that was repairing the same class elsewhere. The consumption sense is now its own concept and this one is falsifiable again."
+    },
+    {
+      "op": "forbid", "concept": "entity.service", "language": "pt-BR",
+      "variants": ["bens e serviços", "serviços públicos"],
+      "why": "The seven occurrences of `bens e serviços` and the utility sense belong to entity.goods_and_services, registered alongside."
+    },
+    {
+      "op": "forbid", "concept": "action.decide", "language": "pt-BR",
+      "variants": ["decisão judicial", "decidir não pagar"],
+      "why": "`salvo por decisão judicial` and `um governo pode decidir não pagar sua dívida` are not choosing among investment alternatives, which is what the definition says. Two occurrences each side."
+    },
+    {
+      "op": "redefine", "concept": "action.invest",
+      "definition": "To commit capital to an asset expecting a future return, the act so committed, and the holding it produces — `investimento`, `investimentos`.",
+      "why": "The review is right that the clause I wrote conceded less than the forms match: a deverbal noun denotes the act OR its result, and this corpus uses the objectual sense systematically — `carteira de investimentos de R$ 100.000,00`, `alguns investimentos em ISR podem ser menos líquidos`. Neither of my two disjuncts covered it. The method was right and the reach of the clause was wrong."
+    }
+  ]
+}

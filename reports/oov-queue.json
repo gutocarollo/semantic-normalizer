@@ -72,8 +72,8 @@
     "stopwords": 349
   },
   "registry": {
-    "sha256": "9b7804b15dfa09dac3e078b9da126c38b10983a751641eba762738add4b232c3",
-    "version": "2.24.0"
+    "sha256": "90e8b199e76460a42c198f72414b5278fd2b0f2298a9615831041fe8d43534c9",
+    "version": "2.26.0"
   },
   "schema_version": "oov-queue-v1",
   "strata": {
@@ -131,6 +131,15 @@
         ],
         "occurrences": 20,
         "term": "principal"
+      },
+      {
+        "contexts": [
+          "Da mesma forma como no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal possui proteção de até US$ 250 mil dólares.",
+          "- Podem ser realizados diversos tipos de contratos de swap: - Swap de Juros (CDI, pré-fixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap de Índice de Preços (IPCA e IGP-M).",
+          "Credit Default Swap (CDS) é um contrato de derivativo financeiro que transfere o risco de crédito para uma contraparte em troca de um prêmio."
+        ],
+        "occurrences": 15,
+        "term": "cds"
       },
       {
         "contexts": [
@@ -357,6 +366,13 @@
       },
       {
         "contexts": [
+          "Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\")."
+        ],
+        "occurrences": 1,
+        "term": "exchange"
+      },
+      {
+        "contexts": [
           "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer."
         ],
         "occurrences": 1,
@@ -392,6 +408,13 @@
       },
       {
         "contexts": [
+          "No entanto, suas cotas não podem ser transferidas (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão universal (veremos mais casos a seguir)."
+        ],
+        "occurrences": 1,
+        "term": "decisão"
+      },
+      {
+        "contexts": [
           "O administrador e o escriturador devem compartilhar as informações do registro de cotistas, bem como informações referentes a eventuais direitos, gravames ou outros registros existentes sobre as cotas."
         ],
         "occurrences": 1,
@@ -424,6 +447,13 @@
         ],
         "occurrences": 1,
         "term": "fluxo"
+      },
+      {
+        "contexts": [
+          "Um governo pode decidir não pagar sua dívida, mesmo que tenha a capacidade de fazê-lo."
+        ],
+        "occurrences": 1,
+        "term": "decidir"
       },
       {
         "contexts": [
@@ -3151,15 +3181,6 @@
       },
       {
         "contexts": [
-          "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
-          "As TREASURY BONDS (T-BONDS) tem como principal característica que possui VENCIMENTOS COM MAIS DE DEZ ANOS.",
-          "Os Municipal Bonds são uma forma de empréstimo, em que os investidores compram esses títulos e emprestam dinheiro para o governo local em troca de juros."
-        ],
-        "occurrences": 14,
-        "term": "bonds"
-      },
-      {
-        "contexts": [
           "Nem todos os títulos pagam cupom, alguns deles simplesmente têm um desconto sobre o valor de face, ex: você paga 980 dólares pelo direito de receber 1.000 dólares em um ano (portanto, o preço do BOND é o seu Valor Presente).",
           "Como resultado, os STRIPS são mais adequados para investidores que desejam garantir um pagamento futuro específico, mas não têm necessidade de fluxos de caixa intermediários.",
           "Os aceites bancários geralmente têm vencimentos que variam de 30 a 180 dias, dependendo do prazo de pagamento acordado entre as partes."
@@ -3310,6 +3331,15 @@
         ],
         "occurrences": 13,
         "term": "reduzir"
+      },
+      {
+        "contexts": [
+          "Os famosos Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições privadas, ou seja, são os títulos de dívidas.",
+          "Os Municipal Bonds são uma forma de empréstimo, em que os investidores compram esses títulos e emprestam dinheiro para o governo local em troca de juros.",
+          "Os Municipal Bonds são negociados no mercado secundário e podem ser comprados e vendidos por meio de corretoras de valores mobiliários e outras instituições financeiras."
+        ],
+        "occurrences": 12,
+        "term": "bonds"
       },
       {
         "contexts": [
@@ -4615,15 +4645,6 @@
         ],
         "occurrences": 8,
         "term": "tecnologia"
-      },
-      {
-        "contexts": [
-          "Exemplos de empresas desse setor incluem JPMorgan Chase, Bank of America, Berkshire Hathaway, Visa e Mastercard; e Consumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como vestuário, viagens, entretenimento e lazer.",
-          "O setor de staples é frequentemente comparado ao setor de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
-          "Ao contrário do setor de staples, as empresas de consumo discricionário tendem a ter desempenho mais fraco durante uma recessão econômica, quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais."
-        ],
-        "occurrences": 8,
-        "term": "bens"
       },
       {
         "contexts": [
@@ -8145,15 +8166,6 @@
       },
       {
         "contexts": [
-          "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revender estes títulos futuramente por R$ 11 mil para este mesmo banco.",
-          "Nos Estados Unidos, é destinado somente aos Investidores Qualificados (Accredited Investors), que possuem mais de US$ 1 milhão em recursos financeiros, e também a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
-          "- Exemplos: empresas do setor financeiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos)."
-        ],
-        "occurrences": 4,
-        "term": "públicos"
-      },
-      {
-        "contexts": [
           "Na prática, o que ocorreu foi um empréstimo que Rafael fez no qual recebeu R$ 1.000,00 de juros.",
           "A SONIA surgiu como substituta da LIBOR na libra esterlina, assim como a SOFR fez para o dólar americano.",
           "No nosso exemplo, o MWRR foi pior na carteira 2, pois o investidor fez um aporte de R$ 200.000 imediatamente antes de uma rentabilidade negativa."
@@ -8316,15 +8328,6 @@
       },
       {
         "contexts": [
-          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
-          "Porém, ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate e geralmente impõem um período de carência de um ano antes que quaisquer cotas possam ser resgatadas.",
-          "Quando falamos em estratégias passivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds)."
-        ],
-        "occurrences": 4,
-        "term": "funds"
-      },
-      {
-        "contexts": [
           "Porém, ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate e geralmente impõem um período de carência de um ano antes que quaisquer cotas possam ser resgatadas.",
           "**Classe Aberta:** classe cujo regulamento admite que as cotas sejam resgatadas pelos cotistas a qualquer momento.",
           "No entanto, suas cotas não podem ser transferidas (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão universal (veremos mais casos a seguir)."
@@ -8385,15 +8388,6 @@
         ],
         "occurrences": 4,
         "term": "falamos"
-      },
-      {
-        "contexts": [
-          "Quando falamos em estratégias passivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
-          "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.",
-          "ETFs ASG são fundos de índice que investem em empresas levando em conta critérios Ambientais, Sociais e de Governança, também conhecidos como critérios ASG."
-        ],
-        "occurrences": 4,
-        "term": "etfs"
       },
       {
         "contexts": [
@@ -8808,24 +8802,6 @@
         ],
         "occurrences": 4,
         "term": "aspectos"
-      },
-      {
-        "contexts": [
-          "Entre a gestão passiva, de um lado, e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-          "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
-          "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa."
-        ],
-        "occurrences": 4,
-        "term": "enhanced"
-      },
-      {
-        "contexts": [
-          "Entre a gestão passiva, de um lado, e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-          "Assim, a Indexação Reforçada remete à gestão passiva porque normalmente não desvia significativamente do índice de referência (benchmark).",
-          "A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa."
-        ],
-        "occurrences": 4,
-        "term": "reforçada"
       },
       {
         "contexts": [
@@ -9339,15 +9315,6 @@
         ],
         "occurrences": 4,
         "term": "contratado"
-      },
-      {
-        "contexts": [
-          "A contratação de terceiros deve contar com prévia e criteriosa análise e seleção do contratado, devendo o prestador de serviços essencial, ainda, figurar no contrato como interveniente anuente.",
-          "- Quando constituído com o objetivo de fiscalizar ou supervisionar as atividades exercidas por prestador de serviços essencial, a remuneração de membros do comitê pode constituir encargo do fundo, desde que prevista no regulamento.",
-          "Os princípios fundamentais da gestão de risco incluem: - Definição clara dos objetivos de investimento: é essencial definir claramente os objetivos de investimento antes de tomar qualquer decisão."
-        ],
-        "occurrences": 4,
-        "term": "essencial"
       },
       {
         "contexts": [
@@ -10417,6 +10384,15 @@
       },
       {
         "contexts": [
+          "Por exemplo, Rafael vai ao banco XYZ e compra R$ 10 mil em títulos públicos e fecha um acordo para revender estes títulos futuramente por R$ 11 mil para este mesmo banco.",
+          "Nos Estados Unidos, é destinado somente aos Investidores Qualificados (Accredited Investors), que possuem mais de US$ 1 milhão em recursos financeiros, e também a públicos específicos, como investidores institucionais, fundos de pensão e companhias de seguro.",
+          "- Tolerância de risco diretamente relacionada à riqueza, - Possui valor de piso (valor formado com todos os recursos investidos em títulos públicos de curto prazo)."
+        ],
+        "occurrences": 3,
+        "term": "públicos"
+      },
+      {
+        "contexts": [
           "➢ High Grade Bonds: A sua tradução literal ficaria como “Títulos com Nota Elevada”.",
           "Porém, diferentemente do mercado de ações, o grande número individual de títulos de Renda Fixa, divididos entre diversos índices (e também diferentes níveis de liquidez), torna a replicação literal do índice muitas vezes impraticável.",
           "A estratégia CPPI (Constant Proportion Portfolio Insurance), com tradução literal de “Seguro de Carteira de Proporção Constante”, possui como estratégia uma alocação para ações através de uma fórmula."
@@ -10528,15 +10504,6 @@
         ],
         "occurrences": 3,
         "term": "confiável"
-      },
-      {
-        "contexts": [
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
-          "Assim, se o indicador apontar para uma alteração de tendência, existe um forte sinal para stop and reverse, isto é, parar e reverter a posição."
-        ],
-        "occurrences": 3,
-        "term": "and"
       },
       {
         "contexts": [
@@ -13083,14 +13050,6 @@
       {
         "contexts": [
           "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS.",
-          "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face."
-        ],
-        "occurrences": 2,
-        "term": "t-bills"
-      },
-      {
-        "contexts": [
-          "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS.",
           "☐ EXEMPLO: Um investidor comprou uma TIPS com valor de face de U$ 100.00,00 e cupom de 4%aa."
         ],
         "occurrences": 2,
@@ -13207,14 +13166,6 @@
         ],
         "occurrences": 2,
         "term": "infraestrutura"
-      },
-      {
-        "contexts": [
-          "O CERTIFICATE OF DEPOSIT (CD) é semelhante ao CDB no Brasil.",
-          "Mesmo possuindo a proteção do FDIC (Federal Deposit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00."
-        ],
-        "occurrences": 2,
-        "term": "deposit"
       },
       {
         "contexts": [
@@ -13694,22 +13645,6 @@
       },
       {
         "contexts": [
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
-        ],
-        "occurrences": 2,
-        "term": "commission"
-      },
-      {
-        "contexts": [
-          "Os compradores e vendedores se reúnem em um local físico (como a Bolsa de Valores de Nova York) ou eletrônico (como a Nasdaq), onde as negociações ocorrem de forma transparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
-        ],
-        "occurrences": 2,
-        "term": "sec"
-      },
-      {
-        "contexts": [
           "As empresas que listam suas ações em uma bolsa de valores devem cumprir certos requisitos de divulgação e conformidade, a fim de manter sua listagem.",
           "O mercado de balcão é menos regulamentado do que a bolsa de valores, o que significa que as empresas que listam suas ações no mercado de balcão geralmente têm menos requisitos de divulgação e conformidade."
         ],
@@ -13932,6 +13867,14 @@
       },
       {
         "contexts": [
+          "Outra característica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
+          "Porém, ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate e geralmente impõem um período de carência de um ano antes que quaisquer cotas possam ser resgatadas."
+        ],
+        "occurrences": 2,
+        "term": "funds"
+      },
+      {
+        "contexts": [
           "Em termos de composição da carteira, o gestor de Hedge Funds tem bastante liberdade para investir em diversos ativos, tais como ações, derivativos, terrenos, imóveis, moedas, entre outros.",
           "❑ EXEMPLOS: investimento em imóveis, ações de pequenas empresas, ativos com carência."
         ],
@@ -14049,14 +13992,6 @@
         ],
         "occurrences": 2,
         "term": "formal"
-      },
-      {
-        "contexts": [
-          "Quando falamos em estratégias passivas de Renda Variável, podemos implementá-las da seguinte forma: - Fundos de Investimentos de Ações Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
-          "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abertos que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados."
-        ],
-        "occurrences": 2,
-        "term": "traded"
       },
       {
         "contexts": [
@@ -14247,14 +14182,6 @@
         ],
         "occurrences": 2,
         "term": "investem"
-      },
-      {
-        "contexts": [
-          "Basicamente, ao invés de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de sustentabilidade.",
-          "Ficam dispensadas de tal obrigação as aplicações realizadas em: - classes geridas por terceiros não ligados ao gestor da classe investidora; - ETF; e - fundos e classes de cotas que não sejam categorizados como FIF."
-        ],
-        "occurrences": 2,
-        "term": "etf"
       },
       {
         "contexts": [
@@ -14709,6 +14636,14 @@
         ],
         "occurrences": 2,
         "term": "conseguem"
+      },
+      {
+        "contexts": [
+          "Exemplos: bens duráveis, vestuário de melhor qualidade, entretenimento, atividades de lazer e automóveis, entre outros.",
+          "O fundo de investimento é uma comunhão de recursos, constituído sob a forma de condomínio de natureza especial, destinado à aplicação em ativos financeiros, bens e direitos, de acordo com a regra específica aplicável à categoria do fundo."
+        ],
+        "occurrences": 2,
+        "term": "bens"
       },
       {
         "contexts": [
@@ -16425,6 +16360,14 @@
         ],
         "occurrences": 2,
         "term": "conscientes"
+      },
+      {
+        "contexts": [
+          "Os princípios fundamentais da gestão de risco incluem: - Definição clara dos objetivos de investimento: é essencial definir claramente os objetivos de investimento antes de tomar qualquer decisão.",
+          "A LGD é um componente essencial do Modelo de Basileia, um conjunto de regulamentações bancárias internacionais, pois é utilizado no cálculo de capital econômico, perda esperada e capital regulatório."
+        ],
+        "occurrences": 2,
+        "term": "essencial"
       },
       {
         "contexts": [
@@ -18627,27 +18570,6 @@
       },
       {
         "contexts": [
-          "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS."
-        ],
-        "occurrences": 1,
-        "term": "t-notes"
-      },
-      {
-        "contexts": [
-          "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS."
-        ],
-        "occurrences": 1,
-        "term": "t-bonds"
-      },
-      {
-        "contexts": [
-          "Treasury Bills As tem como principal característica que o seu ."
-        ],
-        "occurrences": 1,
-        "term": "bills"
-      },
-      {
-        "contexts": [
           "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse uma LTN) Os preços são cotados como uma percentagem do valor de face."
         ],
         "occurrences": 1,
@@ -18659,20 +18581,6 @@
         ],
         "occurrences": 1,
         "term": "coisa"
-      },
-      {
-        "contexts": [
-          "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o seu valor de face de U$ 1.000,00 (base 360 dias corridos)."
-        ],
-        "occurrences": 1,
-        "term": "t-bill"
-      },
-      {
-        "contexts": [
-          "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A DEZ ANOS."
-        ],
-        "occurrences": 1,
-        "term": "notes"
       },
       {
         "contexts": [
@@ -18837,13 +18745,6 @@
       },
       {
         "contexts": [
-          "O CERTIFICATE OF DEPOSIT (CD) é semelhante ao CDB no Brasil."
-        ],
-        "occurrences": 1,
-        "term": "certificate"
-      },
-      {
-        "contexts": [
           "O investidor mantém uma quantia fixa de recursos por um período fixo de tempo e, em troca, o banco emissor paga juros."
         ],
         "occurrences": 1,
@@ -18876,6 +18777,13 @@
         ],
         "occurrences": 1,
         "term": "fdic"
+      },
+      {
+        "contexts": [
+          "Mesmo possuindo a proteção do FDIC (Federal Deposit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00."
+        ],
+        "occurrences": 1,
+        "term": "deposit"
       },
       {
         "contexts": [
@@ -19618,27 +19526,6 @@
         ],
         "occurrences": 1,
         "term": "eletrônica"
-      },
-      {
-        "contexts": [
-          "O mercado de balcão organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são negociadas publicamente."
-        ],
-        "occurrences": 1,
-        "term": "bulletin"
-      },
-      {
-        "contexts": [
-          "O mercado de balcão organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são negociadas publicamente."
-        ],
-        "occurrences": 1,
-        "term": "board"
-      },
-      {
-        "contexts": [
-          "O mercado de balcão organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são negociadas publicamente."
-        ],
-        "occurrences": 1,
-        "term": "otcbb"
       },
       {
         "contexts": [
@@ -22397,6 +22284,13 @@
         ],
         "occurrences": 1,
         "term": "apontar"
+      },
+      {
+        "contexts": [
+          "Assim, se o indicador apontar para uma alteração de tendência, existe um forte sinal para stop and reverse, isto é, parar e reverter a posição."
+        ],
+        "occurrences": 1,
+        "term": "and"
       },
       {
         "contexts": [
@@ -31663,16 +31557,16 @@
   },
   "totals": {
     "ambiguous": {
-      "occurrences": 380,
-      "terms": 43
+      "occurrences": 398,
+      "terms": 47
     },
     "function": {
       "occurrences": 7906,
       "terms": 238
     },
     "unknown": {
-      "occurrences": 10584,
-      "terms": 3744
+      "occurrences": 10537,
+      "terms": 3727
     }
   }
 }

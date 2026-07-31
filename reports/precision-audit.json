@@ -222,7 +222,7 @@
       ],
       "occurrences": 163,
       "policy": "auto",
-      "share_of_concept": 0.576,
+      "share_of_concept": 0.58,
       "tokens": 1
     },
     {
@@ -398,7 +398,7 @@
       ],
       "occurrences": 122,
       "policy": "auto",
-      "share_of_concept": 0.5,
+      "share_of_concept": 0.502,
       "tokens": 1
     },
     {
@@ -442,7 +442,7 @@
       ],
       "occurrences": 115,
       "policy": "auto",
-      "share_of_concept": 0.471,
+      "share_of_concept": 0.473,
       "tokens": 1
     },
     {
@@ -618,7 +618,7 @@
       ],
       "occurrences": 101,
       "policy": "auto",
-      "share_of_concept": 0.357,
+      "share_of_concept": 0.359,
       "tokens": 1
     },
     {
@@ -3082,7 +3082,7 @@
       ],
       "occurrences": 23,
       "policy": "auto",
-      "share_of_concept": 0.561,
+      "share_of_concept": 0.59,
       "tokens": 1
     },
     {
@@ -5374,50 +5374,6 @@
       "tokens": 1
     },
     {
-      "alias": "serviços",
-      "concept_id": "entity.service",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "logia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "bet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "cricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "mo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "serviços"
-        },
-        {
-          "context": "nceiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "serviços"
-        }
-      ],
-      "occurrences": 15,
-      "policy": "auto",
-      "share_of_concept": 0.625,
-      "tokens": 1
-    },
-    {
       "alias": "PMT",
       "concept_id": "technical.pmt",
       "domains": [
@@ -5680,50 +5636,6 @@
       "policy": "auto",
       "share_of_concept": 0.269,
       "tokens": 3
-    },
-    {
-      "alias": "CDS",
-      "concept_id": "technical.cds",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap de Í",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "CDS"
-        },
-        {
-          "context": "Credit Default Swap (CDS) é um contrato de derivativo financeiro que transfere o ris",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "CDS"
-        },
-        {
-          "context": " contrato, o COMPRADOR da proteção de crédito (comprador do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "CDS"
-        },
-        {
-          "context": "dor do CDS) faz pagamentos ao VENDEDOR do swap (vendedor do CDS) até a data de vencimento do contrato.",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "CDS"
-        },
-        {
-          "context": "Os preços dos CDS são frequentemente cotados em termos de spreads de crédito,",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "CDS"
-        },
-        {
-          "context": "Os CDS mudam de valor ao longo de suas vidas conforme a qualidade ",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "CDS"
-        }
-      ],
-      "occurrences": 14,
-      "policy": "auto",
-      "share_of_concept": 0.737,
-      "tokens": 1
     },
     {
       "alias": "tracking error",
@@ -6430,50 +6342,6 @@
       "tokens": 1
     },
     {
-      "alias": "Taxa",
-      "concept_id": "quantity.rate",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": " (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Taxa"
-        },
-        {
-          "context": " taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Taxa"
-        },
-        {
-          "context": "Algumas características da SOFR: ➢ Taxa média de juros: assim como a Libor, a SOFR representa a tax",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Taxa"
-        },
-        {
-          "context": "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Taxa"
-        },
-        {
-          "context": "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Taxa"
-        },
-        {
-          "context": "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aul",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "Taxa"
-        }
-      ],
-      "occurrences": 11,
-      "policy": "unknown",
-      "share_of_concept": 0.039,
-      "tokens": 1
-    },
-    {
       "alias": "mercados",
       "concept_id": "entity.market",
       "domains": [
@@ -6559,50 +6427,6 @@
       "occurrences": 11,
       "policy": "unknown",
       "share_of_concept": 0.087,
-      "tokens": 1
-    },
-    {
-      "alias": "decisão",
-      "concept_id": "action.decide",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "stão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "decisão"
-        },
-        {
-          "context": "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empr",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "decisão"
-        },
-        {
-          "context": "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode ",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "decisão"
-        },
-        {
-          "context": " fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "decisão"
-        },
-        {
-          "context": "das (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão universal (verem",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "decisão"
-        },
-        {
-          "context": "amente os objetivos de investimento antes de tomar qualquer decisão.",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "decisão"
-        }
-      ],
-      "occurrences": 11,
-      "policy": "auto",
-      "share_of_concept": 0.268,
       "tokens": 1
     },
     {
@@ -7355,6 +7179,50 @@
       "tokens": 1
     },
     {
+      "alias": "Taxa",
+      "concept_id": "quantity.rate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Taxa"
+        },
+        {
+          "context": "Algumas características da SOFR: ➢ Taxa média de juros: assim como a Libor, a SOFR representa a tax",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Taxa"
+        },
+        {
+          "context": "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Taxa"
+        },
+        {
+          "context": "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Taxa"
+        },
+        {
+          "context": "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aul",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Taxa"
+        },
+        {
+          "context": "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local do invest",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "Taxa"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "unknown",
+      "share_of_concept": 0.036,
+      "tokens": 1
+    },
+    {
       "alias": "SOFR",
       "concept_id": "technical.sofr",
       "domains": [
@@ -7439,8 +7307,52 @@
       ],
       "occurrences": 10,
       "policy": "auto",
-      "share_of_concept": 0.625,
+      "share_of_concept": 0.667,
       "tokens": 3
+    },
+    {
+      "alias": "decisão",
+      "concept_id": "action.decide",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "stão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "decisão"
+        },
+        {
+          "context": "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empr",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "decisão"
+        },
+        {
+          "context": "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode ",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "decisão"
+        },
+        {
+          "context": " fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "decisão"
+        },
+        {
+          "context": "amente os objetivos de investimento antes de tomar qualquer decisão.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "decisão"
+        },
+        {
+          "context": " aplicado para diferentes períodos de tempo de acordo com a decisão do analista.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "decisão"
+        }
+      ],
+      "occurrences": 10,
+      "policy": "auto",
+      "share_of_concept": 0.256,
+      "tokens": 1
     },
     {
       "alias": "diversificação",
@@ -7923,7 +7835,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.9,
+      "share_of_concept": 1.0,
       "tokens": 2
     },
     {
@@ -8011,7 +7923,7 @@
       ],
       "occurrences": 9,
       "policy": "auto",
-      "share_of_concept": 0.391,
+      "share_of_concept": 0.5,
       "tokens": 3
     },
     {
@@ -8452,6 +8364,50 @@
       "occurrences": 8,
       "policy": "auto",
       "share_of_concept": 0.267,
+      "tokens": 1
+    },
+    {
+      "alias": "serviços",
+      "concept_id": "entity.service",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "logia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "bet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "- Deve fiscalizar os serviços prestados por ele contratado.",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "rceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "serviços"
+        },
+        {
+          "context": "s palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+          "source": "11-codigo-anbima-administracao-e-gestao.md",
+          "surface": "serviços"
+        }
+      ],
+      "occurrences": 8,
+      "policy": "auto",
+      "share_of_concept": 0.471,
       "tokens": 1
     },
     {
@@ -9512,50 +9468,6 @@
       "tokens": 1
     },
     {
-      "alias": "Indexação",
-      "concept_id": "technical.indexing",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Indexação"
-        },
-        {
-          "context": "Assim, a Indexação Reforçada remete à gestão passiva porque normalmente não de",
-          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Indexação"
-        },
-        {
-          "context": "hmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexação"
-        },
-        {
-          "context": "omposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexação"
-        },
-        {
-          "context": "O grande objetivo da estratégia Indexação Pura é replicar a performance de um índice de Renda Fixa.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexação"
-        },
-        {
-          "context": "Um grande desafio da Indexação Pura diz respeito aos custos de transação, principalmente s",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexação"
-        }
-      ],
-      "occurrences": 7,
-      "policy": "unknown",
-      "share_of_concept": 0.467,
-      "tokens": 1
-    },
-    {
       "alias": "Gestão Ativa",
       "concept_id": "technical.active_management",
       "domains": [
@@ -9996,50 +9908,6 @@
       "tokens": 1
     },
     {
-      "alias": "REPO",
-      "concept_id": "technical.repo",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na v",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "REPO"
-        },
-        {
-          "context": "a de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "REPO"
-        },
-        {
-          "context": "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REP",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "REPO"
-        },
-        {
-          "context": "EPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "REPO"
-        },
-        {
-          "context": "Esse investidor pode adquirir esse REPO com recursos próprios e também de terceiros.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "REPO"
-        },
-        {
-          "context": "timo caso, ele estaria alavancado, ganhando o percentual do REPO a partir do capital de terceiros.",
-          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "REPO"
-        }
-      ],
-      "occurrences": 6,
-      "policy": "unknown",
-      "share_of_concept": 0.4,
-      "tokens": 1
-    },
-    {
       "alias": "spread",
       "concept_id": "technical.spread",
       "domains": [
@@ -10302,6 +10170,50 @@
       "policy": "unknown",
       "share_of_concept": 0.857,
       "tokens": 1
+    },
+    {
+      "alias": "bens e serviços",
+      "concept_id": "entity.goods_and_services",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "umo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "bens e serviços"
+        },
+        {
+          "context": "e consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "bens e serviços"
+        },
+        {
+          "context": "ndo as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "bens e serviços"
+        },
+        {
+          "context": "ção genericamente se refere a situações em que os preços de bens e serviços aumentam mais do que o esperado (ou inversamente).",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "bens e serviços"
+        },
+        {
+          "context": "pagam cupons fixos e a alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "bens e serviços"
+        },
+        {
+          "context": ", o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma elevação generalizad",
+          "source": "06-gestao-de-riscos.md",
+          "surface": "bens e serviços"
+        }
+      ],
+      "occurrences": 6,
+      "policy": "auto",
+      "share_of_concept": 0.857,
+      "tokens": 3
     },
     {
       "alias": "antes de",
@@ -11051,45 +10963,6 @@
       "tokens": 1
     },
     {
-      "alias": "TAXA",
-      "concept_id": "quantity.rate",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VA",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "TAXA"
-        },
-        {
-          "context": "erença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "TAXA"
-        },
-        {
-          "context": "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "TAXA"
-        },
-        {
-          "context": "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO ",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "TAXA"
-        },
-        {
-          "context": "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL",
-          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
-          "surface": "TAXA"
-        }
-      ],
-      "occurrences": 5,
-      "policy": "unknown",
-      "share_of_concept": 0.018,
-      "tokens": 1
-    },
-    {
       "alias": "valor nominal",
       "concept_id": "technical.principal",
       "domains": [
@@ -11246,6 +11119,45 @@
       "tokens": 1
     },
     {
+      "alias": "REPO",
+      "concept_id": "technical.repo",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "O Repurchase Agreement (REPO), também é conhecido como ACORDO DE RECOMPRA, consiste na v",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "Do ponto de vista do banco é um REPO (Acordo de Recompra) e do ponto de vista do Rafael é um REP",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "EPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os mil reais ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "Esse investidor pode adquirir esse REPO com recursos próprios e também de terceiros.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "REPO"
+        },
+        {
+          "context": "timo caso, ele estaria alavancado, ganhando o percentual do REPO a partir do capital de terceiros.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "REPO"
+        }
+      ],
+      "occurrences": 5,
+      "policy": "unknown",
+      "share_of_concept": 0.385,
+      "tokens": 1
+    },
+    {
       "alias": "taxa interna de retorno",
       "concept_id": "technical.irr",
       "domains": [
@@ -11399,47 +11311,8 @@
       ],
       "occurrences": 5,
       "policy": "unknown",
-      "share_of_concept": 0.217,
+      "share_of_concept": 0.278,
       "tokens": 3
-    },
-    {
-      "alias": "Exchange",
-      "concept_id": "entity.stock_exchange",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Exchange"
-        },
-        {
-          "context": " reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Exchange"
-        },
-        {
-          "context": "nds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Exchange"
-        },
-        {
-          "context": "; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Exchange"
-        },
-        {
-          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são",
-          "source": "02-gestao-de-carteiras-renda-variavel.md",
-          "surface": "Exchange"
-        }
-      ],
-      "occurrences": 5,
-      "policy": "unknown",
-      "share_of_concept": 0.217,
-      "tokens": 1
     },
     {
       "alias": "compradores",
@@ -11984,7 +11857,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.455,
+      "share_of_concept": 0.385,
       "tokens": 4
     },
     {
@@ -12023,7 +11896,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.208,
+      "share_of_concept": 0.294,
       "tokens": 1
     },
     {
@@ -12101,7 +11974,7 @@
       ],
       "occurrences": 5,
       "policy": "auto",
-      "share_of_concept": 0.455,
+      "share_of_concept": 0.385,
       "tokens": 4
     },
     {
@@ -12592,6 +12465,40 @@
       "tokens": 1
     },
     {
+      "alias": "TAXA",
+      "concept_id": "quantity.rate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VA",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "TAXA"
+        },
+        {
+          "context": "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "TAXA"
+        },
+        {
+          "context": "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO ",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "TAXA"
+        },
+        {
+          "context": "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL",
+          "source": "08-gestao-de-carteiras-de-renda-fixa.md",
+          "surface": "TAXA"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.014,
+      "tokens": 1
+    },
+    {
       "alias": "pós-fixada",
       "concept_id": "technical.postfixed",
       "domains": [
@@ -12827,7 +12734,7 @@
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.25,
+      "share_of_concept": 0.267,
       "tokens": 3
     },
     {
@@ -12895,7 +12802,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.174,
+      "share_of_concept": 0.222,
       "tokens": 1
     },
     {
@@ -13001,6 +12908,40 @@
       "tokens": 4
     },
     {
+      "alias": "ETFs",
+      "concept_id": "entity.etf",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "exados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ETFs"
+        },
+        {
+          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Í",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ETFs"
+        },
+        {
+          "context": "ETFs ASG são fundos de índice que investem em empresas levando e",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ETFs"
+        },
+        {
+          "context": "Em linhas gerais, os ETFs ASG : - Permitem investir de forma alinhada com práticas AS",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ETFs"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
       "alias": "contrato futuro",
       "concept_id": "technical.futures",
       "domains": [
@@ -13099,7 +13040,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.267,
+      "share_of_concept": 0.571,
       "tokens": 1
     },
     {
@@ -13307,38 +13248,72 @@
       "tokens": 2
     },
     {
-      "alias": "Indexing",
-      "concept_id": "technical.indexing",
+      "alias": "Enhanced Indexing",
+      "concept_id": "technical.enhanced_indexing",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "ão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
+          "context": " e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Indexing"
+          "surface": "Enhanced Indexing"
         },
         {
           "context": "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
           "source": "03-gestao-de-carteiras-renda-variavel-2.md",
-          "surface": "Indexing"
+          "surface": "Enhanced Indexing"
         },
         {
-          "context": "ratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
+          "context": "ipais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
           "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexing"
+          "surface": "Enhanced Indexing"
         },
         {
           "context": "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilidade adicional em construir a cart",
           "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
-          "surface": "Indexing"
+          "surface": "Enhanced Indexing"
         }
       ],
       "occurrences": 4,
       "policy": "unknown",
-      "share_of_concept": 0.267,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 2
+    },
+    {
+      "alias": "Indexação Reforçada",
+      "concept_id": "technical.enhanced_indexing",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Indexação Reforçada"
+        },
+        {
+          "context": "Assim, a Indexação Reforçada remete à gestão passiva porque normalmente não desvia signi",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "Indexação Reforçada"
+        },
+        {
+          "context": "omposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Indexação Reforçada"
+        },
+        {
+          "context": "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilidade adicion",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Indexação Reforçada"
+        }
+      ],
+      "occurrences": 4,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
       "alias": "retorno ativo",
@@ -13575,7 +13550,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.167,
+      "share_of_concept": 0.235,
       "tokens": 3
     },
     {
@@ -13643,7 +13618,7 @@
       ],
       "occurrences": 4,
       "policy": "auto",
-      "share_of_concept": 0.571,
+      "share_of_concept": 0.8,
       "tokens": 3
     },
     {
@@ -14308,7 +14283,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.375,
+      "share_of_concept": 0.75,
       "tokens": 3
     },
     {
@@ -15004,7 +14979,7 @@
       ],
       "occurrences": 3,
       "policy": "unknown",
-      "share_of_concept": 0.158,
+      "share_of_concept": 0.75,
       "tokens": 3
     },
     {
@@ -15617,35 +15592,6 @@
       "tokens": 1
     },
     {
-      "alias": "decidir",
-      "concept_id": "action.decide",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": " classe única de cotas, a assembleia geral de cotistas pode decidir, ainda, sobre a alternativa de transferir a administração o",
-          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "decidir"
-        },
-        {
-          "context": "stimento com classe única de cotas, a assembleia geral pode decidir, ainda, sobre a alternativa de transferir a administração o",
-          "source": "05-legislacao-regulacao-e-tributacao.md",
-          "surface": "decidir"
-        },
-        {
-          "context": "Um governo pode decidir não pagar sua dívida, mesmo que tenha a capacidade de fazê-",
-          "source": "06-gestao-de-riscos.md",
-          "surface": "decidir"
-        }
-      ],
-      "occurrences": 3,
-      "policy": "auto",
-      "share_of_concept": 0.073,
-      "tokens": 1
-    },
-    {
       "alias": "É vedado",
       "concept_id": "polarity.prohibition",
       "domains": [
@@ -16135,7 +16081,7 @@
       ],
       "occurrences": 3,
       "policy": "auto",
-      "share_of_concept": 0.073,
+      "share_of_concept": 0.077,
       "tokens": 1
     },
     {
@@ -16516,6 +16462,35 @@
       "tokens": 1
     },
     {
+      "alias": "Indexação",
+      "concept_id": "technical.indexing",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "hmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Indexação"
+        },
+        {
+          "context": "O grande objetivo da estratégia Indexação Pura é replicar a performance de um índice de Renda Fixa.",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Indexação"
+        },
+        {
+          "context": "Um grande desafio da Indexação Pura diz respeito aos custos de transação, principalmente s",
+          "source": "09-gestao-de-carteiras-de-renda-fixa-2.md",
+          "surface": "Indexação"
+        }
+      ],
+      "occurrences": 3,
+      "policy": "unknown",
+      "share_of_concept": 0.429,
+      "tokens": 1
+    },
+    {
       "alias": "Cash Flow",
       "concept_id": "entity.cash_flow",
       "domains": [
@@ -16850,54 +16825,6 @@
       "tokens": 2
     },
     {
-      "alias": "Treasury",
-      "concept_id": "entity.treasury_security",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "Treasury Bills As tem como principal característica que o seu .",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Treasury"
-        },
-        {
-          "context": "Uma Treasury STRIPS é um tipo de título criado através da separação dos ",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "Treasury"
-        }
-      ],
-      "occurrences": 2,
-      "policy": "unknown",
-      "share_of_concept": 0.25,
-      "tokens": 1
-    },
-    {
-      "alias": "TREASURY",
-      "concept_id": "entity.treasury_security",
-      "domains": [
-        "finance",
-        "cga"
-      ],
-      "examples": [
-        {
-          "context": "As TREASURY NOTES (T-NOTES) tem como principal característica que possu",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "TREASURY"
-        },
-        {
-          "context": "As TREASURY BONDS (T-BONDS) tem como principal característica que possu",
-          "source": "01-investimentos-no-exterior.md",
-          "surface": "TREASURY"
-        }
-      ],
-      "occurrences": 2,
-      "policy": "unknown",
-      "share_of_concept": 0.25,
-      "tokens": 1
-    },
-    {
       "alias": "VENCIMENTOS",
       "concept_id": "temporal.maturity",
       "domains": [
@@ -17062,7 +16989,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.133,
+      "share_of_concept": 0.154,
       "tokens": 1
     },
     {
@@ -17086,7 +17013,7 @@
       ],
       "occurrences": 2,
       "policy": "unknown",
-      "share_of_concept": 0.133,
+      "share_of_concept": 0.154,
       "tokens": 3
     },
     {
@@ -17134,7 +17061,7 @@
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.133,
+      "share_of_concept": 0.154,
       "tokens": 1
     },
     {
@@ -17330,6 +17257,30 @@
       "tokens": 1
     },
     {
+      "alias": "SEC",
+      "concept_id": "actor.sec",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " governamentais, como a Securities and Exchange Commission (SEC).",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "SEC"
+        },
+        {
+          "context": "ípica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "SEC"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.5,
+      "tokens": 1
+    },
+    {
       "alias": "Dow Jones Industrial Average",
       "concept_id": "entity.dow_jones",
       "domains": [
@@ -17400,6 +17351,30 @@
       "policy": "unknown",
       "share_of_concept": 0.018,
       "tokens": 1
+    },
+    {
+      "alias": "Exchange Traded Funds",
+      "concept_id": "entity.etf",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Exchange Traded Funds"
+        },
+        {
+          "context": "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são fundos abert",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "Exchange Traded Funds"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 3
     },
     {
       "alias": "alavancagem",
@@ -17664,6 +17639,30 @@
       "policy": "unknown",
       "share_of_concept": 0.143,
       "tokens": 3
+    },
+    {
+      "alias": "ETF",
+      "concept_id": "entity.etf",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "ao invés de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de sustentabilidade.",
+          "source": "02-gestao-de-carteiras-renda-variavel.md",
+          "surface": "ETF"
+        },
+        {
+          "context": "or terceiros não ligados ao gestor da classe investidora; - ETF; e - fundos e classes de cotas que não sejam categorizados ",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "ETF"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 1
     },
     {
       "alias": "governança",
@@ -18194,28 +18193,52 @@
       "tokens": 1
     },
     {
-      "alias": "prestador de serviços",
-      "concept_id": "actor.service_provider",
+      "alias": "prestador de serviços essencial",
+      "concept_id": "actor.essential_service_provider",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "via e criteriosa análise e seleção do contratado, devendo o prestador de serviços essencial, ainda, figurar no contrato como interveniente an",
+          "context": "via e criteriosa análise e seleção do contratado, devendo o prestador de serviços essencial, ainda, figurar no contrato como interveniente anuente.",
           "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestador de serviços"
+          "surface": "prestador de serviços essencial"
         },
         {
-          "context": " de fiscalizar ou supervisionar as atividades exercidas por prestador de serviços essencial, a remuneração de membros do comitê pode constitu",
+          "context": " de fiscalizar ou supervisionar as atividades exercidas por prestador de serviços essencial, a remuneração de membros do comitê pode constituir encargo",
           "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
-          "surface": "prestador de serviços"
+          "surface": "prestador de serviços essencial"
         }
       ],
       "occurrences": 2,
       "policy": "auto",
-      "share_of_concept": 0.286,
-      "tokens": 3
+      "share_of_concept": 0.154,
+      "tokens": 4
+    },
+    {
+      "alias": "decidir",
+      "concept_id": "action.decide",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " classe única de cotas, a assembleia geral de cotistas pode decidir, ainda, sobre a alternativa de transferir a administração o",
+          "source": "04-resolucao-cvm-175-fundos-de-investimento.md",
+          "surface": "decidir"
+        },
+        {
+          "context": "stimento com classe única de cotas, a assembleia geral pode decidir, ainda, sobre a alternativa de transferir a administração o",
+          "source": "05-legislacao-regulacao-e-tributacao.md",
+          "surface": "decidir"
+        }
+      ],
+      "occurrences": 2,
+      "policy": "auto",
+      "share_of_concept": 0.051,
+      "tokens": 1
     },
     {
       "alias": "é vedada",
@@ -19826,22 +19849,212 @@
       "tokens": 3
     },
     {
-      "alias": "treasury",
-      "concept_id": "entity.treasury_security",
+      "alias": "treasury bonds",
+      "concept_id": "entity.treasury_bond",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "s Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituiç",
+          "context": "s Bonds, nada mais são do que títulos emitidos por um país (treasury bonds) ou por empresas (corporate bonds) e demais instituições pr",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "treasury"
+          "surface": "treasury bonds"
         }
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.125,
+      "share_of_concept": 0.25,
+      "tokens": 2
+    },
+    {
+      "alias": "T-Bills",
+      "concept_id": "entity.treasury_bill",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-Bills"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "T-Notes",
+      "concept_id": "entity.treasury_note",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-Notes"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.333,
+      "tokens": 1
+    },
+    {
+      "alias": "T-Bonds",
+      "concept_id": "entity.treasury_bond",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-Bonds"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "Treasury Bills",
+      "concept_id": "entity.treasury_bill",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Treasury Bills As tem como principal característica que o seu .",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Treasury Bills"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 2
+    },
+    {
+      "alias": "T-bills",
+      "concept_id": "entity.treasury_bill",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "livre de risco (TLR) Não paga cupom (devido ao curto prazo) T-bills possuem um desconto sobre seu valor de face (como se fosse ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-bills"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "T-Bill",
+      "concept_id": "entity.treasury_bill",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-Bill"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
+      "alias": "TREASURY NOTES",
+      "concept_id": "entity.treasury_note",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENC",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "TREASURY NOTES"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.333,
+      "tokens": 2
+    },
+    {
+      "alias": "T-NOTES",
+      "concept_id": "entity.treasury_note",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS D",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-NOTES"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.333,
+      "tokens": 1
+    },
+    {
+      "alias": "TREASURY BONDS",
+      "concept_id": "entity.treasury_bond",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As TREASURY BONDS (T-BONDS) tem como principal característica que possui VENC",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "TREASURY BONDS"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 2
+    },
+    {
+      "alias": "T-BONDS",
+      "concept_id": "entity.treasury_bond",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "As TREASURY BONDS (T-BONDS) tem como principal característica que possui VENCIMENTOS C",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "T-BONDS"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
       "tokens": 1
     },
     {
@@ -19940,6 +20153,25 @@
       "tokens": 1
     },
     {
+      "alias": "Treasury",
+      "concept_id": "entity.treasury_security",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "Uma Treasury STRIPS é um tipo de título criado através da separação dos ",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Treasury"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.25,
+      "tokens": 1
+    },
+    {
       "alias": "Separate Trading of Registered Interest and Principal Securities",
       "concept_id": "technical.strips",
       "domains": [
@@ -19959,23 +20191,23 @@
       "tokens": 8
     },
     {
-      "alias": "CDs",
-      "concept_id": "technical.cds",
+      "alias": "CERTIFICATE OF DEPOSIT",
+      "concept_id": "entity.certificate_of_deposit",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "o no Brasil, os EUA também possuem seu \"FGC\" e com isso, os CDs comprado por meio de um banco segurado pelo governo federal",
+          "context": "O CERTIFICATE OF DEPOSIT (CD) é semelhante ao CDB no Brasil.",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "CDs"
+          "surface": "CERTIFICATE OF DEPOSIT"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.053,
-      "tokens": 1
+      "share_of_concept": 1.0,
+      "tokens": 3
     },
     {
       "alias": "Medium Term Notes",
@@ -20088,7 +20320,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.067,
+      "share_of_concept": 0.077,
       "tokens": 2
     },
     {
@@ -20107,7 +20339,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.067,
+      "share_of_concept": 0.077,
       "tokens": 3
     },
     {
@@ -20130,23 +20362,42 @@
       "tokens": 1
     },
     {
-      "alias": "Repo",
-      "concept_id": "technical.repo",
+      "alias": "TAXA REPO",
+      "concept_id": "technical.repo_rate",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "rdo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
+          "context": "erença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Repo"
+          "surface": "TAXA REPO"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.067,
-      "tokens": 1
+      "share_of_concept": 0.5,
+      "tokens": 2
+    },
+    {
+      "alias": "Taxa Repo",
+      "concept_id": "technical.repo_rate",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": " (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "Taxa Repo"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 2
     },
     {
       "alias": "Títulos com Retornos Elevado",
@@ -20639,12 +20890,12 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.062,
+      "share_of_concept": 0.067,
       "tokens": 2
     },
     {
-      "alias": "Securities",
-      "concept_id": "entity.securities",
+      "alias": "Securities and Exchange Commission",
+      "concept_id": "actor.sec",
       "domains": [
         "finance",
         "cga"
@@ -20653,31 +20904,50 @@
         {
           "context": "nsparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Securities"
+          "surface": "Securities and Exchange Commission"
         }
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.1,
-      "tokens": 1
+      "share_of_concept": 0.25,
+      "tokens": 4
     },
     {
-      "alias": "OTC",
-      "concept_id": "technical.otc_market",
+      "alias": "OTC Bulletin Board",
+      "concept_id": "entity.otc_bulletin_board",
       "domains": [
         "finance",
         "cga"
       ],
       "examples": [
         {
-          "context": "organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são n",
+          "context": "organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são negociadas publi",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "OTC"
+          "surface": "OTC Bulletin Board"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "unknown",
+      "share_of_concept": 0.5,
+      "tokens": 3
+    },
+    {
+      "alias": "OTCBB",
+      "concept_id": "entity.otc_bulletin_board",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "stemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as ações são negociadas publicamente",
+          "source": "01-investimentos-no-exterior.md",
+          "surface": "OTCBB"
         }
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.062,
+      "share_of_concept": 0.5,
       "tokens": 1
     },
     {
@@ -20738,8 +21008,8 @@
       "tokens": 4
     },
     {
-      "alias": "Security",
-      "concept_id": "entity.security",
+      "alias": "Security and Exchange Commission",
+      "concept_id": "actor.sec",
       "domains": [
         "finance",
         "cga"
@@ -20748,13 +21018,13 @@
         {
           "context": " dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
           "source": "01-investimentos-no-exterior.md",
-          "surface": "Security"
+          "surface": "Security and Exchange Commission"
         }
       ],
       "occurrences": 1,
-      "policy": "unknown",
-      "share_of_concept": 0.004,
-      "tokens": 1
+      "policy": "auto",
+      "share_of_concept": 0.25,
+      "tokens": 4
     },
     {
       "alias": "Fund of Funds",
@@ -21764,6 +22034,25 @@
       "tokens": 2
     },
     {
+      "alias": "serviços públicos",
+      "concept_id": "entity.goods_and_services",
+      "domains": [
+        "finance",
+        "cga"
+      ],
+      "examples": [
+        {
+          "context": "nceiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
+          "source": "03-gestao-de-carteiras-renda-variavel-2.md",
+          "surface": "serviços públicos"
+        }
+      ],
+      "occurrences": 1,
+      "policy": "auto",
+      "share_of_concept": 0.143,
+      "tokens": 2
+    },
+    {
       "alias": "Price",
       "concept_id": "quantity.price",
       "domains": [
@@ -22579,7 +22868,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.091,
+      "share_of_concept": 0.077,
       "tokens": 4
     },
     {
@@ -22959,7 +23248,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.024,
+      "share_of_concept": 0.026,
       "tokens": 1
     },
     {
@@ -25260,7 +25549,7 @@
       ],
       "occurrences": 1,
       "policy": "unknown",
-      "share_of_concept": 0.053,
+      "share_of_concept": 0.25,
       "tokens": 3
     },
     {
@@ -25754,31 +26043,31 @@
       ],
       "occurrences": 1,
       "policy": "auto",
-      "share_of_concept": 0.143,
+      "share_of_concept": 0.2,
       "tokens": 4
     }
   ],
   "registry": {
-    "concepts": 385,
-    "version": "2.24.0"
+    "concepts": 395,
+    "version": "2.26.0"
   },
   "schema_version": "precision-audit-v1",
   "statistics": {
-    "bare_token_pairs": 527,
-    "events_from_bare_tokens": 6761,
-    "events_from_phrases": 1002,
+    "bare_token_pairs": 528,
+    "events_from_bare_tokens": 6729,
+    "events_from_phrases": 1029,
     "occurrences_per_pair": {
       "max": 181,
-      "mean": 8.96,
+      "mean": 8.8,
       "median": 2.0,
-      "p90": 21,
-      "stdev": 20.84
+      "p90": 20,
+      "stdev": 20.68
     },
-    "phrase_pairs": 339
+    "phrase_pairs": 354
   },
   "totals": {
-    "concepts_with_matches": 320,
-    "distinct_pairs": 866,
-    "match_events": 7763
+    "concepts_with_matches": 330,
+    "distinct_pairs": 882,
+    "match_events": 7758
   }
 }

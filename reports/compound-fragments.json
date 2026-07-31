@@ -1,53 +1,39 @@
 {
-  "bare_english_automatic_forms": 255,
+  "bare_english_automatic_forms": 288,
   "findings": [
     {
       "compounds": [
         [
-          "Enhanced Indexing",
-          4
+          "Call Gr",
+          1
+        ],
+        [
+          "Call Embutida",
+          1
         ]
       ],
-      "concept_id": "technical.indexing",
+      "concept_id": "technical.call_option",
       "examples": [
-        "ão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-        "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
-        "ratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
-        "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilidade adicional em constr"
+        "Gráfico: Renda Fixa com Call Gráfico: Renda Fixa com PUT",
+        "Desta forma títulos com Call Embutida não possuem valorização “infinita”, quan"
       ],
-      "form": "Indexing",
+      "form": "Call",
       "fragment_share": 1.0,
-      "inside_a_compound": 4,
-      "occurrences": 4
+      "inside_a_compound": 2,
+      "occurrences": 2
     },
     {
       "compounds": [
         [
-          "Securities a",
+          "Uma Treasury STRIPS",
           1
         ]
       ],
-      "concept_id": "entity.securities",
+      "concept_id": "entity.treasury_security",
       "examples": [
-        "nsparente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC)."
+        "Uma Treasury STRIPS é um tipo de título criado através da sepa"
       ],
-      "form": "Securities",
-      "fragment_share": 1.0,
-      "inside_a_compound": 1,
-      "occurrences": 1
-    },
-    {
-      "compounds": [
-        [
-          "OTC Bulletin Board",
-          1
-        ]
-      ],
-      "concept_id": "technical.otc_market",
-      "examples": [
-        "organizado inclui sistemas de negociação eletrônica, como o OTC Bulletin Board (OTCBB) e o Pink Sheets, onde as a"
-      ],
-      "form": "OTC",
+      "form": "Treasury",
       "fragment_share": 1.0,
       "inside_a_compound": 1,
       "occurrences": 1
@@ -55,15 +41,15 @@
     {
       "compounds": [
         [
-          "Security a",
+          "CALL EMBUTIDA",
           1
         ]
       ],
-      "concept_id": "entity.security",
+      "concept_id": "technical.call_option",
       "examples": [
-        " dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
+        "axa de 10% ao ano, ele acrescentará mais taxa (o título com CALL EMBUTIDA estará remunerando 12%.a.)."
       ],
-      "form": "Security",
+      "form": "CALL",
       "fragment_share": 1.0,
       "inside_a_compound": 1,
       "occurrences": 1
@@ -135,6 +121,49 @@
     {
       "compounds": [
         [
+          "ETFs ASG",
+          2
+        ],
+        [
+          "Os ETFs",
+          1
+        ]
+      ],
+      "concept_id": "entity.etf",
+      "examples": [
+        "Os ETFs (Exchange Traded Funds), conhecidos também como F",
+        "ETFs ASG são fundos de índice que investem em empresas",
+        "Em linhas gerais, os ETFs ASG : - Permitem investir de forma alinhada com p"
+      ],
+      "form": "ETFs",
+      "fragment_share": 0.75,
+      "inside_a_compound": 3,
+      "occurrences": 4
+    },
+    {
+      "compounds": [
+        [
+          "USULA DE PUT EMBUTIDA",
+          1
+        ],
+        [
+          "PUT Embutida",
+          1
+        ]
+      ],
+      "concept_id": "technical.put_option",
+      "examples": [
+        "Já a CLÁUSULA DE PUT EMBUTIDA beneficia O INVESTIDOR, pois caso as tax",
+        "E títulos de renda fixa com cláusula de PUT Embutida não possuem desvalorização “infinita”, q"
+      ],
+      "form": "PUT",
+      "fragment_share": 0.667,
+      "inside_a_compound": 2,
+      "occurrences": 3
+    },
+    {
+      "compounds": [
+        [
           "RepRisk Index",
           2
         ]
@@ -165,6 +194,22 @@
       "fragment_share": 0.5,
       "inside_a_compound": 2,
       "occurrences": 4
+    },
+    {
+      "compounds": [
+        [
+          "ETF ASG",
+          1
+        ]
+      ],
+      "concept_id": "entity.etf",
+      "examples": [
+        "ao invés de seguir um índice tradicional como o Ibovespa, o ETF ASG replica um índice de sustentabilidade."
+      ],
+      "form": "ETF",
+      "fragment_share": 0.5,
+      "inside_a_compound": 1,
+      "occurrences": 2
     },
     {
       "compounds": [
@@ -201,6 +246,27 @@
     {
       "compounds": [
         [
+          "REPO Reverso",
+          1
+        ],
+        [
+          "REPO a",
+          1
+        ]
+      ],
+      "concept_id": "technical.repo",
+      "examples": [
+        "EPO (Acordo de Recompra) e do ponto de vista do Rafael é um REPO Reverso (Acordo de Recompra Reverso), no qual os ",
+        "timo caso, ele estaria alavancado, ganhando o percentual do REPO a partir do capital de terceiros."
+      ],
+      "form": "REPO",
+      "fragment_share": 0.4,
+      "inside_a_compound": 2,
+      "occurrences": 5
+    },
+    {
+      "compounds": [
+        [
           "Beta MAIOR",
           1
         ],
@@ -218,6 +284,45 @@
       "fragment_share": 0.4,
       "inside_a_compound": 2,
       "occurrences": 5
+    },
+    {
+      "compounds": [
+        [
+          "Duration Curta",
+          1
+        ],
+        [
+          "Qual a Duration",
+          1
+        ],
+        [
+          "Duration a",
+          1
+        ],
+        [
+          "Duration MENOR",
+          1
+        ],
+        [
+          "Duration Maior",
+          1
+        ],
+        [
+          "Duration Erro",
+          1
+        ]
+      ],
+      "concept_id": "technical.duration",
+      "examples": [
+        "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno",
+        "Qual a Duration da carteira abaixo de duplicatas no valor total d",
+        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encon",
+        "o SEM cupom com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!"
+      ],
+      "form": "Duration",
+      "fragment_share": 0.333,
+      "inside_a_compound": 6,
+      "occurrences": 18
     },
     {
       "compounds": [
@@ -248,41 +353,18 @@
     {
       "compounds": [
         [
-          "Duration Curta",
-          1
-        ],
-        [
-          "Qual a Duration",
-          1
-        ],
-        [
-          "Duration a",
-          1
-        ],
-        [
-          "Duration MENOR",
-          1
-        ],
-        [
-          "Duration Maior",
-          1
-        ],
-        [
-          "Sendo a Duration",
+          "Flattening Considerando",
           1
         ]
       ],
-      "concept_id": "technical.duration",
+      "concept_id": "technical.flattening",
       "examples": [
-        "Mais comuns: 1,3 e 6 meses (Duration Curta) Usados como estimativas de taxa de retorno",
-        "Qual a Duration da carteira abaixo de duplicatas no valor total d",
-        "Podemos aproximar o valor da Duration através do Cálculo do Prazo Médio, ou seja, encon",
-        "o SEM cupom com mesmo vencimento, o título COM cupom possui Duration MENOR, e o SEM cupom, possui Duration Maior!"
+        "Flattening Considerando carteiras com mesma duration, mas di"
       ],
-      "form": "Duration",
-      "fragment_share": 0.292,
-      "inside_a_compound": 7,
-      "occurrences": 24
+      "form": "Flattening",
+      "fragment_share": 0.333,
+      "inside_a_compound": 1,
+      "occurrences": 3
     },
     {
       "compounds": [
@@ -396,6 +478,38 @@
     {
       "compounds": [
         [
+          "Nasdaq Composite",
+          1
+        ]
+      ],
+      "concept_id": "entity.nasdaq",
+      "examples": [
+        "erados a referência para o setor de tecnologia, sendo eles: Nasdaq Composite: Índice composto pelo desempenho de mai"
+      ],
+      "form": "Nasdaq",
+      "fragment_share": 0.167,
+      "inside_a_compound": 1,
+      "occurrences": 6
+    },
+    {
+      "compounds": [
+        [
+          "Com a Ladder",
+          1
+        ]
+      ],
+      "concept_id": "technical.ladder",
+      "examples": [
+        "Com a Ladder, conforme os títulos vencem, os recursos podem se"
+      ],
+      "form": "Ladder",
+      "fragment_share": 0.167,
+      "inside_a_compound": 1,
+      "occurrences": 6
+    },
+    {
+      "compounds": [
+        [
           "Ibovespa a",
           2
         ],
@@ -414,27 +528,6 @@
       "fragment_share": 0.15,
       "inside_a_compound": 3,
       "occurrences": 20
-    },
-    {
-      "compounds": [
-        [
-          "Os CDS",
-          1
-        ],
-        [
-          "CDS a",
-          1
-        ]
-      ],
-      "concept_id": "technical.cds",
-      "examples": [
-        "Os CDS mudam de valor ao longo de suas vidas conforme a ",
-        "Os spreads de CDS aproximam-se de zero à medida que o CDS se aproxi"
-      ],
-      "form": "CDS",
-      "fragment_share": 0.143,
-      "inside_a_compound": 2,
-      "occurrences": 14
     },
     {
       "compounds": [
@@ -474,11 +567,11 @@
       "occurrences": 41
     }
   ],
-  "forms_with_fragment_matches": 24,
+  "forms_with_fragment_matches": 29,
   "registry": {
-    "concepts": 351,
-    "version": "2.21.0"
+    "concepts": 395,
+    "version": "2.26.0"
   },
   "schema_version": "compound-fragments-v1",
-  "total_fragment_events": 53
+  "total_fragment_events": 58
 }

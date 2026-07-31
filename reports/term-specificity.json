@@ -1,0 +1,25 @@
+{
+  "backtest": {
+    "best_threshold": 0.92,
+    "known_domain": {
+      "mean": 0.878,
+      "n": 25
+    },
+    "known_general": {
+      "mean": 0.9083,
+      "n": 30
+    },
+    "usable": false,
+    "youden_j": 0.253
+  },
+  "domain_mass_by_this_signal": null,
+  "gap_to_target_occurrences": 1743,
+  "mass_not_scorable": 4198,
+  "schema_version": "term-specificity-v1",
+  "signal": "normalised entropy of the content words surrounding each occurrence",
+  "terms": [],
+  "terms_below_min_occurrences": 2883,
+  "terms_scored": 886,
+  "verdict": "The signal does not separate known-domain from known-general terms well enough to carry a verdict. The coverage question stays open, which is the honest answer — a third round of hand-written morphology would move the error, not remove it.",
+  "why_not_wordnet": "Two wordnet-based attempts misclassified inflected verbs as domain vocabulary because a lemma index does not contain them, and each round of hand-written morphology moved the error instead of removing it. This signal reads the corpus and has no morphology to get wrong."
+}

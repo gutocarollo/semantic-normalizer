@@ -1,36 +1,36 @@
 {
-  "events_total": 7763,
+  "events_total": 7758,
   "occurrences_per_pair": {
     "max": 181,
-    "mean": 8.96,
+    "mean": 8.8,
     "median": 2.0,
-    "stdev": 20.84
+    "stdev": 20.68
   },
   "registry": {
-    "concepts": 385,
-    "version": "2.24.0"
+    "concepts": 395,
+    "version": "2.26.0"
   },
   "schema_version": "precision-strata-v1",
   "strata": {
     "A_phrase": {
-      "events": 1002,
-      "share": 0.1291
+      "events": 1029,
+      "share": 0.1326
     },
     "B_domain_exclusive": {
-      "events": 785,
-      "share": 0.1011
+      "events": 775,
+      "share": 0.0999
     },
     "D_risk_surface": {
-      "events": 5976,
-      "share": 0.7698
+      "events": 5954,
+      "share": 0.7675
     }
   },
   "sweep": {
     "ceiling_if_sweep_perfect": 1.0,
-    "events": 5976,
-    "floor_if_sweep_all_wrong": 0.2302,
-    "pairs": 367,
-    "share_of_all_events": 0.7698
+    "events": 5954,
+    "floor_if_sweep_all_wrong": 0.2325,
+    "pairs": 366,
+    "share_of_all_events": 0.7675
   },
   "sweep_queue": [
     {
@@ -4198,33 +4198,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "entity.service",
-      "form": "serviços",
-      "general_senses": 13,
-      "glosses": [
-        "uma parte específica do trabalho que requer ser feito como um dever ou"
-      ],
-      "occurrences": 15,
-      "quotes": [
-        "s de tecnologia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
-        "ok e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
-        "onsumo Discricionário: este setor inclui empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível, como",
-        "r de consumo discricionário, que engloba empresas que produzem bens e serviços que as pessoas compram quando têm dinheiro disponível.",
-        "quando as pessoas têm menos dinheiro disponível para gastar em bens e serviços não essenciais.",
-        "setor financeiro, blue chips, cíclicas, utilities (concessionárias de serviços públicos).",
-        "- Deve fiscalizar os serviços prestados por ele contratado.",
-        "do, com terceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
-        "internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
-        "flação genericamente se refere a situações em que os preços de bens e serviços aumentam mais do que o esperado (ou inversamente).",
-        "es pagam cupons fixos e a alta da inflação diminui o número de bens e serviços reais que esses pagamentos de cupons de títulos comprarão.",
-        "umo, o risco de inflação remete à probabilidade de o valor dos bens e serviços ser afetado negativamente devido a uma elevação generalizad",
-        " principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
-        "A administração fiduciária compreende o conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
-        "estimento e no limite de suas competências, terceiros para prestar os serviços permitidos pela regulação em vigor específicos para cada ti"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "action.allocate",
       "form": "alocação",
       "general_senses": 1,
@@ -4560,27 +4533,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "quantity.rate",
-      "form": "Taxa",
-      "general_senses": 5,
-      "glosses": [],
-      "occurrences": 11,
-      "quotes": [
-        "PO Reverso (Acordo de Recompra Reverso), no qual os mil reais foram a Taxa Repo.",
-        "A taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros ",
-        "Algumas características da SOFR: ➢ Taxa média de juros: assim como a Libor, a SOFR representa a tax",
-        "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na ",
-        "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ",
-        "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aul",
-        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local do invest",
-        "A Taxa de Recuperação, por sua vez, refere-se à possibilidade de s",
-        "A Taxa de Recuperação seria, portanto, de 80% (1 – LGD).",
-        "elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liq",
-        "os financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco "
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "entity.market",
       "form": "mercados",
       "general_senses": 9,
@@ -4625,31 +4577,6 @@
         "Relembrando a fórmula: Em que: V- = Valor do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor ",
         " que: V- = Valor do ativo quando a taxa de juros cai = 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inici",
         " 1.091,59; V+ = Valor do ativo quando a taxa de juros sobe = 918 V₀ = Valor inicial do ativo = 1.000; = Variação da taxa de juros = 0.0"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "action.decide",
-      "form": "decisão",
-      "general_senses": 5,
-      "glosses": [
-        "o ato de se decidir sobre alguma coisa;\"o peso da decisão era dele\"; \"",
-        "Uma posição ou opinião ou decisão chegada após consideração",
-        "uma vitória vencida por pontos quando nenhum nocaute ocorreu"
-      ],
-      "occurrences": 11,
-      "quotes": [
-        "ções não estão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
-        "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empr",
-        "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode ",
-        "omendações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
-        " transferidas (não podem ser vendidas, somente resgatadas), salvo por decisão judicial, execução de garantia ou sucessão universal (verem",
-        "finir claramente os objetivos de investimento antes de tomar qualquer decisão.",
-        "- Pode ser aplicado para diferentes períodos de tempo de acordo com a decisão do analista.",
-        "is fatores relacionados à atribuição macro: - Política de alocação: é decisão do patrocinador determinar as categorias de ativos e os pes",
-        "A decisão de aumentar a alocação de um título específico, por exemplo",
-        "deríamos resumir como um “não fazer nada”, que também é uma tomada de decisão.",
-        " um processo de investimento que combine modelos de apoio à tomada de decisão com análises de cenários econômicos derivadas da experiênci"
       ],
       "stratum": "D_risk_surface"
     },
@@ -4854,6 +4781,50 @@
         "= Peso no portfólio do setor i; - = Peso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor ",
         "eso no benchmark do setor i; - = Retorno no portfólio do setor i; - = Retorno no benchmark do setor i; - $N$ = Número de setores.",
         "Retorno do principal (FV) (2) Determinar a taxa de desconto mais ad"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "quantity.rate",
+      "form": "Taxa",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 10,
+      "quotes": [
+        "A taxa Libor, que significa \"London Interbank Offered Rate\" (Taxa de Oferta Interbancária de Londres), era uma taxa de juros ",
+        "Algumas características da SOFR: ➢ Taxa média de juros: assim como a Libor, a SOFR representa a tax",
+        "Isso porque neste contrato é negociado a Taxa Média de Depósitos Interfinanceiros de Um Dia negociado na ",
+        "- Taxa pós-fixada: 100% do CDI Desta forma, a RToro Education S/A ",
+        "Há também os Riscos de Taxa de Juros e de Curva de Juros, mas que serão tratados na aul",
+        "O Risco de Câmbio, mais formalmente chamado Risco de Taxa de Câmbio é causado por flutuações na moeda local do invest",
+        "A Taxa de Recuperação, por sua vez, refere-se à possibilidade de s",
+        "A Taxa de Recuperação seria, portanto, de 80% (1 – LGD).",
+        "elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liq",
+        "os financeiros, sendo seus principais: - Risco de Mercado; - Risco de Taxa de Juros; - Risco de Liquidez; - Risco de Crédito: - Risco "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.decide",
+      "form": "decisão",
+      "general_senses": 5,
+      "glosses": [
+        "o ato de se decidir sobre alguma coisa;\"o peso da decisão era dele\"; \"",
+        "Uma posição ou opinião ou decisão chegada após consideração",
+        "uma vitória vencida por pontos quando nenhum nocaute ocorreu"
+      ],
+      "occurrences": 10,
+      "quotes": [
+        "ções não estão amplamente disponíveis e há ainda o risco de tomar uma decisão equivocada em função do Survivorship Bias.",
+        "Tem como missão apoiar os investidores na tomada de decisão de investimentos socialmente responsáveis e induzir as empr",
+        "Eventualmente, uma decisão isolada do gestor pode não ter um efeito tão bom, mas pode ",
+        "omendações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada.",
+        "finir claramente os objetivos de investimento antes de tomar qualquer decisão.",
+        "- Pode ser aplicado para diferentes períodos de tempo de acordo com a decisão do analista.",
+        "is fatores relacionados à atribuição macro: - Política de alocação: é decisão do patrocinador determinar as categorias de ativos e os pes",
+        "A decisão de aumentar a alocação de um título específico, por exemplo",
+        "deríamos resumir como um “não fazer nada”, que também é uma tomada de decisão.",
+        " um processo de investimento que combine modelos de apoio à tomada de decisão com análises de cenários econômicos derivadas da experiênci"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5098,6 +5069,26 @@
         "o administradora do fundo de investimento poderá adotar o critério do custo médio ou do custo específico de cada certificado ou cota.",
         "o fundo de investimento poderá adotar o critério do custo médio ou do custo específico de cada certificado ou cota.",
         "Isso ocorre porque o custo do hedge e a precificação dos instrumentos utilizados podem"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "entity.service",
+      "form": "serviços",
+      "general_senses": 13,
+      "glosses": [
+        "uma parte específica do trabalho que requer ser feito como um dever ou"
+      ],
+      "occurrences": 8,
+      "quotes": [
+        "s de tecnologia, como fabricantes de hardware e software, empresas de serviços de internet e outras empresas de tecnologia.",
+        "ok e Alphabet (empresa-mãe do Google); Financeiro: inclui empresas de serviços financeiros, como bancos, seguradoras, gestoras de ativos e",
+        "- Deve fiscalizar os serviços prestados por ele contratado.",
+        "do, com terceiros devidamente habilitados e autorizados, os seguintes serviços: - tesouraria, controle e processamento dos ativos; - escri",
+        "internos, a instituição pode reduzir custos, melhorar a qualidade dos serviços e aumentar a produtividade.",
+        " principais palavras são: - **ADMINISTRAÇÃO FIDUCIÁRIA:** conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "A administração fiduciária compreende o conjunto de serviços relacionados direta ou indiretamente ao funcionamento e à m",
+        "estimento e no limite de suas competências, terceiros para prestar os serviços permitidos pela regulação em vigor específicos para cada ti"
       ],
       "stratum": "D_risk_surface"
     },
@@ -5367,23 +5358,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "technical.indexing",
-      "form": "Indexação",
-      "general_senses": 2,
-      "glosses": [],
-      "occurrences": 7,
-      "quotes": [
-        " ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-        "Assim, a Indexação Reforçada remete à gestão passiva porque normalmente não de",
-        " a um benchmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão",
-        "de ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
-        "O grande objetivo da estratégia Indexação Pura é replicar a performance de um índice de Renda Fixa.",
-        "Um grande desafio da Indexação Pura diz respeito aos custos de transação, principalmente s",
-        "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilida"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "technical.convexity",
       "form": "Convexidade",
       "general_senses": 2,
@@ -5636,21 +5610,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "quantity.rate",
-      "form": "TAXA",
-      "general_senses": 5,
-      "glosses": [],
-      "occurrences": 5,
-      "quotes": [
-        "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VA",
-        "Esta diferença de preços é o JUROS DA OPERAÇÃO, no qual chamamos de TAXA REPO.",
-        "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO ",
-        "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO ",
-        "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "action.subscribe",
       "form": "aplicar",
       "general_senses": 10,
@@ -5683,28 +5642,6 @@
         "- As informações e a modelagem nem sempre estão disponíveis e ainda podem ser caras para imple",
         "Esta metodologia não considera a hipótese de reinvestimento e nem o recebimento final da dívida (desconsidera o ágio ou deság",
         "Todos nós temos acesso a investimentos em ações, mas nem todos tem acesso a comprar ações de uma companhia fechada."
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.stock_exchange",
-      "form": "Exchange",
-      "general_senses": 17,
-      "glosses": [
-        "(chess) the capture by both players (usually on consecutive moves) of ",
-        "(chess) gaining (or losing) a rook in return for a knight or bishop; \"",
-        "the act of putting one thing or person in the place of another: \"he se",
-        "reciprocal transfer of equivalent sums of money (especially the curren",
-        "the act of giving something in return for something received; \"deducti",
-        "the act of changing one thing for another thing; \"Adam was promised im"
-      ],
-      "occurrences": 5,
-      "quotes": [
-        ", existem dois tipos de mercados financeiros: a Bolsa de Valores (ou \"Exchange\") e o Mercado de Balcão (ou \"OTC Market\").",
-        "ente e são reguladas por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
-        "s Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds.",
-        " Indexados; - Futuros de Ações; - Total Return Equity Swap; e - ETFs (Exchange Traded Funds).",
-        "Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, são"
       ],
       "stratum": "D_risk_surface"
     },
@@ -6007,6 +5944,20 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "quantity.rate",
+      "form": "TAXA",
+      "general_senses": 5,
+      "glosses": [],
+      "occurrences": 4,
+      "quotes": [
+        "A TAXA de cupom permanece a MESMA pelo prazo do título, porém o VA",
+        "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO ",
+        "Já quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO ",
+        "SABENDO QUE SUA TAXA DO CUPOM É DE 12% AO ANO, COM PAGAMENTO ANUAL, CALCULE QUAL"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.start",
       "form": "começa",
       "general_senses": 7,
@@ -6093,22 +6044,6 @@
         "- Dividendos: são o foco desses investidores, buscando empresas sólidas ",
         "sa, como também faz projeções destes indicadores, como por exemplo: - Dividendos; - Geração de caixa (\"EBITDA\" – LAJIDA); - Estrutura de cap",
         "- Dividendos: por serem empresas, os fundos fechados podem fazer distrib"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "technical.indexing",
-      "form": "Indexing",
-      "general_senses": 1,
-      "glosses": [
-        "the act of classifying and providing an index in order to make items e"
-      ],
-      "occurrences": 4,
-      "quotes": [
-        ", e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada.",
-        "Com baixo tracking error e retorno ativo, a Enhanced Indexing costuma apresentar bons Information Ratios (IR).",
-        "cipais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão Ativa.",
-        "Já a Indexação Reforçada, ou Enhanced Indexing, permite alguma flexibilidade adicional em construir a cart"
       ],
       "stratum": "D_risk_surface"
     },
@@ -6442,23 +6377,6 @@
       "stratum": "D_risk_surface"
     },
     {
-      "concept_id": "action.decide",
-      "form": "decidir",
-      "general_senses": 11,
-      "glosses": [
-        "escolher",
-        "chegar, fazer uma decisão sobre algo",
-        "pôr um fim; resolver conclusivamente"
-      ],
-      "occurrences": 3,
-      "quotes": [
-        "imento com classe única de cotas, a assembleia geral de cotistas pode decidir, ainda, sobre a alternativa de transferir a administração o",
-        "do de investimento com classe única de cotas, a assembleia geral pode decidir, ainda, sobre a alternativa de transferir a administração o",
-        "Um governo pode decidir não pagar sua dívida, mesmo que tenha a capacidade de fazê-"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
       "concept_id": "polarity.affirmation",
       "form": "expressamente",
       "general_senses": 2,
@@ -6636,6 +6554,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "technical.indexing",
+      "form": "Indexação",
+      "general_senses": 2,
+      "glosses": [],
+      "occurrences": 3,
+      "quotes": [
+        " a um benchmark pode ser decomposta em três principais estratégias: - Indexação Pura; - Indexação Reforçada (Enhanced Indexing); e - Gestão",
+        "O grande objetivo da estratégia Indexação Pura é replicar a performance de um índice de Renda Fixa.",
+        "Um grande desafio da Indexação Pura diz respeito aos custos de transação, principalmente s"
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "quantity.impact",
       "form": "Impacto",
       "general_senses": 3,
@@ -6715,6 +6646,18 @@
       "quotes": [
         " para vários tipos de transações financeiras, como contratos de swap, futuros, e opções.",
         " podem ser mitigados usando vários instrumentos de investimento, como futuros ou termos de moeda ou ainda opções."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "actor.sec",
+      "form": "SEC",
+      "general_senses": 1,
+      "glosses": [],
+      "occurrences": 2,
+      "quotes": [
+        "por órgãos governamentais, como a Securities and Exchange Commission (SEC).",
+        "erística típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
       ],
       "stratum": "D_risk_surface"
     },
@@ -6950,6 +6893,22 @@
       "quotes": [
         "Sem dúvida são pontos de atenção quando se utiliza relatórios d",
         " | 3,01% | 6,10% | 4,50% | | Cenário | Movimentação | |---|---| | 1 | Sem movimentações."
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
+      "concept_id": "action.decide",
+      "form": "decidir",
+      "general_senses": 11,
+      "glosses": [
+        "escolher",
+        "chegar, fazer uma decisão sobre algo",
+        "pôr um fim; resolver conclusivamente"
+      ],
+      "occurrences": 2,
+      "quotes": [
+        "imento com classe única de cotas, a assembleia geral de cotistas pode decidir, ainda, sobre a alternativa de transferir a administração o",
+        "do de investimento com classe única de cotas, a assembleia geral pode decidir, ainda, sobre a alternativa de transferir a administração o"
       ],
       "stratum": "D_risk_surface"
     },
@@ -7280,6 +7239,19 @@
       "stratum": "D_risk_surface"
     },
     {
+      "concept_id": "entity.treasury_bill",
+      "form": "T-Bill",
+      "general_senses": 1,
+      "glosses": [
+        "a short-term obligation that is not interest-bearing (it is purchased "
+      ],
+      "occurrences": 1,
+      "quotes": [
+        "Desta forma, ele analisa a compra de uma T-Bill que está sendo negociada com deságio de 10% ao ano sobre o "
+      ],
+      "stratum": "D_risk_surface"
+    },
+    {
       "concept_id": "action.pay",
       "form": "Pagamentos",
       "general_senses": 3,
@@ -7384,24 +7356,6 @@
       "occurrences": 1,
       "quotes": [
         "NASDAQ: Esta bolsa de valores americana, é a segunda maior do mund"
-      ],
-      "stratum": "D_risk_surface"
-    },
-    {
-      "concept_id": "entity.security",
-      "form": "Security",
-      "general_senses": 9,
-      "glosses": [
-        "measures taken as a precaution against theft or espionage or sabotage ",
-        "an electrical device that sets off an alarm when someone tries to brea",
-        "a guarantee that an obligation will be met",
-        "freedom from anxiety or fear; \"the watch dog gave her a feeling of sec",
-        "a department responsible for the security of the institution's propert",
-        "defense against financial failure; financial independence; \"his pensio"
-      ],
-      "occurrences": 1,
-      "quotes": [
-        "ica típica dos Hedge Funds é que não são tão regulamentados pela SEC (Security and Exchange Commission) quanto os Mutual Funds."
       ],
       "stratum": "D_risk_surface"
     },

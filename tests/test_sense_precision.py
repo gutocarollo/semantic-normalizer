@@ -242,6 +242,24 @@ CASES = [
      "actor.service_provider", True),
     ("Os prestadores de serviços essenciais são o administrador e o gestor.",
      "actor.essential_service_provider", True),
+    # Round after the phase-two repairs. The fix for `bolsa de valores` shipped with the bare
+    # English `exchange` automatic, and 4 of its 5 occurrences are `Securities and Exchange
+    # Commission` or `Exchange Traded Funds` — the fifth repetition of the Hedge Funds class,
+    # listed at 0.80 by the detector whose output I did not read after registering the concept.
+    ("Reguladas por órgãos como a Securities and Exchange Commission (SEC).", "entity.stock_exchange", False),
+    ("Reguladas por órgãos como a Securities and Exchange Commission (SEC).", "actor.sec", True),
+    ("ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice.", "entity.etf", True),
+    ("A Bolsa de Valores (ou Exchange) e o Mercado de Balcão.", "entity.stock_exchange", True),
+    ("Devendo o prestador de serviços essencial figurar no contrato.",
+     "actor.essential_service_provider", True),
+    ("Salvo por decisão judicial, execução de garantia ou sucessão universal.", "action.decide", False),
+    ("O gestor deve tomar decisões de investimento conscientes.", "action.decide", True),
+    # entity.service was DEFINED elastically in the amendment that was repairing an elastic
+    # definition elsewhere: "work under contract, OR a good's counterpart in consumption" makes
+    # a false positive impossible. Split.
+    ("Os preços de bens e serviços aumentam mais do que o esperado.", "entity.service", False),
+    ("Os preços de bens e serviços aumentam mais do que o esperado.", "entity.goods_and_services", True),
+    ("O contrato de prestação de serviços ao fundo celebrado com o cogestor.", "entity.service", True),
     ("A duration de um título zero-cupom, sem pagamentos de juros, é igual ao prazo.", "polarity.absence", True),
     ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "entity.asset", False),
     ("O EXPORTADOR FICA PASSIVO EM DÓLAR e ativo em taxa de juros.", "technical.swap_leg", True),

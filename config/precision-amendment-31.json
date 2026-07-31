@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-31",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; batch 24 collision the importer's demoter missed",
+  "method": "the registry validator rejected the load with `automatic form collision 'CDS'`; the importer's demoter had passed it",
+  "reason": "`CDs` and `CDS` are one surface to the matcher and were two keys in the importer's collision demoter, which was case-sensitive while the contract it exists to satisfy is not.",
+  "operations": [
+    {"op": "demote", "concept": "technical.cds", "language": "en", "form": "CDS",
+     "wrong": 2, "total": 16,
+     "why": "`os CDs comprado por meio de um banco segurado pelo governo federal` is a Certificate of Deposit. The acronym is genuinely shared, so review on both sides is the correct outcome — the same resolution as `IR`. `credit default swap` and `credit default swaps` keep technical.cds anchored, and `certificado de depósito` anchors the other."},
+    {"op": "demote", "concept": "entity.certificate_of_deposit", "language": "en", "form": "CDs"},
+    {"op": "demote", "concept": "entity.certificate_of_deposit", "language": "pt-BR", "form": "CDs"},
+    {"op": "demote", "concept": "entity.certificate_of_deposit", "language": "pt-BR", "form": "CD"},
+    {"op": "demote", "concept": "entity.certificate_of_deposit", "language": "en", "form": "CD"}
+  ]
+}

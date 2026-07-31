@@ -155,18 +155,22 @@ def main() -> int:
 
     # Any surface that would resolve automatically to two concepts is ambiguous, not
     # automatic: demote every side. The registry contract rejects the collision outright.
+    #
+    # Keyed CASEFOLDED, because the contract is. `CDs` and `CDS` are one surface to the matcher
+    # and were two keys here, so the demoter passed them and the registry validator rejected the
+    # load — a guard that is stricter than the guard it is meant to satisfy is not a guard.
     owners: dict[tuple[str, str], set[str]] = {}
     for record in current:
         for lang, entries in record["lexical_forms"].items():
             for item in entries:
                 if item["policy"] == "auto":
-                    owners.setdefault((lang, item["form"]), set()).add(record["concept_id"])
+                    owners.setdefault((lang, item["form"].casefold()), set()).add(record["concept_id"])
     ambiguous = {key for key, ids in owners.items() if len(ids) > 1}
     demoted = []
     for record in current:
         for lang, entries in record["lexical_forms"].items():
             for item in entries:
-                if (lang, item["form"]) in ambiguous and item["policy"] == "auto":
+                if (lang, item["form"].casefold()) in ambiguous and item["policy"] == "auto":
                     item["policy"] = "review"
                     demoted.append(f"{record['concept_id']}.{lang}:{item['form']}")
 

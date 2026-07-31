@@ -1,0 +1,11 @@
+{
+  "batch": 24,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "A draw against 2.25.0 found `CDs` matching technical.cds — but in `os CDs comprado por meio de um banco segurado pelo governo federal` it is Certificates of Deposit, not Credit Default Swaps. An acronym collision, the same shape as `IR` (Imposto de Renda vs Information Ratio) that this campaign fixed in its first batch, and the repair is the same: register the sense that was missing so the collision demoter can see the contention it could not see before.",
+  "concepts": [
+    {"id": "entity.certificate_of_deposit", "en": "certificate of deposit", "pt": "certificado de depósito", "class": "entity", "pos": "noun",
+     "def": "A time deposit issued by a bank, insured up to a limit by the deposit guarantee scheme.",
+     "alt_en": ["CD", "CDs", "Certificates of Deposit"], "alt_pt": ["CD", "CDs"],
+     "authority": "apostila-cga-2026#01-investimentos-no-exterior"}
+  ]
+}

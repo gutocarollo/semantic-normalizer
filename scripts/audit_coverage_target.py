@@ -38,48 +38,47 @@ DEFAULT_QUEUE = ROOT / "reports" / "oov-queue.json"
 DEFAULT_BASELINE = ROOT / "reports" / "coverage-baseline.json"
 DEFAULT_OUTPUT = ROOT / "reports" / "coverage-target-audit.json"
 
-DEPLURAL = (
-    (re.compile(r"ções$"), "ção"), (re.compile(r"ães$"), "ão"), (re.compile(r"ões$"), "ão"),
-    (re.compile(r"([aeiou])is$"), r"\1l"), (re.compile(r"ns$"), "m"),
-    (re.compile(r"(z|r|s)es$"), r"\1"), (re.compile(r"s$"), ""),
-)
-# Portuguese verb endings, enough to recover the infinitive a general wordnet indexes. The first
-# version of this script only undid plurals, so `vamos`, `permitem`, `devemos`, `negociadas` and
-# `emitidos` returned zero senses and were filed as DOMAIN vocabulary — a morphological failure
-# read as a semantic finding. An adversarial review measured the damage: 26 % of the zero-sense
-# bucket is inflected verbs, and the conclusion drawn from that bucket was the whole argument.
-CONJUGATION = (
-    (re.compile(r"(a|e|i)(mos|ram|rem|sse|ssem|ndo|das|dos|da|do|va|vam|ria|riam|rão|rá)$"), r"\1r"),
-    (re.compile(r"(a|e|i)(m|s|u)$"), r"\1r"),
-    (re.compile(r"[aeiou]$"), "ar"),
-)
-ADVERB = re.compile(r"mente$")
+# Morphology is delegated, not hand-written. Two earlier versions of this script rolled their
+# own — the first undid plurals, the second added regular conjugation — and both filed inflected
+# verbs as DOMAIN vocabulary because a lemma index does not contain `vamos` or `negociadas`. Each
+# round moved the error instead of removing it, which is what writing your own morphology for a
+# language you are not modelling gets you.
+#
+# NLTK's RSLP (Removedor de Sufixos da Língua Portuguesa) is a published, validated Portuguese
+# stemmer and nltk is already installed. A stem is not a lemma — RSLP gives `permit`, not
+# `permitir` — so the stem is bridged back to a lemma by trying the endings Portuguese actually
+# uses, and whichever the wordnet knows is the one that counts. Same build-time-only status as
+# `wn`: the shipped package imports neither.
+SUFFIXES = ("ar", "er", "ir", "o", "a", "os", "as", "e", "ão", "al", "or", "ade", "ez",
+            "ismo", "mento", "ção", "")
+
+_STEMMER = None
+
+
+def _stemmer():
+    global _STEMMER
+    if _STEMMER is None:
+        import nltk
+        from nltk.stem import RSLPStemmer
+        try:
+            _STEMMER = RSLPStemmer()
+        except LookupError:
+            nltk.download("rslp", quiet=True)
+            _STEMMER = RSLPStemmer()
+    return _STEMMER
 
 
 def lemmas(form: str) -> list[str]:
-    """Every plausible lemma: the surface, its singular, its infinitive, its adjective base.
+    """Every lemma the term could belong to, via its RSLP stem plus Portuguese endings.
 
-    Tried as candidates rather than as a decision — whichever the wordnet knows is the one that
-    counts. Over-generating here is safe; under-generating is what produced the wrong verdict.
+    Over-generating is safe — the wordnet only answers for candidates it knows — and it is
+    exactly what under-generating cost the two previous versions.
     """
     lowered = unicodedata.normalize("NFC", form).casefold()
-    out = [lowered]
-    for pattern, replacement in DEPLURAL:
-        if pattern.search(lowered):
-            out.append(pattern.sub(replacement, lowered))
-            break
-    if ADVERB.search(lowered):
-        stem = ADVERB.sub("", lowered)
-        out.extend([stem, stem + "o", stem[:-1] + "o" if stem.endswith("a") else stem])
-    for base in list(out):
-        for pattern, replacement in CONJUGATION:
-            if pattern.search(base):
-                out.append(pattern.sub(replacement, base))
-                break
-        if base.endswith("a"):
-            out.append(base[:-1] + "o")
-    seen: dict[str, None] = {}
-    for candidate in out:
+    stem = _stemmer().stem(lowered)
+    seen: dict[str, None] = {lowered: None}
+    for suffix in SUFFIXES:
+        candidate = stem + suffix
         if len(candidate) > 2:
             seen[candidate] = None
     return list(seen)
@@ -98,6 +97,55 @@ def main() -> int:
     sys.path.insert(0, str(ROOT / "src"))
     import wn
 
+    # The backtest that licenses the signal, run every time rather than trusted from a comment.
+    known_domain = ["debênture", "cotista", "benchmark", "duration", "convexidade", "cupom",
+                    "derivativo", "volatilidade", "liquidez", "emissor", "custodiante",
+                    "imunização", "arbitragem", "alíquota", "patrocinador", "contraparte",
+                    "desenquadramento", "barbell", "steepening"]
+    known_general = ["relação", "longo", "ano", "ter", "dias", "total", "mesma", "faz",
+                     "conforme", "duas", "nome", "conta", "meio", "final", "número", "fazer",
+                     "tempo", "vamos", "quais", "têm", "recebe", "envolve", "desses", "demais",
+                     "nada", "vale", "assume", "permitem", "negociadas", "emitidos"]
+
+    def senses_of(term: str) -> int:
+        best = 0
+        for candidate in lemmas(term):
+            try:
+                best = max(best, len(wn.synsets(candidate, lexicon="own-pt:1.0.0")))
+            except Exception:
+                pass
+        return best
+
+    domain_scores = [senses_of(term) for term in known_domain]
+    general_scores = [senses_of(term) for term in known_general]
+    best_cut, best_sum = 3, -1.0
+    for cut in range(0, 16):
+        recall = sum(1 for value in domain_scores if value < cut) / len(domain_scores)
+        specificity = sum(1 for value in general_scores if value >= cut) / len(general_scores)
+        if recall + specificity > best_sum:
+            best_cut, best_sum = cut, recall + specificity
+    youden = round(best_sum - 1, 3)
+    backtest = {
+        "known_domain_mean": round(sum(domain_scores) / len(domain_scores), 2),
+        "known_general_mean": round(sum(general_scores) / len(general_scores), 2),
+        "threshold": best_cut,
+        "youden_j": youden,
+        "usable": youden >= 0.5,
+    }
+    # Sensitivity and specificity separately, because they license different uses. Youden's J
+    # alone hid the thing that matters here: the signal is good enough to RANK one term against
+    # another, and not good enough to ESTIMATE the mass of a population where the class it
+    # misses is the majority.
+    backtest["sensitivity"] = round(
+        sum(1 for value in domain_scores if value < best_cut) / len(domain_scores), 3)
+    backtest["specificity"] = round(
+        sum(1 for value in general_scores if value >= best_cut) / len(general_scores), 3)
+    if not backtest["usable"]:
+        raise SystemExit(
+            f"the signal does not separate known-domain from known-general terms "
+            f"(Youden's J {youden}); it cannot carry a verdict about the target"
+        )
+
     queue = json.loads(Path(args.queue).read_text(encoding="utf-8"))
     baseline = json.loads(Path(args.baseline).read_text(encoding="utf-8"))
     unknown = sorted(queue["strata"]["unknown"], key=lambda item: -item["occurrences"])
@@ -105,19 +153,11 @@ def main() -> int:
 
     rows = []
     for item in top:
-        best = 0
-        for candidate in lemmas(item["term"]):
-            try:
-                found = len(wn.synsets(candidate, lexicon="own-pt:1.0.0"))
-            except Exception:
-                found = 0
-            best = max(best, found)
-        # Threshold 3 is the cut score_form_polysemy.py fitted against forms already proven
-        # wrong and proven right; it is reused rather than re-picked.
+        best = senses_of(item["term"])
         rows.append({
             "term": item["term"], "occurrences": item["occurrences"],
             "general_senses": best,
-            "kind": "general_language" if best >= 3 else ("narrow" if best else "domain_specific"),
+            "kind": "general_language" if best >= best_cut else "domain_specific",
         })
 
     def mass(kind: str) -> int:
@@ -133,7 +173,7 @@ def main() -> int:
     target = baseline["target"]["resolved_share_of_unknown"]
     already_resolved = (unknown_total - current_unknown) / max(1, unknown_total)
 
-    domain_mass = mass("domain_specific") + mass("narrow")
+    domain_mass = mass("domain_specific")
     report = {
         "schema_version": "coverage-target-audit-v1",
         "target_as_written": target,
@@ -147,20 +187,33 @@ def main() -> int:
         "gap_to_target_occurrences": round(max(0.0, target - already_resolved) * unknown_total),
         "top_terms_mass": top_mass,
         "top_terms_share_of_unknown": round(top_mass / max(1, unknown_total), 4),
-        "composition_of_the_top_terms": {
+        "backtest": backtest,
+        "composition": {
             "general_language": {"terms": sum(1 for r in rows if r["kind"] == "general_language"),
                                  "occurrences": mass("general_language")},
-            "narrow": {"terms": sum(1 for r in rows if r["kind"] == "narrow"),
-                       "occurrences": mass("narrow")},
             "domain_specific": {"terms": sum(1 for r in rows if r["kind"] == "domain_specific"),
                                 "occurrences": mass("domain_specific")},
         },
+        "domain_mass_upper_bound": domain_mass,
+        "domain_mass_is_an_upper_bound_because": (
+            f"specificity is {backtest['specificity']} against a population that is "
+            f"{round(mass('general_language') / max(1, top_mass), 2)} general by mass, so the "
+            "false positives land in the domain bucket and dominate its top by frequency — "
+            "`conforme`, `duas`, `mil`, `vamos`, `rafael` are all in it. The backtest licenses "
+            "this signal to RANK one term against another; it does not license an estimate of a "
+            "population's mass, and using it for that is the same over-reach as the two earlier "
+            "attempts, in a different place."
+        ),
         "reachable_share_with_domain_terms_only": round(domain_mass / max(1, unknown_total), 4),
         "verdict": (
-            "The remaining domain vocabulary is larger than the gap: the target IS reachable by "
-            "registering concepts worth having, and the earlier claim that it was not was drawn "
-            "from a 200-term slice with a lemmatiser that could not undo verb inflection."
-            if domain_mass >= max(0.0, target - already_resolved) * unknown_total else
+            "UNSETTLED. The instrument ranks terms well enough to find harvest candidates and "
+            "not well enough to say whether the target is reachable: the domain-mass estimate is "
+            "an upper bound contaminated by false positives from the majority class. Three "
+            "attempts have now failed to settle this — plural-only morphology, hand-written "
+            "conjugation, and a validated stemmer used outside the regime its backtest covers. "
+            "The target stands as a declared pendency, and the honest use of this report is its "
+            "ranked term list, not its totals."
+            if True else
             "The target is NOT reachable by registering domain vocabulary. Most of the remaining "
             "unknown mass is ordinary Portuguese that a stopword list should have removed. "
             "Meeting the number as written would require registering general words as concepts, "
@@ -173,7 +226,7 @@ def main() -> int:
     )
     print(json.dumps({key: report[key] for key in
                       ("target_as_written", "already_resolved_share", "gap_to_target_occurrences",
-                       "composition_of_the_top_terms", "reachable_share_with_domain_terms_only",
+                       "backtest", "composition", "reachable_share_with_domain_terms_only",
                        "verdict")}, ensure_ascii=False, indent=2))
     return 0
 

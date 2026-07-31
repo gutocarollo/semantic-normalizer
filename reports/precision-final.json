@@ -72,6 +72,36 @@
       "error_rate": 0.0,
       "errors": 0,
       "found": [],
+      "registry": "2.26.0",
+      "report": "reports/unread-residual-v2260.json",
+      "sample_size": 200,
+      "seed": 22360679,
+      "state": "after every repair of the phase-two review",
+      "wilson_95": [
+        0.0,
+        0.0188
+      ]
+    },
+    {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
+        "CDs (Certificates of Deposit) matching technical.cds — an acronym collision the importer's case-sensitive demoter passed"
+      ],
+      "registry": "2.25.0",
+      "report": "reports/unread-residual-v2250.json",
+      "sample_size": 240,
+      "seed": 26457513,
+      "state": "after the review of the phase-two repairs; repaired by batch 24 and amendment 31",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
+      "error_rate": 0.0,
+      "errors": 0,
+      "found": [],
       "registry": "2.24.0",
       "report": "reports/unread-residual-v2240.json",
       "sample_size": 240,
@@ -194,33 +224,33 @@
       ]
     }
   ],
-  "concepts": 385,
-  "errors_repaired_total": 14,
-  "events_total": 7763,
+  "concepts": 395,
+  "errors_repaired_total": 15,
+  "events_total": 7758,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
-    "lower_bound_95": 0.987,
+    "lower_bound_95": 0.9845,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.24.0",
+  "registry_version": "2.26.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
       0.0,
-      0.0158
+      0.0188
     ],
     "errors_adjudicated": 0,
-    "events": 6408,
-    "sample_size": 240,
-    "share": 0.8255
+    "events": 6401,
+    "sample_size": 200,
+    "share": 0.8251
   },
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 1355,
+    "events": 1357,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1745
+    "share": 0.1749
   }
 }

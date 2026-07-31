@@ -70,6 +70,19 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2260.json", "seed": 22360679, "registry": "2.26.0",
+        "errors": 0,
+        "found": [],
+        "state": "after every repair of the phase-two review",
+    },
+    {
+        "report": "reports/unread-residual-v2250.json", "seed": 26457513, "registry": "2.25.0",
+        "errors": 1,
+        "found": ["CDs (Certificates of Deposit) matching technical.cds — an acronym collision "
+                  "the importer's case-sensitive demoter passed"],
+        "state": "after the review of the phase-two repairs; repaired by batch 24 and amendment 31",
+    },
+    {
         "report": "reports/unread-residual-v2240.json", "seed": 141421356, "registry": "2.24.0",
         "errors": 0,
         "found": [],
@@ -146,7 +159,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2240.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2260.json",
                         help="the draw taken against the current registry")
     args = parser.parse_args()
 
