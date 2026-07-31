@@ -439,6 +439,11 @@ def local_span(absolute_start: int, absolute_end: int, segment_start: int) -> di
             "local_end": absolute_end - segment_start}
 
 
+# A form ending in one of these is a fragment: the phrase was cut before its head.
+DANGLING = frozenset({"de", "da", "do", "das", "dos", "em", "no", "na", "nos", "nas", "a", "o",
+                      "as", "os", "ao", "aos", "à", "às", "com", "por", "para", "e", "ou",
+                      "of", "the", "in", "on", "at", "to", "for", "and", "or", "a", "an"})
+
 COPULA = frozenset({"é", "são", "fica", "ficam", "está", "estão", "seja", "sejam", "was", "is", "are"})
 
 # Pairs that must never be substituted for each other. A concept may legitimately gather many
@@ -453,7 +458,26 @@ CANONICAL_ANTONYMS = (
     ("alta", "baixa"), ("longo", "curto"), ("longa", "curta"), ("credor", "devedor"),
     ("aberto", "fechado"), ("aberta", "fechada"), ("positivo", "negativo"),
     ("positiva", "negativa"), ("ganho", "perda"), ("entrada", "saída"),
+    # The central opposition of the fixed-income chapters, added on a review's recommendation as
+    # defence in depth. It is bundled today inside technical.swap_asset_leg and
+    # technical.swap_liability_leg, and is not causing harm only because both concepts' preferred
+    # form carries no rate at all, so any crossing is caught incidentally by the truncation rule.
+    # Incidental is not declared: if a later batch ever makes a rate-specific form preferred, or
+    # registers a third concept holding one side, nothing would state the boundary.
 )
+
+# The rewrite guard and the modelling guard ask different questions, so they take different lists.
+#
+#   "may these two forms be substituted for each other?"  -> CANONICAL_ANTONYMS, below plus these
+#   "does one concept bundle two SENSES?"                 -> CANONICAL_ANTONYMS alone
+#
+# `prefixado`/`pós-fixado` is the central opposition of the fixed-income chapters and a rewrite
+# must never cross it. But `ativo em prefixado` and `ativo em pós-fixado` are both the ASSET leg —
+# the rate is a parameter of the concept, not a second sense of it, and demanding a split there
+# would be over-modelling. put/call and ativo/passivo are different: they identify which thing the
+# concept IS. Adding this pair to the structural test made it fail on a model that is correct,
+# which is how the distinction surfaced.
+REWRITE_ONLY_ANTONYMS = (("prefixado", "pós-fixado"), ("prefixada", "pós-fixada"))
 
 
 def _rewrite_is_safe(alias: str, replacement: str) -> bool:
@@ -476,19 +500,30 @@ def _rewrite_is_safe(alias: str, replacement: str) -> bool:
     """
     alias_tokens = nfc_casefold(alias).split()
     replacement_tokens = nfc_casefold(replacement).split()
-    # Truncation: the replacement is the alias with its tail cut off. `passivo em dólar` rewritten
-    # to `passivo em` leaves a dangling preposition and drops the index the leg is denominated in —
-    # the same shape as the copula case, generalised. A replacement that is a strict prefix of what
-    # it replaces never adds information and always removes some.
-    if replacement_tokens == alias_tokens[:len(replacement_tokens)] and len(
-        replacement_tokens
-    ) < len(alias_tokens):
+    # Truncation, but only the kind that leaves a fragment. `passivo em dólar` rewritten to
+    # `passivo em` strands a preposition and drops the index the leg is denominated in. The first
+    # version of this rule refused ANY strict-prefix shortening, and a review measured what that
+    # cost: of 149 rewrites it blocked corpus-wide, 125 were ordinary same-referent simplifications
+    # — `fundo de investimento` to `fundo`, `assembleia de cotistas` to `assembleia`, `gestor de
+    # recursos` to `gestor` — which is precisely the normalisation this tool exists to perform. A
+    # guard that suppresses 1 % of all matches to catch 24 of them is not a guard, it is a
+    # regression with a good excuse.
+    #
+    # The discriminator is grammatical, not statistical: a replacement ending in a preposition or
+    # article is not a term, it is the beginning of one. `fundo` and `assembleia` stand alone;
+    # `ativo em` does not.
+    if (
+        replacement_tokens == alias_tokens[:len(replacement_tokens)]
+        and len(replacement_tokens) < len(alias_tokens)
+        and replacement_tokens
+        and replacement_tokens[-1] in DANGLING
+    ):
         return False
     if alias_tokens and alias_tokens[0] in COPULA and (
         not replacement_tokens or replacement_tokens[0] not in COPULA
     ):
         return False
-    for left, right in CANONICAL_ANTONYMS:
+    for left, right in CANONICAL_ANTONYMS + REWRITE_ONLY_ANTONYMS:
         crossed = (left in alias_tokens and right in replacement_tokens) or (
             right in alias_tokens and left in replacement_tokens
         )

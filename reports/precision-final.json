@@ -73,6 +73,20 @@
       "errors": 0,
       "found": [],
       "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-r2.json",
+      "sample_size": 240,
+      "seed": 14142136,
+      "state": "after the truncation rule was narrowed to fragments only, restoring the 125 legitimate simplifications the first version suppressed",
+      "wilson_95": [
+        0.0,
+        0.0158
+      ]
+    },
+    {
+      "error_rate": 0.0,
+      "errors": 0,
+      "found": [],
+      "registry": "2.28.0",
       "report": "reports/unread-residual-v2280-final.json",
       "sample_size": 240,
       "seed": 24011975,
@@ -365,7 +379,7 @@
     "share": 0.8279
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2280-final.json"
+    "reports/unread-residual-v2280-r2.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {

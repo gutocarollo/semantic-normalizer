@@ -345,7 +345,22 @@ class RegistryGovernanceTests(unittest.TestCase):
                          "a put must never be rewritten into a call")
         self.assertFalse(_rewrite_is_safe("é vedada", "vedado"),
                          "dropping the copula removes the sentence's only verb")
+        self.assertFalse(_rewrite_is_safe("ativo em dólar", "ativo em"),
+                         "truncating to a dangling preposition strands the phrase")
         self.assertTrue(_rewrite_is_safe("cotas", "cota"), "inflection is what the field is for")
+        # The 125 rewrites the first version of the truncation rule blocked by mistake. A guard
+        # that suppresses ordinary normalisation to catch a fragment is a regression with a good
+        # excuse, and these are the shapes that proved it.
+        for alias, replacement in (("fundo de investimento", "fundo"),
+                                   ("assembleia de cotistas", "assembleia"),
+                                   ("gestor de recursos", "gestor"),
+                                   ("ativo financeiro", "ativo"),
+                                   ("ISE B3", "ISE")):
+            self.assertTrue(
+                _rewrite_is_safe(alias, replacement),
+                f"{alias!r} -> {replacement!r} names the same thing more briefly, which is the "
+                f"normalisation this tool exists to perform.",
+            )
         self.assertTrue(_rewrite_is_safe("classificação de risco", "rating"),
                         "a shorter synonym of the same sense is a legitimate canonicalisation")
 

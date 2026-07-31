@@ -70,6 +70,14 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-r2.json", "seed": 14142136,
+        "registry": "2.28.0",
+        "errors": 0,
+        "found": [],
+        "state": "after the truncation rule was narrowed to fragments only, restoring the 125 "
+                 "legitimate simplifications the first version suppressed",
+    },
+    {
         "report": "reports/unread-residual-v2280-final.json", "seed": 24011975,
         "registry": "2.28.0",
         "errors": 0,
@@ -242,7 +250,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-final.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-r2.json",
                         help="the draw taken against the current registry")
     parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "

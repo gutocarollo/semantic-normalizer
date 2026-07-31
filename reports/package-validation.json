@@ -33,7 +33,7 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "afdff6f5e591f641ba1fb8b690a3af7099112ac259268836aa56fba4345e4810",
+    "installed_package_sha256": "68c3534957774e4a781edac42fb068f6666347fa56e9e464af998d797eee1ebf",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
@@ -86,8 +86,8 @@
     "double_build_byte_identical": true,
     "hash_location": "checksums.sha256 (external)",
     "heldout_members": 0,
-    "manifest_entries_verified": 180,
-    "members": 181,
+    "manifest_entries_verified": 181,
+    "members": 182,
     "mode": "0644",
     "path": "dist/semantic-normalizer-skill-0.4.0.zip",
     "prefix": "semantic-normalizer-0.4.0",
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "711c5c319435a4388341b5b2975f75cd66d58542e114bd48603891a5a096224e",
-    "size": 973763,
+    "sha256": "70b43dbc2f68a6b2d2afd0699768d7db49f3b495b8de83da262c342166fba8bb",
+    "size": 976269,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }
