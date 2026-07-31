@@ -96,8 +96,17 @@ def variants(title: str) -> list[str]:
     # punctuation. The single heaviest heading in the corpus is of this shape.
     colon = [part.strip() for part in stripped.split(":") if part.strip()]
     if len(colon) > 1:
-        stripped = max((part for part in colon if not is_furniture(part)), key=len, default=stripped)
-    out = [title] if stripped == title else [title, stripped]
+        # Every side is offered, and whichever resolves wins. The first version picked ONE side by
+        # character length, and a review measured what that cost: `LTN: Exemplo de Cálculo` gave the
+        # eighteen-character filler to the three-character concept, because `Exemplo de Cálculo` is
+        # not literally in FURNITURE (only the bare words are) and so survived the filter. Seven
+        # headings — LTN, LFT, YTM, CY, Títulos Híbridos — lost a registered acronym that way.
+        # Choosing between the sides was the mistake; there is no need to choose.
+        stripped = colon[0]
+        colon_alternatives = colon[1:]
+    else:
+        colon_alternatives = []
+    out = ([title] if stripped == title else [title, stripped]) + colon_alternatives
     for candidate in (stripped,):
         match = PARENTHETICAL.match(candidate)
         if match:

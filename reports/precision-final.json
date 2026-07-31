@@ -72,6 +72,22 @@
       "error_rate": 0.0042,
       "errors": 1,
       "found": [
+        "`configure` as the Portuguese reflexive subjunctive matching seed software vocabulary — repaired by amendment 56"
+      ],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-r5.json",
+      "sample_size": 240,
+      "seed": 22360680,
+      "state": "after the colon tie-break fix and technical.credit_spread",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
         "`Liquidez` in the elided-head risk list — the residual already declared in KNOWN_RESIDUALS, found rather than new"
       ],
       "registry": "2.28.0",
@@ -389,9 +405,9 @@
       ]
     }
   ],
-  "concepts": 524,
-  "errors_repaired_total": 21,
-  "events_total": 7820,
+  "concepts": 525,
+  "errors_repaired_total": 22,
+  "events_total": 7812,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
     "lower_bound_95": 0.9808,
@@ -406,12 +422,12 @@
       0.0232
     ],
     "errors_adjudicated": 1,
-    "events": 6479,
+    "events": 6471,
     "sample_size": 240,
-    "share": 0.8285
+    "share": 0.8283
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2280-r4.json"
+    "reports/unread-residual-v2280-r5.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
@@ -419,18 +435,18 @@
     "events": 1341,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1715
+    "share": 0.1717
   },
   "what_this_sample_cannot_detect": {
     "error_rate_they_imply": 0.000309,
     "error_rate_this_draw_rules_out": 0.023221,
     "known_declared_residuals": 2,
-    "probability_all_of_them_are_missed": 0.9273,
+    "probability_all_of_them_are_missed": 0.9272,
     "reading": "1 error(s) found in 240 is consistent with the residuals known to remain: they imply a rate well below what a sample of this size can resolve, so a draw that happens to miss them is expected rather than suspicious. The claim is the Wilson upper bound, not the point estimate — this draw rules out error rates above the figure named here, and says nothing about rates beneath it.",
     "residuals": [
       "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the form's 7 occurrences, the other 6 being plain long positions",
       "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of risk types with the head `risco` elided — 1 of the form's occurrences"
     ],
-    "sample_size_for_even_odds_of_catching_one": 1898
+    "sample_size_for_even_odds_of_catching_one": 1895
   }
 }

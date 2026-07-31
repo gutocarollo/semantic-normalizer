@@ -1,0 +1,11 @@
+{
+  "batch": 39,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "A review challenged my `the ceiling is not 100 %` argument and found the one counter-example that does not fit it. `Spread de Crédito` was resolving to `spread` plus `crédito` — two matches, no compound — and I had filed it with the descriptive titles. It is not one: it is a specific, named, exam-tested metric, the yield differential attributable to credit risk, exactly the category that justified giving `risco de crédito` its own concept earlier in this campaign rather than leaving it as `risco` + `crédito`. I invited the challenge on self-indulgence and it landed.",
+  "concepts": [
+    {"id":"technical.credit_spread","en":"credit spread","pt":"Spread de Crédito","class":"technical_term","pos":"noun",
+     "def":"The yield a bond pays above a risk-free instrument of the same maturity, attributable to its credit risk.",
+     "alt_en":[],"alt_pt":["spreads de crédito","spread de crédito"],
+     "authority":"apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-56",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#06-gestao-de-riscos; residual draw seed 22360680",
+  "method": "both corpus occurrences of the surface read",
+  "reason": "`configure` is an automatic ENGLISH form of action.configure, seed vocabulary from this project's original software lexicon, and it collides with the Portuguese subjunctive of `configurar-se`: `caso sua expectativa de queda se configure` means `if the expected fall materialises`, not `configure a system`. The same homograph shape as `decide`, which this campaign repaired by registering the Portuguese side — but there is nothing to register here, because the software sense has no business in a CGA corpus at all. The collocation is the surgical repair: `se configure` is reflexive and never the software verb.",
+  "operations": [
+    {"op":"forbid","concept":"action.configure","language":"en",
+     "variants":["se configure","configurando-se"],
+     "why":"Both corpus occurrences are the Portuguese reflexive — `caso sua expectativa de queda se configure`, `configurando-se no VaR histórico`. Neither is the software sense the concept defines."}
+  ]
+}

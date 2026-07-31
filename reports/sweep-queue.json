@@ -82,7 +82,7 @@
       ],
       "occurrences": 115,
       "priority": 5.6545,
-      "read_depth": 4
+      "read_depth": 5
     },
     {
       "concept_id": "risk.financial",
@@ -333,20 +333,6 @@
       "read_depth": 4
     },
     {
-      "concept_id": "entity.credit",
-      "distance_max": 0.915,
-      "distance_mean": 0.7286,
-      "distance_spread": 0.1463,
-      "form": "crédito",
-      "general_senses": 7,
-      "glosses": [
-        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
-      ],
-      "occurrences": 32,
-      "priority": 4.4839,
-      "read_depth": 4
-    },
-    {
       "concept_id": "risk.financial",
       "distance_max": 0.8844,
       "distance_mean": 0.6383,
@@ -453,6 +439,20 @@
       ],
       "occurrences": 25,
       "priority": 3.8982,
+      "read_depth": 3
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance_max": 0.8933,
+      "distance_mean": 0.7316,
+      "distance_spread": 0.1251,
+      "form": "crédito",
+      "general_senses": 7,
+      "glosses": [
+        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
+      ],
+      "occurrences": 25,
+      "priority": 3.8788,
       "read_depth": 3
     },
     {
@@ -1565,20 +1565,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.credit",
-      "distance_max": 0.622,
-      "distance_mean": 0.4509,
-      "distance_spread": 0.1785,
-      "form": "Crédito",
-      "general_senses": 7,
-      "glosses": [
-        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
-      ],
-      "occurrences": 3,
-      "priority": 1.9711,
-      "read_depth": 2
-    },
-    {
       "concept_id": "action.pay",
       "distance_max": 0.8149,
       "distance_mean": 0.5769,
@@ -1935,6 +1921,20 @@
       ],
       "occurrences": 2,
       "priority": 1.5427,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance_max": 0.4882,
+      "distance_mean": 0.3145,
+      "distance_spread": 0.1737,
+      "form": "Crédito",
+      "general_senses": 7,
+      "glosses": [
+        "Material escrito (geralmente no plural) introduzido em um filme ou pro"
+      ],
+      "occurrences": 2,
+      "priority": 1.5389,
       "read_depth": 2
     },
     {
@@ -3597,9 +3597,9 @@
   "occurrences_to_read": 607,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0476,
-    "median": 1.7588,
-    "stdev": 1.5622
+    "mean": 2.0436,
+    "median": 1.7427,
+    "stdev": 1.5593
   },
   "reading_list": [
     {
@@ -3804,6 +3804,13 @@
       "form": "valor",
       "general_senses": 6,
       "quote": "deral Deposit Insurance Corporation), o “FGC Americano”, esta proteção tem um valor máximo de USD 250.000,00."
+    },
+    {
+      "concept_id": "quantity.value",
+      "distance": 0.9633,
+      "form": "valor",
+      "general_senses": 6,
+      "quote": "so porque se trata de uma fórmula simples, mas que não leva em consideração o valor de uma eventual garantia do empréstimo."
     },
     {
       "concept_id": "risk.financial",
@@ -4282,34 +4289,6 @@
       "quote": " correta, da precificação dos instrumentos utilizados e da correlação entre o ativo protegido e o instrumento de hedge."
     },
     {
-      "concept_id": "entity.credit",
-      "distance": 0.915,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores novos exigir"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.9028,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "Eles também são garantidos pelo crédito do banco emissor, o que significa que o beneficiário do aceit"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.8984,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "ão contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um tod"
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.8887,
-      "form": "crédito",
-      "general_senses": 7,
-      "quote": "(tais como reorganizações, reestruturações, fusões e aquisições) e eventos de crédito (como falência, ou default), podem ser protegidos ou mesmo mi"
-    },
-    {
       "concept_id": "risk.financial",
       "distance": 0.8844,
       "form": "Risco",
@@ -4483,6 +4462,27 @@
       "form": "exposição",
       "general_senses": 8,
       "quote": "Embora os FoFs proporcionem diversificação e menor exposição à volatilidade do mercado, esses retornos podem ser impactado"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.8933,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "Quando uma empresa tem sua nota de crédito piorada (por exemplo A para BB), os investidores novos exigir"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.8781,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "Eles também são garantidos pelo crédito do banco emissor, o que significa que o beneficiário do aceit"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.8725,
+      "form": "crédito",
+      "general_senses": 7,
+      "quote": "ão contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um tod"
     },
     {
       "concept_id": "entity.position",
@@ -5808,20 +5808,6 @@
       "quote": "Portanto: Aumento da taxa de juros: é negativa para o preço do título, porém po"
     },
     {
-      "concept_id": "entity.credit",
-      "distance": 0.622,
-      "form": "Crédito",
-      "general_senses": 7,
-      "quote": "O Spread de Crédito é uma medida que representa a probabilidade de inadimplência "
-    },
-    {
-      "concept_id": "entity.credit",
-      "distance": 0.5262,
-      "form": "Crédito",
-      "general_senses": 7,
-      "quote": " operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade."
-    },
-    {
       "concept_id": "action.pay",
       "distance": 0.8149,
       "form": "pagamentos",
@@ -6198,6 +6184,20 @@
       "form": "VENDER",
       "general_senses": 7,
       "quote": "á quando o investidor está acreditando que a TAXA DE JUROS IRÁ SUBIR, ele irá VENDER o contrato de DI FUTURO (dizemos que ele está vendendo PU e c"
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.4882,
+      "form": "Crédito",
+      "general_senses": 7,
+      "quote": " operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade."
+    },
+    {
+      "concept_id": "entity.credit",
+      "distance": 0.1409,
+      "form": "Crédito",
+      "general_senses": 7,
+      "quote": "I, pré-fixada, Selic e TJLP); - Swap de Moeda (Dólar, euro e iene); - Swap de Crédito (CDS – Credit Default Swap: “seguro contra calote”); - Swap d"
     },
     {
       "concept_id": "entity.registration",
@@ -7433,7 +7433,7 @@
     }
   ],
   "registry": {
-    "concepts": 524,
+    "concepts": 525,
     "version": "2.28.0"
   },
   "risk_surface_events": 4395,

@@ -1,12 +1,12 @@
 {
   "by_status": {
-    "covered": 240,
-    "partial": 110,
+    "covered": 249,
+    "partial": 101,
     "uncovered": 2
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.6818,
-  "covered_share_of_mass": 0.8474,
+  "covered_share_of_distinct": 0.7074,
+  "covered_share_of_mass": 0.8582,
   "distinct_headings": 352,
   "heading_occurrences": 832,
   "headings": [
@@ -313,17 +313,6 @@
     {
       "covered_by": null,
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
-      "heading": "Material de Divulgação: Fundo",
-      "occurrences": 1,
-      "partial_matches": [
-        "Fundo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Material de Divulgação: Rentabilidade (I)",
       "occurrences": 1,
       "partial_matches": [
@@ -548,36 +537,12 @@
     {
       "covered_by": null,
       "file": "06-gestao-de-riscos",
-      "heading": "Spread de Crédito",
-      "occurrences": 1,
-      "partial_matches": [
-        "Spread",
-        "Crédito"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
       "heading": "Medidas de Risco de Mercado",
       "occurrences": 1,
       "partial_matches": [
         "Risco de Mercado"
       ],
       "resolved_by": "quantity.measure",
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "06-gestao-de-riscos",
-      "heading": "Variância e Desvio Padrão: Exemplo Gráfico",
-      "occurrences": 1,
-      "partial_matches": [
-        "Variância",
-        "Desvio Padrão"
-      ],
-      "resolved_by": null,
       "status": "partial"
     },
     {
@@ -911,54 +876,6 @@
     {
       "covered_by": null,
       "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "LTN: Exemplo de Cálculo",
-      "occurrences": 1,
-      "partial_matches": [
-        "LTN",
-        "Cálculo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "LFT: Exemplo de Cálculo",
-      "occurrences": 1,
-      "partial_matches": [
-        "LFT",
-        "Cálculo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "YTM: Exemplo de Cálculo 1",
-      "occurrences": 1,
-      "partial_matches": [
-        "YTM",
-        "Cálculo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "YTM: Exemplo de Cálculo 2",
-      "occurrences": 1,
-      "partial_matches": [
-        "YTM",
-        "Cálculo"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "CY: Exemplo de Cálculo 1",
       "occurrences": 1,
       "partial_matches": [
@@ -1066,33 +983,11 @@
     {
       "covered_by": null,
       "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Duration: Limitações",
-      "occurrences": 1,
-      "partial_matches": [
-        "Duration"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Duration de Carteiras",
       "occurrences": 1,
       "partial_matches": [
         "Duration",
         "Carteiras"
-      ],
-      "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "08-gestao-de-carteiras-de-renda-fixa",
-      "heading": "Duration: Relações Diretas e Indiretas",
-      "occurrences": 1,
-      "partial_matches": [
-        "Duration"
       ],
       "resolved_by": null,
       "status": "partial"
@@ -2746,6 +2641,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "entity.fund",
+      "file": "04-resolucao-cvm-175-fundos-de-investimento",
+      "heading": "Material de Divulgação: Fundo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "entity.fund",
+      "status": "covered"
+    },
+    {
       "covered_by": "entity.regulation",
       "file": "04-resolucao-cvm-175-fundos-de-investimento",
       "heading": "Regulamento: Geral",
@@ -2935,6 +2839,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.credit_spread",
+      "file": "06-gestao-de-riscos",
+      "heading": "Spread de Crédito",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.credit_spread",
+      "status": "covered"
+    },
+    {
       "covered_by": "risk.liquidity",
       "file": "06-gestao-de-riscos",
       "heading": "Risco de Liquidez",
@@ -2956,6 +2869,15 @@
       "covered_by": "technical.variance+quantity.volatility",
       "file": "06-gestao-de-riscos",
       "heading": "Variância e Desvio Padrão",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.variance+quantity.volatility",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.variance+quantity.volatility",
+      "file": "06-gestao-de-riscos",
+      "heading": "Variância e Desvio Padrão: Exemplo Gráfico",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.variance+quantity.volatility",
@@ -3079,9 +3001,54 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.ltn",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "LTN: Exemplo de Cálculo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.ltn",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.lft",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "LFT: Exemplo de Cálculo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.lft",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.ytm",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "YTM: Exemplo de Cálculo 1",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.ytm",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.ytm",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "YTM: Exemplo de Cálculo 2",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.ytm",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.duration",
       "file": "08-gestao-de-carteiras-de-renda-fixa",
       "heading": "Duration: Exemplo",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.duration",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.duration",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Duration: Limitações",
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.duration",
@@ -3103,6 +3070,15 @@
       "occurrences": 1,
       "partial_matches": [],
       "resolved_by": "technical.put_option",
+      "status": "covered"
+    },
+    {
+      "covered_by": "technical.duration",
+      "file": "08-gestao-de-carteiras-de-renda-fixa",
+      "heading": "Duration: Relações Diretas e Indiretas",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.duration",
       "status": "covered"
     },
     {
@@ -3458,16 +3434,16 @@
     }
   ],
   "mass_by_status": {
-    "covered": 705,
-    "partial": 125,
+    "covered": 714,
+    "partial": 116,
     "uncovered": 2
   },
   "registry": {
-    "concepts": 524,
+    "concepts": 525,
     "version": "2.28.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
-  "resolved_share_of_mass": 0.8618,
+  "resolved_share_of_mass": 0.8726,
   "schema_version": "heading-coverage-v1",
   "why_this_and_not_the_oov_target": "The 0.4.0 target is a fraction of a stratum that is every content word minus a stopword list, so settling it requires classifying ordinary Portuguese and a lemmatiser this environment does not have. Three attempts failed. Headings are what the corpus itself declares to be its subjects: enumerable, domain by construction, and weighted by how often the material returns to each one."
 }
