@@ -73,11 +73,16 @@ class MatchingInvariantTests(unittest.TestCase):
         The pre-emption condition, stated exactly: a proper suffix of form A is a prefix of form B,
         and B reaches PAST where A ends. The second half is what the first version of this test got
         wrong — it required B to be longer than the whole of A, which is a stricter condition and a
-        different one. An adversarial review computed both against the live registry: 123 pairs the
-        narrow filter tests, 529 that actually qualify. Among the 406 it silently dropped was
-        `classificação de risco` × `risco de crédito`, the second of the two examples that motivated
-        the engine fix in the first place — so the guard read green while its own flagship case went
-        unexercised.
+        different one. An adversarial review computed both against the registry as it then stood:
+        123 pairs the narrow filter tested, 529 that qualified. Among the 406 it silently dropped
+        was `classificação de risco` × `risco de crédito`, the second of the two examples that
+        motivated the engine fix in the first place — so the guard read green while its own
+        flagship case went unexercised.
+
+        Those two counts are of a registry that has since grown; at 2.28.0 the corrected condition
+        enumerates 767. The number is deliberately not hardcoded — the floor below only asserts the
+        enumeration did not collapse — because a count pinned in a docstring goes stale the next
+        time a batch lands, which is exactly what happened to the 529.
 
         Widening the net is only half the repair, and the half that is wrong on its own: once B may
         be SHORTER than A overall, asserting "B wins" asserts a falsehood, because the rule is
@@ -97,8 +102,8 @@ class MatchingInvariantTests(unittest.TestCase):
                     pairs.append((form_a, form_b, tokens_a, tokens_b, tokens_a[:cut]))
         self.assertGreater(
             len(pairs), 400,
-            "the pre-emption enumeration collapsed; it covered 529 pairs when this was written, "
-            "and a sudden drop means the filter narrowed rather than the registry shrinking",
+            "the pre-emption enumeration collapsed; it covered 767 pairs at registry 2.28.0, and "
+            "a drop to a few hundred means the filter narrowed rather than the registry shrinking",
         )
 
         for form_a, form_b, tokens_a, tokens_b, prefix in pairs:

@@ -70,6 +70,18 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-accounted.json", "seed": 27182818,
+        "registry": "2.28.0",
+        "errors": 0,
+        "found": [],
+        "state": "drawn with every sweep queue passed, which is the accounting the two draws below "
+                 "got wrong by being given one queue file; zero sense errors, one recall gap "
+                 "(amendment 39). This is the CLEANER of the two post-repair draws and is NOT the "
+                 "one the published figure comes from: the draw below found a real residual that "
+                 "still exists by design, and reporting a zero-error sample instead would be "
+                 "choosing the number rather than measuring it",
+    },
+    {
         "report": "reports/unread-residual-v2280-confirm.json", "seed": 31415926,
         "registry": "2.28.0",
         "errors": 1,

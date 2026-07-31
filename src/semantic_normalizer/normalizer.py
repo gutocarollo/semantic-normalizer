@@ -395,6 +395,37 @@ def local_span(absolute_start: int, absolute_end: int, segment_start: int) -> di
             "local_end": absolute_end - segment_start}
 
 
+def _mutates_protected(event: dict, protected: list[tuple[int, int, str]],
+                       source_text: str, lexicon: dict) -> bool:
+    """True when rewriting this match would alter a protected span it swallowed.
+
+    Letting a candidate CONTAIN a protected span is what makes `Resolução CVM 175` matchable at
+    all, and it is safe only while the canonical rewrite carries the protected characters through
+    unchanged. Nothing enforced that: `_canonical_projection` replaces the matched text with the
+    concept's first automatic surface, so a concept whose surface happened to drop or alter the
+    embedded digits would silently mutate them, and the counter that claimed to watch for exactly
+    this — `protected_span_mutations` in `evaluate_golden` — was the literal constant 0, which is
+    the `known_errors_remaining: 0` pattern this project criticises in its own reports.
+
+    So the check is real and it runs per match: every protected span inside the match must survive
+    verbatim in the replacement, or the match does not get to absorb it.
+    """
+    inside = [
+        source_text[max(s, event["start"]):min(e, event["end"])]
+        for s, e, _kind in protected
+        if s >= event["start"] and e <= event["end"]
+    ]
+    if not inside:
+        return False
+    record = lexicon["by_id"][event["concept_id"]]
+    target = event["alias_language"]
+    if target not in LANGUAGES:
+        target = "en"
+    surfaces = automatic_surfaces(record, target)
+    replacement = surfaces[0] if surfaces else event["alias"]
+    return any(fragment and fragment not in replacement for fragment in inside)
+
+
 def build_semantics(original: str, segment_start: int, events: list[dict], ambiguous: list[dict],
                     protected: list[tuple[int, int, str]], lexicon: dict):
     occupied = []
@@ -594,6 +625,13 @@ def normalize_segment(source: str, source_text: str, source_hash: str, kind: str
     original = source_text[start:end]
     local_protected = [(s, e, k) for s, e, k in protected if s < end and e > start]
     events, ambiguous = lexical_matches(original, start, local_protected, lexicon)
+    # A match may swallow a protected span only while its canonical rewrite preserves it.
+    protected_span_mutations = [
+        event for event in events
+        if _mutates_protected(event, local_protected, source_text, lexicon)
+    ]
+    if protected_span_mutations:
+        events = [event for event in events if event not in protected_span_mutations]
     sequence, units, relations, semantic_warnings = build_semantics(
         original, start, events, ambiguous, local_protected, lexicon
     )
@@ -617,10 +655,18 @@ def normalize_segment(source: str, source_text: str, source_hash: str, kind: str
         term for lang in LANGUAGES for term in surfaces[lang]
     ]
     line, column = line_col(source_text, start)
+    # A protected span the matcher absorbed is governed by the concept that took it, and listing
+    # it again as an independently protected value states the opposite of what `match_events`
+    # says about the same characters. An adversarial review found both records present for the
+    # `175` in `Resolução CVM 175` — the README promises a protected value "remains unchanged",
+    # and it does, but as part of the concept rather than beside it. `semantic_sequence` already
+    # reconciled this; the raw fields had not.
+    absorbed = [(event["start"], event["end"]) for event in events]
     protected_records = [{
         "start": max(s, start), "end": min(e, end), "kind": k,
         "original": source_text[max(s, start):min(e, end)],
-    } for s, e, k in local_protected]
+    } for s, e, k in local_protected
+        if not any(s >= m_start and e <= m_end for m_start, m_end in absorbed)]
     unresolved = [{
         "start": item["start"], "end": item["end"], "original": item["text"]
     } for item in sequence if item["type"] == "raw" and item["text"].strip()]
@@ -882,6 +928,7 @@ def evaluate_golden(path: Path, lexicon: dict) -> dict:
         except json.JSONDecodeError as exc:
             raise ContractError(f"golden line {line_no}: invalid JSON: {exc}") from exc
     results = []
+    mutations: list[str] = []
     for case in cases:
         case_type = case.get("type", "normalize")
         if case_type == "invalid_suffix":
@@ -964,12 +1011,26 @@ def evaluate_golden(path: Path, lexicon: dict) -> dict:
             all(unit.get("governance") == "approved_lexicon" for record in records for unit in record["semantic_units"]),
             all(item["type"] != "raw" or "concept_id" not in item for record in records for item in record["semantic_sequence"]),
         ])
+        # Every protected span must survive the canonical rewrite byte for byte. This used to be
+        # reported as the literal constant 0 below, which is the `known_errors_remaining: 0`
+        # pattern this project criticises in its own precision reports — an assertion wearing the
+        # clothes of a measurement. It matters now that a match may legitimately CONTAIN a
+        # protected span: containment is safe only while the replacement carries the characters
+        # through, and this is what proves it did.
+        for record in records:
+            for item in record["protected"]:
+                if item["original"] and item["original"] not in record["canonical_text"]:
+                    mutations.append(f"{case['id']}:{item['original']}")
+            for item in record["semantic_sequence"]:
+                if item["type"] == "protected" and item["text"] not in record["canonical_text"]:
+                    mutations.append(f"{case['id']}:{item['text']}")
         results.append({"id": case["id"], "passed": all(checks), "checks": len(checks), "concept_ids": concepts})
     failures = [result["id"] for result in results if not result["passed"]]
     return {
         "evaluation_type": "golden", "cases": len(results), "passed": len(results) - len(failures),
         "failed": len(failures), "failures": failures,
-        "protected_span_mutations": 0,
+        "protected_span_mutations": len(mutations),
+        "protected_spans_mutated": sorted(dict.fromkeys(mutations)),
         "raw_unit_counted_as_semantic": 0,
         "limitations": ["Golden fixtures test declared deterministic behavior only; they are not held-out evidence."],
     }

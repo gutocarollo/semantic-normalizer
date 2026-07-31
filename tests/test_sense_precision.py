@@ -335,6 +335,34 @@ class SensePrecisionTests(unittest.TestCase):
         self.assertIn("agências de classificação de risco de crédito", aliases)
         self.assertNotIn("crédito", [alias.casefold() for alias in aliases])
 
+    def test_a_protected_span_is_not_claimed_twice(self):
+        """A protected span a concept swallowed is not also an independent protected value.
+
+        Allowing a match to CONTAIN a protected span is what makes `Resolução CVM 175` matchable —
+        `175` is a protected number and every candidate overlapping one used to be discarded. But
+        the record then asserted both things about the same three characters: `match_events` said
+        they belong to the concept span, `protected_values` said they stand alone at their own
+        offsets, and README.md promises a protected value remains unchanged. Both cannot be the
+        authoritative account. `semantic_sequence` had already reconciled it; the raw fields had not.
+
+        The companion invariant is enforced in the matcher rather than here: a match may absorb a
+        protected span only while its canonical rewrite carries the characters through verbatim,
+        so containment cannot silently mutate a number. `evaluate_golden` now counts violations
+        instead of reporting the constant 0.
+        """
+        sentence = "O regulamento observa os limites previstos na Resolução CVM 175 sobre divulgação."
+        record = normalize_text(sentence, source="t", kind="text", lexicon=self.lexicon)[0]
+        matched = [(event["start"], event["end"]) for event in record["match_events"]]
+        self.assertIn("artifact.cvm_resolution_175", record["concept_ids"])
+        for item in record["protected_values"]:
+            for start, end in matched:
+                self.assertFalse(
+                    item["start"] >= start and item["end"] <= end,
+                    f"{item['value']!r} is reported as an independent protected value while a "
+                    f"concept match at ({start}, {end}) already claims those characters.",
+                )
+        self.assertIn("175", record["canonical_text"])
+
     def test_the_income_tax_acronym_stays_ambiguous(self):
         """`IR` is Imposto de Renda and Information Ratio. Neither may win automatically."""
         for sentence in (

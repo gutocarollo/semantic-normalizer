@@ -16,6 +16,33 @@ in [Verification log](#verification-log), and the machine-checkable manifest is
 
 ---
 
+## Correction — headline counts in the 2.28.0 delivery
+
+A fourth review recomputed four numbers stated in the 2.28.0 commit message and docstrings and
+found all four describing an intermediate state rather than the delivered tree. Every one
+understates what shipped, which is the harmless direction and not the point: the campaign has
+diagnosed "stale evidence presented as current" repeatedly, and here it recurred four times in one
+delivery. Recomputed live against 2.28.0:
+
+| stated | actual |
+|---|---|
+| 62 concepts across batches 25-31 | **87** — the sum through batch 30, with batch 31's 25 uncounted |
+| 529 pre-emption pairs qualify | **767** |
+| canary: 124 subtests fail on the pre-fix engine, 531 pass | **168 fail, 601 pass** (769 = 767 pairs + 2 sentences) |
+| `reports/review-backlog.json`: 169 review forms | **169** — the file said 171, matching the count from the round before the batches landed |
+
+The cause is ordering: each number was measured when the work that produced it was done, and the
+tree kept moving afterwards. `make deliver` already enforces exactly this discipline for
+MANIFEST.json by re-cutting and comparing; the fix is to treat every headline number the same way
+and regenerate it as the literal last step before writing the claim. The delivery gate now covers
+`reports/release-manifest.json` and `checksums.sha256` as well, after the same review found the
+committed release manifest recording a document at 27096 bytes when the committed file was 27092.
+
+One claim in that review did not survive checking: the skill zip is byte-reproducible. Three
+consecutive builds from an unchanged tree produce an identical sha256. What the review compared was
+the committed artifact against a fresh build, and those differ because of the staleness above, not
+because the build is non-deterministic.
+
 ## [0.4.0] — 2026-07-31
 
 **The registry finally speaks the domain.** 86 → 257 concepts; 171 of them CGA/ANBIMA

@@ -16,7 +16,14 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "MANIFEST.json"
 REGISTRY = ROOT / "src" / "semantic_normalizer" / "data" / "registry.jsonl"
 SKIP_DIRS = {".git", "__pycache__", "dist", "exports", ".venv", ".pytest_cache"}
-SKIP_NAMES = {"MANIFEST.json", ".DS_Store", ".manifest.before"}
+# `.DS_Store` is noise; the rest are the delivery gate's own scratch copies. It compares each
+# generated artifact against a snapshot taken before a second cut, and a snapshot living in the
+# tree would be hashed INTO the artifact it is the baseline for — the gate would then fail every
+# run on a clean tree. `.manifest.before` was already listed; extending the gate to the release
+# manifest and checksums added two more, and naming them one at a time is how the next one gets
+# missed, so the rule is the suffix.
+SKIP_NAMES = {"MANIFEST.json", ".DS_Store"}
+SKIP_SUFFIXES = (".before",)
 
 
 def main() -> int:
@@ -26,6 +33,7 @@ def main() -> int:
         if path.is_file()
         and not any(part in SKIP_DIRS for part in path.parts)
         and path.name not in SKIP_NAMES
+        and not path.name.endswith(SKIP_SUFFIXES)
         and path.suffix != ".pyc"
     )
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))

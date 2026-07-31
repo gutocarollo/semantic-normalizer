@@ -486,7 +486,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "A correction to the RECORD of amendment 37, not to its decision. That amendment reassigned `posições compradas` from technical.long_extension to technical.long_position and justified it as `all 3 occurrences`. There are seven: the search that produced the three was case-sensitive, and the corpus writes `Posições compradas` capitalised in three rows of the hedge-fund strategy table and `Posições Compradas` in a parenthetical gloss. Read casefolded, six of seven are plain long positions — `Posições compradas ou vendidas em diversos mercados`, `investe R$ 9 milhões (90%) em posições compradas (long)` — and one is a gloss of the strategy: `Long Extension (Posições Compradas)`. The reassignment is therefore right, and by a wider margin than claimed, but the count in the ledger was false and a false count is what the round-3 review had just caught in amendment 32. Leaving it would repeat the defect while writing about it. In the one gloss occurrence `Long Extension` fires as technical.long_extension on its own name, so nothing is lost there either.",
+  "change_reason": "The draw surfaced no sense error, and one recall gap: `A Lei Fundamental da Gestão Ativa afirma que a produtividade de um gestor ativo depende...` matched only `Gestão Ativa`, because batch 31 registered the concept under its English name alone. The corpus writes the Portuguese name too. This is the campaign's oldest lesson in its mildest form — a label is authored by the corpus, and half of one is still half.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -502,8 +502,8 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "136579db9662d30767571159423046e7332c4e0a78c656c22f1b16d61b4fca70",
-    "registry.provenance.jsonl": "b5e28e3cae49b5bd07b3dd8b0bae88b72d387080386e5fa03df1988b4e2b06d0",
+    "registry.jsonl": "163d4a2f15bc4227edb997ea96db23d5522e8e85f430c7c30094a905b2218f9b",
+    "registry.provenance.jsonl": "ea58edffb9ffeef44dd7a44d923ef551efc869bf9e03ecc2b239fe24f85e1898",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },

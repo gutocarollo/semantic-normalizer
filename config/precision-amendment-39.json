@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-39",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#03-gestao-de-carteiras-renda-variavel-2; residual draw with corrected sweep accounting (seed 27182818, 240 events), all read",
+  "method": "the Portuguese name counted in the corpus before being added",
+  "reason": "The draw surfaced no sense error, and one recall gap: `A Lei Fundamental da Gestão Ativa afirma que a produtividade de um gestor ativo depende...` matched only `Gestão Ativa`, because batch 31 registered the concept under its English name alone. The corpus writes the Portuguese name too. This is the campaign's oldest lesson in its mildest form — a label is authored by the corpus, and half of one is still half.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "technical.fundamental_law_active_management",
+      "language": "pt-BR",
+      "form": "Lei Fundamental da Gestão Ativa",
+      "why": "1 occurrence, and it is the sentence that states the law. Six tokens, so it beats the two-token `Gestão Ativa` that was taking the span."
+    }
+  ]
+}

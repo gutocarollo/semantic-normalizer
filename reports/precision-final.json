@@ -69,6 +69,20 @@
       ]
     },
     {
+      "error_rate": 0.0,
+      "errors": 0,
+      "found": [],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-accounted.json",
+      "sample_size": 240,
+      "seed": 27182818,
+      "state": "drawn with every sweep queue passed, which is the accounting the two draws below got wrong by being given one queue file; zero sense errors, one recall gap (amendment 39). This is the CLEANER of the two post-repair draws and is NOT the one the published figure comes from: the draw below found a real residual that still exists by design, and reporting a zero-error sample instead would be choosing the number rather than measuring it",
+      "wilson_95": [
+        0.0,
+        0.0158
+      ]
+    },
+    {
       "error_rate": 0.0042,
       "errors": 1,
       "found": [

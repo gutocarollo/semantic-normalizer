@@ -1495,18 +1495,6 @@
       "reason": "observed"
     },
     {
-      "concept_id": "risk.liquidity",
-      "contested_by": [
-        "technical.liquidity"
-      ],
-      "corpus_occurrences": 59,
-      "form": "liquidez",
-      "language": "pt-BR",
-      "measured_total": null,
-      "measured_wrong": null,
-      "reason": "contested"
-    },
-    {
       "concept_id": "state.disabled",
       "contested_by": [],
       "corpus_occurrences": 0,
@@ -1675,18 +1663,6 @@
       "reason": "contested"
     },
     {
-      "concept_id": "technical.liquidity",
-      "contested_by": [
-        "risk.liquidity"
-      ],
-      "corpus_occurrences": 59,
-      "form": "liquidez",
-      "language": "pt-BR",
-      "measured_total": null,
-      "measured_wrong": null,
-      "reason": "contested"
-    },
-    {
       "concept_id": "technical.long_position",
       "contested_by": [],
       "corpus_occurrences": 1,
@@ -1784,7 +1760,7 @@
     }
   ],
   "by_reason": {
-    "contested": 33,
+    "contested": 31,
     "measured": 9,
     "observed": 125,
     "unexplained": 4
@@ -2035,9 +2011,9 @@
   "recoverable_forms": 24,
   "recoverable_occurrences": 1713,
   "registry": {
-    "concepts": 395,
-    "version": "2.27.0"
+    "concepts": 482,
+    "version": "2.28.0"
   },
-  "review_forms": 171,
+  "review_forms": 169,
   "schema_version": "review-backlog-v1"
 }
