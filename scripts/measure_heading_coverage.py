@@ -134,6 +134,13 @@ VOLUME_NUMERAL = re.compile(r"\s+(?:[IVX]{1,4}|\d{1,2})\s*$")
 #
 # Additive, like everything else here: it appends a candidate, never replaces the heading, never
 # removes anything from the denominator, and a stripped form scores only if the registry holds it.
+#
+# How many headings each list touches is NOT written here. A commit message of mine claimed
+# VOLUME_NUMERAL fired on 8 headings and a reviewer measured 10 — the two it missed were safe, but
+# the disclosure was wrong, and a count kept in a comment goes stale the moment the corpus or the
+# registry moves. `scripts/cut_coverage_ceiling.py` now measures all three and writes them into
+# `reports/coverage-ceiling.json`, so the number is produced by the same run that produces the
+# coverage it describes.
 RELATIONAL = re.compile(
     r"^\s*(?:em\s+rela[çc][ãa]o\s+[àaà]s?|rela[çc][ãa]o\s+entre|no\s+[âa]mbito\s+d[aeo]s?)\s+"
     r"|\s+(?:na\s+pr[áa]tica|em\s+detalhes?)\s*$", re.IGNORECASE)

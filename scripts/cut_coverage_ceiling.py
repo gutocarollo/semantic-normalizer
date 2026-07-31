@@ -55,6 +55,31 @@ def prose_of_corpus() -> str:
     return unicodedata.normalize("NFC", "\n".join(out))
 
 
+def decoration_counts(report: dict) -> dict:
+    """How many headings each decoration list actually touches, measured rather than remembered.
+
+    A commit message claimed VOLUME_NUMERAL fired on 8 headings; a reviewer measured 10. Both
+    extras were harmless, but the disclosure was wrong, and the fix is not a better guess — it is
+    to compute the number in the same run that computes the coverage it accompanies.
+    """
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location(
+        "measure_heading_coverage", ROOT / "scripts" / "measure_heading_coverage.py")
+    assert spec and spec.loader
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+
+    counts = {"QUANTIFIER": 0, "VOLUME_NUMERAL": 0, "RELATIONAL": 0}
+    for heading in report["headings"]:
+        for name in counts:
+            pattern = getattr(module, name)
+            if any(pattern.sub("", item).strip() not in ("", item)
+                   for item in module.variants(heading["heading"])):
+                counts[name] += 1
+    return counts
+
+
 def main() -> int:
     report = json.loads(COVERAGE.read_text(encoding="utf-8"))
     prose = prose_of_corpus()
@@ -112,13 +137,15 @@ def main() -> int:
             "reasserted, and it is what took the figure from 0.9415 to 0.9503 — recorded plainly "
             "because it is the change most open to the charge of being fitted to the target."
         ),
+        "decoration_headings_touched": decoration_counts(report),
         "headings": sorted(rows, key=lambda row: (row["class"], row["heading"])),
     }
     OUTPUT.write_text(json.dumps(out, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
                       encoding="utf-8")
     print(json.dumps({key: out[key] for key in
                       ("distinct_headings", "covered", "covered_share_of_distinct",
-                       "target_met", "still_partial", "admissible_under_the_rule")},
+                       "target_met", "still_partial", "admissible_under_the_rule",
+                       "decoration_headings_touched")},
                      ensure_ascii=False))
     return 0
 

@@ -3,6 +3,11 @@
   "covered": 326,
   "covered_share_of_distinct": 0.9532,
   "covered_share_of_mass": 0.9781,
+  "decoration_headings_touched": {
+    "QUANTIFIER": 7,
+    "RELATIONAL": 3,
+    "VOLUME_NUMERAL": 10
+  },
   "distinct_headings": 342,
   "finding": "Headings still partial, with the prose count for each phrase measured over a corpus stripped of BOTH heading lines and image captions. A phrase with zero prose occurrences exists only as a heading, and the admission rule refuses those: it refused bare `RF` (22 occurrences, all in headings), `títulos híbridos`, `aplicações de renda fixa`, `riscos de derivativos`, `call/put`, `compra de contrato futuro` and `venda de contrato futuro` on exactly this ground. Registering them to move the number would abandon the rule where it costs something.",
   "generated_by": "scripts/cut_coverage_ceiling.py",

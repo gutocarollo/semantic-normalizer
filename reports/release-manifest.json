@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "b8804590f4b7f233b2c8e02b366151c09f0b2588d20d8e59fb5a2bfaac603010",
+  "package_validation_sha256": "5ca42f28f8636a4a1c6be6009091b1023a7ae5e8ba7eff763d87d832802eaed2",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
-      "sha256": "7769b1decc5b401e084396240be1134420a6f6176317f16973d2a14fbd01cd99",
-      "size": 1138329
+      "sha256": "fe734d4c26e049b90f9e089605d2e31dd2e11ee6eb157c3e4610d3227726d835",
+      "size": 1140657
     },
     {
       "path": "docs/architecture.md",
@@ -171,8 +171,8 @@
     },
     {
       "path": "reports/coverage-ceiling.json",
-      "sha256": "822201899351e94f7bb53cea0ddb6562a8ca3ae9e10aa45c1c4bc5a6996f147b",
-      "size": 6459
+      "sha256": "03fc259a170c01ede0493bfb0e03930c8441ca18dd5bb13d24b021d3f2e72960",
+      "size": 6566
     },
     {
       "path": "reports/coverage-current.json",
@@ -221,7 +221,7 @@
     },
     {
       "path": "reports/dev-retrieval-ablations-final.json",
-      "sha256": "78d62361163624857d3deaeac65867bb73769513bc9c1e5947f88850a45adb56",
+      "sha256": "d5e982e95d88aa407a14d6fcd0f9a90dfc0919ab9e0481f05c3a10e99f274c7e",
       "size": 88187
     },
     {
@@ -231,7 +231,7 @@
     },
     {
       "path": "reports/dev-semantic-gates.json",
-      "sha256": "2081c52647b70b1365dc5ceb9909b401c42eea5a2fa62e0cbe3111cdb8aff665",
+      "sha256": "0e080114dd31338d078bbf1069e4b2724eee528b982b524871cd065a32edc390",
       "size": 6879
     },
     {
@@ -256,7 +256,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "b8804590f4b7f233b2c8e02b366151c09f0b2588d20d8e59fb5a2bfaac603010",
+      "sha256": "5ca42f28f8636a4a1c6be6009091b1023a7ae5e8ba7eff763d87d832802eaed2",
       "size": 7404
     },
     {
@@ -601,8 +601,8 @@
     },
     {
       "path": "reports/unread-residual-v2360-r15.json",
-      "sha256": "20e4b2b4c6c0f7a2fc9473044145a1ea2c70720334be6f0e10d381b85fe7672b",
-      "size": 60900
+      "sha256": "1b075fe95ca0520cd74771f84c461ba3449610beebcf3cf4481174ed32205573",
+      "size": 61459
     },
     {
       "path": "reports/wordnet-candidates.json",
@@ -666,8 +666,8 @@
     },
     {
       "path": "scripts/cut_coverage_ceiling.py",
-      "sha256": "bd3d4c2d93bbd2e20ba6ec2316bdebeb35c412edee9c784c3c831812065aa390",
-      "size": 6569
+      "sha256": "de5fd3b827c9d60923abb9d65c8954c6cabc78667ea54294377e0686c320c39d",
+      "size": 7773
     },
     {
       "path": "scripts/cut_manifest.py",
@@ -716,8 +716,8 @@
     },
     {
       "path": "scripts/measure_heading_coverage.py",
-      "sha256": "bb8cf54fb0133a9bb4bccd554ea98323a3c224da3122644a1c5a23001ac8fc8b",
-      "size": 27476
+      "sha256": "a6834c88112c7957ffe478be7f327ebcfc1dc948656c18d2f14d5c1d486969b4",
+      "size": 27985
     },
     {
       "path": "scripts/migrate_v02_concepts.py",
@@ -861,18 +861,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "sha256": "5d2eaf8ab916c08b690574865d0256933b8a63a0fd6f821e0a7d1c00cc1ed195",
-      "size": 777475
+      "sha256": "2d984bc33d2304596fd5358fffadaf1ae4dc527165d13b23372dc737db8aaaca",
+      "size": 777529
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "sha256": "c3d727f2252e701376d7812b0740e63ef57c1de7a5cfb958c2bc4a4f034aacbd",
-      "size": 122340
+      "sha256": "77881b352dc50daed5aacfd42ee204e25f6eb8806c1e65549005f9369ba5838a",
+      "size": 123335
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "sha256": "7af94680eb987cc1f0d7dd551a68085a5d76a2f1d8c8530729349431451c538f",
-      "size": 19173
+      "sha256": "d397c69ffb45711d9a5907c82f311f9362e768ad62f6f3fe55d72f1faba64a7d",
+      "size": 20452
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -1007,5 +1007,5 @@
   ],
   "payload_files": 196,
   "release_version": "0.4.0",
-  "wheel_sha256": "7769b1decc5b401e084396240be1134420a6f6176317f16973d2a14fbd01cd99"
+  "wheel_sha256": "fe734d4c26e049b90f9e089605d2e31dd2e11ee6eb157c3e4610d3227726d835"
 }

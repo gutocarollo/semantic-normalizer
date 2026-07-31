@@ -1,0 +1,11 @@
+{
+  "id": "precision-sweep-amendment-68",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "the collocation counted corpus-wide, and the two readings of the same word compared side by side",
+  "reason": "The last MEDIA finding from the fresh review, and it needed a narrow fix rather than an obvious one.\n\n`Ao embutir opções de compra ou de venda a títulos` is an elided coordination: `opções de [compra] ou de [venda]` means call options or PUT options. The matcher takes `opções de compra` as `technical.call_option` correctly and then `venda` alone as `action.sell`, so the sentence rewrites to `Ao embutir call ou de vender a título` — the put meaning gone and a noun turned into a verb.\n\nThe obvious fix is wrong. `venda` as `action.sell` is CORRECT nearly everywhere else: `as ordens de compra e venda de ativos devem ser registradas` is genuinely buy and sell orders, and demoting the form would cost that to buy back one event. The campaign already made this mistake once, blocking 149 legitimate rewrites to catch 24. So the collocation is forbidden and the form is left alone, which is what the below-50 % branch of the rule prescribes.\n\nRegistering the coordination as a single concept was considered and rejected: it names call AND put, and a concept holding two opposite senses is the defect that put every corpus put into a call. The residual cost is stated rather than hidden — in that one sentence the put option is now UNTAGGED rather than mistagged. A gap is not as good as a match, and it is much better than an inversion. One occurrence corpus-wide.",
+  "operations": [
+    {"op":"forbid","concept":"action.sell","language":"pt-BR",
+     "variants":["compra ou de venda", "opções de compra ou de venda"]}
+  ]
+}
