@@ -529,7 +529,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "`configure` is an automatic ENGLISH form of action.configure, seed vocabulary from this project's original software lexicon, and it collides with the Portuguese subjunctive of `configurar-se`: `caso sua expectativa de queda se configure` means `if the expected fall materialises`, not `configure a system`. The same homograph shape as `decide`, which this campaign repaired by registering the Portuguese side — but there is nothing to register here, because the software sense has no business in a CGA corpus at all. The collocation is the surgical repair: `se configure` is reflexive and never the software verb.",
+  "change_reason": "The tail I had left as a declared pendency, measured down to eight. Five are the defect this campaign named for the alias slot and never checked on the canonical one — a pt-BR preferred label written by translation while the corpus uses another word. Three are NOT: `temporal.until`'s alternative `até o último dia` is a specific collocation and not a rendering of `until`, and `action.delete`/`action.configure` offer only gerunds against their lemmas — those expose a bad ALIAS, and renaming to them would repair a count while breaking the label. Those three stay, with the reason recorded here rather than left to be rediscovered.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -545,8 +545,8 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "5e75a3d3c763f7823214fe1f1e0e1ef2ee8eca64a598e42237a92ba857d93f1c",
-    "registry.provenance.jsonl": "ea20b1769f43070360cd97bb4ba9aba9af6aaac3381cbf237eec43a2c16b7dac",
+    "registry.jsonl": "a5a500154b350303c931bef9bc5756848138df19fa5f4ae7c77dabc56a1e44ac",
+    "registry.provenance.jsonl": "f6d8735b2504b61b081c27a45880282e6c2b2412e8eb79af882ff875795bb2d5",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },

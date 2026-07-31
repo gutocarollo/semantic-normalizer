@@ -1,0 +1,21 @@
+{
+  "id": "precision-sweep-amendment-57",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; the unattested-canonical tail, worked rather than declared",
+  "method": "each canonical and its alternative counted; each case read before deciding",
+  "reason": "The tail I had left as a declared pendency, measured down to eight. Five are the defect this campaign named for the alias slot and never checked on the canonical one — a pt-BR preferred label written by translation while the corpus uses another word. Three are NOT: `temporal.until`'s alternative `até o último dia` is a specific collocation and not a rendering of `until`, and `action.delete`/`action.configure` offer only gerunds against their lemmas — those expose a bad ALIAS, and renaming to them would repair a count while breaking the label. Those three stay, with the reason recorded here rather than left to be rediscovered.",
+  "operations": [
+    {"op":"rename_pref","concept":"entity.tax","language":"pt-BR","to":"imposto",
+     "why":"`tributo` occurs 0 times; `imposto` 12 and `impostos` 13. The singular is the lemma and it is attested."},
+    {"op":"add_form","concept":"entity.tax","language":"pt-BR","form":"tributo","policy":"review",
+     "why":"A correct rendering the corpus does not use; kept recognisable rather than dropped."},
+    {"op":"rename_pref","concept":"technical.growth_investing","language":"pt-BR","to":"estilo growth",
+     "why":"5 occurrences against 0 for the English phrase that was the pt-BR label."},
+    {"op":"rename_pref","concept":"entity.high_yield_bond","language":"pt-BR","to":"high yield",
+     "why":"5 against 0 — the corpus keeps the English term in Portuguese prose, which the ESG/ASG case established is the corpus's own convention deciding, not a translation preference."},
+    {"op":"rename_pref","concept":"technical.deadline_horizon","language":"pt-BR","to":"horizonte",
+     "why":"3 against 0 for `horizonte de investimento`."},
+    {"op":"rename_pref","concept":"actor.listed_company","language":"pt-BR","to":"capital aberto",
+     "why":"2 against 0 for `companhia de capital aberto`."}
+  ]
+}
