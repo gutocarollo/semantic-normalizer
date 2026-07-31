@@ -447,16 +447,16 @@
       ]
     }
   ],
-  "concepts": 582,
+  "concepts": 584,
   "errors_repaired_total": 22,
-  "events_total": 7801,
+  "events_total": 7803,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
     "lower_bound_95": 0.9855,
     "point": 1.0,
     "upper_bound_95": 1.0
   },
-  "registry_version": "2.35.0",
+  "registry_version": "2.36.0",
   "residual": {
     "error_rate_point": 0.0,
     "error_rate_wilson_95": [
@@ -464,12 +464,12 @@
       0.0158
     ],
     "errors_adjudicated": 0,
-    "events": 7168,
+    "events": 7170,
     "sample_size": 240,
     "share": 0.9189
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2350-r14.json"
+    "reports/unread-residual-v2360-r15.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
@@ -489,6 +489,6 @@
       "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the form's 7 occurrences, the other 6 being plain long positions",
       "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of risk types with the head `risco` elided — 1 of the form's occurrences"
     ],
-    "sample_size_for_even_odds_of_catching_one": 2099
+    "sample_size_for_even_odds_of_catching_one": 2100
   }
 }

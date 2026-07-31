@@ -302,7 +302,7 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2350-r14.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2360-r15.json",
                         help="the draw taken against the current registry")
     parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "

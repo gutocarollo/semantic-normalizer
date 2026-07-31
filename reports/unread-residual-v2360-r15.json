@@ -1,4 +1,6 @@
 {
+  "adjudicated_errors": 0,
+  "adjudication_note": "240 events at registry 2.36.0, all read individually, zero false positives. Both sides of the two sense-splits this round made are confirmed live in the draw itself: `Fundo Multimercado` resolves to `entity.multimarket_fund` and `Hedge Funds` to `technical.hedge_fund`, so neither split was bought by breaking its opposite — the failure mode that once made a guard pass by emptying `automatic_surfaces`.",
   "distinct_forms_in_sample": 149,
   "events_read_by_sweep": 633,
   "events_total": 7803,
