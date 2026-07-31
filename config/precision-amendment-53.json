@@ -1,0 +1,20 @@
+{
+  "id": "precision-sweep-amendment-53",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; last of the heading tail",
+  "method": "each spelling counted before being added",
+  "reason": "Plurals and elided-head forms the headings use for concepts already registered.",
+  "operations": [
+    {"op":"add_form","concept":"entity.advisory_board","language":"pt-BR","form":"Conselhos Consultivos e Comitês",
+     "why":"The plural the CVM rule heads its section with; the registry had the singular."},
+    {"op":"add_form","concept":"technical.strategic_allocation","language":"pt-BR","form":"Estratégica",
+     "policy":"review",
+     "why":"`Estratégica x Tática` heads the section that contrasts the two, with the head noun elided. Kept at review because the bare adjective is ambiguous outside that heading."},
+    {"op":"add_form","concept":"technical.tactical_allocation","language":"pt-BR","form":"Tática","policy":"review",
+     "why":"The other side of the same elided contrast."},
+    {"op":"add_form","concept":"technical.dynamic_allocation","language":"pt-BR","form":"Dinâmica","policy":"review",
+     "why":"`Dinâmica x Estática`, same shape."},
+    {"op":"add_form","concept":"technical.static_allocation","language":"pt-BR","form":"Estática","policy":"review",
+     "why":"The other side of that one."}
+  ]
+}

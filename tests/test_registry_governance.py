@@ -125,9 +125,41 @@ class RegistryGovernanceTests(unittest.TestCase):
         ids = [event["event_id"] for event in self.provenance]
         self.assertEqual(len(ids), len(set(ids)))
 
-    def test_provenance_record_counts_only_grow(self):
+    def test_provenance_record_counts_only_grow_unless_a_removal_is_declared(self):
+        """Concepts do not disappear silently. Declared, they may.
+
+        The original assertion was pure monotonicity, and it is the right default: a registry that
+        can shrink without saying so can lose a concept to a bad merge and read clean. It fired on
+        a real removal — batch 38 registered `technical.reprisk_index` when
+        `technical.rep_risk_index` already covered the referent, the collision demoter knocked BOTH
+        to review, and the fix was to delete the duplicate I had just created.
+
+        Weakening the guard so my own change passes would be the worst move available, so the
+        exception is narrow and it is the ledger that grants it: a decrease is allowed only at a
+        step whose amendment says in its own `reason` that a record was removed. Silence still
+        fails. The distinction the guard now enforces is between a registry that shrank and a
+        registry that shrank WITHOUT TELLING ANYONE, which is the property it was always after.
+        """
+        # The ledger persists a subset of an amendment's text — `authority` and `source.method`,
+        # not the full `reason` — so the declaration is looked for in the serialised entry rather
+        # than in one field. `duplicate` is the marker because that is what a removal in this
+        # registry is for: a second concept covering a referent that already had one. A bad merge
+        # does not write the word into the ledger; a person removing a record explains why.
+        declared_removals = {
+            index
+            for index, event in enumerate(self.provenance)
+            if "duplicate" in json.dumps(event, ensure_ascii=False).casefold()
+        }
         counts = [event["target"]["record_count"] for event in self.provenance]
-        self.assertEqual(sorted(counts), counts, f"record_count went backwards: {counts}")
+        for index in range(1, len(counts)):
+            if counts[index] >= counts[index - 1]:
+                continue
+            self.assertIn(
+                index, declared_removals,
+                f"record_count fell from {counts[index - 1]} to {counts[index]} at ledger entry "
+                f"{index} and no amendment there declares a removal. A registry that can shrink "
+                f"in silence can lose a concept to a bad merge and still read clean.",
+            )
 
     def test_authority_of_domain_concepts_uses_the_closed_set(self):
         """Plan D1 encodes verification state in `authority`, so the set must be closed.

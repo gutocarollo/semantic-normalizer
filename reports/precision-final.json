@@ -72,6 +72,22 @@
       "error_rate": 0.0042,
       "errors": 1,
       "found": [
+        "`Liquidez` in the elided-head risk list — the residual already declared in KNOWN_RESIDUALS, found rather than new"
+      ],
+      "registry": "2.28.0",
+      "report": "reports/unread-residual-v2280-r4.json",
+      "sample_size": 240,
+      "seed": 17320508,
+      "state": "after the heading-coverage tail was worked to 84.62 %",
+      "wilson_95": [
+        0.0007,
+        0.0232
+      ]
+    },
+    {
+      "error_rate": 0.0042,
+      "errors": 1,
+      "found": [
         "`BD` as Benefício Definido resolving to system.database, seed software vocabulary colliding with a pension acronym — repaired by batch 37 and amendments 51-52"
       ],
       "registry": "2.28.0",
@@ -373,8 +389,8 @@
       ]
     }
   ],
-  "concepts": 516,
-  "errors_repaired_total": 20,
+  "concepts": 524,
+  "errors_repaired_total": 21,
   "events_total": 7820,
   "precision": {
     "interpretation": "The lower bound is what a claim should be made against: it assumes the residual error rate sits at the top of what a sample of this size can rule out.",
@@ -390,20 +406,20 @@
       0.0232
     ],
     "errors_adjudicated": 1,
-    "events": 6478,
+    "events": 6479,
     "sample_size": 240,
-    "share": 0.8284
+    "share": 0.8285
   },
   "residual_draws_pooled": [
-    "reports/unread-residual-v2280-r3.json"
+    "reports/unread-residual-v2280-r4.json"
   ],
   "schema_version": "precision-final-v1",
   "swept": {
     "basis": "Every error above was repaired and each repair is asserted by a case in tests/test_sense_precision.py, so a regression fails the suite rather than going unnoticed. `errors_open: 0` means no verdict in this file is still outstanding. It does NOT mean the swept set is provably clean: see `known_limitation` in this same file, and note that adversarial review rounds 1 and 3 both found errors inside occurrences this sweep had read and passed.",
-    "events": 1342,
+    "events": 1341,
     "forms_with_errors_found_and_repaired": 21,
     "known_errors_open": 0,
-    "share": 0.1716
+    "share": 0.1715
   },
   "what_this_sample_cannot_detect": {
     "error_rate_they_imply": 0.000309,
@@ -415,6 +431,6 @@
       "technical.long_position / `Posições Compradas` glossing the Long Extension strategy — 1 of the form's 7 occurrences, the other 6 being plain long positions",
       "technical.liquidity / `Liquidez` in `- De Crédito - De Liquidez - De Volatilidade`, a list of risk types with the head `risco` elided — 1 of the form's occurrences"
     ],
-    "sample_size_for_even_odds_of_catching_one": 1897
+    "sample_size_for_even_odds_of_catching_one": 1898
   }
 }

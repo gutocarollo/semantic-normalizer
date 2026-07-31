@@ -1,0 +1,8 @@
+{
+  "id": "precision-sweep-amendment-54",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; correction of my own duplicate in batch 38",
+  "method": "the registry compared against itself for duplicate referents before resealing",
+  "reason": "Batch 38 registered `technical.reprisk_index` when `technical.rep_risk_index` already existed for the same referent, and the importer's collision demoter correctly knocked BOTH down to review — leaving the concept matchable by neither. I removed the duplicate record and restored the survivor's policy directly in the registry file, and `build_release.py` refused the tree because the release record still described the concept set that included it. That refusal is the seal working: a registry edited outside the tooling is a registry whose ledger no longer describes it. This amendment carries no operations; its purpose is to reseal the release record over the corrected concept set and to put the removal in the append-only ledger, where a hand edit would otherwise have left no trace.",
+  "operations": []
+}

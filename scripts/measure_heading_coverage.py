@@ -60,6 +60,8 @@ FURNITURE = frozenset({
     "apostila cga 2026 - apresentação e sumário", "apostila de preparação para a prova da cga",
     "apostila de preparação para a prova da cga - 2026", "sobre a academia rafael toro",
     "proveniência",
+    # A slide instruction, not a subject: `ETAPA 5 – FINAL!: Dividir Etapa 3 pela Etapa 4!!!`.
+    "etapa 5 – final!: dividir etapa 3 pela etapa 4!!!", "dividir etapa 3 pela etapa 4!!!",
 })
 
 
@@ -71,6 +73,7 @@ def is_furniture(title: str) -> bool:
 # Interna de Retorno`, `CDs – Certificate of Deposits`. The dash is a gloss, the same relation the
 # parenthetical form expresses, and scoring such a heading uncovered measures the punctuation
 # rather than the dictionary.
+INNER_GLOSS = re.compile(r"^(.{2,}?)\s*\(([^)]{2,})\)\s*(.+)$")
 GLOSS_DASH = re.compile(r"^(.{3,}?)\s+[–—-]\s+(.{3,})$")
 # Enumeration and running-head furniture the material adds around a title: `1) Indicadores de
 # Tendência (continuação)`, `Apreçamento (Cap. XI)`. Neither is vocabulary.
@@ -86,11 +89,26 @@ def variants(title: str) -> list[str]:
     covering either side covers the heading.
     """
     stripped = TRAILING_FURNITURE.sub("", ENUMERATION.sub("", title)).strip()
+    # `Código: Administração de Recursos de Terceiros`, `Duration: Gráfico`, `Exemplo: Compra de
+    # Contrato Futuro` — the material labels a slide with a running head or an example marker and
+    # separates it with a colon. One side is furniture, the other is the subject, and which side
+    # varies. Splitting and testing both measures the dictionary; refusing to split measures the
+    # punctuation. The single heaviest heading in the corpus is of this shape.
+    colon = [part.strip() for part in stripped.split(":") if part.strip()]
+    if len(colon) > 1:
+        stripped = max((part for part in colon if not is_furniture(part)), key=len, default=stripped)
     out = [title] if stripped == title else [title, stripped]
     for candidate in (stripped,):
         match = PARENTHETICAL.match(candidate)
         if match:
             out += [match.group(1).strip(), match.group(2).strip()]
+            continue
+        # `Value-at-Risk (VaR) Analítico` — the gloss sits INSIDE the phrase rather than at its
+        # end, so the heading names one subject under two spellings with a qualifier after it.
+        inner = INNER_GLOSS.match(candidate)
+        if inner:
+            head, alias, tail = (g.strip() for g in inner.groups())
+            out += [f"{head} {tail}".strip(), f"{alias} {tail}".strip(), head, alias]
             continue
         dash = GLOSS_DASH.match(candidate)
         if dash:

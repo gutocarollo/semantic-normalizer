@@ -1,0 +1,88 @@
+{
+  "batch": 38,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "The last of the uncovered headings that name a subject. `Legislação, Regulação e Tributação` heads a whole chapter file; `Conselhos Consultivos e Comitês` is the plural the CVM rule uses; the rest are compounds the dictionary decomposed. (`RepRisk Index` was dropped from this batch after the import: technical.rep_risk_index already existed and registering a second one made the collision demoter knock both down — the duplicate was removed and the survivor's policy restored.)",
+  "concepts": [
+    {
+      "id": "technical.law_regulation_taxation",
+      "en": "law, regulation and taxation",
+      "pt": "Legislação, Regulação e Tributação",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The chapter grouping the statutory, regulatory and tax rules that bind a Brazilian fund.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "technical.foreign_investment",
+      "en": "foreign investment",
+      "pt": "Investimentos no Exterior",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "Investment outside Brazil, with its own concentration limits and currency exposure.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "entity.international_equity_market",
+      "en": "international equity market",
+      "pt": "Mercado de Ações Internacional",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The foreign share markets a Brazilian portfolio may reach.",
+      "alt_en": [],
+      "alt_pt": [
+        "Índices Internacionais"
+      ],
+      "authority": "apostila-cga-2026#01-investimentos-no-exterior"
+    },
+    {
+      "id": "quantity.after_tax_return",
+      "en": "after-tax return",
+      "pt": "Retorno Líquido de Imposto",
+      "class": "quantity_marker",
+      "pos": "noun",
+      "def": "The return that remains once the applicable tax rate is applied.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#05-legislacao-regulacao-e-tributacao"
+    },
+    {
+      "id": "technical.price_formation",
+      "en": "price formation",
+      "pt": "Formação de Preço",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "How a traded price is arrived at from supply, demand and carry.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "entity.ibovespa_future",
+      "en": "Ibovespa future",
+      "pt": "Ibovespa Futuro",
+      "class": "entity",
+      "pos": "noun",
+      "def": "The index futures contract on the Ibovespa, settled against the index basket.",
+      "alt_en": [],
+      "alt_pt": [
+        "Índice Futuro de Ibovespa"
+      ],
+      "authority": "apostila-cga-2026#08-gestao-de-carteiras-de-renda-fixa"
+    },
+    {
+      "id": "technical.risk_type",
+      "en": "types of risk",
+      "pt": "Tipos de Risco",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The taxonomy the material sets out: market, credit, liquidity, operational and the rest.",
+      "alt_en": [],
+      "alt_pt": [],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    }
+  ]
+}

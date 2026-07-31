@@ -1,0 +1,11 @@
+{
+  "id": "precision-sweep-amendment-55",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#01-investimentos-no-exterior",
+  "method": "the heading spelling counted against the registered one",
+  "reason": "`CDs – Certificate of Deposits` heads a section and the registry carried `Certificates of Deposit` — the plural on the other noun. The corpus writes it the way the heading does.",
+  "operations": [
+    {"op":"add_form","concept":"entity.certificate_of_deposit","language":"en","form":"Certificate of Deposits",
+     "why":"The heading's own spelling; the registry had the plural on the first noun instead of the second."}
+  ]
+}

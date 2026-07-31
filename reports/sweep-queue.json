@@ -1104,21 +1104,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "action.invest",
-      "distance_max": 0.9152,
-      "distance_mean": 0.7707,
-      "distance_spread": 0.1008,
-      "form": "investimentos",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 46,
-      "priority": 2.7859,
-      "read_depth": 2
-    },
-    {
       "concept_id": "entity.strategy",
       "distance_max": 0.9743,
       "distance_mean": 0.8175,
@@ -1128,6 +1113,21 @@
       "glosses": [],
       "occurrences": 74,
       "priority": 2.7801,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "action.invest",
+      "distance_max": 0.9139,
+      "distance_mean": 0.7693,
+      "distance_spread": 0.1012,
+      "form": "investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 45,
+      "priority": 2.7753,
       "read_depth": 2
     },
     {
@@ -1770,21 +1770,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "action.invest",
-      "distance_max": 0.5111,
-      "distance_mean": 0.3528,
-      "distance_spread": 0.1908,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "glosses": [
-        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
-        "dinheiro que é investido com uma expectativa de lucro"
-      ],
-      "occurrences": 5,
-      "priority": 1.762,
-      "read_depth": 2
-    },
-    {
       "concept_id": "actor.institution",
       "distance_max": 0.7735,
       "distance_mean": 0.6787,
@@ -1977,6 +1962,21 @@
       "glosses": [],
       "occurrences": 8,
       "priority": 1.4926,
+      "read_depth": 2
+    },
+    {
+      "concept_id": "action.invest",
+      "distance_max": 0.4671,
+      "distance_mean": 0.2982,
+      "distance_spread": 0.1699,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "glosses": [
+        "o ato de investir; dispor o dinheiro ou capital de uma empresa com uma",
+        "dinheiro que é investido com uma expectativa de lucro"
+      ],
+      "occurrences": 4,
+      "priority": 1.4856,
       "read_depth": 2
     },
     {
@@ -3452,18 +3452,6 @@
       "read_depth": 2
     },
     {
-      "concept_id": "entity.index",
-      "distance_max": 0.0,
-      "distance_mean": 0.0,
-      "distance_spread": 0.0,
-      "form": "ÍNDICE",
-      "general_senses": 3,
-      "glosses": [],
-      "occurrences": 1,
-      "priority": 0.3,
-      "read_depth": 2
-    },
-    {
       "concept_id": "technical.short_position",
       "distance_max": 0.0,
       "distance_mean": 0.0,
@@ -3605,13 +3593,13 @@
       "read_depth": 2
     }
   ],
-  "forms_in_queue": 259,
-  "occurrences_to_read": 609,
+  "forms_in_queue": 258,
+  "occurrences_to_read": 607,
   "priority_distribution": {
     "max": 6.8962,
-    "mean": 2.0419,
-    "median": 1.7606,
-    "stdev": 1.5627
+    "mean": 2.0476,
+    "median": 1.7588,
+    "stdev": 1.5622
   },
   "reading_list": [
     {
@@ -5344,20 +5332,6 @@
       "quote": "As instituições participantes responsáveis pelo apreçamento dos ativos dos ve"
     },
     {
-      "concept_id": "action.invest",
-      "distance": 0.9152,
-      "form": "investimentos",
-      "general_senses": 3,
-      "quote": "Tais investimentos não estão sujeitos a limites de concentração por emissor, des"
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.9045,
-      "form": "investimentos",
-      "general_senses": 3,
-      "quote": "ndações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada."
-    },
-    {
       "concept_id": "entity.strategy",
       "distance": 0.9743,
       "form": "estratégia",
@@ -5370,6 +5344,20 @@
       "form": "estratégia",
       "general_senses": 3,
       "quote": "Para isso, essa estratégia implica rebalanceamentos constantes."
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.9139,
+      "form": "investimentos",
+      "general_senses": 3,
+      "quote": "Tais investimentos não estão sujeitos a limites de concentração por emissor, des"
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.903,
+      "form": "investimentos",
+      "general_senses": 3,
+      "quote": "ndações fornecidas por essa área ajudam muito o gestor a tomar uma decisão de investimentos melhor embasada."
     },
     {
       "concept_id": "action.buy",
@@ -6044,20 +6032,6 @@
       "quote": "ue envolva vários fatores de risco, sem compromisso de concentração em nenhum fator em específico."
     },
     {
-      "concept_id": "action.invest",
-      "distance": 0.5111,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "quote": "ue seja definido quais serão as classes de ativos aceitas no IPS (Política de Investimentos)."
-    },
-    {
-      "concept_id": "action.invest",
-      "distance": 0.5111,
-      "form": "Investimentos",
-      "general_senses": 3,
-      "quote": "O gestor aloca os ativos da carteira de acordo com a Política de Investimentos (IPS) e depois não altera mais."
-    },
-    {
       "concept_id": "actor.institution",
       "distance": 0.7735,
       "form": "instituição",
@@ -6252,6 +6226,20 @@
       "form": "impactos",
       "general_senses": 3,
       "quote": "O grande objetivo é neutralizar os impactos opostos dessas duas partes."
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.4671,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "quote": "ue seja definido quais serão as classes de ativos aceitas no IPS (Política de Investimentos)."
+    },
+    {
+      "concept_id": "action.invest",
+      "distance": 0.4671,
+      "form": "Investimentos",
+      "general_senses": 3,
+      "quote": "O gestor aloca os ativos da carteira de acordo com a Política de Investimentos (IPS) e depois não altera mais."
     },
     {
       "concept_id": "entity.fund",
@@ -7367,13 +7355,6 @@
       "quote": "Cálculo O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobr"
     },
     {
-      "concept_id": "entity.index",
-      "distance": 0.0,
-      "form": "ÍNDICE",
-      "general_senses": 3,
-      "quote": "O ÍNDICE FUTURO DE IBOVESPA é o principal contrato futuro cobrado em p"
-    },
-    {
       "concept_id": "technical.short_position",
       "distance": 0.0,
       "form": "vendido",
@@ -7452,10 +7433,10 @@
     }
   ],
   "registry": {
-    "concepts": 516,
+    "concepts": 524,
     "version": "2.28.0"
   },
   "risk_surface_events": 4395,
   "schema_version": "sweep-queue-v1",
-  "share_of_risk_surface_read": 0.1386
+  "share_of_risk_surface_read": 0.1381
 }
