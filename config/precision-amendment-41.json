@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-41",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; self-audit of the detect_language repair in c0776e3",
+  "method": "all three corpus occurrences read in context",
+  "reason": "A homograph voting for the wrong language. `decide` is the English lemma and also the third-person singular of `decidir`, and only the English side was registered — so every Portuguese `ele decide resgatar` contributed two points to ENGLISH in the language verdict, which is how `Após dois meses (60 dias corridos e 42 dias úteis), ele decide resgatar sua aplicação.` — a sentence with no English in it — still came out `mixed` after the detector was repaired. The repair fixed the function-word half of the problem; this is the alias half. All three occurrences are Portuguese: `ele decide resgatar`, `a alta administração de uma asset management decide que irá alocar`, `decide alocar os recursos entre os gestores`.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "action.decide",
+      "language": "pt-BR",
+      "form": "decide",
+      "why": "3 occurrences, all the Portuguese verb. Registering it makes the surface `shared`, which is what it is, and stops it casting an English vote in a Portuguese sentence."
+    }
+  ]
+}

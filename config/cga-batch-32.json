@@ -1,0 +1,18 @@
+{
+  "batch": 32,
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "adjudication_note": "Found in a review's aside while it was probing something else: `distribuição normal` and `distribuição de retornos` both canonicalised to `distribuição de probabilidades`, because both were registered as aliases of the general concept. The Normal distribution is a specific family, not the general object — the apostila teaches it as one (`O Stress Test testa a cauda da curva de sino (Distribuição Normal)`), and collapsing the specific into the general is the same defect as `ISR` under technical.esg and `posições compradas` under long_extension: a member absorbed by its family because the family was the only entry.",
+  "concepts": [
+    {
+      "id": "technical.normal_distribution",
+      "en": "normal distribution",
+      "pt": "Distribuição Normal",
+      "class": "technical_term",
+      "pos": "noun",
+      "def": "The symmetric bell-shaped distribution assumed by parametric risk measures, whose tail the stress test probes.",
+      "alt_en": [],
+      "alt_pt": ["curva de sino"],
+      "authority": "apostila-cga-2026#06-gestao-de-riscos"
+    }
+  ]
+}

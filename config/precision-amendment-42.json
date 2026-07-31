@@ -1,0 +1,181 @@
+{
+  "id": "precision-sweep-amendment-42",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; every pt-BR canonical surface counted in the corpus",
+  "method": "for all 482 concepts, the first automatic pt-BR surface counted against the corpus; every zero-count case read individually before deciding",
+  "reason": "A review found `technical.var` rewriting Portuguese prose to `valor em risco`, a phrase the apostila writes ZERO times against 85 for `VaR`. Generalised instead of fixed one concept: 43 concepts have a canonical surface the corpus never writes. Three are legitimate — `dividendo` for `dividendos` is lemma canonicalisation and exactly the point of the field. The English ones are legitimate too, and this is where the review's framing needed adjusting: the corpus is Portuguese, so an English canonical with zero occurrences is an interlingua name, not an authored one — `present value` and `long position` stay. What remains is the pt-BR canonical authored by translation, which is this campaign's oldest lesson (a label is written by the corpus, never by translation) applied to the CANONICAL slot, where nothing had ever checked it. The high-count, unambiguous ones are renamed here; the rest are a declared backlog with the audit shipped, because several of them expose a bad ALIAS rather than a bad canonical — `polarity.affirmation`'s alternative is `expressamente`, which means expressly and not affirmatively, and flipping to it would repair the count while breaking the sense.",
+  "operations": [
+    {
+      "op": "rename_pref",
+      "concept": "condition.when",
+      "language": "pt-BR",
+      "to": "quando",
+      "why": "121 occurrences against 0 for `quando a condição ocorrer`, an operator label authored in an early round and never revisited. The largest single instance in the registry."
+    },
+    {
+      "op": "add_form",
+      "concept": "condition.when",
+      "language": "pt-BR",
+      "form": "quando a condição ocorrer",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'quando a condição ocorrer' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.var",
+      "language": "pt-BR",
+      "to": "VaR",
+      "why": "85 against 0. The apostila writes `O VaR utiliza a distribuição normal` and never spells the translation out; `VaR` is not English so much as the universal acronym, used identically in both languages."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.var",
+      "language": "pt-BR",
+      "form": "valor em risco",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'valor em risco' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.ytm",
+      "language": "pt-BR",
+      "to": "YTM",
+      "why": "29 against 0 for `taxa interna de retorno até o vencimento`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.ytm",
+      "language": "pt-BR",
+      "form": "taxa interna de retorno até o vencimento",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'taxa interna de retorno até o vencimento' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "entity.registration",
+      "language": "pt-BR",
+      "to": "registro",
+      "why": "25 against 0 for `registro regulatório`."
+    },
+    {
+      "op": "add_form",
+      "concept": "entity.registration",
+      "language": "pt-BR",
+      "form": "registro regulatório",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'registro regulatório' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "entity.etf",
+      "language": "pt-BR",
+      "to": "ETF",
+      "why": "13 against 0 for `fundo de índice`, which the corpus uses only as a gloss inside `ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice`."
+    },
+    {
+      "op": "add_form",
+      "concept": "entity.etf",
+      "language": "pt-BR",
+      "form": "fundo de índice",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'fundo de índice' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "polarity.prohibition",
+      "language": "pt-BR",
+      "to": "vedado",
+      "why": "10 against 0 for `é proibido` — the same finding as the operator round, which registered `vedado` as a form and left the authored label as the canonical one."
+    },
+    {
+      "op": "add_form",
+      "concept": "polarity.prohibition",
+      "language": "pt-BR",
+      "form": "é proibido",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'é proibido' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.twrr",
+      "language": "pt-BR",
+      "to": "TWRR",
+      "why": "8 against 0 for `retorno ponderado pelo tempo`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.twrr",
+      "language": "pt-BR",
+      "form": "retorno ponderado pelo tempo",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'retorno ponderado pelo tempo' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.money_weighted_return",
+      "language": "pt-BR",
+      "to": "MWRR",
+      "why": "5 against 0 for `retorno ponderado pelo dinheiro`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.money_weighted_return",
+      "language": "pt-BR",
+      "form": "retorno ponderado pelo dinheiro",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'retorno ponderado pelo dinheiro' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.consumer_price_index",
+      "language": "pt-BR",
+      "to": "CPI",
+      "why": "5 against 0 for `índice de preços ao consumidor`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.consumer_price_index",
+      "language": "pt-BR",
+      "form": "índice de preços ao consumidor",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'índice de preços ao consumidor' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.enterprise_risk_management",
+      "language": "pt-BR",
+      "to": "ERM",
+      "why": "3 against 0 for `gestão de riscos corporativos`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.enterprise_risk_management",
+      "language": "pt-BR",
+      "form": "gestão de riscos corporativos",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'gestão de riscos corporativos' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "technical.asset_liability_management",
+      "language": "pt-BR",
+      "to": "ALM",
+      "why": "1 against 0 for `gestão de ativos e passivos`."
+    },
+    {
+      "op": "add_form",
+      "concept": "technical.asset_liability_management",
+      "language": "pt-BR",
+      "form": "gestão de ativos e passivos",
+      "policy": "review",
+      "why": "the former canonical, kept recognisable at review: 'gestão de ativos e passivos' is a correct rendering the corpus does not use, and a dictionary that stops recognising it has lost an entry to fix a rewrite."
+    },
+    {
+      "op": "rename_pref",
+      "concept": "entity.protection",
+      "language": "pt-BR",
+      "to": "proteção do investidor",
+      "why": "1 against 0 — the corpus writes `do`, the registry wrote `ao`."
+    }
+  ]
+}

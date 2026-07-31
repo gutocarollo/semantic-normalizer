@@ -382,6 +382,7 @@
     "technical.money_weighted_return",
     "technical.monte_carlo",
     "technical.nfc",
+    "technical.normal_distribution",
     "technical.ntnb",
     "technical.numeral_base",
     "technical.optimisation",
@@ -486,7 +487,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "A review found `risco de mercado e liquidez` resolving `liquidez` to the property when the shared head makes it the RISK, called the residual 2-3 occurrences, and asked whether it deserves an engine mechanism for head propagation across coordination. Measured rather than argued: 28 compound families, 6 coordinations in the whole corpus, 5 with an unresolved second conjunct, 4 of them resolving to a confidently WRONG concept. Four occurrences in 7836 events does not justify teaching the matcher syntax it does not have — but confidently wrong is worse for a consumer than unmatched, and that part is fixable with no architecture at all. Each collocation below occurs exactly once, so blocking it costs no correct match; the span becomes unresolved, which is the honest state for something the engine cannot read.",
+  "change_reason": "`múltiplos` is the valuation multiple and also the ordinary Portuguese quantifier, and the immunisation chapter uses the quantifier throughout: `imunização de múltiplos passivos`, `carteiras com múltiplos vencimentos`, `a compra de múltiplos ativos zero cupom`. Six of thirteen occurrences are the quantifier — 46 %, just under the threshold that would demote the form, so the rule the campaign settled on applies: keep the form automatic and forbid the collocations. The seven correct ones are the equity-style sections, where `Múltiplos:` heads a bullet and `múltiplos preço/lucro (P/L)` names the ratio.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -502,8 +503,8 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "d4db0b8126475dacf528aa316988b1758d69ec8fd98d142ea4896606bd587bb4",
-    "registry.provenance.jsonl": "9090595986ba3ce3afb69cc0d3041008ca24e631f1e2370fe7616be7db4a0494",
+    "registry.jsonl": "9358794fa69ad355da92cd9f5fe10e3426fa0daaa888b7fea10d54282a77c584",
+    "registry.provenance.jsonl": "52aa24e215948925883a8bffd7809aa8b797cdcae2a4245c3ecfd55c1c249e3a",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },

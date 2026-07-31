@@ -33,15 +33,33 @@ def nfc_casefold(text: str) -> str:
 
 
 def automatic_surfaces(record: dict, language: str) -> tuple[str, ...]:
-    """Project deterministic retrieval surfaces from approved lexical forms only."""
+    """Project deterministic retrieval surfaces, PREFERRED LABEL FIRST.
+
+    The canonical rewrite substitutes `automatic_surfaces(...)[0]`, and this used to return
+    whatever happened to sit first in `lexical_forms` — insertion order, which is the order
+    batches and amendments ran in. The registry declares a preferred label per language and the
+    rewrite ignored it, so `entity.registration` with `pref: registro` canonicalised to
+    `registro na CVM`, turning `o registro do fundo na CVM` into `o registro na CVM do fundo na
+    CVM`. Renaming the label did not fix it, which is how the real cause surfaced: the label was
+    never what the rewrite consulted.
+
+    Eight concepts differ that way today. Ordering the projection by the declared label makes the
+    canonical form the one the registry says it is, and leaves every other surface reachable
+    behind it.
+    """
     observed = {
         nfc_casefold(value) for value in record["labels"][language]["observed"]
     }
-    return tuple(
+    surfaces = [
         form["form"]
         for form in record["lexical_forms"][language]
         if form["policy"] == "auto" and nfc_casefold(form["form"]) not in observed
-    )
+    ]
+    preferred = record["labels"][language]["pref"]
+    if preferred in surfaces:
+        surfaces.remove(preferred)
+        surfaces.insert(0, preferred)
+    return tuple(surfaces)
 
 
 def package_data(name: str):

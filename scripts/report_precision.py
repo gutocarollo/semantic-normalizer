@@ -70,6 +70,16 @@ DRAWS = [
         "state": "after batch 9; repaired by batch 10",
     },
     {
+        "report": "reports/unread-residual-v2280-pool3.json", "seed": 66260701,
+        "registry": "2.28.0",
+        "errors": 1,
+        "found": ["`múltiplos` as the ordinary quantifier in `imunização de múltiplos passivos` "
+                  "rather than the valuation multiple — 6 of 13 occurrences, repaired by "
+                  "amendment 45"],
+        "state": "the shipped state: 483 concepts, after the canonical-surface repairs and the "
+                 "language-detection fix",
+    },
+    {
         "report": "reports/unread-residual-v2280-pool1.json", "seed": 57721566,
         "registry": "2.28.0",
         "errors": 0,
@@ -224,9 +234,9 @@ def wilson(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
-    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-pool1.json",
+    parser.add_argument("--current-draw", default="reports/unread-residual-v2280-pool3.json",
                         help="the draw taken against the current registry")
-    parser.add_argument("--pool-with", nargs="*", default=["reports/unread-residual-v2280-pool2.json"],
+    parser.add_argument("--pool-with", nargs="*", default=[],
                         help="further draws over the IDENTICAL population, pooled with the current "
                              "one; pooling uses more of the evidence already collected, selecting "
                              "between draws uses less of it and picks which number to report")
@@ -348,10 +358,11 @@ def main() -> int:
         "sample_size_for_even_odds_of_catching_one": round(
             unread_events * (1 - 0.5 ** (1 / known_residuals))) if known_residuals else None,
         "reading": (
-            "Zero errors found is consistent with the residuals known to remain: they imply a rate "
-            "well below what a sample of this size can resolve, so missing them is expected. The "
-            "claim is the Wilson upper bound, not the point estimate — this draw rules out error "
-            "rates above the figure named here, and says nothing about rates beneath it."
+            f"{current_errors} error(s) found in {sample_size} is consistent with the residuals "
+            "known to remain: they imply a rate well below what a sample of this size can resolve, "
+            "so a draw that happens to miss them is expected rather than suspicious. The claim is "
+            "the Wilson upper bound, not the point estimate — this draw rules out error rates "
+            "above the figure named here, and says nothing about rates beneath it."
             if known_residuals / unread_events < high else
             "The known residuals alone imply a rate this draw claims to have ruled out. The sample "
             "is not reaching where the errors are and the bound is optimistic."

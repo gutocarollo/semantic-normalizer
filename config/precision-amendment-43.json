@@ -1,0 +1,18 @@
+{
+  "id": "precision-sweep-amendment-43",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026#06-gestao-de-riscos; review aside on the canonical rewrite",
+  "method": "all three occurrences of `distribuição normal` read; the general concept's remaining forms checked",
+  "reason": "`distribuição normal` was an alias of the general `technical.probability_distribution`, so the canonical rewrite turned the Normal distribution into `distribuição de probabilidades` — the family standing in for the member. Batch 32 registers the member; this removes the claim from the family. `distribuição de retornos` stays where it is: that phrase names the general object applied to a variable, not a distinct distribution family, so canonicalising it to the general form loses nothing.",
+  "operations": [
+    {
+      "op": "remove_form",
+      "concept": "technical.probability_distribution",
+      "language": "pt-BR",
+      "form": "distribuição normal",
+      "wrong": 3,
+      "total": 3,
+      "why": "All three occurrences name the Normal family specifically — `a cauda da curva de sino (Distribuição Normal)`. The general concept keeps `distribuição de probabilidades` and the two return-distribution forms."
+    }
+  ]
+}

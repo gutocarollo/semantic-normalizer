@@ -27,7 +27,16 @@ KNOWN_SUFFIXES = {".md": "markdown", ".markdown": "markdown", ".txt": "text", ".
 WORD_RE = re.compile(r"[\wÀ-ÖØ-öø-ÿ\u0300-\u036f]+(?:[-.][\wÀ-ÖØ-öø-ÿ\u0300-\u036f]+)*", re.UNICODE)
 FUNCTION_WORDS = {
     "en": {"the", "a", "an", "and", "or", "to", "of", "in", "for", "with", "this", "that", "is", "are"},
-    "pt-BR": {"o", "a", "os", "as", "e", "ou", "de", "do", "da", "em", "para", "com", "este", "esta", "é", "são"},
+    # Widened after a self-audit of the detector repair. With sixteen entries `Somatório dos PV`
+    # scored ZERO for Portuguese — `dos` was absent — and a Portuguese line of arithmetic came out
+    # English; `Assim, ele lucrará R$ 20 mil reais ao total.` scored nothing on either side and
+    # came out `unknown`. The verdict is a RATIO between two counts, so a list missing the
+    # commonest words of one language does not make that language lose narrowly, it makes it score
+    # nothing at all.
+    "pt-BR": {"o", "a", "os", "as", "e", "ou", "de", "do", "da", "dos", "das", "em", "no", "na",
+              "nos", "nas", "para", "com", "este", "esta", "é", "são", "que", "um", "uma", "por",
+              "ao", "aos", "à", "às", "se", "não", "pelo", "pela", "pelos", "pelas", "como", "mas",
+              "seu", "sua", "seus", "suas", "ser", "foi", "tem", "há"},
 }
 COORDINATION = {"and", "or", "e", "ou"}
 ANAPHORA = {"it", "they", "them", "this", "that", "ele", "ela", "eles", "elas", "isso", "isto"}

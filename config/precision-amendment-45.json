@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-45",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026; residual draw against the shipped state (seed 66260701, 240 events), all read",
+  "method": "all 13 corpus occurrences of the form read in context",
+  "reason": "`múltiplos` is the valuation multiple and also the ordinary Portuguese quantifier, and the immunisation chapter uses the quantifier throughout: `imunização de múltiplos passivos`, `carteiras com múltiplos vencimentos`, `a compra de múltiplos ativos zero cupom`. Six of thirteen occurrences are the quantifier — 46 %, just under the threshold that would demote the form, so the rule the campaign settled on applies: keep the form automatic and forbid the collocations. The seven correct ones are the equity-style sections, where `Múltiplos:` heads a bullet and `múltiplos preço/lucro (P/L)` names the ratio.",
+  "operations": [
+    {"op":"forbid","concept":"technical.valuation_multiple","language":"pt-BR",
+     "variants":["múltiplos passivos","múltiplos vencimentos","múltiplos ativos"],
+     "why":"The three quantifier collocations, 6 occurrences between them, all in the fixed-income immunisation chapter. The valuation sense never appears in any of them."}
+  ]
+}

@@ -146,7 +146,12 @@ CASES = [
     ("Pagamentos de juros semestrais = valor principal ajustado pela inflação.", "technical.principal", True),
     # A concept whose definition covered two senses could never register a false positive, which
     # is why splitting it was a correctness fix and not a cosmetic one.
-    ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "technical.probability_distribution", True),
+    # The Normal distribution is a specific family, and it now has its own concept — the
+    # general one standing in for it was the same defect as `ISR` under technical.esg. The
+    # assertion moves to the concept that should win, so the flip cannot pass by matching
+    # nothing.
+    ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "technical.probability_distribution", False),
+    ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "technical.normal_distribution", True),
     ("O VaR utiliza a distribuição normal como parâmetro descritivo.", "entity.distribution", False),
     ("A distribuição de cotas deve ser realizada por instituições habilitadas.", "entity.distribution", True),
     ("Será tributado quando ocorrer resgate, amortização ou distribuição de dividendos.",
