@@ -336,6 +336,50 @@ class RegistryGovernanceTests(unittest.TestCase):
             "technical.call_option were split out of technical.option.",
         )
 
+    def test_operators_that_end_in_a_preposition_are_not_treated_as_fragments(self):
+        """`DANGLING` decides what counts as a truncation, and some labels end that way by right.
+
+        Eleven canonical surfaces end in a preposition or conjunction. Nine are operators whose
+        complete form is exactly that shape — `sem prejuízo de`, `antes de`, `is able to`,
+        `in proportion as` — where the preposition IS the operator rather than a phrase cut short.
+        The truncation rule never fires on them because it only refuses a replacement that is a
+        strict PREFIX of the alias it replaces, and `sem prejuízo de` is not a prefix of
+        `sem prejuízo das`: they differ at the last token rather than one being the head of the
+        other.
+
+        The remaining two are `ativo em` and `passivo em`, and those are fragment-shaped on purpose.
+        Every corpus form of those concepts carries the index the leg is denominated in
+        (`ativo em dólar`, `passivo em prefixado`), so a complete-looking canonical would rewrite
+        `passivo em dólar` into something that silently drops the currency — the guard would not
+        fire, because the replacement would no longer be a prefix. Keeping the label a visible
+        fragment is what keeps the rewrite refused. Documented here because it looks like an
+        oversight and is the opposite of one.
+        """
+        import sys
+        sys.path.insert(0, str(DATA.parents[2]))
+        from semantic_normalizer.normalizer import DANGLING, _rewrite_is_safe
+        from semantic_normalizer.registry import automatic_surfaces, nfc_casefold
+
+        for record in self.records:
+            for language in ("en", "pt-BR"):
+                surfaces = automatic_surfaces(record, language)
+                if not surfaces:
+                    continue
+                tokens = nfc_casefold(surfaces[0]).split()
+                if len(tokens) < 2 or tokens[-1] not in DANGLING:
+                    continue
+                for other in surfaces[1:]:
+                    with self.subTest(concept=record["concept_id"], form=other[:34]):
+                        # Either the pair is not a truncation at all, or it is one and is refused.
+                        other_tokens = nfc_casefold(other).split()
+                        is_truncation = other_tokens[:len(tokens)] == tokens and len(
+                            other_tokens
+                        ) > len(tokens)
+                        self.assertTrue(
+                            not is_truncation or not _rewrite_is_safe(other, surfaces[0]),
+                            f"{other!r} would be rewritten to the fragment {surfaces[0]!r}.",
+                        )
+
     def test_the_rewrite_guard_refuses_the_two_shapes_it_exists_for(self):
         """The safety net itself, exercised on both defects that motivated it."""
         import sys
