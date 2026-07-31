@@ -423,6 +423,26 @@ primeiros conceitos seriam `raciocínio`, `lógica`, `pensamento`, `argumento`, 
 de 12 conceitos bem adjudicados — ler as ocorrências, contar as erradas, escrever a justificativa —
 é o tamanho típico de um batch neste repositório.
 
+**O que o pipeline mediu de verdade neste corpus.** Quatro rodadas, orçamento fechado antes do
+resultado da última, sobre `REASONING_SKILLS_CONSOLIDATED.md`:
+
+| | |
+|---|---|
+| candidatos que chegaram a um nó de IA | 96 (24 por rodada) |
+| recusados só por estatística + regra de prosa, sem IA | 6 (`no-prose-attestation`) |
+| propostas que passaram o validador determinístico | 23 |
+| **derrubadas pelo nó adversarial** | **9 — 39 %** |
+| conceitos que entraram no registry | 14 (15 superfícies; `argumento`/`argumentos` fundidos) |
+| recusados com motivo registrado | 87 |
+| precisam de dono humano | 0 |
+| precisão: eventos sorteados, lidos por 2 leitores | 60 de 695 · 55 concordam correto · Wilson 0,8193 |
+
+Os 39 % derrubados são a razão de o nó adversarial existir. Ele leu o corpus por conta própria,
+além das citações que recebeu: matou `decisão` porque a definição descrevia a tese normativa do
+autor e não o sentido das 368 ocorrências; matou `trair` porque quatro das seis citações eram
+substring dentro de `extrair`/`atrair` — defeito do PIPELINE, não do batch, e foi assim que ele foi
+encontrado; e matou `heurísticas` porque o corpus declara dois tipos e a definição cobria um.
+
 ---
 
 ## O que é automático e o que não é
