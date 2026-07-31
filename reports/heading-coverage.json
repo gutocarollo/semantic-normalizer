@@ -1,11 +1,11 @@
 {
   "by_status": {
-    "covered": 325,
-    "partial": 17
+    "covered": 326,
+    "partial": 16
   },
   "covered_means": "one concept's form spans the WHOLE heading — two adjacent atomic matches are not an entry for the compound. A heading that contrasts two subjects (`Top-Down & Bottom-Up`) counts when EVERY conjunct is covered.",
-  "covered_share_of_distinct": 0.9503,
-  "covered_share_of_mass": 0.9769,
+  "covered_share_of_distinct": 0.9532,
+  "covered_share_of_mass": 0.9781,
   "distinct_headings": 342,
   "heading_occurrences": 822,
   "headings": [
@@ -195,18 +195,6 @@
         "Investidor"
       ],
       "resolved_by": null,
-      "status": "partial"
-    },
-    {
-      "covered_by": null,
-      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
-      "heading": "Outras Estratégias de Gestão de Carteiras de Renda Fixa",
-      "occurrences": 1,
-      "partial_matches": [
-        "Estratégias",
-        "Gestão de Carteiras de Renda Fixa"
-      ],
-      "resolved_by": "action.manage_portfolio",
       "status": "partial"
     },
     {
@@ -2730,6 +2718,15 @@
       "status": "covered"
     },
     {
+      "covered_by": "technical.fixed_income_portfolio_management",
+      "file": "09-gestao-de-carteiras-de-renda-fixa-2",
+      "heading": "Outras Estratégias de Gestão de Carteiras de Renda Fixa",
+      "occurrences": 1,
+      "partial_matches": [],
+      "resolved_by": "technical.fixed_income_portfolio_management",
+      "status": "covered"
+    },
+    {
       "covered_by": "technical.leverage",
       "file": "09-gestao-de-carteiras-de-renda-fixa-2",
       "heading": "Alavancagem",
@@ -3136,12 +3133,12 @@
     }
   ],
   "mass_by_status": {
-    "covered": 803,
-    "partial": 19
+    "covered": 804,
+    "partial": 18
   },
   "registry": {
     "concepts": 582,
-    "version": "2.34.0"
+    "version": "2.35.0"
   },
   "resolved_means": "the dictionary has an entry for the heading, counting forms it holds at `review` — an entry the registry declines to emit unattended is still an entry. Reported beside the automatic figure, never instead of it.",
   "resolved_share_of_mass": 0.9805,

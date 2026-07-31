@@ -1,0 +1,13 @@
+{
+  "id": "precision-sweep-amendment-67",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "the matched alias printed rather than assumed equal to the registered form",
+  "reason": "A form that matches with a TRUNCATED alias, mine, from batch 42.\n\n`technical.benchmark_relative_management` carried the heading spelling `Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)`. It matches — but the alias it reports is `…de Mercado (Benchmark`, without the closing parenthesis. The registered form and the reported span are not the same string, which silently violates the contract every downstream consumer assumes.\n\nIt surfaced because amendment 66 added `Estratégias de Gestão de Carteiras de Renda Fixa`, which put the two forms in the same probe sentence and made `test_the_longer_form_wins_wherever_a_shorter_one_could_preempt_it` compare them. The guard did exactly what it exists for: a form registered eight batches ago had been reporting a truncated span the whole time and nothing noticed until a new form happened to overlap it.\n\nRemoved rather than repaired here. The concept keeps its unparenthesised pref and the lowercase prose form added in amendment 61 — which is the wording that actually fires on the definition sentence — so removing the parenthesised heading spelling costs nothing measurable. Making a trailing `)` survive matching is a tokeniser change, and this session has no budget to re-sweep precision behind one.",
+  "operations": [
+    {"op":"remove_form","concept":"technical.benchmark_relative_management","language":"pt-BR",
+     "form":"Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)",
+     "wrong":1,"total":1,
+     "why":"Matches with a truncated alias, dropping the closing parenthesis. The concept keeps its pref and its prose form."}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "precision-sweep-amendment-66",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "apostila-cga-2026",
+  "method": "candidates counted in prose, then READ; two of four were rejected on reading despite passing the count",
+  "reason": "One form, and the reason three siblings were refused matters more than the one admitted.\n\nFour candidates from the remaining partial headings passed a prose count. Reading them killed three:\n\n- `compra de contrato futuro` and `venda de contrato futuro` each counted 1 prose occurrence, and both are IMAGE ALT-TEXT — `![Exemplo: Compra de Contrato Futuro](assets/figures/p030-01.png)`. A figure caption is heading-class furniture, not prose. This is a defect in my own instrument, not just in these two candidates: the prose filter strips `#` heading lines and does not strip image captions, so it has been over-crediting attestation for every candidate measured with it. Declared here because it affects how earlier admissions should be read, not only this one.\n- `riscos do investidor` counted 1 and the sentence is `quanto maior/menor a aversão a riscos do investidor` — the investor's risk AVERSION. The phrase is a coincidental substring spanning two constituents, not the concept. A count cannot see that and a read can.\n\n`estratégias de gestão de carteiras de renda fixa` is genuine: `as mais importantes estratégias de gestão de carteiras de renda fixa são, de longe, Steepening, Flattening…`. Registered as a form of the concept that already means it rather than as a new concept, because the strategies OF fixed-income portfolio management are not a second subject.\n\nThe three refusals leave their headings partial and counted against the score. That is the rule doing its job at the point where it costs something.",
+  "operations": [
+    {"op":"add_form","concept":"technical.fixed_income_portfolio_management","language":"pt-BR",
+     "form":"Estratégias de Gestão de Carteiras de Renda Fixa","policy":"auto","right":2,"total":2,
+     "why":"Prose-attested, and the strategies of this management are this concept rather than a new one."}
+  ]
+}
