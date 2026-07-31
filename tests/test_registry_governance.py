@@ -441,5 +441,50 @@ class RegistryGovernanceTests(unittest.TestCase):
                         "a shorter synonym of the same sense is a legitimate canonicalisation")
 
 
+    def test_a_domain_scope_shrinks_the_matcher_and_never_the_integrity_check(self):
+        """`contexts` is a contract: the matcher sees the scope, validation sees everything.
+
+        The field sat in all 584 records reading like documentation, and nothing but the schema
+        validator consumed it — the exact shape this project has been burned by twice, where a
+        declarative field no consumer reads only reveals itself when someone tries to change
+        behaviour with it and nothing changes.
+
+        Three properties are pinned here, because getting any one wrong makes the packaging
+        unsafe rather than merely unhelpful:
+
+          1. an unscoped load is unchanged, so every existing caller is unaffected;
+          2. a scope strictly shrinks the matcher's automatic table — a form outside the scope is
+             not demoted or down-ranked, it is absent, so it cannot collide with the active domain;
+          3. the domain-agnostic operators are reachable from EVERY pack. Without this a pack is
+             not a smaller dictionary but a broken one: no `não`, no `exceto`, no `vencimento`.
+        """
+        from semantic_normalizer.registry import ContractError, load_registry
+
+        everything = load_registry()
+        cga = load_registry(contexts=["cga"])
+        core = load_registry(contexts=["core"])
+        composed = load_registry(contexts=["core", "cga"])
+
+        self.assertEqual(584, len(everything["records"]))
+        self.assertIsNone(everything["contexts"])
+
+        self.assertLess(len(cga["records"]), len(everything["records"]))
+        self.assertLess(len(cga["automatic"]), len(everything["automatic"]))
+        self.assertTrue(set(cga["automatic"]) <= set(everything["automatic"]),
+                        "a scoped load invented a surface the full registry does not have")
+
+        operators = {record["concept_id"] for record in core["records"]}
+        self.assertTrue(operators, "the core pack is empty")
+        for prefix in ("polarity.", "condition.", "temporal."):
+            self.assertTrue(any(cid.startswith(prefix) for cid in operators),
+                            f"the core pack carries no {prefix}* operator")
+        self.assertTrue(
+            operators <= {record["concept_id"] for record in composed["records"]},
+            "composing core with a domain dropped operators the core pack has",
+        )
+
+        with self.assertRaises(ContractError):
+            load_registry(contexts=["no-such-domain"])
+
 if __name__ == "__main__":
     unittest.main()

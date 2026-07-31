@@ -33,7 +33,7 @@
       "registry.schema.json"
     ],
     "installed_data_equal_source": true,
-    "installed_package_sha256": "407b09e838c7f610286356a81803ae9b80662f4c3b20207f38943e8f758759d8",
+    "installed_package_sha256": "9ea1bda53ff9f196bd03a35769f508e85e1e4ba16d67a3b24e5efea1bc43fd69",
     "pip_check": "No broken requirements found.",
     "pip_install": "PASS",
     "public_contract_smoke": {
@@ -72,7 +72,7 @@
       "automatic_keys": 1582,
       "records": 584,
       "registry_schema_sha256": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
-      "registry_sha256": "2d984bc33d2304596fd5358fffadaf1ae4dc527165d13b23372dc737db8aaaca",
+      "registry_sha256": "9f1f19ca5a6f261b1724b2acb12893ab3704497ac62396dc72d15d1d559d3441",
       "registry_version": "2.36.0",
       "review_keys": 165,
       "valid": true
@@ -86,8 +86,8 @@
     "double_build_byte_identical": true,
     "hash_location": "checksums.sha256 (external)",
     "heldout_members": 0,
-    "manifest_entries_verified": 196,
-    "members": 197,
+    "manifest_entries_verified": 197,
+    "members": 198,
     "mode": "0644",
     "path": "dist/semantic-normalizer-skill-0.4.0.zip",
     "prefix": "semantic-normalizer-0.4.0",
@@ -113,9 +113,9 @@
       "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
       "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
       "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-      "registry.jsonl": "2d984bc33d2304596fd5358fffadaf1ae4dc527165d13b23372dc737db8aaaca",
+      "registry.jsonl": "9f1f19ca5a6f261b1724b2acb12893ab3704497ac62396dc72d15d1d559d3441",
       "registry.provenance.jsonl": "77881b352dc50daed5aacfd42ee204e25f6eb8806c1e65549005f9369ba5838a",
-      "registry.release.json": "d397c69ffb45711d9a5907c82f311f9362e768ad62f6f3fe55d72f1faba64a7d",
+      "registry.release.json": "a92647256e38f49f7fe41b871ed16a1e471a8894beac497bb0f1bce9bcede840",
       "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
       "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
     },
@@ -143,8 +143,8 @@
     ],
     "record_entries": 33,
     "requires_python": ">=3.14",
-    "sha256": "fe734d4c26e049b90f9e089605d2e31dd2e11ee6eb157c3e4610d3227726d835",
-    "size": 1140657,
+    "sha256": "d68bf23fa9f8ac64fa8f73e3569588e222c7b7f91ec007920e336ad4a3356cb5",
+    "size": 1146033,
     "source_data_members_equal": true,
     "timestamps": "1980-01-01T00:00:00"
   }

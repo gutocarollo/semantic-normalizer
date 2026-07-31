@@ -7,6 +7,7 @@ import json
 import re
 import unicodedata
 from collections import defaultdict
+from collections.abc import Iterable
 from importlib import resources
 from pathlib import Path
 from typing import Any
@@ -225,7 +226,35 @@ def validate_record(record: object, line_no: int, schema: dict) -> dict:
 def load_registry(
     registry: str | Path | Any | None = None,
     schema: str | Path | Any | None = None,
+    contexts: Iterable[str] | None = None,
 ) -> dict:
+    """Load the registry, optionally scoped to one or more domains.
+
+    Every record carries a `contexts` list — `["finance", "cga"]`, `["documentation", "software"]` —
+    and until now NOTHING read it except the schema validator. That is the exact shape this project
+    has already been burned by twice: a declarative field no consumer reads is documentation, not a
+    contract, and the defect only surfaces when someone tries to use the field to change behaviour
+    and nothing changes.
+
+    Scoping matters because 83 % of all matches come from bare single-word Portuguese forms (6,446
+    of 7,780 events), and those are precisely the surfaces that mean different things in different
+    domains: `ação` is a share here and a lawsuit in law and a drug's effect in medicine; `título`
+    is a debt security here and a deed or a degree elsewhere; `fluxo` is cash flow here and blood
+    flow in medicine. Merge two domains into one table and the collision demoter sends BOTH
+    claimants to `review` — punishing the incumbent domain to admit the newcomer.
+
+    So the fix is not one big table with a `contexts` column nobody reads. It is: validate the whole
+    registry (integrity is global), then build the MATCHER's tables from the requested scope only.
+    `contexts=None` keeps every record, so existing callers are unaffected.
+
+        load_lexicon()                          # everything, as before
+        load_lexicon(contexts=["cga"])          # only the CGA financial pack
+        load_lexicon(contexts=["cga", "core"])  # pack plus shared operators
+
+    Relations are still checked across the FULL record set, not the scope: a concept pointing at a
+    broader term that the scope excludes is a fact about the registry and must not be hidden by the
+    lens someone happened to load it through.
+    """
     from .schema_validation import validate_instance
 
     registry_bytes, registry_origin = _read_bytes(registry, "registry.jsonl")
@@ -250,6 +279,31 @@ def load_registry(
     if len(ids) != len(set(ids)):
         raise ContractError("duplicate concept_id")
     by_id = {record["concept_id"]: record for record in records}
+
+    # The scope. Integrity above was checked over EVERY record; the matcher below sees only the
+    # requested domains. Splitting it here is what makes `contexts` a contract instead of a label:
+    # a form outside the scope is not demoted, not hidden, not ranked lower — it is simply not in
+    # the table the matcher reads, so it cannot collide with anything in the active domain.
+    scope = None
+    if contexts is not None:
+        scope = {str(name).casefold() for name in contexts}
+        if not scope:
+            raise ContractError("contexts was given but empty; pass None to load everything")
+        selected = [
+            record for record in records
+            if scope & {str(name).casefold() for name in record.get("contexts", [])}
+        ]
+        if not selected:
+            available = sorted({
+                str(name).casefold()
+                for record in records for name in record.get("contexts", [])
+            })
+            raise ContractError(
+                f"no concept carries any of the requested contexts {sorted(scope)}. "
+                f"The registry declares: {available}"
+            )
+        records = selected
+
     automatic: dict[str, tuple[str, str, str, str]] = {}
     reviews: dict[str, list[tuple[str, str, str, str]]] = defaultdict(list)
     for record in records:
@@ -281,7 +335,7 @@ def load_registry(
                     automatic[key] = (cid, "shared", surface, source)
                 else:
                     automatic[key] = value
-    for record in records:
+    for record in by_id.values():
         cid = record["concept_id"]
         for target in record["relations"]["broader"]:
             if target not in by_id or cid not in by_id[target]["relations"]["narrower"]:
@@ -335,6 +389,11 @@ def load_registry(
         "by_id": runtime_by_id,
         "automatic": automatic,
         "reviews": reviews,
+        "contexts": sorted(scope) if scope else None,
+        "contexts_available": sorted({
+            str(name).casefold()
+            for record in by_id.values() for name in record.get("contexts", [])
+        }),
     }
 
 

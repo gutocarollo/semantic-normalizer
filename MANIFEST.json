@@ -35,8 +35,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 10739,
-      "sha256": "c05488f2686eeec9e6e3984567e4db32607f221f698bd7cdf2ed08db8846a22c"
+      "size_bytes": 11795,
+      "sha256": "f4ae8ef36ed824995999fdd50c9663549d13ae3fcd576a1b36d155588324770f"
     },
     {
       "path": "SKILL.md",
@@ -46,7 +46,7 @@
     {
       "path": "checksums.sha256",
       "size_bytes": 10215,
-      "sha256": "b371f6c0be305dd1c145404274792ee648cf0b2f326aac9ccb1b01f8b3ba7fe2"
+      "sha256": "8b8209811e22cf9a6d345df9435574ca0a5b136248ad7c1127c33427dd7b4729"
     },
     {
       "path": "config/cga-batch-01.json",
@@ -831,7 +831,7 @@
     {
       "path": "reports/dev-retrieval-ablations-final.json",
       "size_bytes": 88187,
-      "sha256": "d5e982e95d88aa407a14d6fcd0f9a90dfc0919ab9e0481f05c3a10e99f274c7e"
+      "sha256": "2efe1713cc9623f54000bda784da514198518ed7d2b218acfd7728568fd0277b"
     },
     {
       "path": "reports/dev-retrieval-ablations.json",
@@ -841,7 +841,7 @@
     {
       "path": "reports/dev-semantic-gates.json",
       "size_bytes": 6879,
-      "sha256": "0e080114dd31338d078bbf1069e4b2724eee528b982b524871cd065a32edc390"
+      "sha256": "7d1deab2a159860133929fae4288978773cb71345a257c0a849cb58f0613cba5"
     },
     {
       "path": "reports/form-polysemy.json",
@@ -866,7 +866,7 @@
     {
       "path": "reports/package-validation.json",
       "size_bytes": 7404,
-      "sha256": "5ca42f28f8636a4a1c6be6009091b1023a7ae5e8ba7eff763d87d832802eaed2"
+      "sha256": "5cdfa85873093c874cfcdcc51868f5a402152a731263fe0e9c901f415a1bb905"
     },
     {
       "path": "reports/portuguese-glosses.json",
@@ -920,8 +920,8 @@
     },
     {
       "path": "reports/release-manifest.json",
-      "size_bytes": 34117,
-      "sha256": "62f6c2cddfb5cd74ce86767cebd2dac9b9bda2cdcdb9f3a7ad921e1fad95ba7b"
+      "size_bytes": 34279,
+      "sha256": "5dd07befc16dbaecfbf6e0a0f9e858afb3f1ecf3edc83a39f2b8d49c804d70ca"
     },
     {
       "path": "reports/review-backlog.json",
@@ -1389,6 +1389,11 @@
       "sha256": "181105aedfb6aeb0b2b8ffbba7087e4ff083d864588c245534ab773d003fc6ae"
     },
     {
+      "path": "scripts/tag_core_contexts.py",
+      "size_bytes": 5019,
+      "sha256": "570fbbeb3fd29c7c3597c197d4d7093d40ceca2cdd30566c1b32bccf382467b0"
+    },
+    {
       "path": "src/semantic_normalizer/__init__.py",
       "size_bytes": 1385,
       "sha256": "559857d7c238680361ea193c44182e3d0cda5e40e58fa3fbb494936b3dcffde2"
@@ -1480,8 +1485,8 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "size_bytes": 777529,
-      "sha256": "2d984bc33d2304596fd5358fffadaf1ae4dc527165d13b23372dc737db8aaaca"
+      "size_bytes": 777937,
+      "sha256": "9f1f19ca5a6f261b1724b2acb12893ab3704497ac62396dc72d15d1d559d3441"
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
@@ -1491,7 +1496,7 @@
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
       "size_bytes": 20452,
-      "sha256": "d397c69ffb45711d9a5907c82f311f9362e768ad62f6f3fe55d72f1faba64a7d"
+      "sha256": "a92647256e38f49f7fe41b871ed16a1e471a8894beac497bb0f1bce9bcede840"
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -1510,8 +1515,8 @@
     },
     {
       "path": "src/semantic_normalizer/exporters.py",
-      "size_bytes": 2768,
-      "sha256": "5d761a93e5f1dde73e0c90e707c3d7d45bd80b5147df06113e6e07508904cb16"
+      "size_bytes": 4430,
+      "sha256": "d1f8f228b9d8333aad324c3cb782ad27c58fb9ad0291b4457c817dbc3a7d068d"
     },
     {
       "path": "src/semantic_normalizer/normalizer.py",
@@ -1525,8 +1530,8 @@
     },
     {
       "path": "src/semantic_normalizer/registry.py",
-      "size_bytes": 16238,
-      "sha256": "a199b12feac20ea10f91851615b30db9fde41932297face2922c6a78521ad316"
+      "size_bytes": 19544,
+      "sha256": "4e5ea6fb2bb9ef7a87354cab2ddc5c0e30daf8d25303ebdec171b96b3d81d908"
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -1595,8 +1600,8 @@
     },
     {
       "path": "tests/test_registry_governance.py",
-      "size_bytes": 24962,
-      "sha256": "b033f6d709aedc537c78c74bc0deeda6a814c01024178e4cc7d1e6ec68af8e82"
+      "size_bytes": 27458,
+      "sha256": "50e93d1b01c21fe5beb64a8c3014cfad73743b4209012eb03a80de7e5cfd5919"
     },
     {
       "path": "tests/test_runtime_contracts.py",

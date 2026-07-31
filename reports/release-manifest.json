@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "5ca42f28f8636a4a1c6be6009091b1023a7ae5e8ba7eff763d87d832802eaed2",
+  "package_validation_sha256": "5cdfa85873093c874cfcdcc51868f5a402152a731263fe0e9c901f415a1bb905",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -36,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c05488f2686eeec9e6e3984567e4db32607f221f698bd7cdf2ed08db8846a22c",
-      "size": 10739
+      "sha256": "f4ae8ef36ed824995999fdd50c9663549d13ae3fcd576a1b36d155588324770f",
+      "size": 11795
     },
     {
       "path": "SKILL.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
-      "sha256": "fe734d4c26e049b90f9e089605d2e31dd2e11ee6eb157c3e4610d3227726d835",
-      "size": 1140657
+      "sha256": "d68bf23fa9f8ac64fa8f73e3569588e222c7b7f91ec007920e336ad4a3356cb5",
+      "size": 1146033
     },
     {
       "path": "docs/architecture.md",
@@ -221,7 +221,7 @@
     },
     {
       "path": "reports/dev-retrieval-ablations-final.json",
-      "sha256": "d5e982e95d88aa407a14d6fcd0f9a90dfc0919ab9e0481f05c3a10e99f274c7e",
+      "sha256": "2efe1713cc9623f54000bda784da514198518ed7d2b218acfd7728568fd0277b",
       "size": 88187
     },
     {
@@ -231,7 +231,7 @@
     },
     {
       "path": "reports/dev-semantic-gates.json",
-      "sha256": "0e080114dd31338d078bbf1069e4b2724eee528b982b524871cd065a32edc390",
+      "sha256": "7d1deab2a159860133929fae4288978773cb71345a257c0a849cb58f0613cba5",
       "size": 6879
     },
     {
@@ -256,7 +256,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "5ca42f28f8636a4a1c6be6009091b1023a7ae5e8ba7eff763d87d832802eaed2",
+      "sha256": "5cdfa85873093c874cfcdcc51868f5a402152a731263fe0e9c901f415a1bb905",
       "size": 7404
     },
     {
@@ -770,6 +770,11 @@
       "size": 7480
     },
     {
+      "path": "scripts/tag_core_contexts.py",
+      "sha256": "570fbbeb3fd29c7c3597c197d4d7093d40ceca2cdd30566c1b32bccf382467b0",
+      "size": 5019
+    },
+    {
       "path": "src/semantic_normalizer/__init__.py",
       "sha256": "559857d7c238680361ea193c44182e3d0cda5e40e58fa3fbb494936b3dcffde2",
       "size": 1385
@@ -861,8 +866,8 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "sha256": "2d984bc33d2304596fd5358fffadaf1ae4dc527165d13b23372dc737db8aaaca",
-      "size": 777529
+      "sha256": "9f1f19ca5a6f261b1724b2acb12893ab3704497ac62396dc72d15d1d559d3441",
+      "size": 777937
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
@@ -871,7 +876,7 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "sha256": "d397c69ffb45711d9a5907c82f311f9362e768ad62f6f3fe55d72f1faba64a7d",
+      "sha256": "a92647256e38f49f7fe41b871ed16a1e471a8894beac497bb0f1bce9bcede840",
       "size": 20452
     },
     {
@@ -891,8 +896,8 @@
     },
     {
       "path": "src/semantic_normalizer/exporters.py",
-      "sha256": "5d761a93e5f1dde73e0c90e707c3d7d45bd80b5147df06113e6e07508904cb16",
-      "size": 2768
+      "sha256": "d1f8f228b9d8333aad324c3cb782ad27c58fb9ad0291b4457c817dbc3a7d068d",
+      "size": 4430
     },
     {
       "path": "src/semantic_normalizer/normalizer.py",
@@ -906,8 +911,8 @@
     },
     {
       "path": "src/semantic_normalizer/registry.py",
-      "sha256": "a199b12feac20ea10f91851615b30db9fde41932297face2922c6a78521ad316",
-      "size": 16238
+      "sha256": "4e5ea6fb2bb9ef7a87354cab2ddc5c0e30daf8d25303ebdec171b96b3d81d908",
+      "size": 19544
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -976,8 +981,8 @@
     },
     {
       "path": "tests/test_registry_governance.py",
-      "sha256": "b033f6d709aedc537c78c74bc0deeda6a814c01024178e4cc7d1e6ec68af8e82",
-      "size": 24962
+      "sha256": "50e93d1b01c21fe5beb64a8c3014cfad73743b4209012eb03a80de7e5cfd5919",
+      "size": 27458
     },
     {
       "path": "tests/test_runtime_contracts.py",
@@ -1005,7 +1010,7 @@
       "size": 40326
     }
   ],
-  "payload_files": 196,
+  "payload_files": 197,
   "release_version": "0.4.0",
-  "wheel_sha256": "fe734d4c26e049b90f9e089605d2e31dd2e11ee6eb157c3e4610d3227726d835"
+  "wheel_sha256": "d68bf23fa9f8ac64fa8f73e3569588e222c7b7f91ec007920e336ad4a3356cb5"
 }
