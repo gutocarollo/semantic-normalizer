@@ -464,6 +464,28 @@ CANONICAL_ANTONYMS = (
     # form carries no rate at all, so any crossing is caught incidentally by the truncation rule.
     # Incidental is not declared: if a later batch ever makes a rate-specific form preferred, or
     # registers a third concept holding one side, nothing would state the boundary.
+    #
+    # ---- DERIVED, not remembered. `scripts/derive_antonyms.py --check` fails when a pair the
+    # registry implies is missing from this tuple, so the list stops depending on someone
+    # recalling that plurals and the English side exist. Every pair below came from that
+    # derivation over the 598 shipped concepts.
+    #
+    # How they were found: ask which two concepts have the most SIMILAR definitions and you do
+    # not get synonyms, you get opposites — `state.enabled`/`state.disabled` score 1.00 because
+    # the only token separating them is `not`, three characters, dropped by every stopword
+    # filter. The measure that would cause a catastrophic merge is the measure that finds the
+    # boundaries a merge must never cross.
+    #
+    # Measured before adding: over the whole CGA corpus, 13.466 rewrites are applied with and
+    # without these pairs — delta ZERO. They block nothing today and they catch nothing today.
+    # That is the honest claim: this is protection for the next batch that registers a concept
+    # on one side of an opposition already present on the other, which is exactly how
+    # `technical.option` inverted 13 puts into calls before anyone noticed.
+    ("after", "before"), ("asset", "liability"), ("buyer", "seller"),
+    ("closed", "open"), ("comprador", "vendedor"), ("depois", "antes"),
+    ("desativado", "ativado"), ("deságio", "ágio"), ("disabled", "enabled"),
+    ("fechados", "abertos"), ("flattening", "steepening"), ("grade", "yield"),
+    ("long", "short"), ("negative", "positive"),
 )
 
 # The rewrite guard and the modelling guard ask different questions, so they take different lists.

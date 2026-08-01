@@ -1,0 +1,1749 @@
+{
+  "concepts_scanned": 519,
+  "corpus": "../cga-2026-markdown",
+  "counts": {
+    "needs-judgement": 35,
+    "no-evidence": 15,
+    "structurally-unsafe": 1
+  },
+  "method": {
+    "decision": "substitute each concept's surfaces with the other's preferred label in REAL corpus sentences and run the engine's own _rewrite_is_safe; a merge candidate must be safe in BOTH directions",
+    "measured_power": "on the CGA pack the substitution test separated 1 pair of 51; it removes what is DANGEROUS to merge and does not establish that anything SHOULD merge",
+    "output_is_a_queue": "nothing here writes to the registry; survivors go to the adversarial node with the question inverted",
+    "proposal": "definition overlap >= min-similarity, AFTER removing every pair whose opposition derive_antonyms.py can derive",
+    "refuted_hypothesis": "co-occurrence in a sentence as evidence of distinctness: bacen~selic co-occur 0 times and are distinct, duration~macaulay_duration co-occur 9 times and are a hierarchy pair. Reported, never thresholded.",
+    "why_not_similarity": "ranking these concepts by definition similarity puts ANTONYMS on top — state.enabled ~ state.disabled scores 1.00 because the only differing token is `not`"
+  },
+  "needs_judgement": [
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "entity.treasury_bond",
+        "entity.treasury_note"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 4,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "treasury bonds",
+          "treasury notes"
+        ],
+        "pt-BR": [
+          "treasury bonds",
+          "treasury notes"
+        ]
+      },
+      "similarity": 0.875,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "technical.sharpe_ratio",
+        "technical.treynor"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "Sharpe ratio",
+          "Treynor ratio"
+        ],
+        "pt-BR": [
+          "índice de Sharpe",
+          "índice de Treynor"
+        ]
+      },
+      "similarity": 0.714,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 9,
+      "concepts": [
+        "technical.duration",
+        "technical.macaulay_duration"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 11,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "duration",
+          "macaulay duration"
+        ],
+        "pt-BR": [
+          "duration",
+          "duration de macaulay"
+        ]
+      },
+      "similarity": 0.615,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.forward",
+        "technical.futures"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 10,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 24,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "forward",
+          "futures contract"
+        ],
+        "pt-BR": [
+          "termo",
+          "contrato futuro"
+        ]
+      },
+      "similarity": 0.6,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.bond",
+        "entity.private_security"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 11,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "bond",
+          "private securities"
+        ],
+        "pt-BR": [
+          "debênture",
+          "títulos privados"
+        ]
+      },
+      "similarity": 0.571,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "technical.active_risk",
+        "technical.information_ratio"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "active risk",
+          "information ratio"
+        ],
+        "pt-BR": [
+          "risco ativo",
+          "índice de informação"
+        ]
+      },
+      "similarity": 0.571,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 7,
+      "concepts": [
+        "technical.barbell",
+        "technical.bullet_portfolio"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "barbell",
+          "bullet"
+        ],
+        "pt-BR": [
+          "barbell",
+          "bullet"
+        ]
+      },
+      "similarity": 0.545,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.fixed_income_pricing",
+        "technical.ytm"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "fixed income pricing",
+          "yield to maturity"
+        ],
+        "pt-BR": [
+          "Precificação de títulos de Renda Fixa",
+          "YTM"
+        ]
+      },
+      "similarity": 0.538,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 2,
+      "concepts": [
+        "actor.rating_agency",
+        "technical.rating"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 41,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "rating agency",
+          "rating"
+        ],
+        "pt-BR": [
+          "Agência de rating",
+          "rating"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.broad_market_index",
+        "entity.style_index"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 4,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "broad market index",
+          "style index"
+        ],
+        "pt-BR": [
+          "Índices Amplos de Mercado",
+          "Índices de Estilo"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 12,
+      "concepts": [
+        "quantity.volatility",
+        "technical.variance"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 16,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "volatility",
+          "variance"
+        ],
+        "pt-BR": [
+          "volatilidade",
+          "variância"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.bacen",
+        "technical.selic"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 19,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "Banco Central do Brasil",
+          "Selic"
+        ],
+        "pt-BR": [
+          "Banco Central do Brasil",
+          "Selic"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 4,
+      "concepts": [
+        "technical.convexity",
+        "technical.convexity_adjustment"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 4,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "convexity",
+          "convexity adjustment"
+        ],
+        "pt-BR": [
+          "convexidade",
+          "ajuste de convexidade"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "technical.dividend_yield",
+        "technical.pe_ratio"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "dividend yield",
+          "price to earnings ratio"
+        ],
+        "pt-BR": [
+          "dividend yield",
+          "índice P/L"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 2,
+      "concepts": [
+        "technical.indexing",
+        "technical.passive_management"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 16,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "indexing",
+          "passive management"
+        ],
+        "pt-BR": [
+          "indexação",
+          "gestão passiva"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.lft",
+        "technical.ntnb"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 5,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "LFT",
+          "NTN-B"
+        ],
+        "pt-BR": [
+          "LFT",
+          "NTN-B"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "temporal.after",
+        "temporal.during"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "after",
+          "during"
+        ],
+        "pt-BR": [
+          "depois de",
+          "durante"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "temporal.before",
+        "temporal.during"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "before",
+          "during"
+        ],
+        "pt-BR": [
+          "antes de",
+          "durante"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "actor.ecb",
+        "technical.estr"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 6,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "european central bank",
+          "euro short-term rate"
+        ],
+        "pt-BR": [
+          "banco central europeu",
+          "euro short-term rate"
+        ]
+      },
+      "similarity": 0.462,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.government_security",
+        "entity.private_security"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "government security",
+          "private securities"
+        ],
+        "pt-BR": [
+          "Título Público",
+          "títulos privados"
+        ]
+      },
+      "similarity": 0.455,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.passive_fund",
+        "technical.passive_management"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 16,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "passive fund",
+          "passive management"
+        ],
+        "pt-BR": [
+          "fundo passivo",
+          "gestão passiva"
+        ]
+      },
+      "similarity": 0.444,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.bond",
+        "technical.private_credit"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 11,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "bond",
+          "private credit"
+        ],
+        "pt-BR": [
+          "debênture",
+          "crédito privado"
+        ]
+      },
+      "similarity": 0.429,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.foreign_financial_asset",
+        "technical.foreign_investment"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 7,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 5,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "foreign financial assets",
+          "foreign investment"
+        ],
+        "pt-BR": [
+          "ativos financeiros no exterior",
+          "Investimentos no Exterior"
+        ]
+      },
+      "similarity": 0.417,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.treasury_security",
+        "entity.us_government_security"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 7,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "treasury security",
+          "US government securities"
+        ],
+        "pt-BR": [
+          "título do tesouro",
+          "títulos do governo americano"
+        ]
+      },
+      "similarity": 0.417,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 2,
+      "concepts": [
+        "artifact.suitability_policy",
+        "technical.suitability"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "suitability policy",
+          "suitability"
+        ],
+        "pt-BR": [
+          "Política de Suitability",
+          "suitability"
+        ]
+      },
+      "similarity": 0.4,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 5,
+      "concepts": [
+        "entity.inflation",
+        "risk.inflation"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 5,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "inflation",
+          "inflation risk"
+        ],
+        "pt-BR": [
+          "inflação",
+          "Risco de Inflação"
+        ]
+      },
+      "similarity": 0.4,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.esg",
+        "technical.socially_responsible_investment"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 10,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "ESG",
+          "socially responsible investment"
+        ],
+        "pt-BR": [
+          "ASG",
+          "investimentos socialmente responsáveis"
+        ]
+      },
+      "similarity": 0.4,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.discount_rate",
+        "technical.fixed_income_pricing"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "discount rate",
+          "fixed income pricing"
+        ],
+        "pt-BR": [
+          "taxa de desconto",
+          "Precificação de títulos de Renda Fixa"
+        ]
+      },
+      "similarity": 0.385,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 2,
+      "concepts": [
+        "technical.discount_rate",
+        "technical.ytm"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "discount rate",
+          "yield to maturity"
+        ],
+        "pt-BR": [
+          "taxa de desconto",
+          "YTM"
+        ]
+      },
+      "similarity": 0.385,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.private_security",
+        "technical.private_credit"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "private securities",
+          "private credit"
+        ],
+        "pt-BR": [
+          "títulos privados",
+          "crédito privado"
+        ]
+      },
+      "similarity": 0.375,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.bond",
+        "entity.government_security"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 11,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "bond",
+          "government security"
+        ],
+        "pt-BR": [
+          "debênture",
+          "Título Público"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 5,
+      "concepts": [
+        "entity.fixed_income",
+        "entity.variable_income"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "fixed income",
+          "variable income"
+        ],
+        "pt-BR": [
+          "renda fixa",
+          "renda variável"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "entity.treasury_note",
+        "entity.us_government_security"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "treasury notes",
+          "US government securities"
+        ],
+        "pt-BR": [
+          "treasury notes",
+          "títulos do governo americano"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 1,
+      "concepts": [
+        "entity.treasury_bill",
+        "entity.treasury_note"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 4,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "treasury bills",
+          "treasury notes"
+        ],
+        "pt-BR": [
+          "treasury bills",
+          "treasury notes"
+        ]
+      },
+      "similarity": 0.357,
+      "verdict": "needs-judgement"
+    },
+    {
+      "co_occurrences": 3,
+      "concepts": [
+        "technical.irr",
+        "technical.ytm"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 15,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "internal rate of return",
+          "yield to maturity"
+        ],
+        "pt-BR": [
+          "taxa interna de retorno",
+          "YTM"
+        ]
+      },
+      "similarity": 0.357,
+      "verdict": "needs-judgement"
+    }
+  ],
+  "no_evidence": [
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.currency_fund",
+        "entity.fixed_income_fund"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 7,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "currency fund",
+          "fixed income fund"
+        ],
+        "pt-BR": [
+          "Fundos Cambiais",
+          "fundos de renda fixa"
+        ]
+      },
+      "similarity": 0.545,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "condition.if",
+        "condition.only_if"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 16,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "if",
+          "only if"
+        ],
+        "pt-BR": [
+          "se",
+          "somente se"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.population_standard_deviation",
+        "technical.population_variance"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "population standard deviation",
+          "population variance"
+        ],
+        "pt-BR": [
+          "Desvio Padrão Populacional",
+          "Variância Populacional"
+        ]
+      },
+      "similarity": 0.5,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.sample_standard_deviation",
+        "technical.sample_variance"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "sample standard deviation",
+          "sample variance"
+        ],
+        "pt-BR": [
+          "Desvio Padrão Amostral",
+          "Variância Amostral"
+        ]
+      },
+      "similarity": 0.462,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "artifact.cmn_resolution_2554",
+        "artifact.cmn_resolution_4557"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 2,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "CMN Resolution 2.554",
+          "CMN Resolution 4.557"
+        ],
+        "pt-BR": [
+          "Resolução CMN 2.554",
+          "Resolução CMN 4.557"
+        ]
+      },
+      "similarity": 0.429,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.performance_appraisal",
+        "technical.risk_adjusted_appraisal"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 5,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "performance appraisal",
+          "risk-adjusted performance appraisal"
+        ],
+        "pt-BR": [
+          "avaliação de desempenho",
+          "Avaliação de Desempenho ajustada ao risco"
+        ]
+      },
+      "similarity": 0.429,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.population_variance",
+        "technical.sample_variance"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "population variance",
+          "sample variance"
+        ],
+        "pt-BR": [
+          "Variância Populacional",
+          "Variância Amostral"
+        ]
+      },
+      "similarity": 0.4,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.reversal_indicator",
+        "technical.trend_indicator"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "reversal indicators",
+          "trend indicators"
+        ],
+        "pt-BR": [
+          "indicadores de reversão",
+          "indicadores de tendência"
+        ]
+      },
+      "similarity": 0.4,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.cost",
+        "technical.performance_measure"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 16,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "cost",
+          "performance measures"
+        ],
+        "pt-BR": [
+          "custo",
+          "medidas de performance"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.currency_fund",
+        "technical.fund_classification"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "currency fund",
+          "fund classification"
+        ],
+        "pt-BR": [
+          "Fundos Cambiais",
+          "Classificação dos Fundos"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "entity.international_equity_market",
+        "entity.international_exchange"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "international equity market",
+          "international exchanges"
+        ],
+        "pt-BR": [
+          "Mercado de Ações Internacional",
+          "Bolsa de Valores Internacionais"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.equity_portfolio_management",
+        "technical.fixed_income_portfolio_management"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 8,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "equity portfolio management",
+          "fixed income portfolio management"
+        ],
+        "pt-BR": [
+          "Gestão de Carteiras Renda Variável",
+          "gestão de carteiras de renda fixa"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.esg",
+        "technical.esg_private_credit"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 9,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "ESG",
+          "ESG private credit"
+        ],
+        "pt-BR": [
+          "ASG",
+          "Crédito Privado ASG"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.enterprise_risk_management",
+        "technical.institutional_risk_management"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 3,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "enterprise risk management",
+          "institutional risk management"
+        ],
+        "pt-BR": [
+          "ERM",
+          "Gestão de Risco em Instituições"
+        ]
+      },
+      "similarity": 0.357,
+      "verdict": "no-evidence"
+    },
+    {
+      "co_occurrences": 0,
+      "concepts": [
+        "technical.population_standard_deviation",
+        "technical.sample_standard_deviation"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [],
+          "tested": 0,
+          "unsafe": 0
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [],
+          "tested": 1,
+          "unsafe": 0
+        }
+      },
+      "prefs": {
+        "en": [
+          "population standard deviation",
+          "sample standard deviation"
+        ],
+        "pt-BR": [
+          "Desvio Padrão Populacional",
+          "Desvio Padrão Amostral"
+        ]
+      },
+      "similarity": 0.353,
+      "verdict": "no-evidence"
+    }
+  ],
+  "one_way": [],
+  "pairs_skipped_as_antonyms": 12,
+  "pairs_tested": 51,
+  "prose_sentences": 3688,
+  "schema_version": "redundant-concepts-v1",
+  "structurally_unsafe": [
+    {
+      "co_occurrences": 26,
+      "concepts": [
+        "action.buy",
+        "action.sell"
+      ],
+      "directions": {
+        "a->b": {
+          "direction": "a->b",
+          "examples": [
+            {
+              "from": "comprar",
+              "sentence": "☐ Yield to Call (YTC): É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que o emissor exerce o direito de comprar de volta o título, u",
+              "to": "vender",
+              "why": "the engine's rewrite guard refuses this substitution"
+            },
+            {
+              "from": "comprar",
+              "sentence": "Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra e",
+              "to": "vender",
+              "why": "the engine's rewrite guard refuses this substitution"
+            },
+            {
+              "from": "comprar",
+              "sentence": "Quando o investidor está acreditando que a TAXA DE JUROS IRÁ CAIR, ele irá COMPRAR o contrato de DI FUTURO (dizemos que ele está comprando PU e vendendo taxa).",
+              "to": "vender",
+              "why": "the engine's rewrite guard refuses this substitution"
+            }
+          ],
+          "tested": 16,
+          "unsafe": 8
+        },
+        "b->a": {
+          "direction": "b->a",
+          "examples": [
+            {
+              "from": "vender",
+              "sentence": "O aceite bancário é negociável, o que significa que o exportador pode vender o aceite a um terceiro, geralmente um banco, em troca de um desconto.",
+              "to": "comprar",
+              "why": "the engine's rewrite guard refuses this substitution"
+            },
+            {
+              "from": "vender",
+              "sentence": "Uma das principais forma é atrelar este contrato com cláusulas de opções embutida de CALL (opção de compra do título) ou de PUT (opção de venda do título), ou s",
+              "to": "comprar",
+              "why": "the engine's rewrite guard refuses this substitution"
+            },
+            {
+              "from": "vender",
+              "sentence": "Já a CLÁUSULA DE PUT EMBUTIDA beneficia O INVESTIDOR, pois caso as taxas de juros subam, ele poderá vender o título de volta para o emissor e com isso, aplicar ",
+              "to": "comprar",
+              "why": "the engine's rewrite guard refuses this substitution"
+            }
+          ],
+          "tested": 18,
+          "unsafe": 8
+        }
+      },
+      "prefs": {
+        "en": [
+          "buy",
+          "sell"
+        ],
+        "pt-BR": [
+          "comprar",
+          "vender"
+        ]
+      },
+      "similarity": 0.364,
+      "verdict": "structurally-unsafe"
+    }
+  ]
+}

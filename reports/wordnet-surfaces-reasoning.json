@@ -1,0 +1,131 @@
+{
+  "concepts_in_scope": 14,
+  "contexts": [
+    "reasoning"
+  ],
+  "corpus": "/private/tmp/claude-503/-Users-augustocarollo-Developer-cga-game/99aea46e-3c30-436d-8bee-4d28875b0f69/scratchpad/rs-corpus",
+  "items": [
+    {
+      "citations": [
+        "o viés da representatividade ocorre quando julgamos a probabilidade de um evento ou característica com base em sua semelhança com um modelo",
+        "o viés do halo é um erro cognitivo em que uma única característica positiva de uma pessoa, marca ou produto distorce nossa percepção geral sobre ela. se alguém é fisicamente atraente, por exemplo, tendemos a considerá-lo mais competente ou inteligente, mesmo sem qualquer evidência concreta. esse atalho mental simplifica julgamentos complexos, levando-nos a associar qualidades desejáveis a outros aspectos não relacionados. no marketing, essa tendência é explorada para influenciar decisões de compra, fazendo com que um único elemento – como uma embalagem sofisticada ou um porta-voz famoso – gere uma impressão global positiva, sem uma análise objetiva do produto.",
+        "garrincha, com a camisa jogada no ombro e ouvindo a preleção com desinteresse, perguntou ao técnico, com sua simplicidade característica: \"tá legal, seu feola... mas o senhor já combinou tudo isso com os russos?\""
+      ],
+      "concept_definition": "A criterion of comparison in a structured decision, the dimension along which each alternative is weighted and scored so that the options can be told apart.",
+      "concept_id": "reasoning.attribute",
+      "concept_pref": "atributo",
+      "proposed_surface": "característica",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "em um mercado cada vez mais competitivo, a qualidade dos produtos e do atendimento ao cliente deixou de ser apenas um diferencial para se tornar uma questão estratégica. empresas que negligenciam o desenvolvimento dessas competências enfrentam um ciclo vicioso de atrasos, erros operacionais, desperdício de recursos e falhas de comunicação, resultando na perda de eficiência e no comprometimento da sustentabilidade do negócio. diante desse cenário, os gestores perceberam que otimizar processos ou implementar novas tecnologias não seria suficiente. era essencial repensar a capacitação das equipes para que pudessem enfrentar desafios complexos com clareza e precisão.",
+        "> **pensar** é uma atividade automática e constante, que ocorre muitas vezes sem percebermos. são pensamentos rápidos, espontâneos e livres, gerados por associações automáticas ou emoções imediatas. assim, pensar, por si só, não garante qualidade ou profundidade. podemos pensar sobre qualquer coisa – boa ou ruim, útil ou irrelevante, coerente ou desconexa – sem qualquer compromisso com a clareza.",
+        "empresas exploram esse viés investindo na repetição constante de marcas e mensagens para criar uma sensação de confiança e familiaridade. propagandas incessantes fazem com que produtos como refrigerantes, sabões em pó ou bancos pareçam opções mais seguras e confiáveis, mesmo sem serem superiores aos concorrentes. a simples exposição frequente na tv, no youtube e nas redes sociais aumenta a aceitação do público, levando muitas pessoas a escolherem produtos populares sem uma análise crítica de qualidade ou custo-benefício."
+      ],
+      "concept_definition": "A criterion of comparison in a structured decision, the dimension along which each alternative is weighted and scored so that the options can be told apart.",
+      "concept_id": "reasoning.attribute",
+      "concept_pref": "atributo",
+      "proposed_surface": "qualidade",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "na sua configuração mais simples, um argumento tem três elementos: premissas, encadeamento lógico e conclusão. a **premissa** é aquilo que se assume como verdadeiro. a **conclusão** é aquilo que se afirma com base nessas premissas. o **encadeamento lógico** é o fio que liga uma coisa à outra — é o trajeto entre o ponto de partida e o ponto de chegada."
+      ],
+      "concept_definition": "The proposition an argument asserts on the basis of its premises, reached through the logical chain that connects them.",
+      "concept_id": "reasoning.conclusion",
+      "concept_pref": "conclusão",
+      "proposed_surface": "chegada",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "no marketing e nas vendas, esse viés é amplamente explorado para nos manter comprometidos com decisões já tomadas. um exemplo clássico é a falácia dos custos irrecuperáveis (*sunk cost fallacy*). imagine alguém que pagou caro por um ingresso de show, mas, no dia do evento, está doente ou exausto. ainda assim, sente-se compelido a ir para não “desperdiçar” o ingresso. o mesmo ocorre quando você está no cinema assistindo a um filme ruim, mas permanece até o final apenas porque já pagou o ingresso, mesmo sabendo que sair seria a decisão mais sensata para não desperdiçar ainda mais seu tempo.",
+        "marqueteiros exploram esse viés de diversas formas para influenciar o comportamento do consumidor. um exemplo clássico é o uso de preços inflacionados antes do desconto. se um casaco custa r$ 300, mas aparece como “de r$ 600 por apenas r$ 300”, o número r$ 600 funciona como uma âncora, fazendo o valor final parecer uma grande oportunidade, mesmo que o produto nunca tenha custado realmente r$ 600. essa estratégia é comum em liquidações e eventos promocionais, como a black friday. o mesmo princípio se aplica a cardápios de restaurantes, onde pratos excessivamente caros aparecem no topo para fazer com que as opções medianamente caras pareçam mais acessíveis.",
+        "marqueteiros exploram esse viés de diversas formas para influenciar o comportamento do consumidor. um exemplo clássico é o uso de preços inflacionados antes do desconto. se um casaco custa r$ 300, mas aparece como \"de r$ 600 por apenas r$ 300\", o número r$ 600 funciona como uma âncora, fazendo o valor final parecer uma grande oportunidade, mesmo que o produto nunca tenha custado realmente r$ 600. essa estratégia é comum em liquidações e eventos promocionais, como a black friday. o mesmo princípio se aplica a cardápios de restaurantes, onde pratos excessivamente caros aparecem no topo para fazer com que as opções medianamente caras pareçam mais acessíveis."
+      ],
+      "concept_definition": "The proposition an argument asserts on the basis of its premises, reached through the logical chain that connects them.",
+      "concept_id": "reasoning.conclusion",
+      "concept_pref": "conclusão",
+      "proposed_surface": "final",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "— não sei — augusto interfere. precisamos entender se os números confirmam isso, identificar quais lojas não estão \"performando\" e se isso se deve à nossa negociação ou a fatores externos..."
+      ],
+      "concept_definition": "In a strategic game, to choose the mutually beneficial strategy rather than the individually advantageous one that betrays the other player.",
+      "concept_id": "reasoning.cooperate",
+      "concept_pref": "colaborar",
+      "proposed_surface": "entender se",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "o carro a é mais barato, mas não tem um motor tão potente nem alguns acessórios desejados, como porta-treco para seus filhos. já o carro b é mais caro, possui menos acessórios desejados, mas não está disponível na cor que você gostaria, além de consumir mais combustível. para tomar a melhor decisão, você pode criar um algoritmo mental ou usar um programa para considerar todas as variáveis e pesos de importância, forming um ranking de preferências.",
+        "o carro a é mais barato, mas não tem um motor tão potente nem alguns opcionais, como porta-treco para seus filhos. já o carro b é mais caro, possui os acessórios desejados, mas não está disponível na cor que você gostaria, além de consumir mais combustível. para tomar a melhor decisão, você pode criar um algoritmo mental ou usar um programa para considerar todas as variáveis e pesos de importância, formando um *ranking* de preferências."
+      ],
+      "concept_definition": "A grid whose axes cross two or more relevant dimensions so that alternatives and criteria can be compared in one structured view.",
+      "concept_id": "reasoning.matrix",
+      "concept_pref": "matriz",
+      "proposed_surface": "programa",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "essa frase soa como uma explicação. o que seu amigo está fazendo é informar a causa do estado emocional de jane. ele parte do pressuposto de que ela ficou brava e apenas explica o motivo. não está tentando convencê-lo de nada — apenas relatar um fato.",
+        "aqui, o \"porque\" introduz uma explicação causal. a pessoa que diz isso não está tentando convencer ninguém de que john lennon morreu. parte do pressuposto de que isso já é aceito — e apenas informa o motivo."
+      ],
+      "concept_definition": "A statement taken as given at the start of an argument, on whose truth the validity of the conclusion depends.",
+      "concept_id": "reasoning.premise",
+      "concept_pref": "premissa",
+      "proposed_surface": "pressuposto",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "no ambiente corporativo, em que há uma sobrecarga constante de informações e um volume crescente de dados dispersos, o pensamento crítico é indispensável. a falta dessa habilidade pode levar a falhas na comunicação e na tomada de decisões, fazendo com que informações imprecisas sejam aceitas sem questionamento e argumentos frágeis influenciem escolhas estratégicas. em contrapartida, empresas que estimulam o pensamento crítico promovem discussões mais produtivas, reduzem conflitos e criam uma cultura de argumentação lógica."
+      ],
+      "concept_definition": "The structured mental process that links premises, evidence and inference to reach conclusions and guide action, treated in this corpus as a trainable professional competence.",
+      "concept_id": "reasoning.reasoning",
+      "concept_pref": "raciocínio",
+      "proposed_surface": "argumentação",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "a forma mais antiga e clássica de raciocínio é a dedução. ela remonta à grécia antiga, quando aristóteles desenvolveu o modelo que hoje conhecemos como silogismo. um silogismo é uma forma específica de dedução em que duas premissas conduzem, de maneira inevitável, a uma conclusão. trata-se de um raciocínio fechado: se as premissas forem verdadeiras e a estrutura estiver correta, a conclusão não pode estar errada.",
+        "esse raciocínio é chamado de válido porque a conclusão decorre necessariamente das premissas. a forma está correta. a dedução não admite variações: ou tudo está certo, ou tudo desmorona. é útil quando as regras são claras, quando há regularidade, quando o raciocínio exige rigor.",
+        "a inferência é válida. mas será que a premissa 1 é verdadeira? é seguro afirmar que \"todos\" os clientes realmente ativam o produto após o onboarding? se uma das premissas é fraca, a dedução desmorona."
+      ],
+      "concept_definition": "The structured mental process that links premises, evidence and inference to reach conclusions and guide action, treated in this corpus as a trainable professional competence.",
+      "concept_id": "reasoning.reasoning",
+      "concept_pref": "raciocínio",
+      "proposed_surface": "dedução",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    },
+    {
+      "citations": [
+        "o componente mais negligenciado na estrutura de um argumento é o encadeamento lógico — o que, tecnicamente, se chama de inferência. inferir é o processo de transitar de uma ou mais premissas até uma conclusão. quando alguém afirma \"estamos perdendo clientes porque o valor percebido caiu\", está fazendo uma inferência. pode estar certa ou errada. pode pular etapas. mas há ali uma tentativa de transformar um fato em explicação. a qualidade do raciocínio depende da solidez desse salto. e quando ele não é declarado com clareza, torna-se difícil saber se a conclusão veio de uma análise real ou apenas de uma intuição disfarçada.",
+        "a inferência é válida. mas será que a premissa 1 é verdadeira? é seguro afirmar que \"todos\" os clientes realmente ativam o produto após o onboarding? se uma das premissas é fraca, a dedução desmorona.",
+        "a segunda forma de inferência é a indução. ela segue o caminho oposto ao da dedução. em vez de partir de uma regra para aplicá-la a um caso específico, parte de vários casos específicos para propor uma generalização. é menos rigorosa, mas mais flexível. usamos a indução quando não há leis universais disponíveis, mas precisamos tomar decisões com base em padrões observados."
+      ],
+      "concept_definition": "The structured mental process that links premises, evidence and inference to reach conclusions and guide action, treated in this corpus as a trainable professional competence.",
+      "concept_id": "reasoning.reasoning",
+      "concept_pref": "raciocínio",
+      "proposed_surface": "inferência",
+      "question": "does this spelling denote THE SAME SENSE this concept holds, in these sentences? if it is a KIND of the concept rather than another name for it, answer `hierarchy` instead of `surface`"
+    }
+  ],
+  "method": {
+    "decision": "none is taken here; every proposal carries citations and goes to the adjudicate -> validate -> refute loop",
+    "filters": "the surface must occur in corpus PROSE on word boundaries, and must not already be claimed by any concept in the registry",
+    "role": "GENERATOR — measured at roughly 1 correct in 12 on the reasoning pack; WordNet cannot know which sense this registry holds",
+    "source": "own-pt:1.0.0"
+  },
+  "proposals": 10,
+  "schema_version": "wordnet-surface-proposals-v1",
+  "skipped_already_owned": 2,
+  "skipped_not_attested_in_prose": 26
+}

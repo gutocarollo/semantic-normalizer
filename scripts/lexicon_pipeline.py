@@ -221,26 +221,36 @@ def match_corpus(corpus: Path, contexts: list[str]) -> list[dict]:
     return segments
 
 
-def undecided_tokens(segment: dict, decided: dict) -> list[str]:
-    """PARTITION helper: content words in this sentence the loop has not yet ruled on."""
+def undecided_tokens(segment: dict, decided: dict, known: set[str] | None = None) -> list[str]:
+    """PARTITION helper: content words in this sentence nothing has ruled on yet.
+
+    `known` is every surface the registry declares in scope, at ANY policy. Without it the
+    accounting called a token undecided when the registry already carried it as a `review`
+    form: `premissas` is a declared inflection of the admitted `premissa`, does not fire
+    automatically, therefore lands in `unresolved`, therefore looked like open work. Measured
+    on the reasoning run: 12 tokens and 125 occurrences counted as pending that the dictionary
+    already knew. It never caused a loop — `phase_match` filters candidates against the same
+    surfaces — but it inflated every coverage number the report published.
+    """
     tokens = []
+    known = known or set()
     for span in segment["unresolved"]:
         for token in WORD.findall(span.get("original", "")):
             key = fold(token)
-            if key in STOPWORDS or key in decided:
+            if key in STOPWORDS or key in decided or key in known:
                 continue
             tokens.append(key)
     return sorted(set(tokens))
 
 
-def partition(segments: list[dict], decided: dict) -> dict:
+def partition(segments: list[dict], decided: dict, known: set[str] | None = None) -> dict:
     """Per-sentence terminal states. `covered` and `decided` sentences cost no AI."""
     prose = [s for s in segments if s["prose"] and s["text"].strip()]
     covered = decided_count = 0
     pending_tokens: dict[str, int] = {}
     pending_sentences = 0
     for segment in prose:
-        remaining = undecided_tokens(segment, decided)
+        remaining = undecided_tokens(segment, decided, known)
         if not remaining:
             if segment["concept_ids"]:
                 covered += 1
@@ -773,7 +783,7 @@ def phase_match(state: dict, run_dir: Path, round_dir: Path) -> str:
         "round": state["round"],
         "pool_admissible": len(admissible),
         "auto_rejected_no_prose": auto_rejected,
-        "coverage_at_round_start": partition(segments, decided),
+        "coverage_at_round_start": partition(segments, decided, surfaces),
     })
     if not admissible:
         state["phase"] = "precision"
@@ -1068,14 +1078,20 @@ def phase_precision(state: dict, run_dir: Path) -> str:
 def phase_report(state: dict, run_dir: Path) -> str:
     decided = load_decided(run_dir)
     segments = match_corpus(Path(state["corpus"]), state["contexts"])
-    final = partition(segments, decided)
+    final = partition(segments, decided, registry_surfaces(state["contexts"]))
     admitted = {k: v for k, v in decided.items() if v["state"] == "admitted"}
     rejected = {k: v for k, v in decided.items()
                 if v["state"] in REJECTION_REASONS + ("refuted", "no-prose-attestation")}
-    ceiling = {
-        token: count for token, count in sorted(final["pending_tokens"].items(),
-                                                key=lambda kv: (-kv[1], kv[0]))
-    }
+    # A LIST, not a dict. The ceiling is ordered by frequency because that is the whole point —
+    # it tells a reader what the run left on the table. Emitting a dict handed the order to
+    # `json.dumps(sort_keys=True)`, which re-sorted it alphabetically, and the published report
+    # opened with `abacaxi(1), abaixa(1), abaixar(6)`. A ceiling in alphabetical order answers
+    # no question anyone has.
+    ceiling = [
+        {"token": token, "occurrences": count}
+        for token, count in sorted(final["pending_tokens"].items(),
+                                   key=lambda kv: (-kv[1], kv[0]))
+    ]
     precision_path = run_dir / "precision" / "precision.json"
     report = {
         "domain": state["domain"],

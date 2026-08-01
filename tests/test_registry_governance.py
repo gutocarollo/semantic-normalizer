@@ -351,16 +351,31 @@ class RegistryGovernanceTests(unittest.TestCase):
         sys.path.insert(0, str(DATA.parents[2]))
         from semantic_normalizer.normalizer import CANONICAL_ANTONYMS
         from semantic_normalizer.registry import automatic_surfaces, nfc_casefold
+        # The opposition must straddle TWO surfaces to be the defect. Both sides inside ONE
+        # surface is a compound that NAMES the pair — `long/short`, `asset/liability`,
+        # `deságio/ágio` — and its referent is the pairing itself, so no rewrite can substitute
+        # one side for the other: there is only one form. Widening the antonym list by
+        # derivation surfaced three such concepts at once (technical.long_and_short,
+        # technical.asset_liability_management, technical.premium_or_discount) and treating them
+        # as offenders would have demanded splitting concepts that are correctly modelled.
+        #
+        # This is the same distinction the module comment in normalizer.py already draws between
+        # the rewrite question and the modelling question, one level finer: an opposition inside
+        # a single string is neither.
         offenders = []
         for record in self.records:
             for language in ("en", "pt-BR"):
-                tokens = [set(nfc_casefold(form).split())
-                          for form in automatic_surfaces(record, language)]
+                surfaces = [set(nfc_casefold(form).split())
+                            for form in automatic_surfaces(record, language)]
                 for left, right in CANONICAL_ANTONYMS:
-                    if any(left in group for group in tokens) and any(
-                        right in group for group in tokens
-                    ):
-                        offenders.append(f"{record['concept_id']}.{language}: {left}/{right}")
+                    carrying_left = [s for s in surfaces if left in s]
+                    carrying_right = [s for s in surfaces if right in s]
+                    if not carrying_left or not carrying_right:
+                        continue
+                    if all(left in s and right in s
+                           for s in carrying_left + carrying_right):
+                        continue  # every carrier holds BOTH sides: a compound naming the pair
+                    offenders.append(f"{record['concept_id']}.{language}: {left}/{right}")
         self.assertEqual(
             [], sorted(set(offenders)),
             "these concepts gather both sides of an opposition, so the canonical rewrite would "

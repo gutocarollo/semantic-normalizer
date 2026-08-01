@@ -437,6 +437,64 @@ class TheDryRoundRuleActuallyEndsTheLoop(unittest.TestCase):
         self.assertIn("max rounds", message)
 
 
+class TheCoverageAccountingDoesNotInventOpenWork(unittest.TestCase):
+    """A surface the registry already declares is not open work, whatever its policy.
+
+    Measured on the reasoning run before this fix: 12 tokens and 125 occurrences counted as
+    pending that the dictionary already carried — `premissas`, `falácias`, `conclusões`, all
+    declared inflections of admitted concepts under `review` policy. They do not fire
+    automatically, so they land in `unresolved`, so the accounting called them undecided.
+    """
+
+    SEGMENTS = [
+        {"prose": True, "text": "As premissas ocultas sustentam o argumento.",
+         "concept_ids": ["reasoning.argument"], "match_events": [],
+         "unresolved": [{"original": "As premissas ocultas sustentam o "}]},
+    ]
+
+    def test_a_declared_review_form_is_not_counted_as_pending(self):
+        known = {"premissas", "ocultas", "sustentam"}
+        before = pipeline.partition(self.SEGMENTS, decided={})
+        after = pipeline.partition(self.SEGMENTS, decided={}, known=known)
+        self.assertIn("premissas", before["pending_tokens"])
+        self.assertNotIn("premissas", after["pending_tokens"])
+        self.assertEqual(before["pending_sentences"], 1)
+        self.assertEqual(after["pending_sentences"], 0)
+        self.assertEqual(after["covered_with_concepts"], 1)
+
+    def test_a_genuinely_unknown_token_is_still_counted(self):
+        """The fix must not silence real open work."""
+        after = pipeline.partition(self.SEGMENTS, decided={}, known={"premissas"})
+        self.assertIn("ocultas", after["pending_tokens"])
+        self.assertEqual(after["pending_sentences"], 1)
+
+
+class TheCeilingKeepsItsFrequencyOrder(unittest.TestCase):
+    """The ceiling is ordered by frequency or it answers nothing.
+
+    Published as a dict, it was handed to `json.dumps(sort_keys=True)` and came back
+    alphabetical: the real report opened with `abacaxi(1), abaixa(1), abaixar(6)` while
+    `decisões(149)` sat in the middle. A list survives serialisation.
+    """
+
+    def test_a_dict_ceiling_loses_its_order_to_sort_keys(self):
+        ordered = {"decisões": 149, "abacaxi": 1}
+        self.assertEqual(list(json.loads(json.dumps(ordered, sort_keys=True))),
+                         ["abacaxi", "decisões"],
+                         "if this ever passes as-is, sort_keys stopped reordering and the "
+                         "dict form would be safe again")
+
+    def test_the_list_form_survives_serialisation(self):
+        ceiling = [{"token": "decisões", "occurrences": 149},
+                   {"token": "abacaxi", "occurrences": 1}]
+        roundtrip = json.loads(json.dumps(ceiling, sort_keys=True))
+        self.assertEqual([row["token"] for row in roundtrip], ["decisões", "abacaxi"])
+
+    def test_the_report_emits_the_list_form(self):
+        source = (SCRIPTS / "lexicon_pipeline.py").read_text(encoding="utf-8")
+        self.assertIn('{"token": token, "occurrences": count}', source)
+
+
 class TheSemanticDigestAnswersTheRightQuestion(unittest.TestCase):
     """Stripping the seal must remove the release identity and nothing else.
 

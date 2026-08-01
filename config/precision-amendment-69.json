@@ -1,0 +1,45 @@
+{
+  "id": "precision-sweep-amendment-69",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "reports/redundant-concepts-cga.json + adversarial judgement, 5 tasks",
+  "method": "hierarchy edges proposed by find_redundant_concepts.py and decided by an adversarial judge asked the INVERTED question — assume the pair is one concept and prove it is not. Of 35 pairs it judged 29 distinct, 6 hierarchy and ZERO the same, so the registry carries no redundant concept; what looked like redundancy was either two referents sharing a template definition or a genus/species pair. Each edge below cites the corpus line that subordinates one to the other.",
+  "reason": "The registry shipped 598 concepts with ZERO broader/narrower edges — a list with metadata rather than an ontology, unable to answer whether a Macaulay duration is a duration. These six edges are the ones an adversarial judge could not break.\n\nHow they were found matters, because the obvious method is a trap. Ranking concepts by definition similarity does not surface synonyms, it surfaces ANTONYMS: state.enabled and state.disabled score 1.00 because the only token separating them is `not`, three characters, dropped by every stopword filter. Merging on that signal would have joined put with call, which is the defect this registry already paid for once. So oppositions are derived and removed FIRST, the survivors are substitution-tested with the engine's own rewrite guard, and what is left is judged with the question inverted: assume the pair is one concept and prove it is not.\n\nOf 35 pairs judged: 29 distinct, 6 hierarchy, ZERO the same. The registry has no redundant concept. Each edge below cites the corpus line that subordinates one term to the other; `technical.ytm` takes two genera (discount_rate and irr), which SKOS permits and the corpus supports.",
+  "operations": [
+    {
+      "op": "link_broader",
+      "concept": "technical.macaulay_duration",
+      "broader": "technical.duration",
+      "reason": "Macaulay is one member of a duration family the corpus enumerates. 08-gestao-de-carteiras-de-renda-fixa.md Linha 348 already treats duration as a genus with at least two species: \"medidas de sensibilidade ... (Duration de Macaulay ou Duration Modificada)\". Linha 540: \"A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas ... os fluxos de caixa esperados flutu"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.bond",
+      "broader": "entity.private_security",
+      "reason": "The lexical anchor of entity.bond is \"debênture/debêntures\" (its English gloss is a template), and a debênture is one instrument inside the private-debt class. 06-gestao-de-riscos.md Linha 142 enumerates the class: \"títulos de dívida que irão lançar no mercado, como por exemplo, debêntures, notas promissórias, securitizações como os CRI e CRA, entre outros tipos de dívidas\" — debênture is one item"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.treasury_security",
+      "broader": "entity.us_government_security",
+      "reason": "The corpus proves the broader term's extension contains a member the narrower one cannot cover. '## Títulos Americanos' (01-investimentos-no-exterior.md:137) heads the Municipal Bonds section, and 01:141 defines a Muni as 'um título de dívida emitido por governos locais, como cidades, estados ou municípios nos Estados Unidos' — American government debt that is NOT Treasury-issued; the same umbrell"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.ytm",
+      "broader": "technical.discount_rate",
+      "reason": "Genus/species, not equals. 08-gestao-de-carteiras-de-renda-fixa.md:17 subordinates one to the other: 'necessitamos utilizar uma taxa de desconto. Essa taxa de desconto utilizada... é a TIR deste investimento (também chamada de YTM – Yield to Maturity, NA RENDA FIXA)' — YTM is the name the discount rate takes in the fixed-income case only (cf. 08:382 'i = YTM (taxa de desconto)'). Substitution fail"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.treasury_note",
+      "broader": "entity.us_government_security",
+      "reason": "Member vs set. 01-investimentos-no-exterior.md:19 enumerates the set: 'Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS', and the shared section heading 'Títulos do Governo Americano' (01:21, 49, 71, 89, 107) opens each species — T-Notes being only the block at 01:73-85 ('VENCIMENTOS DE DOIS A DEZ ANOS... POSSUEM CUPOM SEMESTRAL'). The genus term appears where T-Notes spe"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.ytm",
+      "broader": "technical.irr",
+      "reason": "YTM is the IRR restricted to a bond's cash flows to maturity — the corpus defines it that way: 08-gestao-de-carteiras-de-renda-fixa.md:69 and 01-investimentos-no-exterior.md:288 'Yield to Maturity (YTM): É a taxa interna de retorno (TIR) dada ao ano dos fluxos de caixa DO TÍTULO, incluindo o valor da compra, os cupons e o valor no vencimento'; 08:17 'é a TIR deste investimento (também chamada de Y"
+    }
+  ]
+}

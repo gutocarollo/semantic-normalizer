@@ -1,0 +1,614 @@
+{
+  "concepts_scanned": 598,
+  "derived_pairs": 12,
+  "method": {
+    "candidate": "concept pairs whose definitions overlap >= min-similarity, with SHORT words kept — `not` is three characters and is the entire difference between state.enabled and state.disabled",
+    "decision": "a negator present on exactly one side, or a polar pair split across the two sides",
+    "not_a_merge": "these pairs are the boundary a merge must never cross; this script never proposes joining anything"
+  },
+  "pairs": [
+    {
+      "concepts": [
+        "state.disabled",
+        "state.enabled"
+      ],
+      "definitions": [
+        "A state in which a function is not available for operation.",
+        "A state in which a function is available for operation."
+      ],
+      "evidence": "'not' on one side only",
+      "kind": "negation",
+      "similarity": 0.8,
+      "surface_pairs": [
+        [
+          "desativado",
+          "ativado"
+        ],
+        [
+          "disabled",
+          "enabled"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.flattening",
+        "technical.steepening"
+      ],
+      "definitions": [
+        "A curve movement in which the spread between long and short rates narrows.",
+        "A curve movement in which the spread between long and short rates widens."
+      ],
+      "evidence": "'widens' vs 'narrows'",
+      "kind": "polar",
+      "similarity": 0.778,
+      "surface_pairs": [
+        [
+          "flattening",
+          "steepening"
+        ],
+        [
+          "flattening",
+          "steepening"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.negative_butterfly",
+        "technical.positive_butterfly"
+      ],
+      "definitions": [
+        "The curve movement in which both ends fall more than the middle.",
+        "The curve movement in which both ends rise more than the middle."
+      ],
+      "evidence": "'rise' vs 'fall'",
+      "kind": "polar",
+      "similarity": 0.75,
+      "surface_pairs": [
+        [
+          "negativa",
+          "positiva"
+        ],
+        [
+          "negative",
+          "positive"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.long_position",
+        "technical.short_position"
+      ],
+      "definitions": [
+        "An exposure that gains when the underlying price rises.",
+        "An exposure that gains when the underlying price falls."
+      ],
+      "evidence": "'rises' vs 'falls'",
+      "kind": "polar",
+      "similarity": 0.714,
+      "surface_pairs": [
+        [
+          "comprada",
+          "vendida"
+        ],
+        [
+          "long",
+          "short"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "temporal.after",
+        "temporal.before"
+      ],
+      "definitions": [
+        "Marks that the governed event occurs later than another event.",
+        "Marks that the governed event occurs earlier than another event."
+      ],
+      "evidence": "'earlier' vs 'later'",
+      "kind": "polar",
+      "similarity": 0.714,
+      "surface_pairs": [
+        [
+          "depois",
+          "antes"
+        ],
+        [
+          "after",
+          "before"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.swap_asset_leg",
+        "technical.swap_liability_leg"
+      ],
+      "definitions": [
+        "The side of a swap whose holder receives the indexed flow — the party is `ativo` in that index.",
+        "The side of a swap whose holder pays the indexed flow — the party is `passivo` in that index."
+      ],
+      "evidence": "'receives' vs 'pays'",
+      "kind": "polar",
+      "similarity": 0.667,
+      "surface_pairs": [
+        [
+          "ativa",
+          "passiva"
+        ],
+        [
+          "asset",
+          "liability"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.high_grade_bond",
+        "entity.high_yield_bond"
+      ],
+      "definitions": [
+        "Bonds rated investment grade, with lower credit risk and a lower coupon.",
+        "Bonds rated below investment grade, paying a higher coupon for higher credit risk."
+      ],
+      "evidence": "'higher' vs 'lower'",
+      "kind": "polar",
+      "similarity": 0.636,
+      "surface_pairs": [
+        [
+          "grade",
+          "yield"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.call_option",
+        "technical.put_option"
+      ],
+      "definitions": [
+        "The right to buy the underlying at a set price; embedded in a bond it favours the issuer.",
+        "The right to sell the underlying at a set price; embedded in a bond it favours the holder."
+      ],
+      "evidence": "'buy' vs 'sell'",
+      "kind": "polar",
+      "similarity": 0.636,
+      "surface_pairs": [
+        [
+          "call",
+          "put"
+        ],
+        [
+          "call",
+          "put"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "actor.buyer",
+        "actor.seller"
+      ],
+      "definitions": [
+        "The party acquiring an instrument in a transaction.",
+        "The party disposing of an instrument in a transaction."
+      ],
+      "evidence": "'acquiring' vs 'disposing'",
+      "kind": "polar",
+      "similarity": 0.6,
+      "surface_pairs": [
+        [
+          "comprador",
+          "vendedor"
+        ],
+        [
+          "buyer",
+          "seller"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.discount",
+        "technical.premium_price"
+      ],
+      "definitions": [
+        "A price below face value.",
+        "A price above face value."
+      ],
+      "evidence": "'above' vs 'below'",
+      "kind": "polar",
+      "similarity": 0.6,
+      "surface_pairs": [
+        [
+          "deságio",
+          "ágio"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.closed_class",
+        "entity.open_class"
+      ],
+      "definitions": [
+        "A class of shares whose rules do not allow redemption; the holder exits by selling.",
+        "A class of shares whose rules allow the holder to redeem."
+      ],
+      "evidence": "'not' on one side only",
+      "kind": "negation",
+      "similarity": 0.5,
+      "surface_pairs": [
+        [
+          "fechada",
+          "aberta"
+        ],
+        [
+          "closed",
+          "open"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.closed_fund",
+        "entity.open_fund"
+      ],
+      "definitions": [
+        "Funds whose shares cannot be redeemed on demand and are traded instead.",
+        "Funds whose shares can be subscribed and redeemed on demand."
+      ],
+      "evidence": "'cannot' on one side only",
+      "kind": "negation",
+      "similarity": 0.5,
+      "surface_pairs": [
+        [
+          "fechados",
+          "abertos"
+        ],
+        [
+          "closed",
+          "open"
+        ]
+      ]
+    }
+  ],
+  "pairs_not_covered_by_the_shipped_guard": 11,
+  "schema_version": "derived-antonyms-v1",
+  "uncovered": [
+    {
+      "concepts": [
+        "state.disabled",
+        "state.enabled"
+      ],
+      "definitions": [
+        "A state in which a function is not available for operation.",
+        "A state in which a function is available for operation."
+      ],
+      "evidence": "'not' on one side only",
+      "kind": "negation",
+      "missing_surface_pairs": [
+        [
+          "desativado",
+          "ativado"
+        ],
+        [
+          "disabled",
+          "enabled"
+        ]
+      ],
+      "similarity": 0.8,
+      "surface_pairs": [
+        [
+          "desativado",
+          "ativado"
+        ],
+        [
+          "disabled",
+          "enabled"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.flattening",
+        "technical.steepening"
+      ],
+      "definitions": [
+        "A curve movement in which the spread between long and short rates narrows.",
+        "A curve movement in which the spread between long and short rates widens."
+      ],
+      "evidence": "'widens' vs 'narrows'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "flattening",
+          "steepening"
+        ],
+        [
+          "flattening",
+          "steepening"
+        ]
+      ],
+      "similarity": 0.778,
+      "surface_pairs": [
+        [
+          "flattening",
+          "steepening"
+        ],
+        [
+          "flattening",
+          "steepening"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.negative_butterfly",
+        "technical.positive_butterfly"
+      ],
+      "definitions": [
+        "The curve movement in which both ends fall more than the middle.",
+        "The curve movement in which both ends rise more than the middle."
+      ],
+      "evidence": "'rise' vs 'fall'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "negative",
+          "positive"
+        ]
+      ],
+      "similarity": 0.75,
+      "surface_pairs": [
+        [
+          "negativa",
+          "positiva"
+        ],
+        [
+          "negative",
+          "positive"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.long_position",
+        "technical.short_position"
+      ],
+      "definitions": [
+        "An exposure that gains when the underlying price rises.",
+        "An exposure that gains when the underlying price falls."
+      ],
+      "evidence": "'rises' vs 'falls'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "long",
+          "short"
+        ]
+      ],
+      "similarity": 0.714,
+      "surface_pairs": [
+        [
+          "comprada",
+          "vendida"
+        ],
+        [
+          "long",
+          "short"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "temporal.after",
+        "temporal.before"
+      ],
+      "definitions": [
+        "Marks that the governed event occurs later than another event.",
+        "Marks that the governed event occurs earlier than another event."
+      ],
+      "evidence": "'earlier' vs 'later'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "depois",
+          "antes"
+        ],
+        [
+          "after",
+          "before"
+        ]
+      ],
+      "similarity": 0.714,
+      "surface_pairs": [
+        [
+          "depois",
+          "antes"
+        ],
+        [
+          "after",
+          "before"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.swap_asset_leg",
+        "technical.swap_liability_leg"
+      ],
+      "definitions": [
+        "The side of a swap whose holder receives the indexed flow — the party is `ativo` in that index.",
+        "The side of a swap whose holder pays the indexed flow — the party is `passivo` in that index."
+      ],
+      "evidence": "'receives' vs 'pays'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "asset",
+          "liability"
+        ]
+      ],
+      "similarity": 0.667,
+      "surface_pairs": [
+        [
+          "ativa",
+          "passiva"
+        ],
+        [
+          "asset",
+          "liability"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.high_grade_bond",
+        "entity.high_yield_bond"
+      ],
+      "definitions": [
+        "Bonds rated investment grade, with lower credit risk and a lower coupon.",
+        "Bonds rated below investment grade, paying a higher coupon for higher credit risk."
+      ],
+      "evidence": "'higher' vs 'lower'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "grade",
+          "yield"
+        ]
+      ],
+      "similarity": 0.636,
+      "surface_pairs": [
+        [
+          "grade",
+          "yield"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "actor.buyer",
+        "actor.seller"
+      ],
+      "definitions": [
+        "The party acquiring an instrument in a transaction.",
+        "The party disposing of an instrument in a transaction."
+      ],
+      "evidence": "'acquiring' vs 'disposing'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "comprador",
+          "vendedor"
+        ],
+        [
+          "buyer",
+          "seller"
+        ]
+      ],
+      "similarity": 0.6,
+      "surface_pairs": [
+        [
+          "comprador",
+          "vendedor"
+        ],
+        [
+          "buyer",
+          "seller"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "technical.discount",
+        "technical.premium_price"
+      ],
+      "definitions": [
+        "A price below face value.",
+        "A price above face value."
+      ],
+      "evidence": "'above' vs 'below'",
+      "kind": "polar",
+      "missing_surface_pairs": [
+        [
+          "deságio",
+          "ágio"
+        ]
+      ],
+      "similarity": 0.6,
+      "surface_pairs": [
+        [
+          "deságio",
+          "ágio"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.closed_class",
+        "entity.open_class"
+      ],
+      "definitions": [
+        "A class of shares whose rules do not allow redemption; the holder exits by selling.",
+        "A class of shares whose rules allow the holder to redeem."
+      ],
+      "evidence": "'not' on one side only",
+      "kind": "negation",
+      "missing_surface_pairs": [
+        [
+          "closed",
+          "open"
+        ]
+      ],
+      "similarity": 0.5,
+      "surface_pairs": [
+        [
+          "fechada",
+          "aberta"
+        ],
+        [
+          "closed",
+          "open"
+        ]
+      ]
+    },
+    {
+      "concepts": [
+        "entity.closed_fund",
+        "entity.open_fund"
+      ],
+      "definitions": [
+        "Funds whose shares cannot be redeemed on demand and are traded instead.",
+        "Funds whose shares can be subscribed and redeemed on demand."
+      ],
+      "evidence": "'cannot' on one side only",
+      "kind": "negation",
+      "missing_surface_pairs": [
+        [
+          "fechados",
+          "abertos"
+        ],
+        [
+          "closed",
+          "open"
+        ]
+      ],
+      "similarity": 0.5,
+      "surface_pairs": [
+        [
+          "fechados",
+          "abertos"
+        ],
+        [
+          "closed",
+          "open"
+        ]
+      ]
+    }
+  ]
+}

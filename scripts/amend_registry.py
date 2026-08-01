@@ -15,6 +15,7 @@ An amendment file is a list of operations, each naming the corpus evidence that 
     {"op": "add_form", "concept": "...", "language": "pt-BR", "form": "valor principal"}
     {"op": "forbid",  "concept": "...", "language": "pt-BR", "variants": ["à medida que"]}
     {"op": "add_concept", "record": {...}}
+    {"op": "link_broader", "concept": "<narrower>", "broader": "<genus>"}
 
 `demote` is the repair for a bare token whose financial reading is a minority of its corpus
 uses, and it is never used alone: the collocation that marks the financial sense is added in the
@@ -30,7 +31,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "semantic_normalizer" / "data"
@@ -61,6 +65,7 @@ def main() -> int:
     applied: dict[str, list[str]] = {
         "demoted": [], "promoted": [], "renamed": [], "redefined": [], "forms_added": [], "forms_removed": [],
         "variants_forbidden": [], "variants_unforbidden": [], "concepts_added": [],
+        "edges_linked": [],
     }
     refused: list[str] = []
 
@@ -250,6 +255,31 @@ def main() -> int:
                         f"{operation['concept']}.{language}:{variant}"
                     )
 
+        elif kind == "link_broader":
+            # Writes BOTH sides. The registry contract rejects a `broader` edge whose target
+            # does not declare the matching `narrower`, so a one-way write cannot load — and a
+            # half-applied hierarchy is worse than none, because it reads as structure.
+            #
+            # `operation["concept"]` is the NARROWER one; `operation["broader"]` the genus.
+            target = by_id.get(operation["broader"])
+            if target is None:
+                refused.append(f"{operation['broader']} (broader target not in registry)")
+                continue
+            if target["concept_id"] == record["concept_id"]:
+                refused.append(f"{record['concept_id']} (a concept cannot be broader than itself)")
+                continue
+            if record["concept_id"] in target["relations"]["broader"]:
+                refused.append(f"{record['concept_id']} -> {target['concept_id']} "
+                               "(would invert an edge that already exists the other way)")
+                continue
+            edge = f"{record['concept_id']} -> {target['concept_id']}"
+            if target["concept_id"] in record["relations"]["broader"]:
+                refused.append(f"{edge} (already linked)")
+                continue
+            record["relations"]["broader"].append(target["concept_id"])
+            target["relations"]["narrower"].append(record["concept_id"])
+            applied["edges_linked"].append(edge)
+
         else:
             refused.append(f"unknown op {kind!r}")
 
@@ -259,20 +289,17 @@ def main() -> int:
 
     # Re-run over the whole registry, not only over the touched records: a concept added here
     # can collide with a form that was automatic before this amendment existed.
-    owners: dict[tuple[str, str], set[str]] = {}
-    for record in records:
-        for language, entries in record["lexical_forms"].items():
-            for entry in entries:
-                if entry["policy"] == "auto":
-                    owners.setdefault((language, entry["form"]), set()).add(record["concept_id"])
-    ambiguous = {key for key, ids in owners.items() if len(ids) > 1}
-    collided = []
-    for record in records:
-        for language, entries in record["lexical_forms"].items():
-            for entry in entries:
-                if (language, entry["form"]) in ambiguous and entry["policy"] == "auto":
-                    entry["policy"] = "review"
-                    collided.append(f"{record['concept_id']}.{language}:{entry['form']}")
+    # Context-aware, and it has to be: the importer's demoter learned this when domain packs
+    # arrived, and this one had not. Running any amendment against a registry holding two packs
+    # demoted BOTH `entity.premise` (finance) and `reasoning.premise` — surfaces that never share
+    # a matcher table, because `load_lexicon(contexts=[...])` builds from one scope. A collision
+    # that cannot occur was being paid for with two automatic forms, and the plug-and-play
+    # property the packs exist for was destroyed by an amendment about something else entirely.
+    #
+    # Same rule as `import_cga_batch.demote_ambiguous`: demote only claimants whose contexts
+    # INTERSECT, and never a disjoint third owner of the same surface. Empty contexts is global.
+    from import_cga_batch import demote_ambiguous
+    collided = demote_ambiguous(records)
 
     summary = {
         "amendment": amendment["id"],
