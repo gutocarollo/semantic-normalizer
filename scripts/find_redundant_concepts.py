@@ -8,14 +8,19 @@ collide and may still be the same referent.
 
 WHY THE OBVIOUS METHOD IS THE WRONG ONE, WITH THE MEASUREMENT
 
-Rank the 598 shipped concepts by how similar their definitions are and the top of the list is not
-synonyms — it is opposites:
+Rank the 598 shipped concepts by how similar their definitions are and opposites crowd the top:
 
-    1.00  state.enabled      ~ state.disabled       (`ativado` / `desativado`)
-    0.78  technical.flattening ~ technical.steepening
-    0.71  temporal.after     ~ temporal.before
-    0.67  technical.call_option ~ technical.put_option
-    0.67  actor.buyer        ~ actor.seller
+    0.875  entity.treasury_bond ~ entity.treasury_note   (NAO e antonimo — ver abaixo)
+    0.800  state.enabled      ~ state.disabled       (`ativado` / `desativado`)
+    0.778  technical.flattening ~ technical.steepening
+    0.750  technical.negative_butterfly ~ technical.positive_butterfly
+    0.714  temporal.after     ~ temporal.before
+    0.636  technical.call_option ~ technical.put_option
+    0.600  actor.buyer        ~ actor.seller
+
+The top entry is the warning about the method itself: `treasury_bond` and `treasury_note` are
+neither opposites nor the same thing — two disjoint maturity buckets whose definitions differ
+only in a numeral. High similarity means "look at this pair" and nothing more.
 
 Antonyms share nearly all of their context, because they are one predicate over inverted
 arguments. Merging on textual similarity would have joined put with call — the exact defect this

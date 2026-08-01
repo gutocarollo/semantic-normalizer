@@ -1,0 +1,14 @@
+{
+  "id": "precision-sweep-amendment-71",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "revisão adversarial da emenda 69",
+  "method": "leitura da definição contra a aresta de hierarquia que a emenda 69 criou",
+  "reason": "A emenda 69 declarou `entity.bond` IS-A `entity.private_security`, e a definição EN de entity.bond dizia 'A debt security issued by a company OR GOVERNMENT' enquanto a de private_security diz 'rather than by a government'. Um consumidor que leia definição e hierarquia juntas via contradição direta.\n\nA emenda 69 já reconhecia a tensão no próprio `reason` — 'its English gloss is a template' — e ancorava a decisão na superfície pt-BR, `debênture`, que é dívida privada por definição regulatória brasileira. Reconhecer a tensão e não corrigir o campo deixa a contradição no artefato, que é onde ela importa.\n\nA definição passa a descrever o referente que o conceito de fato carrega. O sentido genérico de 'bond' como título de qualquer emissor continua coberto: entity.us_government_security e entity.treasury_security existem para o lado soberano, e a emenda 69 os ligou ao seu próprio gênero.",
+  "operations": [
+    {
+      "op": "redefine",
+      "concept": "entity.bond",
+      "definition": "A debt security issued by a company, the Brazilian debenture; sovereign debt is covered by entity.us_government_security and its narrower terms."
+    }
+  ]
+}

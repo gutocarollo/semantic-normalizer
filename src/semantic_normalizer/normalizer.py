@@ -470,17 +470,23 @@ CANONICAL_ANTONYMS = (
     # recalling that plurals and the English side exist. Every pair below came from that
     # derivation over the 598 shipped concepts.
     #
-    # How they were found: ask which two concepts have the most SIMILAR definitions and you do
-    # not get synonyms, you get opposites — `state.enabled`/`state.disabled` score 1.00 because
-    # the only token separating them is `not`, three characters, dropped by every stopword
-    # filter. The measure that would cause a catastrophic merge is the measure that finds the
-    # boundaries a merge must never cross.
+    # How they were found: ask which two concepts have the most SIMILAR definitions and
+    # opposites crowd the top — `state.enabled`/`state.disabled` score 0.800 with the shipped
+    # measure, and 1.00 with a naive one that drops words of three letters, because `not` is the
+    # only token separating them. The measure that would cause a catastrophic merge is the
+    # measure that finds the boundaries a merge must never cross.
     #
-    # Measured before adding: over the whole CGA corpus, 13.466 rewrites are applied with and
-    # without these pairs — delta ZERO. They block nothing today and they catch nothing today.
-    # That is the honest claim: this is protection for the next batch that registers a concept
-    # on one side of an opposition already present on the other, which is exactly how
-    # `technical.option` inverted 13 puts into calls before anyone noticed.
+    # Measured over the whole CGA corpus, counting mappings where the text actually CHANGES:
+    # 6.368 rewrites with and without these pairs — delta ZERO, and they catch nothing today
+    # either. Protection for the next batch that registers a concept on one side of an
+    # opposition already present on the other, which is how `technical.option` inverted 13 puts
+    # into calls before anyone noticed.
+    #
+    # The first version of this measurement counted `canonical_mappings` instead, which is
+    # emitted per match whether or not the text changes. The proxy stayed flat at 13.466 while
+    # the quantity it stood for dropped by 11 — an adversarial review reproduced the difference
+    # and named the eleven. The exemption for compounds in `_rewrite_is_safe` below is the fix;
+    # `test_semantic_regressions.py` pins the corpus behaviour so a proxy cannot hide it again.
     ("after", "before"), ("asset", "liability"), ("buyer", "seller"),
     ("closed", "open"), ("comprador", "vendedor"), ("depois", "antes"),
     ("desativado", "ativado"), ("deságio", "ágio"), ("disabled", "enabled"),
@@ -522,6 +528,7 @@ def _rewrite_is_safe(alias: str, replacement: str) -> bool:
     """
     alias_tokens = nfc_casefold(alias).split()
     replacement_tokens = nfc_casefold(replacement).split()
+    _bare = lambda tokens: {token.strip("-–—/(),.;:!?\"'") for token in tokens}  # noqa: E731
     # Truncation, but only the kind that leaves a fragment. `passivo em dólar` rewritten to
     # `passivo em` strands a preposition and drops the index the leg is denominated in. The first
     # version of this rule refused ANY strict-prefix shortening, and a review measured what that
@@ -546,6 +553,28 @@ def _rewrite_is_safe(alias: str, replacement: str) -> bool:
     ):
         return False
     for left, right in CANONICAL_ANTONYMS + REWRITE_ONLY_ANTONYMS:
+        # A crossing needs ONE side of the pair here and the OTHER side there. When both tokens
+        # are present on both sides, the surface is a compound that NAMES the pair — `Long and
+        # Short`, `Asset-Liability Management`, `Títulos com Ágio ou Deságio` — and normalising
+        # its casing substitutes the expression for itself. Nothing is inverted, because there is
+        # only one referent.
+        #
+        # Found by adversarial review, and the failure is instructive: this exemption already
+        # existed in `tests/test_registry_governance.py`, written when widening the antonym list
+        # surfaced those same three concepts. It was reasoned out, applied to the modelling
+        # check, and never carried across to the guard that actually runs. Measured cost of the
+        # omission: 11 legitimate rewrites in the CGA corpus, silently refused.
+        #
+        # Worse, my own measurement said the cost was zero — because it counted
+        # `canonical_mappings`, which is emitted per match whether or not the text changes,
+        # instead of counting mappings where `original != canonical`. The proxy stayed flat
+        # while the thing it stood for moved.
+        # Compared on tokens stripped of edge punctuation, because the corpus writes
+        # `Asset- Liability Management` and `.split()` yields `asset-`, not `asset`. The first
+        # version of this exemption missed exactly that one occurrence out of eleven — the
+        # concept named the pair, both poles were there, and a stray hyphen hid one of them.
+        if {left, right} <= _bare(alias_tokens) and {left, right} <= _bare(replacement_tokens):
+            continue
         crossed = (left in alias_tokens and right in replacement_tokens) or (
             right in alias_tokens and left in replacement_tokens
         )

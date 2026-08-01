@@ -8,12 +8,32 @@ does not scale: nothing tells you which pair is missing until a rewrite crosses 
 
 THE SIGNAL IS THE FALSE POSITIVE, INVERTED
 
-Ask "which two concepts have near-identical definitions" and you do not get synonyms — you get
-opposites. Measured on this registry: of 33 pairs whose definitions overlap 50 % or more, the
-top of the list is `state.enabled` ~ `state.disabled` at 1.00, `flattening` ~ `steepening` at
-0.78, `before` ~ `after` at 0.71, `call_option` ~ `put_option` at 0.67, `buyer` ~ `seller` at
-0.67. This is the textbook behaviour of distributional semantics: antonyms share almost all of
-their context, because they are the same predicate over inverted arguments.
+Ask "which two concepts have near-identical definitions" and opposites crowd the top. Measured
+on this registry with the `content()` below — 33 pairs overlap 50 % or more:
+
+    0.875  entity.treasury_bond ~ entity.treasury_note   (NAO e antonimo — ver abaixo)
+    0.800  state.enabled      ~ state.disabled       (`ativado` / `desativado`)
+    0.778  technical.flattening ~ technical.steepening
+    0.750  technical.negative_butterfly ~ technical.positive_butterfly
+    0.714  temporal.after     ~ temporal.before
+    0.636  technical.call_option ~ technical.put_option
+    0.600  actor.buyer        ~ actor.seller
+
+That is the textbook behaviour of distributional semantics: antonyms share almost all of their
+context, because they are one predicate over inverted arguments.
+
+TWO CORRECTIONS TO AN EARLIER VERSION OF THIS PARAGRAPH, both found by adversarial review:
+
+* it quoted `state.enabled ~ state.disabled` at **1.00**, and 1.00 is what a NAIVE filter
+  yields — one that drops words of three letters or fewer, and therefore drops `not`, the only
+  token separating them. `content()` keeps short words on purpose, so the shipped number is
+  0.800. Quoting the broken method's figure while arguing against the broken method is the
+  sharpest way to be wrong about this;
+* the true top of the ranking is NOT an antonym. `entity.treasury_bond ~ entity.treasury_note`
+  scores 0.875 because both definitions say "United States Treasury debt maturing in ..." and
+  differ only in the maturity range — two disjoint buckets, neither the negation of the other.
+  High similarity means "look at this pair", never "these are opposites" and never "these are
+  the same". Which is the entire argument for deciding elsewhere.
 
 So the measure that would cause a catastrophic merge is exactly the measure that finds the pairs
 a merge must never cross. This script takes the second reading.

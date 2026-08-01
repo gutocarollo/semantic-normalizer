@@ -457,12 +457,18 @@ Ranqueie os 598 conceitos por quanto suas definições se parecem. O topo da lis
 é antônimo**:
 
 ```
-1.00  state.enabled        ~ state.disabled        (ativado / desativado)
-0.78  technical.flattening ~ technical.steepening
-0.71  temporal.after       ~ temporal.before
-0.67  technical.call_option ~ technical.put_option
-0.67  actor.buyer          ~ actor.seller
+0.875  entity.treasury_bond ~ entity.treasury_note      ← NÃO é antônimo
+0.800  state.enabled        ~ state.disabled            (ativado / desativado)
+0.778  technical.flattening ~ technical.steepening
+0.750  technical.negative_butterfly ~ technical.positive_butterfly
+0.714  temporal.after       ~ temporal.before
+0.636  technical.call_option ~ technical.put_option
+0.600  actor.buyer          ~ actor.seller
 ```
+
+**O topo da lista é a advertência sobre o próprio método.** `treasury_bond` e `treasury_note` não
+são opostos nem a mesma coisa: são duas faixas de vencimento disjuntas cujas definições diferem só
+num numeral. Similaridade alta significa "olhe este par" e mais nada.
 
 O par de 1.00 explica o mecanismo. As definições são:
 
@@ -472,7 +478,10 @@ A state in which a function is not available for operation.
 ```
 
 O único token que as separa é **`not`** — três caracteres, descartado por qualquer lista de
-stopword e por qualquer filtro `len(palavra) > 3`. Antônimos dividem quase todo o contexto, porque
+stopword e por qualquer filtro `len(palavra) > 3`. Com esse filtro elas pontuam **1.000**,
+idênticas; com o `content()` que ficou no código, que preserva palavras curtas de propósito,
+pontuam **0.800**. (Uma versão anterior deste documento citava 1.00 como se fosse o número do
+método bom — era o número do método que ele existe para refutar.) Antônimos dividem quase todo o contexto, porque
 são um predicado sobre argumentos invertidos. **Fundir por similaridade de definição juntaria put
 com call**, que é exatamente o defeito que este repositório já pagou: `technical.option` reunia os
 dois e 13 puts do corpus viraram calls.
@@ -490,7 +499,7 @@ python scripts/propose_surfaces_from_wordnet.py --corpus <dir> --contexts <d> --
 
 | ferramenta | poder MEDIDO, não alegado |
 |---|---|
-| `derive_antonyms` | 12 pares derivados, 11 fora da lista manual. Delta de reescritas: **zero**. Não bloqueia nada hoje e não pega nada hoje — é proteção para o próximo batch |
+| `derive_antonyms` | 12 pares derivados, 11 fora da lista manual. Delta de reescritas EFETIVAS: **zero** (6.368 com e sem). Proteção para o próximo batch |
 | `find_redundant_concepts` | separou **1 par de 51** sozinho. `_rewrite_is_safe` é guard estrutural, não semântico; o bucket chama `needs_judgement` por isso |
 | `link_hierarchy` | 172 propostas mecânicas, **nenhuma aplicada**. As 6 arestas que entraram vieram do juiz de IA |
 | `propose_surfaces_from_wordnet` | precisão ~**1 em 12**. Gerador, nunca decisor |

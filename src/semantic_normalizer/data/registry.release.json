@@ -602,7 +602,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "`pressuposto` é a única das dez que denota o MESMO sentido que reasoning.premise carrega, e o autor usa as duas palavras como glosa uma da outra na mesma frase: 'O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento' (linha 229).\n\nEntra como `review`, não `auto`, por duas razões que o juiz mediu: só 4 ocorrências no corpus inteiro, base fina para reescrita automática; e `parte do pressuposto de que` é idiomático e cobre suposição comum fora de estrutura argumentativa.\n\nAs 7 rejeitadas mostram por que o WordNet não pode decidir: `conclusão` recebeu `chegada` (hapax dentro da metáfora 'ponto de chegada') e `final` (que no corpus MODIFICA conclusão — 'conclusão final' — logo não a substitui); `matriz` recebeu `programa` (software, não grade); `atributo` recebeu `característica`, que a linha 2302 usa na MESMA frase com referente diferente do termo do conceito.\n\n`dedução` e `inferência` vieram como HIERARQUIA e ficam em fila declarada: são espécies de raciocínio e mereceriam conceito próprio, o que exige o loop de admissão completo, não uma emenda de grafia. Nada foi fabricado para fechar o número.",
+  "change_reason": "A emenda 69 declarou `entity.bond` IS-A `entity.private_security`, e a definição EN de entity.bond dizia 'A debt security issued by a company OR GOVERNMENT' enquanto a de private_security diz 'rather than by a government'. Um consumidor que leia definição e hierarquia juntas via contradição direta.\n\nA emenda 69 já reconhecia a tensão no próprio `reason` — 'its English gloss is a template' — e ancorava a decisão na superfície pt-BR, `debênture`, que é dívida privada por definição regulatória brasileira. Reconhecer a tensão e não corrigir o campo deixa a contradição no artefato, que é onde ela importa.\n\nA definição passa a descrever o referente que o conceito de fato carrega. O sentido genérico de 'bond' como título de qualquer emissor continua coberto: entity.us_government_security e entity.treasury_security existem para o lado soberano, e a emenda 69 os ligou ao seu próprio gênero.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -618,13 +618,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "044d009c2bd2b9d6391693e941b13ab071b3a1b3c879aebb5bd16132798b18b9",
-    "registry.provenance.jsonl": "8bfeb44c8456d4a66e73b6ca3f5b77dd5a0810aebd6ce5e72eeec32633858139",
+    "registry.jsonl": "8410bd3efc41662c7f5877b1ffa9783e15771cd99467dafcd832b4056d811246",
+    "registry.provenance.jsonl": "9e9753cb18aa96a4038fdef053374a4ad144121265bdfcf675450a53c22e8cfd",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.41.0",
+  "rollback_version": "2.42.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.42.0"
+  "version": "2.43.0"
 }
