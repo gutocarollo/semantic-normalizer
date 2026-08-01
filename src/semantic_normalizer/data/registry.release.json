@@ -602,7 +602,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "A emenda 69 declarou `entity.bond` IS-A `entity.private_security`, e a definição EN de entity.bond dizia 'A debt security issued by a company OR GOVERNMENT' enquanto a de private_security diz 'rather than by a government'. Um consumidor que leia definição e hierarquia juntas via contradição direta.\n\nA emenda 69 já reconhecia a tensão no próprio `reason` — 'its English gloss is a template' — e ancorava a decisão na superfície pt-BR, `debênture`, que é dívida privada por definição regulatória brasileira. Reconhecer a tensão e não corrigir o campo deixa a contradição no artefato, que é onde ela importa.\n\nA definição passa a descrever o referente que o conceito de fato carrega. O sentido genérico de 'bond' como título de qualquer emissor continua coberto: entity.us_government_security e entity.treasury_security existem para o lado soberano, e a emenda 69 os ligou ao seu próprio gênero.",
+  "change_reason": "O registry tinha 6 arestas broader/narrower para 598 conceitos. Esta emenda aplica as que sobreviveram ao juiz.\n\nO caminho até aqui corrigiu dois defeitos meus. Primeiro: containment sem posição de núcleo propunha `asset class -> asset`, quando o núcleo de `asset class` é `class` — uma classe de ativos é um tipo de classe, nunca um tipo de ativo. Português é núcleo à esquerda, inglês é núcleo à direita, e conflatar os dois inventava hiponímia. Segundo: a regra corrigida ainda errava, porque inglês com modificador PREPOSICIONAL é núcleo à esquerda — `yield to maturity` é um tipo de yield, e a regra jogava fora. Só descobri porque a amostra dos descartados foi medida em vez de assumida.\n\nDois sinais foram REMOVIDOS do link_hierarchy.py com a medição no cabeçalho: wordnet-hypernym (25 propostas, 0 plausíveis; `administrador -> gestor` inverteria uma distinção da CVM 175) e definition-subsumption (2 propostas, ambas erradas, uma delas contra veredito já registrado neste repositório).\n\nA aresta macaulay_duration -> duration não está aqui porque a emenda 69 já a aplicou: o juiz a sustentou duas vezes, em contextos diferentes, e o guard do link_broader recusa duplicata em vez de escrever estado parcial.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -618,13 +618,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "8410bd3efc41662c7f5877b1ffa9783e15771cd99467dafcd832b4056d811246",
-    "registry.provenance.jsonl": "9e9753cb18aa96a4038fdef053374a4ad144121265bdfcf675450a53c22e8cfd",
+    "registry.jsonl": "186121b76782e55ef88c14ce9473e11cf423f09cfcad7ff25be101b8b36e9e0c",
+    "registry.provenance.jsonl": "642eb6bca9e8fc6cbf1f68793a9c81cd567b6682e03eabb69552f374f80c1995",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.42.0",
+  "rollback_version": "2.43.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.43.0"
+  "version": "2.44.0"
 }

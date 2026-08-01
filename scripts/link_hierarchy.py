@@ -6,20 +6,37 @@ Measured before writing a line: of 598 concepts, 15 carry any relation at all, a
 cannot answer "is a Macaulay duration a duration", it cannot roll a query up from a specific
 instrument to its family, and the SKOS export it produces is a flat concept scheme.
 
-THREE SIGNALS, ALL CHEAP, ALL PROPOSING ONLY
+ONE SIGNAL, AFTER MEASURING THE OTHER TWO TO ZERO
 
-1. LEXICAL CONTAINMENT — the strongest and the most boring. When one preferred label contains the
-   other as a whole-token subsequence, the longer one is almost always the narrower:
-   `duration de macaulay` contains `duration`, `ajuste de convexidade` contains `convexidade`.
-   The direction is fixed by length, not guessed.
+LEXICAL CONTAINMENT, and the head position decides the direction. When one preferred label
+contains the other as a whole-token subsequence AND the contained label is the syntactic HEAD,
+the longer one is the narrower: `risco de crédito` is a kind of `risco`.
 
-2. WORDNET HYPERNYMY — the failures of `propose_surfaces_from_wordnet.py` ARE this signal.
-   When WordNet offers `dedução` as a synonym of `raciocínio` it has found a real relation and
-   labelled it wrong: deduction is a KIND of reasoning. Reading those misses as hierarchy hints
-   turns a false positive into evidence, the same move `derive_antonyms.py` makes.
+The head test is LANGUAGE-DEPENDENT, and getting that wrong is what made the first version emit
+61 edges that are not hyponymy at all. Portuguese is head-initial and English is head-final:
 
-3. DEFINITION SUBSUMPTION — the content words of the broader definition are a subset of the
-   narrower one's. Weak on its own, reported with the others so a reader can see agreement.
+    classe de ativos -> classe     head is `classe`, the FIRST token       hyponymy
+    classe de ativos -> ativo      `ativo` is the modifier                 NOT hyponymy
+    asset class      -> class      head is `class`, the LAST token         hyponymy
+    asset class      -> asset      `asset` is the modifier                 NOT hyponymy
+
+An asset class is a kind of class, never a kind of asset. When the genus is the modifier the
+relation is ABOUTNESS, not type, and writing it as `broader` states something false.
+
+TWO SIGNALS WERE REMOVED, EACH WITH ITS MEASUREMENT
+
+WordNet hypernymy produced 25 proposals and **zero** plausible ones: `ativo -> dinheiro`,
+`ativo -> custo`, `moeda -> fundo`, `Documentos -> crédito`, `classe -> mercado`. Its failure
+mode is not being wrong by a little — `administrador -> gestor` would invert a CVM 175
+distinction between two separate regulated roles. WordNet reports general-language hypernymy,
+which crosses this registry's categories freely. It remains useful in
+`propose_surfaces_from_wordnet.py`, where it earned 1 admission in 10.
+
+Definition subsumption produced exactly 2 proposals and both are wrong:
+`entity.treasury_bond -> entity.treasury_note`, which contradicts a verdict already recorded in
+this repository (an adversarial judge ruled them DISTINCT — disjoint maturity buckets), and
+`technical.selic -> technical.bacen`, which makes a policy rate a kind of central bank. Two
+samples is thin for statistics and sufficient for "produced nothing".
 
 MEASURED RECALL: ZERO OF THE SIX EDGES THAT TURNED OUT TO BE RIGHT
 
@@ -90,6 +107,40 @@ def contains_tokens(longer: list[str], shorter: list[str]) -> bool:
     return index == len(shorter)
 
 
+# English compounds are head-final (`asset class`), but an English noun modified by a
+# PREPOSITIONAL PHRASE is head-INITIAL, exactly like Portuguese: the head of `yield to maturity`
+# is `yield`, not `maturity`. Measured cost of missing this: a seeded 10-sample of the discarded
+# edges came back with 2 wrong discards, and `technical.ytm -> technical.yield` was one of them —
+# yield to maturity is a kind of yield, and the rule was throwing it away.
+ENGLISH_PREPOSITIONS = frozenset({"to", "of", "on", "in", "at", "for", "from", "with", "over",
+                                  "under", "against", "per", "by", "into", "within"})
+
+
+def genus_is_the_head(narrow: list[str], broad: list[str], language: str) -> bool:
+    """Is the contained label the syntactic HEAD of the containing one, in this language?
+
+    Portuguese is head-initial and English compounds are head-final; conflating them is what
+    produced 61 proposals that are not hyponymy at all. `asset class -> asset` passes a naive
+    prefix test while the head of `asset class` is `class`: an asset class is a kind of class,
+    never a kind of asset. When the genus is the modifier the relation is aboutness, and writing
+    it as `broader` states something false.
+
+    English takes both shapes, and which one applies is readable from the token after the genus:
+    a preposition means the modifier is a PP and the head sits on the left (`yield to
+    maturity`), anything else means a compound and the head sits on the right (`asset class`).
+
+    Nothing here is a parser. It is the smallest positional fact that separates a genus from a
+    modifier in these two languages, and its error rate was measured rather than assumed.
+    """
+    if language == "pt-BR":
+        return narrow[:len(broad)] == broad
+    if narrow[-len(broad):] == broad:
+        return True
+    if narrow[:len(broad)] == broad and len(narrow) > len(broad):
+        return narrow[len(broad)] in ENGLISH_PREPOSITIONS
+    return False
+
+
 def containment_edges(records: list[dict]) -> list[dict]:
     edges = []
     for a, b in itertools.permutations(records, 2):
@@ -105,6 +156,8 @@ def containment_edges(records: list[dict]) -> list[dict]:
             narrow = tokens(a["labels"][language]["pref"])
             if len(broad) < 1 or not contains_tokens(narrow, broad):
                 continue
+            if not genus_is_the_head(narrow, broad, language):
+                continue
             edges.append({
                 "narrower": a["concept_id"], "broader": b["concept_id"],
                 "signal": "lexical-containment", "language": language,
@@ -115,64 +168,12 @@ def containment_edges(records: list[dict]) -> list[dict]:
     return edges
 
 
-def wordnet_edges(records: list[dict], lexicon: str) -> list[dict]:
-    """Hypernymy between two concepts' preferred labels, if the lexicon is installed."""
-    try:
-        import wn
-        wordnet = wn.Wordnet(lexicon)
-    except Exception:  # noqa: BLE001 - absence is a fact to report, not a crash
-        return []
-    by_lemma: dict[str, list[str]] = {}
-    for record in records:
-        by_lemma.setdefault(fold(record["labels"]["pt-BR"]["pref"]), []).append(
-            record["concept_id"])
-    by_id = {record["concept_id"]: record for record in records}
-    edges = []
-    for record in records:
-        preferred = record["labels"]["pt-BR"]["pref"]
-        for synset in wordnet.synsets(preferred):
-            for hypernym in synset.hypernyms():
-                for lemma in hypernym.lemmas():
-                    for target in by_lemma.get(fold(lemma), []):
-                        if target == record["concept_id"]:
-                            continue
-                        # Same reason as containment, and a sharper case here: WordNet reports
-                        # general-language hypernymy, which crosses this registry's classes
-                        # freely. `actor.administrator` came out under `actor.portfolio_manager`
-                        # — in CVM 175 those are two DISTINCT roles, not a genus and a species.
-                        if by_id[target]["semantic_class"] != record["semantic_class"]:
-                            continue
-                        edges.append({
-                            "narrower": record["concept_id"], "broader": target,
-                            "signal": "wordnet-hypernym", "language": "pt-BR",
-                            "evidence": f"{lexicon}: {preferred!r} has hypernym {lemma!r}",
-                        })
-    return edges
-
-
-def subsumption_edges(records: list[dict], floor: float) -> list[dict]:
-    from derive_antonyms import content
-    edges = []
-    for a, b in itertools.permutations(records, 2):
-        narrow, broad = content(a["definition"]), content(b["definition"])
-        if not broad or not narrow or broad == narrow:
-            continue
-        if broad <= narrow and len(broad) / len(narrow) >= floor:
-            edges.append({
-                "narrower": a["concept_id"], "broader": b["concept_id"],
-                "signal": "definition-subsumption", "language": "en",
-                "evidence": f"every content word of {b['concept_id']}'s definition appears in "
-                            f"{a['concept_id']}'s",
-            })
-    return edges
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--contexts", nargs="+")
-    parser.add_argument("--lexicon", default="own-pt:1.0.0")
-    parser.add_argument("--subsumption-floor", type=float, default=0.5)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
 
@@ -180,9 +181,7 @@ def main() -> int:
     records = load(args.contexts)
     opposed = {frozenset(row["concepts"]) for row in derive(records, 0.4)}
 
-    raw = (containment_edges(records)
-           + wordnet_edges(records, args.lexicon)
-           + subsumption_edges(records, args.subsumption_floor))
+    raw = containment_edges(records)
 
     merged: dict[tuple[str, str], dict] = {}
     refused_opposition = 0
@@ -211,10 +210,15 @@ def main() -> int:
     report = {
         "schema_version": "hierarchy-proposals-v1",
         "method": {
-            "signals": ["lexical-containment (whole tokens, order preserved; direction fixed by "
-                        "length, not guessed)",
-                        "wordnet-hypernym (the mislabelled 'synonyms' of the surface generator)",
-                        "definition-subsumption (weak; reported for agreement)"],
+            "signals": ["lexical-containment, whole tokens, order preserved, with the genus "
+                        "required to be the syntactic HEAD — head-initial in pt-BR, head-final "
+                        "in en"],
+            "signals_removed": {
+                "wordnet-hypernym": "25 proposals, 0 plausible; `administrador -> gestor` would "
+                                    "invert a CVM 175 role distinction",
+                "definition-subsumption": "2 proposals, both wrong; one contradicts a verdict "
+                                          "already recorded in this repository",
+            },
             "refusals": ["pairs an antonym derivation separates", "pairs proposed in both "
                          "directions, which is similarity wearing a hierarchy costume"],
             "output": "PAIRS for an amendment to apply — the registry contract rejects a "

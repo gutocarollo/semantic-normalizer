@@ -241,11 +241,18 @@ class AHierarchyWithACycleIsNotAHierarchy(unittest.TestCase):
         load_registry()  # raises if not
 
     def test_a_diamond_is_not_a_cycle(self):
-        """`technical.ytm` already has two genera. Poly-hierarchy is legal; a loop is not."""
+        """Poly-hierarchy is legal; a loop is not. Asserted as a PROPERTY, not as a list.
+
+        The first version pinned `technical.ytm`'s genera to exactly two names and broke the
+        moment a judged batch added `technical.yield` — a correct edge failing a test that had
+        frozen a snapshot as if it were a contract.
+        """
         view = self.load_with([])
         by_id = {r["concept_id"]: r for r in view["canonical_records"]}
-        self.assertEqual(sorted(by_id["technical.ytm"]["relations"]["broader"]),
-                         ["technical.discount_rate", "technical.irr"])
+        genera = by_id["technical.ytm"]["relations"]["broader"]
+        self.assertGreaterEqual(len(genera), 2, "expected ytm to keep more than one genus")
+        for genus in genera:
+            self.assertIn("technical.ytm", by_id[genus]["relations"]["narrower"])
 
 
 class TheWordnetGeneratorFiltersBeforeProposing(unittest.TestCase):
@@ -295,10 +302,14 @@ class TheWordnetGeneratorFiltersBeforeProposing(unittest.TestCase):
         self.assertEqual(lines, ["Uma frase de prosa com pressuposto."])
 
     def test_the_one_admitted_proposal_is_in_the_registry(self):
-        """`pressuposto` was the single survivor of the ten, admitted as a review form."""
-        record = next(json.loads(line) for line in
-                      REGISTRY.read_text(encoding="utf-8").splitlines()
-                      if line.strip() and '"reasoning.premise"' in line)
+        """`pressuposto` was the single survivor of the ten, admitted as a review form.
+
+        Looked up by concept_id, not by substring. The first version matched any line CONTAINING
+        `"reasoning.premise"`, and the moment the hierarchy grew, `reasoning.hidden_premise`
+        started carrying that string inside its `broader` list and won the match. A test whose
+        subject depends on unrelated data is a test that will lie eventually.
+        """
+        record = next(r for r in records() if r["concept_id"] == "reasoning.premise")
         entry = [f for f in record["lexical_forms"]["pt-BR"] if f["form"] == "pressuposto"]
         self.assertEqual([f["policy"] for f in entry], ["review"])
 
@@ -325,6 +336,55 @@ class TheHierarchyEdgesAgreeWithTheDefinitions(unittest.TestCase):
                         "or government", narrow,
                         f"{cid} is narrower than {genus}, which excludes governments, but its "
                         "own definition includes them")
+
+
+class TheGenusMustBeTheHeadAndTheHeadMovesWithTheLanguage(unittest.TestCase):
+    """Portuguese is head-initial, English is head-final, and conflating them invents hyponymy.
+
+    The first version tested containment without asking WHERE the contained label sat, and
+    emitted 61 edges that are not type relations: `asset class -> asset`, `fluxo de caixa ->
+    caixa`, `Índices Amplos de Mercado -> mercado`. An asset class is a kind of class; a market
+    index is not a kind of market. When the genus is the modifier the relation is aboutness.
+
+    The rule also removed an edge the earlier analysis had accepted:
+    `reasoning.reasoning_skills -> reasoning.reasoning` fails because the head of `reasoning
+    skills` is `skills`. Reasoning skills are a kind of skill, not a kind of reasoning — which
+    is the corpus's own position, since it contrasts them with hard skills and soft skills.
+    """
+
+    def head(self, narrow: str, broad: str, language: str) -> bool:
+        return hierarchy.genus_is_the_head(narrow.split(), broad.split(), language)
+
+    def test_portuguese_takes_the_genus_on_the_left(self):
+        self.assertTrue(self.head("classe de ativos", "classe", "pt-BR"))
+        self.assertTrue(self.head("risco de crédito", "risco", "pt-BR"))
+        self.assertFalse(self.head("classe de ativos", "ativos", "pt-BR"))
+        self.assertFalse(self.head("fluxo de caixa", "caixa", "pt-BR"))
+
+    def test_english_takes_the_genus_on_the_right(self):
+        self.assertTrue(self.head("asset class", "class", "en"))
+        self.assertTrue(self.head("essential service provider", "service provider", "en"))
+        self.assertFalse(self.head("asset class", "asset", "en"))
+        self.assertFalse(self.head("reasoning skills", "reasoning", "en"))
+
+    def test_the_same_pair_flips_with_the_language(self):
+        """The canary for the whole rule: one label, two languages, opposite verdicts."""
+        self.assertTrue(self.head("asset class", "class", "en"))
+        self.assertFalse(self.head("asset class", "class", "pt-BR"))
+
+    def test_the_removed_signals_do_not_come_back(self):
+        source = (SCRIPTS / "link_hierarchy.py").read_text(encoding="utf-8")
+        self.assertNotIn("def wordnet_edges", source)
+        self.assertNotIn("def subsumption_edges", source)
+        self.assertIn("signals_removed", source)
+
+    def test_the_shipped_proposals_all_pass_the_head_test(self):
+        report = json.loads(
+            (ROOT / "reports" / "hierarchy-proposals.json").read_text(encoding="utf-8"))
+        self.assertTrue(report["edges"], "the proposal report is empty")
+        for edge in report["edges"]:
+            self.assertEqual(edge["agreeing_signals"], ["lexical-containment"],
+                             f"{edge['narrower']} -> {edge['broader']} came from a removed signal")
 
 
 class EveryProposedItemHasADisposition(unittest.TestCase):
@@ -376,15 +436,25 @@ class EveryProposedItemHasADisposition(unittest.TestCase):
         finally:
             path.write_text(original, encoding="utf-8")
 
-    def test_pending_is_legal_but_must_name_an_owner(self):
-        """172 mechanical hierarchy edges are pending on purpose; anonymous pending is not."""
-        payload = json.loads(
-            (ROOT / "reports" / "hierarchy-proposals-disposition.json").read_text(encoding="utf-8"))
-        pending = [row for row in payload["dispositions"] if row["verdict"] == "pending"]
-        self.assertTrue(pending, "this queue is expected to carry declared open work")
-        for row in pending:
-            self.assertTrue(row.get("owner", "").strip(), f"{row['item']}: pending with no owner")
-            self.assertTrue(row.get("reason", "").strip(), f"{row['item']}: pending with no reason")
+    def test_pending_is_legal_but_never_anonymous(self):
+        """Pending is allowed. Pending without an owner and a reason is not.
+
+        Written when 172 edges were pending and it asserted that pending EXISTED — so it went
+        red the moment the queue was actually cleared, punishing the outcome it was there to
+        encourage. The property is conditional: IF something is pending, it is owned.
+        """
+        for name in ("hierarchy-proposals", "redundant-concepts-cga",
+                     "wordnet-surfaces-reasoning"):
+            path = ROOT / "reports" / f"{name}-disposition.json"
+            if not path.exists():
+                continue
+            for row in json.loads(path.read_text(encoding="utf-8"))["dispositions"]:
+                if row["verdict"] != "pending":
+                    continue
+                self.assertTrue(row.get("owner", "").strip(),
+                                f"{name}/{row['item']}: pending with no owner")
+                self.assertTrue(row.get("reason", "").strip(),
+                                f"{name}/{row['item']}: pending with no reason")
 
     def test_every_registered_queue_names_a_report_field_that_exists(self):
         """A queue registered against a field the report does not have would pass vacuously."""

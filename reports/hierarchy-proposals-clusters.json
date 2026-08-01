@@ -1,0 +1,998 @@
+{
+  "schema_version": "hierarchy-clusters-v1",
+  "method": "As 172 propostas mecânicas classificadas pelo POSIÇÃO DO NÚCLEO do sintagma, que é o discriminador que faltava e é dependente de idioma: português é núcleo à ESQUERDA (`classe de ativos` -> `classe`) e inglês é núcleo à DIREITA (`asset class` -> `class`, jamais `asset`). Uma aresta só é hiponímia quando o genus É o núcleo; quando o genus é o modificador, a relação é de ASSUNTO, não de tipo.",
+  "counts": {
+    "head-consistent": 84,
+    "modifier-not-head": 61,
+    "wordnet-hypernym": 25,
+    "definition-subsumption": 2
+  },
+  "clusters": {
+    "head-consistent": [
+      {
+        "edge": "actor.class_counterparty -> actor.counterparty",
+        "language": "pt-BR",
+        "narrower_label": "contraparte da classe",
+        "broader_label": "contraparte"
+      },
+      {
+        "edge": "actor.ecb -> actor.bank",
+        "language": "pt-BR",
+        "narrower_label": "banco central europeu",
+        "broader_label": "banco"
+      },
+      {
+        "edge": "actor.essential_service_provider -> actor.service_provider",
+        "language": "en",
+        "narrower_label": "essential service provider",
+        "broader_label": "service provider"
+      },
+      {
+        "edge": "actor.listed_company -> actor.company",
+        "language": "en",
+        "narrower_label": "publicly held company",
+        "broader_label": "company"
+      },
+      {
+        "edge": "artifact.anbima_third_party_code -> entity.administration",
+        "language": "pt-BR",
+        "narrower_label": "Administração de Recursos de Terceiros",
+        "broader_label": "administração"
+      },
+      {
+        "edge": "entity.asset_class -> entity.class",
+        "language": "pt-BR",
+        "narrower_label": "classe de ativos",
+        "broader_label": "classe"
+      },
+      {
+        "edge": "entity.broad_market_index -> entity.index",
+        "language": "en",
+        "narrower_label": "broad market index",
+        "broader_label": "market index"
+      },
+      {
+        "edge": "entity.closed_class -> entity.class",
+        "language": "pt-BR",
+        "narrower_label": "classe fechada",
+        "broader_label": "classe"
+      },
+      {
+        "edge": "entity.currency_fund -> entity.fund",
+        "language": "en",
+        "narrower_label": "currency fund",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.equity_fund -> entity.fund",
+        "language": "en",
+        "narrower_label": "equity fund",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.etf -> entity.fund",
+        "language": "en",
+        "narrower_label": "exchange traded fund",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.exclusive_class -> entity.class",
+        "language": "pt-BR",
+        "narrower_label": "Classe Exclusiva",
+        "broader_label": "classe"
+      },
+      {
+        "edge": "entity.financial_investment_fund -> entity.fund",
+        "language": "pt-BR",
+        "narrower_label": "Fundo de Investimento Financeiro",
+        "broader_label": "fundo"
+      },
+      {
+        "edge": "entity.fixed_income_fund -> entity.fund",
+        "language": "en",
+        "narrower_label": "fixed income fund",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.fixed_income_security -> entity.security",
+        "language": "pt-BR",
+        "narrower_label": "Título de Renda Fixa",
+        "broader_label": "título"
+      },
+      {
+        "edge": "entity.fund_of_funds -> entity.fund",
+        "language": "pt-BR",
+        "narrower_label": "fundo de fundos",
+        "broader_label": "fundo"
+      },
+      {
+        "edge": "entity.fund_share -> entity.share",
+        "language": "en",
+        "narrower_label": "fund share",
+        "broader_label": "share"
+      },
+      {
+        "edge": "entity.government_security -> entity.security",
+        "language": "pt-BR",
+        "narrower_label": "Título Público",
+        "broader_label": "título"
+      },
+      {
+        "edge": "entity.international_equity_market -> entity.market",
+        "language": "pt-BR",
+        "narrower_label": "Mercado de Ações Internacional",
+        "broader_label": "mercado"
+      },
+      {
+        "edge": "entity.international_exchange -> entity.stock_exchange",
+        "language": "pt-BR",
+        "narrower_label": "Bolsa de Valores Internacionais",
+        "broader_label": "bolsa de valores"
+      },
+      {
+        "edge": "entity.multimarket_fund -> entity.fund",
+        "language": "en",
+        "narrower_label": "multimarket fund",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.mutual_fund -> entity.fund",
+        "language": "pt-BR",
+        "narrower_label": "Fundo Mútuo",
+        "broader_label": "fundo"
+      },
+      {
+        "edge": "entity.open_class -> entity.class",
+        "language": "pt-BR",
+        "narrower_label": "classe aberta",
+        "broader_label": "classe"
+      },
+      {
+        "edge": "entity.pension_class -> entity.class",
+        "language": "en",
+        "narrower_label": "pension share class",
+        "broader_label": "share class"
+      },
+      {
+        "edge": "entity.private_security -> entity.securities",
+        "language": "en",
+        "narrower_label": "private securities",
+        "broader_label": "securities"
+      },
+      {
+        "edge": "entity.treasury_security -> entity.security",
+        "language": "pt-BR",
+        "narrower_label": "título do tesouro",
+        "broader_label": "título"
+      },
+      {
+        "edge": "entity.us_fixed_income_security -> entity.securities",
+        "language": "en",
+        "narrower_label": "US fixed income securities",
+        "broader_label": "securities"
+      },
+      {
+        "edge": "entity.us_government_security -> entity.securities",
+        "language": "en",
+        "narrower_label": "US government securities",
+        "broader_label": "securities"
+      },
+      {
+        "edge": "quantity.after_tax_return -> quantity.return",
+        "language": "pt-BR",
+        "narrower_label": "Retorno Líquido de Imposto",
+        "broader_label": "retorno"
+      },
+      {
+        "edge": "quantity.future_value -> quantity.value",
+        "language": "pt-BR",
+        "narrower_label": "Valor Futuro",
+        "broader_label": "valor"
+      },
+      {
+        "edge": "quantity.recovery_rate -> quantity.rate",
+        "language": "pt-BR",
+        "narrower_label": "Taxa de Recuperação",
+        "broader_label": "taxa"
+      },
+      {
+        "edge": "quantity.tax_rate -> quantity.rate",
+        "language": "en",
+        "narrower_label": "tax rate",
+        "broader_label": "rate"
+      },
+      {
+        "edge": "quantity.value_added -> quantity.value",
+        "language": "pt-BR",
+        "narrower_label": "valor agregado",
+        "broader_label": "valor"
+      },
+      {
+        "edge": "reasoning.hidden_premise -> reasoning.premise",
+        "language": "pt-BR",
+        "narrower_label": "premissa oculta",
+        "broader_label": "premissa"
+      },
+      {
+        "edge": "reasoning.reasoning_skills -> reasoning.reasoning",
+        "language": "pt-BR",
+        "narrower_label": "reasoning skills",
+        "broader_label": "reasoning"
+      },
+      {
+        "edge": "risk.counterparty -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco de Contraparte",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.credit -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco de crédito",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.early_redemption -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco de Resgate Antecipado",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.event -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco de Evento",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.inflation -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco de Inflação",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.liquidity -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco de liquidez",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.market -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco de mercado",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.operational -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco operacional",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.reinvestment -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco de reinvestimento",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.sovereign -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco Soberano",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.systematic -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco sistêmico",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.total -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco total",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.unsystematic -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco não sistêmico",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "risk.volatility -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "Risco de Volatilidade",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "state.negative_net_assets -> entity.net_assets",
+        "language": "pt-BR",
+        "narrower_label": "patrimônio líquido negativo",
+        "broader_label": "patrimônio líquido"
+      },
+      {
+        "edge": "technical.analytical_var -> technical.var",
+        "language": "pt-BR",
+        "narrower_label": "VaR Analítico",
+        "broader_label": "VaR"
+      },
+      {
+        "edge": "technical.asset_pricing -> technical.pricing",
+        "language": "pt-BR",
+        "narrower_label": "precificação de ativos",
+        "broader_label": "precificação"
+      },
+      {
+        "edge": "technical.benchmark_relative_management -> technical.fixed_income_portfolio_management",
+        "language": "pt-BR",
+        "narrower_label": "Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado",
+        "broader_label": "gestão de carteiras de renda fixa"
+      },
+      {
+        "edge": "technical.benchmark_var -> technical.benchmark",
+        "language": "pt-BR",
+        "narrower_label": "benchmark var",
+        "broader_label": "benchmark"
+      },
+      {
+        "edge": "technical.credit_spread -> technical.spread",
+        "language": "pt-BR",
+        "narrower_label": "Spread de Crédito",
+        "broader_label": "spread"
+      },
+      {
+        "edge": "technical.daily_settlement -> technical.settlement",
+        "language": "en",
+        "narrower_label": "daily settlement",
+        "broader_label": "settlement"
+      },
+      {
+        "edge": "technical.derivative_risk -> risk.financial",
+        "language": "en",
+        "narrower_label": "derivatives risk",
+        "broader_label": "risk"
+      },
+      {
+        "edge": "technical.duration_matching -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "duration matching",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.effective_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "duration efetiva",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.enhanced_indexing -> technical.indexing",
+        "language": "pt-BR",
+        "narrower_label": "indexação reforçada",
+        "broader_label": "indexação"
+      },
+      {
+        "edge": "technical.enterprise_risk_management -> technical.risk_management",
+        "language": "en",
+        "narrower_label": "enterprise risk management",
+        "broader_label": "risk management"
+      },
+      {
+        "edge": "technical.esg_private_credit -> technical.private_credit",
+        "language": "pt-BR",
+        "narrower_label": "Crédito Privado ASG",
+        "broader_label": "crédito privado"
+      },
+      {
+        "edge": "technical.fixed_income_pricing -> technical.pricing",
+        "language": "pt-BR",
+        "narrower_label": "Precificação de títulos de Renda Fixa",
+        "broader_label": "precificação"
+      },
+      {
+        "edge": "technical.hedge_fund -> technical.hedge",
+        "language": "pt-BR",
+        "narrower_label": "hedge fund",
+        "broader_label": "hedge"
+      },
+      {
+        "edge": "technical.historical_var -> technical.var",
+        "language": "pt-BR",
+        "narrower_label": "VaR Histórico",
+        "broader_label": "VaR"
+      },
+      {
+        "edge": "technical.institutional_risk_management -> technical.risk_management",
+        "language": "pt-BR",
+        "narrower_label": "Gestão de Risco em Instituições",
+        "broader_label": "gestão de risco"
+      },
+      {
+        "edge": "technical.interest_rate_risk -> risk.financial",
+        "language": "pt-BR",
+        "narrower_label": "risco de taxa de juros",
+        "broader_label": "risco"
+      },
+      {
+        "edge": "technical.jensen_alpha -> technical.alpha",
+        "language": "pt-BR",
+        "narrower_label": "Alfa de Jensen",
+        "broader_label": "alfa"
+      },
+      {
+        "edge": "technical.liquidity_premium -> technical.premium",
+        "language": "pt-BR",
+        "narrower_label": "prêmio pela liquidez",
+        "broader_label": "prêmio"
+      },
+      {
+        "edge": "technical.modified_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "duration modificada",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.option_premium -> technical.premium",
+        "language": "pt-BR",
+        "narrower_label": "prêmio da opção",
+        "broader_label": "prêmio"
+      },
+      {
+        "edge": "technical.population_variance -> technical.variance",
+        "language": "pt-BR",
+        "narrower_label": "Variância Populacional",
+        "broader_label": "variância"
+      },
+      {
+        "edge": "technical.portfolio_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "Duration de Carteiras",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.premium_price -> technical.premium",
+        "language": "en",
+        "narrower_label": "price premium",
+        "broader_label": "premium"
+      },
+      {
+        "edge": "technical.pure_indexing -> technical.indexing",
+        "language": "pt-BR",
+        "narrower_label": "Indexação Pura",
+        "broader_label": "indexação"
+      },
+      {
+        "edge": "technical.risk_adjusted_appraisal -> technical.performance_appraisal",
+        "language": "pt-BR",
+        "narrower_label": "Avaliação de Desempenho ajustada ao risco",
+        "broader_label": "avaliação de desempenho"
+      },
+      {
+        "edge": "technical.sample_variance -> technical.variance",
+        "language": "pt-BR",
+        "narrower_label": "Variância Amostral",
+        "broader_label": "variância"
+      },
+      {
+        "edge": "technical.spread_duration -> technical.spread",
+        "language": "pt-BR",
+        "narrower_label": "spread duration",
+        "broader_label": "spread"
+      },
+      {
+        "edge": "technical.tax_reclassification -> technical.mandate_breach",
+        "language": "pt-BR",
+        "narrower_label": "Desenquadramento Tributário",
+        "broader_label": "desenquadramento"
+      },
+      {
+        "edge": "technical.valid_benchmark -> technical.benchmark",
+        "language": "pt-BR",
+        "narrower_label": "Benchmark válido",
+        "broader_label": "benchmark"
+      },
+      {
+        "edge": "technical.yield_spread -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "yield spread",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.yield_to_call -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "yield to call",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.yield_to_put -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "yield to put",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.yield_to_worst -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "yield to worst",
+        "broader_label": "yield"
+      }
+    ],
+    "modifier-not-head": [
+      {
+        "edge": "artifact.anbima_third_party_code -> entity.resource",
+        "language": "pt-BR",
+        "narrower_label": "Administração de Recursos de Terceiros",
+        "broader_label": "recursos"
+      },
+      {
+        "edge": "artifact.fund_documents -> entity.fund",
+        "language": "en",
+        "narrower_label": "fund documents",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "artifact.key_information_sheet -> entity.information",
+        "language": "en",
+        "narrower_label": "key information sheet",
+        "broader_label": "information"
+      },
+      {
+        "edge": "condition.only_if -> condition.if",
+        "language": "pt-BR",
+        "narrower_label": "somente se",
+        "broader_label": "se"
+      },
+      {
+        "edge": "entity.asset_class -> entity.asset",
+        "language": "en",
+        "narrower_label": "asset class",
+        "broader_label": "asset"
+      },
+      {
+        "edge": "entity.broad_market_index -> entity.market",
+        "language": "pt-BR",
+        "narrower_label": "Índices Amplos de Mercado",
+        "broader_label": "mercado"
+      },
+      {
+        "edge": "entity.cash_flow -> entity.cash",
+        "language": "pt-BR",
+        "narrower_label": "fluxo de caixa",
+        "broader_label": "caixa"
+      },
+      {
+        "edge": "entity.class -> entity.share",
+        "language": "en",
+        "narrower_label": "share class",
+        "broader_label": "share"
+      },
+      {
+        "edge": "entity.currency_class -> entity.currency",
+        "language": "en",
+        "narrower_label": "currency class",
+        "broader_label": "currency"
+      },
+      {
+        "edge": "entity.currency_fund -> entity.currency",
+        "language": "en",
+        "narrower_label": "currency fund",
+        "broader_label": "currency"
+      },
+      {
+        "edge": "entity.fixed_income_fund -> entity.fixed_income",
+        "language": "pt-BR",
+        "narrower_label": "fundos de renda fixa",
+        "broader_label": "renda fixa"
+      },
+      {
+        "edge": "entity.fixed_income_security -> entity.fixed_income",
+        "language": "pt-BR",
+        "narrower_label": "Título de Renda Fixa",
+        "broader_label": "renda fixa"
+      },
+      {
+        "edge": "entity.fund_charges -> entity.fund",
+        "language": "en",
+        "narrower_label": "fund charges",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.fund_share -> entity.fund",
+        "language": "en",
+        "narrower_label": "fund share",
+        "broader_label": "fund"
+      },
+      {
+        "edge": "entity.index -> entity.market",
+        "language": "en",
+        "narrower_label": "market index",
+        "broader_label": "market"
+      },
+      {
+        "edge": "entity.pension_class -> entity.share",
+        "language": "en",
+        "narrower_label": "pension share class",
+        "broader_label": "share"
+      },
+      {
+        "edge": "entity.subclass -> entity.share",
+        "language": "en",
+        "narrower_label": "share subclass",
+        "broader_label": "share"
+      },
+      {
+        "edge": "entity.us_fixed_income_security -> entity.fixed_income",
+        "language": "pt-BR",
+        "narrower_label": "Títulos Americanos de Renda Fixa",
+        "broader_label": "renda fixa"
+      },
+      {
+        "edge": "risk.unsystematic -> risk.systematic",
+        "language": "pt-BR",
+        "narrower_label": "risco não sistêmico",
+        "broader_label": "risco sistêmico"
+      },
+      {
+        "edge": "technical.agnostic_strategy -> technical.active_strategy",
+        "language": "pt-BR",
+        "narrower_label": "Outras Estratégias Ativas e Agnósticas",
+        "broader_label": "estratégias ativas"
+      },
+      {
+        "edge": "technical.alternative_indexing -> technical.indexing",
+        "language": "pt-BR",
+        "narrower_label": "métodos alternativos de indexação",
+        "broader_label": "indexação"
+      },
+      {
+        "edge": "technical.benchmark_quality_test -> technical.benchmark",
+        "language": "pt-BR",
+        "narrower_label": "Testes de Qualidade do Benchmark",
+        "broader_label": "benchmark"
+      },
+      {
+        "edge": "technical.benchmark_relative_management -> technical.benchmark",
+        "language": "en",
+        "narrower_label": "benchmark relative management",
+        "broader_label": "benchmark"
+      },
+      {
+        "edge": "technical.benchmark_type -> technical.benchmark",
+        "language": "en",
+        "narrower_label": "benchmark types",
+        "broader_label": "benchmark"
+      },
+      {
+        "edge": "technical.benchmark_var -> technical.var",
+        "language": "pt-BR",
+        "narrower_label": "benchmark var",
+        "broader_label": "VaR"
+      },
+      {
+        "edge": "technical.cds -> technical.swap",
+        "language": "pt-BR",
+        "narrower_label": "credit default swap",
+        "broader_label": "swap"
+      },
+      {
+        "edge": "technical.convexity_adjustment -> technical.convexity",
+        "language": "pt-BR",
+        "narrower_label": "ajuste de convexidade",
+        "broader_label": "convexidade"
+      },
+      {
+        "edge": "technical.credit_risk_measure -> technical.risk_management",
+        "language": "pt-BR",
+        "narrower_label": "Gestão e Medidas de Risco de Crédito",
+        "broader_label": "gestão de risco"
+      },
+      {
+        "edge": "technical.current_yield -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "current yield",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.discount_rate -> technical.discount",
+        "language": "en",
+        "narrower_label": "discount rate",
+        "broader_label": "discount"
+      },
+      {
+        "edge": "technical.dividend_yield -> technical.yield",
+        "language": "pt-BR",
+        "narrower_label": "dividend yield",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.dollar_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "Dollar Duration",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.esg_private_credit -> technical.esg",
+        "language": "pt-BR",
+        "narrower_label": "Crédito Privado ASG",
+        "broader_label": "ASG"
+      },
+      {
+        "edge": "technical.expected_curve_behaviour -> technical.yield_curve",
+        "language": "pt-BR",
+        "narrower_label": "Comportamento esperado da curva de juros",
+        "broader_label": "curva de juros"
+      },
+      {
+        "edge": "technical.fundamental_law_active_management -> technical.active_management",
+        "language": "pt-BR",
+        "narrower_label": "Fundamental Law of Active Management",
+        "broader_label": "active management"
+      },
+      {
+        "edge": "technical.integrated_risk_management -> technical.risk_management",
+        "language": "pt-BR",
+        "narrower_label": "Gestão Integrada de Risco",
+        "broader_label": "gestão de risco"
+      },
+      {
+        "edge": "technical.key_rate_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "key rate duration",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.liquidity_management -> technical.liquidity",
+        "language": "pt-BR",
+        "narrower_label": "gestão de liquidez",
+        "broader_label": "liquidez"
+      },
+      {
+        "edge": "technical.liquidity_preference_theory -> technical.liquidity",
+        "language": "pt-BR",
+        "narrower_label": "Preferência pela Liquidez",
+        "broader_label": "liquidez"
+      },
+      {
+        "edge": "technical.liquidity_premium -> technical.liquidity",
+        "language": "pt-BR",
+        "narrower_label": "prêmio pela liquidez",
+        "broader_label": "liquidez"
+      },
+      {
+        "edge": "technical.merger_arbitrage -> technical.arbitrage",
+        "language": "pt-BR",
+        "narrower_label": "merger arbitrage",
+        "broader_label": "arbitrage"
+      },
+      {
+        "edge": "technical.option_premium -> technical.option",
+        "language": "pt-BR",
+        "narrower_label": "prêmio da opção",
+        "broader_label": "opção"
+      },
+      {
+        "edge": "technical.premium_or_discount -> technical.discount",
+        "language": "pt-BR",
+        "narrower_label": "Títulos com Ágio ou Deságio",
+        "broader_label": "deságio"
+      },
+      {
+        "edge": "technical.premium_or_discount -> technical.premium",
+        "language": "en",
+        "narrower_label": "premium or discount",
+        "broader_label": "premium"
+      },
+      {
+        "edge": "technical.premium_or_discount -> technical.premium_price",
+        "language": "pt-BR",
+        "narrower_label": "Títulos com Ágio ou Deságio",
+        "broader_label": "ágio"
+      },
+      {
+        "edge": "technical.pricing_policy -> technical.asset_pricing",
+        "language": "en",
+        "narrower_label": "asset pricing policy",
+        "broader_label": "asset pricing"
+      },
+      {
+        "edge": "technical.pricing_policy -> technical.pricing",
+        "language": "en",
+        "narrower_label": "asset pricing policy",
+        "broader_label": "pricing"
+      },
+      {
+        "edge": "technical.quantitative_arbitrage -> technical.arbitrage",
+        "language": "pt-BR",
+        "narrower_label": "quantitative arbitrage",
+        "broader_label": "arbitrage"
+      },
+      {
+        "edge": "technical.rating_change_impact -> technical.rating",
+        "language": "pt-BR",
+        "narrower_label": "Impactos na Mudança de Rating",
+        "broader_label": "rating"
+      },
+      {
+        "edge": "technical.risk_management_fundamentals -> technical.risk_management",
+        "language": "en",
+        "narrower_label": "risk management fundamentals",
+        "broader_label": "risk management"
+      },
+      {
+        "edge": "technical.spread_duration -> technical.duration",
+        "language": "pt-BR",
+        "narrower_label": "spread duration",
+        "broader_label": "duration"
+      },
+      {
+        "edge": "technical.strips -> technical.principal",
+        "language": "en",
+        "narrower_label": "separate trading of registered interest and principal securities",
+        "broader_label": "principal"
+      },
+      {
+        "edge": "technical.swap_leg -> technical.swap",
+        "language": "pt-BR",
+        "narrower_label": "perna do swap",
+        "broader_label": "swap"
+      },
+      {
+        "edge": "technical.total_return_equity_swap -> technical.swap",
+        "language": "pt-BR",
+        "narrower_label": "total return equity swap",
+        "broader_label": "swap"
+      },
+      {
+        "edge": "technical.yield_curve -> technical.yield",
+        "language": "en",
+        "narrower_label": "yield curve",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.yield_curve_strategy -> technical.yield",
+        "language": "en",
+        "narrower_label": "yield curve strategies",
+        "broader_label": "yield"
+      },
+      {
+        "edge": "technical.yield_curve_strategy -> technical.yield_curve",
+        "language": "en",
+        "narrower_label": "yield curve strategies",
+        "broader_label": "yield curve"
+      },
+      {
+        "edge": "technical.yield_spread -> technical.spread",
+        "language": "pt-BR",
+        "narrower_label": "yield spread",
+        "broader_label": "spread"
+      },
+      {
+        "edge": "technical.yield_to_call -> technical.call_option",
+        "language": "pt-BR",
+        "narrower_label": "yield to call",
+        "broader_label": "call"
+      },
+      {
+        "edge": "technical.yield_to_put -> technical.put_option",
+        "language": "pt-BR",
+        "narrower_label": "yield to put",
+        "broader_label": "put"
+      },
+      {
+        "edge": "technical.ytm -> technical.yield",
+        "language": "en",
+        "narrower_label": "yield to maturity",
+        "broader_label": "yield"
+      }
+    ],
+    "wordnet-hypernym": [
+      {
+        "edge": "actor.administrator -> actor.portfolio_manager",
+        "evidence": "own-pt:1.0.0: 'administrador' has hypernym 'gestor'"
+      },
+      {
+        "edge": "actor.institution -> actor.company",
+        "evidence": "own-pt:1.0.0: 'instituição' has hypernym 'empresa'"
+      },
+      {
+        "edge": "artifact.fund_documents -> entity.credit",
+        "evidence": "own-pt:1.0.0: 'Documentos' has hypernym 'crédito'"
+      },
+      {
+        "edge": "entity.asset -> entity.cost",
+        "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'custo'"
+      },
+      {
+        "edge": "entity.asset -> entity.credit",
+        "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'crédito'"
+      },
+      {
+        "edge": "entity.asset -> entity.money",
+        "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'dinheiro'"
+      },
+      {
+        "edge": "entity.class -> entity.market",
+        "evidence": "own-pt:1.0.0: 'classe' has hypernym 'mercado'"
+      },
+      {
+        "edge": "entity.cost -> entity.service",
+        "evidence": "own-pt:1.0.0: 'custo' has hypernym 'serviço'"
+      },
+      {
+        "edge": "entity.currency -> entity.fund",
+        "evidence": "own-pt:1.0.0: 'moeda' has hypernym 'fundo'"
+      },
+      {
+        "edge": "entity.debt -> entity.credit",
+        "evidence": "own-pt:1.0.0: 'dívida' has hypernym 'crédito'"
+      },
+      {
+        "edge": "entity.debt -> entity.tax",
+        "evidence": "own-pt:1.0.0: 'dívida' has hypernym 'imposto'"
+      },
+      {
+        "edge": "entity.money -> entity.fund",
+        "evidence": "own-pt:1.0.0: 'dinheiro' has hypernym 'fundo'"
+      },
+      {
+        "edge": "entity.premise -> entity.scenario",
+        "evidence": "own-pt:1.0.0: 'premissa' has hypernym 'cenário'"
+      },
+      {
+        "edge": "entity.resource -> entity.cost",
+        "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'custo'"
+      },
+      {
+        "edge": "entity.resource -> entity.credit",
+        "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'crédito'"
+      },
+      {
+        "edge": "entity.resource -> entity.money",
+        "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'dinheiro'"
+      },
+      {
+        "edge": "entity.service -> entity.position",
+        "evidence": "own-pt:1.0.0: 'serviço' has hypernym 'posição'"
+      },
+      {
+        "edge": "entity.share -> entity.distribution",
+        "evidence": "own-pt:1.0.0: 'ação' has hypernym 'distribuição'"
+      },
+      {
+        "edge": "quantity.measure -> quantity.value",
+        "evidence": "own-pt:1.0.0: 'medida' has hypernym 'valor'"
+      },
+      {
+        "edge": "quantity.price -> quantity.rate",
+        "evidence": "own-pt:1.0.0: 'preço' has hypernym 'taxa'"
+      },
+      {
+        "edge": "quantity.value -> quantity.price",
+        "evidence": "own-pt:1.0.0: 'valor' has hypernym 'preço'"
+      },
+      {
+        "edge": "quantity.variation -> quantity.difference",
+        "evidence": "own-pt:1.0.0: 'variação' has hypernym 'diferença'"
+      },
+      {
+        "edge": "quantity.variation -> quantity.increase",
+        "evidence": "own-pt:1.0.0: 'variação' has hypernym 'aumento'"
+      },
+      {
+        "edge": "reasoning.reasoning -> reasoning.analogy",
+        "evidence": "own-pt:1.0.0: 'raciocínio' has hypernym 'analogia'"
+      },
+      {
+        "edge": "temporal.period -> temporal.term",
+        "evidence": "own-pt:1.0.0: 'período' has hypernym 'prazo'"
+      }
+    ],
+    "definition-subsumption": [
+      {
+        "edge": "entity.treasury_bond -> entity.treasury_note",
+        "evidence": "every content word of entity.treasury_note's definition appears in entity.treasury_bond's"
+      },
+      {
+        "edge": "technical.selic -> technical.bacen",
+        "evidence": "every content word of technical.bacen's definition appears in technical.selic's"
+      }
+    ]
+  }
+}

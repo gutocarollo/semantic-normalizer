@@ -1,1039 +1,747 @@
 {
   "schema_version": "queue-disposition-v1",
   "queue": "hierarchy-proposals",
-  "method": "6 arestas vieram do juiz adversarial sobre a fila de redundância e foram aplicadas. As demais são propostas mecânicas e estão DECLARADAS como pendentes, com dono — não foram aplicadas e não são afirmadas como corretas.",
+  "method": "174 arestas julgadas por nó adversarial com pergunta invertida, em 22 tarefas e duas ondas: 102 propostas pela regra de núcleo, e as descartadas — primeiro uma amostra semeada de 10 que mediu a regra errando 2 vezes, depois as 62 restantes, porque um erro medido de 20% não se aceita, se conserta ou se julga. 80 aceitas, 94 rejeitadas. Nenhuma aresta entrou por regra mecânica.",
   "dispositions": [
     {
-      "item": "actor.administrator -> actor.portfolio_manager",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
       "item": "actor.class_counterparty -> actor.counterparty",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Restrição genuína do mesmo genus, não papel distinto. 05-legislacao Linha 737: \"a instituição financeira contraparte da classe na operação\" — o narrower é a MESMA função de contraparte, apenas com o outro lado fixado na classe. 05-legislacao Linha 211: \"operações com derivativo em que elas atuem como contraparte da classe\" — entidades genéricas ATUAM como contraparte da classe, isto é, o predicado",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "actor.ecb -> actor.bank",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (d): as definições se contradizem no ponto que importa. O broader define banco como \"a financial institution that takes deposits and provides credit\" — o BCE não capta depósitos do público nem concede crédito comercial. No corpus o BCE aparece exclusivamente como AUTORIDADE MONETÁRIA que calcula/publica taxa de referência: 01-investimentos-no-exterior Linha 368 \"A taxa ESTR é calculada di"
     },
     {
       "item": "actor.essential_service_provider -> actor.service_provider",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "actor.institution -> actor.company",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O próprio corpus escreve a hiponímia como qualificador partitivo. 04-resolucao-cvm-175 Linha 643: \"- o prestador de serviço, essencial ou não;\" — \"essencial\" é modificador do mesmo genus, provando que essenciais são um subconjunto próprio. Linha 655: \"Os prestadores de serviços essenciais e demais prestadores de serviços do fundo respondem perante a CVM\" — \"demais\" só faz sentido se os essenciais ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "actor.listed_company -> actor.company",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus usa literalmente o genus com o modificador. 01-investimentos-no-exterior Linha 422: \"índice ponderado pela capitalização de mercado das 500 principais empresas de capital aberto domiciliadas nos Estados Unidos\"; Linha 424: \"30 grandes empresas de capital aberto negociadas na Bolsa de Valores de Nova York (NYSE) e na Nasdaq\" — \"empresas de capital aberto\" é sintagma núcleo-empresa + restri",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "artifact.anbima_third_party_code -> entity.administration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "artifact.anbima_third_party_code -> entity.resource",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "artifact.fund_documents -> entity.credit",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "artifact.fund_documents -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "artifact.key_information_sheet -> entity.information",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (c), e o caso é literalmente o exemplo citado nas instruções. O narrower é um DOCUMENTO de autorregulação, não uma espécie de administração — 11-codigo-anbima Linha 31: \"O Código tem por objetivo estabelecer princípios e regras para Administração de Recursos de Terceiros\"; o Código é o instrumento QUE REGE o regime, relação de assunto e não de tipo. O próprio id declara `artifact.*` enqua"
     },
     {
       "item": "condition.only_if -> condition.if",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.asset -> entity.cost",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.asset -> entity.credit",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.asset -> entity.money",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.asset_class -> entity.asset",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (d): as definições são CONVERSAS, não genus/espécie. O narrower declara condição NECESSÁRIA (\"necessary for the governed clause\") e o broader declara condição SUFICIENTE (\"whose truth enables the governed clause\") — \"somente se\" nunca habilita a cláusula, apenas a restringe. Teste de instância falha no corpus: 04-resolucao-cvm-175 Linha 673 \"Somente podem ser Administradores Fiduciários i"
     },
     {
       "item": "entity.asset_class -> entity.class",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (b): homonímia pura em \"classe\", referentes disjuntos. O broader é a classe de cotas da CVM 175, entidade jurídica com patrimônio segregado — 04-resolucao-cvm-175 Linha 79: \"pode prever a existência de diferentes classes de cotas, com direitos e obrigações distintos, devendo o administrador constituir um patrimônio segregado para cada classe de cotas\"; Linha 84: \"Cada patrimônio segregado"
     },
     {
       "item": "entity.broad_market_index -> entity.index",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.broad_market_index -> entity.market",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.cash_flow -> entity.cash",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.class -> entity.market",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.class -> entity.share",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie legítima do genus índice, restringida por abrangência. 07-avaliacao-de-desempenho Linha 358: \"os índices amplos de mercado são bastante utilizados como benchmark. Alguns exemplos são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International)\" — todos os exemplos são séries de referência sobre cesta definida de ativos, exatamente a def do broader (cf. 01-investimentos-no-e",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.closed_class -> entity.class",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.cost -> entity.service",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.currency -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.currency_class -> entity.currency",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.currency_fund -> entity.currency",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus enuncia o gênero literalmente. `04-resolucao-cvm-175-fundos-de-investimento.md` Linha 101: \"**Classe Fechada:** classe cujo regulamento não admite que as cotas sejam resgatadas pelos cotistas. No entanto, as cotas dessas classes podem ser transferidas (vendidas)...\" — definiens = `classe` + diferença específica (sem resgate; saída por cessão/venda), exatamente a def do registry. Par contr",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.currency_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.debt -> entity.credit",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.debt -> entity.tax",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`05-legislacao-regulacao-e-tributacao.md` Linha 917 (cabeçalho \"## Fundos Cambiais\") + Linha 919: \"A classe tipificada como CAMBIAL deve ter como principal fator de risco de carteira a variação de preços de moeda estrangeira ou do cupom cambial.\" O material também usa o gênero `fundo` diretamente: Linha 1197 \"para os fundos classificados como Renda Fixa, Ações, Multimercado ou Cambial\" e Linha 124",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.equity_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Gênero explícito no corpus. `02-gestao-de-carteiras-renda-variavel.md` Linha 38: \"São fundos de investimento que investem no mínimo 67% do seu patrimônio líquido em ativos que tenham como principal fator de risco a variação de preços de ações admitidas à negociação em mercado organizado\"; `05-legislacao-regulacao-e-tributacao.md` Linha 1091: \"Fundos de Ações: fundos de investimentos que a carteira",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.etf -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`02-gestao-de-carteiras-renda-variavel.md` Linha 345: \"Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, **são fundos abertos** que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, como se fossem ações ou fundos fechados.\" Cópula direta ETF = fundo, com as duas diferenças específicas",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.exclusive_class -> entity.class",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`04-resolucao-cvm-175-fundos-de-investimento.md` Linha 987 (seção \"## Classes Restritas & Exclusivas\") + Linha 991: \"Considera-se 'Exclusiva' a classe ou subclasse de cotas constituída para receber aplicações exclusivamente de um único investidor profissional, de cotistas que possuam vínculo societário familiar ou de cotistas vinculados por interesse único e indissociável\"; Linha 993: \"A classe ex",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.financial_investment_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.fixed_income_fund -> entity.fixed_income",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Aresta mais frágil do bloco, mas o corpus resolve. `04-resolucao-cvm-175-fundos-de-investimento.md` Linha 21 e `11-codigo-anbima-administracao-e-gestao.md` Linha 17 definem o gênero como \"comunhão de recursos, constituído sob a forma de condomínio de natureza especial, destinado à aplicação em ativos, de acordo com a regra específica aplicável **à categoria do fundo**\" — ou seja, categorizar é jus",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.fixed_income_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.fixed_income_security -> entity.fixed_income",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`05-legislacao-regulacao-e-tributacao.md` Linha 671 (cabeçalho \"## Fundos de Renda Fixa\") + Linha 673: \"A classe tipificada como RENDA FIXA deve ter como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos\" — casa termo a termo com a def do registry (\"interest rate or a price index\"). O gênero `fundo` aparece explícito nas Linhas 1087/1089: \"Fundos de Re",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.fixed_income_security -> entity.security",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.fund_charges -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Modificação de núcleo sem deslocamento semântico, comprovada por correferência no corpus. `08-gestao-de-carteiras-de-renda-fixa.md` Linha 25 alterna o MESMO referente entre as duas formas: \"para mensurar qual o valor justo atual de um título de renda fixa, basta trazer a valor presente todos os fluxos de caixa... É desta forma que avaliamos o quanto devemos pagar em um título que já foi emitido\". ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.fund_of_funds -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.fund_share -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus enuncia a hiponímia literalmente. `03-gestao-de-carteiras-renda-variavel-2.md` Linha 318: \"O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gestor aloca os recursos em outros fundos.\" Confirmado em `01-investimentos-no-exterior.md` Linha 508: \"Fund of Funds (FoF), ou Fundo de Fundos. Trata-se de um fundo de investimento que investe em outros tipos de fundos.\" O dif",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.fund_share -> entity.share",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Instrumentos distintos em camadas diferentes que só compartilham a palavra \"share\" no rótulo em inglês; as definições se contradizem exatamente no ponto que importa. O broader exige \"ownership in a company\", mas `04-resolucao-cvm-175-fundos-de-investimento.md` Linha 138: \"As cotas são escriturais, nominativas e correspondem a frações do patrimônio da classe de cotas\" — fração de patrimônio de CLAS"
     },
     {
       "item": "entity.government_security -> entity.security",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus parte o genus explicitamente em duas espécies pelo emissor. `06-gestao-de-riscos.md` Linha 174, título de seção: \"Relação entre Títulos Públicos e Privados\" — público e privado são espécies coordenadas de `título`. O broader (\"claim on an issuer\") é o critério que o próprio material usa para diferenciá-las: Linha 179: \"O Spread de Crédito é uma medida que representa a probabilidade de ina",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
-      "item": "entity.index -> entity.market",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "item": "entity.income_tax -> entity.tax",
+      "verdict": "admitted",
+      "reason": "Espécie genuína do genus, e o próprio nome carrega o genus (\"Imposto de Renda\"). `05-legislacao-regulacao-e-tributacao.md` Linha 1017 nomeia o genus e seus coordenados: \"taxas, impostos ou contribuições federais, estaduais, municipais ou autárquicas, que recaiam ou venham a recair sobre os bens, direitos e obrigações do fundo\". A Linha 1109 mostra IR como UM entre vários impostos, ao lado do irmão",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.international_equity_market -> entity.market",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia composicional: o núcleo do termo É \"Mercado\", restringido por classe de ativo (ações) e geografia (internacional) — não é relação de assunto. Sob o próprio cabeçalho \"## Mercado de Ações Internacional\" (`01-investimentos-no-exterior.md` Linha 372), o material desdobra o conceito em mercados: Linha 380: \"Nos Estados Unidos, existem dois tipos de mercados financeiros: a Bolsa de Valores (o",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.international_exchange -> entity.stock_exchange",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.money -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus aplica o rótulo do genus diretamente às instâncias estrangeiras. `01-investimentos-no-exterior.md` Linha 426: \"NASDAQ: Esta bolsa de valores americana, é a segunda maior do mundo\" — bolsa internacional predicada como bolsa de valores. Linha 420: \"Diferentemente do que ocorre no Brasil, muitos países possuem mais de uma bolsa de valores, como por exemplo os Estados Unidos\" — pluralidade de",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.multimarket_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Multimercado é uma das categorias em que o corpus classifica FUNDOS. `05-legislacao-regulacao-e-tributacao.md` Linha 1197: \"para os fundos classificados como Renda Fixa, Ações, Multimercado ou Cambial, o desenquadramento não poderá ultrapassar o prazo máximo de 15 (quinze) dias consecutivos\" — partição do genus em espécies coordenadas. Linha 1243: \"Fundo Multimercado: depende da constituição da ca",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.mutual_fund -> entity.fund",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus trata Mutual Fund como veículo coletivo de investimento, contrastado com Hedge Fund dentro do mesmo genus. `01-investimentos-no-exterior.md` Linha 478: \"ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas [cotas] a qualquer momento e resgatar seus recursos, os Hedge Funds normalmente limitam as oportunidades de resgate\" — resgate de cotas por investidor é compor",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.open_class -> entity.class",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia textual (genus + differentia) na própria fonte. 04-resolucao-cvm-175-fundos-de-investimento.md Linha 94: \"**Classe Aberta:** classe cujo regulamento admite que as cotas sejam resgatadas pelos cotistas a qualquer momento\" — o genus declarado é literalmente `classe`, e a differentia é o resgate. O broader confere com 04 Linha 79: \"diferentes classes de cotas, com direitos e obrigações dist",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.pension_class -> entity.class",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.pension_class -> entity.share",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.premise -> entity.scenario",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie de classe por destinação, mesma construção das demais espécies do capítulo. 04-resolucao-cvm-175-fundos-de-investimento.md Linha 999: \"Considera-se 'Previdenciária' a classe ou subclasse constituída para a aplicação de recursos de: entidades abertas ou fechadas de previdência privada; regimes próprios de previdência social...\" e Linha 1006: \"**Tais classes de cotas** e, se for o caso, suas",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.private_security -> entity.securities",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.resource -> entity.cost",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.resource -> entity.credit",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.resource -> entity.money",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.service -> entity.position",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.share -> entity.distribution",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.subclass -> entity.share",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.treasury_bond -> entity.treasury_note",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Contradição no ponto que importa (critério d): o broader é a categoria legal ENUMERADA pelo regulador (\"valores mobiliários... as defined by the securities regulator\"), e o corpus enumera dívida bancária FORA dela. 05-legislacao-regulacao-e-tributacao.md Linha 573: \"títulos de emissão ou coobrigação de instituição financeira autorizada a funcionar pelo Banco Central do Brasil\" aparece como bullet "
     },
     {
       "item": "entity.treasury_security -> entity.security",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "entity.us_fixed_income_security -> entity.fixed_income",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Aqui o broader é o genus genérico `título` (\"A tradable financial instrument representing a claim on an issuer\"), não a categoria regulatória — e o corpus afirma o IS-A explicitamente. 01-investimentos-no-exterior.md Linha 15: \"Os famosos Bonds, nada mais são do que **títulos** emitidos por um país (treasury bonds) ou por empresas (corporate bonds)... ou seja, são os títulos de dívidas... é um con",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "entity.us_fixed_income_security -> entity.securities",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Relação de ASSUNTO/recorte de capítulo, não de tipo (critérios a e c) — a própria def confessa: \"the international chapter **covers**\". No corpus, \"## Títulos Americanos de Renda Fixa\" é cabeçalho de slide reaproveitado para tópicos heterogêneos: 01-investimentos-no-exterior.md Linha 276 (tabela RESUMO), Linha 284 e 294 (\"Medidas de Retorno\": YTM, Current Yield, YTC, YTP, YTW — métricas, não instr"
     },
     {
       "item": "entity.us_government_security -> entity.securities",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Mesmo referente do item aceito acima, mas pendurado no pai ERRADO — e é aí que a aresta morre (critério d). O broader é \"valores mobiliários... as defined by the securities regulator\", categoria enumerada; o corpus lista dívida pública como modalidade PRÓPRIA, fora do bullet de valores mobiliários: 05-legislacao-regulacao-e-tributacao.md Linha 569 \"títulos públicos federais e operações compromissa"
     },
     {
       "item": "quantity.after_tax_return -> quantity.return",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia por qualificação do mesmo mensurando, com o núcleo `retorno` preservado e o corpus derivando um do outro. 01-investimentos-no-exterior.md Linha 322: \"O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobre o ganho bruto. Por exemplo, se um investidor obteve rentabilidade de 10% em um período, devendo pagar 20% sobre ganhos de capital de imposto, o **r",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "quantity.future_value -> quantity.value",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "quantity.measure -> quantity.value",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "quantity.price -> quantity.rate",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie canônica de `valor`, diferenciada pela data de referência, e o corpus a apresenta em paridade explícita com Valor Presente. 08-gestao-de-carteiras-de-renda-fixa.md Linha 77: \"## Valor Presente, Valor Futuro e YTM\"; Linha 83, a tabela põe a coluna \"FLUXO\\n(Valor Futuro)\" contra as colunas \"VALOR PRESENTE\" descontadas a YTM 4%/6%/8% — o mesmo fluxo de caixa (60,00; 60,00; ...; 1.060,00) expr",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "quantity.recovery_rate -> quantity.rate",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Genus-species genuína, não trap lexical. O corpus usa a Taxa de Recuperação sempre como RAZÃO percentual entre valor recuperado e exposição: `06-gestao-de-riscos.md:918` — \"O banco perderia R$ 100.000 do total de R$ 500.000,00 do valor de sua exposição, isto é, 20% (LGD). A Taxa de Recuperação seria, portanto, de 80% (1 – LGD)\"; e `06-gestao-de-riscos.md:906` — \"A Taxa de Recuperação, por sua vez,",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "quantity.tax_rate -> quantity.rate",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "quantity.value -> quantity.price",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Aceito apesar de `alíquota` e `taxa` serem palavras diferentes em PT — hierarquia é entre CONCEITOS, e o conceito alíquota satisfaz integralmente a definição do broader. `05-legislacao-regulacao-e-tributacao.md:1213` — \"O IR na fonte incidirá ... à alíquota de 15% sobre o rendimento produzido ... e à alíquota de 20% sobre o rendimento produzido a partir do dia do desenquadramento\": percentual medi",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "quantity.value_added -> quantity.value",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "quantity.variation -> quantity.difference",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "quantity.variation -> quantity.increase",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Compartilham a palavra `valor`, mas o genus real do narrower é RETORNO (diferencial de performance), não `valor` como montante atribuído a um ativo. `07-avaliacao-de-desempenho.md:552` — \"O retorno do valor adicionado, que pode ser entendido como sendo o retorno da carteira menos o retorno do benchmark\"; `07:873` — \"A hipótese nula afirma que o retorno de valor agregado é zero\"; `07:905` — \"O inte"
     },
     {
       "item": "reasoning.hidden_premise -> reasoning.premise",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "reasoning.reasoning -> reasoning.analogy",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "reasoning.reasoning_skills -> reasoning.reasoning",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia canônica: genus `premissa` + differentia `não dita`. O corpus de origem do concept (`corpus:REASONING_SKILLS_CONSOLIDATED.md`, autoridade declarada no registry) prova isso literalmente em `reasoning-skills-md/REASONING_SKILLS_CONSOLIDATED.md:3131` — \"Essas são as premissas ocultas: ideias que não foram ditas, mas que precisam ser verdadeiras para que a conclusão faça sentido. Elas são pe",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.counterparty -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`06-gestao-de-riscos.md:842` — \"O Risco de Contraparte refere-se à possibilidade de um dos envolvidos em uma transação não cumprir sua obrigação contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um todo\". A forma da definição é idêntica à do broader (\"a possibilidade de ... [resultado adverso ao esperado]\"): o ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.credit -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus enumera o narrower dentro do genus, com o quantificador explícito: `06-gestao-de-riscos.md:740` — \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" seguido de `06:744` — \"- Risco de Crédito;\" (repetido em `08-gestao-de-carteiras-de-renda-fixa.md:335` + `:340`). É a frase `tipos de riscos financeiros`, isto é, o próprio material declara a",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.early_redemption -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Listado nominalmente como espécie: `06-gestao-de-riscos.md:740` \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" → `06:747` \"- Risco de Resgate Antecipado;\", replicado em `08-gestao-de-carteiras-de-renda-fixa.md:335` → `:342`. `06:788` confirma a definição do registry — \"Se a taxa de juros cair, os títulos com opção de Call embutida podem ser re",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.event -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "`06-gestao-de-riscos.md:740` + `06:750` colocam \"- Risco de Evento; e\" dentro da lista \"diversos tipos de riscos financeiros\" — declaração de tipo feita pelo próprio material. A definição em `06:817` — \"Em termos gerais, o risco de evento é a possibilidade de um evento imprevisto afetar negativamente uma empresa e consequentemente suas ações, causando perdas para investidores\" — reproduz termo a t",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.inflation -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína, atestada pelo corpus. `06-gestao-de-riscos.md:740` abre a lista \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" e `:748` traz \"Risco de Inflação\" como item dessa lista — o material classifica o narrower como ESPÉCIE do genus, não como assunto. `06-gestao-de-riscos.md:801`: \"o risco de inflação remete à probabilidade de o valo",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.liquidity -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:743` lista \"Risco de Liquidez\" sob o cabeçalho de `:740` (\"tipos de riscos financeiros\"), e `08-gestao-de-carteiras-de-renda-fixa.md:339` repete a mesma classificação na lista de `:335`. Definição do corpus em `06-gestao-de-riscos.md:184`: \"Trata-se da DIFICULDADE DE VENDER um determinado ativo pelo preço e no momento desejado ... implica numa alteração s",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.market -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína e canônica no material. `06-gestao-de-riscos.md:742` lista \"Risco de Mercado\" como primeiro dos \"tipos de riscos financeiros\" de `:740`; `08-gestao-de-carteiras-de-renda-fixa.md:337` idem. `06-gestao-de-riscos.md:129`: \"RISCO DE MERCADO, também conhecido como RISCO SISTÊMICO, se caracteriza pela oscilação dos valores de um ativo durante um período de tempo, gerando possíveis ganh",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.operational -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (d): as definições se contradizem no ponto que importa, e o corpus trata os dois como categorias COORDENADAS, não genus/espécie. `06-gestao-de-riscos.md:740` declara \"tipos de riscos financeiros\" e a lista de `:742-751` (mercado, liquidez, crédito, câmbio, reinvestimento, resgate antecipado, inflação, volatilidade, evento, soberano) NÃO inclui risco operacional; `08-gestao-de-carteiras-de"
     },
     {
       "item": "risk.reinvestment -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:746` lista \"Risco de Reinvestimentos\" entre os \"tipos de riscos financeiros\" de `:740`; `08-gestao-de-carteiras-de-renda-fixa.md:341` repete. Def do corpus em `06-gestao-de-riscos.md:771`: \"o risco de não conseguir reinvestir o dinheiro, em taxas melhores ou iguais que as atuais, na eventualidade de liquidação financeira da aplicação (resgate, vencimento,",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.sovereign -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:751` fecha a lista de \"tipos de riscos financeiros\" (`:740`) com \"Risco Soberano\". `:827`: \"O Risco Soberano é a chance de um governo não honrar com o pagamento de sua dívida (chamada Soberana), ou mesmo implemente regras ou restrições cambiais que dificultarem o fluxo de capitais\" — idêntico à def do narrower e subsumido pelo genus, pois `:829` explicita",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.systematic -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína; a suspeita de homonímia sistêmico×sistemático não se sustenta neste corpus. `06-gestao-de-riscos.md:398`: \"Risco sistêmico (risco NÃO DIVERSIFICÁVEL): Ele é o risco gerado pelos sistemas econômico, político e social, no qual impacta a economia como um todo ... Não pode ser evitado pela diversificação dos ativos\" — casa exatamente com a def en do registry (\"Risk affecting the who",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.total -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Critério (c)/(d): o narrower é o AGREGADO (todo) e uma MEDIDA, não uma espécie do genus. `06-gestao-de-riscos.md:405`: \"RISCO TOTAL (Risco Sistêmico + Risco Não Sistêmico): O risco total de uma carteira (ou de um ativo) é medido pelo desvio-padrão. Ele pode ser considerado também como a soma do 'Risco Sistêmico' com o 'Risco não-sistêmico'\" e `:396` \"Podemos destrinchar o risco total de um investi"
     },
     {
       "item": "risk.unsystematic -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "risk.unsystematic -> risk.systematic",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md Linha 396 e 402: 'Podemos destrinchar o risco total de um investimento, dois grandes grupos' / 'Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor... Exemplos: risco de crédito ou de liquidez de uma companhia.' O corpus nomeia o não sistêmico como 'o risco individual do ativo' e dá como instâncias risco de crédito e de l",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "risk.volatility -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md Linha 740 abre a lista com 'Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:' e Linha 749 traz 'Risco de Volatilidade;' dentro dessa mesma lista. Subsunção declarada no texto: o corpus classifica o Risco de Volatilidade como um tipo de risco financeiro. Linha 807 confirma o conteúdo ('associado a uma mudança de preço de uma ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "state.negative_net_assets -> entity.net_assets",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.agnostic_strategy -> technical.active_strategy",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "04-resolucao-cvm-175-fundos-de-investimento.md Linha 1066: 'Caso o administrador verifique que o patrimônio líquido da classe de cotas está negativo...' e Linha 1091: 'o administrador verifique que o patrimônio líquido deixou de estar negativo'. O MESMO patrimônio líquido entra e sai do estado negativo — logo 'PL negativo' não é uma espécie de PL, é uma CONDIÇÃO do PL, com gatilho regulatório próp"
     },
     {
       "item": "technical.alternative_indexing -> technical.indexing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "02-gestao-de-carteiras-renda-variavel.md Linha 375: 'há três métodos chamados alternativos de indexação. Ou seja, através deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência' — Full Replication, Amostragem Estratificada e Otimização (Linhas 377-403). Isso é literalmente a def do broader ('Building a portfolio to track an index rather th",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.analytical_var -> technical.var",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md Linha 439: 'Há três principais formas de calcular o VaR: Analítico ou Paramétrico; Histórico; e Monte Carlo.' e a seção 'Value-at-Risk (VaR) Analítico ou Paramétrico' (Linha 453) traz a fórmula VaR = V0 × a × DP × √t (Linha 466ss), ou seja, produz um VaR. O narrower é uma das formas de calcular o genus; toda instância de VaR Analítico é um VaR (limiar de perda a dado nível d",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.asset_pricing -> technical.pricing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.benchmark_quality_test -> technical.benchmark",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.benchmark_relative_management -> technical.benchmark",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 15 ('A precificação de títulos de renda fixa ... baseia-se em calcular o valor presente de todos os recebimentos') e as seções 'Precificação de Ativos' (Linhas 115, 135, 177, 197, 239...) onde o exercício é achar o preço justo de LTN, LFT e o YTM de debênture. Precificar um ativo é determinar o valor justo de um instrumento — o broader. E o broader é g",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.benchmark_relative_management -> technical.fixed_income_portfolio_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.benchmark_type -> technical.benchmark",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linha 7 ('Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)') é uma subdivisão coordenada com Linha 63 ('Gestão de Carteiras de Renda Fixa em Relação a Passivos') e Linha 304 ('Outras Estratégias de Gestão de Carteiras de Renda Fixa') dentro do capítulo 'Gestão de Carteiras de Renda Fixa'. Partição de espécies do mesmo genus p",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.benchmark_var -> technical.benchmark",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.benchmark_var -> technical.var",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "06-gestao-de-riscos.md Linha 599: 'O Benchmark VaR, ou simplesmente B-VaR, calcula exatamente o mesmo que o VaR: a perda máxima de um ativo ou carteira. A diferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência (benchmark).' O corpus é explícito: o B-VaR é espécie de VaR (medida de risco), e o benchmark é apenas o REFERENCIAL contra o qual a perda é medida — re"
     },
     {
       "item": "technical.cds -> technical.swap",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.convexity_adjustment -> technical.convexity",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.credit_risk_measure -> technical.risk_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus faz a afirmação de tipo explicitamente: 02-gestao-de-carteiras-renda-variavel.md:235-238 — \"Podem ser realizados diversos tipos de contratos de swap: - Swap de Juros...; - Swap de Moeda...; - Swap de Crédito (CDS – Credit Default Swap: 'seguro contra calote'); - Swap de Índice de Preços\". Reforço: 06-gestao-de-riscos.md:856 chama a contraparte do CDS de \"VENDEDOR do swap (vendedor do CDS)",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.credit_spread -> technical.spread",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "01-investimentos-no-exterior.md:314 — \"Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de spread de crédito\": o corpus define o spread de crédito como o caso particular do spread cotado contra a referência livre de risco, que é exatamente a def do broader. Confirmado em 09-gestao-de-carteiras-de-renda-fi",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.current_yield -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md:63 abre a seção \"Medidas de Retorno de Renda Fixa\", onde 08:69-71 enumera YTM e Current Yield como metodologias alternativas da MESMA medida (\"Esta metodologia é mais precisa que o Current Yield\"); 01-investimentos-no-exterior.md:288-302 lista CY ao lado de YTM/YTC/YTP/YTW como a família de yields. O resultado é taxa anualizada: 08:281 \"CY=0,1121=11,21% ao a",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.daily_settlement -> technical.settlement",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Homonímia em inglês (\"daily settlement\"/\"settlement\") sobre conceitos que o corpus separa na mesma página: 02-gestao-de-carteiras-renda-variavel.md:52 põe o AJUSTE DIÁRIO como mecanismo de marcação a mercado do futuro garantido pela clearing (\"Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE CONTRAPARTE\"), enquanto 02:54 diz que os contratos \"se encerram por Liquidação F"
     },
     {
       "item": "technical.derivative_risk -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.discount_rate -> technical.discount",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md:957-967 — cabeçalho \"## Riscos de Derivativos\" seguido de \"Podemos elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade\", categoria enumerada no mesmo nível de \"Risco Operacional\" (06:955) dentro do capítulo de Gestão de Riscos. O núcleo do termo é \"risco\" e cada exposiçã",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.dividend_yield -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "03-gestao-de-carteiras-renda-variavel-2.md:123 — \"empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado\": é razão renda distribuída/preço, taxa anual percentual do retorno que o instrumento produz, mesma forma estrutural do current yield aceito (cupom anual ÷ valor de mercado, 08-gestao-de-carteiras-de-renda-fixa.md:71). O uso em 03:94 ao lado de P/L e EV/EBI",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.dollar_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Unidade e gênero incompatíveis. 09-gestao-de-carteiras-de-renda-fixa-2.md:173-181: \"A Dollar Duration mede a mudança em unidades monetárias no valor de um título\", fórmula \"Dollar Duration = DM × 0,01 × Preço do título ou Valor da carteira\" (09:176) e resultado \"R$ 5 mil negativos. Essa é a dollar duration!\" (09:181) — é dinheiro derivado DA duration. O broader é tempo: 08-gestao-de-carteiras-de-r"
     },
     {
       "item": "technical.duration_matching -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Erro de categoria: estratégia versus medida. 09-gestao-de-carteiras-de-renda-fixa-2.md:110-112, sob o cabeçalho \"## Imunização\": \"Para isso, devemos sempre procurar manter a duration dos ativos igual à duration dos passivos\" — é técnica de imunização (09:90 \"o gestor se vale da chamada estratégia de Imunização\"; 09:290 \"casamos os fluxos de caixa igualando a duration de cada passivo\"). Uma instânc"
     },
     {
       "item": "technical.effective_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 540 afirma o genus explicitamente: \"A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas\". O corpus trata Duration como família e enumera as espécies em seções irmãs sob o mesmo tópico \"Risco de Taxa de Juros\": Duration de Macaulay (Linha 364), Duration Modificada (Linha 522), Effective Duration (Linha 538), anun",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.enhanced_indexing -> technical.indexing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linhas 17-19 enumeram três estratégias contra benchmark: \"Indexação Pura; Indexação Reforçada (Enhanced Indexing); e Gestão Ativa\" — a Reforçada carrega o núcleo \"Indexação\" e é oposta à Gestão Ativa, não uma espécie dela. A Linha 41 prova o tracking constitutivo: \"casa todas as exposições primárias de risco do índice... O objetivo é alcançar um acompanham",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.enterprise_risk_management -> technical.risk_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.esg_private_credit -> technical.esg",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md Linha 35 define ERM como um dos dois modos de gestão de risco: \"Centralizado: também chamado de Enterprise Risk Management (ERM), que confere a execução da gestão de risco a uma unidade central da empresa, permitindo uma visão mais ampla do risco total corrido pela companhia\", em par com \"Descentralizado\" (Linha 34). A Linha 37 fecha a subsunção ao tratar os dois como formas",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.esg_private_credit -> technical.private_credit",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.expected_curve_behaviour -> technical.yield_curve",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linha 429 (seção \"Crédito Privado ASG\", Linha 425) descreve o ativo subjacente como subconjunto filtrado: \"investe em títulos de renda fixa privada de empresas que se destacam por práticas Ambientais, Sociais e de Governança (ASG)\", e a Linha 433 confirma o filtro como critério de seleção, não como mudança de classe: \"o fundo avalia o desempenho das empres",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.fixed_income_pricing -> technical.pricing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 15 define a espécie como o ato genérico restrito a uma classe de instrumento: \"A precificação de títulos de renda fixa... baseia-se em calcular o valor presente de todos os recebimentos e soma-los\", que é exatamente determinar o valor justo do instrumento. O próprio corpus mantém genus e espécie no mesmo capítulo: cabeçalho genérico \"Precificação de At",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.fundamental_law_active_management -> technical.active_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Relação de ASSUNTO, não de tipo: é um teorema SOBRE gestão ativa, não uma maneira de gerir. 03-gestao-de-carteiras-renda-variavel-2.md Linha 277: \"A Lei Fundamental da Gestão Ativa AFIRMA QUE a produtividade de um gestor ativo depende da qualidade de suas habilidades e da frequência com que essas habilidades são aplicadas\" — verbo de asserção, não de conduta. O conteúdo é uma fórmula, IR = IC × √B"
     },
     {
       "item": "technical.hedge_fund -> technical.hedge",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Compartilham apenas a palavra; são categorias ontológicas distintas e objetivos opostos. Hedge, em 09-gestao-de-carteiras-de-renda-fixa-2.md Linha 357, é posição/estratégia de proteção: \"Estratégias de hedge são ferramentas utilizadas para proteger um investimento contra perdas... funcionam como um tipo de 'seguro' para a carteira, reduzindo o risco\". Hedge Fund, em 01-investimentos-no-exterior.md"
     },
     {
       "item": "technical.historical_var -> technical.var",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md Linhas 439-443 enumeram o genus e suas espécies explicitamente: \"Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte Carlo\". A Linha 510 confirma que o Histórico é apenas o método de estimação, com o mesmo output do genus definido na Linha 435 (perda máxima com grau de confiança): \"O VaR Histórico, também chamado de Método de Simul",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.institutional_risk_management -> technical.risk_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Restrição de locus dentro do mesmo genus, não relação de assunto. O corpus trata a seção como o MESMO processo aplicado no nível da firma: 06-gestao-de-riscos.md Linha 92 põe '## Gestão de Risco em Instituições' sob '## Fundamentos da Gestão de Riscos' (Linha 90) e a Linha 94 abre com 'A implementação de um processo eficaz de gestão de riscos em uma instituição pode trazer diversos benefícios'. A ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.integrated_risk_management -> technical.risk_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Restrição de modo (holística/institucional vs. desk a desk) do mesmo genus. 06-gestao-de-riscos.md Linha 72 coloca '## Gestão Integrada de Risco' sob '## Fundamentos da Gestão de Riscos' (Linha 70), e a Linha 82 lista as ferramentas dela — 'Análise de Cenários', 'Teste de Estresse', 'Simulação de Monte Carlo' — que são instrumentos de gestão de risco, não de outra atividade. A Linha 35 ancora a me",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.interest_rate_risk -> risk.financial",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus faz a afirmação de tipo explicitamente. 08-gestao-de-carteiras-de-renda-fixa.md Linha 335: 'Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:' seguido da Linha 338 '- Risco de Taxa de Juros;' — o material enumera o narrower como um dos tipos de risco financeiro (junto de mercado, liquidez, crédito, reinvestimento, resgate antecipado). A Li",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.jensen_alpha -> technical.alpha",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie por operacionalização do modelo (CAPM), com o mesmo referente do genus. 07-avaliacao-de-desempenho.md Linha 707: 'O Alfa de Jensen é um indicador para determinar o rendimento real da carteira comparado ao retorno exigido do investidor em relação ao risco sistêmico. Ou seja, o quanto a mais o investidor teve de retorno extra ao cálculo do CAPM'; a fórmula da Linha 715 (α_p = R_p − [TLR + β_",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.key_rate_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.liquidity_management -> technical.liquidity",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.liquidity_preference_theory -> technical.liquidity",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.liquidity_premium -> technical.liquidity",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus usa 'duration' como família de medidas de sensibilidade e coloca a KRD dentro dela. 09-gestao-de-carteiras-de-renda-fixa-2.md Linha 45-46 lista as exposições a casar como '- Duration Modificada;' e '- Key Rate Duration (falaremos mais à frente sobre esse ponto);' — mesmo plano, mesma família; a Linha 155 a compara com as demais do conjunto: 'A Key Rate Duration é uma das poucas que pode t",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.liquidity_premium -> technical.premium",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Homonímia: 'prêmio' aqui tem dois sentidos distintos e as definições se contradizem no ponto que importa. O broader é o sentido de ágio de preço — 08-gestao-de-carteiras-de-renda-fixa.md Linha 89: 'ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido' (valor pago acima da referência, exatamente a def do registry). Já o narrower é prêmio de RETORNO exigido — 09-gestao-de-carteiras-de-"
+    },
+    {
+      "item": "technical.macaulay_duration -> technical.duration",
+      "verdict": "admitted",
+      "reason": "Espécie canônica de uma família que o corpus trata como genus. 08-gestao-de-carteiras-de-renda-fixa.md Linha 348 apresenta o conjunto: 'Podemos mensurar este risco através de medidas de sensibilidade de um título em relação a variações nas taxas de juros (Duration de Macaulay ou Duration Modificada)'; a Linha 366 abre '## Duration de Macaulay' e a define como uma das medidas ('surgiu para estimar ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.merger_arbitrage -> technical.arbitrage",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "O corpus classifica merger arbitrage FORA da família arbitragem e a def do broader é contrariada no ponto que importa. Em 03-gestao-de-carteiras-renda-variavel-2.md, 'Merger Arbitrage' é bullet de Event Driven — Linha 244: 'O Event Driven é uma estratégia que busca lucrar com as consequências de determinados eventos corporativos', com os irmãos Activist (Linha 246) e Restructuring (Linha 247), e a"
     },
     {
       "item": "technical.modified_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.option_premium -> technical.option",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "O corpus fixa `Duration` sem qualificador COMO Macaulay: 08-gestao-de-carteiras-de-renda-fixa.md:366 'A Duration de Macaulay (D_Mac), chamada simplesmente de \"Duration\"' — exatamente a def do broader (tempo médio ponderado de recebimento). A Duration Modificada não é uma espécie disso, é uma TRANSFORMAÇÃO dela: 08:526 'DM = (DMac)/(1+YTM)' e o exemplo numérico 08:695 (DMac = 4,55 anos) → 08:703 ('"
     },
     {
       "item": "technical.option_premium -> technical.premium",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Homonímia de 'prêmio' (critério b/d). O broader é o prêmio-excedente: 'amount paid above a reference value, such as a bond trading above par', que o corpus materializa em 08-gestao-de-carteiras-de-renda-fixa.md:89 'ÁGIO (prêmio)' + 08:91 'Preço de mercado maior que o valor nominal', e em 09-gestao-de-carteiras-de-renda-fixa-2.md:482 'prêmio pela liquidez'. O prêmio da opção é o PREÇO integral pago"
     },
     {
       "item": "technical.population_variance -> technical.variance",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie legítima por denominador, com o corpus apresentando as duas formas sob o MESMO genus: 06-gestao-de-riscos.md:364-370 'FÓRMULAS: VARIÂNCIA POPULACIONAL σ² = Σ(x−x̄)²/n' contra 06:372-375 'VARIÂNCIA AMOSTRAL σ² = Σ(xi−x̄)²/(n−1)'. O passo-a-passo 06:272 ('Calcular a média desses números que foram elevados ao quadrado. Este número será a Variância Populacional') produz 06:298 'Variância = 1,6",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.portfolio_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Mesma grandeza e mesma unidade, aplicada a um conjunto de títulos. 08-gestao-de-carteiras-de-renda-fixa.md:578 'estamos fazendo a média ponderada das durations dos títulos de renda fixa que a compõem'; 08:580 'Duration_Carteira = m1D1 + m2D2 + ... + mnDn'; 08:590 resultado '(0,6×4,0)+(0,4×8,0) = 5,6 anos' — em ANOS, como a duration do broader. E o corpus já usa o termo simples para carteira, sem c",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.premium_or_discount -> technical.discount",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.premium_or_discount -> technical.premium",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.premium_or_discount -> technical.premium_price",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "O narrower é um TÍTULO DE SEÇÃO que cobre uma disjunção de estados opostos, não uma espécie de deságio: 08-gestao-de-carteiras-de-renda-fixa.md:85 '## Títulos com Ágio ou Deságio', desdobrado em 08:89 'ÁGIO (prêmio) ... Preço de mercado maior que o valor nominal; YTM menor que a taxa do cupom', 08:97 'DESÁGIO (desconto) ... Preço de mercado menor que o valor nominal' e ainda 08:105-109 '## AO PAR:"
     },
     {
       "item": "technical.premium_price -> technical.premium",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.pricing_policy -> technical.asset_pricing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.pricing_policy -> technical.pricing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus rotula explicitamente o ágio como um prêmio: 08-gestao-de-carteiras-de-renda-fixa.md:89 'ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido', com 08:91 'Preço de mercado maior que o valor nominal' — ou seja, o caso 'bond trading above par' que a própria def do broader nomeia. E a subsunção é PRÓPRIA, não sinonímia: a extensão de 'prêmio-excedente sobre referência' é maior ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.pure_indexing -> technical.indexing",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Espécie declarada no corpus: 09-gestao-de-carteiras-de-renda-fixa-2.md:15-19 'A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: Indexação Pura; Indexação Reforçada (Enhanced Indexing); e Gestão Ativa' — Indexação Pura e Reforçada são as duas espécies indexadoras, com a Gestão Ativa fora. 09:25 'O grande objetivo da estratégia Indexaçã",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.quantitative_arbitrage -> technical.arbitrage",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.rating_change_impact -> technical.rating",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus enuncia o genus dentro da própria definição do narrower: 03-gestao-de-carteiras-renda-variavel-2.md:236 'a estratégia Quantitative Arbitrage refere-se à arbitragem entre ativos utilizando métodos quantitativos' — genus = arbitragem, differentia = método. As irmãs confirmam a partição por método, não por objeto: 03:61 'Arbitragem Fundamental: se baseia na análise fundamentalista' e 03:62 '",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.risk_adjusted_appraisal -> technical.performance_appraisal",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.risk_management_fundamentals -> technical.risk_management",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus aninha literalmente os dois: 07-avaliacao-de-desempenho.md:701 abre '## Avaliação de Desempenho (Performance Appraisal)' e a linha 703 imediatamente seguinte é '## Avaliação de Desempenho ajustada ao risco', com Alfa de Jensen, Sharpe, Treynor, IR e M2 dentro dessa seção. Núcleo nominal preservado ('Avaliação de Desempenho') + modificador restritivo ('ajustada ao risco'), não termo nomead",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.sample_variance -> technical.variance",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.selic -> technical.bacen",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "06-gestao-de-riscos.md:364-376 traz '## FÓRMULAS:' com duas co-espécies irmãs sob o mesmo gênero: '### VARIÂNCIA POPULACIONAL' (÷n, linha 366/369) e '### VARIÂNCIA AMOSTRAL' (÷(n-1), linha 372/375). 06:304 confirma que a amostral é a mesma grandeza com outro divisor ('ao invés de calcular a média da ETAPA 3, dividindo por N TERMOS, devemos dividir por N menos 1'), e o mesmo exemplo (+3,+1,+3,+3,+5",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.spread_duration -> technical.duration",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "As definições se contradizem no ponto que importa (regra d). 08-gestao-de-carteiras-de-renda-fixa.md:366 fixa que 'A Duration de Macaulay (D_Mac), chamada simplesmente de \"Duration\"' é a média ponderada do valor presente dos recebimentos para medir sensibilidade a MUDANÇAS NAS TAXAS DE JUROS — exatamente a def do broader ('weighted average time to receive a bond's cash flows ... interest-rate sens"
     },
     {
       "item": "technical.spread_duration -> technical.spread",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.strips -> technical.principal",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.swap_leg -> technical.swap",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Relação de ASSUNTO, não de tipo (regra a): o núcleo do termo é 'duration' (uma medida de sensibilidade), e 'spread' é apenas o fator de risco medido. A mesma frase do corpus separa os dois objetos — 09-gestao-de-carteiras-de-renda-fixa-2.md:185: 'Spread Duration, que mede a sensibilidade do preço de um título privado a mudanças em seu spread de crédito. O spread de crédito é a diferença entre o re"
     },
     {
       "item": "technical.tax_reclassification -> technical.mandate_breach",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O corpus trata o tributário como espécie do mesmo evento, com o mesmo núcleo lexical e morfológico. 05-legislacao-regulacao-e-tributacao.md:1193 titula '## Desenquadramento Tributário' e 1195 explica que a mudança de alíquota 'ocorre por desenquadramento das devidas regras'; 1211 descreve o fato gerador como 'alteração da composição ou do prazo médio da carteira ... que implique modificação de seu",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.total_return_equity_swap -> technical.swap",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "IS-A explícito no corpus: 02-gestao-de-carteiras-renda-variavel.md:293 — 'Um Total Return Equity Swap (TRES) É UM ACORDO DE SWAP em que uma parte faz pagamentos com base em uma taxa definida, fixa ou variável, enquanto a outra parte faz pagamentos com base no retorno de um ativo subjacente'. 02:297 declara a diferença específica dentro do mesmo gênero ('A diferença de um Total Return Equity Swap p",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.valid_benchmark -> technical.benchmark",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.yield_curve -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.yield_curve_strategy -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "technical.yield_curve_strategy -> technical.yield_curve",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Qualificação restritiva sobre o mesmo núcleo, atestada pelo corpus: 07-avaliacao-de-desempenho.md:300 titula '## Benchmark válido' e 07:316 enuncia 'São 7 as principais características que TORNAM VÁLIDO UM BENCHMARK' (especificado antecipadamente, adequado, mensurável, sem ambiguidade, reflete opiniões atuais, responsável, investível — linhas 318-324), ou seja, validade é um filtro aplicado sobre ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.yield_spread -> technical.spread",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "01-investimentos-no-exterior.md:310 define por gênero e diferença: 'Um Yield Spread, ou Spread de Rendimento, É A DIFERENÇA entre os rendimentos de diferentes instrumentos de dívida com diferentes vencimentos, classificações de crédito, emissores ou níveis de risco' — encaixa integralmente na def do broader ('the difference between two rates or prices'), com a diferença específica sendo que os doi",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.yield_spread -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Um spread é a DIFERENÇA entre dois rendimentos, não um rendimento. 01-investimentos-no-exterior.md:310 — 'Um Yield Spread, ou Spread de Rendimento, é a diferença entre os rendimentos de diferentes instrumentos de dívida'; :312 — 'é calculado deduzindo o rendimento de um instrumento do outro... expressa em pontos base (bps)'; :316 — com Tesouro 5a a 4% e 30a a 5%, 'o spread de rendimento entre os d"
     },
     {
       "item": "technical.yield_to_call -> technical.call_option",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Categorias distintas: YTC é uma TAXA, a call é um DIREITO. 01-investimentos-no-exterior.md:298 — 'Yield to Call (YTC): É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que o emissor exerce o direito de comprar de volta o título, uma vez que possui uma opção de compra' — a call aparece como a CONDIÇÃO/pressuposto sob o qual a taxa é calculada, não como genus. 08-gestao-de-"
     },
     {
       "item": "technical.yield_to_call -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína: mesmo genus (taxa de retorno anualizada do título), differentia = horizonte assumido na primeira chamada. 01-investimentos-no-exterior.md:298 — 'YTC: É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que o emissor exerce o direito de comprar de volta o título'. A apostila agrupa YTC sob o cabeçalho '## Medidas de Retorno' (:296), o MESMO cabeçalho (:286)",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.yield_to_put -> technical.put_option",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "rejected",
+      "reason": "Mesmo erro categorial do YTC→call: taxa vs. direito. 01-investimentos-no-exterior.md:300 — 'Yield to Put (YTP): É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que ele exerce o direito de vender de volta o título ao emissor, uma vez que possui uma opção de venda' — a put é o direito pressuposto, não o gênero. 08-gestao-de-carteiras-de-renda-fixa.md:564 — 'Opção de venda "
     },
     {
       "item": "technical.yield_to_put -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia genuína, simétrica ao YTC. 01-investimentos-no-exterior.md:300 define YTP como 'a taxa interna de retorno (TIR) que o investidor recebe até o momento em que ele exerce o direito de vender de volta o título', listada sob '## Medidas de Retorno' (:296) junto de YTM e Current Yield, cujo padrão de gênero é dado em :288 ('taxa interna de retorno (TIR) dada ao ano'). Toda instância de yield t",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.yield_to_worst -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "O próprio corpus chama YTW de rendimento e o define como um dos yields do conjunto, não como outra coisa. 01-investimentos-no-exterior.md:302 — 'Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de compra embutida... O YTW considera o menor valor entre o YTM e o YTC'. O mínimo de um conjunto de yield",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     },
     {
       "item": "technical.ytm -> technical.yield",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
-    },
-    {
-      "item": "temporal.period -> temporal.term",
-      "verdict": "pending",
-      "owner": "Augusto Carollo",
-      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+      "verdict": "admitted",
+      "reason": "Hiponímia estrita: YTM é um membro coordenado da família de medidas de rendimento, sob o genus 'yield'. 08-gestao-de-carteiras-de-renda-fixa.md:63 abre a seção '## Medidas de Retorno de Renda Rixa' e 08:69 registra 'Yield to Maturity (YTM): É a taxa interna de retorno (TIR) dada ai ano dos fluxos de caixa do título... Esta metodologia é mais precisa que o Current Yield', ao lado de 08:71 'Current ",
+      "applied_in": [
+        "precision-amendment-72.json"
+      ]
     }
   ]
 }

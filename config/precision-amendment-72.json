@@ -1,0 +1,483 @@
+{
+  "id": "precision-sweep-amendment-72",
+  "corpus_sha256": "95098bbbfe1c9fd8",
+  "authority": "juiz adversarial sobre 174 arestas, 22 tarefas em duas ondas",
+  "method": "174 arestas julgadas com a pergunta INVERTIDA — assuma hiponímia e prove que não é, default reject, cada veredito citando linha do corpus. Nenhuma aresta entra por regra mecânica: a regra de posição de núcleo só FILTRA, e uma amostra semeada mediu que ela erra ~20% no descarte, o que motivou julgar também as descartadas.",
+  "reason": "O registry tinha 6 arestas broader/narrower para 598 conceitos. Esta emenda aplica as que sobreviveram ao juiz.\n\nO caminho até aqui corrigiu dois defeitos meus. Primeiro: containment sem posição de núcleo propunha `asset class -> asset`, quando o núcleo de `asset class` é `class` — uma classe de ativos é um tipo de classe, nunca um tipo de ativo. Português é núcleo à esquerda, inglês é núcleo à direita, e conflatar os dois inventava hiponímia. Segundo: a regra corrigida ainda errava, porque inglês com modificador PREPOSICIONAL é núcleo à esquerda — `yield to maturity` é um tipo de yield, e a regra jogava fora. Só descobri porque a amostra dos descartados foi medida em vez de assumida.\n\nDois sinais foram REMOVIDOS do link_hierarchy.py com a medição no cabeçalho: wordnet-hypernym (25 propostas, 0 plausíveis; `administrador -> gestor` inverteria uma distinção da CVM 175) e definition-subsumption (2 propostas, ambas erradas, uma delas contra veredito já registrado neste repositório).\n\nA aresta macaulay_duration -> duration não está aqui porque a emenda 69 já a aplicou: o juiz a sustentou duas vezes, em contextos diferentes, e o guard do link_broader recusa duplicata em vez de escrever estado parcial.",
+  "operations": [
+    {
+      "op": "link_broader",
+      "concept": "actor.class_counterparty",
+      "broader": "actor.counterparty",
+      "reason": "Restrição genuína do mesmo genus, não papel distinto. 05-legislacao Linha 737: \"a instituição financeira contraparte da classe na operação\" — o narrower é a MESMA função de contraparte, apenas com o outro lado fixado na classe. 05-legislacao Linha 211: \"operações com derivativo em que elas atuem com"
+    },
+    {
+      "op": "link_broader",
+      "concept": "actor.essential_service_provider",
+      "broader": "actor.service_provider",
+      "reason": "O próprio corpus escreve a hiponímia como qualificador partitivo. 04-resolucao-cvm-175 Linha 643: \"- o prestador de serviço, essencial ou não;\" — \"essencial\" é modificador do mesmo genus, provando que essenciais são um subconjunto próprio. Linha 655: \"Os prestadores de serviços essenciais e demais p"
+    },
+    {
+      "op": "link_broader",
+      "concept": "actor.listed_company",
+      "broader": "actor.company",
+      "reason": "O corpus usa literalmente o genus com o modificador. 01-investimentos-no-exterior Linha 422: \"índice ponderado pela capitalização de mercado das 500 principais empresas de capital aberto domiciliadas nos Estados Unidos\"; Linha 424: \"30 grandes empresas de capital aberto negociadas na Bolsa de Valore"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.broad_market_index",
+      "broader": "entity.index",
+      "reason": "Espécie legítima do genus índice, restringida por abrangência. 07-avaliacao-de-desempenho Linha 358: \"os índices amplos de mercado são bastante utilizados como benchmark. Alguns exemplos são o Ibovespa, o IBrX, o S&P500 e o MSCI (Morgan Stanley Capital International)\" — todos os exemplos são séries "
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.closed_class",
+      "broader": "entity.class",
+      "reason": "O corpus enuncia o gênero literalmente. `04-resolucao-cvm-175-fundos-de-investimento.md` Linha 101: \"**Classe Fechada:** classe cujo regulamento não admite que as cotas sejam resgatadas pelos cotistas. No entanto, as cotas dessas classes podem ser transferidas (vendidas)...\" — definiens = `classe` +"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.currency_fund",
+      "broader": "entity.fund",
+      "reason": "`05-legislacao-regulacao-e-tributacao.md` Linha 917 (cabeçalho \"## Fundos Cambiais\") + Linha 919: \"A classe tipificada como CAMBIAL deve ter como principal fator de risco de carteira a variação de preços de moeda estrangeira ou do cupom cambial.\" O material também usa o gênero `fundo` diretamente: L"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.equity_fund",
+      "broader": "entity.fund",
+      "reason": "Gênero explícito no corpus. `02-gestao-de-carteiras-renda-variavel.md` Linha 38: \"São fundos de investimento que investem no mínimo 67% do seu patrimônio líquido em ativos que tenham como principal fator de risco a variação de preços de ações admitidas à negociação em mercado organizado\"; `05-legisl"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.etf",
+      "broader": "entity.fund",
+      "reason": "`02-gestao-de-carteiras-renda-variavel.md` Linha 345: \"Os ETFs (Exchange Traded Funds), conhecidos também como Fundos de Índice, **são fundos abertos** que buscam obter retorno semelhante com base em determinado índice, com a diferença que suas cotas são negociadas em bolsa ou mercado de balcão, com"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.exclusive_class",
+      "broader": "entity.class",
+      "reason": "`04-resolucao-cvm-175-fundos-de-investimento.md` Linha 987 (seção \"## Classes Restritas & Exclusivas\") + Linha 991: \"Considera-se 'Exclusiva' a classe ou subclasse de cotas constituída para receber aplicações exclusivamente de um único investidor profissional, de cotistas que possuam vínculo societá"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.financial_investment_fund",
+      "broader": "entity.fund",
+      "reason": "Aresta mais frágil do bloco, mas o corpus resolve. `04-resolucao-cvm-175-fundos-de-investimento.md` Linha 21 e `11-codigo-anbima-administracao-e-gestao.md` Linha 17 definem o gênero como \"comunhão de recursos, constituído sob a forma de condomínio de natureza especial, destinado à aplicação em ativo"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.fixed_income_fund",
+      "broader": "entity.fund",
+      "reason": "`05-legislacao-regulacao-e-tributacao.md` Linha 671 (cabeçalho \"## Fundos de Renda Fixa\") + Linha 673: \"A classe tipificada como RENDA FIXA deve ter como principal fator de risco de sua carteira a variação de taxa de juros, índice de preços ou ambos\" — casa termo a termo com a def do registry (\"inte"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.fixed_income_security",
+      "broader": "entity.fixed_income",
+      "reason": "Não consegui refutar: a def do narrower ('debt instrument paying interest on a defined schedule, whose return is known at issue') implica a do broader ('instruments paying a defined or formula-based remuneration'), e o corpus usa 'renda fixa' como o conjunto dos próprios instrumentos, não só como ró"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.fixed_income_security",
+      "broader": "entity.security",
+      "reason": "Modificação de núcleo sem deslocamento semântico, comprovada por correferência no corpus. `08-gestao-de-carteiras-de-renda-fixa.md` Linha 25 alterna o MESMO referente entre as duas formas: \"para mensurar qual o valor justo atual de um título de renda fixa, basta trazer a valor presente todos os flux"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.fund_of_funds",
+      "broader": "entity.fund",
+      "reason": "O corpus enuncia a hiponímia literalmente. `03-gestao-de-carteiras-renda-variavel-2.md` Linha 318: \"O Fundo de Fundos (FoF) nada mais é do que um fundo de investimento cujo gestor aloca os recursos em outros fundos.\" Confirmado em `01-investimentos-no-exterior.md` Linha 508: \"Fund of Funds (FoF), ou"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.government_security",
+      "broader": "entity.security",
+      "reason": "O corpus parte o genus explicitamente em duas espécies pelo emissor. `06-gestao-de-riscos.md` Linha 174, título de seção: \"Relação entre Títulos Públicos e Privados\" — público e privado são espécies coordenadas de `título`. O broader (\"claim on an issuer\") é o critério que o próprio material usa par"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.income_tax",
+      "broader": "entity.tax",
+      "reason": "Espécie genuína do genus, e o próprio nome carrega o genus (\"Imposto de Renda\"). `05-legislacao-regulacao-e-tributacao.md` Linha 1017 nomeia o genus e seus coordenados: \"taxas, impostos ou contribuições federais, estaduais, municipais ou autárquicas, que recaiam ou venham a recair sobre os bens, dir"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.international_equity_market",
+      "broader": "entity.market",
+      "reason": "Hiponímia composicional: o núcleo do termo É \"Mercado\", restringido por classe de ativo (ações) e geografia (internacional) — não é relação de assunto. Sob o próprio cabeçalho \"## Mercado de Ações Internacional\" (`01-investimentos-no-exterior.md` Linha 372), o material desdobra o conceito em mercado"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.international_exchange",
+      "broader": "entity.stock_exchange",
+      "reason": "O corpus aplica o rótulo do genus diretamente às instâncias estrangeiras. `01-investimentos-no-exterior.md` Linha 426: \"NASDAQ: Esta bolsa de valores americana, é a segunda maior do mundo\" — bolsa internacional predicada como bolsa de valores. Linha 420: \"Diferentemente do que ocorre no Brasil, muit"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.multimarket_fund",
+      "broader": "entity.fund",
+      "reason": "Multimercado é uma das categorias em que o corpus classifica FUNDOS. `05-legislacao-regulacao-e-tributacao.md` Linha 1197: \"para os fundos classificados como Renda Fixa, Ações, Multimercado ou Cambial, o desenquadramento não poderá ultrapassar o prazo máximo de 15 (quinze) dias consecutivos\" — parti"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.mutual_fund",
+      "broader": "entity.fund",
+      "reason": "O corpus trata Mutual Fund como veículo coletivo de investimento, contrastado com Hedge Fund dentro do mesmo genus. `01-investimentos-no-exterior.md` Linha 478: \"ao contrário dos Mutual Funds, em que um investidor pode optar por vender suas [cotas] a qualquer momento e resgatar seus recursos, os Hed"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.open_class",
+      "broader": "entity.class",
+      "reason": "Hiponímia textual (genus + differentia) na própria fonte. 04-resolucao-cvm-175-fundos-de-investimento.md Linha 94: \"**Classe Aberta:** classe cujo regulamento admite que as cotas sejam resgatadas pelos cotistas a qualquer momento\" — o genus declarado é literalmente `classe`, e a differentia é o resg"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.pension_class",
+      "broader": "entity.class",
+      "reason": "Espécie de classe por destinação, mesma construção das demais espécies do capítulo. 04-resolucao-cvm-175-fundos-de-investimento.md Linha 999: \"Considera-se 'Previdenciária' a classe ou subclasse constituída para a aplicação de recursos de: entidades abertas ou fechadas de previdência privada; regime"
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.treasury_security",
+      "broader": "entity.security",
+      "reason": "Aqui o broader é o genus genérico `título` (\"A tradable financial instrument representing a claim on an issuer\"), não a categoria regulatória — e o corpus afirma o IS-A explicitamente. 01-investimentos-no-exterior.md Linha 15: \"Os famosos Bonds, nada mais são do que **títulos** emitidos por um país "
+    },
+    {
+      "op": "link_broader",
+      "concept": "entity.us_fixed_income_security",
+      "broader": "entity.fixed_income",
+      "reason": "Contenção analítica: a restrição é jurisdicional e composicional, não um regime renomeado. O próprio material classifica cada instrumento do capítulo internacional como título de renda fixa — 01-investimentos-no-exterior.md:280, cuja coluna se chama 'TÍTULO DE RENDA FIXA' e lista T-BILLS, T-NOTES, T"
+    },
+    {
+      "op": "link_broader",
+      "concept": "quantity.after_tax_return",
+      "broader": "quantity.return",
+      "reason": "Hiponímia por qualificação do mesmo mensurando, com o núcleo `retorno` preservado e o corpus derivando um do outro. 01-investimentos-no-exterior.md Linha 322: \"O RETORNO LÍQUIDO DE IMPOSTOS é calculado a partir da aplicação da alíquota de imposto sobre o ganho bruto. Por exemplo, se um investidor ob"
+    },
+    {
+      "op": "link_broader",
+      "concept": "quantity.future_value",
+      "broader": "quantity.value",
+      "reason": "Espécie canônica de `valor`, diferenciada pela data de referência, e o corpus a apresenta em paridade explícita com Valor Presente. 08-gestao-de-carteiras-de-renda-fixa.md Linha 77: \"## Valor Presente, Valor Futuro e YTM\"; Linha 83, a tabela põe a coluna \"FLUXO\\n(Valor Futuro)\" contra as colunas \"VA"
+    },
+    {
+      "op": "link_broader",
+      "concept": "quantity.recovery_rate",
+      "broader": "quantity.rate",
+      "reason": "Genus-species genuína, não trap lexical. O corpus usa a Taxa de Recuperação sempre como RAZÃO percentual entre valor recuperado e exposição: `06-gestao-de-riscos.md:918` — \"O banco perderia R$ 100.000 do total de R$ 500.000,00 do valor de sua exposição, isto é, 20% (LGD). A Taxa de Recuperação seria"
+    },
+    {
+      "op": "link_broader",
+      "concept": "quantity.tax_rate",
+      "broader": "quantity.rate",
+      "reason": "Aceito apesar de `alíquota` e `taxa` serem palavras diferentes em PT — hierarquia é entre CONCEITOS, e o conceito alíquota satisfaz integralmente a definição do broader. `05-legislacao-regulacao-e-tributacao.md:1213` — \"O IR na fonte incidirá ... à alíquota de 15% sobre o rendimento produzido ... e "
+    },
+    {
+      "op": "link_broader",
+      "concept": "reasoning.hidden_premise",
+      "broader": "reasoning.premise",
+      "reason": "Hiponímia canônica: genus `premissa` + differentia `não dita`. O corpus de origem do concept (`corpus:REASONING_SKILLS_CONSOLIDATED.md`, autoridade declarada no registry) prova isso literalmente em `reasoning-skills-md/REASONING_SKILLS_CONSOLIDATED.md:3131` — \"Essas são as premissas ocultas: ideias "
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.counterparty",
+      "broader": "risk.financial",
+      "reason": "`06-gestao-de-riscos.md:842` — \"O Risco de Contraparte refere-se à possibilidade de um dos envolvidos em uma transação não cumprir sua obrigação contratual e está presente em praticamente todas as formas de concessão de crédito, sendo também comum em investimentos e transações como um todo\". A forma"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.credit",
+      "broader": "risk.financial",
+      "reason": "O corpus enumera o narrower dentro do genus, com o quantificador explícito: `06-gestao-de-riscos.md:740` — \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" seguido de `06:744` — \"- Risco de Crédito;\" (repetido em `08-gestao-de-carteiras-de-renda-f"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.early_redemption",
+      "broader": "risk.financial",
+      "reason": "Listado nominalmente como espécie: `06-gestao-de-riscos.md:740` \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" → `06:747` \"- Risco de Resgate Antecipado;\", replicado em `08-gestao-de-carteiras-de-renda-fixa.md:335` → `:342`. `06:788` confirma a "
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.event",
+      "broader": "risk.financial",
+      "reason": "`06-gestao-de-riscos.md:740` + `06:750` colocam \"- Risco de Evento; e\" dentro da lista \"diversos tipos de riscos financeiros\" — declaração de tipo feita pelo próprio material. A definição em `06:817` — \"Em termos gerais, o risco de evento é a possibilidade de um evento imprevisto afetar negativament"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.inflation",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína, atestada pelo corpus. `06-gestao-de-riscos.md:740` abre a lista \"Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:\" e `:748` traz \"Risco de Inflação\" como item dessa lista — o material classifica o narrower como ESPÉCIE do genus, n"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.liquidity",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:743` lista \"Risco de Liquidez\" sob o cabeçalho de `:740` (\"tipos de riscos financeiros\"), e `08-gestao-de-carteiras-de-renda-fixa.md:339` repete a mesma classificação na lista de `:335`. Definição do corpus em `06-gestao-de-riscos.md:184`: \"Trata-se da DIFI"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.market",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína e canônica no material. `06-gestao-de-riscos.md:742` lista \"Risco de Mercado\" como primeiro dos \"tipos de riscos financeiros\" de `:740`; `08-gestao-de-carteiras-de-renda-fixa.md:337` idem. `06-gestao-de-riscos.md:129`: \"RISCO DE MERCADO, também conhecido como RISCO SISTÊMICO, se ca"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.reinvestment",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:746` lista \"Risco de Reinvestimentos\" entre os \"tipos de riscos financeiros\" de `:740`; `08-gestao-de-carteiras-de-renda-fixa.md:341` repete. Def do corpus em `06-gestao-de-riscos.md:771`: \"o risco de não conseguir reinvestir o dinheiro, em taxas melhores o"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.sovereign",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína. `06-gestao-de-riscos.md:751` fecha a lista de \"tipos de riscos financeiros\" (`:740`) com \"Risco Soberano\". `:827`: \"O Risco Soberano é a chance de um governo não honrar com o pagamento de sua dívida (chamada Soberana), ou mesmo implemente regras ou restrições cambiais que dificult"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.systematic",
+      "broader": "risk.financial",
+      "reason": "Hiponímia genuína; a suspeita de homonímia sistêmico×sistemático não se sustenta neste corpus. `06-gestao-de-riscos.md:398`: \"Risco sistêmico (risco NÃO DIVERSIFICÁVEL): Ele é o risco gerado pelos sistemas econômico, político e social, no qual impacta a economia como um todo ... Não pode ser evitado"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.unsystematic",
+      "broader": "risk.financial",
+      "reason": "06-gestao-de-riscos.md Linha 396 e 402: 'Podemos destrinchar o risco total de um investimento, dois grandes grupos' / 'Risco não-sistêmico (risco DIVERSIFICÁVEL ou próprio): Este é o risco individual do ativo ou do seu setor... Exemplos: risco de crédito ou de liquidez de uma companhia.' O corpus no"
+    },
+    {
+      "op": "link_broader",
+      "concept": "risk.volatility",
+      "broader": "risk.financial",
+      "reason": "06-gestao-de-riscos.md Linha 740 abre a lista com 'Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:' e Linha 749 traz 'Risco de Volatilidade;' dentro dessa mesma lista. Subsunção declarada no texto: o corpus classifica o Risco de Volatilidade como u"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.alternative_indexing",
+      "broader": "technical.indexing",
+      "reason": "02-gestao-de-carteiras-renda-variavel.md Linha 375: 'há três métodos chamados alternativos de indexação. Ou seja, através deles, o gestor consegue implementar uma estratégia passiva visando a acompanhar determinado índice de referência' — Full Replication, Amostragem Estratificada e Otimização (Linh"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.analytical_var",
+      "broader": "technical.var",
+      "reason": "06-gestao-de-riscos.md Linha 439: 'Há três principais formas de calcular o VaR: Analítico ou Paramétrico; Histórico; e Monte Carlo.' e a seção 'Value-at-Risk (VaR) Analítico ou Paramétrico' (Linha 453) traz a fórmula VaR = V0 × a × DP × √t (Linha 466ss), ou seja, produz um VaR. O narrower é uma das "
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.asset_pricing",
+      "broader": "technical.pricing",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 15 ('A precificação de títulos de renda fixa ... baseia-se em calcular o valor presente de todos os recebimentos') e as seções 'Precificação de Ativos' (Linhas 115, 135, 177, 197, 239...) onde o exercício é achar o preço justo de LTN, LFT e o YTM de debê"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.benchmark_relative_management",
+      "broader": "technical.fixed_income_portfolio_management",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linha 7 ('Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado (Benchmark)') é uma subdivisão coordenada com Linha 63 ('Gestão de Carteiras de Renda Fixa em Relação a Passivos') e Linha 304 ('Outras Estratégias de Gestão de Carteiras de Renda "
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.benchmark_var",
+      "broader": "technical.var",
+      "reason": "Genus-species genuíno, afirmado literalmente pelo corpus. 06-gestao-de-riscos.md:599: \"O Benchmark VaR, ou simplesmente B-VaR, calcula exatamente o mesmo que o VaR: a perda máxima de um ativo ou carteira. A diferença é que, no B-Var, a perda máxima calculada é aquela além de um índice de referência "
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.cds",
+      "broader": "technical.swap",
+      "reason": "O corpus faz a afirmação de tipo explicitamente: 02-gestao-de-carteiras-renda-variavel.md:235-238 — \"Podem ser realizados diversos tipos de contratos de swap: - Swap de Juros...; - Swap de Moeda...; - Swap de Crédito (CDS – Credit Default Swap: 'seguro contra calote'); - Swap de Índice de Preços\". R"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.credit_spread",
+      "broader": "technical.spread",
+      "reason": "01-investimentos-no-exterior.md:314 — \"Os Yield Spreads são comumente cotados em termos de um rendimento versus o rendimento dos títulos do Tesouro dos EUA, sendo chamado nesse caso de spread de crédito\": o corpus define o spread de crédito como o caso particular do spread cotado contra a referência"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.current_yield",
+      "broader": "technical.yield",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md:63 abre a seção \"Medidas de Retorno de Renda Fixa\", onde 08:69-71 enumera YTM e Current Yield como metodologias alternativas da MESMA medida (\"Esta metodologia é mais precisa que o Current Yield\"); 01-investimentos-no-exterior.md:288-302 lista CY ao lado de YT"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.derivative_risk",
+      "broader": "risk.financial",
+      "reason": "06-gestao-de-riscos.md:957-967 — cabeçalho \"## Riscos de Derivativos\" seguido de \"Podemos elencar os seguintes riscos associados a operações com derivativos: - Taxa de juros - De Base - De Financiamento - De Crédito - De Liquidez - De Volatilidade\", categoria enumerada no mesmo nível de \"Risco Opera"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.dividend_yield",
+      "broader": "technical.yield",
+      "reason": "03-gestao-de-carteiras-renda-variavel-2.md:123 — \"empresas com o estilo de Alto Dividend Yield, que pagam dividendos acima da média de mercado\": é razão renda distribuída/preço, taxa anual percentual do retorno que o instrumento produz, mesma forma estrutural do current yield aceito (cupom anual ÷ v"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.effective_duration",
+      "broader": "technical.duration",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 540 afirma o genus explicitamente: \"A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas\". O corpus trata Duration como família e enumera as espécies em seções irmãs sob o mesmo tópico \"Risco de Taxa de Juros\": Dur"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.enhanced_indexing",
+      "broader": "technical.indexing",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linhas 17-19 enumeram três estratégias contra benchmark: \"Indexação Pura; Indexação Reforçada (Enhanced Indexing); e Gestão Ativa\" — a Reforçada carrega o núcleo \"Indexação\" e é oposta à Gestão Ativa, não uma espécie dela. A Linha 41 prova o tracking constit"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.enterprise_risk_management",
+      "broader": "technical.risk_management",
+      "reason": "06-gestao-de-riscos.md Linha 35 define ERM como um dos dois modos de gestão de risco: \"Centralizado: também chamado de Enterprise Risk Management (ERM), que confere a execução da gestão de risco a uma unidade central da empresa, permitindo uma visão mais ampla do risco total corrido pela companhia\","
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.esg_private_credit",
+      "broader": "technical.private_credit",
+      "reason": "09-gestao-de-carteiras-de-renda-fixa-2.md Linha 429 (seção \"Crédito Privado ASG\", Linha 425) descreve o ativo subjacente como subconjunto filtrado: \"investe em títulos de renda fixa privada de empresas que se destacam por práticas Ambientais, Sociais e de Governança (ASG)\", e a Linha 433 confirma o "
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.fixed_income_pricing",
+      "broader": "technical.pricing",
+      "reason": "08-gestao-de-carteiras-de-renda-fixa.md Linha 15 define a espécie como o ato genérico restrito a uma classe de instrumento: \"A precificação de títulos de renda fixa... baseia-se em calcular o valor presente de todos os recebimentos e soma-los\", que é exatamente determinar o valor justo do instrument"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.historical_var",
+      "broader": "technical.var",
+      "reason": "06-gestao-de-riscos.md Linhas 439-443 enumeram o genus e suas espécies explicitamente: \"Há três principais formas de calcular o VaR: - Analítico ou Paramétrico; - Histórico; e - Monte Carlo\". A Linha 510 confirma que o Histórico é apenas o método de estimação, com o mesmo output do genus definido na"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.institutional_risk_management",
+      "broader": "technical.risk_management",
+      "reason": "Restrição de locus dentro do mesmo genus, não relação de assunto. O corpus trata a seção como o MESMO processo aplicado no nível da firma: 06-gestao-de-riscos.md Linha 92 põe '## Gestão de Risco em Instituições' sob '## Fundamentos da Gestão de Riscos' (Linha 90) e a Linha 94 abre com 'A implementaç"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.integrated_risk_management",
+      "broader": "technical.risk_management",
+      "reason": "Restrição de modo (holística/institucional vs. desk a desk) do mesmo genus. 06-gestao-de-riscos.md Linha 72 coloca '## Gestão Integrada de Risco' sob '## Fundamentos da Gestão de Riscos' (Linha 70), e a Linha 82 lista as ferramentas dela — 'Análise de Cenários', 'Teste de Estresse', 'Simulação de Mo"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.interest_rate_risk",
+      "broader": "risk.financial",
+      "reason": "O corpus faz a afirmação de tipo explicitamente. 08-gestao-de-carteiras-de-renda-fixa.md Linha 335: 'Os investimentos de renda fixa possuem diversos tipos de riscos financeiros, sendo seus principais:' seguido da Linha 338 '- Risco de Taxa de Juros;' — o material enumera o narrower como um dos tipos"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.jensen_alpha",
+      "broader": "technical.alpha",
+      "reason": "Espécie por operacionalização do modelo (CAPM), com o mesmo referente do genus. 07-avaliacao-de-desempenho.md Linha 707: 'O Alfa de Jensen é um indicador para determinar o rendimento real da carteira comparado ao retorno exigido do investidor em relação ao risco sistêmico. Ou seja, o quanto a mais o"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.key_rate_duration",
+      "broader": "technical.duration",
+      "reason": "O corpus usa 'duration' como família de medidas de sensibilidade e coloca a KRD dentro dela. 09-gestao-de-carteiras-de-renda-fixa-2.md Linha 45-46 lista as exposições a casar como '- Duration Modificada;' e '- Key Rate Duration (falaremos mais à frente sobre esse ponto);' — mesmo plano, mesma famíli"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.population_variance",
+      "broader": "technical.variance",
+      "reason": "Espécie legítima por denominador, com o corpus apresentando as duas formas sob o MESMO genus: 06-gestao-de-riscos.md:364-370 'FÓRMULAS: VARIÂNCIA POPULACIONAL σ² = Σ(x−x̄)²/n' contra 06:372-375 'VARIÂNCIA AMOSTRAL σ² = Σ(xi−x̄)²/(n−1)'. O passo-a-passo 06:272 ('Calcular a média desses números que fo"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.portfolio_duration",
+      "broader": "technical.duration",
+      "reason": "Mesma grandeza e mesma unidade, aplicada a um conjunto de títulos. 08-gestao-de-carteiras-de-renda-fixa.md:578 'estamos fazendo a média ponderada das durations dos títulos de renda fixa que a compõem'; 08:580 'Duration_Carteira = m1D1 + m2D2 + ... + mnDn'; 08:590 resultado '(0,6×4,0)+(0,4×8,0) = 5,6"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.premium_price",
+      "broader": "technical.premium",
+      "reason": "O corpus rotula explicitamente o ágio como um prêmio: 08-gestao-de-carteiras-de-renda-fixa.md:89 'ÁGIO (prêmio): O título está \"mais caro\" do que quando foi emitido', com 08:91 'Preço de mercado maior que o valor nominal' — ou seja, o caso 'bond trading above par' que a própria def do broader nomeia"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.pricing_policy",
+      "broader": "technical.asset_pricing",
+      "reason": "O corpus prova que \"apreçamento\" é o ATO de precificar ativos, não um documento nem um regime nomeado. 04-resolucao-cvm-175-fundos-de-investimento.md Linha 675: \"Responsável pela marcação a mercado (apreçamento de ativos)\" — equação explícita apreçamento = marcação a mercado de ativos. 11-codigo-anb"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.pricing_policy",
+      "broader": "technical.pricing",
+      "reason": "Mesma subsunção contra o genus mais amplo. O broader é \"determinar o valor justo de um instrumento\", e 11-codigo-anbima-administracao-e-gestao.md Linha 253 impõe ao apreçamento exatamente isso: \"garantir que os preços reflitam o valor justo e, na impossibilidade disso, despender seus melhores esforç"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.pure_indexing",
+      "broader": "technical.indexing",
+      "reason": "Espécie declarada no corpus: 09-gestao-de-carteiras-de-renda-fixa-2.md:15-19 'A Gestão de Carteiras de Renda Fixa em relação a um benchmark pode ser decomposta em três principais estratégias: Indexação Pura; Indexação Reforçada (Enhanced Indexing); e Gestão Ativa' — Indexação Pura e Reforçada são as"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.quantitative_arbitrage",
+      "broader": "technical.arbitrage",
+      "reason": "O corpus enuncia o genus dentro da própria definição do narrower: 03-gestao-de-carteiras-renda-variavel-2.md:236 'a estratégia Quantitative Arbitrage refere-se à arbitragem entre ativos utilizando métodos quantitativos' — genus = arbitragem, differentia = método. As irmãs confirmam a partição por mé"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.risk_adjusted_appraisal",
+      "broader": "technical.performance_appraisal",
+      "reason": "O corpus aninha literalmente os dois: 07-avaliacao-de-desempenho.md:701 abre '## Avaliação de Desempenho (Performance Appraisal)' e a linha 703 imediatamente seguinte é '## Avaliação de Desempenho ajustada ao risco', com Alfa de Jensen, Sharpe, Treynor, IR e M2 dentro dessa seção. Núcleo nominal pre"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.sample_variance",
+      "broader": "technical.variance",
+      "reason": "06-gestao-de-riscos.md:364-376 traz '## FÓRMULAS:' com duas co-espécies irmãs sob o mesmo gênero: '### VARIÂNCIA POPULACIONAL' (÷n, linha 366/369) e '### VARIÂNCIA AMOSTRAL' (÷(n-1), linha 372/375). 06:304 confirma que a amostral é a mesma grandeza com outro divisor ('ao invés de calcular a média da"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.tax_reclassification",
+      "broader": "technical.mandate_breach",
+      "reason": "O corpus trata o tributário como espécie do mesmo evento, com o mesmo núcleo lexical e morfológico. 05-legislacao-regulacao-e-tributacao.md:1193 titula '## Desenquadramento Tributário' e 1195 explica que a mudança de alíquota 'ocorre por desenquadramento das devidas regras'; 1211 descreve o fato ger"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.total_return_equity_swap",
+      "broader": "technical.swap",
+      "reason": "IS-A explícito no corpus: 02-gestao-de-carteiras-renda-variavel.md:293 — 'Um Total Return Equity Swap (TRES) É UM ACORDO DE SWAP em que uma parte faz pagamentos com base em uma taxa definida, fixa ou variável, enquanto a outra parte faz pagamentos com base no retorno de um ativo subjacente'. 02:297 "
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.valid_benchmark",
+      "broader": "technical.benchmark",
+      "reason": "Qualificação restritiva sobre o mesmo núcleo, atestada pelo corpus: 07-avaliacao-de-desempenho.md:300 titula '## Benchmark válido' e 07:316 enuncia 'São 7 as principais características que TORNAM VÁLIDO UM BENCHMARK' (especificado antecipadamente, adequado, mensurável, sem ambiguidade, reflete opini"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.yield_spread",
+      "broader": "technical.spread",
+      "reason": "01-investimentos-no-exterior.md:310 define por gênero e diferença: 'Um Yield Spread, ou Spread de Rendimento, É A DIFERENÇA entre os rendimentos de diferentes instrumentos de dívida com diferentes vencimentos, classificações de crédito, emissores ou níveis de risco' — encaixa integralmente na def do"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.yield_to_call",
+      "broader": "technical.yield",
+      "reason": "Hiponímia genuína: mesmo genus (taxa de retorno anualizada do título), differentia = horizonte assumido na primeira chamada. 01-investimentos-no-exterior.md:298 — 'YTC: É a taxa interna de retorno (TIR) que o investidor recebe até o momento em que o emissor exerce o direito de comprar de volta o tít"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.yield_to_put",
+      "broader": "technical.yield",
+      "reason": "Hiponímia genuína, simétrica ao YTC. 01-investimentos-no-exterior.md:300 define YTP como 'a taxa interna de retorno (TIR) que o investidor recebe até o momento em que ele exerce o direito de vender de volta o título', listada sob '## Medidas de Retorno' (:296) junto de YTM e Current Yield, cujo padr"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.yield_to_worst",
+      "broader": "technical.yield",
+      "reason": "O próprio corpus chama YTW de rendimento e o define como um dos yields do conjunto, não como outra coisa. 01-investimentos-no-exterior.md:302 — 'Yield to Worst (YTW): É o rendimento no pior cenário, isto é, a taxa interna de retorno (TIR) que o investidor obterá ao comprar um título com opção de com"
+    },
+    {
+      "op": "link_broader",
+      "concept": "technical.ytm",
+      "broader": "technical.yield",
+      "reason": "Hiponímia estrita: YTM é um membro coordenado da família de medidas de rendimento, sob o genus 'yield'. 08-gestao-de-carteiras-de-renda-fixa.md:63 abre a seção '## Medidas de Retorno de Renda Rixa' e 08:69 registra 'Yield to Maturity (YTM): É a taxa interna de retorno (TIR) dada ai ano dos fluxos de"
+    }
+  ]
+}

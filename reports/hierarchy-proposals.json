@@ -1,41 +1,10 @@
 {
-  "bidirectional_pairs": [
-    [
-      "entity.class",
-      "entity.position"
-    ],
-    [
-      "entity.currency",
-      "entity.money"
-    ],
-    [
-      "entity.income_tax",
-      "entity.tax"
-    ],
-    [
-      "technical.duration",
-      "technical.macaulay_duration"
-    ]
-  ],
+  "bidirectional_pairs": [],
   "by_confidence": {
-    "1": 172
+    "1": 103
   },
   "concepts_scanned": 533,
   "edges": [
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "actor.portfolio_manager",
-      "confidence": 1,
-      "narrower": "actor.administrator",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'administrador' has hypernym 'gestor'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
     {
       "agreeing_signals": [
         "lexical-containment"
@@ -80,20 +49,6 @@
     },
     {
       "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "actor.company",
-      "confidence": 1,
-      "narrower": "actor.institution",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'instituição' has hypernym 'empresa'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
         "lexical-containment"
       ],
       "broader": "actor.company",
@@ -124,124 +79,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "entity.resource",
-      "confidence": 1,
-      "narrower": "artifact.anbima_third_party_code",
-      "signals": [
-        {
-          "evidence": "'Administração de Recursos de Terceiros' contains 'recursos' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.credit",
-      "confidence": 1,
-      "narrower": "artifact.fund_documents",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'Documentos' has hypernym 'crédito'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.fund",
-      "confidence": 1,
-      "narrower": "artifact.fund_documents",
-      "signals": [
-        {
-          "evidence": "'fund documents' contains 'fund' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.information",
-      "confidence": 1,
-      "narrower": "artifact.key_information_sheet",
-      "signals": [
-        {
-          "evidence": "'key information sheet' contains 'information' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "condition.if",
       "confidence": 1,
       "narrower": "condition.only_if",
       "signals": [
         {
-          "evidence": "'somente se' contains 'se' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.cost",
-      "confidence": 1,
-      "narrower": "entity.asset",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'custo'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.credit",
-      "confidence": 1,
-      "narrower": "entity.asset",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'crédito'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.money",
-      "confidence": 1,
-      "narrower": "entity.asset",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'ativo' has hypernym 'dinheiro'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.asset",
-      "confidence": 1,
-      "narrower": "entity.asset_class",
-      "signals": [
-        {
-          "evidence": "'asset class' contains 'asset' as whole tokens",
+          "evidence": "'only if' contains 'if' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -278,124 +121,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "entity.market",
-      "confidence": 1,
-      "narrower": "entity.broad_market_index",
-      "signals": [
-        {
-          "evidence": "'Índices Amplos de Mercado' contains 'mercado' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.cash",
-      "confidence": 1,
-      "narrower": "entity.cash_flow",
-      "signals": [
-        {
-          "evidence": "'fluxo de caixa' contains 'caixa' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.market",
-      "confidence": 1,
-      "narrower": "entity.class",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'classe' has hypernym 'mercado'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.share",
-      "confidence": 1,
-      "narrower": "entity.class",
-      "signals": [
-        {
-          "evidence": "'share class' contains 'share' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "entity.class",
       "confidence": 1,
       "narrower": "entity.closed_class",
       "signals": [
         {
           "evidence": "'classe fechada' contains 'classe' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.service",
-      "confidence": 1,
-      "narrower": "entity.cost",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'custo' has hypernym 'serviço'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.fund",
-      "confidence": 1,
-      "narrower": "entity.currency",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'moeda' has hypernym 'fundo'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.currency",
-      "confidence": 1,
-      "narrower": "entity.currency_class",
-      "signals": [
-        {
-          "evidence": "'currency class' contains 'currency' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.currency",
-      "confidence": 1,
-      "narrower": "entity.currency_fund",
-      "signals": [
-        {
-          "evidence": "'currency fund' contains 'currency' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -411,34 +142,6 @@
         {
           "evidence": "'currency fund' contains 'fund' as whole tokens",
           "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.credit",
-      "confidence": 1,
-      "narrower": "entity.debt",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'dívida' has hypernym 'crédito'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.tax",
-      "confidence": 1,
-      "narrower": "entity.debt",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'dívida' has hypernym 'imposto'",
-          "signal": "wordnet-hypernym"
         }
       ]
     },
@@ -502,40 +205,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "entity.fixed_income",
-      "confidence": 1,
-      "narrower": "entity.fixed_income_fund",
-      "signals": [
-        {
-          "evidence": "'fundos de renda fixa' contains 'renda fixa' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "entity.fund",
       "confidence": 1,
       "narrower": "entity.fixed_income_fund",
       "signals": [
         {
           "evidence": "'fixed income fund' contains 'fund' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.fixed_income",
-      "confidence": 1,
-      "narrower": "entity.fixed_income_security",
-      "signals": [
-        {
-          "evidence": "'Título de Renda Fixa' contains 'renda fixa' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -560,38 +235,10 @@
       ],
       "broader": "entity.fund",
       "confidence": 1,
-      "narrower": "entity.fund_charges",
-      "signals": [
-        {
-          "evidence": "'fund charges' contains 'fund' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.fund",
-      "confidence": 1,
       "narrower": "entity.fund_of_funds",
       "signals": [
         {
           "evidence": "'fundo de fundos' contains 'fundo' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.fund",
-      "confidence": 1,
-      "narrower": "entity.fund_share",
-      "signals": [
-        {
-          "evidence": "'fund share' contains 'fund' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -628,12 +275,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "entity.market",
+      "broader": "entity.tax",
       "confidence": 1,
-      "narrower": "entity.index",
+      "narrower": "entity.income_tax",
       "signals": [
         {
-          "evidence": "'market index' contains 'market' as whole tokens",
+          "evidence": "'imposto de renda' contains 'imposto' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -663,20 +310,6 @@
         {
           "evidence": "'Bolsa de Valores Internacionais' contains 'bolsa de valores' as whole tokens",
           "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.fund",
-      "confidence": 1,
-      "narrower": "entity.money",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'dinheiro' has hypernym 'fundo'",
-          "signal": "wordnet-hypernym"
         }
       ]
     },
@@ -740,34 +373,6 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "entity.share",
-      "confidence": 1,
-      "narrower": "entity.pension_class",
-      "signals": [
-        {
-          "evidence": "'pension share class' contains 'share' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.scenario",
-      "confidence": 1,
-      "narrower": "entity.premise",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'premissa' has hypernym 'cenário'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "entity.securities",
       "confidence": 1,
       "narrower": "entity.private_security",
@@ -775,108 +380,6 @@
         {
           "evidence": "'private securities' contains 'securities' as whole tokens",
           "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.cost",
-      "confidence": 1,
-      "narrower": "entity.resource",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'custo'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.credit",
-      "confidence": 1,
-      "narrower": "entity.resource",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'crédito'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.money",
-      "confidence": 1,
-      "narrower": "entity.resource",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'recursos' has hypernym 'dinheiro'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.position",
-      "confidence": 1,
-      "narrower": "entity.service",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'serviço' has hypernym 'posição'",
-          "signal": "wordnet-hypernym"
-        },
-        {
-          "evidence": "own-pt:1.0.0: 'serviço' has hypernym 'posição'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "entity.distribution",
-      "confidence": 1,
-      "narrower": "entity.share",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'ação' has hypernym 'distribuição'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.share",
-      "confidence": 1,
-      "narrower": "entity.subclass",
-      "signals": [
-        {
-          "evidence": "'share subclass' contains 'share' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "definition-subsumption"
-      ],
-      "broader": "entity.treasury_note",
-      "confidence": 1,
-      "narrower": "entity.treasury_bond",
-      "signals": [
-        {
-          "evidence": "every content word of entity.treasury_note's definition appears in entity.treasury_bond's",
-          "signal": "definition-subsumption"
         }
       ]
     },
@@ -890,20 +393,6 @@
       "signals": [
         {
           "evidence": "'título do tesouro' contains 'título' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "entity.fixed_income",
-      "confidence": 1,
-      "narrower": "entity.us_fixed_income_security",
-      "signals": [
-        {
-          "evidence": "'Títulos Americanos de Renda Fixa' contains 'renda fixa' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -966,34 +455,6 @@
     },
     {
       "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "quantity.value",
-      "confidence": 1,
-      "narrower": "quantity.measure",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'medida' has hypernym 'valor'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "quantity.rate",
-      "confidence": 1,
-      "narrower": "quantity.price",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'preço' has hypernym 'taxa'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
         "lexical-containment"
       ],
       "broader": "quantity.rate",
@@ -1022,24 +483,6 @@
     },
     {
       "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "quantity.price",
-      "confidence": 1,
-      "narrower": "quantity.value",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'valor' has hypernym 'preço'",
-          "signal": "wordnet-hypernym"
-        },
-        {
-          "evidence": "own-pt:1.0.0: 'valor' has hypernym 'preço'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
         "lexical-containment"
       ],
       "broader": "quantity.value",
@@ -1054,34 +497,6 @@
     },
     {
       "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "quantity.difference",
-      "confidence": 1,
-      "narrower": "quantity.variation",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'variação' has hypernym 'diferença'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "quantity.increase",
-      "confidence": 1,
-      "narrower": "quantity.variation",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'variação' has hypernym 'aumento'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
         "lexical-containment"
       ],
       "broader": "reasoning.premise",
@@ -1090,34 +505,6 @@
       "signals": [
         {
           "evidence": "'premissa oculta' contains 'premissa' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "reasoning.analogy",
-      "confidence": 1,
-      "narrower": "reasoning.reasoning",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'raciocínio' has hypernym 'analogia'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "reasoning.reasoning",
-      "confidence": 1,
-      "narrower": "reasoning.reasoning_skills",
-      "signals": [
-        {
-          "evidence": "'reasoning skills' contains 'reasoning' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1308,20 +695,6 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "risk.systematic",
-      "confidence": 1,
-      "narrower": "risk.unsystematic",
-      "signals": [
-        {
-          "evidence": "'risco não sistêmico' contains 'risco sistêmico' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "risk.financial",
       "confidence": 1,
       "narrower": "risk.volatility",
@@ -1350,26 +723,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.active_strategy",
-      "confidence": 1,
-      "narrower": "technical.agnostic_strategy",
-      "signals": [
-        {
-          "evidence": "'Outras Estratégias Ativas e Agnósticas' contains 'estratégias ativas' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.indexing",
       "confidence": 1,
       "narrower": "technical.alternative_indexing",
       "signals": [
         {
-          "evidence": "'métodos alternativos de indexação' contains 'indexação' as whole tokens",
+          "evidence": "'alternative indexing' contains 'indexing' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1406,54 +765,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.benchmark",
-      "confidence": 1,
-      "narrower": "technical.benchmark_quality_test",
-      "signals": [
-        {
-          "evidence": "'Testes de Qualidade do Benchmark' contains 'benchmark' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.benchmark",
-      "confidence": 1,
-      "narrower": "technical.benchmark_relative_management",
-      "signals": [
-        {
-          "evidence": "'benchmark relative management' contains 'benchmark' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.fixed_income_portfolio_management",
       "confidence": 1,
       "narrower": "technical.benchmark_relative_management",
       "signals": [
         {
           "evidence": "'Gestão de Carteiras de Renda Fixa em Relação a um Índice de Mercado' contains 'gestão de carteiras de renda fixa' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.benchmark",
-      "confidence": 1,
-      "narrower": "technical.benchmark_type",
-      "signals": [
-        {
-          "evidence": "'benchmark types' contains 'benchmark' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1476,54 +793,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.var",
-      "confidence": 1,
-      "narrower": "technical.benchmark_var",
-      "signals": [
-        {
-          "evidence": "'benchmark var' contains 'VaR' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.swap",
       "confidence": 1,
       "narrower": "technical.cds",
       "signals": [
         {
           "evidence": "'credit default swap' contains 'swap' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.convexity",
-      "confidence": 1,
-      "narrower": "technical.convexity_adjustment",
-      "signals": [
-        {
-          "evidence": "'ajuste de convexidade' contains 'convexidade' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.risk_management",
-      "confidence": 1,
-      "narrower": "technical.credit_risk_measure",
-      "signals": [
-        {
-          "evidence": "'Gestão e Medidas de Risco de Crédito' contains 'gestão de risco' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1588,20 +863,6 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.discount",
-      "confidence": 1,
-      "narrower": "technical.discount_rate",
-      "signals": [
-        {
-          "evidence": "'discount rate' contains 'discount' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.yield",
       "confidence": 1,
       "narrower": "technical.dividend_yield",
@@ -1621,7 +882,7 @@
       "narrower": "technical.dollar_duration",
       "signals": [
         {
-          "evidence": "'Dollar Duration' contains 'duration' as whole tokens",
+          "evidence": "'dollar duration' contains 'duration' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1686,40 +947,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.esg",
-      "confidence": 1,
-      "narrower": "technical.esg_private_credit",
-      "signals": [
-        {
-          "evidence": "'Crédito Privado ASG' contains 'ASG' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.private_credit",
       "confidence": 1,
       "narrower": "technical.esg_private_credit",
       "signals": [
         {
           "evidence": "'Crédito Privado ASG' contains 'crédito privado' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.yield_curve",
-      "confidence": 1,
-      "narrower": "technical.expected_curve_behaviour",
-      "signals": [
-        {
-          "evidence": "'Comportamento esperado da curva de juros' contains 'curva de juros' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1803,7 +1036,7 @@
       "narrower": "technical.integrated_risk_management",
       "signals": [
         {
-          "evidence": "'Gestão Integrada de Risco' contains 'gestão de risco' as whole tokens",
+          "evidence": "'integrated risk management' contains 'risk management' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1854,54 +1087,26 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.liquidity",
-      "confidence": 1,
-      "narrower": "technical.liquidity_management",
-      "signals": [
-        {
-          "evidence": "'gestão de liquidez' contains 'liquidez' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.liquidity",
-      "confidence": 1,
-      "narrower": "technical.liquidity_preference_theory",
-      "signals": [
-        {
-          "evidence": "'Preferência pela Liquidez' contains 'liquidez' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.liquidity",
-      "confidence": 1,
-      "narrower": "technical.liquidity_premium",
-      "signals": [
-        {
-          "evidence": "'prêmio pela liquidez' contains 'liquidez' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.premium",
       "confidence": 1,
       "narrower": "technical.liquidity_premium",
       "signals": [
         {
           "evidence": "'prêmio pela liquidez' contains 'prêmio' as whole tokens",
+          "signal": "lexical-containment"
+        }
+      ]
+    },
+    {
+      "agreeing_signals": [
+        "lexical-containment"
+      ],
+      "broader": "technical.duration",
+      "confidence": 1,
+      "narrower": "technical.macaulay_duration",
+      "signals": [
+        {
+          "evidence": "'duration de macaulay' contains 'duration' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1930,20 +1135,6 @@
       "signals": [
         {
           "evidence": "'duration modificada' contains 'duration' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.option",
-      "confidence": 1,
-      "narrower": "technical.option_premium",
-      "signals": [
-        {
-          "evidence": "'prêmio da opção' contains 'opção' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -1999,35 +1190,7 @@
       "narrower": "technical.premium_or_discount",
       "signals": [
         {
-          "evidence": "'Títulos com Ágio ou Deságio' contains 'deságio' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.premium",
-      "confidence": 1,
-      "narrower": "technical.premium_or_discount",
-      "signals": [
-        {
-          "evidence": "'premium or discount' contains 'premium' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.premium_price",
-      "confidence": 1,
-      "narrower": "technical.premium_or_discount",
-      "signals": [
-        {
-          "evidence": "'Títulos com Ágio ou Deságio' contains 'ágio' as whole tokens",
+          "evidence": "'premium or discount' contains 'discount' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -2042,34 +1205,6 @@
       "signals": [
         {
           "evidence": "'price premium' contains 'premium' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.asset_pricing",
-      "confidence": 1,
-      "narrower": "technical.pricing_policy",
-      "signals": [
-        {
-          "evidence": "'asset pricing policy' contains 'asset pricing' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.pricing",
-      "confidence": 1,
-      "narrower": "technical.pricing_policy",
-      "signals": [
-        {
-          "evidence": "'asset pricing policy' contains 'pricing' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -2106,40 +1241,12 @@
       "agreeing_signals": [
         "lexical-containment"
       ],
-      "broader": "technical.rating",
-      "confidence": 1,
-      "narrower": "technical.rating_change_impact",
-      "signals": [
-        {
-          "evidence": "'Impactos na Mudança de Rating' contains 'rating' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
       "broader": "technical.performance_appraisal",
       "confidence": 1,
       "narrower": "technical.risk_adjusted_appraisal",
       "signals": [
         {
           "evidence": "'Avaliação de Desempenho ajustada ao risco' contains 'avaliação de desempenho' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.risk_management",
-      "confidence": 1,
-      "narrower": "technical.risk_management_fundamentals",
-      "signals": [
-        {
-          "evidence": "'risk management fundamentals' contains 'risk management' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -2155,20 +1262,6 @@
         {
           "evidence": "'Variância Amostral' contains 'variância' as whole tokens",
           "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "definition-subsumption"
-      ],
-      "broader": "technical.bacen",
-      "confidence": 1,
-      "narrower": "technical.selic",
-      "signals": [
-        {
-          "evidence": "every content word of technical.bacen's definition appears in technical.selic's",
-          "signal": "definition-subsumption"
         }
       ]
     },
@@ -2196,34 +1289,6 @@
       "signals": [
         {
           "evidence": "'spread duration' contains 'spread' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.principal",
-      "confidence": 1,
-      "narrower": "technical.strips",
-      "signals": [
-        {
-          "evidence": "'separate trading of registered interest and principal securities' contains 'principal' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.swap",
-      "confidence": 1,
-      "narrower": "technical.swap_leg",
-      "signals": [
-        {
-          "evidence": "'perna do swap' contains 'swap' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -2266,48 +1331,6 @@
       "signals": [
         {
           "evidence": "'Benchmark válido' contains 'benchmark' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.yield",
-      "confidence": 1,
-      "narrower": "technical.yield_curve",
-      "signals": [
-        {
-          "evidence": "'yield curve' contains 'yield' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.yield",
-      "confidence": 1,
-      "narrower": "technical.yield_curve_strategy",
-      "signals": [
-        {
-          "evidence": "'yield curve strategies' contains 'yield' as whole tokens",
-          "signal": "lexical-containment"
-        }
-      ]
-    },
-    {
-      "agreeing_signals": [
-        "lexical-containment"
-      ],
-      "broader": "technical.yield_curve",
-      "confidence": 1,
-      "narrower": "technical.yield_curve_strategy",
-      "signals": [
-        {
-          "evidence": "'yield curve strategies' contains 'yield curve' as whole tokens",
           "signal": "lexical-containment"
         }
       ]
@@ -2423,27 +1446,9 @@
           "signal": "lexical-containment"
         }
       ]
-    },
-    {
-      "agreeing_signals": [
-        "wordnet-hypernym"
-      ],
-      "broader": "temporal.term",
-      "confidence": 1,
-      "narrower": "temporal.period",
-      "signals": [
-        {
-          "evidence": "own-pt:1.0.0: 'período' has hypernym 'prazo'",
-          "signal": "wordnet-hypernym"
-        },
-        {
-          "evidence": "own-pt:1.0.0: 'período' has hypernym 'prazo'",
-          "signal": "wordnet-hypernym"
-        }
-      ]
     }
   ],
-  "edges_before_filters": 188,
+  "edges_before_filters": 103,
   "method": {
     "output": "PAIRS for an amendment to apply — the registry contract rejects a `broader` edge whose target lacks the matching `narrower`",
     "refusals": [
@@ -2451,12 +1456,14 @@
       "pairs proposed in both directions, which is similarity wearing a hierarchy costume"
     ],
     "signals": [
-      "lexical-containment (whole tokens, order preserved; direction fixed by length, not guessed)",
-      "wordnet-hypernym (the mislabelled 'synonyms' of the surface generator)",
-      "definition-subsumption (weak; reported for agreement)"
-    ]
+      "lexical-containment, whole tokens, order preserved, with the genus required to be the syntactic HEAD — head-initial in pt-BR, head-final in en"
+    ],
+    "signals_removed": {
+      "definition-subsumption": "2 proposals, both wrong; one contradicts a verdict already recorded in this repository",
+      "wordnet-hypernym": "25 proposals, 0 plausible; `administrador -> gestor` would invert a CVM 175 role distinction"
+    }
   },
-  "refused_as_bidirectional": 4,
+  "refused_as_bidirectional": 0,
   "refused_as_opposition": 0,
   "schema_version": "hierarchy-proposals-v1"
 }
