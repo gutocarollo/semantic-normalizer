@@ -445,6 +445,90 @@ encontrado; e matou `heurísticas` porque o corpus declara dois tipos e a defini
 
 ---
 
+## Manter o registry: sinonímia, oposição, hierarquia
+
+Construir o pack é metade do trabalho. A outra é o registry não apodrecer: conceitos redundantes
+fazendo o trabalho um do outro, oposições que uma reescrita pode atravessar, e a ausência de
+hierarquia. Três ferramentas fazem isso, todas **propondo** e nenhuma escrevendo.
+
+### O dado que governa as três
+
+Ranqueie os 598 conceitos por quanto suas definições se parecem. O topo da lista **não é sinônimo,
+é antônimo**:
+
+```
+1.00  state.enabled        ~ state.disabled        (ativado / desativado)
+0.78  technical.flattening ~ technical.steepening
+0.71  temporal.after       ~ temporal.before
+0.67  technical.call_option ~ technical.put_option
+0.67  actor.buyer          ~ actor.seller
+```
+
+O par de 1.00 explica o mecanismo. As definições são:
+
+```
+A state in which a function is     available for operation.
+A state in which a function is not available for operation.
+```
+
+O único token que as separa é **`not`** — três caracteres, descartado por qualquer lista de
+stopword e por qualquer filtro `len(palavra) > 3`. Antônimos dividem quase todo o contexto, porque
+são um predicado sobre argumentos invertidos. **Fundir por similaridade de definição juntaria put
+com call**, que é exatamente o defeito que este repositório já pagou: `technical.option` reunia os
+dois e 13 puts do corpus viraram calls.
+
+Daí o desenho: a medida que causaria a fusão catastrófica é usada **invertida**, como trava.
+
+### As quatro ferramentas, com o poder medido
+
+```bash
+python scripts/derive_antonyms.py --check
+python scripts/find_redundant_concepts.py --corpus <dir> --contexts <d> --output reports/r.json
+python scripts/link_hierarchy.py --contexts <d> --output reports/h.json
+python scripts/propose_surfaces_from_wordnet.py --corpus <dir> --contexts <d> --output reports/w.json
+```
+
+| ferramenta | poder MEDIDO, não alegado |
+|---|---|
+| `derive_antonyms` | 12 pares derivados, 11 fora da lista manual. Delta de reescritas: **zero**. Não bloqueia nada hoje e não pega nada hoje — é proteção para o próximo batch |
+| `find_redundant_concepts` | separou **1 par de 51** sozinho. `_rewrite_is_safe` é guard estrutural, não semântico; o bucket chama `needs_judgement` por isso |
+| `link_hierarchy` | 172 propostas mecânicas, **nenhuma aplicada**. As 6 arestas que entraram vieram do juiz de IA |
+| `propose_surfaces_from_wordnet` | precisão ~**1 em 12**. Gerador, nunca decisor |
+
+### O veredito sobre redundância, que responde a pergunta direta
+
+35 pares foram a um juiz adversarial com a pergunta **invertida** — *assuma que são o mesmo
+conceito e prove que não são*. Resultado, cada verdict com linha do corpus:
+
+```
+29 distintos · 6 hierarquia · ZERO iguais
+```
+
+**O registry não tem conceito redundante.** O que parecia redundância era ou dois referentes
+dividindo uma definição-template (`sharpe_ratio` ~ `treynor`: mesmo numerador, denominadores
+diferentes), ou gênero e espécie (`duration` ~ `macaulay_duration`).
+
+### Uma hipótese testada e refutada
+
+Antes de aceitar que o julgamento é caro, uma alternativa barata foi medida: sinônimos raramente
+dividem uma frase, então co-ocorrência marcaria o par como distinto. **Não separa.**
+`technical.bacen` ~ `technical.selic` co-ocorrem **0** vezes e são obviamente distintos;
+`technical.duration` ~ `technical.macaulay_duration` co-ocorrem **9** e são o par de hierarquia
+mais claro do conjunto. O número é reportado por par e nenhum corte age sobre ele.
+
+### Aplicar hierarquia é emenda, com as duas pontas
+
+```json
+{"op": "link_broader", "concept": "<o específico>", "broader": "<o gênero>"}
+```
+
+O contrato do registry recusa `broader` cujo alvo não declare o `narrower` correspondente, então a
+op escreve os dois lados de uma vez. Ela recusa aresta inversa, auto-aresta, alvo inexistente e
+duplicata. `technical.ytm` tem **dois** genera (`discount_rate` e `irr`), o que SKOS permite e o
+corpus sustenta.
+
+---
+
 ## O que é automático e o que não é
 
 | etapa | automático? |

@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "da05bf421891e6fd330cea528e2e246d392d40001b8c4024de75914740727a94",
+  "package_validation_sha256": "0053736f3405f202064b4bc1eea41648ac11c255c12a6fb0d8f8a8e114fa2fc4",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
-      "sha256": "198310a510b0734a2859d287fa9145b2276099d3c998942d76b28b46e201d777",
-      "size": 1180134
+      "sha256": "f84ad4cc4ef6a51bbc8173c602fcf7e1c17783dff3b2e4d8495086d5b2d5dda9",
+      "size": 1182002
     },
     {
       "path": "docs/architecture.md",
@@ -271,7 +271,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "da05bf421891e6fd330cea528e2e246d392d40001b8c4024de75914740727a94",
+      "sha256": "0053736f3405f202064b4bc1eea41648ac11c255c12a6fb0d8f8a8e114fa2fc4",
       "size": 7404
     },
     {
@@ -971,8 +971,8 @@
     },
     {
       "path": "src/semantic_normalizer/registry.py",
-      "sha256": "fa2cce5849fca8ce46e7bf4b0a4532036d262a7cee2c0ca73948203cc54d1118",
-      "size": 23369
+      "sha256": "74d22ff1ba83cea082cafaff61190f3d49e64b2488e7190d4d6829317748e6e5",
+      "size": 25237
     },
     {
       "path": "src/semantic_normalizer/schema_validation.py",
@@ -1071,8 +1071,8 @@
     },
     {
       "path": "tests/test_semantic_structure.py",
-      "sha256": "6d69cda697b8342c03a3d8335e451f5d58c1eb7a52ecda0e0e7b1126213d253b",
-      "size": 11421
+      "sha256": "55016e240b4bc17d438217956d7ec9b546447615b0ecd282d0e5852d1dbcc162",
+      "size": 14492
     },
     {
       "path": "tests/test_sense_precision.py",
@@ -1082,5 +1082,5 @@
   ],
   "payload_files": 211,
   "release_version": "0.4.0",
-  "wheel_sha256": "198310a510b0734a2859d287fa9145b2276099d3c998942d76b28b46e201d777"
+  "wheel_sha256": "f84ad4cc4ef6a51bbc8173c602fcf7e1c17783dff3b2e4d8495086d5b2d5dda9"
 }

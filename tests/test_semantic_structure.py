@@ -142,6 +142,64 @@ class HierarchyEdgesPreserveTheClassAndTheInverse(unittest.TestCase):
                           f"{narrower} -> {broader} is declared one way only")
 
 
+class AHierarchyWithACycleIsNotAHierarchy(unittest.TestCase):
+    """The inverse checks are per EDGE and cannot see a loop.
+
+    `A broader B`, `B broader C`, `C broader A` satisfies every inverse and still says each of
+    the three is a kind of itself. The amendment op refuses the immediate inversion and is
+    equally blind past one hop, so three separate, individually valid amendments compose into a
+    cycle. Built over `technical.duration`, `technical.convexity` and `technical.irr` against
+    the real loader, it used to load with no error at all.
+    """
+
+    @staticmethod
+    def load_with(edges: list[tuple[str, str]]):
+        from semantic_normalizer.registry import load_registry
+        records = [json.loads(line)
+                   for line in REGISTRY.read_text(encoding="utf-8").splitlines() if line.strip()]
+        by_id = {record["concept_id"]: record for record in records}
+        for narrower, broader in edges:
+            by_id[narrower]["relations"]["broader"].append(broader)
+            by_id[broader]["relations"]["narrower"].append(narrower)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "registry.jsonl"
+            path.write_text("\n".join(
+                json.dumps(r, ensure_ascii=False, sort_keys=True) for r in records) + "\n",
+                encoding="utf-8")
+            return load_registry(
+                path, ROOT / "src" / "semantic_normalizer" / "data" / "registry.schema.json")
+
+    def test_a_three_node_cycle_is_refused(self):
+        from semantic_normalizer.registry import ContractError
+        with self.assertRaises(ContractError) as caught:
+            self.load_with([("technical.duration", "technical.convexity"),
+                            ("technical.convexity", "technical.irr"),
+                            ("technical.irr", "technical.duration")])
+        self.assertIn("cycle", str(caught.exception))
+
+    def test_the_message_names_the_path(self):
+        """A cycle error that does not say which concepts are in it is unactionable."""
+        from semantic_normalizer.registry import ContractError
+        with self.assertRaises(ContractError) as caught:
+            self.load_with([("technical.duration", "technical.convexity"),
+                            ("technical.convexity", "technical.duration")])
+        message = str(caught.exception)
+        self.assertIn("technical.duration", message)
+        self.assertIn("technical.convexity", message)
+        self.assertIn("->", message)
+
+    def test_the_shipped_registry_is_acyclic(self):
+        from semantic_normalizer.registry import load_registry
+        load_registry()  # raises if not
+
+    def test_a_diamond_is_not_a_cycle(self):
+        """`technical.ytm` already has two genera. Poly-hierarchy is legal; a loop is not."""
+        view = self.load_with([])
+        by_id = {r["concept_id"]: r for r in view["canonical_records"]}
+        self.assertEqual(sorted(by_id["technical.ytm"]["relations"]["broader"]),
+                         ["technical.discount_rate", "technical.irr"])
+
+
 class TheAmenderDemoterIsContextAware(unittest.TestCase):
     """An amendment about one thing must not destroy the packs' independence.
 

@@ -397,6 +397,44 @@ def load_registry(
             if target not in by_id or cid not in by_id[target]["relations"]["related"]:
                 raise ContractError(f"{cid}: related relation is not symmetric")
 
+    # A hierarchy with a cycle is not a hierarchy. The inverse checks above are per EDGE and
+    # cannot see one: A broader B, B broader C, C broader A satisfies every inverse and still
+    # says each of the three is a kind of itself. The amendment op refuses the immediate
+    # inversion (A->B when B->A exists) and is equally blind past one hop, so three separate,
+    # individually valid amendments compose into a loop that loads clean. Confirmed by building
+    # exactly that over technical.duration, technical.convexity and technical.irr: it loaded
+    # without an error.
+    #
+    # Iterative DFS over a sorted adjacency, so the reported cycle is the same one on every run
+    # rather than whichever order a set happened to yield.
+    broader_of = {cid: sorted(record["relations"]["broader"]) for cid, record in by_id.items()}
+    state: dict[str, int] = {}          # 0 = on the current path, 1 = finished
+    for origin in sorted(broader_of):
+        if state.get(origin) == 1:
+            continue
+        stack = [(origin, iter(broader_of[origin]))]
+        path = [origin]
+        state[origin] = 0
+        while stack:
+            node, children = stack[-1]
+            advanced = False
+            for child in children:
+                if state.get(child) == 0:
+                    loop = path[path.index(child):] + [child]
+                    raise ContractError(
+                        "broader/narrower relations form a cycle: " + " -> ".join(loop)
+                    )
+                if state.get(child) != 1:
+                    state[child] = 0
+                    path.append(child)
+                    stack.append((child, iter(broader_of.get(child, ()))))
+                    advanced = True
+                    break
+            if not advanced:
+                state[node] = 1
+                stack.pop()
+                path.pop()
+
     # Compatibility view for the existing deterministic parser. Authority stays
     # in canonical v2 records; these derived aliases are never serialized.
     runtime_records = []
