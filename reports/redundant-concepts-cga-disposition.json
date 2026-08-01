@@ -1,0 +1,206 @@
+{
+  "schema_version": "queue-disposition-v1",
+  "queue": "redundant-concepts-cga",
+  "method": "juiz adversarial com a pergunta INVERTIDA — assuma que o par é o mesmo conceito e prove que não é. 5 tarefas paralelas, cada veredito citando linha do corpus. Resultado: 29 distintos, 6 hierarquia, ZERO iguais.",
+  "dispositions": [
+    {
+      "item": "entity.treasury_bond ~ entity.treasury_note",
+      "verdict": "rejected",
+      "reason": "Disjoint maturity buckets of the same issuer, enumerated side by side. 01-investimentos-no-exterior.md Linha 19: \"Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS\" — they are counted as separate instruments. Linha 75: \"As TREASURY NOTES (T-NOTES) tem como principal característica que possui VENCIMENTOS DE DOIS A DEZ ANOS\"; Linha 93: \"As TREASURY BONDS (T-BONDS) ... VENCIM"
+    },
+    {
+      "item": "technical.sharpe_ratio ~ technical.treynor",
+      "verdict": "rejected",
+      "reason": "Same numerator, different denominators — the corpus contrasts them explicitly. 07-avaliacao-de-desempenho.md Linha 770: \"Os princípios desta ferramenta são as mesmas do Índice de Sharpe: analisar o retorno excedente pelo risco. No entanto ... faria mais sentido analisar o risco de uma carteira pelo RISCO SISTÊMICO (BETA) e não pelo RISCO TOTAL (Desvio Padrão)\". The formulas differ: Linha 741 Sharp"
+    },
+    {
+      "item": "technical.duration ~ technical.macaulay_duration",
+      "verdict": "hierarchy",
+      "reason": "Macaulay is one member of a duration family the corpus enumerates. 08-gestao-de-carteiras-de-renda-fixa.md Linha 348 already treats duration as a genus with at least two species: \"medidas de sensibilidade ... (Duration de Macaulay ou Duration Modificada)\". Linha 540: \"A Effective Duration (ED) é um cálculo de duration para títulos que possuem opções embutidas ... os fluxos de caixa esperados flutu",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    },
+    {
+      "item": "technical.forward ~ technical.futures",
+      "verdict": "rejected",
+      "reason": "Sibling derivative types separated by standardisation, clearing and daily settlement — and they never co-occur (co_occurrences 0). 02-gestao-de-carteiras-renda-variavel.md Linha 52: \"O CONTRATO FUTURO é caracterizado por ser um contrato PADRONIZADO (característica do ativo, tamanho do contrato, vencimento pré-definido) ... Este é o único contrato que possui AJUSTE DIÁRIO, pois ele NÃO TEM RISCO DE"
+    },
+    {
+      "item": "entity.bond ~ entity.private_security",
+      "verdict": "hierarchy",
+      "reason": "The lexical anchor of entity.bond is \"debênture/debêntures\" (its English gloss is a template), and a debênture is one instrument inside the private-debt class. 06-gestao-de-riscos.md Linha 142 enumerates the class: \"títulos de dívida que irão lançar no mercado, como por exemplo, debêntures, notas promissórias, securitizações como os CRI e CRA, entre outros tipos de dívidas\" — debênture is one item",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    },
+    {
+      "item": "technical.active_risk ~ technical.information_ratio",
+      "verdict": "rejected",
+      "reason": "One is the denominator of the other — a quantity and a ratio built on it, not two names for one thing. 03-gestao-de-carteiras-renda-variavel-2.md Linha 277: \"Information Ratio (IR), índice de desempenho que relaciona o Retorno Ativo com o Risco Ativo\". 07-avaliacao-de-desempenho.md Linha 808: \"O Information Ratio (IR) mede a relação entre o excesso de retorno, sobre o benchmark, em relação ao trac"
+    },
+    {
+      "item": "technical.barbell ~ technical.bullet_portfolio",
+      "verdict": "rejected",
+      "reason": "Opposite curve structures with opposite payoffs, contrasted in the same sentences. 09-gestao-de-carteiras-de-renda-fixa-2.md Linha 252 lists them as two of \"quatro tipos ... de estratégias de renda fixa\" (Barbell, Bullet, Ladder, Cash Flow Matching). Linha 254: barbell = \"metade da carteira contém títulos de longo prazo e a outra metade possui títulos de curto prazo\"; Linha 266: bullet = \"o gestor"
+    },
+    {
+      "item": "technical.fixed_income_pricing ~ technical.ytm",
+      "verdict": "rejected",
+      "reason": "Opposite sides of the same equation, not one concept. 08-gestao-de-carteiras-de-renda-fixa.md:15 defines pricing as the operation 'calcular o valor presente de todos os recebimentos e soma-los' (output in R$); :17 says the discount rate used 'e a TIR deste investimento (tambem chamada de YTM)' (input in % a.a.). The worked example at :81-83 runs ONE pricing procedure against THREE YTMs (4%, 6%, 8%"
+    },
+    {
+      "item": "actor.rating_agency ~ technical.rating",
+      "verdict": "rejected",
+      "reason": "Check (c) actor vs thing, proven inside a single line. 04-resolucao-cvm-175-fundos-de-investimento.md:725 - 'classificacao de risco POR agencia de classificacao de risco de credito (rating)' marks the agency as agent and the rating as the object. 06-gestao-de-riscos.md:142 - 'O rating (nota que as agencias de classificacao de risco de credito atribuem a um emissor)'. Predicates do not cross: the f"
+    },
+    {
+      "item": "entity.broad_market_index ~ entity.style_index",
+      "verdict": "rejected",
+      "reason": "Co-ordinate siblings explicitly enumerated as two of the seven benchmark types in the same list: 07-avaliacao-de-desempenho.md:334 'Indices amplos de mercado;' and :335 'Indices de Estilo;'. Extensions are disjoint - :358 broad = Ibovespa, IBrX, S&P500, MSCI (whole market); :379 'indices de estilos representam uma parte especifica de uma categoria de ativos' (Value, Growth, Small/Mid/Large Cap). T"
+    },
+    {
+      "item": "quantity.volatility ~ technical.variance",
+      "verdict": "rejected",
+      "reason": "Two different statistics related by a square root, and the corpus asserts contradictory properties of them in adjacent bullets. 06-gestao-de-riscos.md:273 - 'Desvio Padrao = Raiz quadrada da Variancia'; :359 'A Variancia sempre sera um numero positivo' vs :360 'O Desvio Padrao e tanto um numero positivo, quanto negativo'. A property true of one is explicitly false of the other, so no substitution "
+    },
+    {
+      "item": "technical.bacen ~ technical.selic",
+      "verdict": "rejected",
+      "reason": "Check (b) in its literal form - an institution and the rate set under it. Selic only ever appears as a numeric rate: 08-gestao-de-carteiras-de-renda-fixa.md:139 'A taxa Selic projetada ... e de 12% ao ano'; :356 'Caso o COPOM aumente em 1%a.a. a taxa de juros SELIC (de 10% para 11%)' - the deciding organ and the decided rate are named separately in one clause; 05-legislacao-regulacao-e-tributacao."
+    },
+    {
+      "item": "technical.convexity ~ technical.convexity_adjustment",
+      "verdict": "rejected",
+      "reason": "One is an input to the other's formula, and the corpus computes both from the same data with results four orders of magnitude apart. 08-gestao-de-carteiras-de-renda-fixa.md:727 'Convexidade = (V- + V+ - 2V0)/(V0 x dy^2)' evaluates to 23,98 at :785; :741 'Ajuste de Convexidade = Convexidade/2 x dy^2' evaluates to 0,0048 at :789. They are not even the same kind of number: convexity is a dimensionles"
+    },
+    {
+      "item": "technical.dividend_yield ~ technical.pe_ratio",
+      "verdict": "rejected",
+      "reason": "Check (b) - two different ratios sharing a 'valuation multiple' template, and the corpus contrasts them inside one sentence with opposite screening directions. 03-gestao-de-carteiras-renda-variavel-2.md:94 (Value): 'um baixo numerador do indice P/L ou do EV/EBITDA, OU um alto numerador do dividend yield' - the corpus distinguishes them precisely by their numerators being different quantities (pric"
+    },
+    {
+      "item": "technical.indexing ~ technical.passive_management",
+      "verdict": "rejected",
+      "reason": "The corpus breaks the containment in BOTH directions. Indexação that is NOT passive: 03-gestao-de-carteiras-renda-variavel-2.md:206 'Entre a gestão passiva, de um lado, e a gestão ativa ou agnóstica, do outro, podemos definir a Enhanced Indexing ou Indexação Reforçada', and 09-gestao-de-carteiras-de-renda-fixa-2.md:41 calls Indexação Reforçada 'Essa estratégia semiativa' — an indexing strategy exp"
+    },
+    {
+      "item": "technical.lft ~ technical.ntnb",
+      "verdict": "rejected",
+      "reason": "Different instruments with different index, different pricing algebra and opposite duration roles. LFT: 09-gestao-de-carteiras-de-renda-fixa-2.md:500 'vendendo LFT (Letra Financeira do Tesouro, pós-fixada)', and 08-gestao-de-carteiras-de-renda-fixa.md:137-141 'LFT: Exemplo de Cálculo — A taxa Selic projetada... valor de atualização entre o valor nominal (R$ 1.000,00) e a data-base... é de 1,1885' "
+    },
+    {
+      "item": "temporal.after ~ temporal.during",
+      "verdict": "rejected",
+      "reason": "The corpus contrasts the two inside single sentences, so substitution destroys meaning. 01-investimentos-no-exterior.md:133: 'Os investidores em STRIPS recebem o pagamento do valor nominal do título no vencimento, mas não recebem pagamentos de juros periódicos durante a vida útil do título' — 'durante a vida útil' is set against the at/after-maturity payment; rewriting it as 'depois da vida útil' "
+    },
+    {
+      "item": "temporal.before ~ temporal.during",
+      "verdict": "rejected",
+      "reason": "'Antes de' encodes strict ordering/boundary; 'durante' encodes containment in a span. 03-gestao-de-carteiras-renda-variavel-2.md:519 and 521 define Top-Down as 'parte de fatores macroeconômicos... antes de examinar questões específicas do ativo' and 'analisa-se primeiro agregados econômicos antes de escolher setores para, em seguida, optar por empresas específicas' — replacing 'antes de' with 'dur"
+    },
+    {
+      "item": "actor.ecb ~ technical.estr",
+      "verdict": "rejected",
+      "reason": "Check (c): one is the ACTOR, the other the THING it produces. 01-investimentos-no-exterior.md:368: 'A taxa ESTR é calculada diariamente pelo Banco Central Europeu (BCE) com base em transações reais de mercado' — the BCE is the grammatical agent, ESTR the object; a rate cannot calculate itself. The corpus applies the same actor/rate split systematically at 01:366 for the parallel pair: SONIA 'É cal"
+    },
+    {
+      "item": "entity.government_security ~ entity.private_security",
+      "verdict": "rejected",
+      "reason": "Complementary, mutually exclusive issuer classes — the corpus builds a whole metric out of the difference between them. 06-gestao-de-riscos.md:174-178, section 'Relação entre Títulos Públicos e Privados / Spread de Crédito': 'O Spread de Crédito é uma medida que representa a probabilidade de inadimplência do emissor do título, quando comparado com o Ativo Livre de Risco'; 09-gestao-de-carteiras-de"
+    },
+    {
+      "item": "technical.passive_fund ~ technical.passive_management",
+      "verdict": "rejected",
+      "reason": "Vehicle vs discipline, and passive management occurs without any fund. 02-gestao-de-carteiras-renda-variavel.md:13-20 lists four ways to implement 'gestão passiva de Renda Variável': 'Fundos de Investimentos de Ações Indexados; Futuros de Ações; Total Return Equity Swap; e ETFs' — futures and total return swaps are not funds, so gestão passiva cannot be rewritten as fundo passivo. 10-alocacao-de-a"
+    },
+    {
+      "item": "entity.bond ~ technical.private_credit",
+      "verdict": "rejected",
+      "reason": "Instrument vs regulatory asset-class/limit category, plus a definitional contradiction. Corpus: 06-gestao-de-riscos.md:142 enumerates 'debêntures, notas promissórias, securitizações como os CRI e CRA' as parallel debt types — debênture is one item among several; 08-gestao-de-carteiras-de-renda-fixa.md:183 gives debênture an instrument-level convention ('as debêntures são títulos que são emitidas p"
+    },
+    {
+      "item": "entity.foreign_financial_asset ~ technical.foreign_investment",
+      "verdict": "rejected",
+      "reason": "The corpus uses both in the SAME sentence with different referents: 05-legislacao-regulacao-e-tributacao.md:393 'o regulamento pode extrapolar o limite de concentração de até 20% ao aplicar em ativos financeiros no exterior, desde que todos os investimentos ocorram por meio de fundos ou veículos de investimento no exterior'. 'Ativos financeiros no exterior' is the held asset class carrying the 20%"
+    },
+    {
+      "item": "entity.treasury_security ~ entity.us_government_security",
+      "verdict": "hierarchy",
+      "reason": "The corpus proves the broader term's extension contains a member the narrower one cannot cover. '## Títulos Americanos' (01-investimentos-no-exterior.md:137) heads the Municipal Bonds section, and 01:141 defines a Muni as 'um título de dívida emitido por governos locais, como cidades, estados ou municípios nos Estados Unidos' — American government debt that is NOT Treasury-issued; the same umbrell",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    },
+    {
+      "item": "artifact.suitability_policy ~ technical.suitability",
+      "verdict": "rejected",
+      "reason": "Document artifact vs the assessment activity it governs — check (c) in artifact form. Every corpus occurrence of 'Política de Suitability' sits in a list of institutional DOCUMENTS in the ANBIMA due-diligence questionnaire: 03-gestao-de-carteiras-renda-variavel-2.md:333 'se possui Código de Ética, Manual de Gestão de Liquidez, Política de Suitability' and 03:353, where the annex list ends '... Rel"
+    },
+    {
+      "item": "entity.inflation ~ risk.inflation",
+      "verdict": "rejected",
+      "reason": "Macroeconomic variable vs a named entry in the risk taxonomy, used contrastively in the same paragraph. 06-gestao-de-riscos.md:791-801 defines 'Risco de Inflação' as a catalogued risk ('também é conhecido como Risco de Poder de Compra ... remete à probabilidade de o valor dos bens e serviços ser afetado negativamente'), listed at 06:748 alongside the other risks and followed by '## Risco de Volati"
+    },
+    {
+      "item": "technical.esg ~ technical.socially_responsible_investment",
+      "verdict": "rejected",
+      "reason": "Criteria set vs investment approach, and ASG occurs in contexts with no SRI product at all. ISR owns its own section (03-gestao-de-carteiras-renda-variavel-2.md:127-193) and is defined as an investment posture: 03:131 'os investimentos socialmente responsáveis (ISR) são aqueles que buscam conciliar o retorno financeiro com o impacto positivo', with 03:135-138 listing 'tipos de ISR' — funds and sto"
+    },
+    {
+      "item": "technical.discount_rate ~ technical.fixed_income_pricing",
+      "verdict": "rejected",
+      "reason": "Numeric input parameter vs the procedure that consumes it — the corpus states the dependency explicitly. 08-gestao-de-carteiras-de-renda-fixa.md:15 defines the procedure: 'A precificação de títulos de renda fixa ... baseia-se em calcular o valor presente de todos os recebimentos e soma-los'; 08:17 then introduces the rate as a required input: 'para calcular o valor presente, necessitamos utilizar "
+    },
+    {
+      "item": "technical.discount_rate ~ technical.ytm",
+      "verdict": "hierarchy",
+      "reason": "Genus/species, not equals. 08-gestao-de-carteiras-de-renda-fixa.md:17 subordinates one to the other: 'necessitamos utilizar uma taxa de desconto. Essa taxa de desconto utilizada... é a TIR deste investimento (também chamada de YTM – Yield to Maturity, NA RENDA FIXA)' — YTM is the name the discount rate takes in the fixed-income case only (cf. 08:382 'i = YTM (taxa de desconto)'). Substitution fail",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    },
+    {
+      "item": "entity.private_security ~ technical.private_credit",
+      "verdict": "rejected",
+      "reason": "Different referents sharing a near-identical template def: 'títulos privados' is the INSTRUMENT, 'crédito privado' is the CREDIT/ASSET CLASS (exposure category). The corpus stacks one on the other, which is impossible for synonyms: 01-investimentos-no-exterior.md:268 'Os títulos DE crédito privado são comumente classificados como High Yield Bonds ou High Grade Bonds' (substitution yields 'títulos "
+    },
+    {
+      "item": "entity.bond ~ entity.government_security",
+      "verdict": "rejected",
+      "reason": "The template def of entity.bond ('company or government') is the trap; its surface forms are 'debênture/debêntures', and in every corpus occurrence a debênture is corporate paper: 06-gestao-de-riscos.md:142 'As companhias contratam as agências... referente aos títulos de dívida que irão lançar no mercado, como por exemplo, debêntures'; 05-legislacao-regulacao-e-tributacao.md:575 'debêntures... emi"
+    },
+    {
+      "item": "entity.fixed_income ~ entity.variable_income",
+      "verdict": "rejected",
+      "reason": "Complementary, mutually exclusive asset classes — parallel definitions, opposite referents. The corpus coordinates them disjunctively: 02-gestao-de-carteiras-renda-variavel.md:349 'ativos financeiros que integrem o índice de referência, sendo ele de renda fixa OU de renda variável', and 02:345 'valores mobiliários de renda fixa ou outros ativos de renda variável'. Swapping inverts numeric answers:"
+    },
+    {
+      "item": "entity.treasury_note ~ entity.us_government_security",
+      "verdict": "hierarchy",
+      "reason": "Member vs set. 01-investimentos-no-exterior.md:19 enumerates the set: 'Dentre os títulos americanos, temos 3: T-Bills, T-Notes, T-Bonds e as TIPS', and the shared section heading 'Títulos do Governo Americano' (01:21, 49, 71, 89, 107) opens each species — T-Notes being only the block at 01:73-85 ('VENCIMENTOS DE DOIS A DEZ ANOS... POSSUEM CUPOM SEMESTRAL'). The genus term appears where T-Notes spe",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    },
+    {
+      "item": "entity.treasury_bill ~ entity.treasury_note",
+      "verdict": "rejected",
+      "reason": "Sibling species with disjoint, explicitly stated attributes — never interchangeable. 01-investimentos-no-exterior.md:23-35: T-BILLS 'VENCIMENTO É DE ATÉ UM ANO... Não paga cupom (devido ao curto prazo)... possuem um desconto sobre seu valor de face (como se fosse uma LTN)'. 01:75-83: T-NOTES 'VENCIMENTOS DE DOIS A DEZ ANOS... Taxa de juros fixa; POSSUEM CUPOM SEMESTRAL'. The summary table at 01:28"
+    },
+    {
+      "item": "technical.irr ~ technical.ytm",
+      "verdict": "hierarchy",
+      "reason": "YTM is the IRR restricted to a bond's cash flows to maturity — the corpus defines it that way: 08-gestao-de-carteiras-de-renda-fixa.md:69 and 01-investimentos-no-exterior.md:288 'Yield to Maturity (YTM): É a taxa interna de retorno (TIR) dada ao ano dos fluxos de caixa DO TÍTULO, incluindo o valor da compra, os cupons e o valor no vencimento'; 08:17 'é a TIR deste investimento (também chamada de Y",
+      "applied_in": [
+        "precision-amendment-69.json"
+      ],
+      "moved_to": "hierarchy-proposals"
+    }
+  ]
+}

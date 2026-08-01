@@ -1,0 +1,1039 @@
+{
+  "schema_version": "queue-disposition-v1",
+  "queue": "hierarchy-proposals",
+  "method": "6 arestas vieram do juiz adversarial sobre a fila de redundância e foram aplicadas. As demais são propostas mecânicas e estão DECLARADAS como pendentes, com dono — não foram aplicadas e não são afirmadas como corretas.",
+  "dispositions": [
+    {
+      "item": "actor.administrator -> actor.portfolio_manager",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "actor.class_counterparty -> actor.counterparty",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "actor.ecb -> actor.bank",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "actor.essential_service_provider -> actor.service_provider",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "actor.institution -> actor.company",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "actor.listed_company -> actor.company",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "artifact.anbima_third_party_code -> entity.administration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "artifact.anbima_third_party_code -> entity.resource",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "artifact.fund_documents -> entity.credit",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "artifact.fund_documents -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "artifact.key_information_sheet -> entity.information",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "condition.only_if -> condition.if",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.asset -> entity.cost",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.asset -> entity.credit",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.asset -> entity.money",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.asset_class -> entity.asset",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.asset_class -> entity.class",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.broad_market_index -> entity.index",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.broad_market_index -> entity.market",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.cash_flow -> entity.cash",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.class -> entity.market",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.class -> entity.share",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.closed_class -> entity.class",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.cost -> entity.service",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.currency -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.currency_class -> entity.currency",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.currency_fund -> entity.currency",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.currency_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.debt -> entity.credit",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.debt -> entity.tax",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.equity_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.etf -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.exclusive_class -> entity.class",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.financial_investment_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fixed_income_fund -> entity.fixed_income",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fixed_income_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fixed_income_security -> entity.fixed_income",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fixed_income_security -> entity.security",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fund_charges -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fund_of_funds -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fund_share -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.fund_share -> entity.share",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.government_security -> entity.security",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.index -> entity.market",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.international_equity_market -> entity.market",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.international_exchange -> entity.stock_exchange",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.money -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.multimarket_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.mutual_fund -> entity.fund",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.open_class -> entity.class",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.pension_class -> entity.class",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.pension_class -> entity.share",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.premise -> entity.scenario",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.private_security -> entity.securities",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.resource -> entity.cost",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.resource -> entity.credit",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.resource -> entity.money",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.service -> entity.position",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.share -> entity.distribution",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.subclass -> entity.share",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.treasury_bond -> entity.treasury_note",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.treasury_security -> entity.security",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.us_fixed_income_security -> entity.fixed_income",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.us_fixed_income_security -> entity.securities",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "entity.us_government_security -> entity.securities",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.after_tax_return -> quantity.return",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.future_value -> quantity.value",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.measure -> quantity.value",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.price -> quantity.rate",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.recovery_rate -> quantity.rate",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.tax_rate -> quantity.rate",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.value -> quantity.price",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.value_added -> quantity.value",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.variation -> quantity.difference",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "quantity.variation -> quantity.increase",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "reasoning.hidden_premise -> reasoning.premise",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "reasoning.reasoning -> reasoning.analogy",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "reasoning.reasoning_skills -> reasoning.reasoning",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.counterparty -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.credit -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.early_redemption -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.event -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.inflation -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.liquidity -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.market -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.operational -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.reinvestment -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.sovereign -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.systematic -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.total -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.unsystematic -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.unsystematic -> risk.systematic",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "risk.volatility -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "state.negative_net_assets -> entity.net_assets",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.agnostic_strategy -> technical.active_strategy",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.alternative_indexing -> technical.indexing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.analytical_var -> technical.var",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.asset_pricing -> technical.pricing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_quality_test -> technical.benchmark",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_relative_management -> technical.benchmark",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_relative_management -> technical.fixed_income_portfolio_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_type -> technical.benchmark",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_var -> technical.benchmark",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.benchmark_var -> technical.var",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.cds -> technical.swap",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.convexity_adjustment -> technical.convexity",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.credit_risk_measure -> technical.risk_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.credit_spread -> technical.spread",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.current_yield -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.daily_settlement -> technical.settlement",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.derivative_risk -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.discount_rate -> technical.discount",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.dividend_yield -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.dollar_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.duration_matching -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.effective_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.enhanced_indexing -> technical.indexing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.enterprise_risk_management -> technical.risk_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.esg_private_credit -> technical.esg",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.esg_private_credit -> technical.private_credit",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.expected_curve_behaviour -> technical.yield_curve",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.fixed_income_pricing -> technical.pricing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.fundamental_law_active_management -> technical.active_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.hedge_fund -> technical.hedge",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.historical_var -> technical.var",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.institutional_risk_management -> technical.risk_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.integrated_risk_management -> technical.risk_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.interest_rate_risk -> risk.financial",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.jensen_alpha -> technical.alpha",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.key_rate_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.liquidity_management -> technical.liquidity",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.liquidity_preference_theory -> technical.liquidity",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.liquidity_premium -> technical.liquidity",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.liquidity_premium -> technical.premium",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.merger_arbitrage -> technical.arbitrage",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.modified_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.option_premium -> technical.option",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.option_premium -> technical.premium",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.population_variance -> technical.variance",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.portfolio_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.premium_or_discount -> technical.discount",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.premium_or_discount -> technical.premium",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.premium_or_discount -> technical.premium_price",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.premium_price -> technical.premium",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.pricing_policy -> technical.asset_pricing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.pricing_policy -> technical.pricing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.pure_indexing -> technical.indexing",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.quantitative_arbitrage -> technical.arbitrage",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.rating_change_impact -> technical.rating",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.risk_adjusted_appraisal -> technical.performance_appraisal",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.risk_management_fundamentals -> technical.risk_management",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.sample_variance -> technical.variance",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.selic -> technical.bacen",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.spread_duration -> technical.duration",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.spread_duration -> technical.spread",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.strips -> technical.principal",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.swap_leg -> technical.swap",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.tax_reclassification -> technical.mandate_breach",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.total_return_equity_swap -> technical.swap",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.valid_benchmark -> technical.benchmark",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_curve -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_curve_strategy -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_curve_strategy -> technical.yield_curve",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_spread -> technical.spread",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_spread -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_to_call -> technical.call_option",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_to_call -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_to_put -> technical.put_option",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_to_put -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.yield_to_worst -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "technical.ytm -> technical.yield",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    },
+    {
+      "item": "temporal.period -> temporal.term",
+      "verdict": "pending",
+      "owner": "Augusto Carollo",
+      "reason": "proposta MECÂNICA não julgada. Os sinais têm precisão baixa e medida: wordnet-hypernym produz `asset -> money`; containment de mesma classe é melhor mas não foi lido caso a caso. Aplicar sem julgamento seria estrutura inventada. Fila para o mesmo nó adversarial que decidiu as 6 admitidas."
+    }
+  ]
+}

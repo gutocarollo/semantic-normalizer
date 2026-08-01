@@ -1,0 +1,62 @@
+{
+  "schema_version": "queue-disposition-v1",
+  "queue": "wordnet-surfaces-reasoning",
+  "method": "juiz independente leu cada proposta contra o corpus, com default `reject`. 7 rejeitadas, 2 hierarquia, 1 admitida — precisão do WordNet como oráculo: 1/10.",
+  "dispositions": [
+    {
+      "item": "reasoning.attribute + característica",
+      "verdict": "rejected",
+      "reason": "General language for an intrinsic property of an object, not the comparison criterion the concept holds. All 10 corpus hits denote a trait belonging to a thing: line 549 'uma única característica positiva de uma pessoa, marca ou produto' (halo bias), 4138 'uma das características de qualquer ser humano racional', 4212 'um jogo possui exatamente essa característica', 4407 'Essa característica confe"
+    },
+    {
+      "item": "reasoning.attribute + qualidade",
+      "verdict": "rejected",
+      "reason": "The cited sentences carry the mass-noun 'excellence/goodness' sense, a different sense from the comparison dimension. Line 74 'a qualidade dos produtos e do atendimento ao cliente', line 352 'pensar, por si só, não garante qualidade ou profundidade', line 503 'sem uma análise crítica de qualidade ou custo-benefício'. That reading dominates ~38 of 41 hits: line 547 heading 'quando uma qualidade ofu"
+    },
+    {
+      "item": "reasoning.conclusion + chegada",
+      "verdict": "rejected",
+      "reason": "Hapax, and a figurative gloss rather than a term. The single corpus occurrence is line 2753, the citation itself, where the word appears only inside the fixed phrase 'ponto de chegada' in a journey metaphor for the logical chain: 'O encadeamento lógico é o fio que liga uma coisa à outra — é o trajeto entre o ponto de partida e o ponto de chegada.' The author names the concept explicitly in the sam"
+    },
+    {
+      "item": "reasoning.conclusion + final",
+      "verdict": "rejected",
+      "reason": "General language meaning 'end', and mostly an adjective. All 23 hits are ordinary: the sunk-cost citation 'permanece até o final apenas porque já pagou o ingresso' is the end of a movie, the anchoring citation 'fazendo o valor final parecer uma grande oportunidade' is the final price. Others: 'o resultado final' (4212), 'o estágio final' (3602), 'entrevista final', 'No final, ambos terão o mesmo p"
+    },
+    {
+      "item": "reasoning.cooperate + entender se",
+      "verdict": "rejected",
+      "reason": "Not a term at all, but a verb-plus-conjunction fragment, and a different referent. The single corpus occurrence is line 1663, the citation: 'Precisamos entender se os números confirmam isso, identificar quais lojas não estão performando' — meaning 'we need to understand whether the numbers confirm this', a data-checking move in a sales-drop meeting from Chapter 3. The concept is the game-theoretic"
+    },
+    {
+      "item": "reasoning.matrix + programa",
+      "verdict": "rejected",
+      "reason": "Different referent: computer software, not a grid. In both citations (lines 3954 and 4036, a duplicated passage) the word is a tool contrasted with mental calculation — 'você pode criar um algoritmo mental ou usar um programa para considerar todas as variáveis e pesos de importância'. A program is the instrument that computes the ranking, not the crossed-axis structure. The other hits are unrelate"
+    },
+    {
+      "item": "reasoning.premise + pressuposto",
+      "verdict": "admitted",
+      "reason": "Same sense, and the author uses it to gloss the concept itself. Line 229 is decisive: 'O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento' — pressupostos and premissas ocultas name the identical object in one sentence. Line 142 'questionar pressupostos' pairs it with the critical-reasoning faculty the same way premissas are treated. The citations at lines",
+      "applied_in": [
+        "precision-amendment-70.json"
+      ]
+    },
+    {
+      "item": "reasoning.reasoning + argumentação",
+      "verdict": "rejected",
+      "reason": "Hapax, and the author explicitly separates it from the concept. The single occurrence is line 218, the citation: 'empresas que estimulam o pensamento crítico... criam uma cultura de argumentação lógica', where it names the public practice of arguing, a cultural habit of an organization. Line 2749 draws the contrast directly: 'Argumentar é apresentar um caminho de razões que leva a uma conclusão..."
+    },
+    {
+      "item": "reasoning.reasoning + dedução",
+      "verdict": "hierarchy",
+      "reason": "A kind of the concept, not another name for it — the corpus states the subsumption in the citation itself: 'A forma mais antiga e clássica de raciocínio é a dedução' (line 2771). Reasoning is broader. Confirmed by the sibling species that share the same parent: line 2802 'A segunda forma de inferência é a indução', line 2831 'A terceira forma de inferência é a abdução', line 2881 'Essas quatro for",
+      "moved_to": "needs a concept of its own; requires the full admission loop"
+    },
+    {
+      "item": "reasoning.reasoning + inferência",
+      "verdict": "hierarchy",
+      "reason": "Narrower: it names one structural component of an argument, not the whole competence. Line 2767 defines it as such — 'O componente mais negligenciado na estrutura de um argumento é o encadeamento lógico — o que, tecnicamente, se chama de inferência' — i.e. the third of the three elements listed at line 2753 (premissas, encadeamento lógico, conclusão). The same line proves non-identity with the con",
+      "moved_to": "needs a concept of its own; requires the full admission loop"
+    }
+  ]
+}

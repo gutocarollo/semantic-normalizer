@@ -21,6 +21,20 @@ THREE SIGNALS, ALL CHEAP, ALL PROPOSING ONLY
 3. DEFINITION SUBSUMPTION — the content words of the broader definition are a subset of the
    narrower one's. Weak on its own, reported with the others so a reader can see agreement.
 
+MEASURED RECALL: ZERO OF THE SIX EDGES THAT TURNED OUT TO BE RIGHT
+
+The six `broader` edges the registry now carries came from an adversarial judge reading the
+corpus, not from this script. Intersecting the two sets: **none** of the six appears among the
+172 edges the three signals proposed. Containment cannot find `technical.ytm -> technical.irr`
+because neither label contains the other; WordNet cannot find `entity.bond ->
+entity.private_security` because the relation is Brazilian regulatory, not general-language.
+
+So the honest standing of this tool is: it proposes cheaply and it has not yet been shown to
+propose anything correct. Its 172 outputs are declared `pending` in
+`reports/hierarchy-proposals-disposition.json` with an owner, and `check_queue_disposition.py`
+counts them on every run so the pile cannot quietly become permanent. Applying them unjudged
+would be inventing structure.
+
 WHAT THIS REFUSES TO DO
 
 Never writes. Never proposes an edge between two concepts an antonym derivation separates —

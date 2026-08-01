@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "2b49fce33af7199d5036fe594393384078ce70f16110aa025ba95b629ec48628",
+  "package_validation_sha256": "8ed5dcdde69da066eeb4edd7acd20f9c52e1123b820856da840c11f7b6490466",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -250,6 +250,11 @@
       "size": 101422
     },
     {
+      "path": "reports/hierarchy-proposals-disposition.json",
+      "sha256": "e05ade26159215ccedb7d4f949dc788943e736f36e2f88f474cbcc8049a12a37",
+      "size": 77847
+    },
+    {
       "path": "reports/hierarchy-proposals.json",
       "sha256": "92778c7f843483d3a72459e974e70d682d83c97d558026a0fbbb1e6cd512d636",
       "size": 62694
@@ -271,7 +276,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "2b49fce33af7199d5036fe594393384078ce70f16110aa025ba95b629ec48628",
+      "sha256": "8ed5dcdde69da066eeb4edd7acd20f9c52e1123b820856da840c11f7b6490466",
       "size": 7404
     },
     {
@@ -313,6 +318,11 @@
       "path": "reports/recall-delta.json",
       "sha256": "470b24671c1cec19b3cfa99748104a58c5bef4c1e916fe8a83c9a587d0649cdf",
       "size": 43508
+    },
+    {
+      "path": "reports/redundant-concepts-cga-disposition.json",
+      "sha256": "b6f3aa31bc29be3e165f8a730c70ace67ed74efd8981ed872eef3cabb37001e5",
+      "size": 19523
     },
     {
       "path": "reports/redundant-concepts-cga.json",
@@ -630,6 +640,11 @@
       "size": 534541
     },
     {
+      "path": "reports/wordnet-surfaces-reasoning-disposition.json",
+      "sha256": "3eaa3c4da6d7027d60cd6ed1492964c584a34ec7918a7861cd7335ffe08a4283",
+      "size": 5694
+    },
+    {
       "path": "reports/wordnet-surfaces-reasoning.json",
       "sha256": "e5d139962fd1376f3046a2bb52328d933ba54ad447eb0bb443f8731179b39d6e",
       "size": 15905
@@ -683,6 +698,11 @@
       "path": "scripts/build_sweep_queue.py",
       "sha256": "39552850b58e8c2faa474273af8109c10088c00e76c86c96b6aab4b7f4ecf411",
       "size": 8170
+    },
+    {
+      "path": "scripts/check_queue_disposition.py",
+      "sha256": "fd49c0d79dea8ca31b7646b1f24319b8b0edb44016aaf6bdfa314ab6e6cfe072",
+      "size": 8094
     },
     {
       "path": "scripts/controlled_language.py",
@@ -751,8 +771,8 @@
     },
     {
       "path": "scripts/link_hierarchy.py",
-      "sha256": "81fb8e55d6056bf4880325b3962751662b38eaa5d1efb9e48d9c028eabc52152",
-      "size": 10718
+      "sha256": "0429a9609a75078e26f91cea1617eba838611a2a3a97ce5b270b4deabd35ec9a",
+      "size": 11620
     },
     {
       "path": "scripts/measure_domain_coverage.py",
@@ -1071,8 +1091,8 @@
     },
     {
       "path": "tests/test_semantic_structure.py",
-      "sha256": "1ac9c9ddaadbff28096baf622cb94f82815a7e4e3ceffa47501397a6671552b3",
-      "size": 21484
+      "sha256": "b08971754011c7f953531dc8fd083084794c08a43c1fd60cff332596727705d1",
+      "size": 25286
     },
     {
       "path": "tests/test_sense_precision.py",
@@ -1080,7 +1100,7 @@
       "size": 40326
     }
   ],
-  "payload_files": 211,
+  "payload_files": 215,
   "release_version": "0.4.0",
   "wheel_sha256": "4509052a3e88b05c643c7c93bd34af412ea067ad0f20980d5a83d0f56f2a9490"
 }

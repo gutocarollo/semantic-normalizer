@@ -31,7 +31,12 @@ release:
 	PYTHONPATH=src $(PYTHON) scripts/build_release.py --json
 
 # The correct order for a change that touches files and docs.
-check: release manifest test
+# Every item a generator proposed must have a recorded disposition. Invariant tests stay green
+# when work simply stops halfway; this is the check that does not.
+queues:
+	PYTHONPATH=src $(PYTHON) scripts/check_queue_disposition.py
+
+check: release manifest queues test
 
 # Delivery gate. `check` alone was not enough: three review rounds in a row caught a stale
 # MANIFEST.json because a document was edited AFTER the manifest was cut, and ordering inside

@@ -327,6 +327,78 @@ class TheHierarchyEdgesAgreeWithTheDefinitions(unittest.TestCase):
                         "own definition includes them")
 
 
+class EveryProposedItemHasADisposition(unittest.TestCase):
+    """The one check that fails when work simply STOPS, rather than when a property breaks.
+
+    Found by a question, not by a test: *is there a deterministic mechanism to verify
+    completeness?* There was not, and the repository proved it immediately — ten WordNet
+    proposals sat unruled while the whole suite and `make deliver` were green. Invariant checks
+    cannot see a halt; only a check that derives the expected set from the data can.
+
+    Two failure directions are canaried below, because a checker that has only been seen passing
+    is not a checker.
+    """
+
+    SCRIPT = SCRIPTS / "check_queue_disposition.py"
+
+    def run_checker(self) -> subprocess.CompletedProcess:
+        return subprocess.run(
+            [sys.executable, str(self.SCRIPT)], capture_output=True, text=True, cwd=ROOT,
+            env={"PYTHONPATH": str(ROOT / "src"), "PATH": "/usr/bin:/bin"})
+
+    def test_the_shipped_queues_are_fully_dispositioned(self):
+        result = self.run_checker()
+        self.assertEqual(result.returncode, 0, result.stderr[:2000])
+
+    def test_an_orphan_item_fails(self):
+        """Canary: drop one disposition and the checker must go red."""
+        path = ROOT / "reports" / "wordnet-surfaces-reasoning-disposition.json"
+        original = path.read_text(encoding="utf-8")
+        try:
+            payload = json.loads(original)
+            payload["dispositions"] = payload["dispositions"][:-1]
+            path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            self.assertEqual(self.run_checker().returncode, 1)
+        finally:
+            path.write_text(original, encoding="utf-8")
+
+    def test_a_disposition_pointing_at_a_missing_amendment_fails(self):
+        """Canary: `admitted` that cites a file which does not exist reads as done and is not."""
+        path = ROOT / "reports" / "wordnet-surfaces-reasoning-disposition.json"
+        original = path.read_text(encoding="utf-8")
+        try:
+            payload = json.loads(original)
+            for row in payload["dispositions"]:
+                if row["verdict"] == "admitted":
+                    row["applied_in"] = ["does-not-exist.json"]
+            path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+            self.assertEqual(self.run_checker().returncode, 1)
+        finally:
+            path.write_text(original, encoding="utf-8")
+
+    def test_pending_is_legal_but_must_name_an_owner(self):
+        """172 mechanical hierarchy edges are pending on purpose; anonymous pending is not."""
+        payload = json.loads(
+            (ROOT / "reports" / "hierarchy-proposals-disposition.json").read_text(encoding="utf-8"))
+        pending = [row for row in payload["dispositions"] if row["verdict"] == "pending"]
+        self.assertTrue(pending, "this queue is expected to carry declared open work")
+        for row in pending:
+            self.assertTrue(row.get("owner", "").strip(), f"{row['item']}: pending with no owner")
+            self.assertTrue(row.get("reason", "").strip(), f"{row['item']}: pending with no reason")
+
+    def test_every_registered_queue_names_a_report_field_that_exists(self):
+        """A queue registered against a field the report does not have would pass vacuously."""
+        sys.path.insert(0, str(SCRIPTS))
+        import check_queue_disposition as checker
+        for name, spec in checker.QUEUES.items():
+            path = ROOT / "reports" / spec["report"]
+            if not path.exists():
+                continue
+            report = json.loads(path.read_text(encoding="utf-8"))
+            self.assertIn(spec["field"], report,
+                          f"{name}: registered field {spec['field']!r} absent from the report")
+
+
 class TheAmenderDemoterIsContextAware(unittest.TestCase):
     """An amendment about one thing must not destroy the packs' independence.
 
