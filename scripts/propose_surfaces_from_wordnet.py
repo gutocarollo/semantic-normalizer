@@ -19,7 +19,9 @@ so 10 reach the queue. Reading the attested ones:
     raciocínio    -> dedução, inferência, argumentação   NOT synonyms: those are KINDS of
                                                         reasoning, i.e. a hierarchy edge
 
-Roughly one in twelve is a synonym of the sense the concept holds. WordNet has no idea which of a
+Adjudicated by an independent judge afterwards, the ten that reached the queue came back 7
+rejected, 2 hierarchy and 1 admitted — `pressuposto` for `reasoning.premise`, as a `review`
+form. One in ten. WordNet has no idea which of a
 word's senses this dictionary means, and it never will — that is what a domain registry is for.
 The batch-01 adjudication note in `config/` reached the same conclusion in 2026 and wrote it
 down: "`ili` is recorded only when an OpenWordnet-PT sense genuinely carries the financial

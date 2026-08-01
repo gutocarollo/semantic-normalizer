@@ -22,7 +22,7 @@
     "reports/dev-auto-match-candidates.jsonl"
   ],
   "manifest_version": "1.0.0",
-  "package_validation_sha256": "0053736f3405f202064b4bc1eea41648ac11c255c12a6fb0d8f8a8e114fa2fc4",
+  "package_validation_sha256": "74038ef16c3094d5cc2b2670f3022c33d36cd077d000eb9e36525b5a13b272f9",
   "payload": [
     {
       "path": "CHANGELOG.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "dist/semantic_normalizer-0.4.0-py3-none-any.whl",
-      "sha256": "f84ad4cc4ef6a51bbc8173c602fcf7e1c17783dff3b2e4d8495086d5b2d5dda9",
-      "size": 1182002
+      "sha256": "ea8caa6bb330112f4078f06cdada9f47caa804c56d0fd67bef06634815473089",
+      "size": 1183302
     },
     {
       "path": "docs/architecture.md",
@@ -226,7 +226,7 @@
     },
     {
       "path": "reports/dev-retrieval-ablations-final.json",
-      "sha256": "09a5ec64236404c8cdfe554c877256dc403417bfb9601fb75230c4a061b806a2",
+      "sha256": "586aaff7222406a44801d459aa85dc60e9714f548622ff87db1ab16b13a53591",
       "size": 88187
     },
     {
@@ -236,7 +236,7 @@
     },
     {
       "path": "reports/dev-semantic-gates.json",
-      "sha256": "448bb6eff49de46b24c7ddd868ec7212f75425e43249dd87b7bd7baed899ac0e",
+      "sha256": "e2aa1df05c7a51bac82b7d030163c0a4b8b6151620021436a265a322a7d46759",
       "size": 6879
     },
     {
@@ -271,7 +271,7 @@
     },
     {
       "path": "reports/package-validation.json",
-      "sha256": "0053736f3405f202064b4bc1eea41648ac11c255c12a6fb0d8f8a8e114fa2fc4",
+      "sha256": "74038ef16c3094d5cc2b2670f3022c33d36cd077d000eb9e36525b5a13b272f9",
       "size": 7404
     },
     {
@@ -781,8 +781,8 @@
     },
     {
       "path": "scripts/propose_surfaces_from_wordnet.py",
-      "sha256": "dace8478349a981a80e77f1cf012c3ddf20633f2095690b2b65c11dcc82b2183",
-      "size": 7992
+      "sha256": "25e1d5ca512a04b66d29f0558730eda743d64c5285302ef8f330c1f8ddf9b98b",
+      "size": 8128
     },
     {
       "path": "scripts/rank_precision_risk.py",
@@ -926,18 +926,18 @@
     },
     {
       "path": "src/semantic_normalizer/data/registry.jsonl",
-      "sha256": "14bdcf8a3ddc6b5122ea5ccc18d3f91db3baad9b3ed2cf598cc03f34671c6122",
-      "size": 801621
+      "sha256": "044d009c2bd2b9d6391693e941b13ab071b3a1b3c879aebb5bd16132798b18b9",
+      "size": 801697
     },
     {
       "path": "src/semantic_normalizer/data/registry.provenance.jsonl",
-      "sha256": "52da9dfdc4e22aba4bfbf4b4436699a1e62ba639dfeb37133b5fb7e1d6dc908b",
-      "size": 127556
+      "sha256": "8bfeb44c8456d4a66e73b6ca3f5b77dd5a0810aebd6ce5e72eeec32633858139",
+      "size": 128764
     },
     {
       "path": "src/semantic_normalizer/data/registry.release.json",
-      "sha256": "5d078bc533a38b4f957425ec0b71ea925ae40fa5ec7b51a70c6086d88539ad8d",
-      "size": 20624
+      "sha256": "02980c8ebca0f5ba8c94d48d30392d36b02918f7ca26aa81ca92b30dfc292c36",
+      "size": 20640
     },
     {
       "path": "src/semantic_normalizer/data/registry.schema.json",
@@ -971,7 +971,7 @@
     },
     {
       "path": "src/semantic_normalizer/registry.py",
-      "sha256": "74d22ff1ba83cea082cafaff61190f3d49e64b2488e7190d4d6829317748e6e5",
+      "sha256": "295b21c614e57c9f8618c7d1c4c0dc776ae8cfcc5b9fa6cf3c8d19babe2f5c76",
       "size": 25237
     },
     {
@@ -1082,5 +1082,5 @@
   ],
   "payload_files": 211,
   "release_version": "0.4.0",
-  "wheel_sha256": "f84ad4cc4ef6a51bbc8173c602fcf7e1c17783dff3b2e4d8495086d5b2d5dda9"
+  "wheel_sha256": "ea8caa6bb330112f4078f06cdada9f47caa804c56d0fd67bef06634815473089"
 }

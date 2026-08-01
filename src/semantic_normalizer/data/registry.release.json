@@ -602,7 +602,7 @@
   ],
   "approved_at": "2026-07-31T00:00:00Z",
   "approved_by": "cga-game-delivery-council execution; exhaustive corpus sweep adjudication",
-  "change_reason": "The registry shipped 598 concepts with ZERO broader/narrower edges — a list with metadata rather than an ontology, unable to answer whether a Macaulay duration is a duration. These six edges are the ones an adversarial judge could not break.\n\nHow they were found matters, because the obvious method is a trap. Ranking concepts by definition similarity does not surface synonyms, it surfaces ANTONYMS: state.enabled and state.disabled score 1.00 because the only token separating them is `not`, three characters, dropped by every stopword filter. Merging on that signal would have joined put with call, which is the defect this registry already paid for once. So oppositions are derived and removed FIRST, the survivors are substitution-tested with the engine's own rewrite guard, and what is left is judged with the question inverted: assume the pair is one concept and prove it is not.\n\nOf 35 pairs judged: 29 distinct, 6 hierarchy, ZERO the same. The registry has no redundant concept. Each edge below cites the corpus line that subordinates one term to the other; `technical.ytm` takes two genera (discount_rate and irr), which SKOS permits and the corpus supports.",
+  "change_reason": "`pressuposto` é a única das dez que denota o MESMO sentido que reasoning.premise carrega, e o autor usa as duas palavras como glosa uma da outra na mesma frase: 'O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento' (linha 229).\n\nEntra como `review`, não `auto`, por duas razões que o juiz mediu: só 4 ocorrências no corpus inteiro, base fina para reescrita automática; e `parte do pressuposto de que` é idiomático e cobre suposição comum fora de estrutura argumentativa.\n\nAs 7 rejeitadas mostram por que o WordNet não pode decidir: `conclusão` recebeu `chegada` (hapax dentro da metáfora 'ponto de chegada') e `final` (que no corpus MODIFICA conclusão — 'conclusão final' — logo não a substitui); `matriz` recebeu `programa` (software, não grade); `atributo` recebeu `característica`, que a linha 2302 usa na MESMA frase com referente diferente do termo do conceito.\n\n`dedução` e `inferência` vieram como HIERARQUIA e ficam em fila declarada: são espécies de raciocínio e mereceriam conceito próprio, o que exige o loop de admissão completo, não uma emenda de grafia. Nada foi fabricado para fechar o número.",
   "hashes": {
     "downstream-answerer-output.schema.json": "c5c626dc345ab38e1bac36b9bb0d1b04862dfe7b43c66721d708314def4b91c1",
     "downstream-answerer-packet.schema.json": "acae5b0bf874a2d5194ea14c9f5e95a29bbd824b2a3fb80ce77654db686e2b33",
@@ -618,13 +618,13 @@
     "reconciliation-decision.schema.json": "065f91dde75092827e158d3771af37a96aaeed581a53c38d23d2e07ea404ce60",
     "reconciliation-request.schema.json": "544c35b732093231e331b1f059aca6df5e6495b38bebec5697124dad49b8003f",
     "reconciliation-response.schema.json": "e7ed6fb728036a44375a43949c3e8ed25219fff61052258cf8ccd15c40cc4f3d",
-    "registry.jsonl": "14bdcf8a3ddc6b5122ea5ccc18d3f91db3baad9b3ed2cf598cc03f34671c6122",
-    "registry.provenance.jsonl": "52da9dfdc4e22aba4bfbf4b4436699a1e62ba639dfeb37133b5fb7e1d6dc908b",
+    "registry.jsonl": "044d009c2bd2b9d6391693e941b13ab071b3a1b3c879aebb5bd16132798b18b9",
+    "registry.provenance.jsonl": "8bfeb44c8456d4a66e73b6ca3f5b77dd5a0810aebd6ce5e72eeec32633858139",
     "registry.schema.json": "29d392e829562117a12bbf09365a95e05665140a0b5bc09137cd57d4154075fc",
     "sidecar.schema.json": "6bceb909ca83e56313a21a59eb358581203c464d9825b29543573c978422489c"
   },
   "reindex_required": true,
-  "rollback_version": "2.40.0",
+  "rollback_version": "2.41.0",
   "source_authority": "Per-record authority and source fields migrated from lexicon v1",
-  "version": "2.41.0"
+  "version": "2.42.0"
 }

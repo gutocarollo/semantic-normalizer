@@ -1,0 +1,16 @@
+{
+  "id": "precision-sweep-amendment-70",
+  "corpus_sha256": "reasoning-consolidated",
+  "authority": "reports/wordnet-surfaces-reasoning.json + adjudicação por juiz independente",
+  "method": "OpenWordnet-PT como GERADOR de grafia, com a decisão tomada por um juiz que leu o corpus. Das 10 propostas atestadas em prosa: 7 rejeitadas, 2 são hierarquia e não grafia, 1 admitida. Precisão do WordNet como oráculo medida em 1/10 — a razão de ele nunca decidir nada.",
+  "reason": "`pressuposto` é a única das dez que denota o MESMO sentido que reasoning.premise carrega, e o autor usa as duas palavras como glosa uma da outra na mesma frase: 'O mapeamento de premissas ocultas torna explícitos os pressupostos subjacentes a um argumento' (linha 229).\n\nEntra como `review`, não `auto`, por duas razões que o juiz mediu: só 4 ocorrências no corpus inteiro, base fina para reescrita automática; e `parte do pressuposto de que` é idiomático e cobre suposição comum fora de estrutura argumentativa.\n\nAs 7 rejeitadas mostram por que o WordNet não pode decidir: `conclusão` recebeu `chegada` (hapax dentro da metáfora 'ponto de chegada') e `final` (que no corpus MODIFICA conclusão — 'conclusão final' — logo não a substitui); `matriz` recebeu `programa` (software, não grade); `atributo` recebeu `característica`, que a linha 2302 usa na MESMA frase com referente diferente do termo do conceito.\n\n`dedução` e `inferência` vieram como HIERARQUIA e ficam em fila declarada: são espécies de raciocínio e mereceriam conceito próprio, o que exige o loop de admissão completo, não uma emenda de grafia. Nada foi fabricado para fechar o número.",
+  "operations": [
+    {
+      "op": "add_form",
+      "concept": "reasoning.premise",
+      "language": "pt-BR",
+      "form": "pressuposto",
+      "policy": "review"
+    }
+  ]
+}
